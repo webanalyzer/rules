@@ -1,0 +1,19 @@
+{
+    "name": "Roadiz CMS",
+    "website": "http://www.roadiz.io",
+    "matches": [
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "Roadiz CMS"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "^Roadiz ([a-z0-9\\s\\.]+) - ",
+            "offset": 1
+        }
+    ],
+    "implies": [
+        "PHP",
+        "Symfony"
+    ]
+}

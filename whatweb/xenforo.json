@@ -1,0 +1,33 @@
+{
+    "name": "XenForo",
+    "author": "Brendan Coles <bcoles@gmail.com>",
+    "version": "0.1",
+    "description": "XenForo is a commercial Internet forum software written in the PHP programming language using the Zend Framework.",
+    "website": "http://xenforo.com/",
+    "matches": [
+        {
+            "text": "<link rel=\"stylesheet\" href=\"css.php?css=xenforo,form,public&amp;style="
+        },
+        {
+            "text": "<link rel=\"stylesheet\" type=\"text/css\" href=\"css.php?css=xenforo,form,public&amp;style="
+        },
+        {
+            "text": "<html id=\"XenForo\" "
+        },
+        {
+            "text": "<meta name=\"description\" content=\"Forum software by XenForo\" />"
+        },
+        {
+            "certainty": 75,
+            "text": "<!-- h1 title, description -->"
+        },
+        {
+            "certainty": 25,
+            "search": "headers[set-cookie]",
+            "regexp": "(?-mix:xf_session=[a-f\\d]{32};)"
+        },
+        {
+            "regexp": "(?-mix:<div id=\"copyright\">Forum software by XenForo&trade; &copy;(20[\\d]{2}) XenForo Ltd\\.<\\/div>)"
+        }
+    ]
+}

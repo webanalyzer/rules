@@ -1,0 +1,19 @@
+{
+    "name": "Incapsula-WAF",
+    "author": "Aung Khant <http://yehg.net/>",
+    "version": "0.1",
+    "description": "Incapsula-WAF - http://www.incapsula.com",
+    "website": null,
+    "matches": [
+        {
+            "name": "Set-cookie Header",
+            "search": "headers[set-cookie]",
+            "regexp": "(?i-mx:incap_ses_)"
+        },
+        {
+            "name": "Set-cookie Header",
+            "search": "headers[set-cookie]",
+            "regexp": "(?i-mx:incap_visid_83_)"
+        }
+    ]
+}
