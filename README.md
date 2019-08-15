@@ -16,7 +16,7 @@
     "description": "wordpress 是世界上最为广泛使用的博客系统",
     "website": "http://www.wordpress.org/",
     "matches": [],
-    "condition": "0 and 1 and not 2",
+    "condition": "0 and (1 and not 2)",
     "implies": "PHP",
     "excludes": "Apache"
 }
@@ -32,7 +32,7 @@
 | description | string | 组件描述     | `wordpress 是世界上最为广泛使用的博客系统` | false    |
 | website     | string | 组件网站     | `http://www.wordpress.org/`                | false    |
 | matches     | array  | 规则         | `[{"regexp": "wordpress"}]`                | true     |
-| condition   | string | 规则组合条件 | `0 and 1 and not 2`                        | false    |
+| condition   | string | 规则组合条件 | `0 and (1 and not 2)`                        | false    |
 | implies     | string/array | 依赖的其他组件 | `PHP`                               | false    |
 | excludes    | string/array | 肯定不依赖的其他组件 | `Apache`                       | false    |
 
@@ -56,7 +56,7 @@
 | FIELD      | TYPE   | DESCRIPTION                                                             | EXAMPLE                            |
 |------------|--------|-------------------------------------------------------------------------|------------------------------------|
 | name       | string | 规则名称                                                                | `rulename`                         |
-| search     | string | 搜索的位置，可选值为 `all`, `headers`, `body`, `script`, `cookies`, `headers[key]`, `meta[key]`, `cookies[key]`| `body`                              |
+| search     | string | 搜索的位置，可选值为 `all`, `headers`, `title`, `body`, `script`, `cookies`, `headers[key]`, `meta[key]`, `cookies[key]`| `body`                              |
 | regexp     | string | 正则表达式                                                              | `wordpress.*`                      |
 | text       | string | 明文搜索                                                                | `wordpress`                        |
 | version    | string | 匹配的版本号                                                            | `0.1`                              |
@@ -101,7 +101,32 @@
 * 如果 rule 中存在 condition，则根据 condition 判断规则是否匹配，默认每个 match 之间的关系为 `or`
 
 
+## Q & A
+* WhatWeb 的规则如何转换成 webanalyzer 的规则？
+
+可以看下 [tools/whatweb.rb](tools/whatweb.rb) 代码，实际上我这并没有成功转换全部规则，依旧有部分 passive, aggressive 函数规则以及其他规则并没去转换，不过成功转换比例占大多数
+
+* Wappalyzer 的规则如何转换成 webanalyzer 的规则？
+
+可以看下 [tools/wappalyzer.py](tools/wappalyzer.py) 代码，因为 Wappalyzer 的规则本来就是 json 格式，所以比较容易转换，但是依旧有部分字段我没有保留在我的规则中
+
+* 为什么使用 json 作为规则格式？
+
+更通用，即便更换编程语言，也可以继续复用本来的规则
+
+* 如何同步 WhatWeb、Wappalyzer 的规则？
+
+可以看下 [.travis.yml](https://github.com/webanalyzer/rules/blob/build/.travis.yml)，通过 travis-ci 达到每天自动同步规则
+
+* License 为什么是 GPL-2.0 ？
+
+因为 WhatWeb 就是 GPL-2.0，虽然规则没有直接使用 WhatWeb 本身的规则，但是我们的规则是通过 WhatWeb 转换过来的，虽然不确定会不会传染，为了保险起见就设置成和 WhatWeb 一样的 License
+
+
 ## 引用
 
-* [WhatWeb](https://github.com/urbanadventurer/WhatWeb)
-* [Wappalyzer](https://github.com/AliasIO/Wappalyzer)
+* [WhatWeb 规则](https://github.com/urbanadventurer/WhatWeb)
+* [Wappalyzer 规则](https://github.com/AliasIO/Wappalyzer)
+* [fofa 规则](https://github.com/se55i0n/Webfinger)
+* [webanalyzer.py](https://github.com/webanalyzer/webanalyzer.py)
+* [webanalyzer.go](https://github.com/webanalyzer/webanalyzer.go)
