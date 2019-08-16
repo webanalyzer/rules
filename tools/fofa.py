@@ -1,6 +1,8 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# https://github.com/se55i0n/Webfinger/raw/master/lib/web.db
+
 import re
 import json
 import sqlite3
@@ -133,5 +135,5 @@ for i in result:
     if not x['matches']:
         continue
 
-    with open('fofa/{}.json'.format(x['name'].replace('/', '_')), 'w') as fd:
+    with open('rules/fofa/{}.json'.format(x['name'].replace('/', '_')), 'w') as fd:
         json.dump(x, fp=fd, indent=4)
