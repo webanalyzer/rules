@@ -1,0 +1,28 @@
+language: python
+python: "3.6"
+branches:
+  only:
+  - build
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_60dd82affa78_key -iv $encrypted_60dd82affa78_iv -in secrets.tar.enc -out secrets.tar -d
+  - tar xvf secrets.tar
+  - mv id_rsa ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/id_rsa
+  - cp ssh_config ~/.ssh/config
+  - git config --global user.name "fate0"
+  - git config --global user.email "git@fatezero.org"
+  - git clone --depth=1 git@github.com:webanalyzer/rules.git
+
+install:
+  - wget https://raw.githubusercontent.com/AliasIO/Wappalyzer/master/src/apps.json
+  - git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb
+  - python tools/wappalyzer.py ./ ./rules/wappalyzer
+  - ruby tools/whatweb.rb ./WhatWeb/plugins/ ./rules/whatweb/
+  - cd rules
+  - pwd
+  - git add .
+  - git commit -m "auto update plugins" || true
+  - git push -u origin master || true
