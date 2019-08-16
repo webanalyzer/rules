@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 import json
 
 
@@ -134,9 +135,10 @@ def parse_meta(rule):
     return matches
 
 
-def parse_rules():
-    curdir = os.path.dirname(__file__)
-    with open(os.path.join(curdir, "../apps.json")) as fd:
+def parse_rules(src, dst):
+    curdir = os.getcwd()
+
+    with open(os.path.join(curdir, src, "apps.json")) as fd:
         c = json.load(fd)
 
     m = {
@@ -156,7 +158,7 @@ def parse_rules():
 
             matches.extend(m[key](apps[name]))
 
-        with open(os.path.join(curdir, "../webanalyzer/plugins/wappalyzer/%s.json" % name.lower().replace('/', '_')), 'w') as fd:
+        with open(os.path.join(curdir, dst, "%s.json" % name.lower().replace('/', '_')), 'w') as fd:
             data = {
                 'name': name,
                 'website': apps[name]['website'],
@@ -177,4 +179,8 @@ def parse_rules():
 
 
 if __name__ == '__main__':
-    parse_rules()
+    if len(sys.argv) != 3:
+        print("[*] Usage: %s src_dir dst_dir" % sys.argv[0])
+        sys.exit(-1)
+
+    parse_rules(sys.argv[1], sys.argv[2])

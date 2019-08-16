@@ -4,15 +4,25 @@ require 'json'
 require "fileutils"
 require "pathname"
 
+if ARGV.size != 2 then
+    puts("[*] Usage: #{$0} src_dir dst_dir")
+    exit(0)
+end
 
-$src_plugin_dir = File.expand_path("../WhatWeb/plugins/", Pathname.new(File.dirname(__FILE__)).realpath)
-$dst_plugin_dir = File.expand_path("../webanalyzer/plugins/whatweb/", Pathname.new(File.dirname(__FILE__)).realpath)
+$src_plugin_dir = File.expand_path(ARGV[0])
+$dst_plugin_dir = File.expand_path(ARGV[1])
+
+def randstr
+  1111111111111.to_s(36)
+end
+
+def rand(v)
+  1111111111111
+end
 
 
-$plugin_name = nil
 class Plugin
-  def Plugin.define(name)
-    $plugin_name = name
+  def Plugin.define()
     yield if block_given?
   end
 end
@@ -52,10 +62,16 @@ def matches(value)
   $plugin_matches = new_value
 end
 
+
+$plugin_name = nil
+def name(value)
+  $plugin_name = value
+end
+
 $plugin_author = nil
 
-def author(value)
-  $plugin_author = value
+def authors(value)
+  $plugin_author = value.join(', ')
 end
 
 $plugin_version = nil
@@ -86,6 +102,12 @@ $plugin_dorks = nil
 
 def dorks(value)
   $plugin_dorks = value
+end
+
+def passive()
+end
+
+def aggressive()
 end
 
 
@@ -129,8 +151,6 @@ Dir.foreach($src_plugin_dir) do |file|
           File.delete(filename)
         end
       end
-    rescue Exception => e
-      puts e
     end
   end
 end
