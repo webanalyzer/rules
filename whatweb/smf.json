@@ -1,7 +1,7 @@
 {
     "name": "SMF",
-    "author": "Andrew Horton",
-    "version": "0.5",
+    "author": "Andrew Horton, Brendan Coles <bcoles at gmail dot com>, @csalazar",
+    "version": "0.6",
     "description": "SMF (Simple Machines Forum) is an opensource forum written in PHP",
     "website": "www.simplemachines.org",
     "matches": [
@@ -20,6 +20,10 @@
         {
             "offset": 1,
             "regexp": "(?-mix:<a href=\"http:\\/\\/www.simplemachines.org\\/\" title=\"Simple Machines Forum\" target=\"_blank\"( class=\"new_win\")?>Powered by SMF ([^<]+))"
+        },
+        {
+            "regexp": "(?-mix:<a href=\".*?\" title=\"Simple Machines Forum\" target=\"_blank\" class=\"new_win\">SMF ([^<]+))",
+            "offset": 1
         }
     ]
 }

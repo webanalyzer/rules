@@ -6,16 +6,16 @@
     "website": "http://www.evological.com/evocam.html",
     "matches": [
         {
-            "regexp": "(?-mix:<title>EvoCam[\\ \\d]*<\\/title>)"
+            "regexp": "(?-mix:<title>EvoCam( \\d)*<\\/title>)"
         },
         {
-            "regexp": "(?-mix:<TITLE>EvoCam[\\ Java|\\ JavaScript]* Example Page<\\/TITLE>)"
+            "regexp": "(?-mix:<TITLE>EvoCam( Java| JavaScript)? Example Page<\\/TITLE>)"
         },
         {
             "text": "Powered by <A HREF=\"http://www.evological.com/evocam.html\">EvoCam</A>"
         },
         {
-            "regexp": "(?i-mx:<applet archive=\"evocam.jar\" code=\"com.evological.evocam.class\"[\\ align=\"middle\"]* [height|width]*=\"[\\d]+\" [height|width]*=\"[\\d]+\">)"
+            "regexp": "(?-mix:<applet archive=\"evocam.jar\" code=\"com.evological.evocam.class\")"
         },
         {
             "regexp": "(?i-mx:<param name=\"archive\" value=\"evocam.jar\">)"

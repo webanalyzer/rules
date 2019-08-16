@@ -6,14 +6,18 @@
     "website": "http://www.stardot-tech.com/",
     "matches": [
         {
-            "regexp": "(?-mix:<title>Express6 Live Image[\\ Popup]*<\\/title>)",
+            "regexp": "(?-mix:<title>Express6 Live Image( Popup)?<\\/title>)",
             "version": "6"
         },
         {
-            "text": "  <tr><td><a href=\"http://www.stardot-tech.com\" target=\"_new\"><img src=\"logo.gif\" alt=\"\" width=\"227\" height=\"45\" border=\"0\"></a></td>"
+            "regexp": "(?-mix:<tr><td><a href=\"http:\\/\\/www.stardot(-tech)?.com\" target=\"(_new|_blank)\"><img src=\"logo.gif\" alt=\"\" width=\"227\" height=\"45\")"
         },
         {
-            "text": "  <tr><td><a href=\"http://www.stardot.com\" target=\"_blank\"><img src=\"logo.gif\" alt=\"\" width=\"227\" height=\"45\"></a></td>"
+            "status": 401,
+            "certainty": 75,
+            "name": "WWW-Authenticate realm",
+            "regexp": "(?-mix:^Basic realm=\"Express6\")",
+            "search": "headers[www-authenticate]"
         }
     ]
 }

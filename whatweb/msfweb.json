@@ -1,7 +1,7 @@
 {
     "name": "MSFWeb",
-    "author": "Brendan Coles <bcoles@gmail.com>",
-    "version": "0.1",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton",
+    "version": "0.2",
     "description": "Metasploit Framework Web Console",
     "website": "http://www.metasploit.com/",
     "matches": [
@@ -20,7 +20,7 @@
             "text": "<meta name=\"Copyright\" content=\"(c) 2007, Mike Whitehead (mwhite22[at]caledonian.ac.uk), (c) 2006-2007 Metasploit LLC\" />"
         },
         {
-            "regexp": "(?-mix:<script>[\\r\\n\\s]*document.writeln('<link rel=\"stylesheet\" type=\"text\\/css\" href=\"' + mainStyle + '\">'); \\/\\/ MSFWeb main stylesheet[\\r\\n\\s]*document.writeln('<link rel=\"stylesheet\" type=\"text\\/css\" href=\"' + windowStyle + '\">'); \\/\\/ Window frame stylesheet[\\r\\n\\s]*<\\/script>)"
+            "regexp": "(?-mix:<script>[\\s]*document.writeln('<link rel=\"stylesheet\" type=\"text\\/css\" href=\"' + mainStyle + '\">'); \\/\\/ MSFWeb main stylesheet[\\s]*document.writeln('<link rel=\"stylesheet\" type=\"text\\/css\" href=\"' + windowStyle + '\">'); \\/\\/ Window frame stylesheet[\\s]*<\\/script>)"
         }
     ]
 }

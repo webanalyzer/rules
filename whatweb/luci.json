@@ -1,7 +1,7 @@
 {
     "name": "LuCI",
-    "author": "Brendan Coles <bcoles@gmail.com>",
-    "version": "0.1",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton",
+    "version": "0.2",
     "description": "LuCI was founded in March 2008 as 'FFLuCI' as part of the efforts to create a port of the Freifunk-Firmware from OpenWrt Whiterussian to Kamikaze",
     "website": "http://luci.subsignal.org/",
     "matches": [
@@ -27,10 +27,10 @@
             "offset": 1
         },
         {
-            "regexp": "(?-mix:<div id=\"header\">[\\r\\n]*<h1>OpenWrt Firmware<\\/h1>[\\r\\n]*<p>[\\r\\n]*([^<]+)<br \\/>[\\r\\n]*Load: [^<]{10,15}<br \\/>[\\r\\n]*Hostname: ([^\\r^\\n^<]+)[\\s\\r\\n]*<\\/p>[\\r\\n]*<\\/div>)"
+            "regexp": "(?-mix:<div id=\"header\">[\\r\\n]*<h1>OpenWrt Firmware<\\/h1>[\\r\\n]*<p>[\\r\\n]*([^<]+)<br \\/>[\\r\\n]*Load: [^<]{10,15}<br \\/>[\\r\\n]*Hostname: ([^\\r\\n<]+)[\\s]*<\\/p>[\\r\\n]*<\\/div>)"
         },
         {
-            "regexp": "(?-mix:<div id=\"header\">[\\r\\n]*<h1>OpenWrt Firmware<\\/h1>[\\r\\n]*<p>[\\r\\n]*([^<]+)<br \\/>[\\r\\n]*Load: [^<]{10,15}<br \\/>[\\r\\n]*Hostname: ([^\\r^\\n^<]+)[\\s\\r\\n]*<\\/p>[\\r\\n]*<\\/div>)"
+            "regexp": "(?-mix:<div id=\"header\">[\\r\\n]*<h1>OpenWrt Firmware<\\/h1>[\\r\\n]*<p>[\\r\\n]*([^<]+)<br \\/>[\\r\\n]*Load: [^<]{10,15}<br \\/>[\\r\\n]*Hostname: ([^\\r\\n<]+)[\\s]*<\\/p>[\\r\\n]*<\\/div>)"
         }
     ]
 }

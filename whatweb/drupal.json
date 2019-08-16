@@ -1,7 +1,7 @@
 {
     "name": "Drupal",
-    "author": "Andrew Horton",
-    "version": "0.3",
+    "author": "Andrew Horton, Brendan Coles <bcoles@gmail.com>, Bhavin Senjaliya <bhavin.senjaliya@gmail.com>",
+    "version": "0.4",
     "description": "Drupal is an opensource CMS written in PHP.",
     "website": "http://www.drupal.org",
     "matches": [
@@ -26,6 +26,12 @@
             "certainty": 75,
             "search": "headers[set-cookie]",
             "regexp": "(?-mix:^SESS[a-z0-9]{32}=[a-z0-9]{32})"
+        },
+        {
+            "name": "SSESS Drupal Cookie",
+            "certainty": 75,
+            "search": "headers[set-cookie]",
+            "regexp": "(?-mix:^SSESS[a-z0-9]{32}=[a-z0-9]{32})"
         },
         {
             "module": "Mobile Plugin",

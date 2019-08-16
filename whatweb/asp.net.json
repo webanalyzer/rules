@@ -1,7 +1,7 @@
 {
     "name": "ASP_NET",
-    "author": "Brendan Coles <bcoles@gmail.com>",
-    "version": "0.6",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton, Bhavin Senjaliya",
+    "version": "0.7",
     "description": "ASP.NET is a free web framework that enables great Web applications. Used by millions of developers, it runs some of the biggest sites in the world.",
     "website": "http://www.asp.net/",
     "matches": [
@@ -54,6 +54,26 @@
             "module": "AnonymousIdentificationModule",
             "search": "headers[set-cookie]",
             "regexp": "(?-mix:^chkvalues=[^;]+; expires=[^;]+; path=[^;]+; HttpOnly)"
+        },
+        {
+            "search": "headers[set-cookie]",
+            "regexp": "(?-mix:^__RequestVerificationToken)",
+            "name": "__RequestVerificationToken cookie"
+        },
+        {
+            "search": "headers[set-cookie]",
+            "regexp": "(?-mix:^.ASPXANONYMOUS)",
+            "name": ".ASPXANONYMOUS cookie"
+        },
+        {
+            "search": "headers[set-cookie]",
+            "regexp": "(?-mix:^ASP.NET_SessionId)",
+            "name": "ASP.NET_SessionId cookie"
+        },
+        {
+            "search": "headers[set-cookie]",
+            "regexp": "(?-mix:^ASPSESSIONID)",
+            "name": "ASPSESSIONID cookie"
         }
     ]
 }

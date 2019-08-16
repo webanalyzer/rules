@@ -1,7 +1,7 @@
 {
     "name": "DotNetNuke",
-    "author": "Andrew Horton",
-    "version": "0.5",
+    "author": "Andrew Horton, Brendan Coles <bcoles@gmail.com>, Pedro Worcel <pedro.worcel@security-Assessment.com>, Bhavin Senjaliya",
+    "version": "0.7",
     "description": "DotNetNuke is an opensource CMS for Microsoft .Net. Passively detects modules and the copyright year.",
     "website": "www.dotnetnuke.com",
     "matches": [
@@ -46,6 +46,11 @@
             "search": "headers[set-cookie]",
             "name": "DotNetNukeAnonymous Cookie",
             "regexp": "(?-mix:DotNetNukeAnonymous=)"
+        },
+        {
+            "search": "headers[set-cookie]",
+            "regexp": "(?-mix:dnn_IsMobile)",
+            "name": "dnn_IsMobile cookie"
         },
         {
             "url": "/logo.gif",

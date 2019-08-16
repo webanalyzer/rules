@@ -1,7 +1,7 @@
 {
     "name": "XAMPP",
-    "author": "Brendan Coles <bcoles@gmail.com>",
-    "version": "0.3",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton",
+    "version": "0.4",
     "description": "XAMPP is an easy to install Apache distribution containing MySQL, PHP and Perl. XAMPP is really very easy to install and to use - just download, extract and start.",
     "website": "http://www.apachefriends.org/en/xampp.html",
     "matches": [
@@ -10,11 +10,11 @@
             "certainty": 75
         },
         {
-            "regexp": "(?-mix:<title>XAMPP Version ([^\\r^\\n^<]+)[\\s]*<\\/title>)",
+            "regexp": "(?-mix:<title>XAMPP Version ([^\\r\\n<]+)[\\s]*<\\/title>)",
             "offset": 1
         },
         {
-            "regexp": "(?-mix:<title>XAMPP for ([^\\r^\\n^<]{5,8}) [\\d\\.a-z]{3,6}[\\s]*<\\/title>)"
+            "regexp": "(?-mix:<title>XAMPP for ([^\\r\\n<]{5,8}) [\\d\\.a-z]{3,6}[\\s]*<\\/title>)"
         },
         {
             "url": "img/head-windows.gif",

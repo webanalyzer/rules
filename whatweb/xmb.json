@@ -6,24 +6,24 @@
     "website": "http://www.xmbforum.com/",
     "matches": [
         {
-            "text": "<!-- Powered by XMB  -->"
+            "text": "<!-- Powered by XMB "
         },
         {
-            "text": "<!-- Aventure Media & The XMB Group -->"
+            "text": "<!-- The XMB Group -->"
         },
         {
-            "text": "<!-- www.aventure-media.co.uk  :  www.xmbforum.com -->"
-        },
-        {
-            "regexp": "(?-mix:^Powered by XMB ([^<]+)<br \\/>)",
+            "name": "Powered by footer",
+            "regexp": "(?-mix:^Powered by XMB ([\\d\\.]+)<br \\/>)",
             "offset": 1
         },
         {
-            "regexp": "(?-mix:<title>[^\\-]+- Powered by XMB ([^<]+)<\\/title>)",
+            "name": "Title",
+            "regexp": "(?-mix:<title>[^<]+- Powered by XMB ([\\d\\.]+) )",
             "offset": 1
         },
         {
-            "regexp": "(?-mix:^<!-- Powered by XMB ([^\\ \\ ]+))",
+            "name": "HTML comment",
+            "regexp": "(?-mix:^<!-- Powered by XMB ([\\d\\.]+) )",
             "offset": 1
         }
     ]

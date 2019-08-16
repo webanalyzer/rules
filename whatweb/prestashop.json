@@ -1,7 +1,7 @@
 {
     "name": "PrestaShop",
-    "author": "Chris, NetAgence.com",
-    "version": "1.0",
+    "author": "Chris@NetAgence.com, Bhavin Senjaliya <bhavin.senjaliya@gmail.com>",
+    "version": "0.2",
     "description": "Ecommerce CMS Prestashop.",
     "website": "http://www.prestashop.com/",
     "matches": [
@@ -22,6 +22,11 @@
         {
             "name": "html comment",
             "regexp": "(?-mix:<!-- \\/Block permanent links module HEADER -->)"
+        },
+        {
+            "search": "headers[set-cookie]",
+            "regexp": "(?-mix:PrestaShop)",
+            "name": "PrestaShop cookie"
         }
     ]
 }
