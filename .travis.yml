@@ -21,9 +21,13 @@ install:
   - git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb
   - python tools/wappalyzer.py ./ ./rules/wappalyzer
   - ruby tools/whatweb.rb ./WhatWeb/plugins/ ./rules/whatweb/
+
+before_script:
   - cd rules
+
+script:
   - pwd
   - git add .
-  - git commit -m "auto update plugins" || true
+  - git commit -m "Auto Update Rules" || true
   - git push -u origin master || true
   - echo "done"
