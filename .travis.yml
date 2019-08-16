@@ -28,6 +28,8 @@ before_script:
 script:
   - pwd
   - git add .
-  - git commit -m "Auto Update Rules" || true
+  - git commit -m "Auto Update Rules" && date "+%Y.%m.%d" > VERSION || true
+  - git add VERSION
+  - git commit -m "Update version" || true
   - git push -u origin master || true
   - echo "done"
