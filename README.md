@@ -1,5 +1,7 @@
 # webanalyzer rules
 
+[![Build Status](https://travis-ci.org/webanalyzer/rules.svg?branch=build)](https://travis-ci.org/webanalyzer/rules)
+
 通用的指纹识别规则
 
 ## 规则编写
@@ -104,11 +106,11 @@
 ## Q & A
 * WhatWeb 的规则如何转换成 webanalyzer 的规则？
 
-可以看下 [tools/whatweb.rb](tools/whatweb.rb) 代码，实际上我这并没有成功转换全部规则，依旧有部分 passive, aggressive 函数规则以及其他规则并没去转换，不过成功转换比例占大多数
+可以看下 [tools/whatweb.rb](https://github.com/webanalyzer/rules/blob/build/tools/whatweb.rb) 代码，实际上我这并没有成功转换全部规则，依旧有部分 passive, aggressive 函数规则以及其他规则并没去转换，不过成功转换比例占大多数
 
 * Wappalyzer 的规则如何转换成 webanalyzer 的规则？
 
-可以看下 [tools/wappalyzer.py](tools/wappalyzer.py) 代码，因为 Wappalyzer 的规则本来就是 json 格式，所以比较容易转换，但是依旧有部分字段我没有保留在我的规则中
+可以看下 [tools/wappalyzer.py](https://github.com/webanalyzer/rules/blob/build/tools/wappalyzer.py) 代码，因为 Wappalyzer 的规则本来就是 json 格式，所以比较容易转换，但是依旧有部分字段我没有保留在我的规则中
 
 * 为什么使用 json 作为规则格式？
 
