@@ -14,7 +14,10 @@ def parse_value(value):
 
     for value in value_list:
         if value.startswith('confidence:'):
-            r['confidence'] = int(value[len('confidence:'):])
+            try:
+                r['confidence'] = int(value[len('confidence:'):])
+            except ValueError:
+                pass
 
         if value.startswith('version:'):
             version = value[len('version:'):]
