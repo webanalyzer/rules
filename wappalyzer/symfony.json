@@ -1,6 +1,15 @@
 {
     "name": "Symfony",
     "website": "http://symfony.com",
-    "matches": [],
+    "matches": [
+        {
+            "search": "cookies[sf_redirect]",
+            "regexp": ".*"
+        },
+        {
+            "regexp": "(?:<div id=\"sfwdt[^\"]+\" class=\"[^\"]*sf-toolbar|<div class=\"sf-toolbar[^>]+?>[^]+<span class=\"sf-toolbar-value\">([\\d.])+)",
+            "offset": 1
+        }
+    ],
     "implies": "PHP"
 }

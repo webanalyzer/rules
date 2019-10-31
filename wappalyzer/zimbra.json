@@ -1,0 +1,15 @@
+{
+    "name": "Zimbra",
+    "website": "https://www.zimbra.com/",
+    "matches": [
+        {
+            "search": "cookies[ZM_TEST]",
+            "regexp": "true"
+        },
+        {
+            "regexp": "<script>(?:.|\\n)*\"refresh\":{\"version\":\"([\\w\\.]+)\\s",
+            "offset": 1
+        }
+    ],
+    "implies": "Java"
+}
