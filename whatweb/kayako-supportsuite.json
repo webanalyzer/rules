@@ -1,10 +1,14 @@
 {
     "name": "Kayako-SupportSuite",
-    "author": "Brendan Coles <bcoles@gmail.com>",
-    "version": "0.2",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton",
+    "version": "0.3",
     "description": "We offer all of our helpdesk solutions as licensed products (install and host it yourself) or as help desk hosting services.",
     "website": "http://www.kayako.com/",
     "matches": [
+        {
+            "search": "headers[set-cookie]",
+            "text": "SWIFT_client"
+        },
         {
             "text": " - Powered By Kayako eSupport</title>"
         },
@@ -22,6 +26,13 @@
         {
             "regexp": "(?-mix:<td width=\"144\" align=\"left\" valign=\"top\"><span class=\"smalltext\"><font color=\"#333333\">([\\d\\.]+)<\\/font><\\/span><\\/td>)",
             "offset": 1
+        },
+        {
+            "regexp": "(?-mix:SWIFT\\.Setup[^}]*\"version\":\"([0-9\\.]+)\")",
+            "offset": 1
+        },
+        {
+            "text": "<div id=\"bottomfooter\" class=\"bottomfooterpadding\"><a href=\"http://www.kayako.com\" target=\"_blank\" class=\"bottomfooterlink\">Help Desk Software\""
         }
     ]
 }

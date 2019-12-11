@@ -1,9 +1,9 @@
 {
     "name": "ASP_NET",
-    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton, Bhavin Senjaliya",
-    "version": "0.7",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton, Bhavin Senjaliya, Andrew Horton",
+    "version": "0.8",
     "description": "ASP.NET is a free web framework that enables great Web applications. Used by millions of developers, it runs some of the biggest sites in the world.",
-    "website": "http://www.asp.net/",
+    "website": "https://www.asp.net/",
     "matches": [
         {
             "text": "vti_title:SR|Web Settings for Active Server Pages"
@@ -74,6 +74,10 @@
             "search": "headers[set-cookie]",
             "regexp": "(?-mix:^ASPSESSIONID)",
             "name": "ASPSESSIONID cookie"
+        },
+        {
+            "search": "body",
+            "text": "<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\""
         }
     ]
 }
