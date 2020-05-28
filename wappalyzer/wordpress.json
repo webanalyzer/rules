@@ -13,9 +13,17 @@
             "regexp": "rel=\"https://api\\.w\\.org/\""
         },
         {
+            "search": "headers[x-pingback]",
+            "regexp": "/xmlrpc\\.php$"
+        },
+        {
             "search": "meta[generator]",
             "regexp": "^WordPress ?([\\d.]+)?",
             "offset": 1
+        },
+        {
+            "search": "meta[shareaholic:wp_version]",
+            "regexp": ".*"
         },
         {
             "search": "script",
