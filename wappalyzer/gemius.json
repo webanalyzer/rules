@@ -3,6 +3,9 @@
     "website": "https://www.gemius.com",
     "matches": [
         {
+            "regexp": "<a [^>]*onclick=\"gemius_hit"
+        },
+        {
             "search": "script",
             "regexp": "hit\\.gemius\\.pl/xgemius\\.js"
         },
@@ -15,9 +18,6 @@
             "search": "script",
             "regexp": "xgemius\\.js",
             "certainty": 30
-        },
-        {
-            "regexp": "<a [^>]*onclick=\"gemius_hit"
         }
     ]
 }

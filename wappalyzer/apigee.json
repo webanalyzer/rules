@@ -3,11 +3,11 @@
     "website": "https://cloud.google.com/apigee/",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/profiles/apigee"
+            "regexp": "<script>[^>]{0,50}script src=[^>]/profiles/apigee"
         },
         {
-            "regexp": "<script>[^>]{0,50}script src=[^>]/profiles/apigee"
+            "search": "script",
+            "regexp": "/profiles/apigee"
         }
     ]
 }
