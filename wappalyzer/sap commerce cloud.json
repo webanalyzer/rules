@@ -7,7 +7,10 @@
             "regexp": ".*"
         },
         {
-            "regexp": "<[^>]+/(?:sys_master|hybr|_ui/(?:responsive/)?(?:desktop|common(?:/images|/img)?))/"
+            "regexp": "<[^>]+/(?:sys_master|hybr|_ui/(?:.*responsive/)?(?:desktop|common(?:/images|/img|/css|ico)?))/"
+        },
+        {
+            "regexp": "<script[^>].*hybris.*.js"
         }
     ],
     "implies": "Java"
