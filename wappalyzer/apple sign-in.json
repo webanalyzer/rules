@@ -1,0 +1,16 @@
+{
+    "name": "Apple Sign-in",
+    "website": "https://developer.apple.com/sign-in-with-apple/",
+    "matches": [
+        {
+            "regexp": "<meta[\u02c6>]*appleid-signin-client-id"
+        },
+        {
+            "regexp": "<a[\u02c6>]*appleid\\.apple\\.com/auth/authorize"
+        },
+        {
+            "search": "script",
+            "regexp": "appleid.auth.js"
+        }
+    ]
+}

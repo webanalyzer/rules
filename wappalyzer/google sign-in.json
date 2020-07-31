@@ -1,0 +1,26 @@
+{
+    "name": "Google Sign-in",
+    "website": "https://developers.google.com/identity/sign-in/web",
+    "matches": [
+        {
+            "regexp": "<meta[^>]*google-signin-client_id"
+        },
+        {
+            "regexp": "<meta[^>]*google-signin-scope"
+        },
+        {
+            "regexp": "<iframe[^>]*accounts\\.google\\.com/o/oauth2"
+        },
+        {
+            "regexp": "<a[^>]*accounts\\.google\\.com/o/oauth2"
+        },
+        {
+            "search": "script",
+            "regexp": "apis\\.google\\.com/js/platform\\.js"
+        },
+        {
+            "search": "script",
+            "regexp": "accounts\\.google\\.com/gsi/client"
+        }
+    ]
+}
