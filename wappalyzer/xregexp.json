@@ -1,5 +1,20 @@
 {
     "name": "XRegExp",
     "website": "http://xregexp.com",
-    "matches": []
+    "matches": [
+        {
+            "search": "script",
+            "regexp": "xregexp[.-]([\\d.]*\\d)[^/]*\\.js",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "/([\\d.]+)/xregexp(?:\\.min)?\\.js",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "xregexp.*\\.js"
+        }
+    ]
 }

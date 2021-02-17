@@ -4,6 +4,14 @@
     "matches": [
         {
             "regexp": "/(?:<script)[^>]+(?:type=\"application/dart\")/"
+        },
+        {
+            "search": "script",
+            "regexp": "/(?:\\.)?(?:dart)(?:\\.js)?/"
+        },
+        {
+            "search": "script",
+            "regexp": "packages/browser/dart\\.js"
         }
     ],
     "implies": "AngularDart",

@@ -1,5 +1,16 @@
 {
     "name": "Conekta",
     "website": "https://conekta.com",
-    "matches": []
+    "matches": [
+        {
+            "search": "script",
+            "regexp": "conektaapi/v([\\d.]+)",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "cdn\\.conekta\\.\\w+/js/(?:v([\\d.]+)|)",
+            "offset": 1
+        }
+    ]
 }

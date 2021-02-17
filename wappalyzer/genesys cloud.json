@@ -1,5 +1,15 @@
 {
     "name": "Genesys Cloud",
     "website": "https://www.genesys.com",
-    "matches": []
+    "matches": [
+        {
+            "search": "script",
+            "regexp": "apps\\.mypurecloud\\.\\w+/widgets/([\\d.]+)",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "apps\\.mypurecloud\\.\\w+"
+        }
+    ]
 }

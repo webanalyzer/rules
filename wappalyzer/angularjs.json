@@ -7,6 +7,20 @@
         },
         {
             "regexp": "<ng-app"
+        },
+        {
+            "search": "script",
+            "regexp": "angular[.-]([\\d.]*\\d)[^/]*\\.js",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "/([\\d.]+(?:-?rc[.\\d]*)*)/angular(?:\\.min)?\\.js",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "\\bangular.{0,32}\\.js"
         }
     ],
     "excludes": [

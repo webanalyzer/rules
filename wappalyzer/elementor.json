@@ -13,6 +13,11 @@
         },
         {
             "regexp": "<link [^>]*href=(?:\"|')[^\"']*uploads/elementor/css"
+        },
+        {
+            "search": "script",
+            "regexp": "elementor/assets/js/[^/]+\\.js\\?ver=([\\d.]+)$",
+            "offset": 1
         }
     ]
 }

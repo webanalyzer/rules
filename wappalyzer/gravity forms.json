@@ -13,6 +13,11 @@
         },
         {
             "regexp": "<link [^>]*href=(?:\"|')[^>]*wp-content/plugins/gravityforms/css/"
+        },
+        {
+            "search": "script",
+            "regexp": "/wp-content/plugins/gravityforms/js/[^/]+\\.js\\?ver=([\\d.]+)$",
+            "offset": 1
         }
     ],
     "implies": "WordPress"

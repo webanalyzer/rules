@@ -1,5 +1,14 @@
 {
     "name": "Google Maps",
     "website": "http://maps.google.com",
-    "matches": []
+    "matches": [
+        {
+            "search": "script",
+            "regexp": "(?:maps\\.google\\.com/maps\\?file=api(?:&v=([\\d.]+))?|maps\\.google\\.com/maps/api/staticmap)"
+        },
+        {
+            "search": "script",
+            "regexp": "//maps\\.google(?:apis)?\\.com/maps/api/js"
+        }
+    ]
 }

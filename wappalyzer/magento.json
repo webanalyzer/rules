@@ -15,6 +15,20 @@
         },
         {
             "regexp": "<script type=\"text/x-magento-init\">"
+        },
+        {
+            "search": "script",
+            "regexp": "js/mage"
+        },
+        {
+            "search": "script",
+            "regexp": "skin/frontend/(?:default|(enterprise))",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "static/_requirejs",
+            "certainty": 50
         }
     ],
     "implies": [

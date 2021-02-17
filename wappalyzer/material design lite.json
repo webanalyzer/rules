@@ -4,6 +4,11 @@
     "matches": [
         {
             "regexp": "<link[^>]* href=\"[^\"]*material(?:\\.[\\w]+-[\\w]+)?(?:\\.min)?\\.css"
+        },
+        {
+            "search": "script",
+            "regexp": "(?:/([\\d.]+))?/material(?:\\.min)?\\.js",
+            "offset": 1
         }
     ]
 }

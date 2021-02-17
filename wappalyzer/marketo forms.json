@@ -1,5 +1,16 @@
 {
     "name": "Marketo Forms",
     "website": "https://www.marketo.com",
-    "matches": []
+    "matches": [
+        {
+            "search": "script",
+            "regexp": "marketo\\.\\w+/js/forms(?:[\\d.]+)/js/forms([\\d.]+)\\.min\\.js",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "v([\\d.]+)/js/marketo-alt-form\\.min\\.js",
+            "offset": 1
+        }
+    ]
 }

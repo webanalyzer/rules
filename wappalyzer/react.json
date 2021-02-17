@@ -4,6 +4,20 @@
     "matches": [
         {
             "regexp": "<[^>]+data-react"
+        },
+        {
+            "search": "script",
+            "regexp": "react(?:-with-addons)?[.-]([\\d.]*\\d)[^/]*\\.js",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "/([\\d.]+)/react(?:\\.min)?\\.js",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "^react\\b.*\\.js"
         }
     ]
 }

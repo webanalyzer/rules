@@ -4,6 +4,11 @@
     "matches": [
         {
             "regexp": "<style[^>]+[^<]+#cf-hcaptcha-container[^<]+</style>"
+        },
+        {
+            "search": "script",
+            "regexp": "https://hcaptcha.com/([\\d]+?)/api.js",
+            "offset": 1
         }
     ]
 }
