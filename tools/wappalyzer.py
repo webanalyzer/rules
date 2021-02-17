@@ -7,7 +7,11 @@ import json
 
 
 def parse_value(value):
-    value_list = value.split("\\;")
+    if isinstance(value, basestring):
+        value_list = value.split("\\;")
+    else:
+        value_list = value
+
     r = {
         'regexp': value_list[0] if value_list[0] else ".*",
     }
