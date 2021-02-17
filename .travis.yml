@@ -17,7 +17,7 @@ before_install:
   - git clone --depth=1 git@github.com:webanalyzer/rules.git
 
 install:
-  - wget https://raw.githubusercontent.com/AliasIO/Wappalyzer/master/src/apps.json
+  - wget https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/technologies.json -O apps.json
   - git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb
   - python tools/wappalyzer.py ./ ./rules/wappalyzer
   - ruby tools/whatweb.rb ./WhatWeb/plugins/ ./rules/whatweb/
