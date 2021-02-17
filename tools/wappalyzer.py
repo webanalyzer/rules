@@ -7,7 +7,7 @@ import json
 
 
 def parse_value(value):
-    if isinstance(value, basestring):
+    if isinstance(value, str):
         value_list = value.split("\\;")
     else:
         value_list = value
