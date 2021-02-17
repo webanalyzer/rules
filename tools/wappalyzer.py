@@ -152,7 +152,7 @@ def parse_rules(src, dst):
         'cookies': parse_cookies,
     }
 
-    apps = c['apps']
+    apps = c['technologies']
     for name in apps:
         matches = []
         for key in apps[name]:
