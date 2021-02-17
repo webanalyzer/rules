@@ -98,12 +98,12 @@ def parse_html(rule):
     return matches
 
 
-def parse_script(rule):
+def parse_scripts(rule):
     matches = []
-    if isinstance(rule['script'], str):
-        values = [rule['script']]
+    if isinstance(rule['scripts'], str):
+        values = [rule['scripts']]
     else:
-        values = rule['script']
+        values = rule['scripts']
 
     for value in values:
         value = parse_value(value)
@@ -152,7 +152,7 @@ def parse_rules(src, dst):
         'headers': parse_headers,
         'html': parse_html,
         'meta': parse_meta,
-        'script': parse_script,
+        'scripts': parse_scripts,
         'cookies': parse_cookies,
     }
 
