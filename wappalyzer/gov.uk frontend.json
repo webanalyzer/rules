@@ -3,10 +3,16 @@
     "website": "https://design-system.service.gov.uk/",
     "matches": [
         {
-            "regexp": "<body[^>]+govuk-template__body"
+            "regexp": "<link[^>]* href=[^>]*?govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.css",
+            "offset": 1
         },
         {
-            "regexp": "<a[^>]+govuk-link"
+            "regexp": "<body[^>]+govuk-template__body",
+            "certainty": 80
+        },
+        {
+            "regexp": "<a[^>]+govuk-link",
+            "certainty": 10
         }
     ]
 }

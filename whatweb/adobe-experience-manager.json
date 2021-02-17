@@ -1,0 +1,33 @@
+{
+    "name": "Adobe-Experience-Manager",
+    "author": "Chad Brigance @ChadBrigance, wh1tenoise @wh1tenoise2",
+    "version": "0.1",
+    "description": "Adobe Experience Manager is an enterprise Content Management System (CMS) by Adobe.",
+    "website": "https://www.adobe.com/marketing/experience-manager.html",
+    "matches": [
+        {
+            "name": "div class parbase",
+            "regexp": "(?-mix:<div class=\\\"[^\\\"]*parbase)"
+        },
+        {
+            "name": "div data-component-path jcr",
+            "regexp": "(?-mix:<div[^>]+data-component-path=\\\"[^\\\"+]jcr:)"
+        },
+        {
+            "name": "div class aem-Grid",
+            "regexp": "(?-mix:<div class=\\\"[^\\\"]*aem-Grid)"
+        },
+        {
+            "name": "/etc/designs/",
+            "regexp": "(?-mix:<script type=\"text\\/javascript\" src=\"\\/etc\\/designs\\/)"
+        },
+        {
+            "name": "/etc/clientlibs/",
+            "regexp": "(?-mix:<script type=\"text\\/javascript\" src=\"\\/etc\\/clientlibs\\/)"
+        },
+        {
+            "name": "/etc.clientlibs/",
+            "regexp": "(?-mix:<script type=\"text\\/javascript\" src=\"\\/etc\\.clientlibs\\/)"
+        }
+    ]
+}

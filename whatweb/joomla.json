@@ -1,10 +1,15 @@
 {
     "name": "Joomla",
-    "author": "Andrew Horton, Brendan Coles <bcoles@gmail.com>, @anozoozian",
-    "version": "0.9",
+    "author": "Andrew Horton, Brendan Coles <bcoles@gmail.com>, @anozoozian, Juanan Pereira",
+    "version": "1.0",
     "description": "Opensource CMS written in PHP. Aggressive version detection compares just 5 files, checks for version 1.0.0 up to 3.6.4",
     "website": "http://joomla.org",
     "matches": [
+        {
+            "url": "/administrator/manifests/files/joomla.xml",
+            "regexp": "(?-mix:<version>(.*?)<\\/version>)",
+            "offset": 1
+        },
         {
             "version": "1.0",
             "regexp": "(?-mix:<meta name=\"Generator\" content=\"Joomla! - Copyright \\(C\\) 200[0-9] - 200[0-9] Open Source Matters. All rights reserved.\" \\/>)"

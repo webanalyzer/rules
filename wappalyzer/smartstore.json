@@ -3,16 +3,23 @@
     "website": "https://www.smartstore.com",
     "matches": [
         {
+            "search": "cookies[SMARTSTORE.CUSTOMER]",
+            "regexp": ".*"
+        },
+        {
             "search": "cookies[SMARTSTORE.VISITOR]",
             "regexp": ".*"
         },
         {
-            "regexp": "<!--Powered by Smartstore - https://www\\.smartstore\\.com-->"
+            "regexp": "<!--Powered by Smart[sS]tore"
+        },
+        {
+            "regexp": "<meta property=\"sm:pagedata\""
         },
         {
             "search": "meta[generator]",
-            "regexp": "^Smartstore (.+)$",
-            "offset": 1
+            "regexp": "^Smart[sS]tore(.NET)? (.+)$",
+            "offset": 2
         }
     ],
     "implies": "Microsoft ASP.NET"

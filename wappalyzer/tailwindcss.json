@@ -3,7 +3,11 @@
     "website": "https://tailwindcss.com/",
     "matches": [
         {
-            "regexp": "<link[^>]+?href=\"[^\"]+tailwindcss(?:\\.min)?\\.css"
+            "regexp": "<link[^>]+?href=\"[^\"]+tailwindcss[@|/][a-z]+/tailwind(?:.min)?.css"
+        },
+        {
+            "regexp": "<link[^>]+?href=\"[^\"]+tailwindcss[@|/](?:\\^)?([\\d.]+)(?:/[a-z]+)?/(?:tailwind|base|components|utilities)(?:\\.min)?\\.css",
+            "offset": 1
         }
     ]
 }

@@ -1,0 +1,22 @@
+{
+    "name": "Apache-Flink",
+    "author": "Juanan Pereira",
+    "version": "0.1",
+    "description": "Apache Flink is an open-source, unified stream-processing and batch-processing framework developed by the Apache Software Foundation",
+    "website": "https://flink.apache.org/",
+    "matches": [
+        {
+            "name": "Apache Flink in title",
+            "regexp": "(?-mix:<title>Apache Flink Web Dashboard<\\/title>)"
+        },
+        {
+            "name": "Flink logo",
+            "url": "/images/flink-logo.png"
+        },
+        {
+            "url": "/overview",
+            "regexp": "(?-mix:\"flink-version\":\"([^\"]+)\")",
+            "offset": 1
+        }
+    ]
+}

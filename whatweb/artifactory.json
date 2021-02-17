@@ -1,0 +1,25 @@
+{
+    "name": "Artifactory",
+    "author": "bcoles",
+    "version": "0.1",
+    "description": "JFrog Artifactory enterprise universal repository manager supports all major packages, enterprise ready secure, clustered, HA, Docker registry, multi-site replication and scalable.",
+    "website": "https://jfrog.com/artifactory/",
+    "matches": [
+        {
+            "text": "<html ng-app=\"artifactory.ui\">"
+        },
+        {
+            "text": "<body jf-body-class ng-class=\"{'load-complete':jfBodyClass.isLoadCompleted()}\">"
+        },
+        {
+            "url": "/ui/auth/screen/footer",
+            "regexp": "(?-mix:\"buildNumber\":\"([\\d\\.]+ rev \\d+)\")",
+            "offset": 1
+        },
+        {
+            "url": "/artifactory/ui/auth/screen/footer",
+            "regexp": "(?-mix:\"buildNumber\":\"([\\d\\.]+ rev \\d+)\")",
+            "offset": 1
+        }
+    ]
+}
