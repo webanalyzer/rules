@@ -1,0 +1,25 @@
+{
+    "name": "Perl",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton",
+    "version": "0.3",
+    "description": "Perl is a highly capable, feature-rich programming language with over 22 years of development.",
+    "website": "http://www.perl.org/",
+    "matches": [
+        {
+            "name": "HTTP Server Header",
+            "search": "headers[server]",
+            "regexp": "(?i-mx:[^\\r^\\n]*Perl\\/v([^\\s^\\r^\\n]+))",
+            "offset": 1
+        },
+        {
+            "name": "HTTP Content-Type Header",
+            "regexp": "(?i-mx:application\\/perl)",
+            "search": "headers[content-type]"
+        },
+        {
+            "name": "File extension",
+            "regexp": "(?-mix:^(pl)$)",
+            "search": "uri.extension"
+        }
+    ]
+}

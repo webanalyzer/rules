@@ -1,0 +1,20 @@
+{
+    "name": "Python",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton",
+    "version": "0.2",
+    "description": "Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.",
+    "website": "http://www.python.org/",
+    "matches": [
+        {
+            "name": "# Server # Version Detection",
+            "search": "headers[server]",
+            "regexp": "(?-mix:[^\\r^\\n]* Python\\/([^\\s^\\r^\\n]+))",
+            "offset": 1
+        },
+        {
+            "name": "File extension",
+            "regexp": "(?-mix:^(py|pyc|py3|pyo|pyw|pyx|pyd|pxd|pyi|pyz|pywz|rpy|pyde|pyp|pyt|xpy|ipynb)$)",
+            "search": "uri.extension"
+        }
+    ]
+}

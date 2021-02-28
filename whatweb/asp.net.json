@@ -1,7 +1,7 @@
 {
     "name": "ASP_NET",
-    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton, Bhavin Senjaliya, Andrew Horton",
-    "version": "0.8",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton, Bhavin Senjaliya",
+    "version": "0.9",
     "description": "ASP.NET is a free web framework that enables great Web applications. Used by millions of developers, it runs some of the biggest sites in the world.",
     "website": "https://www.asp.net/",
     "matches": [
@@ -78,6 +78,11 @@
         {
             "search": "body",
             "text": "<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\""
+        },
+        {
+            "name": "File extension",
+            "regexp": "(?-mix:^(asp|aspx|ashx)$)",
+            "search": "uri.extension"
         }
     ]
 }

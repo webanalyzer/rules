@@ -1,7 +1,7 @@
 {
     "name": "Ruby",
     "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton",
-    "version": "0.3",
+    "version": "0.4",
     "description": "Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.",
     "website": "http://www.ruby-lang.org/",
     "matches": [
@@ -27,6 +27,11 @@
             "search": "headers[server]",
             "regexp": "(?-mix:^WEBrick\\/[\\d\\.]+ \\(Ruby\\/([\\d\\.]+)\\/[\\d]{4}-[\\d]{2}-[\\d]{2}\\))",
             "offset": 1
+        },
+        {
+            "name": "File extension",
+            "regexp": "(?-mix:^(rb|rhtml)$)",
+            "search": "uri.extension"
         }
     ]
 }

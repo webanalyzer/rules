@@ -1,7 +1,7 @@
 {
     "name": "ColdFusion",
-    "author": "Brendan Coles <bcoles@gmail.com>",
-    "version": "0.3",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton @urbanadventurer",
+    "version": "0.4",
     "description": "Adobe ColdFusion application server and software enables developers to rapidly build, deploy, and maintain robust Internet applications for the enterprise.",
     "website": "http://www.adobe.com/products/coldfusion/",
     "matches": [
@@ -44,6 +44,11 @@
         {
             "search": "headers[set-cookie]",
             "regexp": "(?-mix:CFAUTHORIZATION_cfadmin=)"
+        },
+        {
+            "name": "File extension",
+            "regexp": "(?-mix:^(cfm|cfc)$)",
+            "search": "uri.extension"
         }
     ]
 }

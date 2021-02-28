@@ -1,7 +1,7 @@
 {
     "name": "Adobe-Flash",
     "author": "Caleb Anderson, Brendan Coles <bcoles@gmail.com>, Andrew Horton",
-    "version": "0.3",
+    "version": "0.4",
     "description": "This plugin identifies instances of embedded adobe flash files.",
     "website": "https://get.adobe.com/flashplayer/",
     "matches": [
@@ -19,6 +19,11 @@
         },
         {
             "regexp": "(?-mix:\\.embedSWF[\\s]*\\([\\s]*[\"']?[^'^\"]+)"
+        },
+        {
+            "name": "File extension",
+            "regexp": "(?-mix:^(fla|flv|swf|swt|swc)$)",
+            "search": "uri.extension"
         }
     ]
 }

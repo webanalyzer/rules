@@ -1,0 +1,67 @@
+{
+    "name": "Java",
+    "author": "Brendan Coles <bcoles@gmail.com>, Andrew Horton",
+    "version": "0.3",
+    "description": "Java allows you to play online games, chat with people around the world, calculate your mortgage interest, and view images in 3D, just to name a few. It's also integral to the intranet applications and other e-business solutions that are the foundation of corporate computing.",
+    "website": "http://www.java.com/",
+    "matches": [
+        {
+            "name": "JSESSIONID Cookie",
+            "search": "headers[set-cookie]",
+            "regexp": "(?i-mx:JSESSIONID=[^;]{0,32};[\\s]?path=\\/)"
+        },
+        {
+            "name": "X-Powered-By # JSP Version Detection",
+            "search": "headers[x-powered-by]",
+            "regexp": "(?-mix:JSP\\/([\\d\\.]+))",
+            "offset": 1
+        },
+        {
+            "name": "X-Powered-By # Servlet Version Detection",
+            "search": "headers[x-powered-by]",
+            "regexp": "(?i-mx:(Servlet\\/[\\d\\.]+))"
+        },
+        {
+            "name": "X-Powered-By # JRE Version Detection",
+            "search": "headers[x-powered-by]",
+            "regexp": "(?-mix:(JRE\\/[\\d\\.\\-\\_]+))"
+        },
+        {
+            "name": "Server # Version Detection",
+            "search": "headers[server]",
+            "regexp": "(?-mix:java\\/([\\d\\.\\-\\_]+))",
+            "offset": 1
+        },
+        {
+            "name": "Server # Version Detection",
+            "search": "headers[server]",
+            "regexp": "(?-mix:(JDK [\\d\\.\\-\\_]+))"
+        },
+        {
+            "name": "Servlet-Engine # JSP Version Detection",
+            "search": "headers[servlet-engine]",
+            "regexp": "(?-mix:\\((.*?); (.*?); Java (.*?); (.*?); java.vendor=[^\\)]{0,50}\\))"
+        },
+        {
+            "name": "Servlet-Engine # Servlet Version Detection",
+            "search": "headers[servlet-engine]",
+            "regexp": "(?-mix:\\((.*?); (.*?); Java (.*?); (.*?); java.vendor=[^\\)]{0,50}\\))"
+        },
+        {
+            "name": "Servlet-Engine # Version Detection",
+            "search": "headers[servlet-engine]",
+            "offset": 2,
+            "regexp": "(?-mix:\\((.*?); (.*?); Java (.*?); (.*?); java.vendor=[^\\)]{0,50}\\))"
+        },
+        {
+            "name": "Servlet-Engine # OS Detection",
+            "search": "headers[servlet-engine]",
+            "regexp": "(?-mix:\\((.*?); (.*?); Java (.*?); (.*?); java.vendor=[^\\)]{0,50}\\))"
+        },
+        {
+            "name": "File extension",
+            "regexp": "(?-mix:^(jsp|jpx|wss|do)$)",
+            "search": "uri.extension"
+        }
+    ]
+}
