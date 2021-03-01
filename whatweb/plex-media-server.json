@@ -1,0 +1,29 @@
+{
+    "name": "Plex-Media-Server",
+    "author": "Andrew Horton",
+    "version": "0.1",
+    "description": "Plex Media Server (PMS) is the back-end media server component of Plex, free of charge. It organizes audio and visual content from personal media libraries and streams it to their player counterparts, either on the same machine, the same local area network, or over the Internet. It can run on Windows, macOS, Linux, FreeBSD, NAS devices, or on Nvidia Shield TV.",
+    "website": "https://www.plex.tv/",
+    "matches": [
+        {
+            "name": "X-Plex-Protocol header",
+            "text": "",
+            "search": "header[X-Plex-Protocol]"
+        },
+        {
+            "name": "X-Plex-Content-Original-Length header",
+            "text": "",
+            "search": "header[X-Plex-Content-Original-Length]"
+        },
+        {
+            "name": "XML MediaGrabber tag",
+            "text": "<MediaGrabber identifier=\"tv.plex.dvblex\""
+        },
+        {
+            "name": "Version in stylesheet filename",
+            "url": "/web/index.html",
+            "regexp": "(?-mix:<link rel=\"stylesheet\" href=\"\\/web\\/chunk-[\\d]+-[a-f0-9]+-plex-([0-9\\.]+)-[a-z0-9]+\\.css\">)",
+            "offset": 1
+        }
+    ]
+}
