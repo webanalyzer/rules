@@ -44,18 +44,6 @@ jobs:
         git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb hello_whatweb
         ruby tools/whatweb.rb ./hello_whatweb/plugins/ ./whatweb/
         rm -rf hello_whatweb
-        
-    - name: run wappalyzer
-      run: |
-        git clone -b master --depth=1 https://github.com/AliasIO/wappalyzer hello_wappalyzer
-        python tools/wappalyzer.py ./hello_wappalyzer/ ./wappalyzer
-        rm apps.json
-
-    - name: run whatweb
-      run: |
-        git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb hello_whatweb
-        ruby tools/whatweb.rb ./hello_whatweb/plugins/ ./whatweb/
-        rm -rf hello
 
     - name: commit
       run: |
