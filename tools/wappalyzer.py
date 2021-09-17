@@ -145,8 +145,8 @@ def parse_meta(rule):
 def parse_rules(src, dst):
     curdir = os.getcwd()
 
-    with open(os.path.join(curdir, src, "apps.json")) as fd:
-        c = json.load(fd)
+    with open(src) as fd:
+        apps = json.load(fd)
 
     m = {
         'headers': parse_headers,
@@ -156,7 +156,6 @@ def parse_rules(src, dst):
         'cookies': parse_cookies,
     }
 
-    apps = c['technologies']
     for name in apps:
         matches = []
         for key in apps[name]:
@@ -190,4 +189,8 @@ if __name__ == '__main__':
         print("[*] Usage: %s src_dir dst_dir" % sys.argv[0])
         sys.exit(-1)
 
-    parse_rules(sys.argv[1], sys.argv[2])
+    for i in os.listdir(sys.argv[1]):
+        try:
+            parse_rules(os.path.join(sys.argv[1], i), sys.argv[2])
+        except Exception as e:
+            print("parse %s error: %s" % (i, e))
