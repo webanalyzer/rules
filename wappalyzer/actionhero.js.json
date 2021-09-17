@@ -1,15 +1,15 @@
 {
-    "name": "actionhero.js",
     "matches": [
         {
-            "regexp": "actionheroClient\\.js",
-            "search": "script"
+            "search": "headers[x-powered-by]",
+            "regexp": "actionhero API"
         },
         {
-            "regexp": "actionhero API",
-            "search": "headers[x-powered-by]"
+            "search": "script",
+            "regexp": "actionheroClient\\.js"
         }
     ],
     "implies": "Node.js",
+    "name": "actionhero.js",
     "website": "http://www.actionherojs.com"
 }

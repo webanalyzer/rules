@@ -1,14 +1,14 @@
 {
-    "name": "Unbounce",
     "matches": [
         {
-            "regexp": "ubembed\\.com",
-            "search": "script"
+            "search": "headers[x-unbounce-pageid]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-unbounce-pageid]"
+            "search": "script",
+            "regexp": "ubembed\\.com"
         }
     ],
+    "name": "Unbounce",
     "website": "http://unbounce.com"
 }

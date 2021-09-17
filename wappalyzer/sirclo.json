@@ -1,14 +1,14 @@
 {
-    "name": "Sirclo",
     "matches": [
         {
-            "regexp": "template\\.sirclocdn\\.com/",
-            "search": "script"
+            "search": "headers[x-powered-by]",
+            "regexp": "Sirclo"
         },
         {
-            "regexp": "Sirclo",
-            "search": "headers[x-powered-by]"
+            "search": "script",
+            "regexp": "template\\.sirclocdn\\.com/"
         }
     ],
+    "name": "Sirclo",
     "website": "https://sirclo.com/"
 }

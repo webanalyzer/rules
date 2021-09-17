@@ -1,14 +1,14 @@
 {
-    "name": "Alpine.js",
     "matches": [
-        {
-            "regexp": "/alpine(?:\\.min)?\\.js",
-            "search": "script"
-        },
         {
             "regexp": "<[^>]+[^\\w-]x-data[^\\w-][^<]+",
             "certainty": 75
+        },
+        {
+            "search": "script",
+            "regexp": "/alpine(?:\\.min)?\\.js"
         }
     ],
+    "name": "Alpine.js",
     "website": "https://github.com/alpinejs/alpine"
 }

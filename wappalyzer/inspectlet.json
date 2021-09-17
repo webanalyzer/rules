@@ -1,13 +1,13 @@
 {
-    "name": "Inspectlet",
     "matches": [
         {
-            "regexp": "cdn\\.inspectlet\\.com",
-            "search": "script"
+            "regexp": "<!-- (?:Begin|End) Inspectlet Embed Code -->"
         },
         {
-            "regexp": "<!-- (?:Begin|End) Inspectlet Embed Code -->"
+            "search": "script",
+            "regexp": "cdn\\.inspectlet\\.com"
         }
     ],
+    "name": "Inspectlet",
     "website": "https://www.inspectlet.com/"
 }

@@ -1,13 +1,13 @@
 {
-    "name": "ShinyStat",
     "matches": [
         {
-            "regexp": "^https?://codice(?:business|ssl|pro|isp)?\\.shinystat\\.com/cgi-bin/getcod\\.cgi",
-            "search": "script"
+            "regexp": "<img[^>]*\\s+src=['\"]?https?://www\\.shinystat\\.com/cgi-bin/shinystat\\.cgi\\?[^'\"\\s>]*['\"\\s/>]"
         },
         {
-            "regexp": "<img[^>]*\\s+src=['\"]?https?://www\\.shinystat\\.com/cgi-bin/shinystat\\.cgi\\?[^'\"\\s>]*['\"\\s/>]"
+            "search": "script",
+            "regexp": "^https?://codice(?:business|ssl|pro|isp)?\\.shinystat\\.com/cgi-bin/getcod\\.cgi"
         }
     ],
+    "name": "ShinyStat",
     "website": "http://shinystat.com"
 }

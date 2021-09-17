@@ -1,14 +1,14 @@
 {
-    "name": "Epoch",
     "matches": [
         {
-            "regexp": "epoch(?:\\.min)?\\.js",
-            "search": "script"
+            "regexp": "<link[^>]+?href=\"[^\"]+epoch(?:\\.min)?\\.css"
         },
         {
-            "regexp": "<link[^>]+?href=\"[^\"]+epoch(?:\\.min)?\\.css"
+            "search": "script",
+            "regexp": "epoch(?:\\.min)?\\.js"
         }
     ],
     "implies": "D3",
+    "name": "Epoch",
     "website": "https://fastly.github.io/epoch"
 }

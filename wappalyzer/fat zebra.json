@@ -1,16 +1,16 @@
 {
-    "name": "Fat Zebra",
     "matches": [
-        {
-            "regexp": "paynow\\.pmnts\\.io",
-            "search": "script"
-        },
         {
             "regexp": "<(?:iframe|img|form)[^>]+paynow\\.pmnts\\.io"
         },
         {
             "regexp": "<(?:iframe)[^>]+FatZebraFrame"
+        },
+        {
+            "search": "script",
+            "regexp": "paynow\\.pmnts\\.io"
         }
     ],
+    "name": "Fat Zebra",
     "website": "https://www.fatzebra.com/"
 }

@@ -1,15 +1,15 @@
 {
-    "name": "BOOM",
     "matches": [
         {
-            "regexp": "^boom site builder$",
-            "search": "meta[generator]"
+            "search": "headers[x-supplied-by]",
+            "regexp": "MANA"
         },
         {
-            "regexp": "MANA",
-            "search": "headers[x-supplied-by]"
+            "search": "meta[generator]",
+            "regexp": "^boom site builder$"
         }
     ],
     "implies": "WordPress",
+    "name": "BOOM",
     "website": "http://manaandisheh.com"
 }

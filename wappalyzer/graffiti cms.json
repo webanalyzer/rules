@@ -1,20 +1,20 @@
 {
-    "name": "Graffiti CMS",
     "matches": [
         {
-            "regexp": "/graffiti\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[graffitibot]"
-        },
-        {
-            "regexp": "Graffiti CMS ([^\"]+)",
+            "offset": 1,
             "search": "meta[generator]",
-            "offset": 1
+            "regexp": "Graffiti CMS ([^\"]+)"
+        },
+        {
+            "search": "cookies[graffitibot]",
+            "regexp": ".*"
+        },
+        {
+            "search": "script",
+            "regexp": "/graffiti\\.js"
         }
     ],
     "implies": "Microsoft ASP.NET",
+    "name": "Graffiti CMS",
     "website": "http://graffiticms.codeplex.com"
 }

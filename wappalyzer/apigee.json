@@ -1,13 +1,13 @@
 {
-    "name": "Apigee",
     "matches": [
         {
-            "regexp": "/profiles/apigee",
-            "search": "script"
+            "regexp": "<script>[^>]{0,50}script src=[^>]/profiles/apigee"
         },
         {
-            "regexp": "<script>[^>]{0,50}script src=[^>]/profiles/apigee"
+            "search": "script",
+            "regexp": "/profiles/apigee"
         }
     ],
+    "name": "Apigee",
     "website": "https://cloud.google.com/apigee/"
 }

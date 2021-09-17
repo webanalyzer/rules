@@ -1,23 +1,23 @@
 {
-    "name": "ImpressCMS",
     "matches": [
         {
-            "regexp": "include/linkexternal\\.js",
-            "search": "script"
+            "search": "meta[generator]",
+            "regexp": "ImpressCMS"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ImpressCMS]"
+            "search": "cookies[ICMSSession]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ICMSSession]"
+            "search": "cookies[ImpressCMS]",
+            "regexp": ".*"
         },
         {
-            "regexp": "ImpressCMS",
-            "search": "meta[generator]"
+            "search": "script",
+            "regexp": "include/linkexternal\\.js"
         }
     ],
     "implies": "PHP",
+    "name": "ImpressCMS",
     "website": "http://www.impresscms.org"
 }

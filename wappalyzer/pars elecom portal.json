@@ -1,13 +1,12 @@
 {
-    "name": "Pars Elecom Portal",
     "matches": [
         {
-            "regexp": "Pars Elecom Portal",
-            "search": "meta[copyright]"
+            "search": "headers[x-powered-by]",
+            "regexp": "Pars Elecom Portal"
         },
         {
-            "regexp": "Pars Elecom Portal",
-            "search": "headers[x-powered-by]"
+            "search": "meta[copyright]",
+            "regexp": "Pars Elecom Portal"
         }
     ],
     "implies": [
@@ -15,5 +14,6 @@
         "IIS",
         "Windows Server"
     ],
+    "name": "Pars Elecom Portal",
     "website": "http://parselecom.net"
 }

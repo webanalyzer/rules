@@ -1,16 +1,16 @@
 {
-    "name": "Slick",
     "matches": [
         {
-            "regexp": "(?:/([\\d.]+))?/slick(?:\\.min)?\\.js",
-            "search": "script",
-            "offset": 1
+            "offset": 1,
+            "regexp": "<link [^>]+(?:/([\\d.]+)/)?slick-theme\\.css"
         },
         {
-            "regexp": "<link [^>]+(?:/([\\d.]+)/)?slick-theme\\.css",
-            "offset": 1
+            "offset": 1,
+            "search": "script",
+            "regexp": "(?:/([\\d.]+))?/slick(?:\\.min)?\\.js"
         }
     ],
     "implies": "jQuery",
+    "name": "Slick",
     "website": "https://kenwheeler.github.io/slick"
 }

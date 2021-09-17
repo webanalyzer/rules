@@ -1,14 +1,14 @@
 {
-    "name": "Moguta.CMS",
     "matches": [
         {
-            "regexp": "mg-(?:core|plugins|templates)/",
-            "search": "script"
+            "regexp": "<link[^>]+href=[\"'][^\"]+mg-(?:core|plugins|templates)/"
         },
         {
-            "regexp": "<link[^>]+href=[\"'][^\"]+mg-(?:core|plugins|templates)/"
+            "search": "script",
+            "regexp": "mg-(?:core|plugins|templates)/"
         }
     ],
     "implies": "PHP",
+    "name": "Moguta.CMS",
     "website": "https://moguta.ru"
 }

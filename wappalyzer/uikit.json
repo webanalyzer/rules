@@ -1,13 +1,13 @@
 {
-    "name": "UIKit",
     "matches": [
         {
-            "regexp": "uikit.*\\.js",
-            "search": "script"
+            "regexp": "<[^>]+class=\"[^\"]*(?:uk-container|uk-section)"
         },
         {
-            "regexp": "<[^>]+class=\"[^\"]*(?:uk-container|uk-section)"
+            "search": "script",
+            "regexp": "uikit.*\\.js"
         }
     ],
+    "name": "UIKit",
     "website": "https://getuikit.com"
 }

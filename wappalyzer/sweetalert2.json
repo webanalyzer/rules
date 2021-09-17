@@ -1,27 +1,27 @@
 {
-    "name": "SweetAlert2",
     "matches": [
         {
-            "regexp": "sweetalert2(?:\\.all)?(?:\\.min)?\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "/npm/sweetalert2@([\\d.]+)",
-            "search": "script",
-            "offset": 1
-        },
-        {
-            "regexp": "sweetalert2@([\\d.]+)/dist/sweetalert2(?:\\.all)(?:\\.min)\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "limonte-sweetalert2/([\\d.]+)/sweetalert2(?:\\.all)(?:\\.min)\\.js",
-            "search": "script"
-        },
-        {
             "regexp": "<link[^>]+?href=\"[^\"]+sweetalert2(?:\\.min)?\\.css"
+        },
+        {
+            "search": "script",
+            "regexp": "sweetalert2(?:\\.all)?(?:\\.min)?\\.js"
+        },
+        {
+            "offset": 1,
+            "search": "script",
+            "regexp": "/npm/sweetalert2@([\\d.]+)"
+        },
+        {
+            "search": "script",
+            "regexp": "sweetalert2@([\\d.]+)/dist/sweetalert2(?:\\.all)(?:\\.min)\\.js"
+        },
+        {
+            "search": "script",
+            "regexp": "limonte-sweetalert2/([\\d.]+)/sweetalert2(?:\\.all)(?:\\.min)\\.js"
         }
     ],
-    "website": "https://sweetalert2.github.io/",
-    "excludes": "SweetAlert"
+    "excludes": "SweetAlert",
+    "name": "SweetAlert2",
+    "website": "https://sweetalert2.github.io/"
 }

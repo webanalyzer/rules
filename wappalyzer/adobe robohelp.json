@@ -1,15 +1,15 @@
 {
-    "name": "Adobe RoboHelp",
     "matches": [
         {
-            "regexp": "(?:wh(?:utils|ver|proxy|lang|topic|msg)|ehlpdhtm)\\.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "(?:wh(?:utils|ver|proxy|lang|topic|msg)|ehlpdhtm)\\.js"
         },
         {
-            "regexp": "^Adobe RoboHelp(?: ([\\d]+))?",
+            "offset": 1,
             "search": "meta[generator]",
-            "offset": 1
+            "regexp": "^Adobe RoboHelp(?: ([\\d]+))?"
         }
     ],
+    "name": "Adobe RoboHelp",
     "website": "http://adobe.com/products/robohelp.html"
 }
