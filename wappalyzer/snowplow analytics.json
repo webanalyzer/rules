@@ -1,40 +1,40 @@
 {
-    "website": "https://snowplowanalytics.com",
+    "name": "Snowplow Analytics",
     "matches": [
         {
-            "search": "cookies[_sp_id]",
-            "regexp": ".*"
-        },
-        {
+            "regexp": "sp\\.js",
             "certainty": 50,
-            "search": "cookies[sp]",
-            "regexp": ".*"
+            "search": "script"
         },
         {
+            "regexp": "d1fc8wv8zag5ca\\.cloudfront\\.net/.+/sp\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": "cdn\\.jsdelivr\\.net/gh/snowplow/sp-js-assets@(?:.+)/sp\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": "cdnjs\\.cloudflare\\.com/ajax/libs/snowplow/(?:.+)/sp.*\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": "unpkg.com/@snowplow/javascript-tracker@(?:.+)/dist/sp.*\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": "cdn\\.jsdelivr\\.net/npm/@snowplow/javascript-tracker@(?:.+)/dist/sp\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_sp_id]"
+        },
+        {
+            "regexp": ".*",
             "certainty": 50,
-            "search": "script",
-            "regexp": "sp\\.js"
-        },
-        {
-            "search": "script",
-            "regexp": "d1fc8wv8zag5ca\\.cloudfront\\.net/.+/sp\\.js"
-        },
-        {
-            "search": "script",
-            "regexp": "cdn\\.jsdelivr\\.net/gh/snowplow/sp-js-assets@(?:.+)/sp\\.js"
-        },
-        {
-            "search": "script",
-            "regexp": "cdnjs\\.cloudflare\\.com/ajax/libs/snowplow/(?:.+)/sp.*\\.js"
-        },
-        {
-            "search": "script",
-            "regexp": "unpkg.com/@snowplow/javascript-tracker@(?:.+)/dist/sp.*\\.js"
-        },
-        {
-            "search": "script",
-            "regexp": "cdn\\.jsdelivr\\.net/npm/@snowplow/javascript-tracker@(?:.+)/dist/sp\\.js"
+            "search": "cookies[sp]"
         }
     ],
-    "name": "Snowplow Analytics"
+    "website": "https://snowplowanalytics.com"
 }

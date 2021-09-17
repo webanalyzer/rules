@@ -1,15 +1,15 @@
 {
-    "website": "https://nodebb.org",
+    "name": "NodeBB",
     "matches": [
         {
-            "search": "script",
-            "regexp": "^/nodebb\\.min\\.js\\?"
+            "regexp": "^/nodebb\\.min\\.js\\?",
+            "search": "script"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^NodeBB$"
+            "regexp": "^NodeBB$",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "name": "NodeBB",
-    "implies": "Node.js"
+    "implies": "Node.js",
+    "website": "https://nodebb.org"
 }

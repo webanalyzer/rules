@@ -1,16 +1,16 @@
 {
-    "website": "https://developer.akamai.com/akamai-mpulse-real-user-monitoring-solution",
+    "name": "Akamai mPulse",
     "matches": [
         {
-            "search": "cookies[akaas_AB-Testing]",
-            "regexp": ".*"
+            "regexp": "<script>[\\s\\S]*?go-mpulse\\.net\\/boomerang[\\s\\S]*?</script>"
         },
         {
-            "regexp": "<script>[\\s\\S]*?go-mpulse\\.net\\/boomerang[\\s\\S]*?</script>"
+            "regexp": ".*",
+            "search": "cookies[akaas_AB-Testing]"
         }
     ],
-    "name": "Akamai mPulse",
     "implies": [
         "Boomerang"
-    ]
+    ],
+    "website": "https://developer.akamai.com/akamai-mpulse-real-user-monitoring-solution"
 }

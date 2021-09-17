@@ -1,17 +1,17 @@
 {
-    "website": "https://vigbo.com",
+    "name": "Vigbo",
     "matches": [
         {
-            "search": "cookies[_gphw_mode]",
-            "regexp": ".*"
+            "regexp": "(?:\\.vigbo\\.com|\\.gophotoweb\\.com)",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "(?:\\.vigbo\\.com|\\.gophotoweb\\.com)"
+            "regexp": ".*",
+            "search": "cookies[_gphw_mode]"
         },
         {
             "regexp": "<link[^>]* href=[^>]+(?:\\.vigbo\\.com|\\.gophotoweb\\.com)"
         }
     ],
-    "name": "Vigbo"
+    "website": "https://vigbo.com"
 }

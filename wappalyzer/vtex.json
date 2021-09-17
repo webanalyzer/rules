@@ -1,34 +1,34 @@
 {
-    "website": "https://vtex.com/",
+    "name": "VTEX",
     "matches": [
         {
-            "search": "cookies[VtexFingerPrint]",
-            "regexp": ".*"
+            "regexp": "io\\.vtex\\.com\\.br",
+            "search": "script"
         },
         {
-            "search": "cookies[vtex_session]",
-            "regexp": ".*"
+            "regexp": "^VTEX IO$",
+            "search": "headers[server]"
         },
         {
-            "search": "cookies[VtexWorkspace]",
-            "regexp": ".*"
+            "regexp": "vtex",
+            "search": "headers[powered]"
         },
         {
-            "search": "cookies[VtexStoreVersion]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[VtexWorkspace]"
         },
         {
-            "search": "headers[powered]",
-            "regexp": "vtex"
+            "regexp": ".*",
+            "search": "cookies[VtexStoreVersion]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^VTEX IO$"
+            "regexp": ".*",
+            "search": "cookies[vtex_session]"
         },
         {
-            "search": "script",
-            "regexp": "io\\.vtex\\.com\\.br"
+            "regexp": ".*",
+            "search": "cookies[VtexFingerPrint]"
         }
     ],
-    "name": "VTEX"
+    "website": "https://vtex.com/"
 }

@@ -1,15 +1,15 @@
 {
-    "website": "https://etherpad.org",
+    "name": "Etherpad",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/ep_etherpad-lite/"
+            "regexp": "/ep_etherpad-lite/",
+            "search": "script"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^Etherpad"
+            "regexp": "^Etherpad",
+            "search": "headers[server]"
         }
     ],
-    "name": "Etherpad",
-    "implies": "Node.js"
+    "implies": "Node.js",
+    "website": "https://etherpad.org"
 }

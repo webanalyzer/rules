@@ -1,19 +1,19 @@
 {
-    "website": "https://www.otrs.com",
+    "name": "otrs",
     "matches": [
         {
-            "search": "script",
-            "regexp": "^/otrs-web/js/"
+            "regexp": "^/otrs-web/js/",
+            "search": "script"
+        },
+        {
+            "regexp": "OTRS ([\\d.]+)",
+            "search": "headers[x-powered-by]",
+            "offset": 1
         },
         {
             "regexp": "<!--\\s+OTRS: Copyright"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "OTRS ([\\d.]+)",
-            "offset": 1
         }
     ],
-    "name": "otrs",
-    "implies": "Perl"
+    "implies": "Perl",
+    "website": "https://www.otrs.com"
 }
