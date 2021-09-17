@@ -1,18 +1,18 @@
 {
     "name": "Microsoft Word",
-    "website": "https://office.microsoft.com/word",
     "matches": [
+        {
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "Microsoft Word( [\\d.]+)?"
+        },
         {
             "search": "meta[ProgId]",
             "regexp": "^Word\\."
         },
         {
-            "search": "meta[generator]",
-            "regexp": "Microsoft Word( [\\d.]+)?",
-            "offset": 1
-        },
-        {
             "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:word\"|<w:WordDocument>|<div [^>]*class=\"?WordSection1[\" >]|<style[^>]*>[^>]*@page WordSection1)"
         }
-    ]
+    ],
+    "website": "https://office.microsoft.com/word"
 }
