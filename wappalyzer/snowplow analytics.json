@@ -1,18 +1,20 @@
 {
+    "name": "Snowplow Analytics",
+    "website": "https://snowplowanalytics.com",
     "matches": [
         {
             "search": "cookies[_sp_id]",
             "regexp": ".*"
         },
         {
-            "certainty": 50,
             "search": "cookies[sp]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "certainty": 50
         },
         {
-            "certainty": 50,
             "search": "script",
-            "regexp": "sp\\.js"
+            "regexp": "sp\\.js",
+            "certainty": 50
         },
         {
             "search": "script",
@@ -34,7 +36,5 @@
             "search": "script",
             "regexp": "cdn\\.jsdelivr\\.net/npm/@snowplow/javascript-tracker@(?:.+)/dist/sp\\.js"
         }
-    ],
-    "name": "Snowplow Analytics",
-    "website": "https://snowplowanalytics.com"
+    ]
 }

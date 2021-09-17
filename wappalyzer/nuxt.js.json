@@ -1,20 +1,20 @@
 {
-    "matches": [
-        {
-            "regexp": "<div [^>]*id=\"__nuxt\""
-        },
-        {
-            "regexp": "<script [^>]*>window\\.__NUXT__"
-        },
-        {
-            "search": "script",
-            "regexp": "/_nuxt/"
-        }
-    ],
     "implies": [
         "Vue.js",
         "Node.js"
     ],
     "name": "Nuxt.js",
-    "website": "https://nuxtjs.org"
+    "website": "https://nuxtjs.org",
+    "matches": [
+        {
+            "search": "script",
+            "regexp": "/_nuxt/"
+        },
+        {
+            "regexp": "<div [^>]*id=\"__nuxt\""
+        },
+        {
+            "regexp": "<script [^>]*>window\\.__NUXT__"
+        }
+    ]
 }

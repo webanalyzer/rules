@@ -1,15 +1,15 @@
 {
+    "name": "Nosto",
+    "website": "https://www.nosto.com",
     "matches": [
-        {
-            "offset": 1,
-            "search": "meta[nosto-version]",
-            "regexp": "([\\d.]+)"
-        },
         {
             "search": "script",
             "regexp": "connect\\.nosto\\.\\w+/"
+        },
+        {
+            "search": "meta[nosto-version]",
+            "regexp": "([\\d.]+)",
+            "offset": 1
         }
-    ],
-    "name": "Nosto",
-    "website": "https://www.nosto.com"
+    ]
 }
