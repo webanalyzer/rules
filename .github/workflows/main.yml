@@ -28,19 +28,46 @@ jobs:
         ruby-version: 2.6
         bundler-cache: true 
 
-    - name: setup env & install getproxy
+    - name: setup env
       run: |
         git config --global user.name "fate0"
         git config --global user.email "git@fatezero.org"
-        pip install git+https://github.com/fate0/getproxy.git@master
+
     - name: run wappalyzer
       run: |
         git clone -b master --depth=1 https://github.com/AliasIO/wappalyzer hello_wappalyzer
         python tools/wappalyzer.py ./hello_wappalyzer/src/technologies ./wappalyzer
         rm -rf hello_wappalyzer
+        
     - name: run whatweb
       run: |
         git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb hello_whatweb
         ruby tools/whatweb.rb ./hello_whatweb/plugins/ ./whatweb/
         rm -rf hello_whatweb
+        
+    - name: run wappalyzer
+      run: |
+        git clone -b master --depth=1 https://github.com/AliasIO/wappalyzer hello_wappalyzer
+        python tools/wappalyzer.py ./hello_wappalyzer/ ./wappalyzer
+        rm apps.json
+
+    - name: run whatweb
+      run: |
+        git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb hello_whatweb
+        ruby tools/whatweb.rb ./hello_whatweb/plugins/ ./whatweb/
+        rm -rf hello
+
+    - name: commit
+      run: |
+        git add .
+        git commit -m "Auto Update Rules" && date "+%Y.%m.%d" > VERSION || true
+        git add VERSION
+        git commit -m "Update version" || true
+    
+    - name: push
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: master
+        force: true
     
