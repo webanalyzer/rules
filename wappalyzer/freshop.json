@@ -1,14 +1,14 @@
 {
-    "website": "https://www.freshop.com",
     "matches": [
         {
-            "regexp": "asset(?:cdn)?\\.freshop\\.com/",
-            "search": "script"
+            "search": "meta[author]",
+            "regexp": "^Freshop, Inc\\.$"
         },
         {
-            "regexp": "^Freshop, Inc\\.$",
-            "search": "meta[author]"
+            "search": "script",
+            "regexp": "asset(?:cdn)?\\.freshop\\.com/"
         }
     ],
-    "name": "Freshop"
+    "name": "Freshop",
+    "website": "https://www.freshop.com"
 }

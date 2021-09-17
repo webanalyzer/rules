@@ -1,14 +1,14 @@
 {
-    "website": "http://www.digitalia.be/software/slimbox",
     "matches": [
         {
-            "regexp": "slimbox\\.js",
-            "search": "script"
+            "regexp": "<link [^>]*href=\"[^/]*slimbox(?:-rtl)?\\.css"
         },
         {
-            "regexp": "<link [^>]*href=\"[^/]*slimbox(?:-rtl)?\\.css"
+            "search": "script",
+            "regexp": "slimbox\\.js"
         }
     ],
     "implies": "MooTools",
-    "name": "Slimbox"
+    "name": "Slimbox",
+    "website": "http://www.digitalia.be/software/slimbox"
 }

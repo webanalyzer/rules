@@ -1,18 +1,17 @@
 {
-    "website": "http://odoo.com",
     "matches": [
         {
-            "regexp": "/web/js/(?:web\\.assets_common/|website\\.assets_frontend/)",
+            "certainty": 25,
+            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "Odoo"
+        },
+        {
+            "certainty": 25,
             "search": "script",
-            "certainty": 25
-        },
-        {
-            "regexp": "Odoo",
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)",
-            "certainty": 25
+            "regexp": "/web/js/(?:web\\.assets_common/|website\\.assets_frontend/)"
         }
     ],
     "implies": [
@@ -21,5 +20,6 @@
         "Node.js",
         "Less"
     ],
-    "name": "Odoo"
+    "name": "Odoo",
+    "website": "http://odoo.com"
 }

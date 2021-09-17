@@ -1,15 +1,15 @@
 {
-    "website": "https://www.ionos.com",
     "matches": [
         {
-            "regexp": "\\/\\/integration\\.mywebsite-editor\\.com.*\\.js",
-            "search": "script"
+            "search": "meta[generator]",
+            "regexp": "^.*MyWebsite.*$"
         },
         {
-            "regexp": "^.*MyWebsite.*$",
-            "search": "meta[generator]"
+            "search": "script",
+            "regexp": "\\/\\/integration\\.mywebsite-editor\\.com.*\\.js"
         }
     ],
     "implies": "Duda",
-    "name": "MyWebsite"
+    "name": "MyWebsite",
+    "website": "https://www.ionos.com"
 }

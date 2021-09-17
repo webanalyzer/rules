@@ -1,25 +1,25 @@
 {
-    "website": "http://drupalcommerce.org",
     "matches": [
         {
-            "regexp": "/modules/(?:contrib/)?commerce/js/conditions\\.js",
-            "search": "script",
-            "certainty": 50
-        },
-        {
-            "regexp": "/profiles/commerce_kickstart/modules/contrib/commerce/modules/checkout/commerce_checkout\\.js",
-            "search": "script",
-            "certainty": 50
-        },
-        {
-            "regexp": "/sites/(?:all|default)/modules/(?:contrib/)?commerce/modules/checkout/commerce_checkout\\.js",
-            "search": "script",
-            "certainty": 50
-        },
-        {
             "regexp": "<[^>]+(?:id=\"block[_-]commerce[_-]cart[_-]cart|class=\"commerce[_-]product[_-]field)"
+        },
+        {
+            "certainty": 50,
+            "search": "script",
+            "regexp": "/modules/(?:contrib/)?commerce/js/conditions\\.js"
+        },
+        {
+            "certainty": 50,
+            "search": "script",
+            "regexp": "/profiles/commerce_kickstart/modules/contrib/commerce/modules/checkout/commerce_checkout\\.js"
+        },
+        {
+            "certainty": 50,
+            "search": "script",
+            "regexp": "/sites/(?:all|default)/modules/(?:contrib/)?commerce/modules/checkout/commerce_checkout\\.js"
         }
     ],
     "implies": "Drupal",
-    "name": "Drupal Commerce"
+    "name": "Drupal Commerce",
+    "website": "http://drupalcommerce.org"
 }

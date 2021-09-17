@@ -1,14 +1,14 @@
 {
-    "website": "https://owlcarousel2.github.io/OwlCarousel2/",
     "matches": [
         {
-            "regexp": "owl\\.carousel.*\\.js",
-            "search": "script"
+            "regexp": "<link [^>]*href=\"[^\"]+owl\\.carousel(?:\\.min)?\\.css"
         },
         {
-            "regexp": "<link [^>]*href=\"[^\"]+owl\\.carousel(?:\\.min)?\\.css"
+            "search": "script",
+            "regexp": "owl\\.carousel.*\\.js"
         }
     ],
     "implies": "jQuery",
-    "name": "OWL Carousel"
+    "name": "OWL Carousel",
+    "website": "https://owlcarousel2.github.io/OwlCarousel2/"
 }

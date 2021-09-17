@@ -1,14 +1,14 @@
 {
-    "website": "http://jspwiki.org",
     "matches": [
         {
-            "regexp": "jspwiki",
-            "search": "script"
+            "regexp": "<html[^>]* xmlns:jspwiki="
         },
         {
-            "regexp": "<html[^>]* xmlns:jspwiki="
+            "search": "script",
+            "regexp": "jspwiki"
         }
     ],
     "implies": "Apache Tomcat",
-    "name": "Apache JSPWiki"
+    "name": "Apache JSPWiki",
+    "website": "http://jspwiki.org"
 }

@@ -1,14 +1,14 @@
 {
-    "website": "https://www.hcaptcha.com/",
     "matches": [
         {
             "regexp": "<style[^>]+[^<]+#cf-hcaptcha-container[^<]+</style>"
         },
         {
             "offset": 1,
-            "regexp": "https://hcaptcha.com/([\\d]+?)/api.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "https://hcaptcha.com/([\\d]+?)/api.js"
         }
     ],
-    "name": "hCaptcha"
+    "name": "hCaptcha",
+    "website": "https://www.hcaptcha.com/"
 }

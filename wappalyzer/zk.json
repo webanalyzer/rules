@@ -1,14 +1,14 @@
 {
-    "website": "http://zkoss.org",
     "matches": [
         {
-            "regexp": "zkau/",
-            "search": "script"
+            "regexp": "<!-- ZK [.\\d\\s]+-->"
         },
         {
-            "regexp": "<!-- ZK [.\\d\\s]+-->"
+            "search": "script",
+            "regexp": "zkau/"
         }
     ],
     "implies": "Java",
-    "name": "ZK"
+    "name": "ZK",
+    "website": "http://zkoss.org"
 }

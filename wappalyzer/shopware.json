@@ -1,42 +1,41 @@
 {
-    "website": "https://www.shopware.com",
     "matches": [
         {
-            "regexp": "^[\\w]{32}$",
-            "search": "headers[sw-context-token]"
+            "offset": 1,
+            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+"
         },
         {
-            "regexp": ".*",
-            "search": "headers[sw-version-id]"
+            "search": "headers[sw-language-id]",
+            "regexp": "^[a-fA-F0-9]{32}$"
         },
         {
-            "regexp": "^[a-fA-F0-9]{32}$",
-            "search": "headers[sw-language-id]"
+            "search": "headers[sw-context-token]",
+            "regexp": "^[\\w]{32}$"
         },
         {
-            "regexp": ".*",
-            "search": "headers[sw-invalidation-states]"
+            "search": "headers[sw-invalidation-states]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[sw-version-id]",
+            "regexp": ".*"
+        },
+        {
+            "search": "meta[application-name]",
+            "regexp": "Shopware"
         },
         {
             "offset": 1,
-            "regexp": "(?:(shopware)|/web/cache/[0-9]{10}_.+)\\.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "(?:(shopware)|/web/cache/[0-9]{10}_.+)\\.js"
         },
         {
-            "regexp": "/jquery\\.shopware\\.min\\.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "/jquery\\.shopware\\.min\\.js"
         },
         {
-            "regexp": "/engine/Shopware/",
-            "search": "script"
-        },
-        {
-            "regexp": "Shopware",
-            "search": "meta[application-name]"
-        },
-        {
-            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+",
-            "offset": 1
+            "search": "script",
+            "regexp": "/engine/Shopware/"
         }
     ],
     "implies": [
@@ -45,5 +44,6 @@
         "jQuery",
         "Symfony"
     ],
-    "name": "Shopware"
+    "name": "Shopware",
+    "website": "https://www.shopware.com"
 }

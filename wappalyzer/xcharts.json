@@ -1,14 +1,14 @@
 {
-    "website": "https://tenxer.github.io/xcharts/",
     "matches": [
         {
-            "regexp": "xcharts\\.js",
-            "search": "script"
+            "regexp": "<link[^>]* href=\"[^\"]*xcharts(?:\\.min)?\\.css"
         },
         {
-            "regexp": "<link[^>]* href=\"[^\"]*xcharts(?:\\.min)?\\.css"
+            "search": "script",
+            "regexp": "xcharts\\.js"
         }
     ],
     "implies": "D3",
-    "name": "xCharts"
+    "name": "xCharts",
+    "website": "https://tenxer.github.io/xcharts/"
 }

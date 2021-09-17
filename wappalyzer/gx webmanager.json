@@ -1,14 +1,14 @@
 {
-    "website": "http://www.gxsoftware.com/en/products/web-content-management.htm",
     "matches": [
         {
             "regexp": "<!--\\s+Powered by GX"
         },
         {
             "offset": 1,
-            "regexp": "GX WebManager(?: ([\\d.]+))?",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "GX WebManager(?: ([\\d.]+))?"
         }
     ],
-    "name": "GX WebManager"
+    "name": "GX WebManager",
+    "website": "http://www.gxsoftware.com/en/products/web-content-management.htm"
 }

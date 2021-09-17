@@ -1,18 +1,18 @@
 {
-    "website": "https://www.yottaa.com",
     "matches": [
         {
-            "regexp": "cdn\\.yottaa\\.\\w+/",
-            "search": "script"
+            "search": "meta[X-Yottaa-Optimizations]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "meta[X-Yottaa-Metrics]"
+            "search": "meta[X-Yottaa-Metrics]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "meta[X-Yottaa-Optimizations]"
+            "search": "script",
+            "regexp": "cdn\\.yottaa\\.\\w+/"
         }
     ],
-    "name": "Yottaa"
+    "name": "Yottaa",
+    "website": "https://www.yottaa.com"
 }

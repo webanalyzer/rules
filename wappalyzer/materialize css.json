@@ -1,13 +1,13 @@
 {
-    "website": "http://materializecss.com",
     "matches": [
         {
-            "regexp": "materialize(?:\\.min)?\\.js",
-            "search": "script"
+            "regexp": "<link[^>]* href=\"[^\"]*materialize(?:\\.min)?\\.css"
         },
         {
-            "regexp": "<link[^>]* href=\"[^\"]*materialize(?:\\.min)?\\.css"
+            "search": "script",
+            "regexp": "materialize(?:\\.min)?\\.js"
         }
     ],
-    "name": "Materialize CSS"
+    "name": "Materialize CSS",
+    "website": "http://materializecss.com"
 }

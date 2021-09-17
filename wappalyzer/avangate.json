@@ -1,13 +1,13 @@
 {
-    "website": "http://avangate.com",
     "matches": [
         {
-            "regexp": "^https?://edge\\.avangate\\.net/",
-            "search": "script"
+            "regexp": "<link[^>]* href=\"https?://edge\\.avangate\\.net/"
         },
         {
-            "regexp": "<link[^>]* href=\"https?://edge\\.avangate\\.net/"
+            "search": "script",
+            "regexp": "^https?://edge\\.avangate\\.net/"
         }
     ],
-    "name": "Avangate"
+    "name": "Avangate",
+    "website": "http://avangate.com"
 }

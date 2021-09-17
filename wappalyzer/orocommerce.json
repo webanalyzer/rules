@@ -1,21 +1,21 @@
 {
-    "website": "https://oroinc.com",
     "matches": [
-        {
-            "offset": 1,
-            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)",
-            "search": "script"
-        },
         {
             "regexp": "<script [^>]+data-requiremodule=\"oro/"
         },
         {
             "regexp": "<script [^>]+data-requiremodule=\"oroui/"
+        },
+        {
+            "offset": 1,
+            "search": "script",
+            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)"
         }
     ],
     "implies": [
         "PHP",
         "MySQL"
     ],
-    "name": "OroCommerce"
+    "name": "OroCommerce",
+    "website": "https://oroinc.com"
 }
