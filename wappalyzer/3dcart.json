@@ -2,16 +2,16 @@
     "website": "http://www.3dcart.com",
     "matches": [
         {
-            "regexp": "(?:twlh(?:track)?\\.asp|3d_upsell\\.js)",
-            "search": "script"
-        },
-        {
             "regexp": "3DCART",
             "search": "headers[x-powered-by]"
         },
         {
             "regexp": ".*",
             "search": "cookies[3dvisit]"
+        },
+        {
+            "regexp": "(?:twlh(?:track)?\\.asp|3d_upsell\\.js)",
+            "search": "script"
         }
     ],
     "name": "3dCart"

@@ -1,11 +1,6 @@
 {
     "website": "http://e107.org",
-    "implies": "PHP",
     "matches": [
-        {
-            "regexp": "[^a-z\\d]e107\\.js",
-            "search": "script"
-        },
         {
             "regexp": "e107",
             "search": "headers[x-powered-by]"
@@ -13,7 +8,12 @@
         {
             "regexp": ".*",
             "search": "cookies[e107_tz]"
+        },
+        {
+            "regexp": "[^a-z\\d]e107\\.js",
+            "search": "script"
         }
     ],
+    "implies": "PHP",
     "name": "e107"
 }

@@ -1,10 +1,10 @@
 {
     "website": "http://web2py.com",
-    "implies": [
-        "Python",
-        "jQuery"
-    ],
     "matches": [
+        {
+            "regexp": "web2py",
+            "search": "headers[x-powered-by]"
+        },
         {
             "regexp": "web2py\\.js",
             "search": "script"
@@ -12,11 +12,11 @@
         {
             "regexp": "^Web2py",
             "search": "meta[generator]"
-        },
-        {
-            "regexp": "web2py",
-            "search": "headers[x-powered-by]"
         }
+    ],
+    "implies": [
+        "Python",
+        "jQuery"
     ],
     "name": "Web2py"
 }

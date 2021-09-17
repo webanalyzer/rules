@@ -1,25 +1,25 @@
 {
     "website": "http://odoo.com",
-    "implies": [
-        "Python",
-        "PostgreSQL",
-        "Node.js",
-        "Less"
-    ],
     "matches": [
         {
-            "certainty": 25,
             "regexp": "/web/js/(?:web\\.assets_common/|website\\.assets_frontend/)",
-            "search": "script"
+            "search": "script",
+            "certainty": 25
         },
         {
             "regexp": "Odoo",
             "search": "meta[generator]"
         },
         {
-            "certainty": 25,
-            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)"
+            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)",
+            "certainty": 25
         }
+    ],
+    "implies": [
+        "Python",
+        "PostgreSQL",
+        "Node.js",
+        "Less"
     ],
     "name": "Odoo"
 }

@@ -2,10 +2,6 @@
     "website": "https://datadome.co/",
     "matches": [
         {
-            "regexp": "^https://ct\\.datadome\\.co/[a-z]\\.js$",
-            "search": "script"
-        },
-        {
             "regexp": "^DataDome$",
             "search": "headers[server]"
         },
@@ -28,6 +24,10 @@
         {
             "regexp": ".*",
             "search": "cookies[datadome]"
+        },
+        {
+            "regexp": "^https://ct\\.datadome\\.co/[a-z]\\.js$",
+            "search": "script"
         }
     ],
     "name": "Datadome"

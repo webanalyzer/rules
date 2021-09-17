@@ -2,16 +2,16 @@
     "website": "https://vercel.com",
     "matches": [
         {
+            "regexp": ".*",
+            "search": "headers[x-vercel-id]"
+        },
+        {
             "regexp": "^now$",
             "search": "headers[server]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-now-trace]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-vercel-id]"
         },
         {
             "regexp": ".*",

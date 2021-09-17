@@ -2,16 +2,16 @@
     "website": "https://www.plesk.com/",
     "matches": [
         {
-            "regexp": "common\\.js\\?plesk",
-            "search": "script"
+            "regexp": "^Plesk(?:L|W)in",
+            "search": "headers[x-powered-by]"
         },
         {
             "regexp": "^Plesk",
             "search": "headers[x-powered-by-plesk]"
         },
         {
-            "regexp": "^Plesk(?:L|W)in",
-            "search": "headers[x-powered-by]"
+            "regexp": "common\\.js\\?plesk",
+            "search": "script"
         }
     ],
     "name": "Plesk"

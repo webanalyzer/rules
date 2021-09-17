@@ -2,9 +2,6 @@
     "website": "https://reactjs.org",
     "matches": [
         {
-            "regexp": "<[^>]+data-react"
-        },
-        {
             "offset": 1,
             "regexp": "react(?:-with-addons)?[.-]([\\d.]*\\d)[^/]*\\.js",
             "search": "script"
@@ -17,6 +14,9 @@
         {
             "regexp": "^react\\b.*\\.js",
             "search": "script"
+        },
+        {
+            "regexp": "<[^>]+data-react"
         }
     ],
     "name": "React"

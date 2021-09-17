@@ -2,17 +2,17 @@
     "website": "http://www.flexcmp.com/cms/home",
     "matches": [
         {
-            "regexp": "^FlexCMP",
-            "search": "meta[generator]"
+            "offset": 1,
+            "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)",
+            "search": "headers[x-powered-by]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-flex-lang]"
         },
         {
-            "offset": 1,
-            "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)",
-            "search": "headers[x-powered-by]"
+            "regexp": "^FlexCMP",
+            "search": "meta[generator]"
         },
         {
             "regexp": "<!--[^>]+FlexCMP[^>v]+v\\. ([\\d.]+)",

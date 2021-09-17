@@ -1,7 +1,10 @@
 {
     "website": "http://www.bugzilla.org",
-    "implies": "Perl",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[Bugzilla_login_request_cookie]"
+        },
         {
             "offset": 1,
             "regexp": "Bugzilla ?([\\d.]+)?",
@@ -20,11 +23,8 @@
         {
             "regexp": "<span id=\"information\" class=\"header_addl_info\">version ([\\d.]+)<",
             "offset": 1
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[Bugzilla_login_request_cookie]"
         }
     ],
+    "implies": "Perl",
     "name": "Bugzilla"
 }
