@@ -1,0 +1,46 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: update_rules
+
+on: 
+  push: 
+    branches: [ master ]
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/15 * * * *'
+  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.5
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.5
+
+    - name: Set up Ruby 2.6
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+        bundler-cache: true 
+
+    - name: setup env & install getproxy
+      run: |
+        git config --global user.name "fate0"
+        git config --global user.email "git@fatezero.org"
+        pip install git+https://github.com/fate0/getproxy.git@master
+    - name: run wappalyzer
+      run: |
+        wget https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/technologies.json -O apps.json
+        python tools/wappalyzer.py ./ ./wappalyzer
+        rm apps.json
+    - name: run whatweb
+      run: |
+        git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb hello
+        ruby tools/whatweb.rb ./hello/plugins/ ./whatweb/
+        rm -rf hello
+    
