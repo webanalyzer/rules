@@ -35,12 +35,12 @@ jobs:
         pip install git+https://github.com/fate0/getproxy.git@master
     - name: run wappalyzer
       run: |
-        wget https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/technologies.json -O apps.json
-        python tools/wappalyzer.py ./ ./wappalyzer
-        rm apps.json
+        git clone -b master --depth=1 https://github.com/AliasIO/wappalyzer hello_wappalyzer
+        python tools/wappalyzer.py ./hello_wappalyzer/src/technologies ./wappalyzer
+        rm -rf hello_wappalyzer
     - name: run whatweb
       run: |
-        git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb hello
+        git clone -b master --depth=1 https://github.com/urbanadventurer/WhatWeb hello_whatweb
         ruby tools/whatweb.rb ./hello/plugins/ ./whatweb/
-        rm -rf hello
+        rm -rf hello_whatweb
     
