@@ -1,14 +1,5 @@
 {
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "Brownie"
-        },
-        {
-            "search": "script",
-            "regexp": "assets\\.youthsrl\\.com/brownie"
-        }
-    ],
+    "website": "https://www.browniesuite.com",
     "implies": [
         "PHP",
         "MySQL",
@@ -16,6 +7,15 @@
         "Bootstrap",
         "jQuery"
     ],
-    "name": "Brownie",
-    "website": "https://www.browniesuite.com"
+    "matches": [
+        {
+            "regexp": "assets\\.youthsrl\\.com/brownie",
+            "search": "script"
+        },
+        {
+            "regexp": "Brownie",
+            "search": "headers[x-powered-by]"
+        }
+    ],
+    "name": "Brownie"
 }

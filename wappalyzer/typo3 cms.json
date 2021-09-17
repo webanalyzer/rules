@@ -1,5 +1,15 @@
 {
+    "website": "https://typo3.org/",
+    "implies": "PHP",
     "matches": [
+        {
+            "regexp": "^/?typo3(?:conf|temp)/",
+            "search": "script"
+        },
+        {
+            "regexp": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?",
+            "search": "meta[generator]"
+        },
         {
             "regexp": "<link[^>]+ href=\"/?typo3(?:conf|temp)/"
         },
@@ -8,17 +18,7 @@
         },
         {
             "regexp": "<!--\n\tThis website is powered by TYPO3"
-        },
-        {
-            "search": "script",
-            "regexp": "^/?typo3(?:conf|temp)/"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?"
         }
     ],
-    "implies": "PHP",
-    "name": "TYPO3 CMS",
-    "website": "https://typo3.org/"
+    "name": "TYPO3 CMS"
 }

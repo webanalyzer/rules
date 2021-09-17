@@ -1,19 +1,19 @@
 {
+    "website": "http://www.kentico.com",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/CMSPages/GetResource\\.ashx"
+            "regexp": "/CMSPages/GetResource\\.ashx",
+            "search": "script"
         },
         {
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))"
+            "regexp": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))",
+            "search": "meta[generator]"
         },
         {
-            "search": "cookies[CMSPreferredCulture]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[CMSPreferredCulture]"
         }
     ],
-    "name": "Kentico CMS",
-    "website": "http://www.kentico.com"
+    "name": "Kentico CMS"
 }

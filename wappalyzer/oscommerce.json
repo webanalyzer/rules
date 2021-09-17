@@ -1,9 +1,10 @@
 {
+    "website": "https://www.oscommerce.com",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
     "matches": [
-        {
-            "search": "cookies[osCsid]",
-            "regexp": ".*"
-        },
         {
             "regexp": "<br />Powered by <a href=\"https?://www\\.oscommerce\\.com"
         },
@@ -12,12 +13,11 @@
         },
         {
             "regexp": "<(?:tr|td|table)class=\"[^\"]*infoBoxHeading"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[osCsid]"
         }
     ],
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
-    "name": "osCommerce",
-    "website": "https://www.oscommerce.com"
+    "name": "osCommerce"
 }

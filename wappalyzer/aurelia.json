@@ -1,5 +1,10 @@
 {
+    "website": "http://aurelia.io",
     "matches": [
+        {
+            "regexp": "aurelia(?:\\.min)?\\.js",
+            "search": "script"
+        },
         {
             "regexp": "<[^>]+aurelia-app=[^>]"
         },
@@ -8,12 +13,7 @@
         },
         {
             "regexp": "<[^>]+au-target-id=[^>]\\d"
-        },
-        {
-            "search": "script",
-            "regexp": "aurelia(?:\\.min)?\\.js"
         }
     ],
-    "name": "Aurelia",
-    "website": "http://aurelia.io"
+    "name": "Aurelia"
 }

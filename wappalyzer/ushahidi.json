@@ -1,19 +1,19 @@
 {
-    "matches": [
-        {
-            "search": "script",
-            "regexp": "/js/ushahidi\\.js$"
-        },
-        {
-            "search": "cookies[ushahidi]",
-            "regexp": ".*"
-        }
-    ],
+    "website": "http://www.ushahidi.com",
     "implies": [
         "PHP",
         "MySQL",
         "OpenLayers"
     ],
-    "name": "Ushahidi",
-    "website": "http://www.ushahidi.com"
+    "matches": [
+        {
+            "regexp": "/js/ushahidi\\.js$",
+            "search": "script"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[ushahidi]"
+        }
+    ],
+    "name": "Ushahidi"
 }

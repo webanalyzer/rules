@@ -1,21 +1,21 @@
 {
+    "website": "http://ecommerce.shopatron.com",
     "matches": [
         {
-            "search": "meta[keywords]",
-            "regexp": "Shopatron"
+            "regexp": "mediacdn\\.shopatron\\.com",
+            "search": "script"
+        },
+        {
+            "regexp": "Shopatron",
+            "search": "meta[keywords]"
         },
         {
             "regexp": "<body class=\"shopatron"
         },
         {
-            "regexp": "<img[^>]+mediacdn\\.shopatron\\.com",
-            "certainty": 50
-        },
-        {
-            "search": "script",
-            "regexp": "mediacdn\\.shopatron\\.com"
+            "certainty": 50,
+            "regexp": "<img[^>]+mediacdn\\.shopatron\\.com"
         }
     ],
-    "name": "Shopatron",
-    "website": "http://ecommerce.shopatron.com"
+    "name": "Shopatron"
 }

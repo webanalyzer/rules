@@ -1,17 +1,17 @@
 {
-    "matches": [
-        {
-            "regexp": "<link[^>]+href=\"[^>]*bootstrap-table(?:\\.min)?\\.css"
-        },
-        {
-            "search": "script",
-            "regexp": "bootstrap-table(?:\\.min)?\\.js"
-        }
-    ],
+    "website": "http://bootstrap-table.wenzhixin.net.cn/",
     "implies": [
         "Bootstrap",
         "jQuery"
     ],
-    "name": "Bootstrap Table",
-    "website": "http://bootstrap-table.wenzhixin.net.cn/"
+    "matches": [
+        {
+            "regexp": "bootstrap-table(?:\\.min)?\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": "<link[^>]+href=\"[^>]*bootstrap-table(?:\\.min)?\\.css"
+        }
+    ],
+    "name": "Bootstrap Table"
 }

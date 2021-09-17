@@ -1,21 +1,21 @@
 {
+    "website": "http://stripe.com",
     "matches": [
         {
-            "search": "script",
-            "regexp": "js\\.stripe\\.com"
-        },
-        {
-            "search": "cookies[__stripe_mid]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[__stripe_sid]",
-            "regexp": ".*"
+            "regexp": "js\\.stripe\\.com",
+            "search": "script"
         },
         {
             "regexp": "<input[^>]+data-stripe"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[__stripe_mid]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[__stripe_sid]"
         }
     ],
-    "name": "Stripe",
-    "website": "http://stripe.com"
+    "name": "Stripe"
 }

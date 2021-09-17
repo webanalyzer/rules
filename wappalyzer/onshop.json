@@ -1,16 +1,16 @@
 {
-    "matches": [
-        {
-            "search": "script",
-            "regexp": "/opencart_custom\\.js"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "Onshop Ecommerce"
-        }
-    ],
+    "website": "https://onshop.asia",
     "implies": "PHP",
     "excludes": "OpenCart",
-    "name": "Onshop",
-    "website": "https://onshop.asia"
+    "matches": [
+        {
+            "regexp": "Onshop Ecommerce",
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": "/opencart_custom\\.js",
+            "search": "script"
+        }
+    ],
+    "name": "Onshop"
 }
