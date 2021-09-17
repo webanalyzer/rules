@@ -1,16 +1,16 @@
 {
-    "name": "FingerprintJS",
-    "website": "https://fingerprintjs.com/",
+    "website": "https://fingerprintjs.com",
     "matches": [
         {
             "search": "script",
-            "regexp": "fingerprint(\\d)?(?:\\.min)?\\.js",
+            "regexp": "fingerprint(?:/fp)?(\\d)?(?:\\.min)?\\.js",
             "offset": 1
         },
         {
             "search": "script",
-            "regexp": "/fingerprintjs@(\\d)",
+            "regexp": "fingerprintjs(?:\\-pro|2)?(?:@|/)(\\d.*?)?/",
             "offset": 1
         }
-    ]
+    ],
+    "name": "FingerprintJS"
 }

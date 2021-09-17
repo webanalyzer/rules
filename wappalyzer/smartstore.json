@@ -1,5 +1,4 @@
 {
-    "name": "Smartstore",
     "website": "https://www.smartstore.com",
     "matches": [
         {
@@ -11,16 +10,17 @@
             "regexp": ".*"
         },
         {
+            "search": "meta[generator]",
+            "regexp": "^Smart[sS]tore(.NET)? (.+)$",
+            "offset": 2
+        },
+        {
             "regexp": "<!--Powered by Smart[sS]tore"
         },
         {
             "regexp": "<meta property=\"sm:pagedata\""
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "^Smart[sS]tore(.NET)? (.+)$",
-            "offset": 2
         }
     ],
+    "name": "Smartstore",
     "implies": "Microsoft ASP.NET"
 }

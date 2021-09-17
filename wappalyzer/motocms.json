@@ -1,15 +1,15 @@
 {
-    "name": "MotoCMS",
     "website": "http://motocms.com",
     "matches": [
         {
-            "regexp": "<link [^>]*href=\"[^>]*\\/mt-content\\/[^>]*\\.css"
-        },
-        {
             "search": "script",
             "regexp": "/mt-includes/js/website(?:assets)?\\.(?:min)?\\.js"
+        },
+        {
+            "regexp": "<link [^>]*href=\"[^>]*\\/mt-content\\/[^>]*\\.css"
         }
     ],
+    "name": "MotoCMS",
     "implies": [
         "PHP",
         "AngularJS",

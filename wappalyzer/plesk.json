@@ -1,7 +1,10 @@
 {
-    "name": "Plesk",
     "website": "https://www.plesk.com/",
     "matches": [
+        {
+            "search": "script",
+            "regexp": "common\\.js\\?plesk"
+        },
         {
             "search": "headers[x-powered-by]",
             "regexp": "^Plesk(?:L|W)in"
@@ -9,10 +12,7 @@
         {
             "search": "headers[x-powered-by-plesk]",
             "regexp": "^Plesk"
-        },
-        {
-            "search": "script",
-            "regexp": "common\\.js\\?plesk"
         }
-    ]
+    ],
+    "name": "Plesk"
 }

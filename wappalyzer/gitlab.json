@@ -1,5 +1,4 @@
 {
-    "name": "GitLab",
     "website": "https://about.gitlab.com",
     "matches": [
         {
@@ -7,16 +6,17 @@
             "regexp": ".*"
         },
         {
+            "search": "meta[og:site_name]",
+            "regexp": "^GitLab$"
+        },
+        {
             "regexp": "<meta content=\"https?://[^/]+/assets/gitlab_logo-"
         },
         {
             "regexp": "<header class=\"navbar navbar-fixed-top navbar-gitlab with-horizontal-nav\">"
-        },
-        {
-            "search": "meta[og:site_name]",
-            "regexp": "^GitLab$"
         }
     ],
+    "name": "GitLab",
     "implies": [
         "Ruby on Rails",
         "Vue.js"

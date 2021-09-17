@@ -1,5 +1,4 @@
 {
-    "name": "e107",
     "website": "http://e107.org",
     "matches": [
         {
@@ -7,13 +6,14 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "e107"
-        },
-        {
             "search": "script",
             "regexp": "[^a-z\\d]e107\\.js"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "e107"
         }
     ],
+    "name": "e107",
     "implies": "PHP"
 }

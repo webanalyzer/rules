@@ -1,16 +1,6 @@
 {
-    "name": "Adobe Experience Manager",
     "website": "https://www.adobe.com/marketing/experience-manager.html",
     "matches": [
-        {
-            "regexp": "<div class=\"[^\"]*parbase"
-        },
-        {
-            "regexp": "<div[^>]+data-component-path=\"[^\"+]jcr:"
-        },
-        {
-            "regexp": "<div class=\"[^\"]*aem-Grid"
-        },
         {
             "search": "script",
             "regexp": "/etc/designs/"
@@ -22,7 +12,17 @@
         {
             "search": "script",
             "regexp": "/etc\\.clientlibs/"
+        },
+        {
+            "regexp": "<div class=\"[^\"]*parbase"
+        },
+        {
+            "regexp": "<div[^>]+data-component-path=\"[^\"+]jcr:"
+        },
+        {
+            "regexp": "<div class=\"[^\"]*aem-Grid"
         }
     ],
+    "name": "Adobe Experience Manager",
     "implies": "Java"
 }

@@ -1,11 +1,6 @@
 {
-    "name": "WP Engine",
     "website": "https://wpengine.com",
     "matches": [
-        {
-            "search": "headers[x-pass-why]",
-            "regexp": ".*"
-        },
         {
             "search": "headers[x-powered-by]",
             "regexp": "WP Engine"
@@ -15,9 +10,14 @@
             "regexp": ".*"
         },
         {
+            "search": "headers[x-pass-why]",
+            "regexp": ".*"
+        },
+        {
             "search": "headers[wpe-backend]",
             "regexp": ".*"
         }
     ],
+    "name": "WP Engine",
     "implies": "WordPress"
 }

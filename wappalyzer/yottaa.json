@@ -1,7 +1,10 @@
 {
-    "name": "Yottaa",
     "website": "https://www.yottaa.com",
     "matches": [
+        {
+            "search": "script",
+            "regexp": "cdn\\.yottaa\\.\\w+/"
+        },
         {
             "search": "meta[X-Yottaa-Metrics]",
             "regexp": ".*"
@@ -9,10 +12,7 @@
         {
             "search": "meta[X-Yottaa-Optimizations]",
             "regexp": ".*"
-        },
-        {
-            "search": "script",
-            "regexp": "cdn\\.yottaa\\.\\w+/"
         }
-    ]
+    ],
+    "name": "Yottaa"
 }

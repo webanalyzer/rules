@@ -1,18 +1,18 @@
 {
-    "name": "Nuxt.js",
     "website": "https://nuxtjs.org",
     "matches": [
+        {
+            "search": "script",
+            "regexp": "/_nuxt/"
+        },
         {
             "regexp": "<div [^>]*id=\"__nuxt\""
         },
         {
             "regexp": "<script [^>]*>window\\.__NUXT__"
-        },
-        {
-            "search": "script",
-            "regexp": "/_nuxt/"
         }
     ],
+    "name": "Nuxt.js",
     "implies": [
         "Vue.js",
         "Node.js"

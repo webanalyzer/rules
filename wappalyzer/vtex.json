@@ -1,5 +1,4 @@
 {
-    "name": "VTEX",
     "website": "https://vtex.com/",
     "matches": [
         {
@@ -7,20 +6,29 @@
             "regexp": ".*"
         },
         {
+            "search": "cookies[vtex_session]",
+            "regexp": ".*"
+        },
+        {
             "search": "cookies[VtexWorkspace]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[vtex_session]",
+            "search": "cookies[VtexStoreVersion]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[powered]",
+            "regexp": "vtex"
         },
         {
             "search": "headers[server]",
             "regexp": "^VTEX IO$"
         },
         {
-            "search": "headers[powered]",
-            "regexp": "vtex"
+            "search": "script",
+            "regexp": "io\\.vtex\\.com\\.br"
         }
-    ]
+    ],
+    "name": "VTEX"
 }

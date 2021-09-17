@@ -1,15 +1,14 @@
 {
-    "name": "NextGEN Gallery",
     "website": "https://www.imagely.com/wordpress-gallery-plugin",
     "matches": [
         {
-            "regexp": "<!-- <meta name=\"NextGEN\" version=\"([\\d.]+)\" /> -->",
-            "offset": 1
-        },
-        {
             "search": "script",
             "regexp": "/nextgen-gallery/js/"
+        },
+        {
+            "regexp": "<!-- <meta name=\"NextGEN\" version=\"([\\d.]+)\" /> -->",
+            "offset": 1
         }
     ],
-    "implies": "WordPress"
+    "name": "NextGEN Gallery"
 }

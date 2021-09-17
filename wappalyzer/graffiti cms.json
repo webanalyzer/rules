@@ -1,5 +1,4 @@
 {
-    "name": "Graffiti CMS",
     "website": "http://graffiticms.codeplex.com",
     "matches": [
         {
@@ -7,14 +6,15 @@
             "regexp": ".*"
         },
         {
+            "search": "script",
+            "regexp": "/graffiti\\.js"
+        },
+        {
             "search": "meta[generator]",
             "regexp": "Graffiti CMS ([^\"]+)",
             "offset": 1
-        },
-        {
-            "search": "script",
-            "regexp": "/graffiti\\.js"
         }
     ],
+    "name": "Graffiti CMS",
     "implies": "Microsoft ASP.NET"
 }

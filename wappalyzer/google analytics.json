@@ -1,5 +1,4 @@
 {
-    "name": "Google Analytics",
     "website": "http://google.com/analytics",
     "matches": [
         {
@@ -7,11 +6,11 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[_ga]",
+            "search": "cookies[_gat]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[_gat]",
+            "search": "cookies[_ga]",
             "regexp": ".*"
         },
         {
@@ -20,6 +19,11 @@
         {
             "search": "script",
             "regexp": "google-analytics\\.com/(?:ga|urchin|analytics)\\.js"
+        },
+        {
+            "search": "script",
+            "regexp": "googletagmanager\\.com/gtag/js"
         }
-    ]
+    ],
+    "name": "Google Analytics"
 }

@@ -1,5 +1,4 @@
 {
-    "name": "ImpressCMS",
     "website": "http://www.impresscms.org",
     "matches": [
         {
@@ -11,13 +10,14 @@
             "regexp": ".*"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "ImpressCMS"
-        },
-        {
             "search": "script",
             "regexp": "include/linkexternal\\.js"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "ImpressCMS"
         }
     ],
+    "name": "ImpressCMS",
     "implies": "PHP"
 }
