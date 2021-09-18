@@ -1,14 +1,14 @@
 {
-    "name": "Artifactory",
     "matches": [
-        {
-            "search": "script",
-            "regexp": "wicket/resource/org\\.artifactory\\."
-        },
         {
             "offset": 1,
             "regexp": "<span class=\"version\">Artifactory(?: Pro)?(?: Power Pack)?(?: ([\\d.]+))?"
+        },
+        {
+            "regexp": "wicket/resource/org\\.artifactory\\.",
+            "search": "script"
         }
     ],
+    "name": "Artifactory",
     "website": "http://jfrog.com/open-source/#os-arti"
 }

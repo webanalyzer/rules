@@ -1,14 +1,14 @@
 {
-    "name": "Revslider",
     "matches": [
-        {
-            "search": "script",
-            "regexp": "/revslider/[/\\w-]+/js"
-        },
         {
             "offset": 1,
             "regexp": "<link[^>]* href=[\\'\"][^']+revslider[/\\w-]+\\.css\\?ver=([0-9.]+)[\\'\"]"
+        },
+        {
+            "regexp": "/revslider/[/\\w-]+/js",
+            "search": "script"
         }
     ],
+    "name": "Revslider",
     "website": "https://revolution.themepunch.com/"
 }

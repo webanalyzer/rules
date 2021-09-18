@@ -1,10 +1,9 @@
 {
-    "name": "Gerrit",
+    "implies": [
+        "Java",
+        "git"
+    ],
     "matches": [
-        {
-            "search": "script",
-            "regexp": "^gerrit_ui/gerrit_ui"
-        },
         {
             "offset": 1,
             "regexp": ">Gerrit Code Review</a>\\s*\"\\s*\\(([0-9.]+)\\)"
@@ -13,13 +12,14 @@
             "regexp": "<(?:div|style) id=\"gerrit_"
         },
         {
-            "search": "meta[title]",
-            "regexp": "^Gerrit Code Review$"
+            "regexp": "^Gerrit Code Review$",
+            "search": "meta[title]"
+        },
+        {
+            "regexp": "^gerrit_ui/gerrit_ui",
+            "search": "script"
         }
     ],
-    "website": "http://www.gerritcodereview.com",
-    "implies": [
-        "Java",
-        "git"
-    ]
+    "name": "Gerrit",
+    "website": "http://www.gerritcodereview.com"
 }

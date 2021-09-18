@@ -1,15 +1,15 @@
 {
-    "name": "Ametys",
+    "implies": "Java",
     "matches": [
         {
-            "search": "script",
-            "regexp": "ametys\\.js"
+            "regexp": "(?:Ametys|Anyware Technologies)",
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "(?:Ametys|Anyware Technologies)"
+            "regexp": "ametys\\.js",
+            "search": "script"
         }
     ],
-    "website": "http://ametys.org",
-    "implies": "Java"
+    "name": "Ametys",
+    "website": "http://ametys.org"
 }

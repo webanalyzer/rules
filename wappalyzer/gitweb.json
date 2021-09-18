@@ -1,23 +1,23 @@
 {
-    "name": "gitweb",
-    "matches": [
-        {
-            "search": "script",
-            "regexp": "static/gitweb\\.js$"
-        },
-        {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "gitweb(?:/([\\d.]+\\d))?"
-        },
-        {
-            "offset": 1,
-            "regexp": "<!-- git web interface version ([\\d.]+)?"
-        }
-    ],
-    "website": "http://git-scm.com",
     "implies": [
         "Perl",
         "git"
-    ]
+    ],
+    "matches": [
+        {
+            "offset": 1,
+            "regexp": "<!-- git web interface version ([\\d.]+)?"
+        },
+        {
+            "regexp": "static/gitweb\\.js$",
+            "search": "script"
+        },
+        {
+            "offset": 1,
+            "regexp": "gitweb(?:/([\\d.]+\\d))?",
+            "search": "meta[generator]"
+        }
+    ],
+    "name": "gitweb",
+    "website": "http://git-scm.com"
 }

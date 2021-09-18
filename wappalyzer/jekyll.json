@@ -1,11 +1,5 @@
 {
-    "name": "Jekyll",
     "matches": [
-        {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Jekyll (v[\\d.]+)?"
-        },
         {
             "regexp": "Powered by <a href=\"https?://jekyllrb\\.com\"[^>]*>Jekyll</"
         },
@@ -14,7 +8,13 @@
         },
         {
             "regexp": "<!-- Begin Jekyll SEO tag"
+        },
+        {
+            "offset": 1,
+            "regexp": "Jekyll (v[\\d.]+)?",
+            "search": "meta[generator]"
         }
     ],
+    "name": "Jekyll",
     "website": "http://jekyllrb.com"
 }

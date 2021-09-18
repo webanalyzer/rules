@@ -1,23 +1,23 @@
 {
-    "name": "Gemius",
     "matches": [
         {
-            "search": "script",
-            "regexp": "hit\\.gemius\\.pl/xgemius\\.js"
+            "regexp": "<a [^>]*onclick=\"gemius_hit"
+        },
+        {
+            "regexp": "hit\\.gemius\\.pl/xgemius\\.js",
+            "search": "script"
         },
         {
             "certainty": 80,
-            "search": "script",
-            "regexp": "hit\\.gemius\\.pl"
+            "regexp": "hit\\.gemius\\.pl",
+            "search": "script"
         },
         {
             "certainty": 30,
-            "search": "script",
-            "regexp": "xgemius\\.js"
-        },
-        {
-            "regexp": "<a [^>]*onclick=\"gemius_hit"
+            "regexp": "xgemius\\.js",
+            "search": "script"
         }
     ],
+    "name": "Gemius",
     "website": "https://www.gemius.com"
 }

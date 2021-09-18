@@ -1,5 +1,4 @@
 {
-    "name": "MailChimp",
     "matches": [
         {
             "regexp": "<form [^>]*data-mailchimp-url"
@@ -18,27 +17,28 @@
             "regexp": "<!-- Begin MailChimp Signup Form -->"
         },
         {
-            "search": "script",
-            "regexp": "s3\\.amazonaws\\.com/downloads\\.mailchimp\\.com/js/mc-validate\\.js"
+            "regexp": "s3\\.amazonaws\\.com/downloads\\.mailchimp\\.com/js/mc-validate\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "cdn-images\\.mailchimp\\.com/[^>]*\\.css"
-        },
-        {
-            "offset": 1,
-            "search": "script",
-            "regexp": "mailchimp-woocommerce-public\\.min\\.js(?:\\?ver=([\\d.]+))?"
+            "regexp": "cdn-images\\.mailchimp\\.com/[^>]*\\.css",
+            "search": "script"
         },
         {
             "offset": 1,
-            "search": "script",
-            "regexp": "mailchimp-for-wp/assets/js/forms\\.min\\.js(?:\\?ver=([\\d.]+))?"
+            "regexp": "mailchimp-woocommerce-public\\.min\\.js(?:\\?ver=([\\d.]+))?",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "chimpstatic\\.com/mcjs-connected"
+            "offset": 1,
+            "regexp": "mailchimp-for-wp/assets/js/forms\\.min\\.js(?:\\?ver=([\\d.]+))?",
+            "search": "script"
+        },
+        {
+            "regexp": "chimpstatic\\.com/mcjs-connected",
+            "search": "script"
         }
     ],
+    "name": "MailChimp",
     "website": "http://mailchimp.com"
 }

@@ -1,15 +1,15 @@
 {
-    "name": "A-Frame",
+    "implies": "three.js",
     "matches": [
         {
-            "offset": 1,
-            "search": "script",
-            "regexp": "/?([\\d.]+)?/aframe(?:\\.min)?\\.js"
+            "regexp": "<a-scene[^<>]*>"
         },
         {
-            "regexp": "<a-scene[^<>]*>"
+            "offset": 1,
+            "regexp": "/?([\\d.]+)?/aframe(?:\\.min)?\\.js",
+            "search": "script"
         }
     ],
-    "website": "https://aframe.io",
-    "implies": "three.js"
+    "name": "A-Frame",
+    "website": "https://aframe.io"
 }

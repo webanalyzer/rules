@@ -1,13 +1,13 @@
 {
-    "name": "scrollreveal",
     "matches": [
         {
-            "search": "script",
-            "regexp": "scrollreveal(?:\\.min)(?:\\.js)"
+            "regexp": "<[^>]+data-sr(?:-id)"
         },
         {
-            "regexp": "<[^>]+data-sr(?:-id)"
+            "regexp": "scrollreveal(?:\\.min)(?:\\.js)",
+            "search": "script"
         }
     ],
+    "name": "scrollreveal",
     "website": "https://scrollrevealjs.org"
 }
