@@ -1,26 +1,26 @@
 {
+    "name": "Chart.js",
+    "website": "https://www.chartjs.org",
     "matches": [
         {
+            "search": "script",
             "certainty": 75,
-            "regexp": "/Chart(?:\\.bundle)?(?:\\.min)?\\.js",
-            "search": "script"
+            "regexp": "/Chart(?:\\.bundle)?(?:\\.min)?\\.js"
         },
         {
-            "offset": 1,
+            "search": "script",
             "regexp": "chartjs\\.org/dist/([\\d.]+(?:-[^/]+)?|master|latest)/Chart.*\\.js",
-            "search": "script"
+            "offset": 1
         },
         {
-            "offset": 1,
+            "search": "script",
             "regexp": "cdnjs\\.cloudflare\\.com/ajax/libs/Chart\\.js/([\\d.]+(?:-[^/]+)?)/Chart.*\\.js",
-            "search": "script"
+            "offset": 1
         },
         {
-            "offset": 1,
+            "search": "script",
             "regexp": "cdn\\.jsdelivr\\.net/(?:npm|gh/chartjs)/chart\\.js@([\\d.]+(?:-[^/]+)?|latest)/dist/Chart.*\\.js",
-            "search": "script"
+            "offset": 1
         }
-    ],
-    "name": "Chart.js",
-    "website": "https://www.chartjs.org"
+    ]
 }

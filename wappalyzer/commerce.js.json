@@ -1,23 +1,23 @@
 {
+    "name": "Commerce.js",
+    "website": "https://www.commercejs.com",
     "matches": [
         {
-            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "Commerce.js"
+        },
+        {
+            "search": "headers[chec-version]",
+            "regexp": ".*"
+        },
+        {
+            "search": "script",
             "regexp": "cdn\\.chec\\.io/v(\\d+)/commerce\\.js",
-            "search": "script"
+            "offset": 1
         },
         {
-            "regexp": "chec/commerce\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "Commerce.js",
-            "search": "headers[x-powered-by]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[chec-version]"
+            "search": "script",
+            "regexp": "chec/commerce\\.js"
         }
-    ],
-    "name": "Commerce.js",
-    "website": "https://www.commercejs.com"
+    ]
 }
