@@ -1,6 +1,5 @@
 {
     "name": "Commerce.js",
-    "website": "https://www.commercejs.com",
     "matches": [
         {
             "search": "headers[x-powered-by]",
@@ -11,13 +10,14 @@
             "regexp": ".*"
         },
         {
+            "offset": 1,
             "search": "script",
-            "regexp": "cdn\\.chec\\.io/v(\\d+)/commerce\\.js",
-            "offset": 1
+            "regexp": "cdn\\.chec\\.io/v(\\d+)/commerce\\.js"
         },
         {
             "search": "script",
             "regexp": "chec/commerce\\.js"
         }
-    ]
+    ],
+    "website": "https://www.commercejs.com"
 }

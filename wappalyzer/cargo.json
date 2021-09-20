@@ -1,11 +1,7 @@
 {
     "name": "Cargo",
     "implies": "PHP",
-    "website": "http://cargocollective.com",
     "matches": [
-        {
-            "regexp": "<link [^>]+Cargo feed"
-        },
         {
             "search": "meta[cargo_title]",
             "regexp": ".*"
@@ -13,6 +9,10 @@
         {
             "search": "script",
             "regexp": "/cargo\\."
+        },
+        {
+            "regexp": "<link [^>]+Cargo feed"
         }
-    ]
+    ],
+    "website": "http://cargocollective.com"
 }

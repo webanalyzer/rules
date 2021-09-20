@@ -1,17 +1,7 @@
 {
     "name": "Yii",
     "implies": "PHP",
-    "website": "https://www.yiiframework.com",
     "matches": [
-        {
-            "regexp": "Powered by <a href=\"http://www\\.yiiframework\\.com/\" rel=\"external\">Yii Framework</a>"
-        },
-        {
-            "regexp": "<input type=\"hidden\" value=\"[a-zA-Z0-9]{40}\" name=\"YII_CSRF_TOKEN\" \\/>"
-        },
-        {
-            "regexp": "<!\\[CDATA\\[YII-BLOCK-(?:HEAD|BODY-BEGIN|BODY-END)\\]"
-        },
         {
             "search": "cookies[YII_CSRF_TOKEN]",
             "regexp": ".*"
@@ -23,6 +13,16 @@
         {
             "search": "script",
             "regexp": "/yii\\.(?:validation|activeForm)\\.js"
+        },
+        {
+            "regexp": "Powered by <a href=\"http://www\\.yiiframework\\.com/\" rel=\"external\">Yii Framework</a>"
+        },
+        {
+            "regexp": "<input type=\"hidden\" value=\"[a-zA-Z0-9]{40}\" name=\"YII_CSRF_TOKEN\" \\/>"
+        },
+        {
+            "regexp": "<!\\[CDATA\\[YII-BLOCK-(?:HEAD|BODY-BEGIN|BODY-END)\\]"
         }
-    ]
+    ],
+    "website": "https://www.yiiframework.com"
 }

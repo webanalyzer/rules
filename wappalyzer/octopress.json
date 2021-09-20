@@ -1,11 +1,7 @@
 {
     "name": "Octopress",
     "implies": "Jekyll",
-    "website": "http://octopress.org",
     "matches": [
-        {
-            "regexp": "Powered by <a href=\"http://octopress\\.org\">"
-        },
         {
             "search": "meta[generator]",
             "regexp": "Octopress"
@@ -13,6 +9,10 @@
         {
             "search": "script",
             "regexp": "/octopress\\.js"
+        },
+        {
+            "regexp": "Powered by <a href=\"http://octopress\\.org\">"
         }
-    ]
+    ],
+    "website": "http://octopress.org"
 }

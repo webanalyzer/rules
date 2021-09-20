@@ -4,14 +4,7 @@
         "Ruby on Rails",
         "Vue.js"
     ],
-    "website": "https://about.gitlab.com",
     "matches": [
-        {
-            "regexp": "<meta content=\"https?://[^/]+/assets/gitlab_logo-"
-        },
-        {
-            "regexp": "<header class=\"navbar navbar-fixed-top navbar-gitlab with-horizontal-nav\">"
-        },
         {
             "search": "meta[og:site_name]",
             "regexp": "^GitLab$"
@@ -19,6 +12,13 @@
         {
             "search": "cookies[_gitlab_session]",
             "regexp": ".*"
+        },
+        {
+            "regexp": "<meta content=\"https?://[^/]+/assets/gitlab_logo-"
+        },
+        {
+            "regexp": "<header class=\"navbar navbar-fixed-top navbar-gitlab with-horizontal-nav\">"
         }
-    ]
+    ],
+    "website": "https://about.gitlab.com"
 }

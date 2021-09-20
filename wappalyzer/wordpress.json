@@ -4,7 +4,6 @@
         "PHP",
         "MySQL"
     ],
-    "website": "https://wordpress.org",
     "matches": [
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
@@ -21,21 +20,22 @@
             "regexp": "/xmlrpc\\.php$"
         },
         {
-            "search": "meta[shareaholic:wp_version]",
-            "regexp": ".*"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "^WordPress(?: ([\\d.]+))?",
-            "offset": 1
-        },
-        {
             "search": "script",
             "regexp": "/wp-(?:content|includes)/"
         },
         {
             "search": "script",
             "regexp": "wp-embed\\.min\\.js"
+        },
+        {
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "^WordPress(?: ([\\d.]+))?"
+        },
+        {
+            "search": "meta[shareaholic:wp_version]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://wordpress.org"
 }

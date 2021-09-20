@@ -4,27 +4,27 @@
         "PHP",
         "MySQL"
     ],
-    "website": "http://koken.me",
     "matches": [
         {
-            "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
-        },
-        {
-            "regexp": "<!--\\s+KOKEN DEBUGGING"
-        },
-        {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "Koken ([\\d.]+)",
-            "offset": 1
+            "regexp": "Koken ([\\d.]+)"
         },
         {
             "search": "cookies[koken_referrer]",
             "regexp": ".*"
         },
         {
+            "offset": 1,
             "search": "script",
-            "regexp": "koken(?:\\.js\\?([\\d.]+)|/storage)",
-            "offset": 1
+            "regexp": "koken(?:\\.js\\?([\\d.]+)|/storage)"
+        },
+        {
+            "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
+        },
+        {
+            "regexp": "<!--\\s+KOKEN DEBUGGING"
         }
-    ]
+    ],
+    "website": "http://koken.me"
 }

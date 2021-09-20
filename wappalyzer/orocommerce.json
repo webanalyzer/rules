@@ -4,18 +4,18 @@
         "PHP",
         "MySQL"
     ],
-    "website": "https://oroinc.com",
     "matches": [
+        {
+            "offset": 1,
+            "search": "script",
+            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)"
+        },
         {
             "regexp": "<script [^>]+data-requiremodule=\"oro/"
         },
         {
             "regexp": "<script [^>]+data-requiremodule=\"oroui/"
-        },
-        {
-            "search": "script",
-            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)",
-            "offset": 1
         }
-    ]
+    ],
+    "website": "https://oroinc.com"
 }

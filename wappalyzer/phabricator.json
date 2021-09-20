@@ -1,11 +1,7 @@
 {
     "name": "Phabricator",
     "implies": "PHP",
-    "website": "http://phacility.com",
     "matches": [
-        {
-            "regexp": "<[^>]+(?:class|id)=\"phabricator-"
-        },
         {
             "search": "cookies[phsid]",
             "regexp": ".*"
@@ -13,6 +9,10 @@
         {
             "search": "script",
             "regexp": "/phabricator/[a-f0-9]{8}/rsrc/js/phui/[a-z-]+\\.js$"
+        },
+        {
+            "regexp": "<[^>]+(?:class|id)=\"phabricator-"
         }
-    ]
+    ],
+    "website": "http://phacility.com"
 }

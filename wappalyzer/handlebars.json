@@ -1,14 +1,14 @@
 {
     "name": "Handlebars",
-    "website": "http://handlebarsjs.com",
     "matches": [
         {
-            "regexp": "<[^>]*type=[^>]text\\/x-handlebars-template"
+            "offset": 1,
+            "search": "script",
+            "regexp": "handlebars(?:\\.runtime)?(?:-v([\\d.]+?))?(?:\\.min)?\\.js"
         },
         {
-            "search": "script",
-            "regexp": "handlebars(?:\\.runtime)?(?:-v([\\d.]+?))?(?:\\.min)?\\.js",
-            "offset": 1
+            "regexp": "<[^>]*type=[^>]text\\/x-handlebars-template"
         }
-    ]
+    ],
+    "website": "http://handlebarsjs.com"
 }

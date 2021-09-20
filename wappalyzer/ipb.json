@@ -4,11 +4,7 @@
         "PHP",
         "MySQL"
     ],
-    "website": "https://invisioncommunity.com/",
     "matches": [
-        {
-            "regexp": "<link[^>]+ipb_[^>]+\\.css"
-        },
         {
             "search": "cookies[ipbWWLsession_id]",
             "regexp": ".*"
@@ -20,6 +16,10 @@
         {
             "search": "script",
             "regexp": "jscripts/ips_"
+        },
+        {
+            "regexp": "<link[^>]+ipb_[^>]+\\.css"
         }
-    ]
+    ],
+    "website": "https://invisioncommunity.com/"
 }
