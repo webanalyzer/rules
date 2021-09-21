@@ -1,5 +1,4 @@
 {
-    "name": "MotoCMS",
     "implies": [
         "PHP",
         "AngularJS",
@@ -7,12 +6,13 @@
     ],
     "matches": [
         {
-            "search": "script",
-            "regexp": "/mt-includes/js/website(?:assets)?\\.(?:min)?\\.js"
+            "regexp": "<link [^>]*href=\"[^>]*\\/mt-content\\/[^>]*\\.css"
         },
         {
-            "regexp": "<link [^>]*href=\"[^>]*\\/mt-content\\/[^>]*\\.css"
+            "search": "script",
+            "regexp": "/mt-includes/js/website(?:assets)?\\.(?:min)?\\.js"
         }
     ],
-    "website": "http://motocms.com"
+    "website": "http://motocms.com",
+    "name": "MotoCMS"
 }

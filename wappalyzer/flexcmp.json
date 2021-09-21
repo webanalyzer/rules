@@ -1,13 +1,12 @@
 {
-    "name": "FlexCMP",
     "matches": [
         {
             "search": "meta[generator]",
             "regexp": "^FlexCMP"
         },
         {
-            "offset": 1,
             "search": "headers[x-powered-by]",
+            "offset": 1,
             "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)"
         },
         {
@@ -19,5 +18,6 @@
             "regexp": "<!--[^>]+FlexCMP[^>v]+v\\. ([\\d.]+)"
         }
     ],
-    "website": "http://www.flexcmp.com/cms/home"
+    "website": "http://www.flexcmp.com/cms/home",
+    "name": "FlexCMP"
 }

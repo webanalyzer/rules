@@ -1,19 +1,19 @@
 {
-    "name": "Chevereto",
     "implies": "PHP",
     "matches": [
-        {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "^Chevereto ?([0-9.]+)?$"
-        },
         {
             "search": "script",
             "regexp": "/chevereto\\.js"
         },
         {
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "^Chevereto ?([0-9.]+)?$"
+        },
+        {
             "regexp": "Powered by <a href=\"https?://chevereto\\.com\">"
         }
     ],
-    "website": "https://chevereto.com/"
+    "website": "https://chevereto.com/",
+    "name": "Chevereto"
 }
