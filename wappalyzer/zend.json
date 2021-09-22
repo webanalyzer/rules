@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "cookies[ZENDSERVERSESSID]",
-            "regexp": ".*"
+            "regexp": "Zend(?:Server)?(?:[\\s/]?([0-9.]+))?",
+            "offset": 1,
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "Zend(?:Server)?(?:[\\s/]?([0-9.]+))?"
+            "regexp": ".*",
+            "search": "cookies[ZENDSERVERSESSID]"
         }
     ],
     "website": "http://zend.com",

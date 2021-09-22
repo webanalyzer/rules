@@ -2,22 +2,22 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "script",
+            "regexp": "^rainloop/v/([0-9.]+)/",
             "offset": 1,
-            "regexp": "^rainloop/v/([0-9.]+)/"
+            "search": "script"
         },
         {
-            "search": "meta[rlAppVersion]",
-            "offset": 1,
-            "regexp": "^([0-9.]+)$"
+            "regexp": "^RainLoop",
+            "search": "headers[server]"
         },
         {
-            "offset": 1,
-            "regexp": "<link[^>]href=\"rainloop/v/([0-9.]+)/static/apple-touch-icon\\.png/>"
+            "regexp": "<link[^>]href=\"rainloop/v/([0-9.]+)/static/apple-touch-icon\\.png/>",
+            "offset": 1
         },
         {
-            "search": "headers[server]",
-            "regexp": "^RainLoop"
+            "regexp": "^([0-9.]+)$",
+            "offset": 1,
+            "search": "meta[rlAppVersion]"
         }
     ],
     "website": "https://www.rainloop.net/",

@@ -1,18 +1,18 @@
 {
     "matches": [
         {
-            "search": "script",
-            "regexp": "woocommerce"
+            "regexp": "woocommerce",
+            "search": "script"
         },
         {
-            "search": "script",
+            "regexp": "/woocommerce(?:\\.min)?\\.js(?:\\?ver=([0-9.]+))?",
             "offset": 1,
-            "regexp": "/woocommerce(?:\\.min)?\\.js(?:\\?ver=([0-9.]+))?"
+            "search": "script"
         },
         {
-            "search": "meta[generator]",
+            "regexp": "WooCommerce ([\\d.]+)",
             "offset": 1,
-            "regexp": "WooCommerce ([\\d.]+)"
+            "search": "meta[generator]"
         }
     ],
     "website": "https://woocommerce.com",

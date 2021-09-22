@@ -2,12 +2,12 @@
     "implies": "Express",
     "matches": [
         {
-            "search": "cookies[sails.sid]",
-            "regexp": ".*"
+            "regexp": "^Sails(?:$|[^a-z0-9])",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^Sails(?:$|[^a-z0-9])"
+            "regexp": ".*",
+            "search": "cookies[sails.sid]"
         }
     ],
     "website": "http://sailsjs.org",

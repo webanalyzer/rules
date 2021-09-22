@@ -1,21 +1,21 @@
 {
     "matches": [
         {
-            "search": "script",
-            "offset": 1,
-            "regexp": "react(?:-with-addons)?[.-]([\\d.]*\\d)[^/]*\\.js"
-        },
-        {
-            "search": "script",
-            "offset": 1,
-            "regexp": "/([\\d.]+)/react(?:\\.min)?\\.js"
-        },
-        {
-            "search": "script",
-            "regexp": "^react\\b.*\\.js"
-        },
-        {
             "regexp": "<[^>]+data-react"
+        },
+        {
+            "regexp": "react(?:-with-addons)?[.-]([\\d.]*\\d)[^/]*\\.js",
+            "offset": 1,
+            "search": "script"
+        },
+        {
+            "regexp": "/([\\d.]+)/react(?:\\.min)?\\.js",
+            "offset": 1,
+            "search": "script"
+        },
+        {
+            "regexp": "^react\\b.*\\.js",
+            "search": "script"
         }
     ],
     "website": "https://reactjs.org",

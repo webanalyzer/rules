@@ -2,11 +2,11 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "script",
-            "regexp": "gm_javascript\\.js\\.php"
+            "regexp": "(?:<link[^>]* href=\"templates/gambio/|<a[^>]content\\.php\\?coID=\\d|<!-- gambio eof -->|<!--[\\s=]+Shopsoftware by Gambio GmbH \\(c\\))"
         },
         {
-            "regexp": "(?:<link[^>]* href=\"templates/gambio/|<a[^>]content\\.php\\?coID=\\d|<!-- gambio eof -->|<!--[\\s=]+Shopsoftware by Gambio GmbH \\(c\\))"
+            "regexp": "gm_javascript\\.js\\.php",
+            "search": "script"
         }
     ],
     "website": "http://gambio.de",

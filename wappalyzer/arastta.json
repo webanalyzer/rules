@@ -2,23 +2,23 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "script",
-            "regexp": "arastta\\.js"
+            "regexp": ".*",
+            "search": "headers[x-arastta]"
+        },
+        {
+            "regexp": "^(.+)$",
+            "offset": 1,
+            "search": "headers[arastta]"
         },
         {
             "regexp": "Powered by <a [^>]*href=\"https?://(?:www\\.)?arastta\\.org[^>]+>Arastta"
         },
         {
-            "search": "headers[x-arastta]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[arastta]",
-            "offset": 1,
-            "regexp": "^(.+)$"
+            "regexp": "arastta\\.js",
+            "search": "script"
         }
     ],
     "website": "http://arastta.org",
-    "excludes": "OpenCart",
-    "name": "Arastta"
+    "name": "Arastta",
+    "excludes": "OpenCart"
 }

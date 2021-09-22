@@ -5,14 +5,14 @@
     ],
     "matches": [
         {
-            "search": "meta[generator]",
+            "regexp": "CMS Danneo ([\\d.]+)",
             "offset": 1,
-            "regexp": "Danneo CMS ([\\d.]+)"
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
+            "regexp": "Danneo CMS ([\\d.]+)",
             "offset": 1,
-            "regexp": "CMS Danneo ([\\d.]+)"
+            "search": "meta[generator]"
         }
     ],
     "website": "http://danneo.com",

@@ -2,15 +2,15 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/phabricator/[a-f0-9]{8}/rsrc/js/phui/[a-z-]+\\.js$"
-        },
-        {
             "regexp": "<[^>]+(?:class|id)=\"phabricator-"
         },
         {
-            "search": "cookies[phsid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[phsid]"
+        },
+        {
+            "regexp": "/phabricator/[a-f0-9]{8}/rsrc/js/phui/[a-z-]+\\.js$",
+            "search": "script"
         }
     ],
     "website": "http://phacility.com",

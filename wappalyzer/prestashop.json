@@ -5,16 +5,16 @@
     ],
     "matches": [
         {
-            "search": "headers[powered-by]",
-            "regexp": "^Prestashop$"
+            "regexp": "^Prestashop$",
+            "search": "headers[powered-by]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "PrestaShop"
+            "regexp": ".*",
+            "search": "cookies[PrestaShop]"
         },
         {
-            "search": "cookies[PrestaShop]",
-            "regexp": ".*"
+            "regexp": "PrestaShop",
+            "search": "meta[generator]"
         },
         {
             "regexp": "Powered by <a\\s+[^>]+>PrestaShop"

@@ -2,15 +2,15 @@
     "implies": "CFML",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/cfajax/"
+            "regexp": "CFTOKEN=",
+            "search": "headers[cookie]"
         },
         {
             "regexp": "<!-- START headerTags\\.cfm"
         },
         {
-            "search": "headers[cookie]",
-            "regexp": "CFTOKEN="
+            "regexp": "/cfajax/",
+            "search": "script"
         }
     ],
     "website": "http://adobe.com/products/coldfusion-family.html",

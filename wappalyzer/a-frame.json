@@ -2,12 +2,12 @@
     "implies": "three.js",
     "matches": [
         {
-            "search": "script",
-            "offset": 1,
-            "regexp": "/?([\\d.]+)?/aframe(?:\\.min)?\\.js"
+            "regexp": "<a-scene[^<>]*>"
         },
         {
-            "regexp": "<a-scene[^<>]*>"
+            "regexp": "/?([\\d.]+)?/aframe(?:\\.min)?\\.js",
+            "offset": 1,
+            "search": "script"
         }
     ],
     "website": "https://aframe.io",

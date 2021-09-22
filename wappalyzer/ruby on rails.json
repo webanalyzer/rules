@@ -2,27 +2,27 @@
     "implies": "Ruby",
     "matches": [
         {
-            "search": "script",
+            "regexp": "/assets/application-[a-z\\d]{32}/\\.js",
             "certainty": 50,
-            "regexp": "/assets/application-[a-z\\d]{32}/\\.js"
+            "search": "script"
         },
         {
-            "search": "meta[csrf-param]",
-            "certainty": 50,
-            "regexp": "^authenticity_token$"
+            "regexp": "mod_(?:rails|rack)",
+            "search": "headers[server]"
         },
         {
-            "search": "cookies[_session_id]",
+            "regexp": "mod_(?:rails|rack)",
+            "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": ".*",
             "certainty": 75,
-            "regexp": ".*"
+            "search": "cookies[_session_id]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "mod_(?:rails|rack)"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "mod_(?:rails|rack)"
+            "regexp": "^authenticity_token$",
+            "certainty": 50,
+            "search": "meta[csrf-param]"
         }
     ],
     "website": "https://rubyonrails.org",

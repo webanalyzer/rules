@@ -2,12 +2,12 @@
     "implies": "Node.js",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/ep_etherpad-lite/"
+            "regexp": "^Etherpad",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^Etherpad"
+            "regexp": "/ep_etherpad-lite/",
+            "search": "script"
         }
     ],
     "website": "https://etherpad.org",

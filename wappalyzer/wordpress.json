@@ -5,29 +5,29 @@
     ],
     "matches": [
         {
-            "search": "headers[link]",
-            "regexp": "rel=\"https://api\\.w\\.org/\""
+            "regexp": "/wp-(?:content|includes)/",
+            "search": "script"
         },
         {
-            "search": "headers[x-pingback]",
-            "regexp": "/xmlrpc\\.php$"
+            "regexp": "wp-embed\\.min\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "/wp-(?:content|includes)/"
+            "regexp": "rel=\"https://api\\.w\\.org/\"",
+            "search": "headers[link]"
         },
         {
-            "search": "script",
-            "regexp": "wp-embed\\.min\\.js"
+            "regexp": "/xmlrpc\\.php$",
+            "search": "headers[x-pingback]"
         },
         {
-            "search": "meta[generator]",
+            "regexp": "^WordPress(?: ([\\d.]+))?",
             "offset": 1,
-            "regexp": "^WordPress(?: ([\\d.]+))?"
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[shareaholic:wp_version]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "meta[shareaholic:wp_version]"
         },
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"

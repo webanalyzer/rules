@@ -2,12 +2,12 @@
     "implies": "Node.js",
     "matches": [
         {
-            "search": "script",
-            "regexp": "medium\\.com"
+            "regexp": "^Medium$",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^Medium$"
+            "regexp": "medium\\.com",
+            "search": "script"
         }
     ],
     "website": "https://medium.com",

@@ -5,18 +5,23 @@
     ],
     "matches": [
         {
-            "search": "script",
-            "regexp": "js/mage"
-        },
-        {
-            "search": "script",
-            "offset": 1,
-            "regexp": "skin/frontend/(?:default|(enterprise))"
-        },
-        {
-            "search": "script",
+            "regexp": ".*",
             "certainty": 50,
-            "regexp": "static/_requirejs"
+            "search": "cookies[frontend]"
+        },
+        {
+            "regexp": "js/mage",
+            "search": "script"
+        },
+        {
+            "regexp": "skin/frontend/(?:default|(enterprise))",
+            "offset": 1,
+            "search": "script"
+        },
+        {
+            "regexp": "static/_requirejs",
+            "certainty": 50,
+            "search": "script"
         },
         {
             "regexp": "<script [^>]+data-requiremodule=\"mage/"
@@ -26,11 +31,6 @@
         },
         {
             "regexp": "<script type=\"text/x-magento-init\">"
-        },
-        {
-            "search": "cookies[frontend]",
-            "certainty": 50,
-            "regexp": ".*"
         }
     ],
     "website": "https://magento.com",

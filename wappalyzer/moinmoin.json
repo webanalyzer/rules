@@ -2,12 +2,12 @@
     "implies": "Python",
     "matches": [
         {
-            "search": "script",
-            "regexp": "moin(?:_static(\\d)(\\d)(\\d)|.+)/common/js/common\\.js"
+            "regexp": ".*",
+            "search": "cookies[MOIN_SESSION]"
         },
         {
-            "search": "cookies[MOIN_SESSION]",
-            "regexp": ".*"
+            "regexp": "moin(?:_static(\\d)(\\d)(\\d)|.+)/common/js/common\\.js",
+            "search": "script"
         }
     ],
     "website": "https://moinmo.in",

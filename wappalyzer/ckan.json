@@ -7,17 +7,17 @@
     ],
     "matches": [
         {
-            "search": "meta[generator]",
+            "regexp": "X-CKAN-API-KEY",
+            "search": "headers[access-control-allow-headers]"
+        },
+        {
+            "regexp": "<http://ckan\\.org/>; rel=shortlink",
+            "search": "headers[link]"
+        },
+        {
+            "regexp": "^ckan ?([0-9.]+)$",
             "offset": 1,
-            "regexp": "^ckan ?([0-9.]+)$"
-        },
-        {
-            "search": "headers[access-control-allow-headers]",
-            "regexp": "X-CKAN-API-KEY"
-        },
-        {
-            "search": "headers[link]",
-            "regexp": "<http://ckan\\.org/>; rel=shortlink"
+            "search": "meta[generator]"
         }
     ],
     "website": "http://ckan.org/",

@@ -2,17 +2,17 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/concrete/js/"
+            "regexp": "/concrete/js/",
+            "search": "script"
         },
         {
-            "search": "meta[generator]",
+            "regexp": ".*",
+            "search": "cookies[CONCRETE5]"
+        },
+        {
+            "regexp": "^concrete5(?: - ([\\d.]+)$)?",
             "offset": 1,
-            "regexp": "^concrete5(?: - ([\\d.]+)$)?"
-        },
-        {
-            "search": "cookies[CONCRETE5]",
-            "regexp": ".*"
+            "search": "meta[generator]"
         }
     ],
     "website": "https://www.concretecms.com",

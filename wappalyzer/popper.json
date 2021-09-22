@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "script",
-            "offset": 1,
-            "regexp": "/popper\\.js/([0-9.]+)"
+            "regexp": "<script [^>]*src=\"[^\"]*/popper\\.js/([0-9.]+)",
+            "offset": 1
         },
         {
+            "regexp": "/popper\\.js/([0-9.]+)",
             "offset": 1,
-            "regexp": "<script [^>]*src=\"[^\"]*/popper\\.js/([0-9.]+)"
+            "search": "script"
         }
     ],
     "website": "https://popper.js.org",

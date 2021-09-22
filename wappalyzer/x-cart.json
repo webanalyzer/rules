@@ -2,24 +2,24 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/skin/common_files/modules/Product_Options/func\\.js"
+            "regexp": "/skin/common_files/modules/Product_Options/func\\.js",
+            "search": "script"
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "X-Cart(?: (\\d+))?"
-        },
-        {
-            "offset": 1,
-            "regexp": "Powered by X-Cart(?: (\\d+))? <a[^>]+href=\"http://www\\.x-cart\\.com/\"[^>]*>"
+            "regexp": "Powered by X-Cart(?: (\\d+))? <a[^>]+href=\"http://www\\.x-cart\\.com/\"[^>]*>",
+            "offset": 1
         },
         {
             "regexp": "<a[^>]+href=\"[^\"]*(?:\\?|&)xcart_form_id=[a-z\\d]{32}(?:&|$)"
         },
         {
-            "search": "cookies[xid]",
-            "regexp": "[a-z\\d]{32}(?:;|$)"
+            "regexp": "[a-z\\d]{32}(?:;|$)",
+            "search": "cookies[xid]"
+        },
+        {
+            "regexp": "X-Cart(?: (\\d+))?",
+            "offset": 1,
+            "search": "meta[generator]"
         }
     ],
     "website": "http://x-cart.com",

@@ -2,15 +2,15 @@
     "implies": "Microsoft ASP.NET",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "grandnode"
-        },
-        {
             "regexp": "(?:<!--GrandNode |<a[^>]+grandnode - Powered by |Powered by: <a[^>]+nopcommerce)"
         },
         {
-            "search": "cookies[Grand.customer]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[Grand.customer]"
+        },
+        {
+            "regexp": "grandnode",
+            "search": "meta[generator]"
         }
     ],
     "website": "https://grandnode.com",

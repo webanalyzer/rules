@@ -2,12 +2,12 @@
     "implies": "JBoss Application Server",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
+            "regexp": "JBossWeb(?:-([\\d.]+))?",
             "offset": 1,
-            "regexp": "JBossWeb(?:-([\\d.]+))?"
+            "search": "headers[x-powered-by]"
         }
     ],
     "website": "http://jboss.org/jbossweb",
-    "excludes": "Apache Tomcat",
-    "name": "JBoss Web"
+    "name": "JBoss Web",
+    "excludes": "Apache Tomcat"
 }

@@ -1,11 +1,11 @@
 {
     "matches": [
         {
-            "regexp": "<iframe src=\"[^>]+tumblr\\.com"
+            "regexp": ".*",
+            "search": "headers[x-tumblr-user]"
         },
         {
-            "search": "headers[x-tumblr-user]",
-            "regexp": ".*"
+            "regexp": "<iframe src=\"[^>]+tumblr\\.com"
         }
     ],
     "website": "http://www.tumblr.com",

@@ -2,12 +2,12 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "CPG Dragonfly"
+            "regexp": "^Dragonfly CMS",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^Dragonfly CMS"
+            "regexp": "CPG Dragonfly",
+            "search": "meta[generator]"
         }
     ],
     "website": "http://dragonflycms.org",

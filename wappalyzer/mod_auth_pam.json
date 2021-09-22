@@ -2,9 +2,9 @@
     "implies": "Apache",
     "matches": [
         {
-            "search": "headers[server]",
+            "regexp": "mod_auth_pam(?:/([\\d\\.]+))?",
             "offset": 1,
-            "regexp": "mod_auth_pam(?:/([\\d\\.]+))?"
+            "search": "headers[server]"
         }
     ],
     "website": "http://pam.sourceforge.net/mod_auth_pam",

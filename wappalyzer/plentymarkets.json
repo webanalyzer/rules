@@ -1,16 +1,16 @@
 {
     "matches": [
         {
-            "search": "script",
-            "regexp": "plenty\\.shop\\.(?:min\\.)?js"
+            "regexp": "plenty\\.shop\\.(?:min\\.)?js",
+            "search": "script"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "plentymarkets"
+            "regexp": ".*",
+            "search": "headers[x-plenty-shop]"
         },
         {
-            "search": "headers[x-plenty-shop]",
-            "regexp": ".*"
+            "regexp": "plentymarkets",
+            "search": "meta[generator]"
         }
     ],
     "website": "https://www.plentymarkets.com/",

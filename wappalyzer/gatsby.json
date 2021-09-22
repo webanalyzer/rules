@@ -5,15 +5,15 @@
     ],
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^Gatsby(?: ([0-9.]+))?$"
-        },
-        {
             "regexp": "<div id=\"___gatsby\">"
         },
         {
             "regexp": "<style id=\"gatsby-inlined-css\">"
+        },
+        {
+            "regexp": "^Gatsby(?: ([0-9.]+))?$",
+            "offset": 1,
+            "search": "meta[generator]"
         }
     ],
     "website": "https://www.gatsbyjs.org/",

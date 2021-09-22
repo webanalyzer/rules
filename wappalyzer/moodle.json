@@ -2,19 +2,19 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "meta[keywords]",
-            "regexp": "^moodle"
-        },
-        {
             "regexp": "<img[^>]+moodlelogo"
         },
         {
-            "search": "cookies[MOODLEID_]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[MoodleSession]"
         },
         {
-            "search": "cookies[MoodleSession]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[MOODLEID_]"
+        },
+        {
+            "regexp": "^moodle",
+            "search": "meta[keywords]"
         }
     ],
     "website": "http://moodle.org",

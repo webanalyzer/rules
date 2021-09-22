@@ -2,20 +2,20 @@
     "implies": "Java",
     "matches": [
         {
-            "search": "script",
+            "regexp": "^/js/bundles/sonar\\.js?v=([\\d.]+)$",
             "offset": 1,
-            "regexp": "^/js/bundles/sonar\\.js?v=([\\d.]+)$"
+            "search": "script"
         },
         {
-            "search": "meta[application-name]",
-            "regexp": "^SonarQubes$"
-        },
-        {
-            "offset": 1,
-            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)"
+            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)",
+            "offset": 1
         },
         {
             "regexp": "<title>SonarQube</title>"
+        },
+        {
+            "regexp": "^SonarQubes$",
+            "search": "meta[application-name]"
         }
     ],
     "website": "https://www.sonarqube.org/",

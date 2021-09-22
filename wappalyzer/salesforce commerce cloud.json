@@ -2,20 +2,20 @@
     "implies": "Salesforce",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/demandware\\.static/"
+            "regexp": "/demandware\\.static/",
+            "search": "script"
         },
         {
-            "search": "cookies[dwsid]",
-            "regexp": ".*"
+            "regexp": "Demandware eCommerce Server",
+            "search": "headers[server]"
         },
         {
-            "search": "cookies[dw_dnt]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[dw_dnt]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "Demandware eCommerce Server"
+            "regexp": ".*",
+            "search": "cookies[dwsid]"
         }
     ],
     "website": "http://demandware.com",

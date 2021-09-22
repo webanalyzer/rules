@@ -1,18 +1,18 @@
 {
     "matches": [
         {
-            "search": "script",
-            "offset": 1,
-            "regexp": "Scripts/_app/Inv(?:\\w+)\\.js\\?v=(.+)$"
-        },
-        {
-            "search": "cookies[inveonSessionId]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[INV.Customer]",
+            "regexp": ".*",
             "certainty": 50,
-            "regexp": ".*"
+            "search": "cookies[INV.Customer]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[inveonSessionId]"
+        },
+        {
+            "regexp": "Scripts/_app/Inv(?:\\w+)\\.js\\?v=(.+)$",
+            "offset": 1,
+            "search": "script"
         }
     ],
     "website": "https://www.inveon.com",

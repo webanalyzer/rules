@@ -5,19 +5,19 @@
     ],
     "matches": [
         {
-            "search": "script",
-            "regexp": "jscripts/ips_"
-        },
-        {
             "regexp": "<link[^>]+ipb_[^>]+\\.css"
         },
         {
-            "search": "cookies[ipbWWLsession_id]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[ipbWWLmodpids]"
         },
         {
-            "search": "cookies[ipbWWLmodpids]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[ipbWWLsession_id]"
+        },
+        {
+            "regexp": "jscripts/ips_",
+            "search": "script"
         }
     ],
     "website": "https://invisioncommunity.com/",

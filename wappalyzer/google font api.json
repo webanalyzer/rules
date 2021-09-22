@@ -1,11 +1,11 @@
 {
     "matches": [
         {
-            "search": "script",
-            "regexp": "googleapis\\.com/.+webfont"
+            "regexp": "<link[^>]* href=[^>]+fonts\\.(?:googleapis|google)\\.com"
         },
         {
-            "regexp": "<link[^>]* href=[^>]+fonts\\.(?:googleapis|google)\\.com"
+            "regexp": "googleapis\\.com/.+webfont",
+            "search": "script"
         }
     ],
     "website": "http://google.com/fonts",

@@ -2,26 +2,26 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "headers[x-generator]",
+            "regexp": "^Drupal(?:\\s([\\d.]+))?",
             "offset": 1,
-            "regexp": "^Drupal(?:\\s([\\d.]+))?"
+            "search": "meta[generator]"
         },
         {
-            "search": "headers[x-drupal-cache]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[expires]",
-            "regexp": "19 Nov 1978"
-        },
-        {
-            "search": "script",
-            "regexp": "drupal\\.js"
-        },
-        {
-            "search": "meta[generator]",
+            "regexp": "^Drupal(?:\\s([\\d.]+))?",
             "offset": 1,
-            "regexp": "^Drupal(?:\\s([\\d.]+))?"
+            "search": "headers[x-generator]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-drupal-cache]"
+        },
+        {
+            "regexp": "19 Nov 1978",
+            "search": "headers[expires]"
+        },
+        {
+            "regexp": "drupal\\.js",
+            "search": "script"
         },
         {
             "regexp": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/"

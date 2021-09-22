@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "search": "script",
-            "regexp": "amcharts.*\\.js"
+            "regexp": "<svg[^>]*><desc>JavaScript chart by amCharts ([\\d.]*)",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "<svg[^>]*><desc>JavaScript chart by amCharts ([\\d.]*)"
+            "regexp": "amcharts.*\\.js",
+            "search": "script"
         }
     ],
     "website": "http://amcharts.com",

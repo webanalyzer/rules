@@ -1,11 +1,6 @@
 {
     "matches": [
         {
-            "search": "script",
-            "offset": 1,
-            "regexp": "elementor/assets/js/[^/]+\\.js\\?ver=([\\d.]+)$"
-        },
-        {
             "regexp": "<div class=(?:\"|')[^\"']*elementor"
         },
         {
@@ -16,6 +11,11 @@
         },
         {
             "regexp": "<link [^>]*href=(?:\"|')[^\"']*uploads/elementor/css"
+        },
+        {
+            "regexp": "elementor/assets/js/[^/]+\\.js\\?ver=([\\d.]+)$",
+            "offset": 1,
+            "search": "script"
         }
     ],
     "website": "https://elementor.com",
