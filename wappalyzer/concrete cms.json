@@ -1,20 +1,20 @@
 {
     "implies": "PHP",
+    "website": "https://www.concretecms.com",
+    "name": "Concrete CMS",
     "matches": [
         {
-            "regexp": "/concrete/js/",
-            "search": "script"
+            "search": "cookies[CONCRETE5]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[CONCRETE5]"
-        },
-        {
-            "regexp": "^concrete5(?: - ([\\d.]+)$)?",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "^concrete5(?: - ([\\d.]+)$)?"
+        },
+        {
+            "search": "script",
+            "regexp": "/concrete/js/"
         }
-    ],
-    "website": "https://www.concretecms.com",
-    "name": "Concrete CMS"
+    ]
 }

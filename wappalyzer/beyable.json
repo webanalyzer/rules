@@ -1,19 +1,19 @@
 {
+    "website": "https://beyable.com",
+    "name": "Beyable",
     "matches": [
         {
-            "regexp": "msecnd\\.net/api/beYableJSv(\\d+)",
+            "search": "cookies[beyable-cartd]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[beyable-cart]",
+            "regexp": ".*"
+        },
+        {
             "offset": 1,
-            "search": "script"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[beyable-cart]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[beyable-cartd]"
+            "search": "script",
+            "regexp": "msecnd\\.net/api/beYableJSv(\\d+)"
         }
-    ],
-    "website": "https://beyable.com",
-    "name": "Beyable"
+    ]
 }

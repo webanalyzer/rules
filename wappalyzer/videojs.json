@@ -1,18 +1,18 @@
 {
+    "website": "http://videojs.com",
+    "name": "VideoJS",
     "matches": [
         {
             "regexp": "<div[^>]+class=\"video-js+\">"
         },
         {
-            "regexp": "zencdn\\.net/c/video\\.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "zencdn\\.net/c/video\\.js"
         },
         {
-            "regexp": "cdnjs\\.cloudflare\\.com\\/ajax\\/libs\\/video\\.js\\/([\\d\\.]+)\\/",
             "offset": 1,
-            "search": "script"
+            "search": "script",
+            "regexp": "cdnjs\\.cloudflare\\.com\\/ajax\\/libs\\/video\\.js\\/([\\d\\.]+)\\/"
         }
-    ],
-    "website": "http://videojs.com",
-    "name": "VideoJS"
+    ]
 }

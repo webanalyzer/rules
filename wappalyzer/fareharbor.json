@@ -1,13 +1,13 @@
 {
+    "website": "https://fareharbor.com",
+    "name": "FareHarbor",
     "matches": [
         {
-            "regexp": "fareharbor\\.com/embeds/api/",
-            "search": "script"
+            "regexp": "<iframe[^>]+fareharbor"
         },
         {
-            "regexp": "<iframe[^>]+fareharbor"
+            "search": "script",
+            "regexp": "fareharbor\\.com/embeds/api/"
         }
-    ],
-    "website": "https://fareharbor.com",
-    "name": "FareHarbor"
+    ]
 }

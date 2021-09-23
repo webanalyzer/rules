@@ -1,14 +1,14 @@
 {
+    "website": "https://www.podia.com",
+    "name": "Podia",
     "matches": [
         {
-            "regexp": "cdn\\.podia\\.com",
-            "search": "script"
+            "search": "cookies[_podia_storefront_visitor_id]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_podia_storefront_visitor_id]"
+            "search": "script",
+            "regexp": "cdn\\.podia\\.com"
         }
-    ],
-    "website": "https://www.podia.com",
-    "name": "Podia"
+    ]
 }

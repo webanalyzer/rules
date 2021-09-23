@@ -1,18 +1,18 @@
 {
+    "website": "https://retailrocket.net",
+    "name": "Retail Rocket",
     "matches": [
         {
-            "regexp": "cdn\\.retailrocket\\.net",
-            "search": "script"
+            "search": "cookies[rr-testCookie]",
+            "regexp": "testvalue"
         },
         {
-            "regexp": "^\\d+$",
-            "search": "cookies[rrpvid]"
+            "search": "cookies[rrpvid]",
+            "regexp": "^\\d+$"
         },
         {
-            "regexp": "testvalue",
-            "search": "cookies[rr-testCookie]"
+            "search": "script",
+            "regexp": "cdn\\.retailrocket\\.net"
         }
-    ],
-    "website": "https://retailrocket.net",
-    "name": "Retail Rocket"
+    ]
 }

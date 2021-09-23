@@ -1,42 +1,42 @@
 {
+    "website": "https://www.borderfree.com",
+    "name": "Borderfree",
     "matches": [
         {
-            "regexp": "global\\.prd\\.borderfree\\.com",
-            "search": "script"
-        },
-        {
-            "regexp": "wm\\.prd\\.borderfree\\.com",
-            "search": "script"
-        },
-        {
-            "regexp": "bfx\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "cbt\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "^\\w+$",
             "certainty": 25,
-            "search": "cookies[bfx.country:]"
+            "search": "cookies[bfx.country:]",
+            "regexp": "^\\w+$"
         },
         {
-            "regexp": "^\\w+$",
             "certainty": 25,
-            "search": "cookies[bfx.logLevel]"
+            "search": "cookies[bfx.logLevel]",
+            "regexp": "^\\w+$"
         },
         {
-            "regexp": "^\\w+$",
             "certainty": 25,
-            "search": "cookies[bfx.language]"
+            "search": "cookies[bfx.apiKey:]",
+            "regexp": "^[\\w\\d-]+$"
         },
         {
-            "regexp": "^[\\w\\d-]+$",
             "certainty": 25,
-            "search": "cookies[bfx.apiKey:]"
+            "search": "cookies[bfx.language]",
+            "regexp": "^\\w+$"
+        },
+        {
+            "search": "script",
+            "regexp": "global\\.prd\\.borderfree\\.com"
+        },
+        {
+            "search": "script",
+            "regexp": "wm\\.prd\\.borderfree\\.com"
+        },
+        {
+            "search": "script",
+            "regexp": "bfx\\.js"
+        },
+        {
+            "search": "script",
+            "regexp": "cbt\\.js"
         }
-    ],
-    "website": "https://www.borderfree.com",
-    "name": "Borderfree"
+    ]
 }

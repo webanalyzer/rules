@@ -1,13 +1,13 @@
 {
+    "website": "http://typekit.com",
+    "name": "Typekit",
     "matches": [
         {
-            "regexp": "use\\.typekit\\.com",
-            "search": "script"
+            "regexp": "<link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
         },
         {
-            "regexp": "<link [^>]*href=\"[^\"]+use\\.typekit\\.(?:net|com)"
+            "search": "script",
+            "regexp": "use\\.typekit\\.com"
         }
-    ],
-    "website": "http://typekit.com",
-    "name": "Typekit"
+    ]
 }
