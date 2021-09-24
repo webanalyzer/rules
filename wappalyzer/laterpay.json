@@ -1,15 +1,15 @@
 {
-    "website": "https://www.laterpay.net/",
-    "name": "Laterpay",
     "matches": [
         {
-            "search": "meta[laterpay:connector:callbacks:on_user_has_access]",
-            "regexp": "deobfuscateText"
+            "regexp": "https?://connectormwi\\.laterpay\\.net/([0-9.]+)[a-zA-z-]*/live/[\\w-]+\\.js",
+            "offset": 1,
+            "search": "script"
         },
         {
-            "offset": 1,
-            "search": "script",
-            "regexp": "https?://connectormwi\\.laterpay\\.net/([0-9.]+)[a-zA-z-]*/live/[\\w-]+\\.js"
+            "regexp": "deobfuscateText",
+            "search": "meta[laterpay:connector:callbacks:on_user_has_access]"
         }
-    ]
+    ],
+    "name": "Laterpay",
+    "website": "https://www.laterpay.net/"
 }

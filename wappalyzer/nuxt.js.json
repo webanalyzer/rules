@@ -3,18 +3,18 @@
         "Vue.js",
         "Node.js"
     ],
-    "website": "https://nuxtjs.org",
-    "name": "Nuxt.js",
     "matches": [
+        {
+            "regexp": "/_nuxt/",
+            "search": "script"
+        },
         {
             "regexp": "<div [^>]*id=\"__nuxt\""
         },
         {
             "regexp": "<script [^>]*>window\\.__NUXT__"
-        },
-        {
-            "search": "script",
-            "regexp": "/_nuxt/"
         }
-    ]
+    ],
+    "name": "Nuxt.js",
+    "website": "https://nuxtjs.org"
 }

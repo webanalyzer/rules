@@ -1,21 +1,21 @@
 {
     "implies": "jQuery",
-    "website": "http://jqueryui.com",
-    "name": "jQuery UI",
     "matches": [
         {
+            "regexp": "jquery-ui[.-]([\\d.]*\\d)[^/]*\\.js",
             "offset": 1,
-            "search": "script",
-            "regexp": "jquery-ui[.-]([\\d.]*\\d)[^/]*\\.js"
+            "search": "script"
         },
         {
+            "regexp": "([\\d.]+)/jquery-ui(?:\\.min)?\\.js",
             "offset": 1,
-            "search": "script",
-            "regexp": "([\\d.]+)/jquery-ui(?:\\.min)?\\.js"
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "jquery-ui.*\\.js"
+            "regexp": "jquery-ui.*\\.js",
+            "search": "script"
         }
-    ]
+    ],
+    "name": "jQuery UI",
+    "website": "http://jqueryui.com"
 }

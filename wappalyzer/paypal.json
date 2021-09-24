@@ -1,17 +1,17 @@
 {
-    "website": "https://paypal.com",
-    "name": "PayPal",
     "matches": [
-        {
-            "search": "script",
-            "regexp": "paypalobjects\\.com"
-        },
         {
             "regexp": "<input[^>]+_s-xclick"
         },
         {
-            "search": "meta[id]",
-            "regexp": "in-context-paypal-metadata"
+            "regexp": "in-context-paypal-metadata",
+            "search": "meta[id]"
+        },
+        {
+            "regexp": "paypalobjects\\.com",
+            "search": "script"
         }
-    ]
+    ],
+    "name": "PayPal",
+    "website": "https://paypal.com"
 }

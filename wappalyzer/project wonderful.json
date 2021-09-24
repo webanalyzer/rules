@@ -1,13 +1,13 @@
 {
-    "website": "http://projectwonderful.com",
-    "name": "Project Wonderful",
     "matches": [
         {
-            "regexp": "<div[^>]+id=\"pw_adbox_"
+            "regexp": "^https?://(?:www\\.)?projectwonderful\\.com/(?:pwa\\.js|gen\\.php)",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "^https?://(?:www\\.)?projectwonderful\\.com/(?:pwa\\.js|gen\\.php)"
+            "regexp": "<div[^>]+id=\"pw_adbox_"
         }
-    ]
+    ],
+    "name": "Project Wonderful",
+    "website": "http://projectwonderful.com"
 }

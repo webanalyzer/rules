@@ -1,13 +1,13 @@
 {
-    "website": "http://ultracart.com",
-    "name": "UltraCart",
     "matches": [
         {
-            "regexp": "<form [^>]*action=\"[^\"]*\\/cgi-bin\\/UCEditor\\?(?:[^\"]*&)?merchantId=[^\"]"
+            "regexp": "cgi-bin\\/UCJavaScript\\?",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "cgi-bin\\/UCJavaScript\\?"
+            "regexp": "<form [^>]*action=\"[^\"]*\\/cgi-bin\\/UCEditor\\?(?:[^\"]*&)?merchantId=[^\"]"
         }
-    ]
+    ],
+    "name": "UltraCart",
+    "website": "http://ultracart.com"
 }

@@ -1,14 +1,14 @@
 {
-    "website": "https://mermaidjs.github.io/",
-    "name": "Mermaid",
     "matches": [
         {
-            "certainty": 90,
-            "regexp": "<div [^>]*class=[\"']mermaid[\"']>"
+            "regexp": "/mermaid(?:\\.min)?\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "/mermaid(?:\\.min)?\\.js"
+            "regexp": "<div [^>]*class=[\"']mermaid[\"']>",
+            "certainty": 90
         }
-    ]
+    ],
+    "name": "Mermaid",
+    "website": "https://mermaidjs.github.io/"
 }

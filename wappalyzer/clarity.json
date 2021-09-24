@@ -1,17 +1,17 @@
 {
     "implies": "Angular",
-    "website": "https://clarity.design/",
-    "name": "Clarity",
     "matches": [
+        {
+            "regexp": "clr-angular(?:\\.umd)?(?:\\.min)?\\.js",
+            "search": "script"
+        },
         {
             "regexp": "<clr-main-container"
         },
         {
             "regexp": "<link [^>]*href=\"[^\"]*clr-ui(?:\\.min)?\\.css"
-        },
-        {
-            "search": "script",
-            "regexp": "clr-angular(?:\\.umd)?(?:\\.min)?\\.js"
         }
-    ]
+    ],
+    "name": "Clarity",
+    "website": "https://clarity.design/"
 }

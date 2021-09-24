@@ -1,15 +1,15 @@
 {
     "implies": "React",
-    "website": "https://www.solidpixels.net",
-    "name": "SolidPixels",
     "matches": [
         {
-            "search": "meta[web_author]",
-            "regexp": "^solidpixels"
+            "regexp": "^https?://cdn\\.solidpixels\\.net/",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "^https?://cdn\\.solidpixels\\.net/"
+            "regexp": "^solidpixels",
+            "search": "meta[web_author]"
         }
-    ]
+    ],
+    "name": "SolidPixels",
+    "website": "https://www.solidpixels.net"
 }

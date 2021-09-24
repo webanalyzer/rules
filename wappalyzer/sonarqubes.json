@@ -1,23 +1,23 @@
 {
     "implies": "Java",
-    "website": "https://www.sonarqube.org/",
-    "name": "SonarQubes",
     "matches": [
         {
+            "regexp": "^/js/bundles/sonar\\.js?v=([\\d.]+)$",
             "offset": 1,
-            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)"
+            "search": "script"
+        },
+        {
+            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)",
+            "offset": 1
         },
         {
             "regexp": "<title>SonarQube</title>"
         },
         {
-            "search": "meta[application-name]",
-            "regexp": "^SonarQubes$"
-        },
-        {
-            "offset": 1,
-            "search": "script",
-            "regexp": "^/js/bundles/sonar\\.js?v=([\\d.]+)$"
+            "regexp": "^SonarQubes$",
+            "search": "meta[application-name]"
         }
-    ]
+    ],
+    "name": "SonarQubes",
+    "website": "https://www.sonarqube.org/"
 }

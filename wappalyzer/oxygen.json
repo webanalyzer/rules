@@ -1,16 +1,16 @@
 {
-    "website": "https://oxygenbuilder.com",
-    "name": "Oxygen",
     "matches": [
+        {
+            "regexp": "wp-content/plugins/oxygen",
+            "search": "script"
+        },
         {
             "regexp": "<body class=(?:\"|')[^\"']*oxygen-body"
         },
         {
             "regexp": "<link [^>]*href=(?:\"|')[^>]*wp-content/plugins/oxygen/"
-        },
-        {
-            "search": "script",
-            "regexp": "wp-content/plugins/oxygen"
         }
-    ]
+    ],
+    "name": "Oxygen",
+    "website": "https://oxygenbuilder.com"
 }
