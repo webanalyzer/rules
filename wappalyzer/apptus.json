@@ -1,19 +1,19 @@
 {
+    "website": "https://www.apptus.com",
+    "name": "Apptus",
     "matches": [
         {
-            "regexp": "cdn\\.esales\\.apptus\\.com.+(?:apptus-esales-api-([\\d.]+))\\.min\\.js",
             "offset": 1,
-            "search": "script"
+            "search": "script",
+            "regexp": "cdn\\.esales\\.apptus\\.com.+(?:apptus-esales-api-([\\d.]+))\\.min\\.js"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[apptus.customerKey]"
+            "search": "cookies[apptus.customerKey]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[apptus.sessionKey]"
+            "search": "cookies[apptus.sessionKey]",
+            "regexp": ".*"
         }
-    ],
-    "name": "Apptus",
-    "website": "https://www.apptus.com"
+    ]
 }

@@ -1,8 +1,6 @@
 {
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
+    "website": "https://magento.com",
+    "name": "Magento",
     "matches": [
         {
             "regexp": "<script [^>]+data-requiremodule=\"mage/"
@@ -14,25 +12,27 @@
             "regexp": "<script type=\"text/x-magento-init\">"
         },
         {
+            "search": "cookies[frontend]",
             "regexp": ".*",
-            "certainty": 50,
-            "search": "cookies[frontend]"
+            "certainty": 50
         },
         {
-            "regexp": "js/mage",
-            "search": "script"
+            "search": "script",
+            "regexp": "js/mage"
         },
         {
-            "regexp": "skin/frontend/(?:default|(enterprise))",
             "offset": 1,
-            "search": "script"
+            "search": "script",
+            "regexp": "skin/frontend/(?:default|(enterprise))"
         },
         {
+            "search": "script",
             "regexp": "static/_requirejs",
-            "certainty": 50,
-            "search": "script"
+            "certainty": 50
         }
     ],
-    "name": "Magento",
-    "website": "https://magento.com"
+    "implies": [
+        "PHP",
+        "MySQL"
+    ]
 }

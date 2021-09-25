@@ -1,16 +1,16 @@
 {
-    "implies": "Vue.js",
+    "website": "https://www.vuestorefront.io/",
+    "name": "Vue Storefront",
     "matches": [
         {
-            "regexp": "vsf-layout",
-            "search": "script"
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "^Vue Storefront ([0-9.]+)?$"
         },
         {
-            "regexp": "^Vue Storefront ([0-9.]+)?$",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "script",
+            "regexp": "vsf-layout"
         }
     ],
-    "name": "Vue Storefront",
-    "website": "https://www.vuestorefront.io/"
+    "implies": "Vue.js"
 }

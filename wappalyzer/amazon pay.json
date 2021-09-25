@@ -1,18 +1,18 @@
 {
+    "website": "https://pay.amazon.com",
+    "name": "Amazon Pay",
     "matches": [
         {
-            "regexp": "/amazonpayments(?:\\.min)?\\.js",
-            "search": "script"
+            "search": "meta[id]",
+            "regexp": "amazon-payments-metadata"
         },
         {
-            "regexp": "\\.payments-amazon\\.com/OffAmazonPayments",
-            "search": "script"
+            "search": "script",
+            "regexp": "/amazonpayments(?:\\.min)?\\.js"
         },
         {
-            "regexp": "amazon-payments-metadata",
-            "search": "meta[id]"
+            "search": "script",
+            "regexp": "\\.payments-amazon\\.com/OffAmazonPayments"
         }
-    ],
-    "name": "Amazon Pay",
-    "website": "https://pay.amazon.com"
+    ]
 }

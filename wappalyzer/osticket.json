@@ -1,14 +1,14 @@
 {
+    "website": "http://osticket.com",
+    "name": "osTicket",
+    "matches": [
+        {
+            "search": "cookies[OSTSESSID]",
+            "regexp": ".*"
+        }
+    ],
     "implies": [
         "PHP",
         "MySQL"
-    ],
-    "matches": [
-        {
-            "regexp": ".*",
-            "search": "cookies[OSTSESSID]"
-        }
-    ],
-    "name": "osTicket",
-    "website": "http://osticket.com"
+    ]
 }

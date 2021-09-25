@@ -1,16 +1,23 @@
 {
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
+    "website": "https://wordpress.org",
+    "name": "WordPress",
     "matches": [
         {
-            "regexp": "rel=\"https://api\\.w\\.org/\"",
-            "search": "headers[link]"
+            "search": "meta[shareaholic:wp_version]",
+            "regexp": ".*"
         },
         {
-            "regexp": "/xmlrpc\\.php$",
-            "search": "headers[x-pingback]"
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "^WordPress(?: ([\\d.]+))?"
+        },
+        {
+            "search": "headers[x-pingback]",
+            "regexp": "/xmlrpc\\.php$"
+        },
+        {
+            "search": "headers[link]",
+            "regexp": "rel=\"https://api\\.w\\.org/\""
         },
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
@@ -19,23 +26,16 @@
             "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         },
         {
-            "regexp": ".*",
-            "search": "meta[shareaholic:wp_version]"
+            "search": "script",
+            "regexp": "/wp-(?:content|includes)/"
         },
         {
-            "regexp": "^WordPress(?: ([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "/wp-(?:content|includes)/",
-            "search": "script"
-        },
-        {
-            "regexp": "wp-embed\\.min\\.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "wp-embed\\.min\\.js"
         }
     ],
-    "name": "WordPress",
-    "website": "https://wordpress.org"
+    "implies": [
+        "PHP",
+        "MySQL"
+    ]
 }

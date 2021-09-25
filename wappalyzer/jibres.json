@@ -1,22 +1,22 @@
 {
+    "website": "https://jibres.com",
+    "name": "Jibres",
     "matches": [
         {
-            "regexp": "Jibres",
-            "search": "headers[x-powered-by]"
+            "search": "meta[generator]",
+            "regexp": "Jibres"
         },
         {
-            "regexp": "/jibres\\.js",
-            "search": "script"
+            "search": "headers[x-powered-by]",
+            "regexp": "Jibres"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[jibres]"
+            "search": "script",
+            "regexp": "/jibres\\.js"
         },
         {
-            "regexp": "Jibres",
-            "search": "meta[generator]"
+            "search": "cookies[jibres]",
+            "regexp": ".*"
         }
-    ],
-    "name": "Jibres",
-    "website": "https://jibres.com"
+    ]
 }

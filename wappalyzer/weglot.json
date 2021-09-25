@@ -1,18 +1,18 @@
 {
+    "website": "https://www.weglot.com",
+    "name": "Weglot",
     "matches": [
         {
-            "regexp": "cdn\\.weglot\\.com",
-            "search": "script"
+            "search": "headers[weglot-translated]",
+            "regexp": ".*"
         },
         {
-            "regexp": "wp-content/plugins/weglot",
-            "search": "script"
+            "search": "script",
+            "regexp": "cdn\\.weglot\\.com"
         },
         {
-            "regexp": ".*",
-            "search": "headers[weglot-translated]"
+            "search": "script",
+            "regexp": "wp-content/plugins/weglot"
         }
-    ],
-    "name": "Weglot",
-    "website": "https://www.weglot.com"
+    ]
 }

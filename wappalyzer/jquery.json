@@ -1,18 +1,20 @@
 {
+    "website": "https://jquery.com",
+    "name": "jQuery",
     "matches": [
         {
-            "regexp": "jquery",
-            "search": "script"
+            "search": "script",
+            "regexp": "jquery"
         },
         {
-            "regexp": "/jquery(-(\\d+\\.\\d+\\.\\d+))[/.-];version:\\1",
-            "search": "script"
+            "offset": 1,
+            "search": "script",
+            "regexp": "/jquery(-(\\d+\\.\\d+\\.\\d+))[/.-]"
         },
         {
-            "regexp": "/(\\d+\\.\\d+\\.\\d+)/jquery[/.-];version:\\1",
-            "search": "script"
+            "offset": 1,
+            "search": "script",
+            "regexp": "/(\\d+\\.\\d+\\.\\d+)/jquery[/.-]"
         }
-    ],
-    "name": "jQuery",
-    "website": "https://jquery.com"
+    ]
 }
