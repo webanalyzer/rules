@@ -3,21 +3,21 @@
     "name": "Commerce.js",
     "matches": [
         {
-            "search": "headers[chec-version]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "Commerce.js"
-        },
-        {
             "offset": 1,
-            "search": "script",
-            "regexp": "cdn\\.chec\\.io/v(\\d+)/commerce\\.js"
+            "regexp": "cdn\\.chec\\.io/v(\\d+)/commerce\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "chec/commerce\\.js"
+            "regexp": "chec/commerce\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": "Commerce.js",
+            "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[chec-version]"
         }
     ]
 }

@@ -3,18 +3,18 @@
     "name": "WooCommerce",
     "matches": [
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "WooCommerce ([\\d.]+)"
-        },
-        {
-            "search": "script",
-            "regexp": "woocommerce"
+            "regexp": "woocommerce",
+            "search": "script"
         },
         {
             "offset": 1,
-            "search": "script",
-            "regexp": "/woocommerce(?:\\.min)?\\.js(?:\\?ver=([0-9.]+))?"
+            "regexp": "/woocommerce(?:\\.min)?\\.js(?:\\?ver=([0-9.]+))?",
+            "search": "script"
+        },
+        {
+            "offset": 1,
+            "regexp": "WooCommerce ([\\d.]+)",
+            "search": "meta[generator]"
         }
     ]
 }

@@ -1,14 +1,14 @@
 {
     "website": "http://www.greenvalley.nl/Public/Producten/Content_Management/CMS",
+    "implies": "Apache Tomcat",
     "name": "Green Valley CMS",
     "matches": [
         {
-            "search": "meta[DC.identifier]",
-            "regexp": "/content\\.jsp\\?objectid="
+            "regexp": "<img[^>]+/dsresource\\?objectid="
         },
         {
-            "regexp": "<img[^>]+/dsresource\\?objectid="
+            "regexp": "/content\\.jsp\\?objectid=",
+            "search": "meta[DC.identifier]"
         }
-    ],
-    "implies": "Apache Tomcat"
+    ]
 }

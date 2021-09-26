@@ -3,27 +3,27 @@
     "name": "Google Analytics",
     "matches": [
         {
-            "search": "script",
-            "regexp": "google-analytics\\.com/(?:ga|urchin|analytics)\\.js"
+            "regexp": "google-analytics\\.com/(?:ga|urchin|analytics)\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "googletagmanager\\.com/gtag/js"
-        },
-        {
-            "search": "cookies[_ga]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[__utma]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[_gat]",
-            "regexp": ".*"
+            "regexp": "googletagmanager\\.com/gtag/js",
+            "search": "script"
         },
         {
             "regexp": "<amp-analytics [^>]*type=[\"']googleanalytics[\"']"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[__utma]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_gat]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_ga]"
         }
     ]
 }

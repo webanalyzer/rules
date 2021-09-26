@@ -1,16 +1,16 @@
 {
     "website": "https://www.devbridge.com/sourcery/components/jquery-autocomplete/",
+    "implies": "jQuery",
     "name": "jQuery DevBridge Autocomplete",
     "matches": [
         {
-            "search": "script",
-            "regexp": "/devbridgeAutocomplete(?:-min)?\\.js"
+            "regexp": "/devbridgeAutocomplete(?:-min)?\\.js",
+            "search": "script"
         },
         {
             "offset": 1,
-            "search": "script",
-            "regexp": "/jquery\\.devbridge-autocomplete/([0-9.]+)/jquery\\.autocomplete(?:.min)?\\.js"
+            "regexp": "/jquery\\.devbridge-autocomplete/([0-9.]+)/jquery\\.autocomplete(?:.min)?\\.js",
+            "search": "script"
         }
-    ],
-    "implies": "jQuery"
+    ]
 }

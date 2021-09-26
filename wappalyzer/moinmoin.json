@@ -1,15 +1,15 @@
 {
     "website": "https://moinmo.in",
+    "implies": "Python",
     "name": "MoinMoin",
     "matches": [
         {
-            "search": "script",
-            "regexp": "moin(?:_static(\\d)(\\d)(\\d)|.+)/common/js/common\\.js"
+            "regexp": "moin(?:_static(\\d)(\\d)(\\d)|.+)/common/js/common\\.js",
+            "search": "script"
         },
         {
-            "search": "cookies[MOIN_SESSION]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[MOIN_SESSION]"
         }
-    ],
-    "implies": "Python"
+    ]
 }

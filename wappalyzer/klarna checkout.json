@@ -3,16 +3,16 @@
     "name": "Klarna Checkout",
     "matches": [
         {
-            "search": "script",
-            "regexp": "\\.klarnaservices\\.com/lib\\.js"
+            "regexp": "\\.klarnaservices\\.com/lib\\.js",
+            "search": "script"
         },
         {
-            "search": "cookies[ku1-vid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[ku1-sid]"
         },
         {
-            "search": "cookies[ku1-sid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[ku1-vid]"
         }
     ]
 }

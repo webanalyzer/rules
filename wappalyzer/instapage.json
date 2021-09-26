@@ -1,18 +1,18 @@
 {
     "website": "https://instapage.com",
-    "name": "Instapage",
-    "matches": [
-        {
-            "search": "script",
-            "regexp": "cdn\\.instapagemetrics\\.com"
-        },
-        {
-            "search": "script",
-            "regexp": "heatmap-events-collector\\.instapage\\.com"
-        }
-    ],
     "implies": [
         "Lua",
         "Node.js"
+    ],
+    "name": "Instapage",
+    "matches": [
+        {
+            "regexp": "cdn\\.instapagemetrics\\.com",
+            "search": "script"
+        },
+        {
+            "regexp": "heatmap-events-collector\\.instapage\\.com",
+            "search": "script"
+        }
     ]
 }

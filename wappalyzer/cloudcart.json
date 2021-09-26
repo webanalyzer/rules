@@ -3,12 +3,12 @@
     "name": "CloudCart",
     "matches": [
         {
-            "search": "meta[author]",
-            "regexp": "^CloudCart LLC$"
+            "regexp": "/cloudcart-(?:assets|storage)/",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "/cloudcart-(?:assets|storage)/"
+            "regexp": "^CloudCart LLC$",
+            "search": "meta[author]"
         }
     ]
 }

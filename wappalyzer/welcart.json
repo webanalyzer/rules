@@ -3,12 +3,8 @@
     "name": "Welcart",
     "matches": [
         {
-            "search": "script",
-            "regexp": "uscesL10n"
-        },
-        {
-            "search": "cookies[usces_cookie]",
-            "regexp": ".*"
+            "regexp": "uscesL10n",
+            "search": "script"
         },
         {
             "regexp": "<link[^>]+?href=\"[^\"]+usces_default(?:\\.min)?\\.css"
@@ -16,6 +12,10 @@
         {
             "offset": 1,
             "regexp": "<!-- Welcart version : v([\\d.]+)"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[usces_cookie]"
         }
     ]
 }

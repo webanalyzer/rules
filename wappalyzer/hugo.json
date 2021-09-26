@@ -3,12 +3,12 @@
     "name": "Hugo",
     "matches": [
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Hugo ([\\d.]+)?"
+            "regexp": "powered by <a [^>]*href=\"http://hugo\\.spf13\\.com"
         },
         {
-            "regexp": "powered by <a [^>]*href=\"http://hugo\\.spf13\\.com"
+            "offset": 1,
+            "regexp": "Hugo ([\\d.]+)?",
+            "search": "meta[generator]"
         }
     ]
 }

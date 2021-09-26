@@ -3,38 +3,38 @@
     "name": "Snowplow Analytics",
     "matches": [
         {
-            "search": "script",
+            "certainty": 50,
             "regexp": "sp\\.js",
-            "certainty": 50
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "d1fc8wv8zag5ca\\.cloudfront\\.net/.+/sp\\.js"
+            "regexp": "d1fc8wv8zag5ca\\.cloudfront\\.net/.+/sp\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "cdn\\.jsdelivr\\.net/gh/snowplow/sp-js-assets@(?:.+)/sp\\.js"
+            "regexp": "cdn\\.jsdelivr\\.net/gh/snowplow/sp-js-assets@(?:.+)/sp\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "cdnjs\\.cloudflare\\.com/ajax/libs/snowplow/(?:.+)/sp.*\\.js"
+            "regexp": "cdnjs\\.cloudflare\\.com/ajax/libs/snowplow/(?:.+)/sp.*\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "unpkg.com/@snowplow/javascript-tracker@(?:.+)/dist/sp.*\\.js"
+            "regexp": "unpkg.com/@snowplow/javascript-tracker@(?:.+)/dist/sp.*\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "cdn\\.jsdelivr\\.net/npm/@snowplow/javascript-tracker@(?:.+)/dist/sp\\.js"
+            "regexp": "cdn\\.jsdelivr\\.net/npm/@snowplow/javascript-tracker@(?:.+)/dist/sp\\.js",
+            "search": "script"
         },
         {
-            "search": "cookies[_sp_id]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[sp]",
             "regexp": ".*",
-            "certainty": 50
+            "search": "cookies[_sp_id]"
+        },
+        {
+            "certainty": 50,
+            "regexp": ".*",
+            "search": "cookies[sp]"
         }
     ]
 }

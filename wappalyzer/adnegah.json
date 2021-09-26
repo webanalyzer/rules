@@ -3,15 +3,15 @@
     "name": "Adnegah",
     "matches": [
         {
-            "search": "headers[x-advertising-by]",
-            "regexp": "adnegah\\.net"
-        },
-        {
-            "search": "script",
-            "regexp": "[^a-z]adnegah.*\\.js$"
+            "regexp": "[^a-z]adnegah.*\\.js$",
+            "search": "script"
         },
         {
             "regexp": "<iframe [^>]*src=\"[^\"]+adnegah\\.net"
+        },
+        {
+            "regexp": "adnegah\\.net",
+            "search": "headers[x-advertising-by]"
         }
     ]
 }

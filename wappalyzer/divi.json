@@ -3,13 +3,13 @@
     "name": "Divi",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Divi"
+            "offset": 1,
+            "regexp": "Divi/js/custom\\.(?:min|unified)\\.js\\?ver=([\\d.]+)",
+            "search": "script"
         },
         {
-            "offset": 1,
-            "search": "script",
-            "regexp": "Divi/js/custom\\.(?:min|unified)\\.js\\?ver=([\\d.]+)"
+            "regexp": "Divi",
+            "search": "meta[generator]"
         }
     ]
 }

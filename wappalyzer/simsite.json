@@ -3,12 +3,12 @@
     "name": "SIMsite",
     "matches": [
         {
-            "search": "meta[SIM.medium]",
-            "regexp": ".*"
+            "regexp": "/sim(?:site|core)/js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "/sim(?:site|core)/js"
+            "regexp": ".*",
+            "search": "meta[SIM.medium]"
         }
     ]
 }

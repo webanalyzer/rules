@@ -3,15 +3,15 @@
     "name": "PayPal",
     "matches": [
         {
-            "search": "meta[id]",
-            "regexp": "in-context-paypal-metadata"
-        },
-        {
             "regexp": "<input[^>]+_s-xclick"
         },
         {
-            "search": "script",
-            "regexp": "paypalobjects\\.com"
+            "regexp": "paypalobjects\\.com",
+            "search": "script"
+        },
+        {
+            "regexp": "in-context-paypal-metadata",
+            "search": "meta[id]"
         }
     ]
 }

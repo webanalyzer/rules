@@ -3,13 +3,13 @@
     "name": "Adobe RoboHelp",
     "matches": [
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "^Adobe RoboHelp(?: ([\\d]+))?"
+            "regexp": "(?:wh(?:utils|ver|proxy|lang|topic|msg)|ehlpdhtm)\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "(?:wh(?:utils|ver|proxy|lang|topic|msg)|ehlpdhtm)\\.js"
+            "offset": 1,
+            "regexp": "^Adobe RoboHelp(?: ([\\d]+))?",
+            "search": "meta[generator]"
         }
     ]
 }

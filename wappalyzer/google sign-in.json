@@ -3,16 +3,16 @@
     "name": "Google Sign-in",
     "matches": [
         {
-            "search": "meta[google-signin-client_id]",
-            "regexp": ".*"
+            "regexp": "accounts\\.google\\.com/gsi/client",
+            "search": "script"
         },
         {
-            "search": "meta[google-signin-scope]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "meta[google-signin-scope]"
         },
         {
-            "search": "script",
-            "regexp": "accounts\\.google\\.com/gsi/client"
+            "regexp": ".*",
+            "search": "meta[google-signin-client_id]"
         }
     ]
 }

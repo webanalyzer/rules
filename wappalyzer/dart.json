@@ -1,22 +1,22 @@
 {
     "website": "https://www.dartlang.org",
+    "implies": "AngularDart",
     "name": "Dart",
-    "excludes": [
-        "Angular",
-        "AngularJS"
-    ],
     "matches": [
         {
-            "search": "script",
-            "regexp": "/(?:\\.)?(?:dart)(?:\\.js)?/"
+            "regexp": "/(?:\\.)?(?:dart)(?:\\.js)?/",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "packages/browser/dart\\.js"
+            "regexp": "packages/browser/dart\\.js",
+            "search": "script"
         },
         {
             "regexp": "/(?:<script)[^>]+(?:type=\"application/dart\")/"
         }
     ],
-    "implies": "AngularDart"
+    "excludes": [
+        "Angular",
+        "AngularJS"
+    ]
 }
