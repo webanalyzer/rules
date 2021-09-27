@@ -1,18 +1,18 @@
 {
-    "website": "https://teachable.com",
     "name": "Teachable",
+    "website": "https://teachable.com",
     "matches": [
         {
-            "regexp": "\\.teachablecdn\\.com",
-            "search": "script"
+            "regexp": "\\d+",
+            "search": "cookies[_gat_teachableTracker]"
         },
         {
             "regexp": "\\.teachablecdn\\.com",
             "search": "meta[asset_host]"
         },
         {
-            "regexp": "\\d+",
-            "search": "cookies[_gat_teachableTracker]"
+            "regexp": "\\.teachablecdn\\.com",
+            "search": "script"
         }
     ]
 }

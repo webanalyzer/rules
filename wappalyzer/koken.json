@@ -1,15 +1,19 @@
 {
+    "name": "Koken",
     "website": "http://koken.me",
     "implies": [
         "PHP",
         "MySQL"
     ],
-    "name": "Koken",
     "matches": [
         {
+            "regexp": ".*",
+            "search": "cookies[koken_referrer]"
+        },
+        {
             "offset": 1,
-            "regexp": "koken(?:\\.js\\?([\\d.]+)|/storage)",
-            "search": "script"
+            "regexp": "Koken ([\\d.]+)",
+            "search": "meta[generator]"
         },
         {
             "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
@@ -19,12 +23,8 @@
         },
         {
             "offset": 1,
-            "regexp": "Koken ([\\d.]+)",
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[koken_referrer]"
+            "regexp": "koken(?:\\.js\\?([\\d.]+)|/storage)",
+            "search": "script"
         }
     ]
 }

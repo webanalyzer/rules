@@ -1,23 +1,23 @@
 {
+    "name": "ImpressCMS",
     "website": "http://www.impresscms.org",
     "implies": "PHP",
-    "name": "ImpressCMS",
     "matches": [
         {
-            "regexp": "include/linkexternal\\.js",
-            "search": "script"
+            "regexp": ".*",
+            "search": "cookies[ImpressCMS]"
         },
         {
             "regexp": ".*",
             "search": "cookies[ICMSSession]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ImpressCMS]"
-        },
-        {
             "regexp": "ImpressCMS",
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "include/linkexternal\\.js",
+            "search": "script"
         }
     ]
 }

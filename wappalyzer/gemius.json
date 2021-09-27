@@ -1,7 +1,10 @@
 {
-    "website": "https://www.gemius.com",
     "name": "Gemius",
+    "website": "https://www.gemius.com",
     "matches": [
+        {
+            "regexp": "<a [^>]*onclick=\"gemius_hit"
+        },
         {
             "regexp": "hit\\.gemius\\.pl/xgemius\\.js",
             "search": "script"
@@ -15,9 +18,6 @@
             "certainty": 30,
             "regexp": "xgemius\\.js",
             "search": "script"
-        },
-        {
-            "regexp": "<a [^>]*onclick=\"gemius_hit"
         }
     ]
 }

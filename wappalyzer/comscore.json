@@ -1,13 +1,13 @@
 {
-    "website": "http://comscore.com",
     "name": "comScore",
+    "website": "http://comscore.com",
     "matches": [
+        {
+            "regexp": "<iframe[^>]* (?:id=\"comscore\"|scr=[^>]+comscore)|\\.scorecardresearch\\.com/beacon\\.js|COMSCORE\\.beacon"
+        },
         {
             "regexp": "\\.scorecardresearch\\.com/beacon\\.js|COMSCORE\\.beacon",
             "search": "script"
-        },
-        {
-            "regexp": "<iframe[^>]* (?:id=\"comscore\"|scr=[^>]+comscore)|\\.scorecardresearch\\.com/beacon\\.js|COMSCORE\\.beacon"
         }
     ]
 }

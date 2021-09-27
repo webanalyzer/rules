@@ -1,10 +1,10 @@
 {
-    "website": "http://www.kentico.com",
     "name": "Kentico CMS",
+    "website": "http://www.kentico.com",
     "matches": [
         {
-            "regexp": "/CMSPages/GetResource\\.ashx",
-            "search": "script"
+            "regexp": ".*",
+            "search": "cookies[CMSPreferredCulture]"
         },
         {
             "offset": 1,
@@ -12,8 +12,8 @@
             "search": "meta[generator]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[CMSPreferredCulture]"
+            "regexp": "/CMSPages/GetResource\\.ashx",
+            "search": "script"
         }
     ]
 }

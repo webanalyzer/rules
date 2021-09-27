@@ -1,12 +1,8 @@
 {
+    "name": "Joomla",
     "website": "https://www.joomla.org",
     "implies": "PHP",
-    "name": "Joomla",
     "matches": [
-        {
-            "certainty": 50,
-            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
-        },
         {
             "offset": 1,
             "regexp": "Joomla! ([\\d.]+)",
@@ -16,6 +12,10 @@
             "offset": 1,
             "regexp": "Joomla!(?: ([\\d.]+))?",
             "search": "meta[generator]"
+        },
+        {
+            "certainty": 50,
+            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
         }
     ]
 }

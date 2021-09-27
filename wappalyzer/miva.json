@@ -1,14 +1,14 @@
 {
-    "website": "http://www.miva.com",
     "name": "Miva",
+    "website": "http://www.miva.com",
     "matches": [
-        {
-            "regexp": "mvga\\.js",
-            "search": "script"
-        },
         {
             "regexp": "filename=(?:mvga\\.js|MivaEvents\\.js)",
             "search": "headers[content-disposition]"
+        },
+        {
+            "regexp": "mvga\\.js",
+            "search": "script"
         }
     ]
 }
