@@ -1,18 +1,18 @@
 {
     "name": "Trbo",
-    "website": "https://www.trbo.com",
     "matches": [
         {
-            "regexp": "^(?:[\\d]+)$",
-            "search": "cookies[trbo_session]"
+            "regexp": "\\.trbo\\.com",
+            "search": "script"
         },
         {
             "regexp": "^(?:[\\d\\w]+)$",
             "search": "cookies[trbo_usr]"
         },
         {
-            "regexp": "\\.trbo\\.com",
-            "search": "script"
+            "regexp": "^(?:[\\d]+)$",
+            "search": "cookies[trbo_session]"
         }
-    ]
+    ],
+    "website": "https://www.trbo.com"
 }

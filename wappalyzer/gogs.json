@@ -1,7 +1,10 @@
 {
     "name": "Gogs",
-    "website": "http://gogs.io",
     "matches": [
+        {
+            "regexp": "js/gogs\\.js",
+            "search": "script"
+        },
         {
             "regexp": ".*",
             "search": "cookies[i_like_gogits]"
@@ -16,10 +19,7 @@
         {
             "regexp": "go, git, self-hosted, gogs",
             "search": "meta[keywords]"
-        },
-        {
-            "regexp": "js/gogs\\.js",
-            "search": "script"
         }
-    ]
+    ],
+    "website": "http://gogs.io"
 }

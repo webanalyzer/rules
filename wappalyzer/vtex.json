@@ -1,10 +1,13 @@
 {
     "name": "VTEX",
-    "website": "https://vtex.com/",
     "matches": [
         {
+            "regexp": "io\\.vtex\\.com\\.br",
+            "search": "script"
+        },
+        {
             "regexp": ".*",
-            "search": "cookies[VtexStoreVersion]"
+            "search": "cookies[VtexWorkspace]"
         },
         {
             "regexp": ".*",
@@ -12,11 +15,11 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[VtexFingerPrint]"
+            "search": "cookies[VtexStoreVersion]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[VtexWorkspace]"
+            "search": "cookies[VtexFingerPrint]"
         },
         {
             "regexp": "vtex",
@@ -25,10 +28,7 @@
         {
             "regexp": "^VTEX IO$",
             "search": "headers[server]"
-        },
-        {
-            "regexp": "io\\.vtex\\.com\\.br",
-            "search": "script"
         }
-    ]
+    ],
+    "website": "https://vtex.com/"
 }

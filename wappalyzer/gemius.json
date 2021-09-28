@@ -1,23 +1,23 @@
 {
     "name": "Gemius",
-    "website": "https://www.gemius.com",
     "matches": [
-        {
-            "regexp": "<a [^>]*onclick=\"gemius_hit"
-        },
         {
             "regexp": "hit\\.gemius\\.pl/xgemius\\.js",
             "search": "script"
         },
         {
-            "certainty": 80,
             "regexp": "hit\\.gemius\\.pl",
+            "certainty": 80,
             "search": "script"
         },
         {
-            "certainty": 30,
             "regexp": "xgemius\\.js",
+            "certainty": 30,
             "search": "script"
+        },
+        {
+            "regexp": "<a [^>]*onclick=\"gemius_hit"
         }
-    ]
+    ],
+    "website": "https://www.gemius.com"
 }

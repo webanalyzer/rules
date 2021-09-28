@@ -1,7 +1,18 @@
 {
     "name": "Google Analytics",
-    "website": "http://google.com/analytics",
     "matches": [
+        {
+            "regexp": "google-analytics\\.com/(?:ga|urchin|analytics)\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": "googletagmanager\\.com/gtag/js",
+            "search": "script"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_gat]"
+        },
         {
             "regexp": ".*",
             "search": "cookies[__utma]"
@@ -11,19 +22,8 @@
             "search": "cookies[_ga]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_gat]"
-        },
-        {
             "regexp": "<amp-analytics [^>]*type=[\"']googleanalytics[\"']"
-        },
-        {
-            "regexp": "google-analytics\\.com/(?:ga|urchin|analytics)\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "googletagmanager\\.com/gtag/js",
-            "search": "script"
         }
-    ]
+    ],
+    "website": "http://google.com/analytics"
 }

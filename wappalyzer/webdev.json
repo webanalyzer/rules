@@ -1,11 +1,6 @@
 {
     "name": "WEBDEV",
-    "website": "https://www.windev.com/webdev/index.html",
     "matches": [
-        {
-            "regexp": ".*",
-            "search": "headers[webdevsrc]"
-        },
         {
             "regexp": "^WEBDEV$",
             "search": "meta[generator]"
@@ -13,6 +8,11 @@
         {
             "offset": 1,
             "regexp": "<!-- [a-zA-Z0-9_]+ [\\d/]+ [\\d:]+ WebDev \\d\\d ([\\d.]+) -->"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[webdevsrc]"
         }
-    ]
+    ],
+    "website": "https://www.windev.com/webdev/index.html"
 }

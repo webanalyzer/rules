@@ -1,7 +1,10 @@
 {
     "name": "Matomo Analytics",
-    "website": "https://matomo.org",
     "matches": [
+        {
+            "regexp": "piwik\\.js|piwik\\.php",
+            "search": "script"
+        },
         {
             "regexp": ".*",
             "search": "cookies[PIWIK_SESSID]"
@@ -17,10 +20,7 @@
         {
             "regexp": "(?:Matomo|Piwik) - Open Source Web Analytics",
             "search": "meta[generator]"
-        },
-        {
-            "regexp": "piwik\\.js|piwik\\.php",
-            "search": "script"
         }
-    ]
+    ],
+    "website": "https://matomo.org"
 }

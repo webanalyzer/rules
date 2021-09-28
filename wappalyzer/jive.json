@@ -1,10 +1,9 @@
 {
     "name": "Jive",
-    "website": "http://www.jivesoftware.com",
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-jive-chrome-wrapped]"
+            "search": "headers[x-jive-flow-id]"
         },
         {
             "regexp": ".*",
@@ -16,11 +15,12 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-jive-flow-id]"
+            "search": "headers[x-jive-chrome-wrapped]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-jive-request-id]"
         }
-    ]
+    ],
+    "website": "http://www.jivesoftware.com"
 }

@@ -1,18 +1,18 @@
 {
     "name": "Dynamic Yield",
-    "website": "https://www.dynamicyield.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[_dy_ses_load_seq]"
+            "regexp": "cdn(?:-eu)?\\.dynamicyield\\.\\w+/",
+            "search": "script"
         },
         {
             "regexp": ".*",
             "search": "cookies[_dy_geo]"
         },
         {
-            "regexp": "cdn(?:-eu)?\\.dynamicyield\\.\\w+/",
-            "search": "script"
+            "regexp": ".*",
+            "search": "cookies[_dy_ses_load_seq]"
         }
-    ]
+    ],
+    "website": "https://www.dynamicyield.com"
 }

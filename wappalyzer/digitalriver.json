@@ -1,7 +1,10 @@
 {
     "name": "DigitalRiver",
-    "website": "https://www.digitalriver.com",
     "matches": [
+        {
+            "regexp": "\\.digitalriver\\.com/",
+            "search": "script"
+        },
         {
             "regexp": ".*",
             "search": "cookies[X-DR-SHOPPER-ets]"
@@ -9,10 +12,7 @@
         {
             "regexp": "^\\d+$",
             "search": "cookies[X-DR-THEME]"
-        },
-        {
-            "regexp": "\\.digitalriver\\.com/",
-            "search": "script"
         }
-    ]
+    ],
+    "website": "https://www.digitalriver.com"
 }

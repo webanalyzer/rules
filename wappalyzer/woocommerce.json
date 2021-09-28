@@ -1,12 +1,6 @@
 {
     "name": "WooCommerce",
-    "website": "https://woocommerce.com",
     "matches": [
-        {
-            "offset": 1,
-            "regexp": "WooCommerce ([\\d.]+)",
-            "search": "meta[generator]"
-        },
         {
             "regexp": "woocommerce",
             "search": "script"
@@ -15,6 +9,12 @@
             "offset": 1,
             "regexp": "/woocommerce(?:\\.min)?\\.js(?:\\?ver=([0-9.]+))?",
             "search": "script"
+        },
+        {
+            "offset": 1,
+            "regexp": "WooCommerce ([\\d.]+)",
+            "search": "meta[generator]"
         }
-    ]
+    ],
+    "website": "https://woocommerce.com"
 }

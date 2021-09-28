@@ -1,18 +1,18 @@
 {
-    "name": "TWiki",
-    "website": "http://twiki.org",
     "implies": "Perl",
+    "name": "TWiki",
     "matches": [
         {
             "regexp": ".*",
             "search": "cookies[TWIKISID]"
         },
         {
-            "regexp": "<img [^>]*(?:title|alt)=\"This site is powered by the TWiki collaboration platform"
-        },
-        {
             "regexp": "(?:TWikiJavascripts|twikilib(?:\\.min)?\\.js)",
             "search": "script"
+        },
+        {
+            "regexp": "<img [^>]*(?:title|alt)=\"This site is powered by the TWiki collaboration platform"
         }
-    ]
+    ],
+    "website": "http://twiki.org"
 }

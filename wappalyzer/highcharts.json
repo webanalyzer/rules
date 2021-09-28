@@ -1,14 +1,14 @@
 {
     "name": "Highcharts",
-    "website": "https://www.highcharts.com",
     "matches": [
-        {
-            "offset": 1,
-            "regexp": "<svg[^>]*><desc>Created with Highcharts ([\\d.]*)"
-        },
         {
             "regexp": "highcharts.*\\.js",
             "search": "script"
+        },
+        {
+            "offset": 1,
+            "regexp": "<svg[^>]*><desc>Created with Highcharts ([\\d.]*)"
         }
-    ]
+    ],
+    "website": "https://www.highcharts.com"
 }

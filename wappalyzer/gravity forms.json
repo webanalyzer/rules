@@ -1,7 +1,11 @@
 {
     "name": "Gravity Forms",
-    "website": "http://gravityforms.com",
     "matches": [
+        {
+            "offset": 1,
+            "regexp": "/wp-content/plugins/gravityforms/js/[^/]+\\.js\\?ver=([\\d.]+)$",
+            "search": "script"
+        },
         {
             "regexp": "<div class=(?:\"|')[^>]*gform_wrapper"
         },
@@ -13,11 +17,7 @@
         },
         {
             "regexp": "<link [^>]*href=(?:\"|')[^>]*wp-content/plugins/gravityforms/css/"
-        },
-        {
-            "offset": 1,
-            "regexp": "/wp-content/plugins/gravityforms/js/[^/]+\\.js\\?ver=([\\d.]+)$",
-            "search": "script"
         }
-    ]
+    ],
+    "website": "http://gravityforms.com"
 }

@@ -1,7 +1,10 @@
 {
     "name": "Omnisend",
-    "website": "https://www.omnisend.com",
     "matches": [
+        {
+            "regexp": "omnisrc\\.com",
+            "search": "script"
+        },
         {
             "regexp": ".*",
             "search": "cookies[omnisendSessionID]"
@@ -9,10 +12,7 @@
         {
             "regexp": ".*",
             "search": "meta[omnisend-site-verification]"
-        },
-        {
-            "regexp": "omnisrc\\.com",
-            "search": "script"
         }
-    ]
+    ],
+    "website": "https://www.omnisend.com"
 }
