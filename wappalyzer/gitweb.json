@@ -3,21 +3,21 @@
         "Perl",
         "git"
     ],
+    "website": "http://git-scm.com",
     "name": "gitweb",
     "matches": [
         {
+            "regexp": "gitweb(?:/([\\d.]+\\d))?",
+            "search": "meta[generator]",
+            "offset": 1
+        },
+        {
+            "regexp": "<!-- git web interface version ([\\d.]+)?",
+            "offset": 1
+        },
+        {
             "regexp": "static/gitweb\\.js$",
             "search": "script"
-        },
-        {
-            "offset": 1,
-            "regexp": "<!-- git web interface version ([\\d.]+)?"
-        },
-        {
-            "offset": 1,
-            "regexp": "gitweb(?:/([\\d.]+\\d))?",
-            "search": "meta[generator]"
         }
-    ],
-    "website": "http://git-scm.com"
+    ]
 }

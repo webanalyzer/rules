@@ -1,14 +1,14 @@
 {
+    "website": "https://getmdl.io",
     "name": "Material Design Lite",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "(?:/([\\d.]+))?/material(?:\\.min)?\\.js",
-            "search": "script"
+            "regexp": "<link[^>]* href=\"[^\"]*material(?:\\.[\\w]+-[\\w]+)?(?:\\.min)?\\.css"
         },
         {
-            "regexp": "<link[^>]* href=\"[^\"]*material(?:\\.[\\w]+-[\\w]+)?(?:\\.min)?\\.css"
+            "regexp": "(?:/([\\d.]+))?/material(?:\\.min)?\\.js",
+            "search": "script",
+            "offset": 1
         }
-    ],
-    "website": "https://getmdl.io"
+    ]
 }

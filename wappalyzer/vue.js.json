@@ -1,19 +1,19 @@
 {
+    "website": "https://vuejs.org",
     "name": "Vue.js",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "vue[.-]([\\d.]*\\d)[^/]*\\.js",
-            "search": "script"
-        },
-        {
-            "offset": 1,
-            "regexp": "(?:/([\\d.]+))?/vue(?:\\.min)?\\.js",
-            "search": "script"
-        },
-        {
             "regexp": "<[^>]+\\sdata-v(?:ue)?-"
+        },
+        {
+            "regexp": "vue[.-]([\\d.]*\\d)[^/]*\\.js",
+            "search": "script",
+            "offset": 1
+        },
+        {
+            "regexp": "(?:/([\\d.]+))?/vue(?:\\.min)?\\.js",
+            "search": "script",
+            "offset": 1
         }
-    ],
-    "website": "https://vuejs.org"
+    ]
 }

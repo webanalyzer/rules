@@ -1,14 +1,14 @@
 {
     "implies": "PHP",
+    "website": "http://gambio.de",
     "name": "Gambio",
     "matches": [
         {
-            "regexp": "gm_javascript\\.js\\.php",
-            "search": "script"
+            "regexp": "(?:<link[^>]* href=\"templates/gambio/|<a[^>]content\\.php\\?coID=\\d|<!-- gambio eof -->|<!--[\\s=]+Shopsoftware by Gambio GmbH \\(c\\))"
         },
         {
-            "regexp": "(?:<link[^>]* href=\"templates/gambio/|<a[^>]content\\.php\\?coID=\\d|<!-- gambio eof -->|<!--[\\s=]+Shopsoftware by Gambio GmbH \\(c\\))"
+            "regexp": "gm_javascript\\.js\\.php",
+            "search": "script"
         }
-    ],
-    "website": "http://gambio.de"
+    ]
 }

@@ -1,23 +1,23 @@
 {
+    "website": "https://shapecss.com",
     "name": "Shapecss",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "shapecss[-.]([\\d.]*\\d)[^/]*\\.js",
-            "search": "script"
+            "regexp": "<link[^>]* href=\"[^\"]*shapecss(?:\\.min)?\\.css"
         },
         {
-            "offset": 1,
+            "regexp": "shapecss[-.]([\\d.]*\\d)[^/]*\\.js",
+            "search": "script",
+            "offset": 1
+        },
+        {
             "regexp": "/([\\d.]+)/shapecss(?:\\.min)?\\.js",
-            "search": "script"
+            "search": "script",
+            "offset": 1
         },
         {
             "regexp": "shapecss.*\\.js",
             "search": "script"
-        },
-        {
-            "regexp": "<link[^>]* href=\"[^\"]*shapecss(?:\\.min)?\\.css"
         }
-    ],
-    "website": "https://shapecss.com"
+    ]
 }

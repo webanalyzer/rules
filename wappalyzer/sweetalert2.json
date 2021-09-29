@@ -1,15 +1,18 @@
 {
-    "excludes": "SweetAlert",
+    "website": "https://sweetalert2.github.io/",
     "name": "SweetAlert2",
     "matches": [
+        {
+            "regexp": "<link[^>]+?href=\"[^\"]+sweetalert2(?:\\.min)?\\.css"
+        },
         {
             "regexp": "sweetalert2(?:\\.all)?(?:\\.min)?\\.js",
             "search": "script"
         },
         {
-            "offset": 1,
             "regexp": "/npm/sweetalert2@([\\d.]+)",
-            "search": "script"
+            "search": "script",
+            "offset": 1
         },
         {
             "regexp": "sweetalert2@([\\d.]+)/dist/sweetalert2(?:\\.all)(?:\\.min)\\.js",
@@ -18,10 +21,7 @@
         {
             "regexp": "limonte-sweetalert2/([\\d.]+)/sweetalert2(?:\\.all)(?:\\.min)\\.js",
             "search": "script"
-        },
-        {
-            "regexp": "<link[^>]+?href=\"[^\"]+sweetalert2(?:\\.min)?\\.css"
         }
     ],
-    "website": "https://sweetalert2.github.io/"
+    "excludes": "SweetAlert"
 }

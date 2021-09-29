@@ -1,5 +1,6 @@
 {
     "implies": "Perl",
+    "website": "https://koha-community.org/",
     "name": "Koha",
     "matches": [
         {
@@ -9,10 +10,9 @@
             "regexp": "<a href=\"/cgi-bin/koha/"
         },
         {
-            "offset": 1,
             "regexp": "^Koha ([\\d.]+)$",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         }
-    ],
-    "website": "https://koha-community.org/"
+    ]
 }

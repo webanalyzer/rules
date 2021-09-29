@@ -1,13 +1,13 @@
 {
+    "website": "http://headjs.com",
     "name": "HeadJS",
     "matches": [
         {
-            "regexp": "head\\.(?:core|load)(?:\\.min)?\\.js",
-            "search": "script"
+            "regexp": "<[^>]*data-headjs-load"
         },
         {
-            "regexp": "<[^>]*data-headjs-load"
+            "regexp": "head\\.(?:core|load)(?:\\.min)?\\.js",
+            "search": "script"
         }
-    ],
-    "website": "http://headjs.com"
+    ]
 }

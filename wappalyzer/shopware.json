@@ -5,28 +5,12 @@
         "jQuery",
         "Symfony"
     ],
+    "website": "https://www.shopware.com",
     "name": "Shopware",
     "matches": [
         {
-            "regexp": "Shopware",
-            "search": "meta[application-name]"
-        },
-        {
-            "offset": 1,
-            "regexp": "(?:(shopware)|/web/cache/[0-9]{10}_.+)\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "/jquery\\.shopware\\.min\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "/engine/Shopware/",
-            "search": "script"
-        },
-        {
-            "offset": 1,
-            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+"
+            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+",
+            "offset": 1
         },
         {
             "regexp": ".*",
@@ -37,13 +21,29 @@
             "search": "headers[sw-language-id]"
         },
         {
+            "regexp": ".*",
+            "search": "headers[sw-version-id]"
+        },
+        {
             "regexp": "^[\\w]{32}$",
             "search": "headers[sw-context-token]"
         },
         {
-            "regexp": ".*",
-            "search": "headers[sw-version-id]"
+            "regexp": "(?:(shopware)|/web/cache/[0-9]{10}_.+)\\.js",
+            "search": "script",
+            "offset": 1
+        },
+        {
+            "regexp": "/jquery\\.shopware\\.min\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": "/engine/Shopware/",
+            "search": "script"
+        },
+        {
+            "regexp": "Shopware",
+            "search": "meta[application-name]"
         }
-    ],
-    "website": "https://www.shopware.com"
+    ]
 }

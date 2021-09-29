@@ -1,17 +1,17 @@
 {
+    "website": "https://www.volusion.com",
     "name": "Volusion",
     "matches": [
-        {
-            "offset": 1,
-            "regexp": "/volusion\\.js(?:\\?([\\d.]*))?",
-            "search": "script"
-        },
         {
             "regexp": "<link [^>]*href=\"[^\"]*/vspfiles/"
         },
         {
             "regexp": "<body [^>]*data-vn-page-name"
+        },
+        {
+            "regexp": "/volusion\\.js(?:\\?([\\d.]*))?",
+            "search": "script",
+            "offset": 1
         }
-    ],
-    "website": "https://www.volusion.com"
+    ]
 }

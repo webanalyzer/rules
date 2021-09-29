@@ -1,13 +1,13 @@
 {
+    "website": "https://disqus.com",
     "name": "Disqus",
     "matches": [
         {
-            "regexp": "disqus_url",
-            "search": "script"
+            "regexp": "<div[^>]+id=\"disqus_thread\""
         },
         {
-            "regexp": "<div[^>]+id=\"disqus_thread\""
+            "regexp": "disqus_url",
+            "search": "script"
         }
-    ],
-    "website": "https://disqus.com"
+    ]
 }

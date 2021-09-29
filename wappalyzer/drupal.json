@@ -1,15 +1,15 @@
 {
     "implies": "PHP",
+    "website": "https://drupal.org",
     "name": "Drupal",
     "matches": [
         {
-            "regexp": "drupal\\.js",
-            "search": "script"
+            "regexp": "^Drupal(?:\\s([\\d.]+))?",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "^Drupal(?:\\s([\\d.]+))?",
-            "search": "headers[x-generator]"
+            "regexp": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/"
         },
         {
             "regexp": ".*",
@@ -20,13 +20,13 @@
             "search": "headers[expires]"
         },
         {
-            "regexp": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/"
+            "regexp": "^Drupal(?:\\s([\\d.]+))?",
+            "search": "headers[x-generator]",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "^Drupal(?:\\s([\\d.]+))?",
-            "search": "meta[generator]"
+            "regexp": "drupal\\.js",
+            "search": "script"
         }
-    ],
-    "website": "https://drupal.org"
+    ]
 }

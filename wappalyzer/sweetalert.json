@@ -1,13 +1,13 @@
 {
+    "website": "https://sweetalert.js.org",
     "name": "SweetAlert",
     "matches": [
         {
-            "regexp": "sweet(?:-)?alert(?:\\.min)?\\.js",
-            "search": "script"
+            "regexp": "<link[^>]+?href=\"[^\"]+sweet-alert(?:\\.min)?\\.css"
         },
         {
-            "regexp": "<link[^>]+?href=\"[^\"]+sweet-alert(?:\\.min)?\\.css"
+            "regexp": "sweet(?:-)?alert(?:\\.min)?\\.js",
+            "search": "script"
         }
-    ],
-    "website": "https://sweetalert.js.org"
+    ]
 }

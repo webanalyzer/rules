@@ -1,4 +1,5 @@
 {
+    "website": "https://jquery.com",
     "name": "jQuery",
     "matches": [
         {
@@ -6,15 +7,14 @@
             "search": "script"
         },
         {
-            "offset": 1,
-            "regexp": "/jquery(-(\\d+\\.\\d+\\.\\d+))[/.-]",
-            "search": "script"
+            "regexp": "/jquery(?:-(\\d+\\.\\d+\\.\\d+))[/.-]",
+            "search": "script",
+            "offset": 1
         },
         {
-            "offset": 1,
             "regexp": "/(\\d+\\.\\d+\\.\\d+)/jquery[/.-]",
-            "search": "script"
+            "search": "script",
+            "offset": 1
         }
-    ],
-    "website": "https://jquery.com"
+    ]
 }

@@ -1,19 +1,19 @@
 {
+    "website": "https://getbootstrap.com",
     "name": "Bootstrap",
     "matches": [
         {
-            "offset": 1,
+            "regexp": "<style>\\s+/\\*!\\s+\\* Bootstrap v(\\d\\.\\d\\.\\d)",
+            "offset": 1
+        },
+        {
+            "regexp": "<link[^>]* href=[^>]*?bootstrap(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.css",
+            "offset": 1
+        },
+        {
             "regexp": "bootstrap(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.js",
-            "search": "script"
-        },
-        {
-            "offset": 1,
-            "regexp": "<style>\\s+/\\*!\\s+\\* Bootstrap v(\\d\\.\\d\\.\\d)"
-        },
-        {
-            "offset": 1,
-            "regexp": "<link[^>]* href=[^>]*?bootstrap(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.css"
+            "search": "script",
+            "offset": 1
         }
-    ],
-    "website": "https://getbootstrap.com"
+    ]
 }

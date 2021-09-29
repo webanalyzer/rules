@@ -1,17 +1,17 @@
 {
+    "website": "https://Adnegah.net",
     "name": "Adnegah",
     "matches": [
-        {
-            "regexp": "[^a-z]adnegah.*\\.js$",
-            "search": "script"
-        },
         {
             "regexp": "<iframe [^>]*src=\"[^\"]+adnegah\\.net"
         },
         {
             "regexp": "adnegah\\.net",
             "search": "headers[x-advertising-by]"
+        },
+        {
+            "regexp": "[^a-z]adnegah.*\\.js$",
+            "search": "script"
         }
-    ],
-    "website": "https://Adnegah.net"
+    ]
 }

@@ -1,6 +1,16 @@
 {
+    "website": "https://www.google.com/recaptcha/",
     "name": "reCAPTCHA",
     "matches": [
+        {
+            "regexp": "<div[^>]+id=\"recaptcha_image"
+        },
+        {
+            "regexp": "<link[^>]+recaptcha"
+        },
+        {
+            "regexp": "<div[^>]+class=\"g-recaptcha\""
+        },
         {
             "regexp": "api-secure\\.recaptcha\\.net",
             "search": "script"
@@ -12,16 +22,6 @@
         {
             "regexp": "/recaptcha/api\\.js",
             "search": "script"
-        },
-        {
-            "regexp": "<div[^>]+id=\"recaptcha_image"
-        },
-        {
-            "regexp": "<link[^>]+recaptcha"
-        },
-        {
-            "regexp": "<div[^>]+class=\"g-recaptcha\""
         }
-    ],
-    "website": "https://www.google.com/recaptcha/"
+    ]
 }

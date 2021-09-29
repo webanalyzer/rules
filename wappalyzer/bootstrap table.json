@@ -3,15 +3,15 @@
         "Bootstrap",
         "jQuery"
     ],
+    "website": "http://bootstrap-table.wenzhixin.net.cn/",
     "name": "Bootstrap Table",
     "matches": [
         {
-            "regexp": "bootstrap-table(?:\\.min)?\\.js",
-            "search": "script"
+            "regexp": "<link[^>]+href=\"[^>]*bootstrap-table(?:\\.min)?\\.css"
         },
         {
-            "regexp": "<link[^>]+href=\"[^>]*bootstrap-table(?:\\.min)?\\.css"
+            "regexp": "bootstrap-table(?:\\.min)?\\.js",
+            "search": "script"
         }
-    ],
-    "website": "http://bootstrap-table.wenzhixin.net.cn/"
+    ]
 }
