@@ -1,11 +1,5 @@
 {
-    "website": "http://www.3dcart.com",
-    "name": "3dCart",
     "matches": [
-        {
-            "regexp": "3DCART",
-            "search": "headers[x-powered-by]"
-        },
         {
             "regexp": ".*",
             "search": "cookies[3dvisit]"
@@ -13,6 +7,12 @@
         {
             "regexp": "(?:twlh(?:track)?\\.asp|3d_upsell\\.js)",
             "search": "script"
+        },
+        {
+            "regexp": "3DCART",
+            "search": "headers[x-powered-by]"
         }
-    ]
+    ],
+    "name": "3dCart",
+    "website": "http://www.3dcart.com"
 }

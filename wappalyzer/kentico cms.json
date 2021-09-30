@@ -1,11 +1,5 @@
 {
-    "website": "http://www.kentico.com",
-    "name": "Kentico CMS",
     "matches": [
-        {
-            "regexp": "/CMSPages/GetResource\\.ashx",
-            "search": "script"
-        },
         {
             "regexp": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))",
             "search": "meta[generator]",
@@ -14,6 +8,12 @@
         {
             "regexp": ".*",
             "search": "cookies[CMSPreferredCulture]"
+        },
+        {
+            "regexp": "/CMSPages/GetResource\\.ashx",
+            "search": "script"
         }
-    ]
+    ],
+    "name": "Kentico CMS",
+    "website": "http://www.kentico.com"
 }

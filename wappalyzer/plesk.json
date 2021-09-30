@@ -1,18 +1,18 @@
 {
-    "website": "https://www.plesk.com/",
-    "name": "Plesk",
     "matches": [
         {
-            "regexp": "^Plesk",
-            "search": "headers[x-powered-by-plesk]"
+            "regexp": "common\\.js\\?plesk",
+            "search": "script"
         },
         {
             "regexp": "^Plesk(?:L|W)in",
             "search": "headers[x-powered-by]"
         },
         {
-            "regexp": "common\\.js\\?plesk",
-            "search": "script"
+            "regexp": "^Plesk",
+            "search": "headers[x-powered-by-plesk]"
         }
-    ]
+    ],
+    "name": "Plesk",
+    "website": "https://www.plesk.com/"
 }

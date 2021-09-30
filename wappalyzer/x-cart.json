@@ -1,8 +1,14 @@
 {
-    "implies": "PHP",
-    "website": "http://x-cart.com",
-    "name": "X-Cart",
     "matches": [
+        {
+            "regexp": "X-Cart(?: (\\d+))?",
+            "search": "meta[generator]",
+            "offset": 1
+        },
+        {
+            "regexp": "[a-z\\d]{32}(?:;|$)",
+            "search": "cookies[xid]"
+        },
         {
             "regexp": "Powered by X-Cart(?: (\\d+))? <a[^>]+href=\"http://www\\.x-cart\\.com/\"[^>]*>",
             "offset": 1
@@ -13,15 +19,9 @@
         {
             "regexp": "/skin/common_files/modules/Product_Options/func\\.js",
             "search": "script"
-        },
-        {
-            "regexp": "X-Cart(?: (\\d+))?",
-            "search": "meta[generator]",
-            "offset": 1
-        },
-        {
-            "regexp": "[a-z\\d]{32}(?:;|$)",
-            "search": "cookies[xid]"
         }
-    ]
+    ],
+    "name": "X-Cart",
+    "implies": "PHP",
+    "website": "http://x-cart.com"
 }

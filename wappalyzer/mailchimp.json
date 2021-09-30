@@ -1,6 +1,4 @@
 {
-    "website": "http://mailchimp.com",
-    "name": "MailChimp",
     "matches": [
         {
             "regexp": "<form [^>]*data-mailchimp-url"
@@ -12,8 +10,8 @@
             "regexp": "<form [^>]*name=\"mc-embedded-subscribe-form\""
         },
         {
-            "certainty": 20,
-            "regexp": "<input [^>]*id=\"mc-email\""
+            "regexp": "<input [^>]*id=\"mc-email\"",
+            "certainty": 20
         },
         {
             "regexp": "<!-- Begin MailChimp Signup Form -->"
@@ -40,5 +38,7 @@
             "regexp": "chimpstatic\\.com/mcjs-connected",
             "search": "script"
         }
-    ]
+    ],
+    "name": "MailChimp",
+    "website": "http://mailchimp.com"
 }

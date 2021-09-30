@@ -1,7 +1,4 @@
 {
-    "implies": "PHP",
-    "website": "http://expressionengine.com",
-    "name": "ExpressionEngine",
     "matches": [
         {
             "regexp": ".*",
@@ -9,11 +6,14 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[exp_csrf_token]"
+            "search": "cookies[exp_last_activity]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[exp_last_activity]"
+            "search": "cookies[exp_csrf_token]"
         }
-    ]
+    ],
+    "name": "ExpressionEngine",
+    "implies": "PHP",
+    "website": "http://expressionengine.com"
 }

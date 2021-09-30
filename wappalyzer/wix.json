@@ -1,11 +1,12 @@
 {
-    "implies": "React",
-    "website": "https://www.wix.com",
-    "name": "Wix",
     "matches": [
         {
             "regexp": "Wix\\.com Website Builder",
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "static\\.parastorage\\.com",
+            "search": "script"
         },
         {
             "regexp": ".*",
@@ -22,10 +23,9 @@
         {
             "regexp": "\\.wix\\.com",
             "search": "cookies[Domain]"
-        },
-        {
-            "regexp": "static\\.parastorage\\.com",
-            "search": "script"
         }
-    ]
+    ],
+    "name": "Wix",
+    "implies": "React",
+    "website": "https://www.wix.com"
 }

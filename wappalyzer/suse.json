@@ -1,16 +1,16 @@
 {
-    "website": "http://suse.com",
-    "name": "SUSE",
     "matches": [
-        {
-            "regexp": "SUSE(?:/?\\s?-?([\\d.]+))?",
-            "search": "headers[server]",
-            "offset": 1
-        },
         {
             "regexp": "SUSE(?:/?\\s?-?([\\d.]+))?",
             "search": "headers[x-powered-by]",
             "offset": 1
+        },
+        {
+            "regexp": "SUSE(?:/?\\s?-?([\\d.]+))?",
+            "search": "headers[server]",
+            "offset": 1
         }
-    ]
+    ],
+    "name": "SUSE",
+    "website": "http://suse.com"
 }

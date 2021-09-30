@@ -1,18 +1,12 @@
 {
-    "website": "https://zendesk.com",
-    "name": "Zendesk",
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-zendesk-user-id]"
+            "search": "cookies[_zendesk_cookie]"
         },
         {
             "regexp": ".*",
             "search": "cookies[_help_center_session]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[_zendesk_cookie]"
         },
         {
             "regexp": ".*",
@@ -21,6 +15,12 @@
         {
             "regexp": "static\\.zdassets\\.com",
             "search": "script"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-zendesk-user-id]"
         }
-    ]
+    ],
+    "name": "Zendesk",
+    "website": "https://zendesk.com"
 }

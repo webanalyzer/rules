@@ -1,12 +1,5 @@
 {
-    "website": "https://www.growingio.com/",
-    "name": "GrowingIO",
     "matches": [
-        {
-            "regexp": "assets\\.growingio\\.com/([\\d.]+)/gio\\.js",
-            "search": "script",
-            "offset": 1
-        },
         {
             "regexp": ".*",
             "search": "cookies[gr_user_id]"
@@ -14,6 +7,13 @@
         {
             "regexp": ".*",
             "search": "cookies[grwng_uid]"
+        },
+        {
+            "regexp": "assets\\.growingio\\.com/([\\d.]+)/gio\\.js",
+            "search": "script",
+            "offset": 1
         }
-    ]
+    ],
+    "name": "GrowingIO",
+    "website": "https://www.growingio.com/"
 }
