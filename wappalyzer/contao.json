@@ -1,17 +1,17 @@
 {
     "matches": [
         {
-            "regexp": "^Contao Open Source CMS$",
-            "search": "meta[generator]"
-        },
-        {
             "regexp": "<!--[^>]+powered by (?:TYPOlight|Contao)[^>]*-->"
         },
         {
             "regexp": "<link[^>]+(?:typolight|contao)\\.css"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "^Contao Open Source CMS$"
         }
     ],
-    "name": "Contao",
+    "website": "http://contao.org",
     "implies": "PHP",
-    "website": "http://contao.org"
+    "name": "Contao"
 }
