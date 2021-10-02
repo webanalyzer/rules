@@ -1,6 +1,11 @@
 {
     "matches": [
         {
+            "search": "cookies[frontend]",
+            "regexp": ".*",
+            "certainty": 50
+        },
+        {
             "regexp": "<script [^>]+data-requiremodule=\"mage/"
         },
         {
@@ -15,24 +20,19 @@
         },
         {
             "search": "script",
-            "offset": 1,
-            "regexp": "skin/frontend/(?:default|(enterprise))"
+            "regexp": "skin/frontend/(?:default|(enterprise))",
+            "offset": 1
         },
         {
             "search": "script",
             "regexp": "static/_requirejs",
             "certainty": 50
-        },
-        {
-            "search": "cookies[frontend]",
-            "regexp": ".*",
-            "certainty": 50
         }
     ],
-    "website": "https://magento.com",
     "implies": [
         "PHP",
         "MySQL"
     ],
+    "website": "https://magento.com",
     "name": "Magento"
 }

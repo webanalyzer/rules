@@ -8,17 +8,17 @@
             "regexp": "/media/conv/js/jquery\\.js"
         },
         {
-            "search": "headers[x-content-encoded-by]",
-            "offset": 1,
-            "regexp": "uKnowva ([\\d.]+)"
+            "search": "meta[generator]",
+            "regexp": "uKnowva (?: ([\\d.]+))?",
+            "offset": 1
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "uKnowva (?: ([\\d.]+))?"
+            "search": "headers[x-content-encoded-by]",
+            "regexp": "uKnowva ([\\d.]+)",
+            "offset": 1
         }
     ],
-    "website": "https://uknowva.com",
     "implies": "PHP",
+    "website": "https://uknowva.com",
     "name": "uKnowva"
 }

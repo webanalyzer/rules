@@ -1,7 +1,7 @@
 {
     "matches": [
         {
-            "search": "cookies[__cfduid]",
+            "search": "headers[cf-ray]",
             "regexp": ".*"
         },
         {
@@ -9,11 +9,11 @@
             "regexp": "^cloudflare$"
         },
         {
-            "search": "headers[cf-ray]",
+            "search": "headers[cf-cache-status]",
             "regexp": ".*"
         },
         {
-            "search": "headers[cf-cache-status]",
+            "search": "cookies[__cfduid]",
             "regexp": ".*"
         }
     ],

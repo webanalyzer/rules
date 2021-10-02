@@ -26,13 +26,13 @@
             "regexp": "cdn\\.jsdelivr\\.net/npm/@snowplow/javascript-tracker@(?:.+)/dist/sp\\.js"
         },
         {
+            "search": "cookies[_sp_id]",
+            "regexp": ".*"
+        },
+        {
             "search": "cookies[sp]",
             "regexp": ".*",
             "certainty": 50
-        },
-        {
-            "search": "cookies[_sp_id]",
-            "regexp": ".*"
         }
     ],
     "website": "https://snowplowanalytics.com",

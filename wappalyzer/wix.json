@@ -5,12 +5,12 @@
             "regexp": "Wix\\.com Website Builder"
         },
         {
-            "search": "script",
-            "regexp": "static\\.parastorage\\.com"
+            "search": "cookies[Domain]",
+            "regexp": "\\.wix\\.com"
         },
         {
-            "search": "headers[x-wix-renderer-server]",
-            "regexp": ".*"
+            "search": "script",
+            "regexp": "static\\.parastorage\\.com"
         },
         {
             "search": "headers[x-wix-request-id]",
@@ -21,11 +21,11 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[Domain]",
-            "regexp": "\\.wix\\.com"
+            "search": "headers[x-wix-renderer-server]",
+            "regexp": ".*"
         }
     ],
-    "website": "https://www.wix.com",
     "implies": "React",
+    "website": "https://www.wix.com",
     "name": "Wix"
 }

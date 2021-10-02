@@ -4,21 +4,21 @@
             "regexp": "Powered by <a [^>]*href=\"https?://(?:www\\.)?arastta\\.org[^>]+>Arastta"
         },
         {
+            "search": "script",
+            "regexp": "arastta\\.js"
+        },
+        {
             "search": "headers[arastta]",
-            "offset": 1,
-            "regexp": "^(.+)$"
+            "regexp": "^(.+)$",
+            "offset": 1
         },
         {
             "search": "headers[x-arastta]",
             "regexp": ".*"
-        },
-        {
-            "search": "script",
-            "regexp": "arastta\\.js"
         }
     ],
+    "implies": "PHP",
     "excludes": "OpenCart",
     "website": "http://arastta.org",
-    "implies": "PHP",
     "name": "Arastta"
 }

@@ -1,6 +1,9 @@
 {
     "matches": [
         {
+            "regexp": "<[^>]+(?:id=\"block[_-]commerce[_-]cart[_-]cart|class=\"commerce[_-]product[_-]field)"
+        },
+        {
             "search": "script",
             "regexp": "/modules/(?:contrib/)?commerce/js/conditions\\.js",
             "certainty": 50
@@ -14,12 +17,9 @@
             "search": "script",
             "regexp": "/sites/(?:all|default)/modules/(?:contrib/)?commerce/modules/checkout/commerce_checkout\\.js",
             "certainty": 50
-        },
-        {
-            "regexp": "<[^>]+(?:id=\"block[_-]commerce[_-]cart[_-]cart|class=\"commerce[_-]product[_-]field)"
         }
     ],
-    "website": "http://drupalcommerce.org",
     "implies": "Drupal",
+    "website": "http://drupalcommerce.org",
     "name": "Drupal Commerce"
 }

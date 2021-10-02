@@ -5,14 +5,14 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[server]",
-            "offset": 1,
-            "regexp": "php/?([\\d.]+)?"
+            "search": "headers[x-powered-by]",
+            "regexp": "^php/?([\\d.]+)?",
+            "offset": 1
         },
         {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "^php/?([\\d.]+)?"
+            "search": "headers[server]",
+            "regexp": "php/?([\\d.]+)?",
+            "offset": 1
         }
     ],
     "website": "http://php.net",
