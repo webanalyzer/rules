@@ -1,7 +1,9 @@
 {
+    "website": "https://vercel.com",
+    "name": "Vercel",
     "matches": [
         {
-            "search": "headers[x-vercel-cache]",
+            "search": "headers[x-vercel-id]",
             "regexp": ".*"
         },
         {
@@ -9,14 +11,12 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^now$"
+            "search": "headers[x-vercel-cache]",
+            "regexp": ".*"
         },
         {
-            "search": "headers[x-vercel-id]",
-            "regexp": ".*"
+            "search": "headers[server]",
+            "regexp": "^now$"
         }
-    ],
-    "website": "https://vercel.com",
-    "name": "Vercel"
+    ]
 }

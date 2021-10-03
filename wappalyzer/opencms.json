@@ -1,18 +1,18 @@
 {
+    "website": "http://www.opencms.org",
+    "name": "OpenCms",
+    "implies": "Java",
     "matches": [
+        {
+            "search": "headers[server]",
+            "regexp": "OpenCms"
+        },
         {
             "regexp": "<link href=\"/opencms/"
         },
         {
             "search": "script",
             "regexp": "opencms"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "OpenCms"
         }
-    ],
-    "implies": "Java",
-    "website": "http://www.opencms.org",
-    "name": "OpenCms"
+    ]
 }

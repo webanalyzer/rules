@@ -1,21 +1,7 @@
 {
+    "website": "http://mailchimp.com",
+    "name": "MailChimp",
     "matches": [
-        {
-            "regexp": "<form [^>]*data-mailchimp-url"
-        },
-        {
-            "regexp": "<form [^>]*id=\"mc-embedded-subscribe-form\""
-        },
-        {
-            "regexp": "<form [^>]*name=\"mc-embedded-subscribe-form\""
-        },
-        {
-            "regexp": "<input [^>]*id=\"mc-email\"",
-            "certainty": 20
-        },
-        {
-            "regexp": "<!-- Begin MailChimp Signup Form -->"
-        },
         {
             "search": "script",
             "regexp": "s3\\.amazonaws\\.com/downloads\\.mailchimp\\.com/js/mc-validate\\.js"
@@ -37,8 +23,22 @@
         {
             "search": "script",
             "regexp": "chimpstatic\\.com/mcjs-connected"
+        },
+        {
+            "regexp": "<form [^>]*data-mailchimp-url"
+        },
+        {
+            "regexp": "<form [^>]*id=\"mc-embedded-subscribe-form\""
+        },
+        {
+            "regexp": "<form [^>]*name=\"mc-embedded-subscribe-form\""
+        },
+        {
+            "regexp": "<input [^>]*id=\"mc-email\"",
+            "certainty": 20
+        },
+        {
+            "regexp": "<!-- Begin MailChimp Signup Form -->"
         }
-    ],
-    "website": "http://mailchimp.com",
-    "name": "MailChimp"
+    ]
 }

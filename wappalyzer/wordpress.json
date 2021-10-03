@@ -1,5 +1,19 @@
 {
+    "website": "https://wordpress.org",
+    "name": "WordPress",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
     "matches": [
+        {
+            "search": "script",
+            "regexp": "/wp-(?:content|includes)/"
+        },
+        {
+            "search": "script",
+            "regexp": "wp-embed\\.min\\.js"
+        },
         {
             "search": "meta[shareaholic:wp_version]",
             "regexp": ".*"
@@ -10,32 +24,18 @@
             "offset": 1
         },
         {
-            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
-        },
-        {
-            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
-        },
-        {
-            "search": "script",
-            "regexp": "/wp-(?:content|includes)/"
-        },
-        {
-            "search": "script",
-            "regexp": "wp-embed\\.min\\.js"
+            "search": "headers[link]",
+            "regexp": "rel=\"https://api\\.w\\.org/\""
         },
         {
             "search": "headers[x-pingback]",
             "regexp": "/xmlrpc\\.php$"
         },
         {
-            "search": "headers[link]",
-            "regexp": "rel=\"https://api\\.w\\.org/\""
+            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
+        },
+        {
+            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         }
-    ],
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
-    "website": "https://wordpress.org",
-    "name": "WordPress"
+    ]
 }
