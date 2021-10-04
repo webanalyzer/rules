@@ -1,25 +1,25 @@
 {
     "website": "http://drupalcommerce.org",
-    "name": "Drupal Commerce",
-    "implies": "Drupal",
     "matches": [
         {
             "regexp": "<[^>]+(?:id=\"block[_-]commerce[_-]cart[_-]cart|class=\"commerce[_-]product[_-]field)"
         },
         {
-            "search": "script",
             "regexp": "/modules/(?:contrib/)?commerce/js/conditions\\.js",
-            "certainty": 50
+            "certainty": 50,
+            "search": "script"
         },
         {
-            "search": "script",
             "regexp": "/profiles/commerce_kickstart/modules/contrib/commerce/modules/checkout/commerce_checkout\\.js",
-            "certainty": 50
+            "certainty": 50,
+            "search": "script"
         },
         {
-            "search": "script",
             "regexp": "/sites/(?:all|default)/modules/(?:contrib/)?commerce/modules/checkout/commerce_checkout\\.js",
-            "certainty": 50
+            "certainty": 50,
+            "search": "script"
         }
-    ]
+    ],
+    "name": "Drupal Commerce",
+    "implies": "Drupal"
 }

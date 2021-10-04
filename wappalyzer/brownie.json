@@ -1,5 +1,15 @@
 {
     "website": "https://www.browniesuite.com",
+    "matches": [
+        {
+            "regexp": "Brownie",
+            "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": "assets\\.youthsrl\\.com/brownie",
+            "search": "script"
+        }
+    ],
     "name": "Brownie",
     "implies": [
         "PHP",
@@ -7,15 +17,5 @@
         "Amazon Web Services",
         "Bootstrap",
         "jQuery"
-    ],
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "Brownie"
-        },
-        {
-            "search": "script",
-            "regexp": "assets\\.youthsrl\\.com/brownie"
-        }
     ]
 }

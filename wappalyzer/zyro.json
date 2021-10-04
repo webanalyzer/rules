@@ -1,15 +1,15 @@
 {
     "website": "https://zyro.com",
-    "name": "Zyro",
-    "implies": "Vue.js",
     "matches": [
         {
-            "search": "script",
-            "regexp": "userapp\\.zyrosite\\.com/"
+            "regexp": "^Zyro\\.com Website Builder$",
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "^Zyro\\.com Website Builder$"
+            "regexp": "userapp\\.zyrosite\\.com/",
+            "search": "script"
         }
-    ]
+    ],
+    "name": "Zyro",
+    "implies": "Vue.js"
 }

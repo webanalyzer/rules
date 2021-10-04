@@ -1,14 +1,14 @@
 {
     "website": "https://revolution.themepunch.com/",
-    "name": "Revslider",
     "matches": [
         {
-            "regexp": "<link[^>]* href=[\\'\"][^']+revslider[/\\w-]+\\.css\\?ver=([0-9.]+)[\\'\"]",
-            "offset": 1
+            "regexp": "/revslider/[/\\w-]+/js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "/revslider/[/\\w-]+/js"
+            "offset": 1,
+            "regexp": "<link[^>]* href=[\\'\"][^']+revslider[/\\w-]+\\.css\\?ver=([0-9.]+)[\\'\"]"
         }
-    ]
+    ],
+    "name": "Revslider"
 }

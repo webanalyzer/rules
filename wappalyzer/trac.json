@@ -1,14 +1,14 @@
 {
     "website": "http://trac.edgewall.org",
-    "name": "Trac",
-    "implies": "Python",
     "matches": [
         {
             "regexp": "<a id=\"tracpowered"
         },
         {
-            "regexp": "Powered by <a href=\"[^\"]*\"><strong>Trac(?:[ /]([\\d.]+))?",
-            "offset": 1
+            "offset": 1,
+            "regexp": "Powered by <a href=\"[^\"]*\"><strong>Trac(?:[ /]([\\d.]+))?"
         }
-    ]
+    ],
+    "name": "Trac",
+    "implies": "Python"
 }

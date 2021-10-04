@@ -1,15 +1,15 @@
 {
     "website": "https://snipcart.com",
-    "name": "Snipcart",
     "matches": [
         {
-            "search": "cookies[snipcart-cart]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[snipcart-cart]"
         },
         {
-            "search": "script",
+            "offset": 1,
             "regexp": "https://cdn\\.snipcart\\.com/themes/v([\\w.]+)/default/snipcart\\.js",
-            "offset": 1
+            "search": "script"
         }
-    ]
+    ],
+    "name": "Snipcart"
 }

@@ -1,17 +1,17 @@
 {
     "website": "https://www.acquia.com/products/drupal-cloud/content-hub",
+    "matches": [
+        {
+            "regexp": "content-hub\\.acquia\\.com",
+            "search": "headers[content-security-policy]"
+        },
+        {
+            "regexp": "content-hub\\.acquia\\.com",
+            "search": "script"
+        }
+    ],
     "name": "Acquia Content Hub",
     "implies": [
         "Acquia Cloud Platform"
-    ],
-    "matches": [
-        {
-            "search": "headers[content-security-policy]",
-            "regexp": "content-hub\\.acquia\\.com"
-        },
-        {
-            "search": "script",
-            "regexp": "content-hub\\.acquia\\.com"
-        }
     ]
 }
