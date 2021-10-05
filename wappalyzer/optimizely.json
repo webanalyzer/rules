@@ -1,14 +1,14 @@
 {
-    "website": "https://www.optimizely.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[optimizelyEndUserId]"
+            "search": "script",
+            "regexp": "optimizely\\.com.*\\.js"
         },
         {
-            "regexp": "optimizely\\.com.*\\.js",
-            "search": "script"
+            "search": "cookies[optimizelyEndUserId]",
+            "regexp": ".*"
         }
     ],
-    "name": "Optimizely"
+    "name": "Optimizely",
+    "website": "https://www.optimizely.com"
 }

@@ -1,22 +1,22 @@
 {
-    "website": "http://www.xeora.org",
     "matches": [
         {
-            "regexp": "XeoraCube",
-            "search": "headers[x-powered-by]"
+            "search": "headers[server]",
+            "regexp": "XeoraEngine"
         },
         {
-            "regexp": "XeoraEngine",
-            "search": "headers[server]"
+            "search": "headers[x-powered-by]",
+            "regexp": "XeoraCube"
         },
         {
             "regexp": "<input type=\"hidden\" name=\"_sys_bind_\\d+\" id=\"_sys_bind_\\d+\" />"
         },
         {
-            "regexp": "/_bi_sps_v.+\\.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "/_bi_sps_v.+\\.js"
         }
     ],
     "name": "Xeora",
-    "implies": "Microsoft ASP.NET"
+    "implies": "Microsoft ASP.NET",
+    "website": "http://www.xeora.org"
 }

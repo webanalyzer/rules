@@ -1,23 +1,23 @@
 {
-    "website": "http://demandware.com",
     "matches": [
         {
-            "regexp": "Demandware eCommerce Server",
-            "search": "headers[server]"
+            "search": "script",
+            "regexp": "/demandware\\.static/"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[dwsid]"
+            "search": "headers[server]",
+            "regexp": "Demandware eCommerce Server"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[dw_dnt]"
+            "search": "cookies[dw_dnt]",
+            "regexp": ".*"
         },
         {
-            "regexp": "/demandware\\.static/",
-            "search": "script"
+            "search": "cookies[dwsid]",
+            "regexp": ".*"
         }
     ],
     "name": "Salesforce Commerce Cloud",
-    "implies": "Salesforce"
+    "implies": "Salesforce",
+    "website": "http://demandware.com"
 }

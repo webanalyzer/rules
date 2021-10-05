@@ -1,14 +1,14 @@
 {
-    "website": "https://thebase.in",
     "matches": [
         {
-            "regexp": "thebase\\.in/js",
-            "search": "script"
+            "search": "meta[base-theme-name]",
+            "regexp": "\\d+"
         },
         {
-            "regexp": "\\d+",
-            "search": "meta[base-theme-name]"
+            "search": "script",
+            "regexp": "thebase\\.in/js"
         }
     ],
-    "name": "Base"
+    "name": "Base",
+    "website": "https://thebase.in"
 }

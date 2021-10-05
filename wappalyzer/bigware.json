@@ -1,18 +1,18 @@
 {
-    "website": "http://bigware.de",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[bigwareCsid]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[bigWAdminID]"
-        },
-        {
             "regexp": "(?:Diese <a href=[^>]+bigware\\.de|<a href=[^>]+/main_bigware_\\d+\\.php)"
+        },
+        {
+            "search": "cookies[bigwareCsid]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[bigWAdminID]",
+            "regexp": ".*"
         }
     ],
     "name": "Bigware",
-    "implies": "PHP"
+    "implies": "PHP",
+    "website": "http://bigware.de"
 }

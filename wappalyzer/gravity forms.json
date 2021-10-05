@@ -1,5 +1,4 @@
 {
-    "website": "http://gravityforms.com",
     "matches": [
         {
             "regexp": "<div class=(?:\"|')[^>]*gform_wrapper"
@@ -15,9 +14,10 @@
         },
         {
             "offset": 1,
-            "regexp": "/wp-content/plugins/gravityforms/js/[^/]+\\.js\\?ver=([\\d.]+)$",
-            "search": "script"
+            "search": "script",
+            "regexp": "/wp-content/plugins/gravityforms/js/[^/]+\\.js\\?ver=([\\d.]+)$"
         }
     ],
-    "name": "Gravity Forms"
+    "name": "Gravity Forms",
+    "website": "http://gravityforms.com"
 }
