@@ -1,14 +1,14 @@
 {
+    "name": "Kameleoon",
+    "website": "https://kameleoon.com/",
     "matches": [
         {
-            "search": "script",
-            "regexp": "\\.kameleoon\\.\\w+/kameleoon\\.js"
+            "regexp": ".*",
+            "search": "cookies[kameleoonVisitorCode]"
         },
         {
-            "search": "cookies[kameleoonVisitorCode]",
-            "regexp": ".*"
+            "regexp": "\\.kameleoon\\.\\w+/kameleoon\\.js",
+            "search": "script"
         }
-    ],
-    "name": "Kameleoon",
-    "website": "https://kameleoon.com/"
+    ]
 }

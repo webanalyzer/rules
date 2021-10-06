@@ -1,4 +1,6 @@
 {
+    "name": "SAP Commerce Cloud",
+    "website": "https://www.sap.com/products/crm/e-commerce-platforms.html",
     "matches": [
         {
             "regexp": "<[^>]+/(?:sys_master|hybr|_ui/(?:.*responsive/)?(?:desktop|common(?:/images|/img|/css|ico)?))/"
@@ -7,11 +9,9 @@
             "regexp": "<script[^>].*hybris.*.js"
         },
         {
-            "search": "cookies[_hybris]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[_hybris]"
         }
     ],
-    "name": "SAP Commerce Cloud",
-    "implies": "Java",
-    "website": "https://www.sap.com/products/crm/e-commerce-platforms.html"
+    "implies": "Java"
 }

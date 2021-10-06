@@ -1,20 +1,20 @@
 {
+    "name": "Inveon",
+    "website": "https://www.inveon.com",
     "matches": [
         {
-            "search": "cookies[INV.Customer]",
             "regexp": ".*",
-            "certainty": 50
+            "search": "cookies[inveonSessionId]"
         },
         {
-            "search": "cookies[inveonSessionId]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "certainty": 50,
+            "search": "cookies[INV.Customer]"
         },
         {
-            "offset": 1,
+            "regexp": "Scripts/_app/Inv(?:\\w+)\\.js\\?v=(.+)$",
             "search": "script",
-            "regexp": "Scripts/_app/Inv(?:\\w+)\\.js\\?v=(.+)$"
+            "offset": 1
         }
-    ],
-    "name": "Inveon",
-    "website": "https://www.inveon.com"
+    ]
 }

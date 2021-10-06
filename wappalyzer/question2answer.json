@@ -1,15 +1,15 @@
 {
+    "name": "Question2Answer",
+    "website": "http://www.question2answer.org",
     "matches": [
         {
             "regexp": "<!-- Powered by Question2Answer"
         },
         {
-            "offset": 1,
+            "regexp": "\\./qa-content/qa-page\\.js\\?([0-9.]+)",
             "search": "script",
-            "regexp": "\\./qa-content/qa-page\\.js\\?([0-9.]+)"
+            "offset": 1
         }
     ],
-    "name": "Question2Answer",
-    "implies": "PHP",
-    "website": "http://www.question2answer.org"
+    "implies": "PHP"
 }

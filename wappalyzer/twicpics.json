@@ -1,14 +1,14 @@
 {
+    "name": "TwicPics",
+    "website": "https://www.twicpics.com",
     "matches": [
         {
-            "search": "script",
-            "regexp": ".+\\.twic\\.pics"
+            "regexp": "^TwicPics/\\d+\\.\\d+\\.\\d+$",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^TwicPics/\\d+\\.\\d+\\.\\d+$"
+            "regexp": ".+\\.twic\\.pics",
+            "search": "script"
         }
-    ],
-    "name": "TwicPics",
-    "website": "https://www.twicpics.com"
+    ]
 }

@@ -1,18 +1,18 @@
 {
+    "name": "Redmine",
+    "website": "http://www.redmine.org",
     "matches": [
-        {
-            "search": "meta[description]",
-            "regexp": "Redmine"
-        },
         {
             "regexp": "Powered by <a href=\"[^>]+Redmine"
         },
         {
-            "search": "cookies[_redmine_session]",
-            "regexp": ".*"
+            "regexp": "Redmine",
+            "search": "meta[description]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_redmine_session]"
         }
     ],
-    "name": "Redmine",
-    "implies": "Ruby on Rails",
-    "website": "http://www.redmine.org"
+    "implies": "Ruby on Rails"
 }

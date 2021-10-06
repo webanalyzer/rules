@@ -1,18 +1,18 @@
 {
+    "name": "3dCart",
+    "website": "http://www.3dcart.com",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "3DCART"
+            "regexp": "3DCART",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "cookies[3dvisit]",
-            "regexp": ".*"
+            "regexp": "(?:twlh(?:track)?\\.asp|3d_upsell\\.js)",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "(?:twlh(?:track)?\\.asp|3d_upsell\\.js)"
+            "regexp": ".*",
+            "search": "cookies[3dvisit]"
         }
-    ],
-    "name": "3dCart",
-    "website": "http://www.3dcart.com"
+    ]
 }
