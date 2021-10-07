@@ -1,14 +1,14 @@
 {
-    "name": "WebMetric",
-    "website": "https://webmetric.ir/",
     "matches": [
         {
-            "regexp": "cdn\\.webmetric\\.ir",
-            "search": "script"
+            "search": "cookies[_wmuid]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_wmuid]"
+            "search": "script",
+            "regexp": "cdn\\.webmetric\\.ir"
         }
-    ]
+    ],
+    "name": "WebMetric",
+    "website": "https://webmetric.ir/"
 }

@@ -1,14 +1,14 @@
 {
-    "name": "Semantic UI",
-    "website": "https://semantic-ui.com/",
     "matches": [
         {
             "regexp": "<link[^>]+semantic(?:\\.min)\\.css\""
         },
         {
-            "regexp": "/semantic(?:-([\\d.]+))?(?:\\.min)?\\.js",
             "search": "script",
-            "offset": 1
+            "offset": 1,
+            "regexp": "/semantic(?:-([\\d.]+))?(?:\\.min)?\\.js"
         }
-    ]
+    ],
+    "name": "Semantic UI",
+    "website": "https://semantic-ui.com/"
 }

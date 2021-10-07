@@ -1,6 +1,4 @@
 {
-    "name": "OroCommerce",
-    "website": "https://oroinc.com",
     "matches": [
         {
             "regexp": "<script [^>]+data-requiremodule=\"oro/"
@@ -9,11 +7,13 @@
             "regexp": "<script [^>]+data-requiremodule=\"oroui/"
         },
         {
-            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)",
             "search": "script",
-            "offset": 1
+            "offset": 1,
+            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)"
         }
     ],
+    "name": "OroCommerce",
+    "website": "https://oroinc.com",
     "implies": [
         "PHP",
         "MySQL"

@@ -1,15 +1,15 @@
 {
-    "name": "Facebook Pixel",
-    "website": "http://facebook.com",
     "matches": [
         {
-            "regexp": "connect\\.facebook.\\w+/signals/config/\\d+\\?v=([\\d\\.]+)",
             "search": "script",
-            "offset": 1
+            "offset": 1,
+            "regexp": "connect\\.facebook.\\w+/signals/config/\\d+\\?v=([\\d\\.]+)"
         },
         {
-            "regexp": "connect\\.facebook\\.\\w+/.+/fbevents\\.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "connect\\.facebook\\.\\w+/.+/fbevents\\.js"
         }
-    ]
+    ],
+    "name": "Facebook Pixel",
+    "website": "http://facebook.com"
 }

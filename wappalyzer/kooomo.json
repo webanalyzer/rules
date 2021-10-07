@@ -1,13 +1,13 @@
 {
-    "name": "Kooomo",
-    "website": "https://www.kooomo.com",
     "matches": [
         {
-            "regexp": "Kooomo(?: v([\\d.]+))?",
             "search": "meta[generator]",
-            "offset": 1
+            "offset": 1,
+            "regexp": "Kooomo(?: v([\\d.]+))?"
         }
     ],
+    "name": "Kooomo",
+    "website": "https://www.kooomo.com",
     "implies": [
         "PHP",
         "MySQL"

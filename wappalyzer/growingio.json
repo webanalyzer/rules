@@ -1,19 +1,19 @@
 {
-    "name": "GrowingIO",
-    "website": "https://www.growingio.com/",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[gr_user_id]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[grwng_uid]"
-        },
-        {
-            "regexp": "assets\\.growingio\\.com/([\\d.]+)/gio\\.js",
             "search": "script",
-            "offset": 1
+            "offset": 1,
+            "regexp": "assets\\.growingio\\.com/([\\d.]+)/gio\\.js"
+        },
+        {
+            "search": "cookies[gr_user_id]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[grwng_uid]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "name": "GrowingIO",
+    "website": "https://www.growingio.com/"
 }

@@ -1,23 +1,23 @@
 {
-    "name": "IPB",
-    "website": "https://invisioncommunity.com/",
     "matches": [
         {
             "regexp": "<link[^>]+ipb_[^>]+\\.css"
         },
         {
-            "regexp": "jscripts/ips_",
-            "search": "script"
+            "search": "cookies[ipbWWLsession_id]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ipbWWLsession_id]"
+            "search": "cookies[ipbWWLmodpids]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ipbWWLmodpids]"
+            "search": "script",
+            "regexp": "jscripts/ips_"
         }
     ],
+    "name": "IPB",
+    "website": "https://invisioncommunity.com/",
     "implies": [
         "PHP",
         "MySQL"

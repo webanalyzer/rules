@@ -1,19 +1,19 @@
 {
-    "name": "Bsale",
-    "website": "https://www.bsale.cl",
     "matches": [
         {
-            "regexp": "Bsale",
-            "search": "meta[generator]"
+            "search": "cookies[_bsalemarket_session]",
+            "regexp": ".*"
         },
         {
-            "regexp": "Bsale",
-            "search": "meta[autor]"
+            "search": "meta[autor]",
+            "regexp": "Bsale"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_bsalemarket_session]"
+            "search": "meta[generator]",
+            "regexp": "Bsale"
         }
     ],
+    "name": "Bsale",
+    "website": "https://www.bsale.cl",
     "implies": "Nginx"
 }

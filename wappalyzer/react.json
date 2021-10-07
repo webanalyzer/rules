@@ -1,23 +1,23 @@
 {
-    "name": "React",
-    "website": "https://reactjs.org",
     "matches": [
         {
             "regexp": "<[^>]+data-react"
         },
         {
-            "regexp": "react(?:-with-addons)?[.-]([\\d.]*\\d)[^/]*\\.js",
             "search": "script",
-            "offset": 1
+            "offset": 1,
+            "regexp": "react(?:-with-addons)?[.-]([\\d.]*\\d)[^/]*\\.js"
         },
         {
-            "regexp": "/([\\d.]+)/react(?:\\.min)?\\.js",
             "search": "script",
-            "offset": 1
+            "offset": 1,
+            "regexp": "/([\\d.]+)/react(?:\\.min)?\\.js"
         },
         {
-            "regexp": "^react\\b.*\\.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "^react\\b.*\\.js"
         }
-    ]
+    ],
+    "name": "React",
+    "website": "https://reactjs.org"
 }

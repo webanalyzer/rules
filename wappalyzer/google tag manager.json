@@ -1,6 +1,4 @@
 {
-    "name": "Google Tag Manager",
-    "website": "http://www.google.com/tagmanager",
     "matches": [
         {
             "regexp": "googletagmanager\\.com/ns\\.html[^>]+></iframe>"
@@ -9,8 +7,10 @@
             "regexp": "<!-- (?:End )?Google Tag Manager -->"
         },
         {
-            "regexp": "googletagmanager\\.com/gtm\\.js",
-            "search": "script"
+            "search": "script",
+            "regexp": "googletagmanager\\.com/gtm\\.js"
         }
-    ]
+    ],
+    "name": "Google Tag Manager",
+    "website": "http://www.google.com/tagmanager"
 }

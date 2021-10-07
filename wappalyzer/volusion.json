@@ -1,6 +1,4 @@
 {
-    "name": "Volusion",
-    "website": "https://www.volusion.com",
     "matches": [
         {
             "regexp": "<link [^>]*href=\"[^\"]*/vspfiles/"
@@ -9,9 +7,11 @@
             "regexp": "<body [^>]*data-vn-page-name"
         },
         {
-            "regexp": "/volusion\\.js(?:\\?([\\d.]*))?",
             "search": "script",
-            "offset": 1
+            "offset": 1,
+            "regexp": "/volusion\\.js(?:\\?([\\d.]*))?"
         }
-    ]
+    ],
+    "name": "Volusion",
+    "website": "https://www.volusion.com"
 }

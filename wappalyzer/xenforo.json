@@ -1,6 +1,4 @@
 {
-    "name": "XenForo",
-    "website": "http://xenforo.com",
     "matches": [
         {
             "regexp": "(?:jQuery\\.extend\\(true, XenForo|<a[^>]+>Forum software by XenForo\u2122|<!--XF:branding|<html[^>]+id=\"XenForo\")"
@@ -9,14 +7,16 @@
             "regexp": "<html id=\"XF\" "
         },
         {
-            "regexp": ".*",
-            "search": "cookies[xf_csrf]"
+            "search": "cookies[xf_session]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[xf_session]"
+            "search": "cookies[xf_csrf]",
+            "regexp": ".*"
         }
     ],
+    "name": "XenForo",
+    "website": "http://xenforo.com",
     "implies": [
         "PHP",
         "MySQL"
