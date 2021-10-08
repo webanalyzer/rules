@@ -4,12 +4,12 @@
             "regexp": "(?:Powered by <a href=\"[^>]+BIGACE|<!--\\s+Site is running BIGACE)"
         },
         {
-            "search": "meta[generator]",
+            "regexp": "BIGACE ([\\d.]+)",
             "offset": 1,
-            "regexp": "BIGACE ([\\d.]+)"
+            "search": "meta[generator]"
         }
     ],
-    "name": "BIGACE",
+    "implies": "PHP",
     "website": "http://bigace.de",
-    "implies": "PHP"
+    "name": "BIGACE"
 }

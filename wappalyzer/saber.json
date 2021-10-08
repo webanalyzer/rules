@@ -4,12 +4,12 @@
             "regexp": "<div [^>]*id=\"_saber\""
         },
         {
-            "search": "meta[generator]",
+            "regexp": "^Saber v([\\d.]+)$",
             "offset": 1,
-            "regexp": "^Saber v([\\d.]+)$"
+            "search": "meta[generator]"
         }
     ],
-    "name": "Saber",
+    "implies": "Vue.js",
     "website": "https://saber.land/",
-    "implies": "Vue.js"
+    "name": "Saber"
 }

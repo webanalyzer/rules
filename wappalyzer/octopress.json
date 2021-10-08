@@ -4,15 +4,15 @@
             "regexp": "Powered by <a href=\"http://octopress\\.org\">"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "Octopress"
+            "regexp": "/octopress\\.js",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "/octopress\\.js"
+            "regexp": "Octopress",
+            "search": "meta[generator]"
         }
     ],
-    "name": "Octopress",
+    "implies": "Jekyll",
     "website": "http://octopress.org",
-    "implies": "Jekyll"
+    "name": "Octopress"
 }

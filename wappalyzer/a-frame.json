@@ -4,12 +4,12 @@
             "regexp": "<a-scene[^<>]*>"
         },
         {
-            "search": "script",
+            "regexp": "/?([\\d.]+)?/aframe(?:\\.min)?\\.js",
             "offset": 1,
-            "regexp": "/?([\\d.]+)?/aframe(?:\\.min)?\\.js"
+            "search": "script"
         }
     ],
-    "name": "A-Frame",
+    "implies": "three.js",
     "website": "https://aframe.io",
-    "implies": "three.js"
+    "name": "A-Frame"
 }

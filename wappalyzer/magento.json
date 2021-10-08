@@ -10,29 +10,29 @@
             "regexp": "<script type=\"text/x-magento-init\">"
         },
         {
-            "search": "script",
-            "regexp": "js/mage"
+            "regexp": "js/mage",
+            "search": "script"
         },
         {
-            "search": "script",
+            "regexp": "skin/frontend/(?:default|(enterprise))",
             "offset": 1,
-            "regexp": "skin/frontend/(?:default|(enterprise))"
+            "search": "script"
         },
         {
+            "regexp": "static/_requirejs",
             "certainty": 50,
-            "search": "script",
-            "regexp": "static/_requirejs"
+            "search": "script"
         },
         {
+            "regexp": ".*",
             "certainty": 50,
-            "search": "cookies[frontend]",
-            "regexp": ".*"
+            "search": "cookies[frontend]"
         }
     ],
-    "name": "Magento",
-    "website": "https://magento.com",
     "implies": [
         "PHP",
         "MySQL"
-    ]
+    ],
+    "website": "https://magento.com",
+    "name": "Magento"
 }

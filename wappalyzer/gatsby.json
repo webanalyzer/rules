@@ -7,15 +7,15 @@
             "regexp": "<style id=\"gatsby-inlined-css\">"
         },
         {
-            "search": "meta[generator]",
+            "regexp": "^Gatsby(?: ([0-9.]+))?$",
             "offset": 1,
-            "regexp": "^Gatsby(?: ([0-9.]+))?$"
+            "search": "meta[generator]"
         }
     ],
-    "name": "Gatsby",
-    "website": "https://www.gatsbyjs.org/",
     "implies": [
         "React",
         "webpack"
-    ]
+    ],
+    "website": "https://www.gatsbyjs.org/",
+    "name": "Gatsby"
 }

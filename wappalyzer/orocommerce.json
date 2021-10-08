@@ -7,15 +7,15 @@
             "regexp": "<script [^>]+data-requiremodule=\"oroui/"
         },
         {
-            "search": "script",
+            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)",
             "offset": 1,
-            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)"
+            "search": "script"
         }
     ],
-    "name": "OroCommerce",
-    "website": "https://oroinc.com",
     "implies": [
         "PHP",
         "MySQL"
-    ]
+    ],
+    "website": "https://oroinc.com",
+    "name": "OroCommerce"
 }

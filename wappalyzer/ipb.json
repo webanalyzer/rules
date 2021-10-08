@@ -4,22 +4,22 @@
             "regexp": "<link[^>]+ipb_[^>]+\\.css"
         },
         {
-            "search": "cookies[ipbWWLsession_id]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[ipbWWLmodpids]"
         },
         {
-            "search": "cookies[ipbWWLmodpids]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[ipbWWLsession_id]"
         },
         {
-            "search": "script",
-            "regexp": "jscripts/ips_"
+            "regexp": "jscripts/ips_",
+            "search": "script"
         }
     ],
-    "name": "IPB",
-    "website": "https://invisioncommunity.com/",
     "implies": [
         "PHP",
         "MySQL"
-    ]
+    ],
+    "website": "https://invisioncommunity.com/",
+    "name": "IPB"
 }

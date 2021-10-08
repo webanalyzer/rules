@@ -4,15 +4,15 @@
             "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:excel\"|<!--\\s*(?:START|END) OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD\\s*-->|<div [^>]*x:publishsource=\"?Excel\"?)"
         },
         {
-            "search": "meta[generator]",
+            "regexp": "Microsoft Excel( [\\d.]+)?",
             "offset": 1,
-            "regexp": "Microsoft Excel( [\\d.]+)?"
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[ProgId]",
-            "regexp": "^Excel\\."
+            "regexp": "^Excel\\.",
+            "search": "meta[ProgId]"
         }
     ],
-    "name": "Microsoft Excel",
-    "website": "https://office.microsoft.com/excel"
+    "website": "https://office.microsoft.com/excel",
+    "name": "Microsoft Excel"
 }

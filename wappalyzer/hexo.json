@@ -4,12 +4,12 @@
             "regexp": "Powered by <a href=\"https?://hexo\\.io/?\"[^>]*>Hexo</"
         },
         {
-            "search": "meta[generator]",
+            "regexp": "Hexo(?: v?([\\d.]+))?",
             "offset": 1,
-            "regexp": "Hexo(?: v?([\\d.]+))?"
+            "search": "meta[generator]"
         }
     ],
-    "name": "Hexo",
+    "implies": "Node.js",
     "website": "https://hexo.io",
-    "implies": "Node.js"
+    "name": "Hexo"
 }

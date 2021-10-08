@@ -1,18 +1,18 @@
 {
     "matches": [
         {
+            "regexp": "CFTOKEN=",
+            "search": "headers[cookie]"
+        },
+        {
             "regexp": "<!-- START headerTags\\.cfm"
         },
         {
-            "search": "headers[cookie]",
-            "regexp": "CFTOKEN="
-        },
-        {
-            "search": "script",
-            "regexp": "/cfajax/"
+            "regexp": "/cfajax/",
+            "search": "script"
         }
     ],
-    "name": "Adobe ColdFusion",
+    "implies": "CFML",
     "website": "http://adobe.com/products/coldfusion-family.html",
-    "implies": "CFML"
+    "name": "Adobe ColdFusion"
 }

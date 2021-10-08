@@ -4,20 +4,20 @@
             "regexp": "<link[^>]* href=\"[^\"]*shapecss(?:\\.min)?\\.css"
         },
         {
-            "search": "script",
+            "regexp": "shapecss[-.]([\\d.]*\\d)[^/]*\\.js",
             "offset": 1,
-            "regexp": "shapecss[-.]([\\d.]*\\d)[^/]*\\.js"
+            "search": "script"
         },
         {
-            "search": "script",
+            "regexp": "/([\\d.]+)/shapecss(?:\\.min)?\\.js",
             "offset": 1,
-            "regexp": "/([\\d.]+)/shapecss(?:\\.min)?\\.js"
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "shapecss.*\\.js"
+            "regexp": "shapecss.*\\.js",
+            "search": "script"
         }
     ],
-    "name": "Shapecss",
-    "website": "https://shapecss.com"
+    "website": "https://shapecss.com",
+    "name": "Shapecss"
 }
