@@ -1,14 +1,14 @@
 {
+    "name": "Thinkific",
+    "website": "https://www.thinkific.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[_thinkific_session]"
+            "search": "script",
+            "regexp": "cdn(?:-themes)?\\.thinkific\\.com"
         },
         {
-            "regexp": "cdn(?:-themes)?\\.thinkific\\.com",
-            "search": "script"
+            "search": "cookies[_thinkific_session]",
+            "regexp": ".*"
         }
-    ],
-    "website": "https://www.thinkific.com",
-    "name": "Thinkific"
+    ]
 }

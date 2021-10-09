@@ -1,14 +1,14 @@
 {
+    "name": "Medallia",
+    "website": "https://www.medallia.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[k_visit]"
+            "search": "script",
+            "regexp": "cf\\.kampyle\\.com/k_button\\.js"
         },
         {
-            "regexp": "cf\\.kampyle\\.com/k_button\\.js",
-            "search": "script"
+            "search": "cookies[k_visit]",
+            "regexp": ".*"
         }
-    ],
-    "website": "https://www.medallia.com",
-    "name": "Medallia"
+    ]
 }

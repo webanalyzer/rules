@@ -1,5 +1,19 @@
 {
+    "name": "reCAPTCHA",
+    "website": "https://www.google.com/recaptcha/",
     "matches": [
+        {
+            "search": "script",
+            "regexp": "api-secure\\.recaptcha\\.net"
+        },
+        {
+            "search": "script",
+            "regexp": "recaptcha_ajax\\.js"
+        },
+        {
+            "search": "script",
+            "regexp": "/recaptcha/api\\.js"
+        },
         {
             "regexp": "<div[^>]+id=\"recaptcha_image"
         },
@@ -8,20 +22,6 @@
         },
         {
             "regexp": "<div[^>]+class=\"g-recaptcha\""
-        },
-        {
-            "regexp": "api-secure\\.recaptcha\\.net",
-            "search": "script"
-        },
-        {
-            "regexp": "recaptcha_ajax\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "/recaptcha/api\\.js",
-            "search": "script"
         }
-    ],
-    "website": "https://www.google.com/recaptcha/",
-    "name": "reCAPTCHA"
+    ]
 }

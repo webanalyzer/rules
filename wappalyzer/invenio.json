@@ -1,14 +1,14 @@
 {
+    "name": "Invenio",
+    "website": "http://invenio-software.org",
     "matches": [
         {
-            "regexp": "(?:Powered by|System)\\s+(?:CERN )?<a (?:class=\"footer\" )?href=\"http://(?:cdsware\\.cern\\.ch(?:/invenio)?|invenio-software\\.org|cern\\.ch/invenio)(?:/)?\">(?:CDS )?Invenio</a>\\s*v?([\\d\\.]+)?",
-            "offset": 1
+            "offset": 1,
+            "regexp": "(?:Powered by|System)\\s+(?:CERN )?<a (?:class=\"footer\" )?href=\"http://(?:cdsware\\.cern\\.ch(?:/invenio)?|invenio-software\\.org|cern\\.ch/invenio)(?:/)?\">(?:CDS )?Invenio</a>\\s*v?([\\d\\.]+)?"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[INVENIOSESSION]"
+            "search": "cookies[INVENIOSESSION]",
+            "regexp": ".*"
         }
-    ],
-    "website": "http://invenio-software.org",
-    "name": "Invenio"
+    ]
 }

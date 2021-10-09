@@ -1,14 +1,14 @@
 {
-    "matches": [
-        {
-            "regexp": "<[^>]{1,512}\\bwire:"
-        },
-        {
-            "regexp": "livewire(?:\\.min)?\\.js",
-            "search": "script"
-        }
-    ],
+    "name": "Livewire",
     "implies": "Laravel",
     "website": "https://laravel-livewire.com",
-    "name": "Livewire"
+    "matches": [
+        {
+            "search": "script",
+            "regexp": "livewire(?:\\.min)?\\.js"
+        },
+        {
+            "regexp": "<[^>]{1,512}\\bwire:"
+        }
+    ]
 }

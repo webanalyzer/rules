@@ -1,18 +1,18 @@
 {
+    "name": "Shoptet",
+    "implies": "PHP",
+    "website": "http://www.shoptet.cz",
     "matches": [
+        {
+            "search": "script",
+            "regexp": "^https?://cdn\\.myshoptet\\.com/"
+        },
         {
             "regexp": "<link [^>]*href=\"https?://cdn\\.myshoptet\\.com/"
         },
         {
-            "regexp": "^https?://cdn\\.myshoptet\\.com/",
-            "search": "script"
-        },
-        {
-            "regexp": "^Shoptet",
-            "search": "meta[web_author]"
+            "search": "meta[web_author]",
+            "regexp": "^Shoptet"
         }
-    ],
-    "implies": "PHP",
-    "website": "http://www.shoptet.cz",
-    "name": "Shoptet"
+    ]
 }

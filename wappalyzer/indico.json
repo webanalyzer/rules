@@ -1,14 +1,14 @@
 {
+    "name": "Indico",
+    "website": "http://indico-software.org",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[MAKACSESSION]"
+            "offset": 1,
+            "regexp": "Powered by\\s+(?:CERN )?<a href=\"http://(?:cdsware\\.cern\\.ch/indico/|indico-software\\.org|cern\\.ch/indico)\">(?:CDS )?Indico( [\\d\\.]+)?"
         },
         {
-            "regexp": "Powered by\\s+(?:CERN )?<a href=\"http://(?:cdsware\\.cern\\.ch/indico/|indico-software\\.org|cern\\.ch/indico)\">(?:CDS )?Indico( [\\d\\.]+)?",
-            "offset": 1
+            "search": "cookies[MAKACSESSION]",
+            "regexp": ".*"
         }
-    ],
-    "website": "http://indico-software.org",
-    "name": "Indico"
+    ]
 }

@@ -1,8 +1,15 @@
 {
+    "name": "GOV.UK Frontend",
+    "website": "https://design-system.service.gov.uk/",
     "matches": [
         {
-            "regexp": "<link[^>]* href=[^>]*?govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.css",
-            "offset": 1
+            "search": "script",
+            "offset": 1,
+            "regexp": "govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.js"
+        },
+        {
+            "offset": 1,
+            "regexp": "<link[^>]* href=[^>]*?govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.css"
         },
         {
             "regexp": "<body[^>]+govuk-template__body",
@@ -11,13 +18,6 @@
         {
             "regexp": "<a[^>]+govuk-link",
             "certainty": 10
-        },
-        {
-            "regexp": "govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.js",
-            "offset": 1,
-            "search": "script"
         }
-    ],
-    "website": "https://design-system.service.gov.uk/",
-    "name": "GOV.UK Frontend"
+    ]
 }

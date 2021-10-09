@@ -1,26 +1,26 @@
 {
+    "name": "Zendesk",
+    "website": "https://zendesk.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-zendesk-user-id]"
+            "search": "headers[x-zendesk-user-id]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_zendesk_cookie]"
+            "search": "script",
+            "regexp": "static\\.zdassets\\.com"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_help_center_session]"
+            "search": "cookies[_help_center_session]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_zendesk_shared_session]"
+            "search": "cookies[_zendesk_cookie]",
+            "regexp": ".*"
         },
         {
-            "regexp": "static\\.zdassets\\.com",
-            "search": "script"
+            "search": "cookies[_zendesk_shared_session]",
+            "regexp": ".*"
         }
-    ],
-    "website": "https://zendesk.com",
-    "name": "Zendesk"
+    ]
 }

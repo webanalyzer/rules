@@ -1,19 +1,19 @@
 {
-    "matches": [
-        {
-            "regexp": "e107",
-            "search": "headers[x-powered-by]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[e107_tz]"
-        },
-        {
-            "regexp": "[^a-z\\d]e107\\.js",
-            "search": "script"
-        }
-    ],
+    "name": "e107",
     "implies": "PHP",
     "website": "http://e107.org",
-    "name": "e107"
+    "matches": [
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "e107"
+        },
+        {
+            "search": "script",
+            "regexp": "[^a-z\\d]e107\\.js"
+        },
+        {
+            "search": "cookies[e107_tz]",
+            "regexp": ".*"
+        }
+    ]
 }
