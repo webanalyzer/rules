@@ -4,16 +4,16 @@
     "matches": [
         {
             "search": "script",
-            "offset": 1,
-            "regexp": "Scripts/_app/Inv(?:\\w+)\\.js\\?v=(.+)$"
-        },
-        {
-            "search": "cookies[INV.Customer]",
-            "regexp": ".*",
-            "certainty": 50
+            "regexp": "Scripts/_app/Inv(?:\\w+)\\.js\\?v=(.+)$",
+            "offset": 1
         },
         {
             "search": "cookies[inveonSessionId]",
+            "regexp": ".*"
+        },
+        {
+            "certainty": 50,
+            "search": "cookies[INV.Customer]",
             "regexp": ".*"
         }
     ]

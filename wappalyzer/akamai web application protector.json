@@ -1,16 +1,16 @@
 {
     "name": "Akamai Web Application Protector",
-    "implies": "Akamai",
     "website": "https://www.akamai.com/us/en/products/security/web-application-protector-enterprise-waf-firewall-ddos-protection.jsp",
+    "implies": "Akamai",
     "matches": [
         {
             "search": "script",
             "regexp": "ds-aksb-a\\.akamaihd\\.net/aksb.min.js"
         },
         {
+            "certainty": 50,
             "search": "script",
-            "regexp": "aksb\\.min\\.js",
-            "certainty": 50
+            "regexp": "aksb\\.min\\.js"
         }
     ]
 }

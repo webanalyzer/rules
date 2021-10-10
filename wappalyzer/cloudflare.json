@@ -3,20 +3,20 @@
     "website": "http://www.cloudflare.com",
     "matches": [
         {
-            "search": "headers[cf-cache-status]",
+            "search": "cookies[__cfduid]",
             "regexp": ".*"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^cloudflare$"
+            "search": "headers[cf-cache-status]",
+            "regexp": ".*"
         },
         {
             "search": "headers[cf-ray]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[__cfduid]",
-            "regexp": ".*"
+            "search": "headers[server]",
+            "regexp": "^cloudflare$"
         }
     ]
 }

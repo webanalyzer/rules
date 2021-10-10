@@ -3,13 +3,13 @@
     "website": "http://highcharts.com/products/highstock",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "<svg[^>]*><desc>Created with Highstock ([\\d.]*)"
+            "search": "script",
+            "regexp": "highstock[.-]?([\\d\\.]*\\d).*\\.js",
+            "offset": 1
         },
         {
-            "search": "script",
-            "offset": 1,
-            "regexp": "highstock[.-]?([\\d\\.]*\\d).*\\.js"
+            "regexp": "<svg[^>]*><desc>Created with Highstock ([\\d.]*)",
+            "offset": 1
         }
     ]
 }

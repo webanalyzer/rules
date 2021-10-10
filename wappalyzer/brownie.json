@@ -1,5 +1,6 @@
 {
     "name": "Brownie",
+    "website": "https://www.browniesuite.com",
     "implies": [
         "PHP",
         "MySQL",
@@ -7,15 +8,14 @@
         "Bootstrap",
         "jQuery"
     ],
-    "website": "https://www.browniesuite.com",
     "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "Brownie"
-        },
         {
             "search": "script",
             "regexp": "assets\\.youthsrl\\.com/brownie"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "Brownie"
         }
     ]
 }

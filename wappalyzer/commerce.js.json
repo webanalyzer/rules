@@ -3,21 +3,21 @@
     "website": "https://www.commercejs.com",
     "matches": [
         {
+            "search": "script",
+            "regexp": "cdn\\.chec\\.io/v(\\d+)/commerce\\.js",
+            "offset": 1
+        },
+        {
+            "search": "script",
+            "regexp": "chec/commerce\\.js"
+        },
+        {
             "search": "headers[chec-version]",
             "regexp": ".*"
         },
         {
             "search": "headers[x-powered-by]",
             "regexp": "Commerce.js"
-        },
-        {
-            "search": "script",
-            "offset": 1,
-            "regexp": "cdn\\.chec\\.io/v(\\d+)/commerce\\.js"
-        },
-        {
-            "search": "script",
-            "regexp": "chec/commerce\\.js"
         }
     ]
 }

@@ -3,7 +3,11 @@
     "website": "https://derak.cloud",
     "matches": [
         {
-            "search": "headers[derak-umbrage]",
+            "search": "cookies[__derak_user]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[__derak_auth]",
             "regexp": ".*"
         },
         {
@@ -11,11 +15,7 @@
             "regexp": "^DERAK\\.CLOUD$"
         },
         {
-            "search": "cookies[__derak_user]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[__derak_auth]",
+            "search": "headers[derak-umbrage]",
             "regexp": ".*"
         }
     ]

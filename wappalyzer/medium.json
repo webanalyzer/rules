@@ -1,15 +1,15 @@
 {
     "name": "Medium",
-    "implies": "Node.js",
     "website": "https://medium.com",
+    "implies": "Node.js",
     "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "^Medium$"
-        },
         {
             "search": "script",
             "regexp": "medium\\.com"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^Medium$"
         }
     ]
 }

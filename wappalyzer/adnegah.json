@@ -3,15 +3,15 @@
     "website": "https://Adnegah.net",
     "matches": [
         {
-            "search": "headers[x-advertising-by]",
-            "regexp": "adnegah\\.net"
-        },
-        {
             "search": "script",
             "regexp": "[^a-z]adnegah.*\\.js$"
         },
         {
             "regexp": "<iframe [^>]*src=\"[^\"]+adnegah\\.net"
+        },
+        {
+            "search": "headers[x-advertising-by]",
+            "regexp": "adnegah\\.net"
         }
     ]
 }
