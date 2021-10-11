@@ -1,6 +1,5 @@
 {
     "name": "Borderfree",
-    "website": "https://www.borderfree.com",
     "matches": [
         {
             "search": "script",
@@ -25,8 +24,8 @@
         },
         {
             "certainty": 25,
-            "search": "cookies[bfx.apiKey:]",
-            "regexp": "^[\\w\\d-]+$"
+            "search": "cookies[bfx.logLevel]",
+            "regexp": "^\\w+$"
         },
         {
             "certainty": 25,
@@ -35,8 +34,9 @@
         },
         {
             "certainty": 25,
-            "search": "cookies[bfx.logLevel]",
-            "regexp": "^\\w+$"
+            "search": "cookies[bfx.apiKey:]",
+            "regexp": "^[\\w\\d-]+$"
         }
-    ]
+    ],
+    "website": "https://www.borderfree.com"
 }

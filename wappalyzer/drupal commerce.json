@@ -1,7 +1,5 @@
 {
     "name": "Drupal Commerce",
-    "website": "http://drupalcommerce.org",
-    "implies": "Drupal",
     "matches": [
         {
             "regexp": "<[^>]+(?:id=\"block[_-]commerce[_-]cart[_-]cart|class=\"commerce[_-]product[_-]field)"
@@ -21,5 +19,7 @@
             "search": "script",
             "regexp": "/sites/(?:all|default)/modules/(?:contrib/)?commerce/modules/checkout/commerce_checkout\\.js"
         }
-    ]
+    ],
+    "website": "http://drupalcommerce.org",
+    "implies": "Drupal"
 }

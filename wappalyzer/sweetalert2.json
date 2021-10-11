@@ -1,7 +1,5 @@
 {
-    "excludes": "SweetAlert",
     "name": "SweetAlert2",
-    "website": "https://sweetalert2.github.io/",
     "matches": [
         {
             "search": "script",
@@ -9,8 +7,8 @@
         },
         {
             "search": "script",
-            "regexp": "/npm/sweetalert2@([\\d.]+)",
-            "offset": 1
+            "offset": 1,
+            "regexp": "/npm/sweetalert2@([\\d.]+)"
         },
         {
             "search": "script",
@@ -23,5 +21,7 @@
         {
             "regexp": "<link[^>]+?href=\"[^\"]+sweetalert2(?:\\.min)?\\.css"
         }
-    ]
+    ],
+    "website": "https://sweetalert2.github.io/",
+    "excludes": "SweetAlert"
 }

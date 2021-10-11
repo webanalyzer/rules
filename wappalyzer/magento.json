@@ -1,10 +1,5 @@
 {
     "name": "Magento",
-    "website": "https://magento.com",
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
     "matches": [
         {
             "search": "script",
@@ -12,8 +7,8 @@
         },
         {
             "search": "script",
-            "regexp": "skin/frontend/(?:default|(enterprise))",
-            "offset": 1
+            "offset": 1,
+            "regexp": "skin/frontend/(?:default|(enterprise))"
         },
         {
             "certainty": 50,
@@ -34,5 +29,10 @@
             "search": "cookies[frontend]",
             "regexp": ".*"
         }
+    ],
+    "website": "https://magento.com",
+    "implies": [
+        "PHP",
+        "MySQL"
     ]
 }

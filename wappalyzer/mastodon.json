@@ -1,14 +1,14 @@
 {
     "name": "Mastodon",
-    "website": "https://joinmastodon.org",
     "matches": [
-        {
-            "search": "cookies[_mastodon_session]",
-            "regexp": ".*"
-        },
         {
             "search": "headers[server]",
             "regexp": "^Mastodon$"
+        },
+        {
+            "search": "cookies[_mastodon_session]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://joinmastodon.org"
 }
