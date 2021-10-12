@@ -1,10 +1,9 @@
 {
-    "name": "OroCommerce",
     "matches": [
         {
-            "search": "script",
             "offset": 1,
-            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)"
+            "regexp": "oro\\.min\\.js\\?version=([\\d.]+)",
+            "search": "script"
         },
         {
             "regexp": "<script [^>]+data-requiremodule=\"oro/"
@@ -17,5 +16,6 @@
     "implies": [
         "PHP",
         "MySQL"
-    ]
+    ],
+    "name": "OroCommerce"
 }

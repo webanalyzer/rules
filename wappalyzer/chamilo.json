@@ -1,21 +1,21 @@
 {
-    "name": "Chamilo",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
             "offset": 1,
-            "regexp": "Chamilo ([\\d.]+)"
+            "regexp": "Chamilo ([\\d.]+)",
+            "search": "meta[generator]"
         },
         {
             "offset": 1,
             "regexp": "\">Chamilo ([\\d.]+)</a>"
         },
         {
-            "search": "meta[generator]",
             "offset": 1,
-            "regexp": "Chamilo ([\\d.]+)"
+            "regexp": "Chamilo ([\\d.]+)",
+            "search": "headers[x-powered-by]"
         }
     ],
     "website": "http://www.chamilo.org",
-    "implies": "PHP"
+    "implies": "PHP",
+    "name": "Chamilo"
 }

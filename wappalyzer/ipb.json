@@ -1,17 +1,16 @@
 {
-    "name": "IPB",
     "matches": [
         {
-            "search": "script",
-            "regexp": "jscripts/ips_"
+            "regexp": "jscripts/ips_",
+            "search": "script"
         },
         {
-            "search": "cookies[ipbWWLsession_id]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[ipbWWLsession_id]"
         },
         {
-            "search": "cookies[ipbWWLmodpids]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[ipbWWLmodpids]"
         },
         {
             "regexp": "<link[^>]+ipb_[^>]+\\.css"
@@ -21,5 +20,6 @@
     "implies": [
         "PHP",
         "MySQL"
-    ]
+    ],
+    "name": "IPB"
 }

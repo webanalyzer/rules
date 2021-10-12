@@ -1,11 +1,11 @@
 {
-    "name": "HTTP/2",
     "matches": [
         {
-            "search": "headers[x-firefox-spdy]",
-            "regexp": "h2"
+            "regexp": "h2",
+            "search": "headers[x-firefox-spdy]"
         }
     ],
+    "excludes": "SPDY",
     "website": "https://http2.github.io",
-    "excludes": "SPDY"
+    "name": "HTTP/2"
 }

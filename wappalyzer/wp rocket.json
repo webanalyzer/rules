@@ -1,18 +1,18 @@
 {
-    "name": "WP Rocket",
     "matches": [
         {
-            "search": "headers[x-rocket-nginx-bypass]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "WP Rocket(?:/([\\d.]+))?"
-        },
-        {
             "regexp": "<!--[^>]+WP Rocket"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-rocket-nginx-bypass]"
+        },
+        {
+            "offset": 1,
+            "regexp": "WP Rocket(?:/([\\d.]+))?",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "website": "http://wp-rocket.me"
+    "website": "http://wp-rocket.me",
+    "name": "WP Rocket"
 }

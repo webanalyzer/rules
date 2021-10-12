@@ -1,13 +1,13 @@
 {
-    "name": "Statically",
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "^statically$"
+            "regexp": "<link [^>]*?href=\"?[a-z]*?:?//cdn\\.statically\\.io/"
         },
         {
-            "regexp": "<link [^>]*?href=\"?[a-z]*?:?//cdn\\.statically\\.io/"
+            "regexp": "^statically$",
+            "search": "headers[server]"
         }
     ],
-    "website": "https://statically.io"
+    "website": "https://statically.io",
+    "name": "Statically"
 }

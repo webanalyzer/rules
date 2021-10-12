@@ -1,20 +1,20 @@
 {
-    "name": "WooCommerce",
     "matches": [
         {
-            "search": "script",
-            "regexp": "woocommerce"
+            "offset": 1,
+            "regexp": "WooCommerce ([\\d.]+)",
+            "search": "meta[generator]"
         },
         {
-            "search": "script",
-            "offset": 1,
-            "regexp": "/woocommerce(?:\\.min)?\\.js(?:\\?ver=([0-9.]+))?"
+            "regexp": "woocommerce",
+            "search": "script"
         },
         {
-            "search": "meta[generator]",
             "offset": 1,
-            "regexp": "WooCommerce ([\\d.]+)"
+            "regexp": "/woocommerce(?:\\.min)?\\.js(?:\\?ver=([0-9.]+))?",
+            "search": "script"
         }
     ],
-    "website": "https://woocommerce.com"
+    "website": "https://woocommerce.com",
+    "name": "WooCommerce"
 }
