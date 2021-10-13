@@ -1,17 +1,17 @@
 {
     "matches": [
         {
-            "regexp": "/graffiti\\.js",
-            "search": "script"
-        },
-        {
             "regexp": ".*",
             "search": "cookies[graffitibot]"
         },
         {
-            "offset": 1,
             "regexp": "Graffiti CMS ([^\"]+)",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
+        },
+        {
+            "regexp": "/graffiti\\.js",
+            "search": "script"
         }
     ],
     "website": "http://graffiticms.codeplex.com",

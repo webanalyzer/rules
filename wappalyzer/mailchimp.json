@@ -9,14 +9,14 @@
             "search": "script"
         },
         {
-            "offset": 1,
             "regexp": "mailchimp-woocommerce-public\\.min\\.js(?:\\?ver=([\\d.]+))?",
-            "search": "script"
+            "search": "script",
+            "offset": 1
         },
         {
-            "offset": 1,
             "regexp": "mailchimp-for-wp/assets/js/forms\\.min\\.js(?:\\?ver=([\\d.]+))?",
-            "search": "script"
+            "search": "script",
+            "offset": 1
         },
         {
             "regexp": "chimpstatic\\.com/mcjs-connected",
@@ -32,8 +32,8 @@
             "regexp": "<form [^>]*name=\"mc-embedded-subscribe-form\""
         },
         {
-            "certainty": 20,
-            "regexp": "<input [^>]*id=\"mc-email\""
+            "regexp": "<input [^>]*id=\"mc-email\"",
+            "certainty": 20
         },
         {
             "regexp": "<!-- Begin MailChimp Signup Form -->"

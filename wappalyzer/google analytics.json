@@ -1,24 +1,24 @@
 {
     "matches": [
         {
-            "regexp": "google-analytics\\.com/(?:ga|urchin|analytics)\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "googletagmanager\\.com/gtag/js",
-            "search": "script"
+            "regexp": ".*",
+            "search": "cookies[__utma]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[__utma]"
+            "search": "cookies[_gat]"
         },
         {
             "regexp": ".*",
             "search": "cookies[_ga]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_gat]"
+            "regexp": "google-analytics\\.com/(?:ga|urchin|analytics)\\.js",
+            "search": "script"
+        },
+        {
+            "regexp": "googletagmanager\\.com/gtag/js",
+            "search": "script"
         },
         {
             "regexp": "<amp-analytics [^>]*type=[\"']googleanalytics[\"']"

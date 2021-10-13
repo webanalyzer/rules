@@ -1,18 +1,18 @@
 {
     "matches": [
         {
-            "offset": 1,
-            "regexp": "koken(?:\\.js\\?([\\d.]+)|/storage)",
-            "search": "script"
-        },
-        {
             "regexp": ".*",
             "search": "cookies[koken_referrer]"
         },
         {
-            "offset": 1,
             "regexp": "Koken ([\\d.]+)",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
+        },
+        {
+            "regexp": "koken(?:\\.js\\?([\\d.]+)|/storage)",
+            "search": "script",
+            "offset": 1
         },
         {
             "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"

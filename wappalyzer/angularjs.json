@@ -1,14 +1,18 @@
 {
+    "excludes": [
+        "Angular",
+        "AngularDart"
+    ],
     "matches": [
         {
-            "offset": 1,
             "regexp": "angular[.-]([\\d.]*\\d)[^/]*\\.js",
-            "search": "script"
+            "search": "script",
+            "offset": 1
         },
         {
-            "offset": 1,
             "regexp": "/([\\d.]+(?:-?rc[.\\d]*)*)/angular(?:\\.min)?\\.js",
-            "search": "script"
+            "search": "script",
+            "offset": 1
         },
         {
             "regexp": "\\bangular.{0,32}\\.js",
@@ -20,10 +24,6 @@
         {
             "regexp": "<ng-app"
         }
-    ],
-    "excludes": [
-        "Angular",
-        "AngularDart"
     ],
     "website": "https://angularjs.org",
     "name": "AngularJS"

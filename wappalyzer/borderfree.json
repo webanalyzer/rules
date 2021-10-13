@@ -1,6 +1,26 @@
 {
     "matches": [
         {
+            "regexp": "^[\\w\\d-]+$",
+            "search": "cookies[bfx.apiKey:]",
+            "certainty": 25
+        },
+        {
+            "regexp": "^\\w+$",
+            "search": "cookies[bfx.country:]",
+            "certainty": 25
+        },
+        {
+            "regexp": "^\\w+$",
+            "search": "cookies[bfx.logLevel]",
+            "certainty": 25
+        },
+        {
+            "regexp": "^\\w+$",
+            "search": "cookies[bfx.language]",
+            "certainty": 25
+        },
+        {
             "regexp": "global\\.prd\\.borderfree\\.com",
             "search": "script"
         },
@@ -15,26 +35,6 @@
         {
             "regexp": "cbt\\.js",
             "search": "script"
-        },
-        {
-            "certainty": 25,
-            "regexp": "^\\w+$",
-            "search": "cookies[bfx.logLevel]"
-        },
-        {
-            "certainty": 25,
-            "regexp": "^\\w+$",
-            "search": "cookies[bfx.country:]"
-        },
-        {
-            "certainty": 25,
-            "regexp": "^[\\w\\d-]+$",
-            "search": "cookies[bfx.apiKey:]"
-        },
-        {
-            "certainty": 25,
-            "regexp": "^\\w+$",
-            "search": "cookies[bfx.language]"
         }
     ],
     "website": "https://www.borderfree.com",

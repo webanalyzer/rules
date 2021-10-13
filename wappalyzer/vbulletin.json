@@ -1,11 +1,6 @@
 {
     "matches": [
         {
-            "offset": 1,
-            "regexp": "vBulletin ?([\\d.]+)?",
-            "search": "meta[generator]"
-        },
-        {
             "regexp": ".*",
             "search": "cookies[bbsessionhash]"
         },
@@ -16,6 +11,11 @@
         {
             "regexp": ".*",
             "search": "cookies[bblastvisit]"
+        },
+        {
+            "regexp": "vBulletin ?([\\d.]+)?",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": "<div id=\"copyright\">Powered by vBulletin"

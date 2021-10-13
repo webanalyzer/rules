@@ -1,6 +1,15 @@
 {
     "matches": [
         {
+            "regexp": "(.+)",
+            "search": "headers[x-aspnet-version]",
+            "offset": 1
+        },
+        {
+            "regexp": "^ASP\\.NET",
+            "search": "headers[x-powered-by]"
+        },
+        {
             "regexp": ".*",
             "search": "cookies[ASP.NET_SessionId]"
         },
@@ -10,15 +19,6 @@
         },
         {
             "regexp": "<input[^>]+name=\"__VIEWSTATE"
-        },
-        {
-            "offset": 1,
-            "regexp": "(.+)",
-            "search": "headers[x-aspnet-version]"
-        },
-        {
-            "regexp": "^ASP\\.NET",
-            "search": "headers[x-powered-by]"
         }
     ],
     "website": "https://www.asp.net",

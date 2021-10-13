@@ -1,27 +1,27 @@
 {
     "matches": [
         {
-            "regexp": "app.spp.co",
-            "search": "meta[server]"
-        },
-        {
-            "certainty": 25,
             "regexp": ".*",
-            "search": "cookies[spp_session]"
+            "search": "cookies[spp_session]",
+            "certainty": 25
         },
         {
             "regexp": ".*",
             "search": "cookies[spp_orderform]"
         },
         {
-            "certainty": 25,
             "regexp": ".*",
-            "search": "cookies[spp_csrf]"
+            "search": "cookies[spp_csrf]",
+            "certainty": 25
         },
         {
-            "certainty": 50,
+            "regexp": "app.spp.co",
+            "search": "meta[server]"
+        },
+        {
             "regexp": "js/spp_clients\\.js",
-            "search": "script"
+            "search": "script",
+            "certainty": 50
         },
         {
             "regexp": "\\.spp\\.io/js/",

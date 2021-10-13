@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "offset": 1,
-            "regexp": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))",
-            "search": "meta[generator]"
-        },
-        {
             "regexp": ".*",
             "search": "cookies[CMSPreferredCulture]"
+        },
+        {
+            "regexp": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": "/CMSPages/GetResource\\.ashx",

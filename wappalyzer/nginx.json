@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "offset": 1,
-            "regexp": "nginx(?:/([\\d.]+))?",
-            "search": "headers[server]"
-        },
-        {
             "regexp": ".*",
             "search": "headers[x-fastcgi-cache]"
+        },
+        {
+            "regexp": "nginx(?:/([\\d.]+))?",
+            "search": "headers[server]",
+            "offset": 1
         }
     ],
     "website": "http://nginx.org/en",

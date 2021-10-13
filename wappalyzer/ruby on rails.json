@@ -1,27 +1,27 @@
 {
     "matches": [
         {
-            "certainty": 50,
-            "regexp": "^authenticity_token$",
-            "search": "meta[csrf-param]"
-        },
-        {
-            "certainty": 75,
-            "regexp": ".*",
-            "search": "cookies[_session_id]"
-        },
-        {
-            "certainty": 50,
-            "regexp": "/assets/application-[a-z\\d]{32}/\\.js",
-            "search": "script"
+            "regexp": "mod_(?:rails|rack)",
+            "search": "headers[x-powered-by]"
         },
         {
             "regexp": "mod_(?:rails|rack)",
             "search": "headers[server]"
         },
         {
-            "regexp": "mod_(?:rails|rack)",
-            "search": "headers[x-powered-by]"
+            "regexp": ".*",
+            "search": "cookies[_session_id]",
+            "certainty": 75
+        },
+        {
+            "regexp": "^authenticity_token$",
+            "search": "meta[csrf-param]",
+            "certainty": 50
+        },
+        {
+            "regexp": "/assets/application-[a-z\\d]{32}/\\.js",
+            "search": "script",
+            "certainty": 50
         }
     ],
     "website": "https://rubyonrails.org",

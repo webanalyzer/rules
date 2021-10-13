@@ -1,21 +1,21 @@
 {
     "matches": [
         {
+            "regexp": "uKnowva (?: ([\\d.]+))?",
+            "search": "meta[generator]",
+            "offset": 1
+        },
+        {
             "regexp": "/media/conv/js/jquery\\.js",
             "search": "script"
         },
         {
-            "offset": 1,
-            "regexp": "uKnowva (?: ([\\d.]+))?",
-            "search": "meta[generator]"
+            "regexp": "uKnowva ([\\d.]+)",
+            "search": "headers[x-content-encoded-by]",
+            "offset": 1
         },
         {
             "regexp": "<a[^>]+>Powered by uKnowva</a>"
-        },
-        {
-            "offset": 1,
-            "regexp": "uKnowva ([\\d.]+)",
-            "search": "headers[x-content-encoded-by]"
         }
     ],
     "website": "https://uknowva.com",
