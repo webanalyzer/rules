@@ -1,23 +1,23 @@
 {
-    "excludes": "OpenCart",
-    "matches": [
-        {
-            "regexp": "catalog/view/theme/[^\"]+/javascript/common\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "zozo-main\\.min\\.js",
-            "search": "script"
-        },
-        {
-            "regexp": "Zozo Ecommerce",
-            "search": "meta[generator]"
-        }
-    ],
-    "website": "https://zozo.vn",
     "implies": [
         "PHP",
         "MySQL"
     ],
-    "name": "Zozo"
+    "matches": [
+        {
+            "search": "meta[generator]",
+            "regexp": "Zozo Ecommerce"
+        },
+        {
+            "search": "script",
+            "regexp": "catalog/view/theme/[^\"]+/javascript/common\\.js"
+        },
+        {
+            "search": "script",
+            "regexp": "zozo-main\\.min\\.js"
+        }
+    ],
+    "excludes": "OpenCart",
+    "name": "Zozo",
+    "website": "https://zozo.vn"
 }

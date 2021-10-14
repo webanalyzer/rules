@@ -1,18 +1,18 @@
 {
     "matches": [
         {
-            "regexp": ".*",
-            "search": "meta[google-signin-client_id]"
+            "search": "script",
+            "regexp": "accounts\\.google\\.com/gsi/client"
         },
         {
-            "regexp": ".*",
-            "search": "meta[google-signin-scope]"
+            "search": "meta[google-signin-client_id]",
+            "regexp": ".*"
         },
         {
-            "regexp": "accounts\\.google\\.com/gsi/client",
-            "search": "script"
+            "search": "meta[google-signin-scope]",
+            "regexp": ".*"
         }
     ],
-    "website": "https://developers.google.com/identity/sign-in/web",
-    "name": "Google Sign-in"
+    "name": "Google Sign-in",
+    "website": "https://developers.google.com/identity/sign-in/web"
 }

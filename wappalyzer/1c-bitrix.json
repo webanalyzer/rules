@@ -1,31 +1,31 @@
 {
+    "implies": "PHP",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[BITRIX_SM_SALE_UID]"
+            "search": "script",
+            "regexp": "bitrix(?:\\.info/|/js/main/core)"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[BITRIX_SM_GUEST_ID]"
+            "search": "headers[x-powered-cms]",
+            "regexp": "Bitrix Site Manager"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[BITRIX_SM_LAST_IP]"
+            "search": "headers[set-cookie]",
+            "regexp": "BITRIX_"
         },
         {
-            "regexp": "bitrix(?:\\.info/|/js/main/core)",
-            "search": "script"
+            "search": "cookies[BITRIX_SM_GUEST_ID]",
+            "regexp": ".*"
         },
         {
-            "regexp": "Bitrix Site Manager",
-            "search": "headers[x-powered-cms]"
+            "search": "cookies[BITRIX_SM_LAST_IP]",
+            "regexp": ".*"
         },
         {
-            "regexp": "BITRIX_",
-            "search": "headers[set-cookie]"
+            "search": "cookies[BITRIX_SM_SALE_UID]",
+            "regexp": ".*"
         }
     ],
-    "website": "http://www.1c-bitrix.ru",
-    "implies": "PHP",
-    "name": "1C-Bitrix"
+    "name": "1C-Bitrix",
+    "website": "http://www.1c-bitrix.ru"
 }

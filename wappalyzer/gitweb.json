@@ -1,12 +1,16 @@
 {
+    "implies": [
+        "Perl",
+        "git"
+    ],
     "matches": [
         {
-            "regexp": "static/gitweb\\.js$",
-            "search": "script"
+            "search": "script",
+            "regexp": "static/gitweb\\.js$"
         },
         {
-            "regexp": "gitweb(?:/([\\d.]+\\d))?",
             "search": "meta[generator]",
+            "regexp": "gitweb(?:/([\\d.]+\\d))?",
             "offset": 1
         },
         {
@@ -14,10 +18,6 @@
             "offset": 1
         }
     ],
-    "website": "http://git-scm.com",
-    "implies": [
-        "Perl",
-        "git"
-    ],
-    "name": "gitweb"
+    "name": "gitweb",
+    "website": "http://git-scm.com"
 }

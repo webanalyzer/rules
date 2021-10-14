@@ -1,19 +1,19 @@
 {
+    "implies": "Microsoft ASP.NET",
     "matches": [
         {
-            "regexp": "umbraco",
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "^(.+)$",
-            "search": "headers[x-umbraco-version]",
-            "offset": 1
+            "search": "meta[generator]",
+            "regexp": "umbraco"
         },
         {
             "regexp": "powered by <a href=[^>]+umbraco"
+        },
+        {
+            "search": "headers[x-umbraco-version]",
+            "regexp": "^(.+)$",
+            "offset": 1
         }
     ],
-    "website": "http://umbraco.com",
-    "implies": "Microsoft ASP.NET",
-    "name": "Umbraco"
+    "name": "Umbraco",
+    "website": "http://umbraco.com"
 }
