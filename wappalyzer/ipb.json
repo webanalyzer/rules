@@ -3,23 +3,19 @@
         "PHP",
         "MySQL"
     ],
+    "name": "IPB",
     "matches": [
-        {
-            "search": "script",
-            "regexp": "jscripts/ips_"
-        },
         {
             "regexp": "<link[^>]+ipb_[^>]+\\.css"
         },
         {
-            "search": "cookies[ipbWWLmodpids]",
+            "search": "cookies[ipbWWLsession_id]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[ipbWWLsession_id]",
+            "search": "cookies[ipbWWLmodpids]",
             "regexp": ".*"
         }
     ],
-    "name": "IPB",
     "website": "https://invisioncommunity.com/"
 }

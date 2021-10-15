@@ -1,10 +1,13 @@
 {
     "implies": "jQuery",
+    "name": "jQuery-pjax",
     "matches": [
         {
-            "search": "script",
-            "regexp": "jquery[.-]pjax(?:-([\\d.]))?(?:\\.min)?\\.js(?:\\?ver=([\\d.]+))?",
-            "offset": 1
+            "regexp": "<div[^>]+data-pjax-container"
+        },
+        {
+            "search": "meta[pjax-replace]",
+            "regexp": ".*"
         },
         {
             "search": "meta[pjax-timeout]",
@@ -13,15 +16,7 @@
         {
             "search": "meta[pjax-push]",
             "regexp": ".*"
-        },
-        {
-            "search": "meta[pjax-replace]",
-            "regexp": ".*"
-        },
-        {
-            "regexp": "<div[^>]+data-pjax-container"
         }
     ],
-    "name": "jQuery-pjax",
     "website": "https://github.com/defunkt/jquery-pjax"
 }
