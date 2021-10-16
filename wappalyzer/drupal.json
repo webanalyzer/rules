@@ -1,6 +1,4 @@
 {
-    "implies": "PHP",
-    "name": "Drupal",
     "matches": [
         {
             "search": "headers[x-drupal-cache]",
@@ -11,18 +9,20 @@
             "regexp": "19 Nov 1978"
         },
         {
-            "offset": 1,
             "search": "headers[x-generator]",
+            "offset": 1,
             "regexp": "^Drupal(?:\\s([\\d.]+))?"
         },
         {
             "regexp": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/"
         },
         {
-            "offset": 1,
             "search": "meta[generator]",
+            "offset": 1,
             "regexp": "^Drupal(?:\\s([\\d.]+))?"
         }
     ],
-    "website": "https://drupal.org"
+    "implies": "PHP",
+    "website": "https://drupal.org",
+    "name": "Drupal"
 }
