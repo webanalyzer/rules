@@ -6,16 +6,16 @@
             "regexp": "Joomla! ([\\d.]+)"
         },
         {
-            "certainty": 50,
-            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
-        },
-        {
             "search": "meta[generator]",
             "offset": 1,
             "regexp": "Joomla!(?: ([\\d.]+))?"
+        },
+        {
+            "certainty": 50,
+            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
         }
     ],
     "implies": "PHP",
-    "website": "https://www.joomla.org",
-    "name": "Joomla"
+    "name": "Joomla",
+    "website": "https://www.joomla.org"
 }

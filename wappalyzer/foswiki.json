@@ -1,14 +1,11 @@
 {
     "matches": [
         {
-            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
-        },
-        {
-            "search": "headers[x-foswikiaction]",
+            "search": "headers[x-foswikiuri]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-foswikiuri]",
+            "search": "headers[x-foswikiaction]",
             "regexp": ".*"
         },
         {
@@ -20,15 +17,18 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[SFOSWIKISID]",
-            "regexp": ".*"
+            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
         },
         {
             "search": "cookies[FOSWIKISTRIKEONE]",
             "regexp": ".*"
+        },
+        {
+            "search": "cookies[SFOSWIKISID]",
+            "regexp": ".*"
         }
     ],
     "implies": "Perl",
-    "website": "http://foswiki.org",
-    "name": "Foswiki"
+    "name": "Foswiki",
+    "website": "http://foswiki.org"
 }
