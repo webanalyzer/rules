@@ -1,9 +1,11 @@
 {
+    "website": "https://www.vbulletin.com",
+    "name": "vBulletin",
     "matches": [
         {
             "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "vBulletin ?([\\d.]+)?"
+            "regexp": "vBulletin ?([\\d.]+)?",
+            "offset": 1
         },
         {
             "regexp": "<div id=\"copyright\">Powered by vBulletin"
@@ -21,7 +23,5 @@
             "regexp": ".*"
         }
     ],
-    "implies": "PHP",
-    "name": "vBulletin",
-    "website": "https://www.vbulletin.com"
+    "implies": "PHP"
 }

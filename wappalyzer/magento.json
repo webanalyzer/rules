@@ -1,4 +1,6 @@
 {
+    "website": "https://magento.com",
+    "name": "Magento",
     "matches": [
         {
             "regexp": "<script [^>]+data-requiremodule=\"mage/"
@@ -10,15 +12,13 @@
             "regexp": "<script type=\"text/x-magento-init\">"
         },
         {
-            "certainty": 50,
             "search": "cookies[frontend]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "certainty": 50
         }
     ],
     "implies": [
         "PHP",
         "MySQL"
-    ],
-    "name": "Magento",
-    "website": "https://magento.com"
+    ]
 }
