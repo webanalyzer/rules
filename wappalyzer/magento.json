@@ -1,5 +1,4 @@
 {
-    "website": "https://magento.com",
     "name": "Magento",
     "matches": [
         {
@@ -12,13 +11,14 @@
             "regexp": "<script type=\"text/x-magento-init\">"
         },
         {
+            "certainty": 50,
             "search": "cookies[frontend]",
-            "regexp": ".*",
-            "certainty": 50
+            "regexp": ".*"
         }
     ],
     "implies": [
         "PHP",
         "MySQL"
-    ]
+    ],
+    "website": "https://magento.com"
 }

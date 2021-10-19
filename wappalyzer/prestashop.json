@@ -1,5 +1,4 @@
 {
-    "website": "http://www.prestashop.com",
     "name": "PrestaShop",
     "matches": [
         {
@@ -16,16 +15,17 @@
             "regexp": "PrestaShop"
         },
         {
-            "search": "cookies[PrestaShop]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[powered-by]",
             "regexp": "^Prestashop$"
+        },
+        {
+            "search": "cookies[PrestaShop]",
+            "regexp": ".*"
         }
     ],
     "implies": [
         "PHP",
         "MySQL"
-    ]
+    ],
+    "website": "http://www.prestashop.com"
 }
