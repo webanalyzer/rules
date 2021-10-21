@@ -1,15 +1,15 @@
 {
-    "implies": "PHP",
-    "website": "https://www.phpwind.net",
-    "name": "phpwind",
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^phpwind(?: v([0-9-]+))?"
+            "regexp": "(?:Powered|Code) by <a href=\"[^\"]+phpwind\\.net"
         },
         {
-            "regexp": "(?:Powered|Code) by <a href=\"[^\"]+phpwind\\.net"
+            "search": "meta[generator]",
+            "regexp": "^phpwind(?: v([0-9-]+))?",
+            "offset": 1
         }
-    ]
+    ],
+    "website": "https://www.phpwind.net",
+    "name": "phpwind",
+    "implies": "PHP"
 }

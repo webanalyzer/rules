@@ -1,13 +1,10 @@
 {
-    "website": "http://google.com/analytics",
-    "name": "Google Analytics",
     "matches": [
         {
-            "search": "cookies[__utma]",
-            "regexp": ".*"
+            "regexp": "<amp-analytics [^>]*type=[\"']googleanalytics[\"']"
         },
         {
-            "search": "cookies[_gat]",
+            "search": "cookies[__utma]",
             "regexp": ".*"
         },
         {
@@ -15,7 +12,10 @@
             "regexp": ".*"
         },
         {
-            "regexp": "<amp-analytics [^>]*type=[\"']googleanalytics[\"']"
+            "search": "cookies[_gat]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "http://google.com/analytics",
+    "name": "Google Analytics"
 }

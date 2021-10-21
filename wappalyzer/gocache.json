@@ -1,14 +1,14 @@
 {
-    "website": "https://www.gocache.com.br/",
-    "name": "GoCache",
     "matches": [
-        {
-            "search": "headers[x-gocache-cachestatus]",
-            "regexp": ".*"
-        },
         {
             "search": "headers[server]",
             "regexp": "^gocache$"
+        },
+        {
+            "search": "headers[x-gocache-cachestatus]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://www.gocache.com.br/",
+    "name": "GoCache"
 }
