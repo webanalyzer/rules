@@ -1,22 +1,22 @@
 {
+    "name": "Matomo Analytics",
+    "website": "https://matomo.org",
     "matches": [
         {
-            "search": "cookies[PIWIK_SESSID]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[PIWIK_SESSID]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "(?:Matomo|Piwik) - Open Source Web Analytics"
+            "regexp": "app-id=org\\.piwik\\.mobile2",
+            "search": "meta[google-play-app]"
         },
         {
-            "search": "meta[apple-itunes-app]",
-            "regexp": "app-id=737216887"
+            "regexp": "(?:Matomo|Piwik) - Open Source Web Analytics",
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[google-play-app]",
-            "regexp": "app-id=org\\.piwik\\.mobile2"
+            "regexp": "app-id=737216887",
+            "search": "meta[apple-itunes-app]"
         }
-    ],
-    "website": "https://matomo.org",
-    "name": "Matomo Analytics"
+    ]
 }
