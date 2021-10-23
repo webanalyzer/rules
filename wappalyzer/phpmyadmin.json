@@ -1,10 +1,6 @@
 {
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
-    "name": "phpMyAdmin",
     "website": "https://www.phpmyadmin.net",
+    "name": "phpMyAdmin",
     "matches": [
         {
             "regexp": "!\\[CDATA\\[[^<]*PMA_VERSION:\\\"([\\d.]+)",
@@ -14,5 +10,9 @@
             "regexp": "(?: \\| phpMyAdmin ([\\d.]+)<\\/title>|PMA_sendHeaderLocation\\(|<link [^>]*href=\"[^\"]*phpmyadmin\\.css\\.php)",
             "offset": 1
         }
+    ],
+    "implies": [
+        "PHP",
+        "MySQL"
     ]
 }
