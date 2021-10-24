@@ -1,5 +1,4 @@
 {
-    "website": "http://ckan.org/",
     "name": "Ckan",
     "matches": [
         {
@@ -11,11 +10,12 @@
             "search": "headers[access-control-allow-headers]"
         },
         {
-            "regexp": "^ckan ?([0-9.]+)$",
             "offset": 1,
+            "regexp": "^ckan ?([0-9.]+)$",
             "search": "meta[generator]"
         }
     ],
+    "website": "http://ckan.org/",
     "implies": [
         "Python",
         "Solr",

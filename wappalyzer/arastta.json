@@ -1,5 +1,4 @@
 {
-    "website": "http://arastta.org",
     "excludes": "OpenCart",
     "name": "Arastta",
     "matches": [
@@ -7,8 +6,8 @@
             "regexp": "Powered by <a [^>]*href=\"https?://(?:www\\.)?arastta\\.org[^>]+>Arastta"
         },
         {
-            "regexp": "^(.+)$",
             "offset": 1,
+            "regexp": "^(.+)$",
             "search": "headers[arastta]"
         },
         {
@@ -16,5 +15,6 @@
             "search": "headers[x-arastta]"
         }
     ],
+    "website": "http://arastta.org",
     "implies": "PHP"
 }

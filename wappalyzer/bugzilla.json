@@ -1,5 +1,4 @@
 {
-    "website": "http://www.bugzilla.org",
     "name": "Bugzilla",
     "matches": [
         {
@@ -13,18 +12,19 @@
             "regexp": "<main id=\"bugzilla-body\""
         },
         {
-            "regexp": "<a href=\"https?://www\\.bugzilla\\.org/docs/([0-9.]+)/[^>]+>Help<",
-            "offset": 1
-        },
-        {
-            "regexp": "<span id=\"information\" class=\"header_addl_info\">version ([\\d.]+)<",
-            "offset": 1
-        },
-        {
-            "regexp": "Bugzilla ?([\\d.]+)?",
             "offset": 1,
+            "regexp": "<a href=\"https?://www\\.bugzilla\\.org/docs/([0-9.]+)/[^>]+>Help<"
+        },
+        {
+            "offset": 1,
+            "regexp": "<span id=\"information\" class=\"header_addl_info\">version ([\\d.]+)<"
+        },
+        {
+            "offset": 1,
+            "regexp": "Bugzilla ?([\\d.]+)?",
             "search": "meta[generator]"
         }
     ],
+    "website": "http://www.bugzilla.org",
     "implies": "Perl"
 }
