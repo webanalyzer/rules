@@ -1,7 +1,10 @@
 {
-    "implies": "HubSpot",
     "website": "https://www.hubspot.com/products/cms",
     "matches": [
+        {
+            "search": "meta[generator]",
+            "regexp": "HubSpot"
+        },
         {
             "search": "headers[x-powered-by]",
             "regexp": "HubSpot"
@@ -9,11 +12,8 @@
         {
             "search": "headers[x-hs-hub-id]",
             "regexp": ".*"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "HubSpot"
         }
     ],
-    "name": "HubSpot CMS Hub"
+    "name": "HubSpot CMS Hub",
+    "implies": "HubSpot"
 }

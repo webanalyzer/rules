@@ -2,19 +2,11 @@
     "website": "https://azure.microsoft.com",
     "matches": [
         {
-            "search": "headers[azure-regionname]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[azure-version]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[azure-sitename]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-ms-correlation-request-id]",
+            "search": "headers[x-ms-gateway-requestid]",
             "regexp": ".*"
         },
         {
@@ -26,7 +18,15 @@
             "regexp": "^Windows-Azure"
         },
         {
-            "search": "headers[x-ms-gateway-requestid]",
+            "search": "headers[x-ms-correlation-request-id]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[azure-regionname]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[azure-version]",
             "regexp": ".*"
         },
         {

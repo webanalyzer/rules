@@ -1,12 +1,11 @@
 {
-    "implies": [
-        "Python",
-        "Solr",
-        "Java",
-        "PostgreSQL"
-    ],
     "website": "http://ckan.org/",
     "matches": [
+        {
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "^ckan ?([0-9.]+)$"
+        },
         {
             "search": "headers[access-control-allow-headers]",
             "regexp": "X-CKAN-API-KEY"
@@ -14,12 +13,13 @@
         {
             "search": "headers[link]",
             "regexp": "<http://ckan\\.org/>; rel=shortlink"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "^ckan ?([0-9.]+)$",
-            "offset": 1
         }
     ],
-    "name": "Ckan"
+    "name": "Ckan",
+    "implies": [
+        "Python",
+        "Solr",
+        "Java",
+        "PostgreSQL"
+    ]
 }
