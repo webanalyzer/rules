@@ -1,11 +1,11 @@
 {
     "website": "http://www.lighttpd.net",
+    "name": "lighttpd",
     "matches": [
         {
+            "regexp": "lighttpd(?:/([\\d.]+))?",
             "search": "headers[server]",
-            "offset": 1,
-            "regexp": "lighttpd(?:/([\\d.]+))?"
+            "offset": 1
         }
-    ],
-    "name": "lighttpd"
+    ]
 }

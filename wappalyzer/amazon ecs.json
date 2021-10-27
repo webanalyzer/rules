@@ -1,12 +1,12 @@
 {
     "website": "https://aws.amazon.com/elasticloadbalancing/",
+    "name": "Amazon ECS",
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "^ECS"
+            "regexp": "^ECS",
+            "search": "headers[server]"
         }
     ],
-    "name": "Amazon ECS",
     "implies": [
         "Amazon Web Services",
         "Docker"

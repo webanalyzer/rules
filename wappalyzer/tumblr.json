@@ -1,13 +1,13 @@
 {
     "website": "http://www.tumblr.com",
+    "name": "Tumblr",
     "matches": [
         {
             "regexp": "<iframe src=\"[^>]+tumblr\\.com"
         },
         {
-            "search": "headers[x-tumblr-user]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-tumblr-user]"
         }
-    ],
-    "name": "Tumblr"
+    ]
 }

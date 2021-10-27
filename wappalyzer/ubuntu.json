@@ -1,14 +1,14 @@
 {
     "website": "http://www.ubuntu.com/server",
+    "name": "Ubuntu",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "Ubuntu"
+            "regexp": "Ubuntu",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "Ubuntu"
+            "regexp": "Ubuntu",
+            "search": "headers[x-powered-by]"
         }
-    ],
-    "name": "Ubuntu"
+    ]
 }
