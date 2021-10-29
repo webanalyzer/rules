@@ -1,11 +1,6 @@
 {
-    "implies": "Microsoft ASP.NET",
-    "website": "http://episerver.com",
+    "name": "EPiServer",
     "matches": [
-        {
-            "search": "meta[generator]",
-            "regexp": "EPiServer"
-        },
         {
             "search": "cookies[EPiServer]",
             "regexp": ".*"
@@ -13,7 +8,12 @@
         {
             "search": "cookies[EPiTrace]",
             "regexp": ".*"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "EPiServer"
         }
     ],
-    "name": "EPiServer"
+    "website": "http://episerver.com",
+    "implies": "Microsoft ASP.NET"
 }
