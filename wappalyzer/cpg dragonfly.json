@@ -2,14 +2,14 @@
     "name": "CPG Dragonfly",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^Dragonfly CMS"
+            "regexp": "CPG Dragonfly",
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "CPG Dragonfly"
+            "regexp": "^Dragonfly CMS",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "website": "http://dragonflycms.org",
-    "implies": "PHP"
+    "implies": "PHP",
+    "website": "http://dragonflycms.org"
 }

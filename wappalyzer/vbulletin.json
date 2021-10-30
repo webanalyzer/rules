@@ -2,26 +2,26 @@
     "name": "vBulletin",
     "matches": [
         {
-            "search": "cookies[bblastactivity]",
-            "regexp": ".*"
+            "offset": 1,
+            "regexp": "vBulletin ?([\\d.]+)?",
+            "search": "meta[generator]"
         },
         {
-            "search": "cookies[bbsessionhash]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[bblastvisit]"
         },
         {
-            "search": "cookies[bblastvisit]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[bbsessionhash]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[bblastactivity]"
         },
         {
             "regexp": "<div id=\"copyright\">Powered by vBulletin"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "vBulletin ?([\\d.]+)?",
-            "offset": 1
         }
     ],
-    "website": "https://www.vbulletin.com",
-    "implies": "PHP"
+    "implies": "PHP",
+    "website": "https://www.vbulletin.com"
 }

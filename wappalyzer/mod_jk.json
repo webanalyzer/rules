@@ -2,14 +2,14 @@
     "name": "mod_jk",
     "matches": [
         {
-            "search": "headers[server]",
+            "offset": 1,
             "regexp": "mod_jk(?:/([\\d\\.]+))?",
-            "offset": 1
+            "search": "headers[server]"
         }
     ],
-    "website": "http://tomcat.apache.org/tomcat-3.3-doc/mod_jk-howto.html",
     "implies": [
         "Apache Tomcat",
         "Apache"
-    ]
+    ],
+    "website": "http://tomcat.apache.org/tomcat-3.3-doc/mod_jk-howto.html"
 }

@@ -2,25 +2,25 @@
     "name": "ElasticSuite",
     "matches": [
         {
-            "search": "cookies[STUID]",
-            "certainty": 50,
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[STVID]",
-            "certainty": 50,
-            "regexp": ".*"
-        },
-        {
             "regexp": "<input [^>]*Smile_Elasticsuite[^>]*>"
         },
         {
             "regexp": "<[\\S\\s.*]*Smile_Elasticsuite[\\S\\s.*]*>"
+        },
+        {
+            "certainty": 50,
+            "regexp": ".*",
+            "search": "cookies[STVID]"
+        },
+        {
+            "certainty": 50,
+            "regexp": ".*",
+            "search": "cookies[STUID]"
         }
     ],
-    "website": "https://elasticsuite.io",
     "implies": [
         "PHP",
         "Elasticsearch"
-    ]
+    ],
+    "website": "https://elasticsuite.io"
 }
