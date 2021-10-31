@@ -1,10 +1,15 @@
 {
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
+    "website": "http://koken.me",
     "name": "Koken",
     "matches": [
         {
-            "offset": 1,
             "regexp": "Koken ([\\d.]+)",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": ".*",
@@ -16,10 +21,5 @@
         {
             "regexp": "<!--\\s+KOKEN DEBUGGING"
         }
-    ],
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
-    "website": "http://koken.me"
+    ]
 }

@@ -1,10 +1,7 @@
 {
+    "website": "https://www.eidosmedia.com/",
     "name": "Methode",
     "matches": [
-        {
-            "regexp": "[\\d.]+",
-            "search": "meta[eomportal-loid]"
-        },
         {
             "regexp": ".*",
             "search": "meta[eomportal-lastUpdate]"
@@ -22,8 +19,11 @@
             "search": "meta[eomportal-uuid]"
         },
         {
+            "regexp": "[\\d.]+",
+            "search": "meta[eomportal-loid]"
+        },
+        {
             "regexp": "<!-- Methode uuid: \"[a-f\\d]+\" ?-->"
         }
-    ],
-    "website": "https://www.eidosmedia.com/"
+    ]
 }
