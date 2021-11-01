@@ -1,7 +1,10 @@
 {
     "website": "https://jibres.com",
-    "name": "Jibres",
     "matches": [
+        {
+            "regexp": "Jibres",
+            "search": "headers[x-powered-by]"
+        },
         {
             "regexp": "Jibres",
             "search": "meta[generator]"
@@ -9,10 +12,7 @@
         {
             "regexp": ".*",
             "search": "cookies[jibres]"
-        },
-        {
-            "regexp": "Jibres",
-            "search": "headers[x-powered-by]"
         }
-    ]
+    ],
+    "name": "Jibres"
 }
