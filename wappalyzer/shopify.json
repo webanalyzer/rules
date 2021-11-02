@@ -3,16 +3,6 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-shopid]",
-            "certainty": 50
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-shopify-stage]",
-            "certainty": 50
-        },
-        {
-            "regexp": ".*",
             "search": "cookies[_shopify_y]"
         },
         {
@@ -21,11 +11,21 @@
         },
         {
             "regexp": ".*",
+            "search": "meta[shopify-digital-wallet]"
+        },
+        {
+            "regexp": ".*",
             "search": "meta[shopify-checkout-api-token]"
         },
         {
             "regexp": ".*",
-            "search": "meta[shopify-digital-wallet]"
+            "search": "headers[x-shopify-stage]",
+            "certainty": 50
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-shopid]",
+            "certainty": 50
         }
     ],
     "name": "Shopify"

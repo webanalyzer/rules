@@ -2,11 +2,11 @@
     "website": "http://www.contentful.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-contentful-request-id]"
+            "regexp": "<[^>]+(?:https?:)?//(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)"
         },
         {
-            "regexp": "<[^>]+(?:https?:)?//(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)"
+            "regexp": ".*",
+            "search": "headers[x-contentful-request-id]"
         }
     ],
     "name": "Contentful"

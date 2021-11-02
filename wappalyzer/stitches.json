@@ -1,5 +1,11 @@
 {
     "website": "https://stitches.dev",
+    "matches": [
+        {
+            "regexp": "^c-[A-Za-z]{5}$",
+            "search": "meta[generator]"
+        }
+    ],
     "implies": [
         "React",
         "Next.js",
@@ -8,12 +14,6 @@
         "SvelteKit",
         "Vue.js",
         "Angular"
-    ],
-    "matches": [
-        {
-            "regexp": "^c-[A-Za-z]{5}$",
-            "search": "meta[generator]"
-        }
     ],
     "name": "Stitches"
 }

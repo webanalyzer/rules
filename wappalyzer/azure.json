@@ -3,31 +3,15 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-ms-correlation-request-id]"
+            "search": "cookies[TiPMix]"
         },
         {
             "regexp": ".*",
-            "search": "headers[azure-slotname]"
+            "search": "cookies[ARRAffinity]"
         },
         {
             "regexp": ".*",
             "search": "headers[azure-sitename]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[azure-regionname]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[azure-version]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-ms-gateway-requestid]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-ms-client-request-id]"
         },
         {
             "regexp": "^Windows-Azure",
@@ -35,11 +19,27 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[TiPMix]"
+            "search": "headers[azure-version]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[ARRAffinity]"
+            "search": "headers[azure-slotname]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-ms-client-request-id]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-ms-gateway-requestid]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-ms-correlation-request-id]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[azure-regionname]"
         }
     ],
     "name": "Azure"

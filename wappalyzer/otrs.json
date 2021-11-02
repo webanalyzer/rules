@@ -1,15 +1,15 @@
 {
     "website": "https://www.otrs.com",
-    "implies": "Perl",
     "matches": [
+        {
+            "regexp": "<!--\\s+OTRS: Copyright"
+        },
         {
             "regexp": "OTRS ([\\d.]+)",
             "search": "headers[x-powered-by]",
             "offset": 1
-        },
-        {
-            "regexp": "<!--\\s+OTRS: Copyright"
         }
     ],
+    "implies": "Perl",
     "name": "otrs"
 }

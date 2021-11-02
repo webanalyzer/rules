@@ -6,16 +6,16 @@
             "search": "headers[x-now-trace]"
         },
         {
+            "regexp": "^now|Vercel$",
+            "search": "headers[server]"
+        },
+        {
             "regexp": ".*",
             "search": "headers[x-vercel-id]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-vercel-cache]"
-        },
-        {
-            "regexp": "^now|Vercel$",
-            "search": "headers[server]"
         }
     ],
     "name": "Vercel"
