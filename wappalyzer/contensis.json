@@ -1,15 +1,15 @@
 {
-    "website": "https://zengenti.com/en-gb/products/contensis",
-    "matches": [
-        {
-            "regexp": "Contensis CMS Version ([\\d.]+)",
-            "search": "meta[generator]",
-            "offset": 1
-        }
-    ],
     "implies": [
         "Java",
         "CFML"
     ],
-    "name": "Contensis"
+    "name": "Contensis",
+    "matches": [
+        {
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "Contensis CMS Version ([\\d.]+)"
+        }
+    ],
+    "website": "https://zengenti.com/en-gb/products/contensis"
 }

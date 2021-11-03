@@ -1,16 +1,16 @@
 {
-    "website": "http://tomcat.apache.org",
+    "implies": "Java",
+    "name": "Apache Tomcat",
     "matches": [
         {
-            "regexp": "^Apache-Coyote",
-            "search": "headers[server]"
+            "search": "headers[x-powered-by]",
+            "offset": 1,
+            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?"
         },
         {
-            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?",
-            "search": "headers[x-powered-by]",
-            "offset": 1
+            "search": "headers[server]",
+            "regexp": "^Apache-Coyote"
         }
     ],
-    "implies": "Java",
-    "name": "Apache Tomcat"
+    "website": "http://tomcat.apache.org"
 }
