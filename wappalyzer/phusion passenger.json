@@ -1,16 +1,16 @@
 {
-    "name": "Phusion Passenger",
+    "website": "https://phusionpassenger.com",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
             "offset": 1,
-            "regexp": "Phusion Passenger ?([\\d.]+)?"
+            "regexp": "Phusion Passenger ([\\d.]+)",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
             "offset": 1,
-            "regexp": "Phusion Passenger ([\\d.]+)"
+            "regexp": "Phusion Passenger ?([\\d.]+)?",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "website": "https://phusionpassenger.com"
+    "name": "Phusion Passenger"
 }

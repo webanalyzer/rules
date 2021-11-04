@@ -1,14 +1,14 @@
 {
-    "implies": "PHP",
-    "name": "RBS Change",
+    "website": "http://www.rbschange.fr",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "RBS Change"
+            "regexp": "<html[^>]+xmlns:change="
         },
         {
-            "regexp": "<html[^>]+xmlns:change="
+            "regexp": "RBS Change",
+            "search": "meta[generator]"
         }
     ],
-    "website": "http://www.rbschange.fr"
+    "implies": "PHP",
+    "name": "RBS Change"
 }

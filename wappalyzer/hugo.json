@@ -1,14 +1,14 @@
 {
-    "name": "Hugo",
+    "website": "http://gohugo.io",
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Hugo ([\\d.]+)?"
+            "regexp": "powered by <a [^>]*href=\"http://hugo\\.spf13\\.com"
         },
         {
-            "regexp": "powered by <a [^>]*href=\"http://hugo\\.spf13\\.com"
+            "offset": 1,
+            "regexp": "Hugo ([\\d.]+)?",
+            "search": "meta[generator]"
         }
     ],
-    "website": "http://gohugo.io"
+    "name": "Hugo"
 }
