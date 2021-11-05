@@ -1,5 +1,5 @@
 {
-    "website": "https://elasticsuite.io",
+    "name": "ElasticSuite",
     "matches": [
         {
             "regexp": "<input [^>]*Smile_Elasticsuite[^>]*>"
@@ -8,19 +8,19 @@
             "regexp": "<[\\S\\s.*]*Smile_Elasticsuite[\\S\\s.*]*>"
         },
         {
+            "search": "cookies[STVID]",
             "certainty": 50,
-            "regexp": ".*",
-            "search": "cookies[STUID]"
+            "regexp": ".*"
         },
         {
+            "search": "cookies[STUID]",
             "certainty": 50,
-            "regexp": ".*",
-            "search": "cookies[STVID]"
+            "regexp": ".*"
         }
     ],
+    "website": "https://elasticsuite.io",
     "implies": [
         "PHP",
         "Elasticsearch"
-    ],
-    "name": "ElasticSuite"
+    ]
 }
