@@ -1,14 +1,14 @@
 {
     "name": "Starhost",
+    "website": "https://starhost.verbosec.com",
     "matches": [
-        {
-            "search": "headers[x-starhost]",
-            "regexp": ".*"
-        },
         {
             "search": "headers[cache-control]",
             "regexp": "Starhost"
+        },
+        {
+            "search": "headers[x-starhost]",
+            "regexp": ".*"
         }
-    ],
-    "website": "https://starhost.verbosec.com"
+    ]
 }
