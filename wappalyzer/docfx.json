@@ -1,11 +1,9 @@
 {
-    "name": "DocFX",
-    "website": "https://github.com/dotnet/docfx",
     "matches": [
         {
             "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "docfx\\s([\\d\\.]+)"
+            "regexp": "docfx\\s([\\d\\.]+)",
+            "offset": 1
         },
         {
             "search": "meta[docfx:navrel]",
@@ -15,5 +13,7 @@
             "search": "meta[docfx:tocrel]",
             "regexp": "toc.html"
         }
-    ]
+    ],
+    "website": "https://github.com/dotnet/docfx",
+    "name": "DocFX"
 }
