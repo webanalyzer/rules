@@ -1,9 +1,10 @@
 {
     "matches": [
         {
-            "search": "cookies[STUID]",
-            "regexp": ".*",
-            "certainty": 50
+            "regexp": "<input [^>]*Smile_Elasticsuite[^>]*>"
+        },
+        {
+            "regexp": "<[\\S\\s.*]*Smile_Elasticsuite[\\S\\s.*]*>"
         },
         {
             "search": "cookies[STVID]",
@@ -11,16 +12,15 @@
             "certainty": 50
         },
         {
-            "regexp": "<input [^>]*Smile_Elasticsuite[^>]*>"
-        },
-        {
-            "regexp": "<[\\S\\s.*]*Smile_Elasticsuite[\\S\\s.*]*>"
+            "search": "cookies[STUID]",
+            "regexp": ".*",
+            "certainty": 50
         }
     ],
     "implies": [
         "PHP",
         "Elasticsearch"
     ],
-    "website": "https://elasticsuite.io",
-    "name": "ElasticSuite"
+    "name": "ElasticSuite",
+    "website": "https://elasticsuite.io"
 }

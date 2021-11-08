@@ -1,6 +1,14 @@
 {
     "matches": [
         {
+            "offset": 1,
+            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+"
+        },
+        {
+            "search": "meta[application-name]",
+            "regexp": "Shopware"
+        },
+        {
             "search": "headers[sw-version-id]",
             "regexp": ".*"
         },
@@ -15,14 +23,6 @@
         {
             "search": "headers[sw-language-id]",
             "regexp": "^[a-fA-F0-9]{32}$"
-        },
-        {
-            "search": "meta[application-name]",
-            "regexp": "Shopware"
-        },
-        {
-            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+",
-            "offset": 1
         }
     ],
     "implies": [
@@ -31,6 +31,6 @@
         "jQuery",
         "Symfony"
     ],
-    "website": "https://www.shopware.com",
-    "name": "Shopware"
+    "name": "Shopware",
+    "website": "https://www.shopware.com"
 }

@@ -1,15 +1,15 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "BIGACE ([\\d.]+)",
-            "offset": 1
+            "regexp": "(?:Powered by <a href=\"[^>]+BIGACE|<!--\\s+Site is running BIGACE)"
         },
         {
-            "regexp": "(?:Powered by <a href=\"[^>]+BIGACE|<!--\\s+Site is running BIGACE)"
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "BIGACE ([\\d.]+)"
         }
     ],
     "implies": "PHP",
-    "website": "http://bigace.de",
-    "name": "BIGACE"
+    "name": "BIGACE",
+    "website": "http://bigace.de"
 }
