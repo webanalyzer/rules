@@ -1,11 +1,9 @@
 {
+    "name": "Platform.sh",
+    "website": "https://platform.sh",
     "matches": [
         {
-            "search": "headers[x-platform-processor]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-platform-cluster]",
+            "search": "headers[x-platform-server]",
             "regexp": ".*"
         },
         {
@@ -13,10 +11,12 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-platform-server]",
+            "search": "headers[x-platform-cluster]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-platform-processor]",
             "regexp": ".*"
         }
-    ],
-    "name": "Platform.sh",
-    "website": "https://platform.sh"
+    ]
 }

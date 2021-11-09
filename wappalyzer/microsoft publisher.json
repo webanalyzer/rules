@@ -1,7 +1,10 @@
 {
+    "name": "Microsoft Publisher",
+    "website": "https://office.microsoft.com/publisher",
     "matches": [
         {
-            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:publisher\"|<!--[if pub]><xml>)"
+            "search": "meta[ProgId]",
+            "regexp": "^Publisher\\."
         },
         {
             "offset": 1,
@@ -9,10 +12,7 @@
             "regexp": "Microsoft Publisher( [\\d.]+)?"
         },
         {
-            "search": "meta[ProgId]",
-            "regexp": "^Publisher\\."
+            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:publisher\"|<!--[if pub]><xml>)"
         }
-    ],
-    "name": "Microsoft Publisher",
-    "website": "https://office.microsoft.com/publisher"
+    ]
 }
