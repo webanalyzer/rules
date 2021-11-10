@@ -1,15 +1,15 @@
 {
-    "name": "e107",
     "website": "http://e107.org",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "e107"
+            "regexp": ".*",
+            "search": "cookies[e107_tz]"
         },
         {
-            "search": "cookies[e107_tz]",
-            "regexp": ".*"
+            "regexp": "e107",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "implies": "PHP"
+    "implies": "PHP",
+    "name": "e107"
 }

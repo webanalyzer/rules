@@ -1,15 +1,15 @@
 {
-    "name": "Zabbix",
     "website": "http://zabbix.com",
     "matches": [
         {
-            "certainty": 70,
+            "regexp": "ZABBIX SIA",
             "search": "meta[Author]",
-            "regexp": "ZABBIX SIA"
+            "certainty": 70
         },
         {
             "regexp": "<body[^>]+zbxCallPostScripts"
         }
     ],
-    "implies": "PHP"
+    "implies": "PHP",
+    "name": "Zabbix"
 }

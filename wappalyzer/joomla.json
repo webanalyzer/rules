@@ -1,21 +1,21 @@
 {
-    "name": "Joomla",
     "website": "https://www.joomla.org",
     "matches": [
         {
-            "offset": 1,
-            "search": "headers[x-content-encoded-by]",
-            "regexp": "Joomla! ([\\d.]+)"
-        },
-        {
-            "offset": 1,
+            "regexp": "Joomla!(?: ([\\d.]+))?",
             "search": "meta[generator]",
-            "regexp": "Joomla!(?: ([\\d.]+))?"
+            "offset": 1
         },
         {
-            "certainty": 50,
-            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
+            "regexp": "Joomla! ([\\d.]+)",
+            "search": "headers[x-content-encoded-by]",
+            "offset": 1
+        },
+        {
+            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)",
+            "certainty": 50
         }
     ],
-    "implies": "PHP"
+    "implies": "PHP",
+    "name": "Joomla"
 }

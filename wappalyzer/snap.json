@@ -1,12 +1,12 @@
 {
-    "name": "Snap",
     "website": "http://snapframework.com",
     "matches": [
         {
-            "offset": 1,
+            "regexp": "Snap/([.\\d]+)",
             "search": "headers[server]",
-            "regexp": "Snap/([.\\d]+)"
+            "offset": 1
         }
     ],
-    "implies": "Haskell"
+    "implies": "Haskell",
+    "name": "Snap"
 }
