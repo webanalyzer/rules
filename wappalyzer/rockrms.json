@@ -1,13 +1,13 @@
 {
-    "website": "http://www.rockrms.com",
-    "name": "RockRMS",
     "matches": [
         {
-            "search": "meta[generator]",
+            "regexp": "^Rock v([0-9.]+)",
             "offset": 1,
-            "regexp": "^Rock v([0-9.]+)"
+            "search": "meta[generator]"
         }
     ],
+    "website": "http://www.rockrms.com",
+    "name": "RockRMS",
     "implies": [
         "Windows Server",
         "IIS",

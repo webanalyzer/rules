@@ -1,15 +1,15 @@
 {
-    "website": "https://snowplowanalytics.com",
-    "name": "Snowplow Analytics",
     "matches": [
         {
-            "search": "cookies[sp]",
-            "certainty": 50,
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[_sp_id]"
         },
         {
-            "search": "cookies[_sp_id]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[sp]",
+            "certainty": 50
         }
-    ]
+    ],
+    "website": "https://snowplowanalytics.com",
+    "name": "Snowplow Analytics"
 }
