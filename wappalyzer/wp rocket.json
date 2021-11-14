@@ -2,16 +2,16 @@
     "name": "WP Rocket",
     "matches": [
         {
-            "offset": 1,
-            "search": "headers[x-powered-by]",
-            "regexp": "WP Rocket(?:/([\\d.]+))?"
-        },
-        {
-            "search": "headers[x-rocket-nginx-bypass]",
-            "regexp": ".*"
-        },
-        {
             "regexp": "<!--[^>]+WP Rocket"
+        },
+        {
+            "regexp": "WP Rocket(?:/([\\d.]+))?",
+            "offset": 1,
+            "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-rocket-nginx-bypass]"
         }
     ],
     "website": "http://wp-rocket.me"

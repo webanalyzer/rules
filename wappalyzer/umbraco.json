@@ -2,16 +2,16 @@
     "name": "Umbraco",
     "matches": [
         {
-            "offset": 1,
-            "search": "headers[x-umbraco-version]",
-            "regexp": "^(.+)$"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "umbraco"
+            "regexp": "umbraco",
+            "search": "meta[generator]"
         },
         {
             "regexp": "powered by <a href=[^>]+umbraco"
+        },
+        {
+            "regexp": "^(.+)$",
+            "offset": 1,
+            "search": "headers[x-umbraco-version]"
         }
     ],
     "website": "http://umbraco.com",

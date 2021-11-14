@@ -2,13 +2,13 @@
     "name": "Dynamicweb",
     "matches": [
         {
-            "search": "cookies[Dynamicweb]",
-            "regexp": ".*"
+            "regexp": "Dynamicweb ([\\d.]+)",
+            "offset": 1,
+            "search": "meta[generator]"
         },
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Dynamicweb ([\\d.]+)"
+            "regexp": ".*",
+            "search": "cookies[Dynamicweb]"
         }
     ],
     "website": "http://www.dynamicweb.dk",

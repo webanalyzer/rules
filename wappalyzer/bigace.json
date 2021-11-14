@@ -2,12 +2,12 @@
     "name": "BIGACE",
     "matches": [
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "BIGACE ([\\d.]+)"
+            "regexp": "(?:Powered by <a href=\"[^>]+BIGACE|<!--\\s+Site is running BIGACE)"
         },
         {
-            "regexp": "(?:Powered by <a href=\"[^>]+BIGACE|<!--\\s+Site is running BIGACE)"
+            "regexp": "BIGACE ([\\d.]+)",
+            "offset": 1,
+            "search": "meta[generator]"
         }
     ],
     "website": "http://bigace.de",

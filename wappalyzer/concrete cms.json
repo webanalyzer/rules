@@ -2,13 +2,13 @@
     "name": "Concrete CMS",
     "matches": [
         {
-            "search": "cookies[CONCRETE5]",
-            "regexp": ".*"
+            "regexp": "^concrete5(?: - ([\\d.]+)$)?",
+            "offset": 1,
+            "search": "meta[generator]"
         },
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "^concrete5(?: - ([\\d.]+)$)?"
+            "regexp": ".*",
+            "search": "cookies[CONCRETE5]"
         }
     ],
     "website": "https://www.concretecms.com",

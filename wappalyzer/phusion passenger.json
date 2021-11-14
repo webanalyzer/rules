@@ -2,14 +2,14 @@
     "name": "Phusion Passenger",
     "matches": [
         {
+            "regexp": "Phusion Passenger ([\\d.]+)",
             "offset": 1,
-            "search": "headers[x-powered-by]",
-            "regexp": "Phusion Passenger ?([\\d.]+)?"
+            "search": "headers[server]"
         },
         {
+            "regexp": "Phusion Passenger ?([\\d.]+)?",
             "offset": 1,
-            "search": "headers[server]",
-            "regexp": "Phusion Passenger ([\\d.]+)"
+            "search": "headers[x-powered-by]"
         }
     ],
     "website": "https://phusionpassenger.com"
