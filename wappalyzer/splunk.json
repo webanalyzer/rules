@@ -1,15 +1,15 @@
 {
     "name": "Splunk",
+    "website": "http://splunk.com",
     "matches": [
+        {
+            "regexp": "Splunk Inc",
+            "search": "meta[author]",
+            "certainty": 50
+        },
         {
             "regexp": "<p class=\"footer\">&copy; [-\\d]+ Splunk Inc\\.(?: Splunk ([\\d\\.]+(?: build [\\d\\.]*\\d)?))?[^<]*</p>",
             "offset": 1
-        },
-        {
-            "regexp": "Splunk Inc",
-            "certainty": 50,
-            "search": "meta[author]"
         }
-    ],
-    "website": "http://splunk.com"
+    ]
 }
