@@ -1,6 +1,4 @@
 {
-    "name": "DNN",
-    "website": "http://dnnsoftware.com",
     "matches": [
         {
             "regexp": "dnn_IsMobile=",
@@ -15,6 +13,10 @@
             "search": "headers[x-compressed-by]"
         },
         {
+            "regexp": "DotNetNuke",
+            "search": "meta[generator]"
+        },
+        {
             "regexp": ".*",
             "search": "cookies[DotNetNukeAnonymous]"
         },
@@ -23,11 +25,9 @@
         },
         {
             "regexp": "<!-- DNN Platform"
-        },
-        {
-            "regexp": "DotNetNuke",
-            "search": "meta[generator]"
         }
     ],
+    "name": "DNN",
+    "website": "http://dnnsoftware.com",
     "implies": "Microsoft ASP.NET"
 }

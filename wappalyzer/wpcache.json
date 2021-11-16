@@ -1,6 +1,4 @@
 {
-    "name": "wpCache",
-    "website": "https://wpcache.co",
     "matches": [
         {
             "regexp": "wpCache(?:/([\\d.]+))?",
@@ -9,15 +7,17 @@
         },
         {
             "regexp": "wpCache",
-            "search": "meta[generator]"
+            "search": "meta[keywords]"
         },
         {
             "regexp": "wpCache",
-            "search": "meta[keywords]"
+            "search": "meta[generator]"
         },
         {
             "regexp": "<!--[^>]+wpCache"
         }
     ],
+    "name": "wpCache",
+    "website": "https://wpcache.co",
     "implies": "PHP"
 }

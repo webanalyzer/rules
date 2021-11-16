@@ -1,6 +1,4 @@
 {
-    "name": "Microsoft ASP.NET",
-    "website": "https://www.asp.net",
     "matches": [
         {
             "regexp": "(.+)",
@@ -12,16 +10,18 @@
             "search": "headers[x-powered-by]"
         },
         {
-            "regexp": "<input[^>]+name=\"__VIEWSTATE"
+            "regexp": ".*",
+            "search": "cookies[ASPSESSION]"
         },
         {
             "regexp": ".*",
             "search": "cookies[ASP.NET_SessionId]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ASPSESSION]"
+            "regexp": "<input[^>]+name=\"__VIEWSTATE"
         }
     ],
+    "name": "Microsoft ASP.NET",
+    "website": "https://www.asp.net",
     "implies": "IIS"
 }
