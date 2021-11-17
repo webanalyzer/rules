@@ -1,11 +1,11 @@
 {
-    "matches": [
-        {
-            "regexp": "<link\\s[^>]*href=\"[^\"]*?([\\d.]+)/themes/resources/owafont\\.css",
-            "offset": 1
-        }
-    ],
     "name": "Outlook Web App",
     "website": "http://help.outlook.com",
-    "implies": "Microsoft ASP.NET"
+    "implies": "Microsoft ASP.NET",
+    "matches": [
+        {
+            "offset": 1,
+            "regexp": "<link\\s[^>]*href=\"[^\"]*?([\\d.]+)/themes/resources/owafont\\.css"
+        }
+    ]
 }

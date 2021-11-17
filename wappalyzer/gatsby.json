@@ -1,21 +1,21 @@
 {
-    "matches": [
-        {
-            "regexp": "^Gatsby(?: ([0-9.]+))?$",
-            "search": "meta[generator]",
-            "offset": 1
-        },
-        {
-            "regexp": "<div id=\"___gatsby\">"
-        },
-        {
-            "regexp": "<style id=\"gatsby-inlined-css\">"
-        }
-    ],
     "name": "Gatsby",
     "website": "https://www.gatsbyjs.org/",
     "implies": [
         "React",
         "webpack"
+    ],
+    "matches": [
+        {
+            "regexp": "<div id=\"___gatsby\">"
+        },
+        {
+            "regexp": "<style id=\"gatsby-inlined-css\">"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "^Gatsby(?: ([0-9.]+))?$",
+            "offset": 1
+        }
     ]
 }

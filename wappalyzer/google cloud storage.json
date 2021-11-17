@@ -1,11 +1,11 @@
 {
-    "matches": [
-        {
-            "regexp": "^\\w+$",
-            "search": "headers[x-goog-storage-class]"
-        }
-    ],
     "name": "Google Cloud Storage",
     "website": "https://cloud.google.com/storage",
-    "implies": "Google Cloud"
+    "implies": "Google Cloud",
+    "matches": [
+        {
+            "search": "headers[x-goog-storage-class]",
+            "regexp": "^\\w+$"
+        }
+    ]
 }

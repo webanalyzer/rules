@@ -1,12 +1,12 @@
 {
-    "matches": [
-        {
-            "regexp": "Jetty(?:\\(([\\d\\.]*\\d+))?",
-            "search": "headers[server]",
-            "offset": 1
-        }
-    ],
     "name": "Jetty",
     "website": "http://www.eclipse.org/jetty",
-    "implies": "Java"
+    "implies": "Java",
+    "matches": [
+        {
+            "search": "headers[server]",
+            "regexp": "Jetty(?:\\(([\\d\\.]*\\d+))?",
+            "offset": 1
+        }
+    ]
 }

@@ -1,11 +1,11 @@
 {
-    "matches": [
-        {
-            "regexp": "^pimcore$",
-            "search": "headers[x-powered-by]"
-        }
-    ],
     "name": "Pimcore",
     "website": "http://pimcore.org",
-    "implies": "PHP"
+    "implies": "PHP",
+    "matches": [
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^pimcore$"
+        }
+    ]
 }
