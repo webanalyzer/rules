@@ -3,16 +3,16 @@
     "website": "https://office.microsoft.com/publisher",
     "matches": [
         {
-            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:publisher\"|<!--[if pub]><xml>)"
-        },
-        {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "Microsoft Publisher( [\\d.]+)?",
-            "offset": 1
+            "regexp": "Microsoft Publisher( [\\d.]+)?"
         },
         {
             "search": "meta[ProgId]",
             "regexp": "^Publisher\\."
+        },
+        {
+            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:publisher\"|<!--[if pub]><xml>)"
         }
     ]
 }

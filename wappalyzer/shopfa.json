@@ -3,14 +3,14 @@
     "website": "https://shopfa.com",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "^ShopFA ([\\d.]+)$",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "^ShopFA ([\\d.]+)$"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^ShopFA ([\\d.]+)$",
-            "offset": 1
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "^ShopFA ([\\d.]+)$"
         }
     ]
 }

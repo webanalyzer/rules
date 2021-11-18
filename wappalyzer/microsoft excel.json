@@ -3,16 +3,16 @@
     "website": "https://office.microsoft.com/excel",
     "matches": [
         {
-            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:excel\"|<!--\\s*(?:START|END) OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD\\s*-->|<div [^>]*x:publishsource=\"?Excel\"?)"
-        },
-        {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "Microsoft Excel( [\\d.]+)?",
-            "offset": 1
+            "regexp": "Microsoft Excel( [\\d.]+)?"
         },
         {
             "search": "meta[ProgId]",
             "regexp": "^Excel\\."
+        },
+        {
+            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:excel\"|<!--\\s*(?:START|END) OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD\\s*-->|<div [^>]*x:publishsource=\"?Excel\"?)"
         }
     ]
 }
