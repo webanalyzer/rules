@@ -1,10 +1,8 @@
 {
-    "name": "Microsoft PowerPoint",
-    "website": "https://office.microsoft.com/powerpoint",
     "matches": [
         {
-            "offset": 1,
             "search": "meta[generator]",
+            "offset": 1,
             "regexp": "Microsoft PowerPoint ( [\\d.]+)?"
         },
         {
@@ -15,5 +13,7 @@
             "offset": 1,
             "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:powerpoint\"|<link rel=\"?Presentation-XML\"? href=\"?[^\"]+\\.xml\"?>|<o:PresentationFormat>[^<]+</o:PresentationFormat>[^!]+<o:Slides>\\d+</o:Slides>(?:[^!]+<o:Version>([\\d.]+)</o:Version>)?)"
         }
-    ]
+    ],
+    "name": "Microsoft PowerPoint",
+    "website": "https://office.microsoft.com/powerpoint"
 }

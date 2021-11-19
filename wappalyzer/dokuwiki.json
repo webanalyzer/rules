@@ -1,15 +1,8 @@
 {
-    "implies": "PHP",
-    "name": "DokuWiki",
-    "website": "https://www.dokuwiki.org",
     "matches": [
         {
-            "search": "cookies[DokuWiki]",
-            "regexp": ".*"
-        },
-        {
-            "offset": 1,
             "search": "meta[generator]",
+            "offset": 1,
             "regexp": "^DokuWiki( Release [\\d-]+)?"
         },
         {
@@ -17,6 +10,13 @@
         },
         {
             "regexp": "<a[^>]+href=\"#dokuwiki__"
+        },
+        {
+            "search": "cookies[DokuWiki]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "name": "DokuWiki",
+    "website": "https://www.dokuwiki.org",
+    "implies": "PHP"
 }
