@@ -1,5 +1,4 @@
 {
-    "name": "Fastly",
     "matches": [
         {
             "regexp": ".*",
@@ -11,16 +10,17 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-fastly-request-id]"
+            "search": "headers[x-fastly-origin]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-fastly-origin]"
+            "search": "headers[x-fastly-request-id]"
         },
         {
             "regexp": ".*",
             "search": "headers[fastly-debug-digest]"
         }
     ],
+    "name": "Fastly",
     "website": "https://www.fastly.com"
 }

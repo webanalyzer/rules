@@ -1,13 +1,12 @@
 {
-    "name": "F5 BigIP",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[MRHSession]"
+            "regexp": "^big-?ip$",
+            "search": "headers[server]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[F5_fullWT]"
+            "search": "cookies[MRHSession]"
         },
         {
             "regexp": ".*",
@@ -15,15 +14,15 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[TIN]"
-        },
-        {
-            "regexp": ".*",
             "search": "cookies[F5_ST]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[MRHSequence]"
+            "search": "cookies[F5_HT_shrinked]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[F5_fullWT]"
         },
         {
             "regexp": ".*",
@@ -31,12 +30,13 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[F5_HT_shrinked]"
+            "search": "cookies[TIN]"
         },
         {
-            "regexp": "^big-?ip$",
-            "search": "headers[server]"
+            "regexp": ".*",
+            "search": "cookies[MRHSequence]"
         }
     ],
+    "name": "F5 BigIP",
     "website": "https://www.f5.com/products/big-ip-services"
 }

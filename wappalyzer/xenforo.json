@@ -1,10 +1,11 @@
 {
-    "name": "XenForo",
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
     "matches": [
+        {
+            "regexp": "(?:jQuery\\.extend\\(true, XenForo|<a[^>]+>Forum software by XenForo\u2122|<!--XF:branding|<html[^>]+id=\"XenForo\")"
+        },
+        {
+            "regexp": "<html id=\"XF\" "
+        },
         {
             "regexp": ".*",
             "search": "cookies[xf_csrf]"
@@ -12,13 +13,12 @@
         {
             "regexp": ".*",
             "search": "cookies[xf_session]"
-        },
-        {
-            "regexp": "(?:jQuery\\.extend\\(true, XenForo|<a[^>]+>Forum software by XenForo\u2122|<!--XF:branding|<html[^>]+id=\"XenForo\")"
-        },
-        {
-            "regexp": "<html id=\"XF\" "
         }
     ],
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
+    "name": "XenForo",
     "website": "http://xenforo.com"
 }
