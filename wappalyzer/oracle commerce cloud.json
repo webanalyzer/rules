@@ -1,14 +1,14 @@
 {
-    "website": "http://cloud.oracle.com/commerce-cloud",
-    "name": "Oracle Commerce Cloud",
     "matches": [
         {
-            "regexp": "<[^>]+id=\"oracle-cc\""
+            "search": "headers[oraclecommercecloud-version]",
+            "regexp": "^(.+)$",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "search": "headers[oraclecommercecloud-version]",
-            "regexp": "^(.+)$"
+            "regexp": "<[^>]+id=\"oracle-cc\""
         }
-    ]
+    ],
+    "website": "http://cloud.oracle.com/commerce-cloud",
+    "name": "Oracle Commerce Cloud"
 }
