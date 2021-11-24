@@ -1,9 +1,12 @@
 {
+    "name": "Koha",
+    "website": "https://koha-community.org/",
+    "implies": "Perl",
     "matches": [
         {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "^Koha ([\\d.]+)$",
-            "offset": 1
+            "regexp": "^Koha ([\\d.]+)$"
         },
         {
             "regexp": "<input name=\"koha_login_context\" value=\"intranet\" type=\"hidden\">"
@@ -11,8 +14,5 @@
         {
             "regexp": "<a href=\"/cgi-bin/koha/"
         }
-    ],
-    "website": "https://koha-community.org/",
-    "name": "Koha",
-    "implies": "Perl"
+    ]
 }
