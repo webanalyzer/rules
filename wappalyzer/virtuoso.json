@@ -1,19 +1,19 @@
 {
-    "name": "Virtuoso",
     "website": "https://virtuoso.openlinksw.com/",
     "matches": [
         {
-            "search": "meta[Copyright]",
-            "regexp": "^Copyright &copy; \\d{4} OpenLink Software"
-        },
-        {
-            "search": "meta[Keywords]",
-            "regexp": "^OpenLink Virtuoso Sparql"
-        },
-        {
             "offset": 1,
-            "search": "headers[server]",
-            "regexp": "Virtuoso/?([0-9.]+)?"
+            "regexp": "Virtuoso/?([0-9.]+)?",
+            "search": "headers[server]"
+        },
+        {
+            "regexp": "^OpenLink Virtuoso Sparql",
+            "search": "meta[Keywords]"
+        },
+        {
+            "regexp": "^Copyright &copy; \\d{4} OpenLink Software",
+            "search": "meta[Copyright]"
         }
-    ]
+    ],
+    "name": "Virtuoso"
 }

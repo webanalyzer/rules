@@ -1,5 +1,4 @@
 {
-    "name": "Lede",
     "website": "https://joinlede.com/",
     "implies": [
         "WordPress",
@@ -7,11 +6,12 @@
     ],
     "matches": [
         {
-            "search": "meta[og:image]",
-            "regexp": "https?\\:\\/\\/lede-admin"
+            "regexp": "<a [^>]*href=\"[^\"]+joinlede.com"
         },
         {
-            "regexp": "<a [^>]*href=\"[^\"]+joinlede.com"
+            "regexp": "https?\\:\\/\\/lede-admin",
+            "search": "meta[og:image]"
         }
-    ]
+    ],
+    "name": "Lede"
 }

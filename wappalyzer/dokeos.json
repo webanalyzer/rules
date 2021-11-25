@@ -1,5 +1,4 @@
 {
-    "name": "Dokeos",
     "website": "https://dokeos.com",
     "implies": [
         "PHP",
@@ -9,15 +8,16 @@
     ],
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Dokeos"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "Dokeos"
+            "regexp": "Dokeos",
+            "search": "headers[x-powered-by]"
         },
         {
             "regexp": "(?:Portal <a[^>]+>Dokeos|@import \"[^\"]+dokeos_blue)"
+        },
+        {
+            "regexp": "Dokeos",
+            "search": "meta[generator]"
         }
-    ]
+    ],
+    "name": "Dokeos"
 }
