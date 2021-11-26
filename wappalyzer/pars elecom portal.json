@@ -1,5 +1,6 @@
 {
     "website": "http://parselecom.net",
+    "name": "Pars Elecom Portal",
     "implies": [
         "Microsoft ASP.NET",
         "IIS",
@@ -8,12 +9,11 @@
     "matches": [
         {
             "regexp": "Pars Elecom Portal",
-            "search": "headers[x-powered-by]"
+            "search": "meta[copyright]"
         },
         {
             "regexp": "Pars Elecom Portal",
-            "search": "meta[copyright]"
+            "search": "headers[x-powered-by]"
         }
-    ],
-    "name": "Pars Elecom Portal"
+    ]
 }
