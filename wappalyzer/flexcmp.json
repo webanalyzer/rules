@@ -3,21 +3,21 @@
     "name": "FlexCMP",
     "matches": [
         {
-            "regexp": "^FlexCMP",
-            "search": "meta[generator]"
-        },
-        {
             "offset": 1,
             "regexp": "<!--[^>]+FlexCMP[^>v]+v\\. ([\\d.]+)"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-flex-lang]"
+            "search": "meta[generator]",
+            "regexp": "^FlexCMP"
         },
         {
+            "search": "headers[x-powered-by]",
             "offset": 1,
-            "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)",
-            "search": "headers[x-powered-by]"
+            "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)"
+        },
+        {
+            "search": "headers[x-flex-lang]",
+            "regexp": ".*"
         }
     ]
 }

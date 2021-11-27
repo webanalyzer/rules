@@ -3,24 +3,24 @@
     "name": "Fastly",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-via-fastly:]"
+            "search": "headers[vary]",
+            "regexp": "Fastly-SSL"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-fastly-origin]"
+            "search": "headers[x-fastly-origin]",
+            "regexp": ".*"
         },
         {
-            "regexp": "Fastly-SSL",
-            "search": "headers[vary]"
+            "search": "headers[x-via-fastly:]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[fastly-debug-digest]"
+            "search": "headers[fastly-debug-digest]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-fastly-request-id]"
+            "search": "headers[x-fastly-request-id]",
+            "regexp": ".*"
         }
     ]
 }

@@ -3,29 +3,29 @@
     "name": "Varnish",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-varnish-hostname]"
+            "search": "headers[x-varnish]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-varnish-action]"
+            "search": "headers[x-varnish-action]",
+            "regexp": ".*"
         },
         {
+            "search": "headers[x-varnish-cache]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-varnish-age]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-varnish-hostname]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[via]",
             "offset": 1,
-            "regexp": "varnish(?: \\(Varnish/([\\d.]+)\\))?",
-            "search": "headers[via]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-varnish]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-varnish-age]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-varnish-cache]"
+            "regexp": "varnish(?: \\(Varnish/([\\d.]+)\\))?"
         }
     ]
 }

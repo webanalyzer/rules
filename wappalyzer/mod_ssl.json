@@ -1,12 +1,12 @@
 {
+    "implies": "Apache",
     "website": "http://modssl.org",
     "name": "mod_ssl",
-    "implies": "Apache",
     "matches": [
         {
+            "search": "headers[server]",
             "offset": 1,
-            "regexp": "mod_ssl(?:/([\\d.]+))?",
-            "search": "headers[server]"
+            "regexp": "mod_ssl(?:/([\\d.]+))?"
         }
     ]
 }

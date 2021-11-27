@@ -3,11 +3,11 @@
     "name": "JTL Shop",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[JTLSHOP]"
+            "regexp": "(?:<input[^>]+name=\"JTLSHOP|<a href=\"jtl\\.php)"
         },
         {
-            "regexp": "(?:<input[^>]+name=\"JTLSHOP|<a href=\"jtl\\.php)"
+            "search": "cookies[JTLSHOP]",
+            "regexp": ".*"
         }
     ]
 }

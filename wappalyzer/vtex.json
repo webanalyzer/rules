@@ -3,28 +3,28 @@
     "name": "VTEX",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[VtexWorkspace]"
+            "search": "headers[powered]",
+            "regexp": "vtex"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[VtexFingerPrint]"
+            "search": "headers[server]",
+            "regexp": "^VTEX IO$"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[VtexStoreVersion]"
+            "search": "cookies[VtexStoreVersion]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[vtex_session]"
+            "search": "cookies[vtex_session]",
+            "regexp": ".*"
         },
         {
-            "regexp": "vtex",
-            "search": "headers[powered]"
+            "search": "cookies[VtexWorkspace]",
+            "regexp": ".*"
         },
         {
-            "regexp": "^VTEX IO$",
-            "search": "headers[server]"
+            "search": "cookies[VtexFingerPrint]",
+            "regexp": ".*"
         }
     ]
 }
