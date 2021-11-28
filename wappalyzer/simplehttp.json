@@ -1,11 +1,11 @@
 {
-    "website": "http://example.com",
     "name": "SimpleHTTP",
+    "website": "http://example.com",
     "matches": [
         {
-            "search": "headers[server]",
             "offset": 1,
-            "regexp": "SimpleHTTP(?:/([\\d.]+))?"
+            "regexp": "SimpleHTTP(?:/([\\d.]+))?",
+            "search": "headers[server]"
         }
     ]
 }

@@ -1,11 +1,11 @@
 {
-    "website": "http://hp.com",
     "name": "HP iLO",
+    "website": "http://hp.com",
     "matches": [
         {
-            "search": "headers[server]",
             "offset": 1,
-            "regexp": "HP-iLO-Server(?:/([\\d.]+))?"
+            "regexp": "HP-iLO-Server(?:/([\\d.]+))?",
+            "search": "headers[server]"
         }
     ]
 }

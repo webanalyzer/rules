@@ -1,19 +1,19 @@
 {
+    "name": "Pars Elecom Portal",
+    "website": "http://parselecom.net",
     "implies": [
         "Microsoft ASP.NET",
         "IIS",
         "Windows Server"
     ],
-    "website": "http://parselecom.net",
-    "name": "Pars Elecom Portal",
     "matches": [
         {
-            "search": "meta[copyright]",
-            "regexp": "Pars Elecom Portal"
+            "regexp": "Pars Elecom Portal",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "Pars Elecom Portal"
+            "regexp": "Pars Elecom Portal",
+            "search": "meta[copyright]"
         }
     ]
 }
