@@ -1,5 +1,4 @@
 {
-    "name": "Akamai",
     "website": "http://akamai.com",
     "matches": [
         {
@@ -8,11 +7,12 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-akamai-transformed]"
+            "search": "headers[x-edgeconnect-origin-mex-latency]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-edgeconnect-origin-mex-latency]"
+            "search": "headers[x-akamai-transformed]"
         }
-    ]
+    ],
+    "name": "Akamai"
 }

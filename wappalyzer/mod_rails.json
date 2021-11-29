@@ -1,5 +1,4 @@
 {
-    "name": "mod_rails",
     "website": "http://phusionpassenger.com",
     "implies": [
         "Ruby on Rails",
@@ -7,14 +6,15 @@
     ],
     "matches": [
         {
-            "offset": 1,
             "regexp": "mod_rails(?:/([\\d.]+))?",
-            "search": "headers[server]"
+            "search": "headers[x-powered-by]",
+            "offset": 1
         },
         {
-            "offset": 1,
             "regexp": "mod_rails(?:/([\\d.]+))?",
-            "search": "headers[x-powered-by]"
+            "search": "headers[server]",
+            "offset": 1
         }
-    ]
+    ],
+    "name": "mod_rails"
 }

@@ -1,23 +1,23 @@
 {
-    "name": "wpCache",
     "website": "https://wpcache.co",
     "implies": "PHP",
     "matches": [
         {
-            "regexp": "<!--[^>]+wpCache"
+            "regexp": "wpCache(?:/([\\d.]+))?",
+            "search": "headers[x-powered-by]",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "wpCache(?:/([\\d.]+))?",
-            "search": "headers[x-powered-by]"
+            "regexp": "wpCache",
+            "search": "meta[keywords]"
         },
         {
             "regexp": "wpCache",
             "search": "meta[generator]"
         },
         {
-            "regexp": "wpCache",
-            "search": "meta[keywords]"
+            "regexp": "<!--[^>]+wpCache"
         }
-    ]
+    ],
+    "name": "wpCache"
 }

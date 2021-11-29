@@ -1,14 +1,6 @@
 {
-    "name": "Methode",
     "website": "https://www.eidosmedia.com/",
     "matches": [
-        {
-            "regexp": "<!-- Methode uuid: \"[a-f\\d]+\" ?-->"
-        },
-        {
-            "regexp": ".*",
-            "search": "meta[eomportal-lastUpdate]"
-        },
         {
             "regexp": "[\\d.]+",
             "search": "meta[eomportal-loid]"
@@ -18,12 +10,20 @@
             "search": "meta[eomportal-id]"
         },
         {
+            "regexp": "[a-f\\d]+",
+            "search": "meta[eomportal-uuid]"
+        },
+        {
             "regexp": "\\d+",
             "search": "meta[eomportal-instanceid]"
         },
         {
-            "regexp": "[a-f\\d]+",
-            "search": "meta[eomportal-uuid]"
+            "regexp": ".*",
+            "search": "meta[eomportal-lastUpdate]"
+        },
+        {
+            "regexp": "<!-- Methode uuid: \"[a-f\\d]+\" ?-->"
         }
-    ]
+    ],
+    "name": "Methode"
 }

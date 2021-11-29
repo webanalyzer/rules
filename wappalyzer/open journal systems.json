@@ -1,5 +1,4 @@
 {
-    "name": "Open Journal Systems",
     "website": "http://pkp.sfu.ca/ojs",
     "implies": "PHP",
     "matches": [
@@ -8,9 +7,10 @@
             "search": "cookies[OJSSID]"
         },
         {
-            "offset": 1,
             "regexp": "Open Journal Systems(?: ([\\d.]+))?",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         }
-    ]
+    ],
+    "name": "Open Journal Systems"
 }

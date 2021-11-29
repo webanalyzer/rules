@@ -1,5 +1,4 @@
 {
-    "name": "Foswiki",
     "website": "http://foswiki.org",
     "implies": "Perl",
     "matches": [
@@ -10,9 +9,6 @@
         {
             "regexp": ".*",
             "search": "cookies[SFOSWIKISID]"
-        },
-        {
-            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
         },
         {
             "regexp": ".*",
@@ -29,6 +25,10 @@
         {
             "regexp": ".*",
             "search": "meta[foswiki.WIKINAME]"
+        },
+        {
+            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
         }
-    ]
+    ],
+    "name": "Foswiki"
 }

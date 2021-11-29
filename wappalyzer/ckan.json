@@ -1,5 +1,4 @@
 {
-    "name": "Ckan",
     "website": "http://ckan.org/",
     "implies": [
         "Python",
@@ -17,9 +16,10 @@
             "search": "headers[link]"
         },
         {
-            "offset": 1,
             "regexp": "^ckan ?([0-9.]+)$",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         }
-    ]
+    ],
+    "name": "Ckan"
 }
