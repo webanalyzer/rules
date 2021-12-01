@@ -1,6 +1,4 @@
 {
-    "name": "Ckan",
-    "website": "http://ckan.org/",
     "implies": [
         "Python",
         "Solr",
@@ -9,17 +7,19 @@
     ],
     "matches": [
         {
-            "search": "meta[generator]",
             "regexp": "^ckan ?([0-9.]+)$",
-            "offset": 1
+            "offset": 1,
+            "search": "meta[generator]"
         },
         {
-            "search": "headers[access-control-allow-headers]",
-            "regexp": "X-CKAN-API-KEY"
+            "regexp": "X-CKAN-API-KEY",
+            "search": "headers[access-control-allow-headers]"
         },
         {
-            "search": "headers[link]",
-            "regexp": "<http://ckan\\.org/>; rel=shortlink"
+            "regexp": "<http://ckan\\.org/>; rel=shortlink",
+            "search": "headers[link]"
         }
-    ]
+    ],
+    "website": "http://ckan.org/",
+    "name": "Ckan"
 }

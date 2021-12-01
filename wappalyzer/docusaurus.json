@@ -1,15 +1,15 @@
 {
-    "name": "Docusaurus",
-    "website": "https://docusaurus.io/",
     "implies": [
         "React",
         "webpack"
     ],
     "matches": [
         {
-            "search": "meta[generator]",
             "regexp": "^Docusaurus(?: v(.+))?$",
-            "offset": 1
+            "offset": 1,
+            "search": "meta[generator]"
         }
-    ]
+    ],
+    "website": "https://docusaurus.io/",
+    "name": "Docusaurus"
 }
