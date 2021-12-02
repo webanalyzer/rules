@@ -1,18 +1,16 @@
 {
-    "implies": [
-        "PHP",
-        "Elasticsearch"
-    ],
+    "website": "https://elasticsuite.io",
+    "name": "ElasticSuite",
     "matches": [
         {
-            "certainty": 50,
             "regexp": ".*",
-            "search": "cookies[STUID]"
+            "search": "cookies[STVID]",
+            "certainty": 50
         },
         {
-            "certainty": 50,
             "regexp": ".*",
-            "search": "cookies[STVID]"
+            "search": "cookies[STUID]",
+            "certainty": 50
         },
         {
             "regexp": "<input [^>]*Smile_Elasticsuite[^>]*>"
@@ -21,6 +19,8 @@
             "regexp": "<[\\S\\s.*]*Smile_Elasticsuite[\\S\\s.*]*>"
         }
     ],
-    "website": "https://elasticsuite.io",
-    "name": "ElasticSuite"
+    "implies": [
+        "PHP",
+        "Elasticsearch"
+    ]
 }

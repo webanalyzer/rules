@@ -1,8 +1,10 @@
 {
+    "website": "https://www.fastly.com",
+    "name": "Fastly",
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-fastly-origin]"
+            "search": "headers[x-fastly-request-id]"
         },
         {
             "regexp": ".*",
@@ -18,9 +20,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-fastly-request-id]"
+            "search": "headers[x-fastly-origin]"
         }
-    ],
-    "website": "https://www.fastly.com",
-    "name": "Fastly"
+    ]
 }

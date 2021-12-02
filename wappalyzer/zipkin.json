@@ -1,16 +1,14 @@
 {
+    "website": "https://zipkin.io/",
+    "name": "Zipkin",
     "matches": [
         {
             "regexp": ".*",
+            "search": "headers[x-b3-sampled]"
+        },
+        {
+            "regexp": ".*",
             "search": "headers[x-b3-flags]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-b3-parentspanid]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-b3-spanid]"
         },
         {
             "regexp": ".*",
@@ -18,9 +16,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-b3-sampled]"
+            "search": "headers[x-b3-spanid]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-b3-parentspanid]"
         }
-    ],
-    "website": "https://zipkin.io/",
-    "name": "Zipkin"
+    ]
 }
