@@ -1,16 +1,16 @@
 {
-    "website": "http://kohanaframework.org",
-    "name": "Kohana",
+    "implies": "PHP",
     "matches": [
         {
-            "regexp": "Kohana Framework ([\\d.]+)",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "cookies[kohanasession]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[kohanasession]"
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "Kohana Framework ([\\d.]+)"
         }
     ],
-    "implies": "PHP"
+    "website": "http://kohanaframework.org",
+    "name": "Kohana"
 }
