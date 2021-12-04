@@ -1,14 +1,14 @@
 {
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "^Netlify"
+            "regexp": ".*",
+            "search": "headers[x-nf-request-id]"
         },
         {
-            "search": "headers[x-nf-request-id]",
-            "regexp": ".*"
+            "regexp": "^Netlify",
+            "search": "headers[server]"
         }
     ],
-    "website": "https://www.netlify.com/",
-    "name": "Netlify"
+    "name": "Netlify",
+    "website": "https://www.netlify.com/"
 }

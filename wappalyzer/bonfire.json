@@ -2,14 +2,14 @@
     "implies": "CodeIgniter",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "Powered by <a[^>]+href=\"https?://(?:www\\.)?cibonfire\\.com[^>]*>Bonfire v([^<]+)"
+            "regexp": ".*",
+            "search": "cookies[bf_session]"
         },
         {
-            "search": "cookies[bf_session]",
-            "regexp": ".*"
+            "regexp": "Powered by <a[^>]+href=\"https?://(?:www\\.)?cibonfire\\.com[^>]*>Bonfire v([^<]+)",
+            "offset": 1
         }
     ],
-    "website": "http://cibonfire.com",
-    "name": "Bonfire"
+    "name": "Bonfire",
+    "website": "http://cibonfire.com"
 }

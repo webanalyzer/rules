@@ -5,16 +5,16 @@
     ],
     "matches": [
         {
+            "regexp": "mod_rack(?:/([\\d.]+))?",
             "offset": 1,
-            "search": "headers[server]",
-            "regexp": "mod_rack(?:/([\\d.]+))?"
+            "search": "headers[x-powered-by]"
         },
         {
+            "regexp": "mod_rack(?:/([\\d.]+))?",
             "offset": 1,
-            "search": "headers[x-powered-by]",
-            "regexp": "mod_rack(?:/([\\d.]+))?"
+            "search": "headers[server]"
         }
     ],
-    "website": "http://phusionpassenger.com",
-    "name": "mod_rack"
+    "name": "mod_rack",
+    "website": "http://phusionpassenger.com"
 }
