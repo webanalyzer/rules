@@ -1,9 +1,7 @@
 {
+    "website": "http://gogs.io",
+    "name": "Gogs",
     "matches": [
-        {
-            "regexp": ".*",
-            "search": "cookies[i_like_gogits]"
-        },
         {
             "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 \\d{4} Gogs Version: ([\\d.]+) Page:",
             "offset": 1
@@ -14,8 +12,10 @@
         {
             "regexp": "go, git, self-hosted, gogs",
             "search": "meta[keywords]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[i_like_gogits]"
         }
-    ],
-    "name": "Gogs",
-    "website": "http://gogs.io"
+    ]
 }

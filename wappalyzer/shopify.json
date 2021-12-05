@@ -1,14 +1,14 @@
 {
+    "website": "http://shopify.com",
+    "name": "Shopify",
     "matches": [
         {
             "regexp": ".*",
-            "certainty": 50,
-            "search": "headers[x-shopify-stage]"
+            "search": "meta[shopify-checkout-api-token]"
         },
         {
             "regexp": ".*",
-            "certainty": 50,
-            "search": "headers[x-shopid]"
+            "search": "meta[shopify-digital-wallet]"
         },
         {
             "regexp": ".*",
@@ -20,13 +20,13 @@
         },
         {
             "regexp": ".*",
-            "search": "meta[shopify-digital-wallet]"
+            "certainty": 50,
+            "search": "headers[x-shopid]"
         },
         {
             "regexp": ".*",
-            "search": "meta[shopify-checkout-api-token]"
+            "certainty": 50,
+            "search": "headers[x-shopify-stage]"
         }
-    ],
-    "name": "Shopify",
-    "website": "http://shopify.com"
+    ]
 }

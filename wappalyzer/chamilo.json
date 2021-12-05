@@ -1,5 +1,6 @@
 {
-    "implies": "PHP",
+    "website": "http://www.chamilo.org",
+    "name": "Chamilo",
     "matches": [
         {
             "regexp": "\">Chamilo ([\\d.]+)</a>",
@@ -8,14 +9,13 @@
         {
             "regexp": "Chamilo ([\\d.]+)",
             "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "meta[generator]"
         },
         {
             "regexp": "Chamilo ([\\d.]+)",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "headers[x-powered-by]"
         }
     ],
-    "name": "Chamilo",
-    "website": "http://www.chamilo.org"
+    "implies": "PHP"
 }
