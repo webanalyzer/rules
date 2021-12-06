@@ -9,13 +9,13 @@
             "regexp": "<a[^>]+href=\"#dokuwiki__"
         },
         {
-            "regexp": "^DokuWiki( Release [\\d-]+)?",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "^DokuWiki( Release [\\d-]+)?"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[DokuWiki]"
+            "search": "cookies[DokuWiki]",
+            "regexp": ".*"
         }
     ],
     "implies": "PHP"

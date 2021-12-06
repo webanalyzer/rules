@@ -6,21 +6,21 @@
             "regexp": "<input[^>]+name=\"__VIEWSTATE"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ASP.NET_SessionId]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[ASPSESSION]"
-        },
-        {
-            "regexp": "^ASP\\.NET",
-            "search": "headers[x-powered-by]"
-        },
-        {
-            "regexp": "(.+)",
             "offset": 1,
-            "search": "headers[x-aspnet-version]"
+            "search": "headers[x-aspnet-version]",
+            "regexp": "(.+)"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^ASP\\.NET"
+        },
+        {
+            "search": "cookies[ASP.NET_SessionId]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[ASPSESSION]",
+            "regexp": ".*"
         }
     ],
     "implies": "IIS"

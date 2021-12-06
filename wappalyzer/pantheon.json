@@ -3,16 +3,16 @@
     "name": "Pantheon",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-pantheon-styx-hostname]"
+            "search": "headers[server]",
+            "regexp": "^Pantheon"
         },
         {
-            "regexp": "^Pantheon",
-            "search": "headers[server]"
+            "search": "headers[x-pantheon-styx-hostname]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-styx-req-id]"
+            "search": "headers[x-styx-req-id]",
+            "regexp": ".*"
         }
     ],
     "implies": [

@@ -9,14 +9,14 @@
             "regexp": "Powered by <a href=\"[^>]+php-fusion"
         },
         {
-            "regexp": "PHPFusion (.+)$",
             "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-phpfusion]",
+            "regexp": "(.+)$"
         },
         {
-            "regexp": "(.+)$",
             "offset": 1,
-            "search": "headers[x-phpfusion]"
+            "search": "headers[x-powered-by]",
+            "regexp": "PHPFusion (.+)$"
         }
     ],
     "implies": [

@@ -3,13 +3,13 @@
     "name": "Roadiz CMS",
     "matches": [
         {
-            "regexp": "^Roadiz ?(?:master|develop)? v?([0-9\\.]+)",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "^Roadiz ?(?:master|develop)? v?([0-9\\.]+)"
         },
         {
-            "regexp": "Roadiz CMS",
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-powered-by]",
+            "regexp": "Roadiz CMS"
         }
     ],
     "implies": [

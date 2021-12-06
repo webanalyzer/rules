@@ -3,18 +3,18 @@
     "name": "Chamilo",
     "matches": [
         {
-            "regexp": "\">Chamilo ([\\d.]+)</a>",
-            "offset": 1
+            "offset": 1,
+            "regexp": "\">Chamilo ([\\d.]+)</a>"
         },
         {
-            "regexp": "Chamilo ([\\d.]+)",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "headers[x-powered-by]",
+            "regexp": "Chamilo ([\\d.]+)"
         },
         {
-            "regexp": "Chamilo ([\\d.]+)",
             "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "meta[generator]",
+            "regexp": "Chamilo ([\\d.]+)"
         }
     ],
     "implies": "PHP"

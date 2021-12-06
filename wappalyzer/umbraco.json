@@ -6,13 +6,13 @@
             "regexp": "powered by <a href=[^>]+umbraco"
         },
         {
-            "regexp": "umbraco",
-            "search": "meta[generator]"
+            "offset": 1,
+            "search": "headers[x-umbraco-version]",
+            "regexp": "^(.+)$"
         },
         {
-            "regexp": "^(.+)$",
-            "offset": 1,
-            "search": "headers[x-umbraco-version]"
+            "search": "meta[generator]",
+            "regexp": "umbraco"
         }
     ],
     "implies": "Microsoft ASP.NET"

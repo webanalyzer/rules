@@ -3,13 +3,13 @@
     "name": "WebGUI",
     "matches": [
         {
-            "regexp": "^WebGUI ([\\d.]+)",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "^WebGUI ([\\d.]+)"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[wgSession]"
+            "search": "cookies[wgSession]",
+            "regexp": ".*"
         }
     ],
     "implies": "Perl"

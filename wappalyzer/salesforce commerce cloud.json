@@ -3,16 +3,16 @@
     "name": "Salesforce Commerce Cloud",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[dw_dnt]"
+            "search": "headers[server]",
+            "regexp": "Demandware eCommerce Server"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[dwsid]"
+            "search": "cookies[dwsid]",
+            "regexp": ".*"
         },
         {
-            "regexp": "Demandware eCommerce Server",
-            "search": "headers[server]"
+            "search": "cookies[dw_dnt]",
+            "regexp": ".*"
         }
     ],
     "implies": "Salesforce"

@@ -3,12 +3,12 @@
     "name": "Azure CDN",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-ec-debug]"
+            "search": "headers[x-ec-debug]",
+            "regexp": ".*"
         },
         {
-            "regexp": "^(?:ECAcc|ECS|ECD)",
-            "search": "headers[server]"
+            "search": "headers[server]",
+            "regexp": "^(?:ECAcc|ECS|ECD)"
         }
     ],
     "implies": "Azure"
