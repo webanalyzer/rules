@@ -1,21 +1,11 @@
 {
-    "website": "https://www.shopware.com",
-    "name": "Shopware",
     "matches": [
         {
             "offset": 1,
             "regexp": "<title>Shopware ([\\d\\.]+) [^<]+"
         },
         {
-            "search": "headers[sw-language-id]",
-            "regexp": "^[a-fA-F0-9]{32}$"
-        },
-        {
             "search": "headers[sw-invalidation-states]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[sw-version-id]",
             "regexp": ".*"
         },
         {
@@ -23,10 +13,20 @@
             "regexp": "^[\\w]{32}$"
         },
         {
+            "search": "headers[sw-language-id]",
+            "regexp": "^[a-fA-F0-9]{32}$"
+        },
+        {
+            "search": "headers[sw-version-id]",
+            "regexp": ".*"
+        },
+        {
             "search": "meta[application-name]",
             "regexp": "Shopware"
         }
     ],
+    "name": "Shopware",
+    "website": "https://www.shopware.com",
     "implies": [
         "PHP",
         "MySQL",

@@ -1,6 +1,4 @@
 {
-    "website": "https://www.joomla.org",
-    "name": "Joomla",
     "matches": [
         {
             "certainty": 50,
@@ -8,14 +6,16 @@
         },
         {
             "offset": 1,
-            "search": "headers[x-content-encoded-by]",
-            "regexp": "Joomla! ([\\d.]+)"
+            "search": "meta[generator]",
+            "regexp": "Joomla!(?: ([\\d.]+))?"
         },
         {
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Joomla!(?: ([\\d.]+))?"
+            "search": "headers[x-content-encoded-by]",
+            "regexp": "Joomla! ([\\d.]+)"
         }
     ],
+    "name": "Joomla",
+    "website": "https://www.joomla.org",
     "implies": "PHP"
 }
