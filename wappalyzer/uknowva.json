@@ -1,20 +1,20 @@
 {
     "implies": "PHP",
+    "name": "uKnowva",
     "website": "https://uknowva.com",
     "matches": [
         {
+            "offset": 1,
             "regexp": "uKnowva ([\\d.]+)",
-            "search": "headers[x-content-encoded-by]",
-            "offset": 1
+            "search": "headers[x-content-encoded-by]"
         },
         {
             "regexp": "<a[^>]+>Powered by uKnowva</a>"
         },
         {
+            "offset": 1,
             "regexp": "uKnowva (?: ([\\d.]+))?",
-            "search": "meta[generator]",
-            "offset": 1
+            "search": "meta[generator]"
         }
-    ],
-    "name": "uKnowva"
+    ]
 }

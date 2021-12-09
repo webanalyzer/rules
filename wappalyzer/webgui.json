@@ -1,16 +1,16 @@
 {
     "implies": "Perl",
+    "name": "WebGUI",
     "website": "http://www.webgui.org",
     "matches": [
         {
-            "regexp": "^WebGUI ([\\d.]+)",
-            "search": "meta[generator]",
-            "offset": 1
-        },
-        {
             "regexp": ".*",
             "search": "cookies[wgSession]"
+        },
+        {
+            "offset": 1,
+            "regexp": "^WebGUI ([\\d.]+)",
+            "search": "meta[generator]"
         }
-    ],
-    "name": "WebGUI"
+    ]
 }

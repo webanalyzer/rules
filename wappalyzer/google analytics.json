@@ -1,4 +1,5 @@
 {
+    "name": "Google Analytics",
     "website": "http://google.com/analytics",
     "matches": [
         {
@@ -7,15 +8,14 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[_gat]"
+            "search": "cookies[__utma]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[__utma]"
+            "search": "cookies[_gat]"
         },
         {
             "regexp": "<amp-analytics [^>]*type=[\"']googleanalytics[\"']"
         }
-    ],
-    "name": "Google Analytics"
+    ]
 }

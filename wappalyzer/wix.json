@@ -1,10 +1,15 @@
 {
     "implies": "React",
+    "name": "Wix",
     "website": "https://www.wix.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-wix-request-id]"
+            "regexp": "\\.wix\\.com",
+            "search": "cookies[Domain]"
+        },
+        {
+            "regexp": "Wix\\.com Website Builder",
+            "search": "meta[generator]"
         },
         {
             "regexp": ".*",
@@ -15,13 +20,8 @@
             "search": "headers[x-wix-renderer-server]"
         },
         {
-            "regexp": "\\.wix\\.com",
-            "search": "cookies[Domain]"
-        },
-        {
-            "regexp": "Wix\\.com Website Builder",
-            "search": "meta[generator]"
+            "regexp": ".*",
+            "search": "headers[x-wix-request-id]"
         }
-    ],
-    "name": "Wix"
+    ]
 }
