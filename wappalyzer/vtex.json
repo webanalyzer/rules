@@ -3,11 +3,15 @@
     "name": "VTEX",
     "matches": [
         {
-            "search": "cookies[VtexWorkspace]",
-            "regexp": ".*"
+            "search": "headers[powered]",
+            "regexp": "vtex"
         },
         {
-            "search": "cookies[VtexFingerPrint]",
+            "search": "headers[server]",
+            "regexp": "^VTEX IO$"
+        },
+        {
+            "search": "cookies[VtexStoreVersion]",
             "regexp": ".*"
         },
         {
@@ -15,16 +19,12 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[VtexStoreVersion]",
+            "search": "cookies[VtexWorkspace]",
             "regexp": ".*"
         },
         {
-            "search": "headers[powered]",
-            "regexp": "vtex"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "^VTEX IO$"
+            "search": "cookies[VtexFingerPrint]",
+            "regexp": ".*"
         }
     ]
 }

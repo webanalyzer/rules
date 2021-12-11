@@ -3,6 +3,10 @@
     "name": "Fastly",
     "matches": [
         {
+            "search": "headers[fastly-debug-digest]",
+            "regexp": ".*"
+        },
+        {
             "search": "headers[vary]",
             "regexp": "Fastly-SSL"
         },
@@ -11,15 +15,11 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-fastly-origin]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[fastly-debug-digest]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[x-fastly-request-id]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-fastly-origin]",
             "regexp": ".*"
         }
     ]

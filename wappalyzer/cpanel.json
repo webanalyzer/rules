@@ -6,17 +6,17 @@
             "regexp": "<!-- cPanel"
         },
         {
+            "offset": 1,
+            "search": "headers[server]",
+            "regexp": "cpsrvd/([\\d.]+)"
+        },
+        {
             "search": "cookies[cpsession]",
             "regexp": ".*"
         },
         {
             "search": "cookies[cprelogin]",
             "regexp": ".*"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "cpsrvd/([\\d.]+)",
-            "offset": 1
         }
     ]
 }

@@ -1,15 +1,15 @@
 {
-    "implies": [
-        "Perl",
-        "Apache"
-    ],
     "website": "http://perl.apache.org",
     "name": "mod_perl",
     "matches": [
         {
+            "offset": 1,
             "search": "headers[server]",
-            "regexp": "mod_perl(?:/([\\d\\.]+))?",
-            "offset": 1
+            "regexp": "mod_perl(?:/([\\d\\.]+))?"
         }
+    ],
+    "implies": [
+        "Perl",
+        "Apache"
     ]
 }

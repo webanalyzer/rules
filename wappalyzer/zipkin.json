@@ -3,11 +3,11 @@
     "name": "Zipkin",
     "matches": [
         {
-            "search": "headers[x-b3-sampled]",
+            "search": "headers[x-b3-traceid]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-b3-traceid]",
+            "search": "headers[x-b3-sampled]",
             "regexp": ".*"
         },
         {
@@ -15,11 +15,11 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-b3-parentspanid]",
+            "search": "headers[x-b3-flags]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-b3-flags]",
+            "search": "headers[x-b3-parentspanid]",
             "regexp": ".*"
         }
     ]

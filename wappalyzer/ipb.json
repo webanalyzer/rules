@@ -1,8 +1,4 @@
 {
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
     "website": "https://invisioncommunity.com/",
     "name": "IPB",
     "matches": [
@@ -10,12 +6,16 @@
             "regexp": "<link[^>]+ipb_[^>]+\\.css"
         },
         {
-            "search": "cookies[ipbWWLmodpids]",
+            "search": "cookies[ipbWWLsession_id]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[ipbWWLsession_id]",
+            "search": "cookies[ipbWWLmodpids]",
             "regexp": ".*"
         }
+    ],
+    "implies": [
+        "PHP",
+        "MySQL"
     ]
 }

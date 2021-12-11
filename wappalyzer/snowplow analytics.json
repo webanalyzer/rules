@@ -3,13 +3,13 @@
     "name": "Snowplow Analytics",
     "matches": [
         {
-            "search": "cookies[_sp_id]",
+            "certainty": 50,
+            "search": "cookies[sp]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[sp]",
-            "regexp": ".*",
-            "certainty": 50
+            "search": "cookies[_sp_id]",
+            "regexp": ".*"
         }
     ]
 }
