@@ -1,14 +1,11 @@
 {
-    "website": "https://www.vbulletin.com",
     "name": "vBulletin",
+    "implies": "PHP",
+    "website": "https://www.vbulletin.com",
     "matches": [
         {
-            "regexp": "<div id=\"copyright\">Powered by vBulletin"
-        },
-        {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "vBulletin ?([\\d.]+)?"
+            "search": "cookies[bblastactivity]",
+            "regexp": ".*"
         },
         {
             "search": "cookies[bblastvisit]",
@@ -19,9 +16,12 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[bblastactivity]",
-            "regexp": ".*"
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "vBulletin ?([\\d.]+)?"
+        },
+        {
+            "regexp": "<div id=\"copyright\">Powered by vBulletin"
         }
-    ],
-    "implies": "PHP"
+    ]
 }

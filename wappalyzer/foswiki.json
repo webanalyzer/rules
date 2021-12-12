@@ -1,9 +1,15 @@
 {
-    "website": "http://foswiki.org",
     "name": "Foswiki",
+    "implies": "Perl",
+    "website": "http://foswiki.org",
     "matches": [
         {
-            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
+            "search": "cookies[FOSWIKISTRIKEONE]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[SFOSWIKISID]",
+            "regexp": ".*"
         },
         {
             "search": "meta[foswiki.SERVERTIME]",
@@ -14,21 +20,15 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-foswikiaction]",
-            "regexp": ".*"
+            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
         },
         {
             "search": "headers[x-foswikiuri]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[SFOSWIKISID]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[FOSWIKISTRIKEONE]",
+            "search": "headers[x-foswikiaction]",
             "regexp": ".*"
         }
-    ],
-    "implies": "Perl"
+    ]
 }
