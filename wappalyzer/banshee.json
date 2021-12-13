@@ -1,15 +1,15 @@
 {
-    "name": "Banshee",
-    "implies": "PHP",
     "website": "http://www.banshee-php.org",
+    "implies": "PHP",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Banshee PHP"
+            "regexp": "Banshee PHP",
+            "search": "meta[generator]"
         },
         {
-            "offset": 1,
-            "regexp": "Built upon the <a href=\"[^>]+banshee-php\\.org/\">[a-z]+</a>(?:v([\\d.]+))?"
+            "regexp": "Built upon the <a href=\"[^>]+banshee-php\\.org/\">[a-z]+</a>(?:v([\\d.]+))?",
+            "offset": 1
         }
-    ]
+    ],
+    "name": "Banshee"
 }

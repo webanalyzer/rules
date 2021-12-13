@@ -1,12 +1,12 @@
 {
-    "name": "Sulu",
-    "implies": "Symfony",
     "website": "http://sulu.io",
+    "implies": "Symfony",
     "matches": [
         {
-            "offset": 1,
+            "regexp": "Sulu/?(.+)?$",
             "search": "headers[x-generator]",
-            "regexp": "Sulu/?(.+)?$"
+            "offset": 1
         }
-    ]
+    ],
+    "name": "Sulu"
 }

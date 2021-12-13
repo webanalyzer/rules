@@ -1,13 +1,13 @@
 {
-    "name": "Contentful",
     "website": "http://www.contentful.com",
     "matches": [
         {
             "regexp": "<[^>]+(?:https?:)?//(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)"
         },
         {
-            "search": "headers[x-contentful-request-id]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-contentful-request-id]"
         }
-    ]
+    ],
+    "name": "Contentful"
 }

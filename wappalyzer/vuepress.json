@@ -1,12 +1,12 @@
 {
-    "name": "VuePress",
-    "implies": "Vue.js",
     "website": "https://vuepress.vuejs.org/",
+    "implies": "Vue.js",
     "matches": [
         {
-            "offset": 1,
+            "regexp": "^VuePress(?: ([0-9.]+)(-[a-z]+.[0-9]+)?)?$",
             "search": "meta[generator]",
-            "regexp": "^VuePress(?: ([0-9.]+)(-[a-z]+.[0-9]+)?)?$"
+            "offset": 1
         }
-    ]
+    ],
+    "name": "VuePress"
 }
