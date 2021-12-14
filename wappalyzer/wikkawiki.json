@@ -1,13 +1,13 @@
 {
     "website": "http://wikkawiki.org",
+    "name": "WikkaWiki",
     "matches": [
         {
-            "regexp": "WikkaWiki",
-            "search": "meta[generator]"
+            "regexp": "Powered by <a href=\"[^>]+WikkaWiki"
         },
         {
-            "regexp": "Powered by <a href=\"[^>]+WikkaWiki"
+            "search": "meta[generator]",
+            "regexp": "WikkaWiki"
         }
-    ],
-    "name": "WikkaWiki"
+    ]
 }
