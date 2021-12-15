@@ -3,15 +3,15 @@
     "name": "Stripe",
     "matches": [
         {
+            "regexp": "<input[^>]+data-stripe"
+        },
+        {
             "search": "cookies[__stripe_mid]",
             "regexp": ".*"
         },
         {
             "search": "cookies[__stripe_sid]",
             "regexp": ".*"
-        },
-        {
-            "regexp": "<input[^>]+data-stripe"
         }
     ]
 }

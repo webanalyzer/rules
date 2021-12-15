@@ -3,6 +3,9 @@
     "name": "cPanel",
     "matches": [
         {
+            "regexp": "<!-- cPanel"
+        },
+        {
             "search": "cookies[cpsession]",
             "regexp": ".*"
         },
@@ -11,12 +14,9 @@
             "regexp": ".*"
         },
         {
-            "regexp": "<!-- cPanel"
-        },
-        {
+            "offset": 1,
             "search": "headers[server]",
-            "regexp": "cpsrvd/([\\d.]+)",
-            "offset": 1
+            "regexp": "cpsrvd/([\\d.]+)"
         }
     ]
 }

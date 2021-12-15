@@ -3,6 +3,18 @@
     "name": "VTEX",
     "matches": [
         {
+            "search": "headers[server]",
+            "regexp": "^VTEX IO$"
+        },
+        {
+            "search": "headers[powered]",
+            "regexp": "vtex"
+        },
+        {
+            "search": "cookies[vtex_session]",
+            "regexp": ".*"
+        },
+        {
             "search": "cookies[VtexStoreVersion]",
             "regexp": ".*"
         },
@@ -13,18 +25,6 @@
         {
             "search": "cookies[VtexWorkspace]",
             "regexp": ".*"
-        },
-        {
-            "search": "cookies[vtex_session]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "^VTEX IO$"
-        },
-        {
-            "search": "headers[powered]",
-            "regexp": "vtex"
         }
     ]
 }

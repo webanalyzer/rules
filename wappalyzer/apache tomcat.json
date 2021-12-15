@@ -1,4 +1,5 @@
 {
+    "implies": "Java",
     "website": "http://tomcat.apache.org",
     "name": "Apache Tomcat",
     "matches": [
@@ -7,10 +8,9 @@
             "regexp": "^Apache-Coyote"
         },
         {
+            "offset": 1,
             "search": "headers[x-powered-by]",
-            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?",
-            "offset": 1
+            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?"
         }
-    ],
-    "implies": "Java"
+    ]
 }
