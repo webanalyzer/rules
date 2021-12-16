@@ -1,11 +1,8 @@
 {
-    "implies": "Microsoft ASP.NET",
-    "website": "http://dnnsoftware.com",
-    "name": "DNN",
     "matches": [
         {
-            "search": "cookies[DotNetNukeAnonymous]",
-            "regexp": ".*"
+            "search": "headers[x-compressed-by]",
+            "regexp": "DotNetNuke"
         },
         {
             "search": "headers[cookie]",
@@ -16,7 +13,7 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-compressed-by]",
+            "search": "meta[generator]",
             "regexp": "DotNetNuke"
         },
         {
@@ -26,8 +23,11 @@
             "regexp": "<!-- DNN Platform"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "DotNetNuke"
+            "search": "cookies[DotNetNukeAnonymous]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "implies": "Microsoft ASP.NET",
+    "website": "http://dnnsoftware.com",
+    "name": "DNN"
 }
