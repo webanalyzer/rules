@@ -1,11 +1,7 @@
 {
     "matches": [
         {
-            "search": "headers[x-b3-sampled]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-b3-traceid]",
+            "search": "headers[x-b3-parentspanid]",
             "regexp": ".*"
         },
         {
@@ -13,14 +9,18 @@
             "regexp": ".*"
         },
         {
+            "search": "headers[x-b3-traceid]",
+            "regexp": ".*"
+        },
+        {
             "search": "headers[x-b3-spanid]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-b3-parentspanid]",
+            "search": "headers[x-b3-sampled]",
             "regexp": ".*"
         }
     ],
-    "website": "https://zipkin.io/",
-    "name": "Zipkin"
+    "name": "Zipkin",
+    "website": "https://zipkin.io/"
 }

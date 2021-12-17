@@ -5,14 +5,14 @@
             "regexp": ".*"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "^nopCommerce$"
+            "regexp": "(?:<!--Powered by nopCommerce|Powered by: <a[^>]+nopcommerce)"
         },
         {
-            "regexp": "(?:<!--Powered by nopCommerce|Powered by: <a[^>]+nopcommerce)"
+            "search": "meta[generator]",
+            "regexp": "^nopCommerce$"
         }
     ],
-    "implies": "Microsoft ASP.NET",
+    "name": "nopCommerce",
     "website": "http://www.nopcommerce.com",
-    "name": "nopCommerce"
+    "implies": "Microsoft ASP.NET"
 }
