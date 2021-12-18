@@ -1,11 +1,12 @@
 {
+    "implies": "IIS",
     "matches": [
         {
-            "search": "cookies[ASP.NET_SessionId]",
+            "search": "cookies[ASPSESSION]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[ASPSESSION]",
+            "search": "cookies[ASP.NET_SessionId]",
             "regexp": ".*"
         },
         {
@@ -22,6 +23,5 @@
         }
     ],
     "name": "Microsoft ASP.NET",
-    "website": "https://www.asp.net",
-    "implies": "IIS"
+    "website": "https://www.asp.net"
 }
