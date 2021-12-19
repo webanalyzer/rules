@@ -1,4 +1,6 @@
 {
+    "name": "Joomla",
+    "website": "https://www.joomla.org",
     "implies": "PHP",
     "matches": [
         {
@@ -12,10 +14,8 @@
             "offset": 1
         },
         {
-            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)",
-            "certainty": 50
+            "certainty": 50,
+            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
         }
-    ],
-    "name": "Joomla",
-    "website": "https://www.joomla.org"
+    ]
 }

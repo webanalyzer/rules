@@ -1,4 +1,6 @@
 {
+    "name": "iEXExchanger",
+    "website": "https://exchanger.iexbase.com",
     "implies": [
         "PHP",
         "Apache",
@@ -6,14 +8,12 @@
     ],
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "iEXExchanger"
-        },
-        {
             "search": "cookies[iexexchanger_session]",
             "regexp": ".*"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "iEXExchanger"
         }
-    ],
-    "name": "iEXExchanger",
-    "website": "https://exchanger.iexbase.com"
+    ]
 }
