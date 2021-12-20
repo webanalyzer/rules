@@ -3,13 +3,13 @@
     "website": "http://splunk.com",
     "matches": [
         {
-            "certainty": 50,
-            "search": "meta[author]",
-            "regexp": "Splunk Inc"
-        },
-        {
             "regexp": "<p class=\"footer\">&copy; [-\\d]+ Splunk Inc\\.(?: Splunk ([\\d\\.]+(?: build [\\d\\.]*\\d)?))?[^<]*</p>",
             "offset": 1
+        },
+        {
+            "certainty": 50,
+            "regexp": "Splunk Inc",
+            "search": "meta[author]"
         }
     ]
 }

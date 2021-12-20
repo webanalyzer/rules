@@ -4,18 +4,18 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "headers[x-content-encoded-by]",
-            "regexp": "Joomla! ([\\d.]+)",
-            "offset": 1
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "Joomla!(?: ([\\d.]+))?",
-            "offset": 1
-        },
-        {
             "certainty": 50,
             "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
+        },
+        {
+            "offset": 1,
+            "regexp": "Joomla! ([\\d.]+)",
+            "search": "headers[x-content-encoded-by]"
+        },
+        {
+            "offset": 1,
+            "regexp": "Joomla!(?: ([\\d.]+))?",
+            "search": "meta[generator]"
         }
     ]
 }

@@ -7,14 +7,14 @@
     ],
     "matches": [
         {
-            "search": "headers[x-powered-by]",
+            "offset": 1,
             "regexp": "mod_wsgi(?:/([\\d.]+))?",
-            "offset": 1
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
+            "offset": 1,
             "regexp": "mod_wsgi(?:/([\\d.]+))?",
-            "offset": 1
+            "search": "headers[x-powered-by]"
         }
     ]
 }

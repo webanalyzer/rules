@@ -4,20 +4,20 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "wpCache"
+            "offset": 1,
+            "regexp": "wpCache(?:/([\\d.]+))?",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "meta[keywords]",
-            "regexp": "wpCache"
+            "regexp": "wpCache",
+            "search": "meta[keywords]"
+        },
+        {
+            "regexp": "wpCache",
+            "search": "meta[generator]"
         },
         {
             "regexp": "<!--[^>]+wpCache"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "wpCache(?:/([\\d.]+))?",
-            "offset": 1
         }
     ]
 }

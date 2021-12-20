@@ -9,15 +9,15 @@
     ],
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Dokeos"
+            "regexp": "Dokeos",
+            "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": "Dokeos",
+            "search": "meta[generator]"
         },
         {
             "regexp": "(?:Portal <a[^>]+>Dokeos|@import \"[^\"]+dokeos_blue)"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "Dokeos"
         }
     ]
 }

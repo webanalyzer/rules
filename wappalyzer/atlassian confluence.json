@@ -4,12 +4,12 @@
     "implies": "Java",
     "matches": [
         {
-            "search": "meta[confluence-request-time]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-confluence-request-time]"
         },
         {
-            "search": "headers[x-confluence-request-time]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "meta[confluence-request-time]"
         }
     ]
 }
