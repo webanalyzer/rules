@@ -1,7 +1,7 @@
 {
-    "name": "Foswiki",
     "website": "http://foswiki.org",
     "implies": "Perl",
+    "name": "Foswiki",
     "matches": [
         {
             "regexp": ".*",
@@ -12,15 +12,15 @@
             "search": "headers[x-foswikiuri]"
         },
         {
+            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
+        },
+        {
             "regexp": ".*",
             "search": "meta[foswiki.WIKINAME]"
         },
         {
             "regexp": ".*",
             "search": "meta[foswiki.SERVERTIME]"
-        },
-        {
-            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
         },
         {
             "regexp": ".*",
