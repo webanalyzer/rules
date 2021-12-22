@@ -1,15 +1,15 @@
 {
-    "website": "https://www.vbulletin.com",
     "implies": "PHP",
     "name": "vBulletin",
+    "website": "https://www.vbulletin.com",
     "matches": [
-        {
-            "regexp": "<div id=\"copyright\">Powered by vBulletin"
-        },
         {
             "regexp": "vBulletin ?([\\d.]+)?",
             "offset": 1,
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "<div id=\"copyright\">Powered by vBulletin"
         },
         {
             "regexp": ".*",

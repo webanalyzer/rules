@@ -1,8 +1,13 @@
 {
-    "website": "http://www.bugzilla.org",
     "implies": "Perl",
     "name": "Bugzilla",
+    "website": "http://www.bugzilla.org",
     "matches": [
+        {
+            "regexp": "Bugzilla ?([\\d.]+)?",
+            "offset": 1,
+            "search": "meta[generator]"
+        },
         {
             "regexp": "href=\"enter_bug\\.cgi\">"
         },
@@ -16,11 +21,6 @@
         {
             "regexp": "<span id=\"information\" class=\"header_addl_info\">version ([\\d.]+)<",
             "offset": 1
-        },
-        {
-            "regexp": "Bugzilla ?([\\d.]+)?",
-            "offset": 1,
-            "search": "meta[generator]"
         },
         {
             "regexp": ".*",
