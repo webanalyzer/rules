@@ -1,7 +1,5 @@
 {
     "implies": "Perl",
-    "name": "Foswiki",
-    "website": "http://foswiki.org",
     "matches": [
         {
             "regexp": ".*",
@@ -16,7 +14,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-foswikiuri]"
+            "search": "cookies[SFOSWIKISID]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[FOSWIKISTRIKEONE]"
         },
         {
             "regexp": ".*",
@@ -24,11 +26,9 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[SFOSWIKISID]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[FOSWIKISTRIKEONE]"
+            "search": "headers[x-foswikiuri]"
         }
-    ]
+    ],
+    "name": "Foswiki",
+    "website": "http://foswiki.org"
 }

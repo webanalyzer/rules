@@ -3,9 +3,11 @@
         "PHP",
         "MySQL"
     ],
-    "name": "PrestaShop",
-    "website": "http://www.prestashop.com",
     "matches": [
+        {
+            "regexp": "^Prestashop$",
+            "search": "headers[powered-by]"
+        },
         {
             "regexp": ".*",
             "search": "cookies[PrestaShop]"
@@ -22,10 +24,8 @@
         },
         {
             "regexp": "<!-- /Module Block [a-z ]+ -->"
-        },
-        {
-            "regexp": "^Prestashop$",
-            "search": "headers[powered-by]"
         }
-    ]
+    ],
+    "name": "PrestaShop",
+    "website": "http://www.prestashop.com"
 }

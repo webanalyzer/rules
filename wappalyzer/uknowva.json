@@ -1,7 +1,5 @@
 {
     "implies": "PHP",
-    "name": "uKnowva",
-    "website": "https://uknowva.com",
     "matches": [
         {
             "regexp": "uKnowva (?: ([\\d.]+))?",
@@ -9,12 +7,14 @@
             "search": "meta[generator]"
         },
         {
-            "regexp": "<a[^>]+>Powered by uKnowva</a>"
-        },
-        {
             "regexp": "uKnowva ([\\d.]+)",
             "offset": 1,
             "search": "headers[x-content-encoded-by]"
+        },
+        {
+            "regexp": "<a[^>]+>Powered by uKnowva</a>"
         }
-    ]
+    ],
+    "name": "uKnowva",
+    "website": "https://uknowva.com"
 }

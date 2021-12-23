@@ -1,14 +1,12 @@
 {
-    "name": "Fastly",
-    "website": "https://www.fastly.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-fastly-request-id]"
+            "regexp": "Fastly-SSL",
+            "search": "headers[vary]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-fastly-origin]"
+            "search": "headers[x-fastly-request-id]"
         },
         {
             "regexp": ".*",
@@ -16,11 +14,13 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-via-fastly:]"
+            "search": "headers[x-fastly-origin]"
         },
         {
-            "regexp": "Fastly-SSL",
-            "search": "headers[vary]"
+            "regexp": ".*",
+            "search": "headers[x-via-fastly:]"
         }
-    ]
+    ],
+    "name": "Fastly",
+    "website": "https://www.fastly.com"
 }

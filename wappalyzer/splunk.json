@@ -1,15 +1,15 @@
 {
-    "name": "Splunk",
-    "website": "http://splunk.com",
     "matches": [
+        {
+            "regexp": "<p class=\"footer\">&copy; [-\\d]+ Splunk Inc\\.(?: Splunk ([\\d\\.]+(?: build [\\d\\.]*\\d)?))?[^<]*</p>",
+            "offset": 1
+        },
         {
             "certainty": 50,
             "regexp": "Splunk Inc",
             "search": "meta[author]"
-        },
-        {
-            "regexp": "<p class=\"footer\">&copy; [-\\d]+ Splunk Inc\\.(?: Splunk ([\\d\\.]+(?: build [\\d\\.]*\\d)?))?[^<]*</p>",
-            "offset": 1
         }
-    ]
+    ],
+    "name": "Splunk",
+    "website": "http://splunk.com"
 }

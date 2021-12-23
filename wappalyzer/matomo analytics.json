@@ -1,7 +1,9 @@
 {
-    "name": "Matomo Analytics",
-    "website": "https://matomo.org",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[PIWIK_SESSID]"
+        },
         {
             "regexp": "app-id=737216887",
             "search": "meta[apple-itunes-app]"
@@ -13,10 +15,8 @@
         {
             "regexp": "(?:Matomo|Piwik) - Open Source Web Analytics",
             "search": "meta[generator]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[PIWIK_SESSID]"
         }
-    ]
+    ],
+    "name": "Matomo Analytics",
+    "website": "https://matomo.org"
 }

@@ -1,7 +1,5 @@
 {
     "implies": "PHP",
-    "name": "Joomla",
-    "website": "https://www.joomla.org",
     "matches": [
         {
             "regexp": "Joomla!(?: ([\\d.]+))?",
@@ -9,13 +7,15 @@
             "search": "meta[generator]"
         },
         {
-            "certainty": 50,
-            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
-        },
-        {
             "regexp": "Joomla! ([\\d.]+)",
             "offset": 1,
             "search": "headers[x-content-encoded-by]"
+        },
+        {
+            "certainty": 50,
+            "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
         }
-    ]
+    ],
+    "name": "Joomla",
+    "website": "https://www.joomla.org"
 }

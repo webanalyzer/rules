@@ -3,8 +3,6 @@
         "PHP",
         "MySQL"
     ],
-    "name": "WordPress",
-    "website": "https://wordpress.org",
     "matches": [
         {
             "regexp": ".*",
@@ -16,18 +14,20 @@
             "search": "meta[generator]"
         },
         {
-            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
-        },
-        {
-            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
-        },
-        {
             "regexp": "/xmlrpc\\.php$",
             "search": "headers[x-pingback]"
         },
         {
             "regexp": "rel=\"https://api\\.w\\.org/\"",
             "search": "headers[link]"
+        },
+        {
+            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
+        },
+        {
+            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         }
-    ]
+    ],
+    "name": "WordPress",
+    "website": "https://wordpress.org"
 }
