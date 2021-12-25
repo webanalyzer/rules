@@ -1,14 +1,14 @@
 {
-    "website": "https://office.microsoft.com/publisher",
     "name": "Microsoft Publisher",
+    "website": "https://office.microsoft.com/publisher",
     "matches": [
         {
             "search": "meta[ProgId]",
             "regexp": "^Publisher\\."
         },
         {
-            "offset": 1,
             "search": "meta[generator]",
+            "offset": 1,
             "regexp": "Microsoft Publisher( [\\d.]+)?"
         },
         {

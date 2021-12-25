@@ -1,11 +1,14 @@
 {
-    "website": "http://moodle.org",
     "implies": "PHP",
     "name": "Moodle",
+    "website": "http://moodle.org",
     "matches": [
         {
             "search": "meta[keywords]",
             "regexp": "^moodle"
+        },
+        {
+            "regexp": "<img[^>]+moodlelogo"
         },
         {
             "search": "cookies[MOODLEID_]",
@@ -14,9 +17,6 @@
         {
             "search": "cookies[MoodleSession]",
             "regexp": ".*"
-        },
-        {
-            "regexp": "<img[^>]+moodlelogo"
         }
     ]
 }

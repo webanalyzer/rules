@@ -1,19 +1,19 @@
 {
-    "website": "http://phusionpassenger.com",
     "implies": [
         "Ruby on Rails",
         "Apache"
     ],
     "name": "mod_rack",
+    "website": "http://phusionpassenger.com",
     "matches": [
         {
-            "offset": 1,
             "search": "headers[server]",
+            "offset": 1,
             "regexp": "mod_rack(?:/([\\d.]+))?"
         },
         {
-            "offset": 1,
             "search": "headers[x-powered-by]",
+            "offset": 1,
             "regexp": "mod_rack(?:/([\\d.]+))?"
         }
     ]
