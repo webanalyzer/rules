@@ -1,6 +1,6 @@
 {
-    "implies": "PHP",
     "name": "CodeIgniter",
+    "implies": "PHP",
     "website": "http://codeigniter.com",
     "matches": [
         {
@@ -11,17 +11,17 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[exp_tracker]",
-            "regexp": ".*"
-        },
-        {
             "search": "cookies[exp_last_activity]",
             "regexp": ".*"
         },
         {
+            "search": "cookies[exp_tracker]",
+            "regexp": ".*"
+        },
+        {
             "search": "cookies[ci_csrf_token]",
-            "offset": 1,
-            "regexp": "^(.+)$"
+            "regexp": "^(.+)$",
+            "offset": 1
         }
     ]
 }

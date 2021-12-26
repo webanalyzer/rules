@@ -3,12 +3,12 @@
     "website": "http://dream4.de/cms",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Koobi"
+            "regexp": "<!--[^K>-]+Koobi ([a-z\\d.]+)",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "<!--[^K>-]+Koobi ([a-z\\d.]+)"
+            "search": "meta[generator]",
+            "regexp": "Koobi"
         }
     ]
 }
