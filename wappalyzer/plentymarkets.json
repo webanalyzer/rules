@@ -1,14 +1,14 @@
 {
-    "website": "https://www.plentymarkets.com/",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "plentymarkets"
+            "regexp": ".*",
+            "search": "headers[x-plenty-shop]"
         },
         {
-            "search": "headers[x-plenty-shop]",
-            "regexp": ".*"
+            "regexp": "plentymarkets",
+            "search": "meta[generator]"
         }
     ],
-    "name": "plentymarkets"
+    "name": "plentymarkets",
+    "website": "https://www.plentymarkets.com/"
 }
