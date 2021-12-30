@@ -1,15 +1,15 @@
 {
+    "website": "http://sailsjs.org",
     "matches": [
-        {
-            "regexp": "^Sails(?:$|[^a-z0-9])",
-            "search": "headers[x-powered-by]"
-        },
         {
             "regexp": ".*",
             "search": "cookies[sails.sid]"
+        },
+        {
+            "regexp": "^Sails(?:$|[^a-z0-9])",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "name": "Sails.js",
-    "website": "http://sailsjs.org",
-    "implies": "Express"
+    "implies": "Express",
+    "name": "Sails.js"
 }

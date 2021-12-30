@@ -1,9 +1,10 @@
 {
+    "website": "https://virtuoso.openlinksw.com/",
     "matches": [
         {
             "regexp": "Virtuoso/?([0-9.]+)?",
-            "search": "headers[server]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[server]"
         },
         {
             "regexp": "^Copyright &copy; \\d{4} OpenLink Software",
@@ -14,6 +15,5 @@
             "search": "meta[Keywords]"
         }
     ],
-    "name": "Virtuoso",
-    "website": "https://virtuoso.openlinksw.com/"
+    "name": "Virtuoso"
 }
