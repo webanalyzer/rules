@@ -1,5 +1,7 @@
 {
     "website": "http://kohanaframework.org",
+    "implies": "PHP",
+    "name": "Kohana",
     "matches": [
         {
             "regexp": ".*",
@@ -7,10 +9,8 @@
         },
         {
             "regexp": "Kohana Framework ([\\d.]+)",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-powered-by]",
+            "offset": 1
         }
-    ],
-    "implies": "PHP",
-    "name": "Kohana"
+    ]
 }

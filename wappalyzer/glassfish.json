@@ -1,12 +1,12 @@
 {
     "website": "http://glassfish.java.net",
+    "implies": "Java",
+    "name": "GlassFish",
     "matches": [
         {
             "regexp": "GlassFish(?: Server)?(?: Open Source Edition)?(?: ?/?([\\d.]+))?",
-            "offset": 1,
-            "search": "headers[server]"
+            "search": "headers[server]",
+            "offset": 1
         }
-    ],
-    "implies": "Java",
-    "name": "GlassFish"
+    ]
 }

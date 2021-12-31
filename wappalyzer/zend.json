@@ -1,5 +1,6 @@
 {
     "website": "http://zend.com",
+    "name": "Zend",
     "matches": [
         {
             "regexp": ".*",
@@ -7,9 +8,8 @@
         },
         {
             "regexp": "Zend(?:Server)?(?:[\\s/]?([0-9.]+))?",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-powered-by]",
+            "offset": 1
         }
-    ],
-    "name": "Zend"
+    ]
 }

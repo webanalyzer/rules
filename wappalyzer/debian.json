@@ -1,5 +1,6 @@
 {
     "website": "https://debian.org",
+    "name": "Debian",
     "matches": [
         {
             "regexp": "Debian",
@@ -7,9 +8,8 @@
         },
         {
             "regexp": "(?:Debian|dotdeb|(potato|woody|sarge|etch|lenny|squeeze|wheezy|jessie|stretch|buster|sid))",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-powered-by]",
+            "offset": 1
         }
-    ],
-    "name": "Debian"
+    ]
 }

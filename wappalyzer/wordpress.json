@@ -1,5 +1,10 @@
 {
     "website": "https://wordpress.org",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
+    "name": "WordPress",
     "matches": [
         {
             "regexp": "rel=\"https://api\\.w\\.org/\"",
@@ -11,8 +16,8 @@
         },
         {
             "regexp": "^WordPress(?: ([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": ".*",
@@ -24,10 +29,5 @@
         {
             "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         }
-    ],
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
-    "name": "WordPress"
+    ]
 }
