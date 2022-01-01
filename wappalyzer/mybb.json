@@ -1,13 +1,18 @@
 {
-    "website": "https://mybb.com",
+    "matches": [
+        {
+            "search": "cookies[mybb[lastactive]]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[mybb[lastvisit]]",
+            "regexp": ".*"
+        }
+    ],
     "implies": [
         "PHP",
         "MySQL"
     ],
     "name": "MyBB",
-    "matches": [
-        {
-            "regexp": "(?:<script [^>]+\\s+<!--\\s+lang\\.no_new_posts|<a[^>]* title=\"Powered By MyBB)"
-        }
-    ]
+    "website": "https://mybb.com"
 }

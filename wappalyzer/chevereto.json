@@ -1,15 +1,15 @@
 {
-    "website": "https://chevereto.com/",
-    "implies": "PHP",
-    "name": "Chevereto",
     "matches": [
         {
             "regexp": "Powered by <a href=\"https?://chevereto\\.com\">"
         },
         {
-            "regexp": "^Chevereto ?([0-9.]+)?$",
             "search": "meta[generator]",
-            "offset": 1
+            "offset": 1,
+            "regexp": "^Chevereto ?([0-9.]+)?$"
         }
-    ]
+    ],
+    "implies": "PHP",
+    "name": "Chevereto",
+    "website": "https://chevereto.com/"
 }
