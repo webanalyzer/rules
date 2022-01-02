@@ -1,16 +1,16 @@
 {
     "matches": [
         {
+            "regexp": "Winstone(?:\\/([\\d.]+))?",
             "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "Winstone(?:\\/([\\d.]+))?"
+            "offset": 1
         },
         {
+            "regexp": "Winstone Servlet (?:Container|Engine) v?([\\d.]+)?",
             "search": "headers[server]",
-            "offset": 1,
-            "regexp": "Winstone Servlet (?:Container|Engine) v?([\\d.]+)?"
+            "offset": 1
         }
     ],
-    "name": "Winstone Servlet Container",
-    "website": "http://winstone.sourceforge.net"
+    "website": "http://winstone.sourceforge.net",
+    "name": "Winstone Servlet Container"
 }
