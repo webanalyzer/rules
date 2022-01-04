@@ -1,7 +1,5 @@
 {
     "website": "https://www.bsale.cl",
-    "name": "Bsale",
-    "implies": "Nginx",
     "matches": [
         {
             "regexp": ".*",
@@ -9,11 +7,13 @@
         },
         {
             "regexp": "Bsale",
-            "search": "meta[autor]"
+            "search": "meta[generator]"
         },
         {
             "regexp": "Bsale",
-            "search": "meta[generator]"
+            "search": "meta[autor]"
         }
-    ]
+    ],
+    "implies": "Nginx",
+    "name": "Bsale"
 }

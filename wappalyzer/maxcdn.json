@@ -1,14 +1,14 @@
 {
     "website": "http://www.maxcdn.com",
-    "name": "MaxCDN",
     "matches": [
-        {
-            "regexp": "^maxcdn$",
-            "search": "headers[x-cdn-forward]"
-        },
         {
             "regexp": "^NetDNA",
             "search": "headers[server]"
+        },
+        {
+            "regexp": "^maxcdn$",
+            "search": "headers[x-cdn-forward]"
         }
-    ]
+    ],
+    "name": "MaxCDN"
 }

@@ -1,7 +1,5 @@
 {
     "website": "http://open-eshop.com/",
-    "name": "Open eShop",
-    "implies": "PHP",
     "matches": [
         {
             "regexp": "open-eshop\\.com",
@@ -9,8 +7,10 @@
         },
         {
             "regexp": "Open eShop ?([0-9.]+)?",
-            "search": "meta[copyright]",
-            "offset": 1
+            "offset": 1,
+            "search": "meta[copyright]"
         }
-    ]
+    ],
+    "implies": "PHP",
+    "name": "Open eShop"
 }
