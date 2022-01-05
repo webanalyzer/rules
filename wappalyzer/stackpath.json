@@ -2,13 +2,13 @@
     "website": "https://www.stackpath.com",
     "matches": [
         {
-            "regexp": "hosting\\.stackcp\\.net$",
-            "search": "headers[x-backend-server]"
+            "search": "headers[x-backend-server]",
+            "regexp": "hosting\\.stackcp\\.net$"
         },
         {
-            "regexp": "^StackCDN(?: ([\\d.]+))?",
             "offset": 1,
-            "search": "headers[x-provided-by]"
+            "search": "headers[x-provided-by]",
+            "regexp": "^StackCDN(?: ([\\d.]+))?"
         }
     ],
     "name": "StackPath"

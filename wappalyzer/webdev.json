@@ -2,16 +2,16 @@
     "website": "https://www.windev.com/webdev/index.html",
     "matches": [
         {
-            "regexp": "<!-- [a-zA-Z0-9_]+ [\\d/]+ [\\d:]+ WebDev \\d\\d ([\\d.]+) -->",
-            "offset": 1
+            "search": "headers[webdevsrc]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[webdevsrc]"
+            "offset": 1,
+            "regexp": "<!-- [a-zA-Z0-9_]+ [\\d/]+ [\\d:]+ WebDev \\d\\d ([\\d.]+) -->"
         },
         {
-            "regexp": "^WEBDEV$",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "^WEBDEV$"
         }
     ],
     "name": "WEBDEV"
