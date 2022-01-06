@@ -3,18 +3,18 @@
     "website": "http://www.chamilo.org",
     "matches": [
         {
-            "offset": 1,
             "search": "headers[x-powered-by]",
-            "regexp": "Chamilo ([\\d.]+)"
+            "regexp": "Chamilo ([\\d.]+)",
+            "offset": 1
         },
         {
-            "offset": 1,
+            "regexp": "\">Chamilo ([\\d.]+)</a>",
+            "offset": 1
+        },
+        {
             "search": "meta[generator]",
-            "regexp": "Chamilo ([\\d.]+)"
-        },
-        {
-            "offset": 1,
-            "regexp": "\">Chamilo ([\\d.]+)</a>"
+            "regexp": "Chamilo ([\\d.]+)",
+            "offset": 1
         }
     ],
     "name": "Chamilo"

@@ -12,6 +12,10 @@
             "regexp": "^[\\w]{32}$"
         },
         {
+            "search": "headers[sw-version-id]",
+            "regexp": ".*"
+        },
+        {
             "search": "headers[sw-invalidation-states]",
             "regexp": ".*"
         },
@@ -20,16 +24,12 @@
             "regexp": "^[a-fA-F0-9]{32}$"
         },
         {
-            "search": "headers[sw-version-id]",
-            "regexp": ".*"
-        },
-        {
-            "offset": 1,
-            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+"
-        },
-        {
             "search": "meta[application-name]",
             "regexp": "Shopware"
+        },
+        {
+            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+",
+            "offset": 1
         }
     ],
     "name": "Shopware"

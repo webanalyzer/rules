@@ -6,15 +6,15 @@
     "website": "http://www.gerritcodereview.com",
     "matches": [
         {
-            "offset": 1,
-            "regexp": ">Gerrit Code Review</a>\\s*\"\\s*\\(([0-9.]+)\\)"
+            "search": "meta[title]",
+            "regexp": "^Gerrit Code Review$"
+        },
+        {
+            "regexp": ">Gerrit Code Review</a>\\s*\"\\s*\\(([0-9.]+)\\)",
+            "offset": 1
         },
         {
             "regexp": "<(?:div|style) id=\"gerrit_"
-        },
-        {
-            "search": "meta[title]",
-            "regexp": "^Gerrit Code Review$"
         }
     ],
     "name": "Gerrit"

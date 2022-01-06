@@ -2,7 +2,7 @@
     "website": "http://www.cloudflare.com",
     "matches": [
         {
-            "search": "headers[cf-cache-status]",
+            "search": "headers[cf-ray]",
             "regexp": ".*"
         },
         {
@@ -10,7 +10,7 @@
             "regexp": "^cloudflare$"
         },
         {
-            "search": "headers[cf-ray]",
+            "search": "headers[cf-cache-status]",
             "regexp": ".*"
         },
         {

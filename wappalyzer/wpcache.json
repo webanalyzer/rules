@@ -3,12 +3,9 @@
     "website": "https://wpcache.co",
     "matches": [
         {
-            "offset": 1,
             "search": "headers[x-powered-by]",
-            "regexp": "wpCache(?:/([\\d.]+))?"
-        },
-        {
-            "regexp": "<!--[^>]+wpCache"
+            "regexp": "wpCache(?:/([\\d.]+))?",
+            "offset": 1
         },
         {
             "search": "meta[generator]",
@@ -17,6 +14,9 @@
         {
             "search": "meta[keywords]",
             "regexp": "wpCache"
+        },
+        {
+            "regexp": "<!--[^>]+wpCache"
         }
     ],
     "name": "wpCache"

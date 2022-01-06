@@ -3,14 +3,14 @@
     "website": "https://digitalserver.ir",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "^HighStore\\.IR$"
+            "search": "meta[hs:version]",
+            "regexp": "^([\\d\\.]+)$",
+            "certainty": 50,
+            "offset": 1
         },
         {
-            "certainty": 50,
-            "offset": 1,
-            "search": "meta[hs:version]",
-            "regexp": "^([\\d\\.]+)$"
+            "search": "meta[generator]",
+            "regexp": "^HighStore\\.IR$"
         }
     ],
     "name": "HighStore"

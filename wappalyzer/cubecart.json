@@ -3,11 +3,11 @@
     "website": "http://www.cubecart.com",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "cubecart"
+            "regexp": "(?:Powered by <a href=[^>]+cubecart\\.com|<p[^>]+>Powered by CubeCart)"
         },
         {
-            "regexp": "(?:Powered by <a href=[^>]+cubecart\\.com|<p[^>]+>Powered by CubeCart)"
+            "search": "meta[generator]",
+            "regexp": "cubecart"
         }
     ],
     "name": "CubeCart"

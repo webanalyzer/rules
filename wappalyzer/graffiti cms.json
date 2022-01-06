@@ -3,13 +3,13 @@
     "website": "http://graffiticms.codeplex.com",
     "matches": [
         {
-            "search": "cookies[graffitibot]",
-            "regexp": ".*"
+            "search": "meta[generator]",
+            "regexp": "Graffiti CMS ([^\"]+)",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Graffiti CMS ([^\"]+)"
+            "search": "cookies[graffitibot]",
+            "regexp": ".*"
         }
     ],
     "name": "Graffiti CMS"

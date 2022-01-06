@@ -5,11 +5,11 @@
     "website": "https://developer.akamai.com/akamai-mpulse-real-user-monitoring-solution",
     "matches": [
         {
-            "search": "cookies[akaas_AB-Testing]",
-            "regexp": ".*"
+            "regexp": "<script>[\\s\\S]*?go-mpulse\\.net\\/boomerang[\\s\\S]*?</script>"
         },
         {
-            "regexp": "<script>[\\s\\S]*?go-mpulse\\.net\\/boomerang[\\s\\S]*?</script>"
+            "search": "cookies[akaas_AB-Testing]",
+            "regexp": ".*"
         }
     ],
     "name": "Akamai mPulse"

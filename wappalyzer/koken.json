@@ -6,8 +6,9 @@
     "website": "http://koken.me",
     "matches": [
         {
-            "search": "cookies[koken_referrer]",
-            "regexp": ".*"
+            "search": "meta[generator]",
+            "regexp": "Koken ([\\d.]+)",
+            "offset": 1
         },
         {
             "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
@@ -16,9 +17,8 @@
             "regexp": "<!--\\s+KOKEN DEBUGGING"
         },
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Koken ([\\d.]+)"
+            "search": "cookies[koken_referrer]",
+            "regexp": ".*"
         }
     ],
     "name": "Koken"

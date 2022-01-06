@@ -3,15 +3,15 @@
     "website": "http://www.nopcommerce.com",
     "matches": [
         {
-            "search": "cookies[Nop.customer]",
-            "regexp": ".*"
+            "search": "meta[generator]",
+            "regexp": "^nopCommerce$"
         },
         {
             "regexp": "(?:<!--Powered by nopCommerce|Powered by: <a[^>]+nopcommerce)"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "^nopCommerce$"
+            "search": "cookies[Nop.customer]",
+            "regexp": ".*"
         }
     ],
     "name": "nopCommerce"

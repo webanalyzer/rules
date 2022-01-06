@@ -6,13 +6,13 @@
     "website": "http://www.elastic.co/products/kibana",
     "matches": [
         {
-            "search": "headers[kbn-name]",
-            "regexp": "kibana"
+            "search": "headers[kbn-version]",
+            "regexp": "^([\\d.]+)$",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "search": "headers[kbn-version]",
-            "regexp": "^([\\d.]+)$"
+            "search": "headers[kbn-name]",
+            "regexp": "kibana"
         },
         {
             "regexp": "<title>Kibana</title>"
