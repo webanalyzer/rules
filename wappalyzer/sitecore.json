@@ -1,9 +1,6 @@
 {
-    "website": "https://www.sitecore.com/",
+    "name": "Sitecore",
     "matches": [
-        {
-            "regexp": "<img[^>]+src=\"[^>]*/~/media/[^>]+\\.ashx"
-        },
         {
             "search": "cookies[sc_expview]",
             "regexp": ".*"
@@ -11,7 +8,10 @@
         {
             "search": "cookies[SC_ANALYTICS_GLOBAL_COOKIE]",
             "regexp": ".*"
+        },
+        {
+            "regexp": "<img[^>]+src=\"[^>]*/~/media/[^>]+\\.ashx"
         }
     ],
-    "name": "Sitecore"
+    "website": "https://www.sitecore.com/"
 }
