@@ -1,11 +1,12 @@
 {
     "name": "Microsoft ASP.NET",
     "implies": "IIS",
+    "website": "https://www.asp.net",
     "matches": [
         {
             "search": "headers[x-aspnet-version]",
-            "offset": 1,
-            "regexp": "(.+)"
+            "regexp": "(.+)",
+            "offset": 1
         },
         {
             "search": "headers[x-powered-by]",
@@ -22,6 +23,5 @@
         {
             "regexp": "<input[^>]+name=\"__VIEWSTATE"
         }
-    ],
-    "website": "https://www.asp.net"
+    ]
 }
