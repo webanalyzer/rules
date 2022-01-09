@@ -4,18 +4,18 @@
         "React",
         "webpack"
     ],
-    "website": "https://www.gatsbyjs.org/",
     "matches": [
-        {
-            "search": "meta[generator]",
-            "regexp": "^Gatsby(?: ([0-9.]+))?$",
-            "offset": 1
-        },
         {
             "regexp": "<div id=\"___gatsby\">"
         },
         {
             "regexp": "<style id=\"gatsby-inlined-css\">"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "^Gatsby(?: ([0-9.]+))?$",
+            "offset": 1
         }
-    ]
+    ],
+    "website": "https://www.gatsbyjs.org/"
 }

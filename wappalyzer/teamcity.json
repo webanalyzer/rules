@@ -9,15 +9,15 @@
         "React",
         "Underscore.js"
     ],
-    "website": "https://www.jetbrains.com/teamcity/",
     "matches": [
-        {
-            "search": "meta[application-name]",
-            "regexp": "TeamCity"
-        },
         {
             "regexp": "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)",
             "offset": 1
+        },
+        {
+            "search": "meta[application-name]",
+            "regexp": "TeamCity"
         }
-    ]
+    ],
+    "website": "https://www.jetbrains.com/teamcity/"
 }

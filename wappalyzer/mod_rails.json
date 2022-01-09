@@ -4,17 +4,17 @@
         "Ruby on Rails",
         "Apache"
     ],
-    "website": "http://phusionpassenger.com",
     "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "mod_rails(?:/([\\d.]+))?",
-            "offset": 1
-        },
         {
             "search": "headers[server]",
             "regexp": "mod_rails(?:/([\\d.]+))?",
             "offset": 1
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "mod_rails(?:/([\\d.]+))?",
+            "offset": 1
         }
-    ]
+    ],
+    "website": "http://phusionpassenger.com"
 }

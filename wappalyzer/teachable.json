@@ -1,14 +1,14 @@
 {
     "name": "Teachable",
-    "website": "https://teachable.com",
     "matches": [
-        {
-            "search": "meta[asset_host]",
-            "regexp": "\\.teachablecdn\\.com"
-        },
         {
             "search": "cookies[_gat_teachableTracker]",
             "regexp": "\\d+"
+        },
+        {
+            "search": "meta[asset_host]",
+            "regexp": "\\.teachablecdn\\.com"
         }
-    ]
+    ],
+    "website": "https://teachable.com"
 }
