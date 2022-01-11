@@ -1,4 +1,5 @@
 {
+    "name": "Koken",
     "matches": [
         {
             "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
@@ -7,16 +8,15 @@
             "regexp": "<!--\\s+KOKEN DEBUGGING"
         },
         {
-            "regexp": "Koken ([\\d.]+)",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "cookies[koken_referrer]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[koken_referrer]"
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "Koken ([\\d.]+)"
         }
     ],
-    "name": "Koken",
     "website": "http://koken.me",
     "implies": [
         "PHP",

@@ -1,4 +1,5 @@
 {
+    "name": "DokuWiki",
     "matches": [
         {
             "regexp": "<div[^>]+id=\"dokuwiki__>"
@@ -7,16 +8,15 @@
             "regexp": "<a[^>]+href=\"#dokuwiki__"
         },
         {
-            "regexp": "^DokuWiki( Release [\\d-]+)?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "cookies[DokuWiki]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[DokuWiki]"
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "^DokuWiki( Release [\\d-]+)?"
         }
     ],
-    "name": "DokuWiki",
     "website": "https://www.dokuwiki.org",
     "implies": "PHP"
 }
