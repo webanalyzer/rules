@@ -1,23 +1,23 @@
 {
-    "name": "Dokeos",
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "Dokeos"
-        },
-        {
-            "regexp": "(?:Portal <a[^>]+>Dokeos|@import \"[^\"]+dokeos_blue)"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "Dokeos"
-        }
-    ],
-    "website": "https://dokeos.com",
     "implies": [
         "PHP",
         "Xajax",
         "jQuery",
         "CKEditor"
+    ],
+    "website": "https://dokeos.com",
+    "name": "Dokeos",
+    "matches": [
+        {
+            "regexp": "(?:Portal <a[^>]+>Dokeos|@import \"[^\"]+dokeos_blue)"
+        },
+        {
+            "regexp": "Dokeos",
+            "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": "Dokeos",
+            "search": "meta[generator]"
+        }
     ]
 }

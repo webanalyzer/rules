@@ -1,16 +1,16 @@
 {
+    "website": "http://oracle.com/solaris",
     "name": "SunOS",
     "matches": [
         {
-            "search": "headers[servlet-engine]",
             "offset": 1,
-            "regexp": "SunOS( [\\d\\.]+)?"
+            "regexp": "SunOS( [\\d\\.]+)?",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
             "offset": 1,
-            "regexp": "SunOS( [\\d\\.]+)?"
+            "regexp": "SunOS( [\\d\\.]+)?",
+            "search": "headers[servlet-engine]"
         }
-    ],
-    "website": "http://oracle.com/solaris"
+    ]
 }

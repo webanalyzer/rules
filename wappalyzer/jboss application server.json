@@ -1,11 +1,11 @@
 {
+    "website": "http://jboss.org/jbossas.html",
     "name": "JBoss Application Server",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
             "offset": 1,
-            "regexp": "JBoss(?:-([\\d.]+))?"
+            "regexp": "JBoss(?:-([\\d.]+))?",
+            "search": "headers[x-powered-by]"
         }
-    ],
-    "website": "http://jboss.org/jbossas.html"
+    ]
 }
