@@ -3,12 +3,12 @@
     "name": "Netlify",
     "matches": [
         {
-            "regexp": "^Netlify",
-            "search": "headers[server]"
-        },
-        {
             "regexp": ".*",
             "search": "headers[x-nf-request-id]"
+        },
+        {
+            "regexp": "^Netlify",
+            "search": "headers[server]"
         }
     ]
 }

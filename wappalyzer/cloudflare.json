@@ -7,16 +7,16 @@
             "search": "cookies[__cfduid]"
         },
         {
-            "regexp": "^cloudflare$",
-            "search": "headers[server]"
-        },
-        {
             "regexp": ".*",
             "search": "headers[cf-ray]"
         },
         {
             "regexp": ".*",
             "search": "headers[cf-cache-status]"
+        },
+        {
+            "regexp": "^cloudflare$",
+            "search": "headers[server]"
         }
     ]
 }

@@ -11,10 +11,6 @@
             "search": "cookies[TiPMix]"
         },
         {
-            "regexp": "^Windows-Azure",
-            "search": "headers[server]"
-        },
-        {
             "regexp": ".*",
             "search": "headers[azure-version]"
         },
@@ -24,15 +20,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-ms-gateway-requestid]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[azure-sitename]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-ms-correlation-request-id]"
+            "search": "headers[x-ms-client-request-id]"
         },
         {
             "regexp": ".*",
@@ -40,7 +28,19 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-ms-client-request-id]"
+            "search": "headers[x-ms-gateway-requestid]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-ms-correlation-request-id]"
+        },
+        {
+            "regexp": "^Windows-Azure",
+            "search": "headers[server]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[azure-sitename]"
         }
     ]
 }

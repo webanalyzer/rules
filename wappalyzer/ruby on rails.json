@@ -1,6 +1,6 @@
 {
-    "implies": "Ruby",
     "website": "https://rubyonrails.org",
+    "implies": "Ruby",
     "name": "Ruby on Rails",
     "matches": [
         {
@@ -9,17 +9,17 @@
             "certainty": 75
         },
         {
-            "regexp": "mod_(?:rails|rack)",
-            "search": "headers[server]"
+            "regexp": "^authenticity_token$",
+            "search": "meta[csrf-param]",
+            "certainty": 50
         },
         {
             "regexp": "mod_(?:rails|rack)",
             "search": "headers[x-powered-by]"
         },
         {
-            "regexp": "^authenticity_token$",
-            "search": "meta[csrf-param]",
-            "certainty": 50
+            "regexp": "mod_(?:rails|rack)",
+            "search": "headers[server]"
         }
     ]
 }
