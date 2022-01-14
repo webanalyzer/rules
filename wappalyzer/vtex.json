@@ -1,14 +1,16 @@
 {
-    "website": "https://vtex.com/",
-    "name": "VTEX",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[VtexStoreVersion]"
+            "regexp": "^VTEX IO$",
+            "search": "headers[server]"
+        },
+        {
+            "regexp": "vtex",
+            "search": "headers[powered]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[VtexWorkspace]"
+            "search": "cookies[VtexStoreVersion]"
         },
         {
             "regexp": ".*",
@@ -19,12 +21,10 @@
             "search": "cookies[VtexFingerPrint]"
         },
         {
-            "regexp": "vtex",
-            "search": "headers[powered]"
-        },
-        {
-            "regexp": "^VTEX IO$",
-            "search": "headers[server]"
+            "regexp": ".*",
+            "search": "cookies[VtexWorkspace]"
         }
-    ]
+    ],
+    "name": "VTEX",
+    "website": "https://vtex.com/"
 }
