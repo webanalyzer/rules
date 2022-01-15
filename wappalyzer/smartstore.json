@@ -1,10 +1,11 @@
 {
     "implies": "Microsoft ASP.NET",
+    "name": "Smartstore",
     "matches": [
         {
             "offset": 2,
-            "regexp": "^Smart[sS]tore(.NET)? (.+)$",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "^Smart[sS]tore(.NET)? (.+)$"
         },
         {
             "regexp": "<!--Powered by Smart[sS]tore"
@@ -13,14 +14,13 @@
             "regexp": "<meta property=\"sm:pagedata\""
         },
         {
-            "regexp": ".*",
-            "search": "cookies[SMARTSTORE.CUSTOMER]"
+            "search": "cookies[SMARTSTORE.CUSTOMER]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[SMARTSTORE.VISITOR]"
+            "search": "cookies[SMARTSTORE.VISITOR]",
+            "regexp": ".*"
         }
     ],
-    "name": "Smartstore",
     "website": "https://www.smartstore.com"
 }

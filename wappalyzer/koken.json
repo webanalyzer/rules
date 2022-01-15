@@ -3,11 +3,12 @@
         "PHP",
         "MySQL"
     ],
+    "name": "Koken",
     "matches": [
         {
             "offset": 1,
-            "regexp": "Koken ([\\d.]+)",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "Koken ([\\d.]+)"
         },
         {
             "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
@@ -16,10 +17,9 @@
             "regexp": "<!--\\s+KOKEN DEBUGGING"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[koken_referrer]"
+            "search": "cookies[koken_referrer]",
+            "regexp": ".*"
         }
     ],
-    "name": "Koken",
     "website": "http://koken.me"
 }

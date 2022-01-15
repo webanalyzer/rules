@@ -1,19 +1,19 @@
 {
     "implies": "Go",
+    "name": "Gitea",
     "matches": [
         {
-            "regexp": "^go,git,self-hosted,gitea$",
-            "search": "meta[keywords]"
+            "search": "meta[keywords]",
+            "regexp": "^go,git,self-hosted,gitea$"
         },
         {
             "offset": 1,
             "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[i_like_gitea]"
+            "search": "cookies[i_like_gitea]",
+            "regexp": ".*"
         }
     ],
-    "name": "Gitea",
     "website": "https://gitea.io"
 }
