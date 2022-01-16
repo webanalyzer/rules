@@ -2,15 +2,15 @@
     "name": "Stripe",
     "matches": [
         {
+            "regexp": ".*",
+            "search": "cookies[__stripe_sid]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[__stripe_mid]"
+        },
+        {
             "regexp": "<input[^>]+data-stripe"
-        },
-        {
-            "search": "cookies[__stripe_sid]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[__stripe_mid]",
-            "regexp": ".*"
         }
     ],
     "website": "http://stripe.com"

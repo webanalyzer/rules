@@ -2,28 +2,28 @@
     "name": "VTEX",
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "^VTEX IO$"
+            "regexp": ".*",
+            "search": "cookies[VtexFingerPrint]"
         },
         {
-            "search": "headers[powered]",
-            "regexp": "vtex"
+            "regexp": ".*",
+            "search": "cookies[VtexStoreVersion]"
         },
         {
-            "search": "cookies[vtex_session]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[VtexWorkspace]"
         },
         {
-            "search": "cookies[VtexWorkspace]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[vtex_session]"
         },
         {
-            "search": "cookies[VtexStoreVersion]",
-            "regexp": ".*"
+            "regexp": "^VTEX IO$",
+            "search": "headers[server]"
         },
         {
-            "search": "cookies[VtexFingerPrint]",
-            "regexp": ".*"
+            "regexp": "vtex",
+            "search": "headers[powered]"
         }
     ],
     "website": "https://vtex.com/"
