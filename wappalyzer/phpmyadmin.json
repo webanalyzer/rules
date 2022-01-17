@@ -1,5 +1,8 @@
 {
-    "name": "phpMyAdmin",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
     "matches": [
         {
             "regexp": "!\\[CDATA\\[[^<]*PMA_VERSION:\\\"([\\d.]+)",
@@ -11,8 +14,5 @@
         }
     ],
     "website": "https://www.phpmyadmin.net",
-    "implies": [
-        "PHP",
-        "MySQL"
-    ]
+    "name": "phpMyAdmin"
 }

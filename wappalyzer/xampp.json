@@ -1,21 +1,21 @@
 {
-    "name": "XAMPP",
-    "matches": [
-        {
-            "regexp": "<title>XAMPP(?: Version ([\\d\\.]+))?</title>",
-            "offset": 1
-        },
-        {
-            "regexp": "Kai Oswald Seidler",
-            "certainty": 10,
-            "search": "meta[author]"
-        }
-    ],
-    "website": "http://www.apachefriends.org/en/xampp.html",
     "implies": [
         "Apache",
         "MySQL",
         "PHP",
         "Perl"
-    ]
+    ],
+    "matches": [
+        {
+            "search": "meta[author]",
+            "regexp": "Kai Oswald Seidler",
+            "certainty": 10
+        },
+        {
+            "regexp": "<title>XAMPP(?: Version ([\\d\\.]+))?</title>",
+            "offset": 1
+        }
+    ],
+    "website": "http://www.apachefriends.org/en/xampp.html",
+    "name": "XAMPP"
 }

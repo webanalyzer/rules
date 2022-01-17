@@ -1,19 +1,19 @@
 {
-    "name": "Website Creator",
-    "matches": [
-        {
-            "regexp": ".*",
-            "search": "meta[wsc_rendermode]"
-        },
-        {
-            "regexp": "Website Creator by hosttech",
-            "search": "meta[generator]"
-        }
-    ],
-    "website": "https://www.hosttech.ch/websitecreator",
     "implies": [
         "PHP",
         "MySQL",
         "Vue.js"
-    ]
+    ],
+    "matches": [
+        {
+            "search": "meta[generator]",
+            "regexp": "Website Creator by hosttech"
+        },
+        {
+            "search": "meta[wsc_rendermode]",
+            "regexp": ".*"
+        }
+    ],
+    "website": "https://www.hosttech.ch/websitecreator",
+    "name": "Website Creator"
 }
