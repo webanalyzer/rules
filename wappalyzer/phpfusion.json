@@ -3,11 +3,14 @@
         "PHP",
         "MySQL"
     ],
+    "website": "https://phpfusion.com",
+    "name": "PHPFusion",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "PHPFusion (.+)$",
-            "offset": 1
+            "regexp": "Powered by <a href=\"[^>]+phpfusion"
+        },
+        {
+            "regexp": "Powered by <a href=\"[^>]+php-fusion"
         },
         {
             "search": "headers[x-phpfusion]",
@@ -15,12 +18,9 @@
             "offset": 1
         },
         {
-            "regexp": "Powered by <a href=\"[^>]+phpfusion"
-        },
-        {
-            "regexp": "Powered by <a href=\"[^>]+php-fusion"
+            "search": "headers[x-powered-by]",
+            "regexp": "PHPFusion (.+)$",
+            "offset": 1
         }
-    ],
-    "website": "https://phpfusion.com",
-    "name": "PHPFusion"
+    ]
 }

@@ -1,17 +1,10 @@
 {
     "implies": "IIS",
+    "website": "https://www.asp.net",
+    "name": "Microsoft ASP.NET",
     "matches": [
         {
-            "search": "cookies[ASP.NET_SessionId]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[ASPSESSION]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "^ASP\\.NET"
+            "regexp": "<input[^>]+name=\"__VIEWSTATE"
         },
         {
             "search": "headers[x-aspnet-version]",
@@ -19,9 +12,16 @@
             "offset": 1
         },
         {
-            "regexp": "<input[^>]+name=\"__VIEWSTATE"
+            "search": "headers[x-powered-by]",
+            "regexp": "^ASP\\.NET"
+        },
+        {
+            "search": "cookies[ASP.NET_SessionId]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[ASPSESSION]",
+            "regexp": ".*"
         }
-    ],
-    "website": "https://www.asp.net",
-    "name": "Microsoft ASP.NET"
+    ]
 }

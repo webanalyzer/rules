@@ -1,10 +1,8 @@
 {
     "implies": "React",
+    "website": "https://www.wix.com",
+    "name": "Wix",
     "matches": [
-        {
-            "search": "meta[generator]",
-            "regexp": "Wix\\.com Website Builder"
-        },
         {
             "search": "cookies[Domain]",
             "regexp": "\\.wix\\.com"
@@ -20,8 +18,10 @@
         {
             "search": "headers[x-wix-request-id]",
             "regexp": ".*"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "Wix\\.com Website Builder"
         }
-    ],
-    "website": "https://www.wix.com",
-    "name": "Wix"
+    ]
 }
