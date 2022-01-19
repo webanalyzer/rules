@@ -1,8 +1,10 @@
 {
-    "implies": "PHP",
-    "website": "https://www.yiiframework.com",
     "name": "Yii",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[YII_CSRF_TOKEN]"
+        },
         {
             "regexp": "Powered by <a href=\"http://www\\.yiiframework\\.com/\" rel=\"external\">Yii Framework</a>"
         },
@@ -11,10 +13,8 @@
         },
         {
             "regexp": "<!\\[CDATA\\[YII-BLOCK-(?:HEAD|BODY-BEGIN|BODY-END)\\]"
-        },
-        {
-            "search": "cookies[YII_CSRF_TOKEN]",
-            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://www.yiiframework.com",
+    "implies": "PHP"
 }
