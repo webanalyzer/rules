@@ -1,5 +1,8 @@
 {
-    "name": "cgit",
+    "implies": [
+        "git",
+        "C"
+    ],
     "matches": [
         {
             "regexp": "<[^>]+id='cgit'"
@@ -10,13 +13,10 @@
         },
         {
             "offset": 1,
-            "regexp": "^cgit v([\\d.a-z-]+)$",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "^cgit v([\\d.a-z-]+)$"
         }
     ],
-    "website": "http://git.zx2c4.com/cgit",
-    "implies": [
-        "git",
-        "C"
-    ]
+    "name": "cgit",
+    "website": "http://git.zx2c4.com/cgit"
 }
