@@ -1,17 +1,17 @@
 {
-    "matches": [
-        {
-            "regexp": "JIRA",
-            "search": "meta[application-name]"
-        },
-        {
-            "regexp": "([\\d.]+)",
-            "offset": 1,
-            "certainty": 0,
-            "search": "meta[data-version]"
-        }
-    ],
     "website": "http://www.atlassian.com/software/jira/overview/",
     "name": "Atlassian Jira",
+    "matches": [
+        {
+            "search": "meta[application-name]",
+            "regexp": "JIRA"
+        },
+        {
+            "search": "meta[data-version]",
+            "regexp": "([\\d.]+)",
+            "certainty": 0,
+            "offset": 1
+        }
+    ],
     "implies": "Java"
 }

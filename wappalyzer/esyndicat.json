@@ -1,15 +1,15 @@
 {
-    "matches": [
-        {
-            "regexp": "^eSyndiCat ",
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "^eSyndiCat",
-            "search": "headers[x-drectory-script]"
-        }
-    ],
     "website": "http://esyndicat.com",
     "name": "eSyndiCat",
+    "matches": [
+        {
+            "search": "headers[x-drectory-script]",
+            "regexp": "^eSyndiCat"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "^eSyndiCat "
+        }
+    ],
     "implies": "PHP"
 }
