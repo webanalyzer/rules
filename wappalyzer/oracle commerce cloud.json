@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "search": "headers[oraclecommercecloud-version]",
-            "offset": 1,
-            "regexp": "^(.+)$"
+            "regexp": "<[^>]+id=\"oracle-cc\""
         },
         {
-            "regexp": "<[^>]+id=\"oracle-cc\""
+            "regexp": "^(.+)$",
+            "offset": 1,
+            "search": "headers[oraclecommercecloud-version]"
         }
     ],
     "name": "Oracle Commerce Cloud",

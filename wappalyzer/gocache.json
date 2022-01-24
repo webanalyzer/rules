@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "search": "headers[x-gocache-cachestatus]",
-            "regexp": ".*"
+            "regexp": "^gocache$",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^gocache$"
+            "regexp": ".*",
+            "search": "headers[x-gocache-cachestatus]"
         }
     ],
     "name": "GoCache",

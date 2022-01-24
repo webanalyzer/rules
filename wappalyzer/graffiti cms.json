@@ -1,16 +1,16 @@
 {
+    "implies": "Microsoft ASP.NET",
     "matches": [
         {
-            "search": "cookies[graffitibot]",
-            "regexp": ".*"
+            "regexp": "Graffiti CMS ([^\"]+)",
+            "offset": 1,
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Graffiti CMS ([^\"]+)"
+            "regexp": ".*",
+            "search": "cookies[graffitibot]"
         }
     ],
     "name": "Graffiti CMS",
-    "website": "http://graffiticms.codeplex.com",
-    "implies": "Microsoft ASP.NET"
+    "website": "http://graffiticms.codeplex.com"
 }

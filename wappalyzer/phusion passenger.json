@@ -1,14 +1,14 @@
 {
     "matches": [
         {
-            "search": "headers[x-powered-by]",
+            "regexp": "Phusion Passenger ([\\d.]+)",
             "offset": 1,
-            "regexp": "Phusion Passenger ?([\\d.]+)?"
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
+            "regexp": "Phusion Passenger ?([\\d.]+)?",
             "offset": 1,
-            "regexp": "Phusion Passenger ([\\d.]+)"
+            "search": "headers[x-powered-by]"
         }
     ],
     "name": "Phusion Passenger",

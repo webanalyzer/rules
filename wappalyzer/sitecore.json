@@ -4,12 +4,16 @@
             "regexp": "<img[^>]+src=\"[^>]*/~/media/[^>]+\\.ashx"
         },
         {
-            "search": "cookies[SC_ANALYTICS_GLOBAL_COOKIE]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[SC_OS_SessionId]"
         },
         {
-            "search": "cookies[sc_expview]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[sc_expview]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[SC_ANALYTICS_GLOBAL_COOKIE]"
         }
     ],
     "name": "Sitecore",
