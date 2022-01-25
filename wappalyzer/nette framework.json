@@ -1,14 +1,7 @@
 {
     "implies": "PHP",
+    "website": "https://nette.org",
     "matches": [
-        {
-            "regexp": ".*",
-            "search": "cookies[nette-browser]"
-        },
-        {
-            "regexp": "^Nette Framework",
-            "search": "headers[x-powered-by]"
-        },
         {
             "regexp": "<input[^>]+data-nette-rules"
         },
@@ -17,8 +10,15 @@
         },
         {
             "regexp": "<input[^>]+id=\"frm-"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^Nette Framework"
+        },
+        {
+            "search": "cookies[nette-browser]",
+            "regexp": ".*"
         }
     ],
-    "name": "Nette Framework",
-    "website": "https://nette.org"
+    "name": "Nette Framework"
 }
