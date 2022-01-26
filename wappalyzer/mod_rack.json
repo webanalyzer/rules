@@ -4,17 +4,17 @@
         "Apache"
     ],
     "website": "http://phusionpassenger.com",
+    "name": "mod_rack",
     "matches": [
         {
+            "regexp": "mod_rack(?:/([\\d.]+))?",
             "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "mod_rack(?:/([\\d.]+))?"
+            "offset": 1
         },
         {
+            "regexp": "mod_rack(?:/([\\d.]+))?",
             "search": "headers[server]",
-            "offset": 1,
-            "regexp": "mod_rack(?:/([\\d.]+))?"
+            "offset": 1
         }
-    ],
-    "name": "mod_rack"
+    ]
 }

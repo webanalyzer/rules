@@ -1,15 +1,15 @@
 {
     "website": "http://www.kentico.com",
+    "name": "Kentico CMS",
     "matches": [
         {
+            "regexp": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))",
             "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))"
+            "offset": 1
         },
         {
-            "search": "cookies[CMSPreferredCulture]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[CMSPreferredCulture]"
         }
-    ],
-    "name": "Kentico CMS"
+    ]
 }

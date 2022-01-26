@@ -6,16 +6,16 @@
         "Perl"
     ],
     "website": "http://www.apachefriends.org/en/xampp.html",
+    "name": "XAMPP",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "<title>XAMPP(?: Version ([\\d\\.]+))?</title>"
+            "regexp": "Kai Oswald Seidler",
+            "certainty": 10,
+            "search": "meta[author]"
         },
         {
-            "search": "meta[author]",
-            "certainty": 10,
-            "regexp": "Kai Oswald Seidler"
+            "regexp": "<title>XAMPP(?: Version ([\\d\\.]+))?</title>",
+            "offset": 1
         }
-    ],
-    "name": "XAMPP"
+    ]
 }

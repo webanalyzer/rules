@@ -1,14 +1,14 @@
 {
     "website": "https://www.voracio.co.uk",
+    "name": "Voracio",
     "matches": [
         {
-            "search": "cookies[voracio_csrf_token]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[voracio_sessionid]"
         },
         {
-            "search": "cookies[voracio_sessionid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[voracio_csrf_token]"
         }
-    ],
-    "name": "Voracio"
+    ]
 }

@@ -4,30 +4,30 @@
         "MySQL"
     ],
     "website": "https://wordpress.org",
+    "name": "WordPress",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "meta[shareaholic:wp_version]"
+        },
+        {
+            "regexp": "^WordPress(?: ([\\d.]+))?",
+            "search": "meta[generator]",
+            "offset": 1
+        },
+        {
+            "regexp": "/xmlrpc\\.php$",
+            "search": "headers[x-pingback]"
+        },
+        {
+            "regexp": "rel=\"https://api\\.w\\.org/\"",
+            "search": "headers[link]"
+        },
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
         },
         {
             "regexp": "<link[^>]+s\\d+\\.wp\\.com"
-        },
-        {
-            "search": "headers[link]",
-            "regexp": "rel=\"https://api\\.w\\.org/\""
-        },
-        {
-            "search": "headers[x-pingback]",
-            "regexp": "/xmlrpc\\.php$"
-        },
-        {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^WordPress(?: ([\\d.]+))?"
-        },
-        {
-            "search": "meta[shareaholic:wp_version]",
-            "regexp": ".*"
         }
-    ],
-    "name": "WordPress"
+    ]
 }
