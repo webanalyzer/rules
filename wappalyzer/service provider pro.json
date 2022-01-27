@@ -1,24 +1,24 @@
 {
-    "website": "https://spp.co",
     "name": "Service Provider Pro",
     "matches": [
         {
-            "regexp": "app.spp.co",
-            "search": "meta[server]"
+            "search": "meta[server]",
+            "regexp": "app.spp.co"
         },
         {
-            "regexp": ".*",
+            "search": "cookies[spp_orderform]",
+            "regexp": ".*"
+        },
+        {
             "certainty": 25,
-            "search": "cookies[spp_csrf]"
+            "search": "cookies[spp_session]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
             "certainty": 25,
-            "search": "cookies[spp_session]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[spp_orderform]"
+            "search": "cookies[spp_csrf]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://spp.co"
 }

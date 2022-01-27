@@ -1,14 +1,14 @@
 {
-    "implies": "PHP",
-    "website": "https://symfony.com",
     "name": "Symfony",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[sf_redirect]"
+            "regexp": "<div id=\"sfwdt[^\"]+\" class=\"[^\"]*sf-toolbar"
         },
         {
-            "regexp": "<div id=\"sfwdt[^\"]+\" class=\"[^\"]*sf-toolbar"
+            "search": "cookies[sf_redirect]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "implies": "PHP",
+    "website": "https://symfony.com"
 }

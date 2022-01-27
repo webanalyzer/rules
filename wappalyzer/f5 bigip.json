@@ -1,42 +1,42 @@
 {
-    "website": "https://www.f5.com/products/big-ip-services",
     "name": "F5 BigIP",
     "matches": [
         {
-            "regexp": "^big-?ip$",
-            "search": "headers[server]"
+            "search": "headers[server]",
+            "regexp": "^big-?ip$"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[F5_fullWT]"
+            "search": "cookies[F5_ST]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[F5_ST]"
+            "search": "cookies[F5_HT_shrinked]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[TIN]"
+            "search": "cookies[MRHSequence]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[MRHSHint]"
+            "search": "cookies[LastMRH_Session]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[LastMRH_Session]"
+            "search": "cookies[F5_fullWT]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[F5_HT_shrinked]"
+            "search": "cookies[MRHSHint]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[MRHSequence]"
+            "search": "cookies[MRHSession]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[MRHSession]"
+            "search": "cookies[TIN]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://www.f5.com/products/big-ip-services"
 }

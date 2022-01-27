@@ -1,14 +1,14 @@
 {
-    "implies": "PHP",
-    "website": "http://www.cubecart.com",
     "name": "CubeCart",
     "matches": [
         {
-            "regexp": "cubecart",
-            "search": "meta[generator]"
+            "regexp": "(?:Powered by <a href=[^>]+cubecart\\.com|<p[^>]+>Powered by CubeCart)"
         },
         {
-            "regexp": "(?:Powered by <a href=[^>]+cubecart\\.com|<p[^>]+>Powered by CubeCart)"
+            "search": "meta[generator]",
+            "regexp": "cubecart"
         }
-    ]
+    ],
+    "implies": "PHP",
+    "website": "http://www.cubecart.com"
 }

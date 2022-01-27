@@ -1,15 +1,15 @@
 {
-    "implies": "Vue.js",
-    "website": "https://saber.land/",
     "name": "Saber",
     "matches": [
         {
-            "regexp": "^Saber v([\\d.]+)$",
-            "search": "meta[generator]",
-            "offset": 1
+            "regexp": "<div [^>]*id=\"_saber\""
         },
         {
-            "regexp": "<div [^>]*id=\"_saber\""
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "^Saber v([\\d.]+)$"
         }
-    ]
+    ],
+    "implies": "Vue.js",
+    "website": "https://saber.land/"
 }
