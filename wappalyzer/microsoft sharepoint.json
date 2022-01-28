@@ -1,4 +1,5 @@
 {
+    "website": "https://sharepoint.microsoft.com",
     "name": "Microsoft SharePoint",
     "matches": [
         {
@@ -10,7 +11,7 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-sharepointhealthscore]",
+            "search": "headers[sprequestguid]",
             "regexp": ".*"
         },
         {
@@ -19,9 +20,8 @@
             "regexp": "^(.+)$"
         },
         {
-            "search": "headers[sprequestguid]",
+            "search": "headers[x-sharepointhealthscore]",
             "regexp": ".*"
         }
-    ],
-    "website": "https://sharepoint.microsoft.com"
+    ]
 }
