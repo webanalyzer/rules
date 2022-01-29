@@ -4,16 +4,16 @@
         "IIS",
         "Windows Server"
     ],
-    "website": "http://parselecom.net",
     "name": "Pars Elecom Portal",
     "matches": [
         {
-            "search": "meta[copyright]",
+            "search": "headers[x-powered-by]",
             "regexp": "Pars Elecom Portal"
         },
         {
-            "search": "headers[x-powered-by]",
+            "search": "meta[copyright]",
             "regexp": "Pars Elecom Portal"
         }
-    ]
+    ],
+    "website": "http://parselecom.net"
 }

@@ -1,5 +1,4 @@
 {
-    "website": "http://php.net",
     "name": "PHP",
     "matches": [
         {
@@ -7,14 +6,15 @@
             "regexp": ".*"
         },
         {
-            "offset": 1,
             "search": "headers[x-powered-by]",
-            "regexp": "^php/?([\\d.]+)?"
+            "regexp": "^php/?([\\d.]+)?",
+            "offset": 1
         },
         {
-            "offset": 1,
             "search": "headers[server]",
-            "regexp": "php/?([\\d.]+)?"
+            "regexp": "php/?([\\d.]+)?",
+            "offset": 1
         }
-    ]
+    ],
+    "website": "http://php.net"
 }
