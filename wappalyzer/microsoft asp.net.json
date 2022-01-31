@@ -1,5 +1,6 @@
 {
-    "implies": "IIS",
+    "name": "Microsoft ASP.NET",
+    "website": "https://www.asp.net",
     "matches": [
         {
             "search": "cookies[ASPSESSION]",
@@ -17,11 +18,10 @@
             "regexp": "^ASP\\.NET"
         },
         {
-            "search": "headers[x-aspnet-version]",
             "offset": 1,
+            "search": "headers[x-aspnet-version]",
             "regexp": "(.+)"
         }
     ],
-    "name": "Microsoft ASP.NET",
-    "website": "https://www.asp.net"
+    "implies": "IIS"
 }
