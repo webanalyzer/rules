@@ -1,5 +1,4 @@
 {
-    "name": "Fastly",
     "website": "https://www.fastly.com",
     "matches": [
         {
@@ -11,16 +10,17 @@
             "regexp": ".*"
         },
         {
+            "search": "headers[x-via-fastly:]",
+            "regexp": ".*"
+        },
+        {
             "search": "headers[vary]",
             "regexp": "Fastly-SSL"
         },
         {
             "search": "headers[x-fastly-origin]",
             "regexp": ".*"
-        },
-        {
-            "search": "headers[x-via-fastly:]",
-            "regexp": ".*"
         }
-    ]
+    ],
+    "name": "Fastly"
 }

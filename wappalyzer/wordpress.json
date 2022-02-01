@@ -1,15 +1,6 @@
 {
-    "name": "WordPress",
     "website": "https://wordpress.org",
     "matches": [
-        {
-            "search": "headers[x-pingback]",
-            "regexp": "/xmlrpc\\.php$"
-        },
-        {
-            "search": "headers[link]",
-            "regexp": "rel=\"https://api\\.w\\.org/\""
-        },
         {
             "offset": 1,
             "search": "meta[generator]",
@@ -20,12 +11,21 @@
             "regexp": ".*"
         },
         {
+            "search": "headers[link]",
+            "regexp": "rel=\"https://api\\.w\\.org/\""
+        },
+        {
+            "search": "headers[x-pingback]",
+            "regexp": "/xmlrpc\\.php$"
+        },
+        {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
         },
         {
             "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         }
     ],
+    "name": "WordPress",
     "implies": [
         "PHP",
         "MySQL"
