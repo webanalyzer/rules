@@ -3,18 +3,18 @@
     "name": "PHP",
     "matches": [
         {
-            "offset": 1,
-            "search": "headers[x-powered-by]",
-            "regexp": "^php/?([\\d.]+)?"
-        },
-        {
-            "offset": 1,
-            "search": "headers[server]",
-            "regexp": "php/?([\\d.]+)?"
-        },
-        {
             "search": "cookies[PHPSESSID]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^php/?([\\d.]+)?",
+            "offset": 1
+        },
+        {
+            "search": "headers[server]",
+            "regexp": "php/?([\\d.]+)?",
+            "offset": 1
         }
     ]
 }

@@ -1,5 +1,4 @@
 {
-    "implies": "PHP",
     "website": "https://www.concretecms.com",
     "name": "Concrete CMS",
     "matches": [
@@ -8,9 +7,10 @@
             "regexp": ".*"
         },
         {
-            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "^concrete5(?: - ([\\d.]+)$)?"
+            "regexp": "^concrete5(?: - ([\\d.]+)$)?",
+            "offset": 1
         }
-    ]
+    ],
+    "implies": "PHP"
 }

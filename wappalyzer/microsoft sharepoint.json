@@ -3,20 +3,20 @@
     "name": "Microsoft SharePoint",
     "matches": [
         {
-            "offset": 1,
-            "search": "headers[microsoftsharepointteamservices]",
-            "regexp": "^(.+)$"
-        },
-        {
             "search": "headers[sharepointhealthscore]",
             "regexp": ".*"
         },
         {
-            "search": "headers[sprequestguid]",
-            "regexp": ".*"
+            "search": "headers[microsoftsharepointteamservices]",
+            "regexp": "^(.+)$",
+            "offset": 1
         },
         {
             "search": "headers[x-sharepointhealthscore]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[sprequestguid]",
             "regexp": ".*"
         },
         {
