@@ -1,17 +1,17 @@
 {
-    "website": "https://www.roadiz.io",
-    "name": "Roadiz CMS",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "^Roadiz ?(?:master|develop)? v?([0-9\\.]+)",
-            "offset": 1
+            "regexp": "Roadiz CMS",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "Roadiz CMS"
+            "regexp": "^Roadiz ?(?:master|develop)? v?([0-9\\.]+)",
+            "offset": 1,
+            "search": "meta[generator]"
         }
     ],
+    "name": "Roadiz CMS",
+    "website": "https://www.roadiz.io",
     "implies": [
         "PHP",
         "Symfony"
