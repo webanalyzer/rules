@@ -1,21 +1,21 @@
 {
+    "name": "Sitecore",
     "matches": [
         {
             "regexp": "<img[^>]+src=\"[^>]*/~/media/[^>]+\\.ashx"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[sc_expview]"
+            "search": "cookies[SC_OS_SessionId]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[SC_ANALYTICS_GLOBAL_COOKIE]"
+            "search": "cookies[sc_expview]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[SC_OS_SessionId]"
+            "search": "cookies[SC_ANALYTICS_GLOBAL_COOKIE]",
+            "regexp": ".*"
         }
     ],
-    "name": "Sitecore",
     "website": "https://www.sitecore.com/"
 }
