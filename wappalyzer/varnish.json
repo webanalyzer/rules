@@ -4,12 +4,7 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-varnish-hostname]"
-        },
-        {
-            "offset": 1,
-            "regexp": "varnish(?: \\(Varnish/([\\d.]+)\\))?",
-            "search": "headers[via]"
+            "search": "headers[x-varnish-cache]"
         },
         {
             "regexp": ".*",
@@ -21,7 +16,12 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-varnish-cache]"
+            "search": "headers[x-varnish-hostname]"
+        },
+        {
+            "regexp": "varnish(?: \\(Varnish/([\\d.]+)\\))?",
+            "offset": 1,
+            "search": "headers[via]"
         },
         {
             "regexp": ".*",

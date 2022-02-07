@@ -8,20 +8,20 @@
             "search": "cookies[Domain]"
         },
         {
-            "regexp": "Wix\\.com Website Builder",
-            "search": "meta[generator]"
+            "regexp": ".*",
+            "search": "headers[x-wix-renderer-server]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-wix-renderer-server]"
+            "search": "headers[x-wix-request-id]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-wix-server-artifact-id]"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-wix-request-id]"
+            "regexp": "Wix\\.com Website Builder",
+            "search": "meta[generator]"
         }
     ]
 }

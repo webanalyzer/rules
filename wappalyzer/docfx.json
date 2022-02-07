@@ -7,13 +7,13 @@
             "search": "meta[docfx:navrel]"
         },
         {
-            "regexp": "toc.html",
-            "search": "meta[docfx:tocrel]"
+            "regexp": "docfx\\s([\\d\\.]+)",
+            "offset": 1,
+            "search": "meta[generator]"
         },
         {
-            "offset": 1,
-            "regexp": "docfx\\s([\\d\\.]+)",
-            "search": "meta[generator]"
+            "regexp": "toc.html",
+            "search": "meta[docfx:tocrel]"
         }
     ]
 }

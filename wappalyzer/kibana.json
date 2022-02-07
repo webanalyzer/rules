@@ -10,13 +10,13 @@
             "regexp": "<title>Kibana</title>"
         },
         {
-            "regexp": "kibana",
-            "search": "headers[kbn-name]"
+            "regexp": "^([\\d.]+)$",
+            "offset": 1,
+            "search": "headers[kbn-version]"
         },
         {
-            "offset": 1,
-            "regexp": "^([\\d.]+)$",
-            "search": "headers[kbn-version]"
+            "regexp": "kibana",
+            "search": "headers[kbn-name]"
         }
     ]
 }

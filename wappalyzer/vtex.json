@@ -3,6 +3,14 @@
     "name": "VTEX",
     "matches": [
         {
+            "regexp": "vtex",
+            "search": "headers[powered]"
+        },
+        {
+            "regexp": "^VTEX IO$",
+            "search": "headers[server]"
+        },
+        {
             "regexp": ".*",
             "search": "cookies[VtexStoreVersion]"
         },
@@ -17,14 +25,6 @@
         {
             "regexp": ".*",
             "search": "cookies[VtexFingerPrint]"
-        },
-        {
-            "regexp": "^VTEX IO$",
-            "search": "headers[server]"
-        },
-        {
-            "regexp": "vtex",
-            "search": "headers[powered]"
         }
     ]
 }

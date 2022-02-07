@@ -5,7 +5,11 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[wpe-backend]"
+            "search": "headers[x-wpe-loopback-upstream-addr]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-pass-why]"
         },
         {
             "regexp": "WP Engine",
@@ -13,11 +17,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-wpe-loopback-upstream-addr]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-pass-why]"
+            "search": "headers[wpe-backend]"
         }
     ]
 }

@@ -8,14 +8,14 @@
             "certainty": 50
         },
         {
+            "regexp": "Joomla! ([\\d.]+)",
             "offset": 1,
-            "regexp": "Joomla!(?: ([\\d.]+))?",
-            "search": "meta[generator]"
+            "search": "headers[x-content-encoded-by]"
         },
         {
+            "regexp": "Joomla!(?: ([\\d.]+))?",
             "offset": 1,
-            "regexp": "Joomla! ([\\d.]+)",
-            "search": "headers[x-content-encoded-by]"
+            "search": "meta[generator]"
         }
     ]
 }

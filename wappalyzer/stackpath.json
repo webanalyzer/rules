@@ -3,13 +3,13 @@
     "name": "StackPath",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "^StackCDN(?: ([\\d.]+))?",
-            "search": "headers[x-provided-by]"
-        },
-        {
             "regexp": "hosting\\.stackcp\\.net$",
             "search": "headers[x-backend-server]"
+        },
+        {
+            "regexp": "^StackCDN(?: ([\\d.]+))?",
+            "offset": 1,
+            "search": "headers[x-provided-by]"
         }
     ]
 }

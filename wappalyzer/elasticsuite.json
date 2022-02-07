@@ -7,9 +7,10 @@
     "name": "ElasticSuite",
     "matches": [
         {
-            "regexp": ".*",
-            "certainty": 50,
-            "search": "cookies[STVID]"
+            "regexp": "<input [^>]*Smile_Elasticsuite[^>]*>"
+        },
+        {
+            "regexp": "<[\\S\\s.*]*Smile_Elasticsuite[\\S\\s.*]*>"
         },
         {
             "regexp": ".*",
@@ -17,10 +18,9 @@
             "search": "cookies[STUID]"
         },
         {
-            "regexp": "<input [^>]*Smile_Elasticsuite[^>]*>"
-        },
-        {
-            "regexp": "<[\\S\\s.*]*Smile_Elasticsuite[\\S\\s.*]*>"
+            "regexp": ".*",
+            "certainty": 50,
+            "search": "cookies[STVID]"
         }
     ]
 }

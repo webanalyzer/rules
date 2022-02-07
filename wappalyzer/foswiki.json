@@ -5,22 +5,18 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "cookies[FOSWIKISTRIKEONE]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[SFOSWIKISID]"
+            "search": "meta[foswiki.SERVERTIME]"
         },
         {
             "regexp": ".*",
             "search": "meta[foswiki.WIKINAME]"
         },
         {
-            "regexp": ".*",
-            "search": "meta[foswiki.SERVERTIME]"
+            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
         },
         {
-            "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
+            "regexp": ".*",
+            "search": "headers[x-foswikiuri]"
         },
         {
             "regexp": ".*",
@@ -28,7 +24,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-foswikiuri]"
+            "search": "cookies[FOSWIKISTRIKEONE]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[SFOSWIKISID]"
         }
     ]
 }

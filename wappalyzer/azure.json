@@ -4,23 +4,7 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "cookies[TiPMix]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[ARRAffinity]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-ms-client-request-id]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[azure-slotname]"
-        },
-        {
-            "regexp": "^Windows-Azure",
-            "search": "headers[server]"
+            "search": "headers[x-ms-correlation-request-id]"
         },
         {
             "regexp": ".*",
@@ -28,11 +12,15 @@
         },
         {
             "regexp": ".*",
+            "search": "headers[x-ms-client-request-id]"
+        },
+        {
+            "regexp": ".*",
             "search": "headers[azure-sitename]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-ms-correlation-request-id]"
+            "search": "headers[azure-slotname]"
         },
         {
             "regexp": ".*",
@@ -41,6 +29,18 @@
         {
             "regexp": ".*",
             "search": "headers[azure-version]"
+        },
+        {
+            "regexp": "^Windows-Azure",
+            "search": "headers[server]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[TiPMix]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[ARRAffinity]"
         }
     ]
 }

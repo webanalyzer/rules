@@ -4,14 +4,14 @@
     "name": "Atlassian Jira",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "([\\d.]+)",
-            "certainty": 0,
-            "search": "meta[data-version]"
-        },
-        {
             "regexp": "JIRA",
             "search": "meta[application-name]"
+        },
+        {
+            "regexp": "([\\d.]+)",
+            "certainty": 0,
+            "offset": 1,
+            "search": "meta[data-version]"
         }
     ]
 }

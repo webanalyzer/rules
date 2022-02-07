@@ -4,11 +4,6 @@
     "name": "Ruby on Rails",
     "matches": [
         {
-            "regexp": ".*",
-            "certainty": 75,
-            "search": "cookies[_session_id]"
-        },
-        {
             "regexp": "^authenticity_token$",
             "certainty": 50,
             "search": "meta[csrf-param]"
@@ -20,6 +15,11 @@
         {
             "regexp": "mod_(?:rails|rack)",
             "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": ".*",
+            "certainty": 75,
+            "search": "cookies[_session_id]"
         }
     ]
 }

@@ -4,20 +4,20 @@
     "name": "wpCache",
     "matches": [
         {
+            "regexp": "<!--[^>]+wpCache"
+        },
+        {
+            "regexp": "wpCache(?:/([\\d.]+))?",
+            "offset": 1,
+            "search": "headers[x-powered-by]"
+        },
+        {
             "regexp": "wpCache",
             "search": "meta[keywords]"
         },
         {
             "regexp": "wpCache",
             "search": "meta[generator]"
-        },
-        {
-            "regexp": "<!--[^>]+wpCache"
-        },
-        {
-            "offset": 1,
-            "regexp": "wpCache(?:/([\\d.]+))?",
-            "search": "headers[x-powered-by]"
         }
     ]
 }

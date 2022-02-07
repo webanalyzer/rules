@@ -19,13 +19,13 @@
             "certainty": 20
         },
         {
-            "offset": 1,
-            "regexp": "MODX[^\\d.]*([\\d.]+)?",
-            "search": "meta[generator]"
-        },
-        {
             "regexp": "^MODX",
             "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": "MODX[^\\d.]*([\\d.]+)?",
+            "offset": 1,
+            "search": "meta[generator]"
         }
     ]
 }

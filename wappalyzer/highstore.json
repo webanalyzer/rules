@@ -4,14 +4,14 @@
     "name": "HighStore",
     "matches": [
         {
-            "regexp": "^HighStore\\.IR$",
-            "search": "meta[generator]"
-        },
-        {
-            "offset": 1,
             "regexp": "^([\\d\\.]+)$",
             "certainty": 50,
+            "offset": 1,
             "search": "meta[hs:version]"
+        },
+        {
+            "regexp": "^HighStore\\.IR$",
+            "search": "meta[generator]"
         }
     ]
 }
