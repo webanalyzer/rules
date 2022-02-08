@@ -3,19 +3,19 @@
         "React",
         "webpack"
     ],
-    "website": "https://www.gatsbyjs.org/",
-    "name": "Gatsby",
     "matches": [
+        {
+            "offset": 1,
+            "regexp": "^Gatsby(?: ([0-9.]+))?$",
+            "search": "meta[generator]"
+        },
         {
             "regexp": "<div id=\"___gatsby\">"
         },
         {
             "regexp": "<style id=\"gatsby-inlined-css\">"
-        },
-        {
-            "regexp": "^Gatsby(?: ([0-9.]+))?$",
-            "offset": 1,
-            "search": "meta[generator]"
         }
-    ]
+    ],
+    "website": "https://www.gatsbyjs.org/",
+    "name": "Gatsby"
 }

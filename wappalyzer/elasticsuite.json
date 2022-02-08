@@ -3,8 +3,6 @@
         "PHP",
         "Elasticsearch"
     ],
-    "website": "https://elasticsuite.io",
-    "name": "ElasticSuite",
     "matches": [
         {
             "regexp": "<input [^>]*Smile_Elasticsuite[^>]*>"
@@ -13,14 +11,16 @@
             "regexp": "<[\\S\\s.*]*Smile_Elasticsuite[\\S\\s.*]*>"
         },
         {
-            "regexp": ".*",
             "certainty": 50,
-            "search": "cookies[STUID]"
+            "regexp": ".*",
+            "search": "cookies[STVID]"
         },
         {
-            "regexp": ".*",
             "certainty": 50,
-            "search": "cookies[STVID]"
+            "regexp": ".*",
+            "search": "cookies[STUID]"
         }
-    ]
+    ],
+    "website": "https://elasticsuite.io",
+    "name": "ElasticSuite"
 }

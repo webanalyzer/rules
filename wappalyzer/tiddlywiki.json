@@ -1,9 +1,9 @@
 {
-    "website": "http://tiddlywiki.com",
-    "name": "TiddlyWiki",
     "matches": [
         {
-            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
+            "offset": 1,
+            "regexp": "^(.+)$",
+            "search": "meta[tiddlywiki-version]"
         },
         {
             "regexp": "^TiddlyWiki$",
@@ -18,9 +18,9 @@
             "search": "meta[copyright]"
         },
         {
-            "regexp": "^(.+)$",
-            "offset": 1,
-            "search": "meta[tiddlywiki-version]"
+            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
         }
-    ]
+    ],
+    "website": "http://tiddlywiki.com",
+    "name": "TiddlyWiki"
 }
