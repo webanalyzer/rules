@@ -1,4 +1,6 @@
 {
+    "website": "https://www.otrs.com",
+    "name": "otrs",
     "implies": "Perl",
     "matches": [
         {
@@ -6,10 +8,8 @@
         },
         {
             "offset": 1,
-            "regexp": "OTRS ([\\d.]+)",
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-powered-by]",
+            "regexp": "OTRS ([\\d.]+)"
         }
-    ],
-    "website": "https://www.otrs.com",
-    "name": "otrs"
+    ]
 }

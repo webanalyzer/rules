@@ -1,4 +1,6 @@
 {
+    "website": "https://phpfusion.com",
+    "name": "PHPFusion",
     "implies": [
         "PHP",
         "MySQL"
@@ -12,15 +14,13 @@
         },
         {
             "offset": 1,
-            "regexp": "PHPFusion (.+)$",
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-phpfusion]",
+            "regexp": "(.+)$"
         },
         {
             "offset": 1,
-            "regexp": "(.+)$",
-            "search": "headers[x-phpfusion]"
+            "search": "headers[x-powered-by]",
+            "regexp": "PHPFusion (.+)$"
         }
-    ],
-    "website": "https://phpfusion.com",
-    "name": "PHPFusion"
+    ]
 }
