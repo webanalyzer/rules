@@ -1,12 +1,12 @@
 {
-    "website": "http://jfrog.com/open-source/#os-arti",
-    "name": "Artifactory Web Server",
     "implies": "Artifactory",
+    "name": "Artifactory Web Server",
     "matches": [
         {
-            "offset": 1,
             "search": "headers[server]",
+            "offset": 1,
             "regexp": "Artifactory(?:/([\\d.]+))?"
         }
-    ]
+    ],
+    "website": "http://jfrog.com/open-source/#os-arti"
 }

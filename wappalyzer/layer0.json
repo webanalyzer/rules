@@ -1,5 +1,4 @@
 {
-    "website": "https://www.layer0.co",
     "name": "Layer0",
     "matches": [
         {
@@ -15,17 +14,18 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-0-t]",
-            "regexp": ".*"
-        },
-        {
-            "offset": 1,
             "search": "headers[x-0-version]",
+            "offset": 1,
             "regexp": "^\\d+ ([\\d.]+) "
         },
         {
             "search": "headers[x-0-status]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[x-0-t]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://www.layer0.co"
 }

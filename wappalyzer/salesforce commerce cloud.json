@@ -1,19 +1,19 @@
 {
-    "website": "http://demandware.com",
-    "name": "Salesforce Commerce Cloud",
     "implies": "Salesforce",
+    "name": "Salesforce Commerce Cloud",
     "matches": [
         {
-            "search": "cookies[dw_dnt]",
+            "search": "cookies[dwsid]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[dwsid]",
+            "search": "cookies[dw_dnt]",
             "regexp": ".*"
         },
         {
             "search": "headers[server]",
             "regexp": "Demandware eCommerce Server"
         }
-    ]
+    ],
+    "website": "http://demandware.com"
 }

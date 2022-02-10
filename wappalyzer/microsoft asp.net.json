@@ -1,11 +1,7 @@
 {
-    "website": "https://www.asp.net",
-    "name": "Microsoft ASP.NET",
     "implies": "IIS",
+    "name": "Microsoft ASP.NET",
     "matches": [
-        {
-            "regexp": "<input[^>]+name=\"__VIEWSTATE"
-        },
         {
             "search": "cookies[ASPSESSION]",
             "regexp": ".*"
@@ -15,13 +11,17 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^ASP\\.NET"
+            "regexp": "<input[^>]+name=\"__VIEWSTATE"
         },
         {
-            "offset": 1,
             "search": "headers[x-aspnet-version]",
+            "offset": 1,
             "regexp": "(.+)"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^ASP\\.NET"
         }
-    ]
+    ],
+    "website": "https://www.asp.net"
 }
