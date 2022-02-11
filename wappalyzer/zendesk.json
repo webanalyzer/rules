@@ -1,8 +1,9 @@
 {
+    "website": "https://zendesk.com",
     "name": "Zendesk",
     "matches": [
         {
-            "search": "cookies[_zendesk_shared_session]",
+            "search": "headers[x-zendesk-user-id]",
             "regexp": ".*"
         },
         {
@@ -10,13 +11,12 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[_help_center_session]",
+            "search": "cookies[_zendesk_shared_session]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-zendesk-user-id]",
+            "search": "cookies[_help_center_session]",
             "regexp": ".*"
         }
-    ],
-    "website": "https://zendesk.com"
+    ]
 }

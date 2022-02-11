@@ -1,4 +1,5 @@
 {
+    "website": "http://www.cpanel.net",
     "name": "cPanel",
     "matches": [
         {
@@ -10,13 +11,12 @@
             "regexp": ".*"
         },
         {
-            "regexp": "<!-- cPanel"
-        },
-        {
             "search": "headers[server]",
             "offset": 1,
             "regexp": "cpsrvd/([\\d.]+)"
+        },
+        {
+            "regexp": "<!-- cPanel"
         }
-    ],
-    "website": "http://www.cpanel.net"
+    ]
 }
