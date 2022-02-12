@@ -1,6 +1,5 @@
 {
     "website": "https://pantheon.io/",
-    "name": "Pantheon",
     "implies": [
         "PHP",
         "Nginx",
@@ -13,12 +12,13 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-styx-req-id]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[server]",
             "regexp": "^Pantheon"
+        },
+        {
+            "search": "headers[x-styx-req-id]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "name": "Pantheon"
 }

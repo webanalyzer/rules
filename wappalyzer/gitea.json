@@ -1,6 +1,5 @@
 {
     "website": "https://gitea.io",
-    "name": "Gitea",
     "implies": "Go",
     "matches": [
         {
@@ -8,12 +7,13 @@
             "regexp": ".*"
         },
         {
-            "search": "meta[keywords]",
-            "regexp": "^go,git,self-hosted,gitea$"
-        },
-        {
             "offset": 1,
             "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)"
+        },
+        {
+            "search": "meta[keywords]",
+            "regexp": "^go,git,self-hosted,gitea$"
         }
-    ]
+    ],
+    "name": "Gitea"
 }

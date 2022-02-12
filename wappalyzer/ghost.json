@@ -1,6 +1,5 @@
 {
     "website": "http://ghost.org",
-    "name": "Ghost",
     "implies": "Node.js",
     "matches": [
         {
@@ -8,9 +7,10 @@
             "regexp": ".*"
         },
         {
-            "search": "meta[generator]",
             "offset": 1,
+            "search": "meta[generator]",
             "regexp": "Ghost(?:\\s([\\d.]+))?"
         }
-    ]
+    ],
+    "name": "Ghost"
 }
