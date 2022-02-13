@@ -1,36 +1,36 @@
 {
-    "website": "https://www.shopware.com",
+    "matches": [
+        {
+            "offset": 1,
+            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+"
+        },
+        {
+            "regexp": "Shopware",
+            "search": "meta[application-name]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[sw-invalidation-states]"
+        },
+        {
+            "regexp": "^[a-fA-F0-9]{32}$",
+            "search": "headers[sw-language-id]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[sw-version-id]"
+        },
+        {
+            "regexp": "^[\\w]{32}$",
+            "search": "headers[sw-context-token]"
+        }
+    ],
     "implies": [
         "PHP",
         "MySQL",
         "jQuery",
         "Symfony"
     ],
-    "matches": [
-        {
-            "search": "headers[sw-language-id]",
-            "regexp": "^[a-fA-F0-9]{32}$"
-        },
-        {
-            "search": "headers[sw-version-id]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[sw-invalidation-states]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[sw-context-token]",
-            "regexp": "^[\\w]{32}$"
-        },
-        {
-            "offset": 1,
-            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+"
-        },
-        {
-            "search": "meta[application-name]",
-            "regexp": "Shopware"
-        }
-    ],
-    "name": "Shopware"
+    "name": "Shopware",
+    "website": "https://www.shopware.com"
 }

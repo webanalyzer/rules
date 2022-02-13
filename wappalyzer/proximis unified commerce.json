@@ -1,17 +1,17 @@
 {
-    "website": "https://www.proximis.com",
+    "matches": [
+        {
+            "regexp": "<html[^>]+data-ng-app=\"RbsChangeApp\""
+        },
+        {
+            "regexp": "Proximis Unified Commerce",
+            "search": "meta[generator]"
+        }
+    ],
     "implies": [
         "PHP",
         "AngularJS"
     ],
-    "matches": [
-        {
-            "search": "meta[generator]",
-            "regexp": "Proximis Unified Commerce"
-        },
-        {
-            "regexp": "<html[^>]+data-ng-app=\"RbsChangeApp\""
-        }
-    ],
-    "name": "Proximis Unified Commerce"
+    "name": "Proximis Unified Commerce",
+    "website": "https://www.proximis.com"
 }

@@ -1,15 +1,15 @@
 {
-    "website": "http://ritecms.com",
+    "matches": [
+        {
+            "offset": 1,
+            "regexp": "^RiteCMS(?: (.+))?",
+            "search": "meta[generator]"
+        }
+    ],
     "implies": [
         "PHP",
         "SQLite"
     ],
-    "matches": [
-        {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "^RiteCMS(?: (.+))?"
-        }
-    ],
-    "name": "RiteCMS"
+    "name": "RiteCMS",
+    "website": "http://ritecms.com"
 }
