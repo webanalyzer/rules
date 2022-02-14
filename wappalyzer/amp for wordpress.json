@@ -1,12 +1,12 @@
 {
-    "matches": [
-        {
-            "offset": 1,
-            "regexp": "^AMP Plugin v(\\d+\\.\\d+.*)$",
-            "search": "meta[generator]"
-        }
-    ],
     "implies": "AMP",
     "name": "AMP for WordPress",
-    "website": "https://amp-wp.org"
+    "website": "https://amp-wp.org",
+    "matches": [
+        {
+            "search": "meta[generator]",
+            "regexp": "^AMP Plugin v(\\d+\\.\\d+.*)$",
+            "offset": 1
+        }
+    ]
 }

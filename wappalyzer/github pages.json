@@ -1,15 +1,15 @@
 {
-    "matches": [
-        {
-            "regexp": "^GitHub\\.com$",
-            "search": "headers[server]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-github-request-id]"
-        }
-    ],
     "implies": "Ruby on Rails",
     "name": "GitHub Pages",
-    "website": "https://pages.github.com/"
+    "website": "https://pages.github.com/",
+    "matches": [
+        {
+            "search": "headers[server]",
+            "regexp": "^GitHub\\.com$"
+        },
+        {
+            "search": "headers[x-github-request-id]",
+            "regexp": ".*"
+        }
+    ]
 }
