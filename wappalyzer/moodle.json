@@ -1,8 +1,10 @@
 {
     "implies": "PHP",
-    "name": "Moodle",
     "website": "http://moodle.org",
     "matches": [
+        {
+            "regexp": "<img[^>]+moodlelogo"
+        },
         {
             "search": "cookies[MOODLEID_]",
             "regexp": ".*"
@@ -12,11 +14,9 @@
             "regexp": ".*"
         },
         {
-            "regexp": "<img[^>]+moodlelogo"
-        },
-        {
             "search": "meta[keywords]",
             "regexp": "^moodle"
         }
-    ]
+    ],
+    "name": "Moodle"
 }

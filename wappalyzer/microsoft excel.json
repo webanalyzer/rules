@@ -1,5 +1,4 @@
 {
-    "name": "Microsoft Excel",
     "website": "https://office.microsoft.com/excel",
     "matches": [
         {
@@ -10,9 +9,10 @@
             "regexp": "^Excel\\."
         },
         {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "Microsoft Excel( [\\d.]+)?",
-            "offset": 1
+            "regexp": "Microsoft Excel( [\\d.]+)?"
         }
-    ]
+    ],
+    "name": "Microsoft Excel"
 }

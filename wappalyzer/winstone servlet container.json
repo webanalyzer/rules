@@ -1,16 +1,16 @@
 {
-    "name": "Winstone Servlet Container",
     "website": "http://winstone.sourceforge.net",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "Winstone(?:\\/([\\d.]+))?",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[server]",
+            "regexp": "Winstone Servlet (?:Container|Engine) v?([\\d.]+)?"
         },
         {
-            "search": "headers[server]",
-            "regexp": "Winstone Servlet (?:Container|Engine) v?([\\d.]+)?",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "Winstone(?:\\/([\\d.]+))?"
         }
-    ]
+    ],
+    "name": "Winstone Servlet Container"
 }

@@ -1,5 +1,4 @@
 {
-    "name": "Microsoft Publisher",
     "website": "https://office.microsoft.com/publisher",
     "matches": [
         {
@@ -10,9 +9,10 @@
             "regexp": "^Publisher\\."
         },
         {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "Microsoft Publisher( [\\d.]+)?",
-            "offset": 1
+            "regexp": "Microsoft Publisher( [\\d.]+)?"
         }
-    ]
+    ],
+    "name": "Microsoft Publisher"
 }

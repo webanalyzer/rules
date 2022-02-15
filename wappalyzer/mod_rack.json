@@ -3,18 +3,18 @@
         "Ruby on Rails",
         "Apache"
     ],
-    "name": "mod_rack",
     "website": "http://phusionpassenger.com",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "mod_rack(?:/([\\d.]+))?",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[server]",
+            "regexp": "mod_rack(?:/([\\d.]+))?"
         },
         {
-            "search": "headers[server]",
-            "regexp": "mod_rack(?:/([\\d.]+))?",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "mod_rack(?:/([\\d.]+))?"
         }
-    ]
+    ],
+    "name": "mod_rack"
 }

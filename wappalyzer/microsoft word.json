@@ -1,5 +1,4 @@
 {
-    "name": "Microsoft Word",
     "website": "https://office.microsoft.com/word",
     "matches": [
         {
@@ -10,9 +9,10 @@
             "regexp": "^Word\\."
         },
         {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "Microsoft Word( [\\d.]+)?",
-            "offset": 1
+            "regexp": "Microsoft Word( [\\d.]+)?"
         }
-    ]
+    ],
+    "name": "Microsoft Word"
 }

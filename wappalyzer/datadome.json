@@ -1,9 +1,16 @@
 {
-    "name": "Datadome",
     "website": "https://datadome.co/",
     "matches": [
         {
-            "search": "cookies[datadome-_zldt]",
+            "search": "headers[server]",
+            "regexp": "^DataDome$"
+        },
+        {
+            "search": "headers[x-datadome-cid]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-datadome]",
             "regexp": ".*"
         },
         {
@@ -15,16 +22,9 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-datadome]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "^DataDome$"
-        },
-        {
-            "search": "headers[x-datadome-cid]",
+            "search": "cookies[datadome-_zldt]",
             "regexp": ".*"
         }
-    ]
+    ],
+    "name": "Datadome"
 }
