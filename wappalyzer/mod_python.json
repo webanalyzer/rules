@@ -1,4 +1,5 @@
 {
+    "name": "mod_python",
     "implies": [
         "Python",
         "Apache"
@@ -6,10 +7,9 @@
     "website": "http://www.modpython.org",
     "matches": [
         {
-            "offset": 1,
             "search": "headers[server]",
-            "regexp": "mod_python(?:/([\\d.]+))?"
+            "regexp": "mod_python(?:/([\\d.]+))?",
+            "offset": 1
         }
-    ],
-    "name": "mod_python"
+    ]
 }
