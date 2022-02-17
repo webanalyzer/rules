@@ -1,13 +1,13 @@
 {
-    "name": "Yahoo! Ecommerce",
-    "website": "http://smallbusiness.yahoo.com/ecommerce",
     "matches": [
         {
             "regexp": "<link[^>]+store\\.yahoo\\.net"
         },
         {
-            "search": "headers[x-xrds-location]",
-            "regexp": "/ystore/"
+            "regexp": "/ystore/",
+            "search": "headers[x-xrds-location]"
         }
-    ]
+    ],
+    "website": "http://smallbusiness.yahoo.com/ecommerce",
+    "name": "Yahoo! Ecommerce"
 }
