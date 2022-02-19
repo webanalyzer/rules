@@ -1,18 +1,18 @@
 {
     "matches": [
         {
-            "search": "headers[x-backdrop-cache]",
-            "regexp": ".*"
+            "offset": 1,
+            "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?",
+            "search": "meta[generator]"
         },
         {
-            "search": "headers[x-generator]",
             "offset": 1,
-            "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?"
+            "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?",
+            "search": "headers[x-generator]"
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?"
+            "regexp": ".*",
+            "search": "headers[x-backdrop-cache]"
         }
     ],
     "name": "Backdrop",

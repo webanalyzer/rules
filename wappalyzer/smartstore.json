@@ -1,23 +1,23 @@
 {
     "matches": [
         {
-            "search": "cookies[SMARTSTORE.VISITOR]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[SMARTSTORE.CUSTOMER]",
-            "regexp": ".*"
-        },
-        {
-            "search": "meta[generator]",
-            "offset": 2,
-            "regexp": "^Smart[sS]tore(.NET)? (.+)$"
-        },
-        {
             "regexp": "<!--Powered by Smart[sS]tore"
         },
         {
             "regexp": "<meta property=\"sm:pagedata\""
+        },
+        {
+            "offset": 2,
+            "regexp": "^Smart[sS]tore(.NET)? (.+)$",
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[SMARTSTORE.VISITOR]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[SMARTSTORE.CUSTOMER]"
         }
     ],
     "name": "Smartstore",

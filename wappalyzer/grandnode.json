@@ -1,15 +1,15 @@
 {
     "matches": [
         {
-            "search": "cookies[Grand.customer]",
-            "regexp": ".*"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "grandnode"
+            "regexp": "grandnode",
+            "search": "meta[generator]"
         },
         {
             "regexp": "(?:<!--GrandNode |<a[^>]+grandnode - Powered by |Powered by: <a[^>]+nopcommerce)"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[Grand.customer]"
         }
     ],
     "name": "GrandNode",

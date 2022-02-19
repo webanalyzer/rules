@@ -1,16 +1,16 @@
 {
     "matches": [
         {
-            "search": "meta[ProgId]",
-            "regexp": "^Publisher\\."
-        },
-        {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Microsoft Publisher( [\\d.]+)?"
-        },
-        {
             "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:publisher\"|<!--[if pub]><xml>)"
+        },
+        {
+            "offset": 1,
+            "regexp": "Microsoft Publisher( [\\d.]+)?",
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": "^Publisher\\.",
+            "search": "meta[ProgId]"
         }
     ],
     "name": "Microsoft Publisher",

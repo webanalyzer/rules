@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "meta[ProgId]",
-            "regexp": "^FrontPage\\."
+            "offset": 1,
+            "regexp": "Microsoft FrontPage(?:\\s((?:Express )?[\\d.]+))?",
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Microsoft FrontPage(?:\\s((?:Express )?[\\d.]+))?"
+            "regexp": "^FrontPage\\.",
+            "search": "meta[ProgId]"
         }
     ],
     "name": "FrontPage",

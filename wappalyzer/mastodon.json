@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "search": "cookies[_mastodon_session]",
-            "regexp": ".*"
+            "regexp": "^Mastodon$",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^Mastodon$"
+            "regexp": ".*",
+            "search": "cookies[_mastodon_session]"
         }
     ],
     "name": "Mastodon",

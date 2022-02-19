@@ -1,17 +1,17 @@
 {
     "matches": [
         {
-            "search": "script",
-            "regexp": "/Umbraco/Api/"
+            "regexp": "/Umbraco/Api/",
+            "search": "script"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "umbraco"
-        },
-        {
-            "search": "headers[x-umbraco-version]",
             "offset": 1,
-            "regexp": "^(.+)$"
+            "regexp": "^(.+)$",
+            "search": "headers[x-umbraco-version]"
+        },
+        {
+            "regexp": "umbraco",
+            "search": "meta[generator]"
         }
     ],
     "name": "Umbraco",

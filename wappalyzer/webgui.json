@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "cookies[wgSession]",
-            "regexp": ".*"
+            "offset": 1,
+            "regexp": "^WebGUI ([\\d.]+)",
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^WebGUI ([\\d.]+)"
+            "regexp": ".*",
+            "search": "cookies[wgSession]"
         }
     ],
     "name": "WebGUI",

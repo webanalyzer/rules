@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^Saber v([\\d.]+)$"
+            "regexp": "<div [^>]*id=\"_saber\""
         },
         {
-            "regexp": "<div [^>]*id=\"_saber\""
+            "offset": 1,
+            "regexp": "^Saber v([\\d.]+)$",
+            "search": "meta[generator]"
         }
     ],
     "name": "Saber",

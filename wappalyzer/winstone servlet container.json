@@ -1,14 +1,14 @@
 {
     "matches": [
         {
-            "search": "headers[x-powered-by]",
             "offset": 1,
-            "regexp": "Winstone(?:\\/([\\d.]+))?"
+            "regexp": "Winstone(?:\\/([\\d.]+))?",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[server]",
             "offset": 1,
-            "regexp": "Winstone Servlet (?:Container|Engine) v?([\\d.]+)?"
+            "regexp": "Winstone Servlet (?:Container|Engine) v?([\\d.]+)?",
+            "search": "headers[server]"
         }
     ],
     "name": "Winstone Servlet Container",

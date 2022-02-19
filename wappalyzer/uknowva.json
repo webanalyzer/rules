@@ -1,14 +1,14 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
             "offset": 1,
-            "regexp": "uKnowva (?: ([\\d.]+))?"
+            "regexp": "uKnowva (?: ([\\d.]+))?",
+            "search": "meta[generator]"
         },
         {
-            "search": "headers[x-content-encoded-by]",
             "offset": 1,
-            "regexp": "uKnowva ([\\d.]+)"
+            "regexp": "uKnowva ([\\d.]+)",
+            "search": "headers[x-content-encoded-by]"
         },
         {
             "regexp": "<a[^>]+>Powered by uKnowva</a>"

@@ -1,17 +1,17 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
             "offset": 1,
-            "regexp": "^ckan ?([0-9.]+)$"
+            "regexp": "^ckan ?([0-9.]+)$",
+            "search": "meta[generator]"
         },
         {
-            "search": "headers[access-control-allow-headers]",
-            "regexp": "X-CKAN-API-KEY"
+            "regexp": "X-CKAN-API-KEY",
+            "search": "headers[access-control-allow-headers]"
         },
         {
-            "search": "headers[link]",
-            "regexp": "<http://ckan\\.org/>; rel=shortlink"
+            "regexp": "<http://ckan\\.org/>; rel=shortlink",
+            "search": "headers[link]"
         }
     ],
     "name": "Ckan",
