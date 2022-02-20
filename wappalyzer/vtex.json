@@ -1,20 +1,8 @@
 {
     "matches": [
         {
-            "regexp": "vtex",
-            "search": "headers[powered]"
-        },
-        {
-            "regexp": "^VTEX IO$",
-            "search": "headers[server]"
-        },
-        {
             "regexp": ".*",
-            "search": "cookies[VtexStoreVersion]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[vtex_session]"
+            "search": "cookies[VtexFingerPrint]"
         },
         {
             "regexp": ".*",
@@ -22,7 +10,19 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[VtexFingerPrint]"
+            "search": "cookies[vtex_session]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[VtexStoreVersion]"
+        },
+        {
+            "regexp": "vtex",
+            "search": "headers[powered]"
+        },
+        {
+            "regexp": "^VTEX IO$",
+            "search": "headers[server]"
         }
     ],
     "name": "VTEX",

@@ -9,19 +9,19 @@
             "search": "headers[x-pingback]"
         },
         {
-            "offset": 1,
-            "regexp": "^WordPress(?: ([\\d.]+))?",
-            "search": "meta[generator]"
+            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
+        },
+        {
+            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         },
         {
             "regexp": ".*",
             "search": "meta[shareaholic:wp_version]"
         },
         {
-            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
-        },
-        {
-            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
+            "offset": 1,
+            "regexp": "^WordPress(?: ([\\d.]+))?",
+            "search": "meta[generator]"
         }
     ],
     "name": "WordPress",

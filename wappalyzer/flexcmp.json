@@ -1,10 +1,6 @@
 {
     "matches": [
         {
-            "regexp": "^FlexCMP",
-            "search": "meta[generator]"
-        },
-        {
             "regexp": ".*",
             "search": "headers[x-flex-lang]"
         },
@@ -16,6 +12,10 @@
         {
             "offset": 1,
             "regexp": "<!--[^>]+FlexCMP[^>v]+v\\. ([\\d.]+)"
+        },
+        {
+            "regexp": "^FlexCMP",
+            "search": "meta[generator]"
         }
     ],
     "name": "FlexCMP",

@@ -1,24 +1,24 @@
 {
     "matches": [
         {
-            "regexp": "Bitrix Site Manager",
-            "search": "headers[x-powered-cms]"
-        },
-        {
-            "regexp": "BITRIX_",
-            "search": "headers[set-cookie]"
+            "regexp": ".*",
+            "search": "cookies[BITRIX_SM_LAST_IP]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[BITRIX_SM_LAST_IP]"
+            "search": "cookies[BITRIX_SM_SALE_UID]"
         },
         {
             "regexp": ".*",
             "search": "cookies[BITRIX_SM_GUEST_ID]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[BITRIX_SM_SALE_UID]"
+            "regexp": "Bitrix Site Manager",
+            "search": "headers[x-powered-cms]"
+        },
+        {
+            "regexp": "BITRIX_",
+            "search": "headers[set-cookie]"
         }
     ],
     "name": "1C-Bitrix",

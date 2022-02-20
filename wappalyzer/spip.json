@@ -2,17 +2,17 @@
     "matches": [
         {
             "offset": 1,
-            "regexp": "(?:^|\\s)SPIP(?:\\s([\\d.]+(?:\\s\\[\\d+\\])?))?",
-            "search": "meta[generator]"
-        },
-        {
-            "offset": 1,
             "regexp": "SPIP ([\\d.]+) @",
             "search": "headers[composed-by]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-spip-cache]"
+        },
+        {
+            "offset": 1,
+            "regexp": "(?:^|\\s)SPIP(?:\\s([\\d.]+(?:\\s\\[\\d+\\])?))?",
+            "search": "meta[generator]"
         }
     ],
     "name": "SPIP",
