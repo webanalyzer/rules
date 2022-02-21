@@ -1,13 +1,8 @@
 {
+    "implies": "WordPress",
+    "website": "https://wpengine.com",
+    "name": "WP Engine",
     "matches": [
-        {
-            "regexp": ".*",
-            "search": "headers[x-wpe-loopback-upstream-addr]"
-        },
-        {
-            "regexp": "WP Engine",
-            "search": "headers[x-powered-by]"
-        },
         {
             "regexp": ".*",
             "search": "headers[x-pass-why]"
@@ -15,9 +10,14 @@
         {
             "regexp": ".*",
             "search": "headers[wpe-backend]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-wpe-loopback-upstream-addr]"
+        },
+        {
+            "regexp": "WP Engine",
+            "search": "headers[x-powered-by]"
         }
-    ],
-    "name": "WP Engine",
-    "implies": "WordPress",
-    "website": "https://wpengine.com"
+    ]
 }
