@@ -1,12 +1,7 @@
 {
-    "website": "https://www.layer0.co",
     "matches": [
         {
             "search": "cookies[layer0_destination]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[layer0_bucket]",
             "regexp": ".*"
         },
         {
@@ -14,18 +9,23 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-0-t]",
+            "search": "cookies[layer0_bucket]",
             "regexp": ".*"
-        },
-        {
-            "offset": 1,
-            "search": "headers[x-0-version]",
-            "regexp": "^\\d+ ([\\d.]+) "
         },
         {
             "search": "headers[x-0-status]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[x-0-version]",
+            "offset": 1,
+            "regexp": "^\\d+ ([\\d.]+) "
+        },
+        {
+            "search": "headers[x-0-t]",
+            "regexp": ".*"
         }
     ],
+    "website": "https://www.layer0.co",
     "name": "Layer0"
 }

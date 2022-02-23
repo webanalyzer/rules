@@ -1,6 +1,9 @@
 {
-    "website": "https://www.akamai.com/us/en/products/security/bot-manager.jsp",
     "matches": [
+        {
+            "search": "cookies[bm_sv]",
+            "regexp": ".*"
+        },
         {
             "search": "cookies[ak_bmsc]",
             "regexp": ".*"
@@ -8,12 +11,9 @@
         {
             "search": "cookies[bm_sz]",
             "regexp": ".*"
-        },
-        {
-            "search": "cookies[bm_sv]",
-            "regexp": ".*"
         }
     ],
     "implies": "Akamai",
+    "website": "https://www.akamai.com/us/en/products/security/bot-manager.jsp",
     "name": "Akamai Bot Manager"
 }

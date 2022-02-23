@@ -1,6 +1,8 @@
 {
-    "website": "http://lightmon.ru",
     "matches": [
+        {
+            "regexp": "<!-- Lightmon Engine Copyright Lightmon"
+        },
         {
             "search": "cookies[lm_online]",
             "regexp": ".*"
@@ -8,11 +10,9 @@
         {
             "search": "meta[generator]",
             "regexp": "LightMon Engine"
-        },
-        {
-            "regexp": "<!-- Lightmon Engine Copyright Lightmon"
         }
     ],
     "implies": "PHP",
+    "website": "http://lightmon.ru",
     "name": "LightMon Engine"
 }
