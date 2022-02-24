@@ -1,22 +1,22 @@
 {
     "matches": [
         {
+            "search": "meta[server]",
+            "regexp": "app.spp.co"
+        },
+        {
+            "search": "cookies[spp_session]",
+            "regexp": ".*",
+            "certainty": 25
+        },
+        {
             "search": "cookies[spp_orderform]",
             "regexp": ".*"
         },
         {
-            "certainty": 25,
             "search": "cookies[spp_csrf]",
-            "regexp": ".*"
-        },
-        {
-            "certainty": 25,
-            "search": "cookies[spp_session]",
-            "regexp": ".*"
-        },
-        {
-            "search": "meta[server]",
-            "regexp": "app.spp.co"
+            "regexp": ".*",
+            "certainty": 25
         }
     ],
     "website": "https://spp.co",

@@ -1,27 +1,27 @@
 {
     "matches": [
         {
-            "regexp": "<input[^>]+name=\"ci_csrf_token\""
+            "search": "cookies[exp_tracker]",
+            "regexp": ".*"
         },
         {
             "search": "cookies[ci_csrf_token]",
-            "offset": 1,
-            "regexp": "^(.+)$"
-        },
-        {
-            "search": "cookies[ci_session]",
-            "regexp": ".*"
+            "regexp": "^(.+)$",
+            "offset": 1
         },
         {
             "search": "cookies[exp_last_activity]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[exp_tracker]",
+            "search": "cookies[ci_session]",
             "regexp": ".*"
+        },
+        {
+            "regexp": "<input[^>]+name=\"ci_csrf_token\""
         }
     ],
-    "implies": "PHP",
     "website": "http://codeigniter.com",
+    "implies": "PHP",
     "name": "CodeIgniter"
 }
