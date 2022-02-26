@@ -4,24 +4,24 @@
     "name": "Wix",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Wix\\.com Website Builder"
+            "regexp": ".*",
+            "search": "headers[x-wix-server-artifact-id]"
         },
         {
-            "search": "headers[x-wix-renderer-server]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-wix-renderer-server]"
         },
         {
-            "search": "headers[x-wix-request-id]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-wix-request-id]"
         },
         {
-            "search": "headers[x-wix-server-artifact-id]",
-            "regexp": ".*"
+            "regexp": "Wix\\.com Website Builder",
+            "search": "meta[generator]"
         },
         {
-            "search": "cookies[Domain]",
-            "regexp": "\\.wix\\.com"
+            "regexp": "\\.wix\\.com",
+            "search": "cookies[Domain]"
         }
     ]
 }

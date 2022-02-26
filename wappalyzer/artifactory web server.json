@@ -4,9 +4,9 @@
     "name": "Artifactory Web Server",
     "matches": [
         {
-            "offset": 1,
+            "regexp": "Artifactory(?:/([\\d.]+))?",
             "search": "headers[server]",
-            "regexp": "Artifactory(?:/([\\d.]+))?"
+            "offset": 1
         }
     ]
 }

@@ -7,13 +7,13 @@
     "name": "Roadiz CMS",
     "matches": [
         {
-            "offset": 1,
+            "regexp": "^Roadiz ?(?:master|develop)? v?([0-9\\.]+)",
             "search": "meta[generator]",
-            "regexp": "^Roadiz ?(?:master|develop)? v?([0-9\\.]+)"
+            "offset": 1
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "Roadiz CMS"
+            "regexp": "Roadiz CMS",
+            "search": "headers[x-powered-by]"
         }
     ]
 }

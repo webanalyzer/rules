@@ -3,15 +3,15 @@
     "name": "RebelMouse",
     "matches": [
         {
-            "search": "headers[x-rebelmouse-cache-control]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-rebelmouse-surrogate-control]",
-            "regexp": ".*"
-        },
-        {
             "regexp": "<!-- Powered by RebelMouse\\."
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-rebelmouse-surrogate-control]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-rebelmouse-cache-control]"
         }
     ]
 }

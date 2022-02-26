@@ -4,9 +4,9 @@
     "name": "ELOG HTTP",
     "matches": [
         {
-            "offset": 1,
+            "regexp": "ELOG HTTP ?([\\d.-]+)?",
             "search": "headers[server]",
-            "regexp": "ELOG HTTP ?([\\d.-]+)?"
+            "offset": 1
         }
     ]
 }
