@@ -1,4 +1,5 @@
 {
+    "website": "http://tiddlywiki.com",
     "name": "TiddlyWiki",
     "matches": [
         {
@@ -14,13 +15,12 @@
             "regexp": "^TiddlyWiki$"
         },
         {
-            "offset": 1,
             "search": "meta[tiddlywiki-version]",
-            "regexp": "^(.+)$"
+            "regexp": "^(.+)$",
+            "offset": 1
         },
         {
             "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
         }
-    ],
-    "website": "http://tiddlywiki.com"
+    ]
 }

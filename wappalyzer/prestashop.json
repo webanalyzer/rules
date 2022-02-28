@@ -1,9 +1,10 @@
 {
-    "name": "PrestaShop",
     "implies": [
         "PHP",
         "MySQL"
     ],
+    "website": "http://www.prestashop.com",
+    "name": "PrestaShop",
     "matches": [
         {
             "regexp": "Powered by <a\\s+[^>]+>PrestaShop"
@@ -19,13 +20,12 @@
             "regexp": "PrestaShop"
         },
         {
-            "search": "headers[powered-by]",
-            "regexp": "^Prestashop$"
-        },
-        {
             "search": "cookies[PrestaShop]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[powered-by]",
+            "regexp": "^Prestashop$"
         }
-    ],
-    "website": "http://www.prestashop.com"
+    ]
 }
