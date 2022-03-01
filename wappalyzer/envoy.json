@@ -3,12 +3,12 @@
     "name": "Envoy",
     "matches": [
         {
-            "search": "headers[x-envoy-upstream-service-time]",
-            "regexp": ".*"
+            "regexp": "^envoy$",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^envoy$"
+            "regexp": ".*",
+            "search": "headers[x-envoy-upstream-service-time]"
         }
     ]
 }

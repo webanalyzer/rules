@@ -3,20 +3,20 @@
     "name": "cPanel",
     "matches": [
         {
-            "search": "cookies[cpsession]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[cprelogin]",
-            "regexp": ".*"
+            "regexp": "cpsrvd/([\\d.]+)",
+            "search": "headers[server]",
+            "offset": 1
         },
         {
             "regexp": "<!-- cPanel"
         },
         {
-            "search": "headers[server]",
-            "regexp": "cpsrvd/([\\d.]+)",
-            "offset": 1
+            "regexp": ".*",
+            "search": "cookies[cpsession]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[cprelogin]"
         }
     ]
 }

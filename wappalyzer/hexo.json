@@ -1,14 +1,14 @@
 {
-    "implies": "Node.js",
     "website": "https://hexo.io",
     "name": "Hexo",
+    "implies": "Node.js",
     "matches": [
         {
             "regexp": "Powered by <a href=\"https?://hexo\\.io/?\"[^>]*>Hexo</"
         },
         {
-            "search": "meta[generator]",
             "regexp": "Hexo(?: v?([\\d.]+))?",
+            "search": "meta[generator]",
             "offset": 1
         }
     ]

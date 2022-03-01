@@ -3,12 +3,12 @@
     "name": "Debian",
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "Debian"
+            "regexp": "Debian",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[x-powered-by]",
             "regexp": "(?:Debian|dotdeb|(potato|woody|sarge|etch|lenny|squeeze|wheezy|jessie|stretch|buster|sid))",
+            "search": "headers[x-powered-by]",
             "offset": 1
         }
     ]
