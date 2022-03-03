@@ -2,20 +2,20 @@
     "website": "https://vercel.com",
     "matches": [
         {
-            "search": "headers[x-vercel-cache]",
-            "regexp": ".*"
+            "regexp": "^now|Vercel$",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[x-now-trace]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-now-trace]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^now|Vercel$"
+            "regexp": ".*",
+            "search": "headers[x-vercel-cache]"
         },
         {
-            "search": "headers[x-vercel-id]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-vercel-id]"
         }
     ],
     "name": "Vercel"

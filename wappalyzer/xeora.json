@@ -5,14 +5,14 @@
             "regexp": "<input type=\"hidden\" name=\"_sys_bind_\\d+\" id=\"_sys_bind_\\d+\" />"
         },
         {
-            "search": "headers[server]",
-            "regexp": "XeoraEngine"
+            "regexp": "XeoraCube",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "XeoraCube"
+            "regexp": "XeoraEngine",
+            "search": "headers[server]"
         }
     ],
-    "implies": "Microsoft ASP.NET",
-    "name": "Xeora"
+    "name": "Xeora",
+    "implies": "Microsoft ASP.NET"
 }

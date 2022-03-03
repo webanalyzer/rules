@@ -2,13 +2,13 @@
     "website": "https://www.silverstripe.org",
     "matches": [
         {
-            "regexp": "Powered by <a href=\"[^>]+SilverStripe"
+            "regexp": "^SilverStripe",
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "^SilverStripe"
+            "regexp": "Powered by <a href=\"[^>]+SilverStripe"
         }
     ],
-    "implies": "PHP",
-    "name": "SilverStripe"
+    "name": "SilverStripe",
+    "implies": "PHP"
 }

@@ -2,14 +2,14 @@
     "website": "https://azure.microsoft.com/en-us/services/cdn/",
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "^(?:ECAcc|ECS|ECD)"
+            "regexp": ".*",
+            "search": "headers[x-ec-debug]"
         },
         {
-            "search": "headers[x-ec-debug]",
-            "regexp": ".*"
+            "regexp": "^(?:ECAcc|ECS|ECD)",
+            "search": "headers[server]"
         }
     ],
-    "implies": "Azure",
-    "name": "Azure CDN"
+    "name": "Azure CDN",
+    "implies": "Azure"
 }

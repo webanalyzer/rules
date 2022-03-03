@@ -11,14 +11,14 @@
             "regexp": "<input[^>]+id=\"frm-"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^Nette Framework"
+            "regexp": ".*",
+            "search": "cookies[nette-browser]"
         },
         {
-            "search": "cookies[nette-browser]",
-            "regexp": ".*"
+            "regexp": "^Nette Framework",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "implies": "PHP",
-    "name": "Nette Framework"
+    "name": "Nette Framework",
+    "implies": "PHP"
 }

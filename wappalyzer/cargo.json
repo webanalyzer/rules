@@ -2,13 +2,13 @@
     "website": "http://cargocollective.com",
     "matches": [
         {
-            "regexp": "<link [^>]+Cargo feed"
+            "regexp": ".*",
+            "search": "meta[cargo_title]"
         },
         {
-            "search": "meta[cargo_title]",
-            "regexp": ".*"
+            "regexp": "<link [^>]+Cargo feed"
         }
     ],
-    "implies": "PHP",
-    "name": "Cargo"
+    "name": "Cargo",
+    "implies": "PHP"
 }

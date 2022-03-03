@@ -5,24 +5,24 @@
             "regexp": "<!-- Methode uuid: \"[a-f\\d]+\" ?-->"
         },
         {
-            "search": "meta[eomportal-uuid]",
-            "regexp": "[a-f\\d]+"
+            "regexp": ".*",
+            "search": "meta[eomportal-lastUpdate]"
         },
         {
-            "search": "meta[eomportal-lastUpdate]",
-            "regexp": ".*"
+            "regexp": "\\d+",
+            "search": "meta[eomportal-id]"
         },
         {
-            "search": "meta[eomportal-loid]",
-            "regexp": "[\\d.]+"
+            "regexp": "[a-f\\d]+",
+            "search": "meta[eomportal-uuid]"
         },
         {
-            "search": "meta[eomportal-instanceid]",
-            "regexp": "\\d+"
+            "regexp": "\\d+",
+            "search": "meta[eomportal-instanceid]"
         },
         {
-            "search": "meta[eomportal-id]",
-            "regexp": "\\d+"
+            "regexp": "[\\d.]+",
+            "search": "meta[eomportal-loid]"
         }
     ],
     "name": "Methode"

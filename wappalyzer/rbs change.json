@@ -2,13 +2,13 @@
     "website": "http://www.rbschange.fr",
     "matches": [
         {
-            "regexp": "<html[^>]+xmlns:change="
+            "regexp": "RBS Change",
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "RBS Change"
+            "regexp": "<html[^>]+xmlns:change="
         }
     ],
-    "implies": "PHP",
-    "name": "RBS Change"
+    "name": "RBS Change",
+    "implies": "PHP"
 }

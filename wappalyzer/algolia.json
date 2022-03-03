@@ -2,12 +2,12 @@
     "website": "http://www.algolia.com",
     "matches": [
         {
-            "search": "headers[content-security-policy]",
-            "regexp": "\\.algolia"
+            "regexp": ".*",
+            "search": "cookies[_ALGOLIA]"
         },
         {
-            "search": "cookies[_ALGOLIA]",
-            "regexp": ".*"
+            "regexp": "\\.algolia",
+            "search": "headers[content-security-policy]"
         }
     ],
     "name": "Algolia"

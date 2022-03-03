@@ -8,19 +8,19 @@
             "regexp": "Powered by <a href=\"[^>]+php-fusion"
         },
         {
-            "search": "headers[x-powered-by]",
             "regexp": "PHPFusion (.+)$",
+            "search": "headers[x-powered-by]",
             "offset": 1
         },
         {
-            "search": "headers[x-phpfusion]",
             "regexp": "(.+)$",
+            "search": "headers[x-phpfusion]",
             "offset": 1
         }
     ],
+    "name": "PHPFusion",
     "implies": [
         "PHP",
         "MySQL"
-    ],
-    "name": "PHPFusion"
+    ]
 }

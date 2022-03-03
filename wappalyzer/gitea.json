@@ -2,18 +2,18 @@
     "website": "https://gitea.io",
     "matches": [
         {
+            "regexp": "^go,git,self-hosted,gitea$",
+            "search": "meta[keywords]"
+        },
+        {
             "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)",
             "offset": 1
         },
         {
-            "search": "meta[keywords]",
-            "regexp": "^go,git,self-hosted,gitea$"
-        },
-        {
-            "search": "cookies[i_like_gitea]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[i_like_gitea]"
         }
     ],
-    "implies": "Go",
-    "name": "Gitea"
+    "name": "Gitea",
+    "implies": "Go"
 }
