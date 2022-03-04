@@ -3,11 +3,11 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "meta[foswiki.SERVERTIME]"
+            "search": "headers[x-foswikiaction]"
         },
         {
             "regexp": ".*",
-            "search": "meta[foswiki.WIKINAME]"
+            "search": "headers[x-foswikiuri]"
         },
         {
             "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
@@ -22,11 +22,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-foswikiaction]"
+            "search": "meta[foswiki.WIKINAME]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-foswikiuri]"
+            "search": "meta[foswiki.SERVERTIME]"
         }
     ],
     "name": "Foswiki",

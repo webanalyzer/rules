@@ -7,20 +7,20 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-sharepointhealthscore]"
+            "search": "headers[sprequestguid]"
         },
         {
             "regexp": "^(.+)$",
-            "search": "headers[microsoftsharepointteamservices]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[microsoftsharepointteamservices]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-sharepointhealthscore]"
         },
         {
             "regexp": ".*",
             "search": "headers[sharepointhealthscore]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[sprequestguid]"
         }
     ],
     "name": "Microsoft SharePoint"

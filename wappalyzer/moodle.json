@@ -2,19 +2,19 @@
     "website": "http://moodle.org",
     "matches": [
         {
-            "regexp": "^moodle",
-            "search": "meta[keywords]"
+            "regexp": "<img[^>]+moodlelogo"
         },
         {
-            "regexp": "<img[^>]+moodlelogo"
+            "regexp": ".*",
+            "search": "cookies[MoodleSession]"
         },
         {
             "regexp": ".*",
             "search": "cookies[MOODLEID_]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[MoodleSession]"
+            "regexp": "^moodle",
+            "search": "meta[keywords]"
         }
     ],
     "name": "Moodle",

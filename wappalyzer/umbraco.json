@@ -6,13 +6,13 @@
             "search": "meta[generator]"
         },
         {
-            "regexp": "/Umbraco/Api/",
-            "search": "script"
+            "regexp": "^(.+)$",
+            "offset": 1,
+            "search": "headers[x-umbraco-version]"
         },
         {
-            "regexp": "^(.+)$",
-            "search": "headers[x-umbraco-version]",
-            "offset": 1
+            "regexp": "/Umbraco/Api/",
+            "search": "script"
         }
     ],
     "name": "Umbraco",

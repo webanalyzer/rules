@@ -2,12 +2,12 @@
     "website": "http://help.outlook.com",
     "matches": [
         {
-            "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources",
-            "offset": 1
+            "regexp": "([\\d\\.]+)?",
+            "offset": 1,
+            "search": "headers[x-owa-version]"
         },
         {
-            "regexp": "([\\d\\.]+)?",
-            "search": "headers[x-owa-version]",
+            "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources",
             "offset": 1
         }
     ],

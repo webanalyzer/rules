@@ -2,15 +2,15 @@
     "website": "http://www.redmine.org",
     "matches": [
         {
-            "regexp": "Redmine",
-            "search": "meta[description]"
-        },
-        {
             "regexp": "Powered by <a href=\"[^>]+Redmine"
         },
         {
             "regexp": ".*",
             "search": "cookies[_redmine_session]"
+        },
+        {
+            "regexp": "Redmine",
+            "search": "meta[description]"
         }
     ],
     "name": "Redmine",

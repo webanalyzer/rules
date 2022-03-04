@@ -1,13 +1,9 @@
 {
-    "website": "https://chevereto.com/",
+    "website": "https://chevereto.com",
     "matches": [
         {
-            "regexp": "^Chevereto ?([0-9.]+)?$",
-            "search": "meta[generator]",
-            "offset": 1
-        },
-        {
-            "regexp": "Powered by <a href=\"https?://chevereto\\.com\">"
+            "regexp": "Chevereto\\s(?:[\\d\\.]+)",
+            "search": "meta[generator]"
         }
     ],
     "name": "Chevereto",

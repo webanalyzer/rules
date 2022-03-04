@@ -3,20 +3,20 @@
     "matches": [
         {
             "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?",
-            "search": "meta[generator]",
-            "offset": 1
+            "offset": 1,
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?",
+            "offset": 1,
+            "search": "headers[x-generator]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-backdrop-cache]"
-        },
-        {
-            "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?",
-            "search": "headers[x-generator]",
-            "offset": 1
         }
     ],
-    "excludes": "Drupal",
     "name": "Backdrop",
+    "excludes": "Drupal",
     "implies": "PHP"
 }

@@ -1,8 +1,13 @@
 {
-    "website": "https://getchorus.voxmedia.com/",
+    "website": "https://getchorus.voxmedia.com",
     "matches": [
         {
-            "regexp": "<meta data-chorus-version="
+            "regexp": ".*",
+            "search": "cookies[_chorus_geoip_continent]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[chorus_preferences]"
         }
     ],
     "name": "Chorus"

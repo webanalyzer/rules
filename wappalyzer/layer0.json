@@ -3,11 +3,16 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "cookies[layer0_destination]"
+            "search": "headers[x-0-t]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[layer0_eid]"
+            "search": "headers[x-0-status]"
+        },
+        {
+            "regexp": "^\\d+ ([\\d.]+) ",
+            "offset": 1,
+            "search": "headers[x-0-version]"
         },
         {
             "regexp": ".*",
@@ -15,16 +20,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-0-t]"
-        },
-        {
-            "regexp": "^\\d+ ([\\d.]+) ",
-            "search": "headers[x-0-version]",
-            "offset": 1
+            "search": "cookies[layer0_destination]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-0-status]"
+            "search": "cookies[layer0_eid]"
         }
     ],
     "name": "Layer0"
