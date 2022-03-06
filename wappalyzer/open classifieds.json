@@ -2,13 +2,13 @@
     "name": "Open Classifieds",
     "matches": [
         {
-            "search": "meta[author]",
-            "regexp": "open-classifieds\\.com"
+            "offset": 1,
+            "regexp": "Open Classifieds ?([0-9.]+)?",
+            "search": "meta[copyright]"
         },
         {
-            "search": "meta[copyright]",
-            "regexp": "Open Classifieds ?([0-9.]+)?",
-            "offset": 1
+            "regexp": "open-classifieds\\.com",
+            "search": "meta[author]"
         }
     ],
     "website": "http://open-classifieds.com"

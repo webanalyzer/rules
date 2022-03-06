@@ -3,14 +3,14 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Serendipity(?: v\\.([\\d.]+))?",
-            "offset": 1
+            "offset": 1,
+            "regexp": "Serendipity v\\.([\\d.]+)",
+            "search": "meta[Powered-By]"
         },
         {
-            "search": "meta[Powered-By]",
-            "regexp": "Serendipity v\\.([\\d.]+)",
-            "offset": 1
+            "offset": 1,
+            "regexp": "Serendipity(?: v\\.([\\d.]+))?",
+            "search": "meta[generator]"
         }
     ],
     "website": "http://s9y.org"

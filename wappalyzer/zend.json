@@ -2,13 +2,13 @@
     "name": "Zend",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "Zend(?:Server)?(?:[\\s/]?([0-9.]+))?",
-            "offset": 1
+            "regexp": ".*",
+            "search": "cookies[ZENDSERVERSESSID]"
         },
         {
-            "search": "cookies[ZENDSERVERSESSID]",
-            "regexp": ".*"
+            "offset": 1,
+            "regexp": "Zend(?:Server)?(?:[\\s/]?([0-9.]+))?",
+            "search": "headers[x-powered-by]"
         }
     ],
     "website": "http://zend.com"

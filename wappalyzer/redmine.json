@@ -3,15 +3,15 @@
     "implies": "Ruby on Rails",
     "matches": [
         {
-            "search": "cookies[_redmine_session]",
-            "regexp": ".*"
-        },
-        {
             "regexp": "Powered by <a href=\"[^>]+Redmine"
         },
         {
-            "search": "meta[description]",
-            "regexp": "Redmine"
+            "regexp": "Redmine",
+            "search": "meta[description]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_redmine_session]"
         }
     ],
     "website": "http://www.redmine.org"

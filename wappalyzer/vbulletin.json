@@ -3,24 +3,24 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "cookies[bblastactivity]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[bbsessionhash]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[bblastvisit]",
-            "regexp": ".*"
-        },
-        {
             "regexp": "<div id=\"copyright\">Powered by vBulletin"
         },
         {
-            "search": "meta[generator]",
+            "offset": 1,
             "regexp": "vBulletin ?([\\d.]+)?",
-            "offset": 1
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[bbsessionhash]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[bblastactivity]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[bblastvisit]"
         }
     ],
     "website": "https://www.vbulletin.com"

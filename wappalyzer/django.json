@@ -3,12 +3,12 @@
     "implies": "Python",
     "matches": [
         {
-            "search": "cookies[django_language]",
-            "regexp": ".*"
+            "offset": 1,
+            "regexp": "(?:powered by <a[^>]+>Django ?([\\d.]+)?<\\/a>|<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>)"
         },
         {
-            "regexp": "(?:powered by <a[^>]+>Django ?([\\d.]+)?<\\/a>|<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>)",
-            "offset": 1
+            "regexp": ".*",
+            "search": "cookies[django_language]"
         }
     ],
     "website": "https://djangoproject.com"

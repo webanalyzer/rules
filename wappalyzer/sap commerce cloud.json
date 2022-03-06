@@ -3,14 +3,14 @@
     "implies": "Java",
     "matches": [
         {
-            "search": "cookies[_hybris]",
-            "regexp": ".*"
-        },
-        {
             "regexp": "<[^>]+/(?:sys_master|hybr|_ui/(?:.*responsive/)?(?:desktop|common(?:/images|/img|/css|ico)?))/"
         },
         {
             "regexp": "<script[^>].*hybris.*.js"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_hybris]"
         }
     ],
     "website": "https://www.sap.com/products/crm/e-commerce-platforms.html"

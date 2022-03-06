@@ -3,17 +3,17 @@
     "implies": "PHP",
     "matches": [
         {
-            "search": "headers[x-content-encoded-by]",
+            "offset": 1,
             "regexp": "uKnowva ([\\d.]+)",
-            "offset": 1
+            "search": "headers[x-content-encoded-by]"
         },
         {
             "regexp": "<a[^>]+>Powered by uKnowva</a>"
         },
         {
-            "search": "meta[generator]",
+            "offset": 1,
             "regexp": "uKnowva (?: ([\\d.]+))?",
-            "offset": 1
+            "search": "meta[generator]"
         }
     ],
     "website": "https://uknowva.com"
