@@ -1,4 +1,5 @@
 {
+    "website": "https://www.shopware.com",
     "name": "Shopware",
     "implies": [
         "PHP",
@@ -13,6 +14,10 @@
         },
         {
             "regexp": ".*",
+            "search": "headers[sw-version-id]"
+        },
+        {
+            "regexp": ".*",
             "search": "headers[sw-invalidation-states]"
         },
         {
@@ -20,17 +25,12 @@
             "search": "headers[sw-language-id]"
         },
         {
-            "regexp": ".*",
-            "search": "headers[sw-version-id]"
+            "regexp": "Shopware",
+            "search": "meta[application-name]"
         },
         {
             "offset": 1,
             "regexp": "<title>Shopware ([\\d\\.]+) [^<]+"
-        },
-        {
-            "regexp": "Shopware",
-            "search": "meta[application-name]"
         }
-    ],
-    "website": "https://www.shopware.com"
+    ]
 }

@@ -1,12 +1,8 @@
 {
+    "website": "http://arastta.org",
     "name": "Arastta",
     "implies": "PHP",
-    "excludes": "OpenCart",
     "matches": [
-        {
-            "regexp": ".*",
-            "search": "headers[x-arastta]"
-        },
         {
             "offset": 1,
             "regexp": "^(.+)$",
@@ -15,7 +11,11 @@
         {
             "regexp": ".*",
             "search": "headers[x-arastta]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-arastta]"
         }
     ],
-    "website": "http://arastta.org"
+    "excludes": "OpenCart"
 }

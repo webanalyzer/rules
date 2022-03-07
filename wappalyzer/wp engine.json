@@ -1,7 +1,12 @@
 {
+    "website": "https://wpengine.com",
     "name": "WP Engine",
     "implies": "WordPress",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "headers[x-pass-why]"
+        },
         {
             "regexp": ".*",
             "search": "headers[x-wpe-loopback-upstream-addr]"
@@ -12,12 +17,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-pass-why]"
-        },
-        {
-            "regexp": ".*",
             "search": "headers[wpe-backend]"
         }
-    ],
-    "website": "https://wpengine.com"
+    ]
 }

@@ -1,4 +1,5 @@
 {
+    "website": "https://invisioncommunity.com/",
     "name": "IPB",
     "implies": [
         "PHP",
@@ -6,16 +7,15 @@
     ],
     "matches": [
         {
-            "regexp": "<link[^>]+ipb_[^>]+\\.css"
-        },
-        {
             "regexp": ".*",
             "search": "cookies[ipbWWLsession_id]"
         },
         {
             "regexp": ".*",
             "search": "cookies[ipbWWLmodpids]"
+        },
+        {
+            "regexp": "<link[^>]+ipb_[^>]+\\.css"
         }
-    ],
-    "website": "https://invisioncommunity.com/"
+    ]
 }
