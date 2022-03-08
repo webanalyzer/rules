@@ -1,11 +1,12 @@
 {
-    "website": "https://github.com/defunkt/jquery-pjax",
     "name": "jQuery-pjax",
-    "implies": "jQuery",
     "matches": [
         {
+            "regexp": "<div[^>]+data-pjax-container"
+        },
+        {
             "regexp": ".*",
-            "search": "meta[pjax-timeout]"
+            "search": "meta[pjax-push]"
         },
         {
             "regexp": ".*",
@@ -13,10 +14,9 @@
         },
         {
             "regexp": ".*",
-            "search": "meta[pjax-push]"
-        },
-        {
-            "regexp": "<div[^>]+data-pjax-container"
+            "search": "meta[pjax-timeout]"
         }
-    ]
+    ],
+    "implies": "jQuery",
+    "website": "https://github.com/defunkt/jquery-pjax"
 }

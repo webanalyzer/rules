@@ -1,19 +1,19 @@
 {
-    "website": "https://www.roadiz.io",
     "name": "Roadiz CMS",
+    "matches": [
+        {
+            "regexp": "^Roadiz ?(?:master|develop)? v?([0-9\\.]+)",
+            "offset": 1,
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": "Roadiz CMS",
+            "search": "headers[x-powered-by]"
+        }
+    ],
     "implies": [
         "PHP",
         "Symfony"
     ],
-    "matches": [
-        {
-            "regexp": "Roadiz CMS",
-            "search": "headers[x-powered-by]"
-        },
-        {
-            "offset": 1,
-            "regexp": "^Roadiz ?(?:master|develop)? v?([0-9\\.]+)",
-            "search": "meta[generator]"
-        }
-    ]
+    "website": "https://www.roadiz.io"
 }
