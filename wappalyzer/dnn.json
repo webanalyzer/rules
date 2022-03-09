@@ -1,5 +1,5 @@
 {
-    "name": "DNN",
+    "website": "http://dnnsoftware.com",
     "matches": [
         {
             "regexp": "<!-- by DotNetNuke Corporation"
@@ -16,12 +16,12 @@
             "search": "headers[cookie]"
         },
         {
-            "regexp": "DotNetNuke",
-            "search": "headers[x-compressed-by]"
-        },
-        {
             "regexp": ".*",
             "search": "headers[dnnoutputcache]"
+        },
+        {
+            "regexp": "DotNetNuke",
+            "search": "headers[x-compressed-by]"
         },
         {
             "regexp": ".*",
@@ -29,5 +29,5 @@
         }
     ],
     "implies": "Microsoft ASP.NET",
-    "website": "http://dnnsoftware.com"
+    "name": "DNN"
 }

@@ -1,5 +1,5 @@
 {
-    "name": "Koha",
+    "website": "https://koha-community.org/",
     "matches": [
         {
             "regexp": "<input name=\"koha_login_context\" value=\"intranet\" type=\"hidden\">"
@@ -9,10 +9,10 @@
         },
         {
             "regexp": "^Koha ([\\d.]+)$",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         }
     ],
     "implies": "Perl",
-    "website": "https://koha-community.org/"
+    "name": "Koha"
 }

@@ -1,12 +1,12 @@
 {
-    "name": "GrandNode",
+    "website": "https://grandnode.com",
     "matches": [
+        {
+            "regexp": "(?:<!--GrandNode |<a[^>]+grandnode - Powered by |Powered by: <a[^>]+nopcommerce)"
+        },
         {
             "regexp": ".*",
             "search": "cookies[Grand.customer]"
-        },
-        {
-            "regexp": "(?:<!--GrandNode |<a[^>]+grandnode - Powered by |Powered by: <a[^>]+nopcommerce)"
         },
         {
             "regexp": "grandnode",
@@ -14,5 +14,5 @@
         }
     ],
     "implies": "Microsoft ASP.NET",
-    "website": "https://grandnode.com"
+    "name": "GrandNode"
 }
