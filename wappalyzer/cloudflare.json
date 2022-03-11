@@ -1,22 +1,22 @@
 {
-    "website": "http://www.cloudflare.com",
-    "name": "Cloudflare",
     "matches": [
         {
-            "search": "cookies[__cfduid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[cf-ray]"
         },
         {
-            "search": "headers[cf-cache-status]",
-            "regexp": ".*"
+            "regexp": "^cloudflare$",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[cf-ray]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[cf-cache-status]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^cloudflare$"
+            "regexp": ".*",
+            "search": "cookies[__cfduid]"
         }
-    ]
+    ],
+    "website": "http://www.cloudflare.com",
+    "name": "Cloudflare"
 }

@@ -1,14 +1,14 @@
 {
-    "website": "https://opensource.apple.com",
-    "name": "Darwin",
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "Darwin"
+            "regexp": "Darwin",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "Darwin"
+            "regexp": "Darwin",
+            "search": "headers[server]"
         }
-    ]
+    ],
+    "website": "https://opensource.apple.com",
+    "name": "Darwin"
 }
