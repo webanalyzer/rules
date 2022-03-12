@@ -1,20 +1,20 @@
 {
     "matches": [
         {
+            "search": "headers[server]",
             "offset": 1,
-            "regexp": "^php/?([\\d.]+)?",
-            "search": "headers[x-powered-by]"
+            "regexp": "php/?([\\d.]+)?"
         },
         {
+            "search": "headers[x-powered-by]",
             "offset": 1,
-            "regexp": "php/?([\\d.]+)?",
-            "search": "headers[server]"
+            "regexp": "^php/?([\\d.]+)?"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[PHPSESSID]"
+            "search": "cookies[PHPSESSID]",
+            "regexp": ".*"
         }
     ],
-    "website": "http://php.net",
-    "name": "PHP"
+    "name": "PHP",
+    "website": "http://php.net"
 }
