@@ -1,5 +1,11 @@
 {
+    "name": "PrestaShop",
+    "website": "http://www.prestashop.com",
     "matches": [
+        {
+            "search": "meta[generator]",
+            "regexp": "PrestaShop"
+        },
         {
             "search": "headers[powered-by]",
             "regexp": "^Prestashop$"
@@ -16,16 +22,10 @@
         },
         {
             "regexp": "<!-- /Module Block [a-z ]+ -->"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "PrestaShop"
         }
     ],
     "implies": [
         "PHP",
         "MySQL"
-    ],
-    "website": "http://www.prestashop.com",
-    "name": "PrestaShop"
+    ]
 }

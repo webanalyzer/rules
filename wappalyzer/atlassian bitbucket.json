@@ -1,15 +1,15 @@
 {
+    "name": "Atlassian Bitbucket",
+    "website": "http://www.atlassian.com/software/bitbucket/overview/",
     "matches": [
         {
             "search": "meta[application-name]",
             "regexp": "Bitbucket"
         },
         {
-            "regexp": "<li>Atlassian Bitbucket <span title=\"[a-z0-9]+\" id=\"product-version\" data-commitid=\"[a-z0-9]+\" data-system-build-number=\"[a-z0-9]+\"> v([\\d.]+)<",
-            "offset": 1
+            "offset": 1,
+            "regexp": "<li>Atlassian Bitbucket <span title=\"[a-z0-9]+\" id=\"product-version\" data-commitid=\"[a-z0-9]+\" data-system-build-number=\"[a-z0-9]+\"> v([\\d.]+)<"
         }
     ],
-    "implies": "Python",
-    "website": "http://www.atlassian.com/software/bitbucket/overview/",
-    "name": "Atlassian Bitbucket"
+    "implies": "Python"
 }
