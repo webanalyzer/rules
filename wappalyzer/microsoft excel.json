@@ -1,4 +1,5 @@
 {
+    "name": "Microsoft Excel",
     "website": "https://office.microsoft.com/excel",
     "matches": [
         {
@@ -6,13 +7,12 @@
             "search": "meta[ProgId]"
         },
         {
+            "offset": 1,
             "regexp": "Microsoft Excel( [\\d.]+)?",
-            "search": "meta[generator]",
-            "offset": 1
+            "search": "meta[generator]"
         },
         {
             "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:excel\"|<!--\\s*(?:START|END) OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD\\s*-->|<div [^>]*x:publishsource=\"?Excel\"?)"
         }
-    ],
-    "name": "Microsoft Excel"
+    ]
 }

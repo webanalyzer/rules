@@ -1,11 +1,12 @@
 {
+    "name": "Shopware",
+    "website": "https://www.shopware.com",
     "implies": [
         "PHP",
         "MySQL",
         "jQuery",
         "Symfony"
     ],
-    "website": "https://www.shopware.com",
     "matches": [
         {
             "regexp": "^[\\w]{32}$",
@@ -13,11 +14,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[sw-invalidation-states]"
+            "search": "headers[sw-version-id]"
         },
         {
             "regexp": ".*",
-            "search": "headers[sw-version-id]"
+            "search": "headers[sw-invalidation-states]"
         },
         {
             "regexp": "^[a-fA-F0-9]{32}$",
@@ -31,6 +32,5 @@
             "regexp": "<title>Shopware ([\\d\\.]+) [^<]+",
             "offset": 1
         }
-    ],
-    "name": "Shopware"
+    ]
 }
