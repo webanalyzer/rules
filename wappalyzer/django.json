@@ -1,15 +1,15 @@
 {
     "name": "Django",
     "website": "https://djangoproject.com",
-    "implies": "Python",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[django_language]"
+            "search": "cookies[django_language]",
+            "regexp": ".*"
         },
         {
             "regexp": "(?:powered by <a[^>]+>Django ?([\\d.]+)?<\\/a>|<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>)",
             "offset": 1
         }
-    ]
+    ],
+    "implies": "Python"
 }

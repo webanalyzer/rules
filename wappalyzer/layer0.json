@@ -3,29 +3,29 @@
     "website": "https://www.layer0.co",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-0-t]"
+            "search": "cookies[layer0_bucket]",
+            "regexp": ".*"
         },
         {
-            "offset": 1,
+            "search": "cookies[layer0_destination]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[layer0_eid]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-0-status]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-0-version]",
             "regexp": "^\\d+ ([\\d.]+) ",
-            "search": "headers[x-0-version]"
+            "offset": 1
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-0-status]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[layer0_bucket]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[layer0_destination]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[layer0_eid]"
+            "search": "headers[x-0-t]",
+            "regexp": ".*"
         }
     ]
 }
