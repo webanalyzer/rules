@@ -1,14 +1,14 @@
 {
-    "name": "3dCart",
-    "website": "http://www.3dcart.com",
     "matches": [
         {
-            "search": "cookies[3dvisit]",
-            "regexp": ".*"
+            "regexp": "3DCART",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "3DCART"
+            "regexp": ".*",
+            "search": "cookies[3dvisit]"
         }
-    ]
+    ],
+    "name": "3dCart",
+    "website": "http://www.3dcart.com"
 }
