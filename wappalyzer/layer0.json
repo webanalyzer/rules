@@ -2,20 +2,16 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-0-t]"
-        },
-        {
-            "regexp": ".*",
             "search": "headers[x-0-status]"
         },
         {
-            "regexp": "^\\d+ ([\\d.]+) ",
-            "search": "headers[x-0-version]",
-            "offset": 1
+            "regexp": ".*",
+            "search": "headers[x-0-t]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[layer0_eid]"
+            "offset": 1,
+            "regexp": "^\\d+ ([\\d.]+) ",
+            "search": "headers[x-0-version]"
         },
         {
             "regexp": ".*",
@@ -24,6 +20,10 @@
         {
             "regexp": ".*",
             "search": "cookies[layer0_bucket]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[layer0_eid]"
         }
     ],
     "name": "Layer0",

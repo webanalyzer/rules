@@ -6,7 +6,16 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-varnish-cache]"
+            "search": "headers[x-varnish-age]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-varnish-action]"
+        },
+        {
+            "offset": 1,
+            "regexp": "varnish(?: \\(Varnish/([\\d.]+)\\))?",
+            "search": "headers[via]"
         },
         {
             "regexp": ".*",
@@ -14,16 +23,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-varnish-age]"
-        },
-        {
-            "regexp": "varnish(?: \\(Varnish/([\\d.]+)\\))?",
-            "search": "headers[via]",
-            "offset": 1
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-varnish-action]"
+            "search": "headers[x-varnish-cache]"
         }
     ],
     "name": "Varnish",

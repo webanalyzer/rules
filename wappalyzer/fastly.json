@@ -1,8 +1,8 @@
 {
     "matches": [
         {
-            "regexp": "Fastly-SSL",
-            "search": "headers[vary]"
+            "regexp": ".*",
+            "search": "headers[fastly-debug-digest]"
         },
         {
             "regexp": ".*",
@@ -10,15 +10,15 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-fastly-origin]"
-        },
-        {
-            "regexp": ".*",
             "search": "headers[x-via-fastly:]"
         },
         {
             "regexp": ".*",
-            "search": "headers[fastly-debug-digest]"
+            "search": "headers[x-fastly-origin]"
+        },
+        {
+            "regexp": "Fastly-SSL",
+            "search": "headers[vary]"
         }
     ],
     "name": "Fastly",

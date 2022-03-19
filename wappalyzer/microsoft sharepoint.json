@@ -1,8 +1,8 @@
 {
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-sharepointhealthscore]"
+            "regexp": "Microsoft SharePoint",
+            "search": "meta[generator]"
         },
         {
             "regexp": ".*",
@@ -13,13 +13,13 @@
             "search": "headers[sharepointhealthscore]"
         },
         {
-            "regexp": "^(.+)$",
-            "search": "headers[microsoftsharepointteamservices]",
-            "offset": 1
+            "regexp": ".*",
+            "search": "headers[x-sharepointhealthscore]"
         },
         {
-            "regexp": "Microsoft SharePoint",
-            "search": "meta[generator]"
+            "offset": 1,
+            "regexp": "^(.+)$",
+            "search": "headers[microsoftsharepointteamservices]"
         }
     ],
     "name": "Microsoft SharePoint",

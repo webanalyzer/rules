@@ -1,15 +1,15 @@
 {
     "matches": [
         {
-            "regexp": "Koken ([\\d.]+)",
-            "search": "meta[generator]",
-            "offset": 1
-        },
-        {
             "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
         },
         {
             "regexp": "<!--\\s+KOKEN DEBUGGING"
+        },
+        {
+            "offset": 1,
+            "regexp": "Koken ([\\d.]+)",
+            "search": "meta[generator]"
         },
         {
             "regexp": ".*",
@@ -17,9 +17,9 @@
         }
     ],
     "name": "Koken",
-    "website": "http://koken.me",
     "implies": [
         "PHP",
         "MySQL"
-    ]
+    ],
+    "website": "http://koken.me"
 }
