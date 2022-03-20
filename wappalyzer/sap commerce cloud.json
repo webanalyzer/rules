@@ -1,4 +1,7 @@
 {
+    "implies": "Java",
+    "name": "SAP Commerce Cloud",
+    "website": "https://www.sap.com/products/commerce-cloud.html",
     "matches": [
         {
             "regexp": "<[^>]+/(?:sys_master|hybr|_ui/(?:.*responsive/)?(?:desktop|common(?:/images|/img|/css|ico)?))/"
@@ -7,11 +10,8 @@
             "regexp": "<script[^>].*hybris.*.js"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_hybris]"
+            "search": "cookies[_hybris]",
+            "regexp": ".*"
         }
-    ],
-    "name": "SAP Commerce Cloud",
-    "implies": "Java",
-    "website": "https://www.sap.com/products/commerce-cloud.html"
+    ]
 }

@@ -1,20 +1,20 @@
 {
-    "matches": [
-        {
-            "certainty": 50,
-            "regexp": ".*",
-            "search": "cookies[STVID]"
-        },
-        {
-            "certainty": 50,
-            "regexp": ".*",
-            "search": "cookies[STUID]"
-        }
-    ],
-    "name": "ElasticSuite",
     "implies": [
         "PHP",
         "Elasticsearch"
     ],
-    "website": "https://elasticsuite.io"
+    "name": "ElasticSuite",
+    "website": "https://elasticsuite.io",
+    "matches": [
+        {
+            "search": "cookies[STUID]",
+            "certainty": 50,
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[STVID]",
+            "certainty": 50,
+            "regexp": ".*"
+        }
+    ]
 }
