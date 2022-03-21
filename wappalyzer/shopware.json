@@ -5,32 +5,32 @@
         "jQuery",
         "Symfony"
     ],
-    "name": "Shopware",
     "website": "https://www.shopware.com",
+    "name": "Shopware",
     "matches": [
         {
-            "search": "headers[sw-version-id]",
-            "regexp": ".*"
+            "regexp": "Shopware",
+            "search": "meta[application-name]"
         },
         {
-            "search": "headers[sw-invalidation-states]",
-            "regexp": ".*"
+            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+",
+            "offset": 1
         },
         {
-            "search": "headers[sw-context-token]",
-            "regexp": "^[\\w]{32}$"
+            "regexp": ".*",
+            "search": "headers[sw-invalidation-states]"
         },
         {
-            "search": "headers[sw-language-id]",
-            "regexp": "^[a-fA-F0-9]{32}$"
+            "regexp": "^[\\w]{32}$",
+            "search": "headers[sw-context-token]"
         },
         {
-            "offset": 1,
-            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+"
+            "regexp": "^[a-fA-F0-9]{32}$",
+            "search": "headers[sw-language-id]"
         },
         {
-            "search": "meta[application-name]",
-            "regexp": "Shopware"
+            "regexp": ".*",
+            "search": "headers[sw-version-id]"
         }
     ]
 }
