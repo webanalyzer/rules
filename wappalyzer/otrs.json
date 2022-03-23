@@ -4,12 +4,12 @@
             "regexp": "<!--\\s+OTRS: Copyright"
         },
         {
-            "search": "headers[x-powered-by]",
+            "regexp": "OTRS ([\\d.]+)",
             "offset": 1,
-            "regexp": "OTRS ([\\d.]+)"
+            "search": "headers[x-powered-by]"
         }
     ],
+    "implies": "Perl",
     "name": "otrs",
-    "website": "https://www.otrs.com",
-    "implies": "Perl"
+    "website": "https://www.otrs.com"
 }

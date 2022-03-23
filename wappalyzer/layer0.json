@@ -1,29 +1,29 @@
 {
     "matches": [
         {
-            "search": "cookies[layer0_eid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[layer0_destination]"
         },
         {
-            "search": "cookies[layer0_destination]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[layer0_eid]"
         },
         {
-            "search": "cookies[layer0_bucket]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[layer0_bucket]"
         },
         {
-            "search": "headers[x-0-t]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-0-status]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-0-version]",
+            "regexp": "^\\d+ ([\\d.]+) ",
             "offset": 1,
-            "regexp": "^\\d+ ([\\d.]+) "
+            "search": "headers[x-0-version]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-0-t]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-0-status]"
         }
     ],
     "name": "Layer0",
