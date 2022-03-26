@@ -1,6 +1,5 @@
 {
     "name": "Concrete CMS",
-    "website": "https://www.concretecms.com",
     "implies": "PHP",
     "matches": [
         {
@@ -8,9 +7,10 @@
             "regexp": ".*"
         },
         {
-            "search": "meta[generator]",
             "offset": 1,
+            "search": "meta[generator]",
             "regexp": "^concrete5(?: - ([\\d.]+)$)?"
         }
-    ]
+    ],
+    "website": "https://www.concretecms.com"
 }

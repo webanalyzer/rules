@@ -1,7 +1,10 @@
 {
     "name": "Trove Recommerce",
-    "website": "https://trove.co",
     "matches": [
+        {
+            "search": "headers[x-yerdle-app-name]",
+            "regexp": ".*"
+        },
         {
             "search": "headers[x-trove-country-code]",
             "regexp": ".*"
@@ -11,12 +14,9 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-yerdle-app-name]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[x-trove-order-uuid]",
             "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://trove.co"
 }

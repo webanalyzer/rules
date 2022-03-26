@@ -1,6 +1,5 @@
 {
     "name": "Ckan",
-    "website": "http://ckan.org/",
     "implies": [
         "Python",
         "Solr",
@@ -17,9 +16,10 @@
             "regexp": "X-CKAN-API-KEY"
         },
         {
-            "search": "meta[generator]",
             "offset": 1,
+            "search": "meta[generator]",
             "regexp": "^ckan ?([0-9.]+)$"
         }
-    ]
+    ],
+    "website": "http://ckan.org/"
 }

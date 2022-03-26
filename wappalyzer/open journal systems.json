@@ -1,6 +1,5 @@
 {
     "name": "Open Journal Systems",
-    "website": "http://pkp.sfu.ca/ojs",
     "implies": "PHP",
     "matches": [
         {
@@ -8,9 +7,10 @@
             "regexp": ".*"
         },
         {
-            "search": "meta[generator]",
             "offset": 1,
+            "search": "meta[generator]",
             "regexp": "Open Journal Systems(?: ([\\d.]+))?"
         }
-    ]
+    ],
+    "website": "http://pkp.sfu.ca/ojs"
 }
