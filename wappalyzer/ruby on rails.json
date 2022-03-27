@@ -3,22 +3,22 @@
     "implies": "Ruby",
     "matches": [
         {
-            "certainty": 75,
-            "search": "cookies[_session_id]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "mod_(?:rails|rack)"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "mod_(?:rails|rack)"
-        },
-        {
+            "regexp": "^authenticity_token$",
             "certainty": 50,
-            "search": "meta[csrf-param]",
-            "regexp": "^authenticity_token$"
+            "search": "meta[csrf-param]"
+        },
+        {
+            "regexp": ".*",
+            "certainty": 75,
+            "search": "cookies[_session_id]"
+        },
+        {
+            "regexp": "mod_(?:rails|rack)",
+            "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": "mod_(?:rails|rack)",
+            "search": "headers[server]"
         }
     ],
     "website": "https://rubyonrails.org"

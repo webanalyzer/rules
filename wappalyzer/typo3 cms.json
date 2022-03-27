@@ -3,6 +3,10 @@
     "implies": "PHP",
     "matches": [
         {
+            "regexp": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?",
+            "search": "meta[generator]"
+        },
+        {
             "regexp": "<link[^>]+ href=\"/?typo3(?:conf|temp)/"
         },
         {
@@ -10,10 +14,6 @@
         },
         {
             "regexp": "<!--\n\tThis website is powered by TYPO3"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?"
         }
     ],
     "website": "https://typo3.org/"
