@@ -6,13 +6,13 @@
     ],
     "matches": [
         {
-            "regexp": "^([\\d.]+)$",
+            "search": "headers[kbn-version]",
             "offset": 1,
-            "search": "headers[kbn-version]"
+            "regexp": "^([\\d.]+)$"
         },
         {
-            "regexp": "kibana",
-            "search": "headers[kbn-name]"
+            "search": "headers[kbn-name]",
+            "regexp": "kibana"
         },
         {
             "regexp": "<title>Kibana</title>"

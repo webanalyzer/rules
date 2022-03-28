@@ -3,13 +3,13 @@
     "implies": "Java",
     "matches": [
         {
-            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?",
+            "search": "headers[x-powered-by]",
             "offset": 1,
-            "search": "headers[x-powered-by]"
+            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?"
         },
         {
-            "regexp": "^Apache-Coyote",
-            "search": "headers[server]"
+            "search": "headers[server]",
+            "regexp": "^Apache-Coyote"
         }
     ],
     "website": "http://tomcat.apache.org"

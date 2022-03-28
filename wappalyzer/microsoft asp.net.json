@@ -3,21 +3,21 @@
     "implies": "IIS",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[ASPSESSION]"
+            "search": "headers[x-powered-by]",
+            "regexp": "^ASP\\.NET"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ASP.NET_SessionId]"
-        },
-        {
-            "regexp": "^ASP\\.NET",
-            "search": "headers[x-powered-by]"
-        },
-        {
-            "regexp": "(.+)",
+            "search": "headers[x-aspnet-version]",
             "offset": 1,
-            "search": "headers[x-aspnet-version]"
+            "regexp": "(.+)"
+        },
+        {
+            "search": "cookies[ASPSESSION]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[ASP.NET_SessionId]",
+            "regexp": ".*"
         },
         {
             "regexp": "<input[^>]+name=\"__VIEWSTATE"

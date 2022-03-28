@@ -3,14 +3,14 @@
     "implies": "Microsoft ASP.NET",
     "matches": [
         {
-            "regexp": "^HighStore\\.IR$",
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "^([\\d\\.]+)$",
+            "search": "meta[hs:version]",
             "certainty": 50,
             "offset": 1,
-            "search": "meta[hs:version]"
+            "regexp": "^([\\d\\.]+)$"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "^HighStore\\.IR$"
         }
     ],
     "website": "https://digitalserver.ir"

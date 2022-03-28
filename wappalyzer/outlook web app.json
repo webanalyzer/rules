@@ -3,13 +3,13 @@
     "implies": "Microsoft ASP.NET",
     "matches": [
         {
-            "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources",
-            "offset": 1
+            "search": "headers[x-owa-version]",
+            "offset": 1,
+            "regexp": "([\\d\\.]+)?"
         },
         {
-            "regexp": "([\\d\\.]+)?",
             "offset": 1,
-            "search": "headers[x-owa-version]"
+            "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources"
         }
     ],
     "website": "http://help.outlook.com"

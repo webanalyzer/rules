@@ -3,11 +3,11 @@
     "implies": "Perl",
     "matches": [
         {
-            "regexp": "^Sympa$",
-            "search": "meta[generator]"
+            "regexp": "<a href=\"https?://www\\.sympa\\.org\">\\s*Powered by Sympa\\s*</a>"
         },
         {
-            "regexp": "<a href=\"https?://www\\.sympa\\.org\">\\s*Powered by Sympa\\s*</a>"
+            "search": "meta[generator]",
+            "regexp": "^Sympa$"
         }
     ],
     "website": "https://www.sympa.org/"

@@ -3,12 +3,12 @@
     "implies": "Node.js",
     "matches": [
         {
-            "regexp": "Hexo(?: v?([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "regexp": "Powered by <a href=\"https?://hexo\\.io/?\"[^>]*>Hexo</"
         },
         {
-            "regexp": "Powered by <a href=\"https?://hexo\\.io/?\"[^>]*>Hexo</"
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "Hexo(?: v?([\\d.]+))?"
         }
     ],
     "website": "https://hexo.io"

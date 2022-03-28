@@ -3,20 +3,20 @@
     "implies": "PHP",
     "matches": [
         {
-            "regexp": "wpCache",
-            "search": "meta[generator]"
+            "search": "headers[x-powered-by]",
+            "offset": 1,
+            "regexp": "wpCache(?:/([\\d.]+))?"
         },
         {
-            "regexp": "wpCache",
-            "search": "meta[keywords]"
+            "search": "meta[generator]",
+            "regexp": "wpCache"
+        },
+        {
+            "search": "meta[keywords]",
+            "regexp": "wpCache"
         },
         {
             "regexp": "<!--[^>]+wpCache"
-        },
-        {
-            "regexp": "wpCache(?:/([\\d.]+))?",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
         }
     ],
     "website": "https://wpcache.co"
