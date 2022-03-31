@@ -1,6 +1,11 @@
 {
     "implies": "Microsoft ASP.NET",
+    "name": "Orckestra",
     "matches": [
+        {
+            "search": "meta[generator]",
+            "regexp": "^C1 CMS Foundation - Free Open Source from Orckestra and https://github.com/Orckestra/C1-CMS-Foundation$"
+        },
         {
             "search": "headers[x-orckestra-commerce]",
             "regexp": ".NET Client"
@@ -8,12 +13,7 @@
         {
             "search": "headers[x-powered-by]",
             "regexp": "Orckestra"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "^C1 CMS Foundation - Free Open Source from Orckestra and https://github.com/Orckestra/C1-CMS-Foundation$"
         }
     ],
-    "website": "https://www.orckestra.com",
-    "name": "Orckestra"
+    "website": "https://www.orckestra.com"
 }
