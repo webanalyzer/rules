@@ -1,13 +1,13 @@
 {
-    "name": "JTL Shop",
     "matches": [
         {
-            "search": "cookies[JTLSHOP]",
-            "regexp": ".*"
+            "regexp": "(?:<input[^>]+name=\"JTLSHOP|<a href=\"jtl\\.php)"
         },
         {
-            "regexp": "(?:<input[^>]+name=\"JTLSHOP|<a href=\"jtl\\.php)"
+            "regexp": ".*",
+            "search": "cookies[JTLSHOP]"
         }
     ],
-    "website": "https://www.jtl-software.de/online-shopsystem"
+    "website": "https://www.jtl-software.de/online-shopsystem",
+    "name": "JTL Shop"
 }
