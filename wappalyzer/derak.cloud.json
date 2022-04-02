@@ -1,13 +1,7 @@
 {
+    "name": "DERAK.CLOUD",
+    "website": "https://derak.cloud",
     "matches": [
-        {
-            "regexp": "^DERAK\\.CLOUD$",
-            "search": "headers[server]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[derak-umbrage]"
-        },
         {
             "regexp": ".*",
             "search": "cookies[__derak_auth]"
@@ -15,8 +9,14 @@
         {
             "regexp": ".*",
             "search": "cookies[__derak_user]"
+        },
+        {
+            "regexp": "^DERAK\\.CLOUD$",
+            "search": "headers[server]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[derak-umbrage]"
         }
-    ],
-    "website": "https://derak.cloud",
-    "name": "DERAK.CLOUD"
+    ]
 }

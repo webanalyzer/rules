@@ -1,4 +1,9 @@
 {
+    "name": "Akamai mPulse",
+    "implies": [
+        "Boomerang"
+    ],
+    "website": "https://developer.akamai.com/akamai-mpulse-real-user-monitoring-solution",
     "matches": [
         {
             "regexp": "<script>[\\s\\S]*?go-mpulse\\.net\\/boomerang[\\s\\S]*?</script>"
@@ -7,10 +12,5 @@
             "regexp": ".*",
             "search": "cookies[akaas_AB-Testing]"
         }
-    ],
-    "implies": [
-        "Boomerang"
-    ],
-    "website": "https://developer.akamai.com/akamai-mpulse-real-user-monitoring-solution",
-    "name": "Akamai mPulse"
+    ]
 }
