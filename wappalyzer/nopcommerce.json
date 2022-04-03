@@ -1,18 +1,18 @@
 {
-    "name": "nopCommerce",
-    "implies": "Microsoft ASP.NET",
     "website": "http://www.nopcommerce.com",
     "matches": [
+        {
+            "regexp": "(?:<!--Powered by nopCommerce|Powered by: <a[^>]+nopcommerce)"
+        },
         {
             "regexp": "^nopCommerce$",
             "search": "meta[generator]"
         },
         {
-            "regexp": "(?:<!--Powered by nopCommerce|Powered by: <a[^>]+nopcommerce)"
-        },
-        {
             "regexp": ".*",
             "search": "cookies[Nop.customer]"
         }
-    ]
+    ],
+    "name": "nopCommerce",
+    "implies": "Microsoft ASP.NET"
 }

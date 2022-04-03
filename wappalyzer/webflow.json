@@ -1,13 +1,13 @@
 {
-    "name": "Webflow",
     "website": "https://webflow.com",
     "matches": [
         {
-            "regexp": "Webflow",
-            "search": "meta[generator]"
+            "regexp": "<html[^>]+data-wf-site"
         },
         {
-            "regexp": "<html[^>]+data-wf-site"
+            "regexp": "Webflow",
+            "search": "meta[generator]"
         }
-    ]
+    ],
+    "name": "Webflow"
 }

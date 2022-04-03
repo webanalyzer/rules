@@ -1,5 +1,4 @@
 {
-    "name": "Shopify",
     "website": "http://shopify.com",
     "matches": [
         {
@@ -13,12 +12,12 @@
         {
             "regexp": ".*",
             "certainty": 50,
-            "search": "headers[x-shopid]"
+            "search": "headers[x-shopify-stage]"
         },
         {
             "regexp": ".*",
             "certainty": 50,
-            "search": "headers[x-shopify-stage]"
+            "search": "headers[x-shopid]"
         },
         {
             "regexp": ".*",
@@ -28,5 +27,6 @@
             "regexp": ".*",
             "search": "cookies[_shopify_y]"
         }
-    ]
+    ],
+    "name": "Shopify"
 }

@@ -1,9 +1,4 @@
 {
-    "name": "XenForo",
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
     "website": "http://xenforo.com",
     "matches": [
         {
@@ -14,11 +9,16 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[xf_csrf]"
+            "search": "cookies[xf_session]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[xf_session]"
+            "search": "cookies[xf_csrf]"
         }
+    ],
+    "name": "XenForo",
+    "implies": [
+        "PHP",
+        "MySQL"
     ]
 }

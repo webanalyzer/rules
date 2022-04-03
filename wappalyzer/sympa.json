@@ -1,14 +1,14 @@
 {
-    "name": "Sympa",
-    "implies": "Perl",
     "website": "https://www.sympa.org/",
     "matches": [
         {
-            "regexp": "^Sympa$",
-            "search": "meta[generator]"
+            "regexp": "<a href=\"https?://www\\.sympa\\.org\">\\s*Powered by Sympa\\s*</a>"
         },
         {
-            "regexp": "<a href=\"https?://www\\.sympa\\.org\">\\s*Powered by Sympa\\s*</a>"
+            "regexp": "^Sympa$",
+            "search": "meta[generator]"
         }
-    ]
+    ],
+    "name": "Sympa",
+    "implies": "Perl"
 }
