@@ -1,15 +1,4 @@
 {
-    "website": "https://www.jetbrains.com/teamcity/",
-    "matches": [
-        {
-            "regexp": "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)",
-            "offset": 1
-        },
-        {
-            "regexp": "TeamCity",
-            "search": "meta[application-name]"
-        }
-    ],
     "name": "TeamCity",
     "implies": [
         "Apache Tomcat",
@@ -19,5 +8,16 @@
         "Prototype",
         "React",
         "Underscore.js"
+    ],
+    "website": "https://www.jetbrains.com/teamcity/",
+    "matches": [
+        {
+            "offset": 1,
+            "regexp": "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)"
+        },
+        {
+            "search": "meta[application-name]",
+            "regexp": "TeamCity"
+        }
     ]
 }
