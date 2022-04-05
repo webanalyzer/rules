@@ -3,24 +3,24 @@
     "website": "https://zipkin.io/",
     "matches": [
         {
-            "search": "headers[x-b3-spanid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-b3-flags]"
         },
         {
-            "search": "headers[x-b3-traceid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-b3-sampled]"
         },
         {
-            "search": "headers[x-b3-parentspanid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-b3-spanid]"
         },
         {
-            "search": "headers[x-b3-flags]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-b3-traceid]"
         },
         {
-            "search": "headers[x-b3-sampled]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-b3-parentspanid]"
         }
     ]
 }

@@ -3,9 +3,9 @@
     "website": "https://acme.com/software/thttpd",
     "matches": [
         {
-            "offset": 1,
+            "regexp": "\\bthttpd(?:/([\\d.]+))?",
             "search": "headers[server]",
-            "regexp": "\\bthttpd(?:/([\\d.]+))?"
+            "offset": 1
         }
     ]
 }

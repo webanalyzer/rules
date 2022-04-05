@@ -3,27 +3,27 @@
     "website": "https://www.eidosmedia.com/",
     "matches": [
         {
+            "regexp": "[a-f\\d]+",
+            "search": "meta[eomportal-uuid]"
+        },
+        {
+            "regexp": ".*",
+            "search": "meta[eomportal-lastUpdate]"
+        },
+        {
+            "regexp": "[\\d.]+",
+            "search": "meta[eomportal-loid]"
+        },
+        {
+            "regexp": "\\d+",
+            "search": "meta[eomportal-id]"
+        },
+        {
+            "regexp": "\\d+",
+            "search": "meta[eomportal-instanceid]"
+        },
+        {
             "regexp": "<!-- Methode uuid: \"[a-f\\d]+\" ?-->"
-        },
-        {
-            "search": "meta[eomportal-loid]",
-            "regexp": "[\\d.]+"
-        },
-        {
-            "search": "meta[eomportal-uuid]",
-            "regexp": "[a-f\\d]+"
-        },
-        {
-            "search": "meta[eomportal-instanceid]",
-            "regexp": "\\d+"
-        },
-        {
-            "search": "meta[eomportal-id]",
-            "regexp": "\\d+"
-        },
-        {
-            "search": "meta[eomportal-lastUpdate]",
-            "regexp": ".*"
         }
     ]
 }
