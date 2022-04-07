@@ -1,8 +1,6 @@
 {
+    "name": "WP Rocket",
     "matches": [
-        {
-            "regexp": "<!--[^>]+WP Rocket"
-        },
         {
             "search": "headers[x-powered-by]",
             "regexp": "WP Rocket(?:/([\\d.]+))?",
@@ -11,8 +9,10 @@
         {
             "search": "headers[x-rocket-nginx-bypass]",
             "regexp": ".*"
+        },
+        {
+            "regexp": "<!--[^>]+WP Rocket"
         }
     ],
-    "website": "http://wp-rocket.me",
-    "name": "WP Rocket"
+    "website": "http://wp-rocket.me"
 }

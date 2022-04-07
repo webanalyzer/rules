@@ -1,5 +1,12 @@
 {
+    "name": "Backdrop",
+    "implies": "PHP",
     "matches": [
+        {
+            "search": "meta[generator]",
+            "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?",
+            "offset": 1
+        },
         {
             "search": "headers[x-backdrop-cache]",
             "regexp": ".*"
@@ -8,15 +15,8 @@
             "search": "headers[x-generator]",
             "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?",
             "offset": 1
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "^Backdrop CMS(?:\\s([\\d.]+))?",
-            "offset": 1
         }
     ],
-    "implies": "PHP",
     "excludes": "Drupal",
-    "website": "https://backdropcms.org",
-    "name": "Backdrop"
+    "website": "https://backdropcms.org"
 }

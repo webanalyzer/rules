@@ -1,7 +1,9 @@
 {
+    "name": "TiddlyWiki",
     "matches": [
         {
-            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
+            "search": "meta[application-name]",
+            "regexp": "^TiddlyWiki$"
         },
         {
             "search": "meta[generator]",
@@ -13,14 +15,12 @@
             "offset": 1
         },
         {
-            "search": "meta[application-name]",
-            "regexp": "^TiddlyWiki$"
-        },
-        {
             "search": "meta[copyright]",
             "regexp": "^TiddlyWiki created by Jeremy Ruston"
+        },
+        {
+            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
         }
     ],
-    "website": "http://tiddlywiki.com",
-    "name": "TiddlyWiki"
+    "website": "http://tiddlywiki.com"
 }
