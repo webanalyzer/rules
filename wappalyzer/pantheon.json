@@ -1,12 +1,9 @@
 {
-    "name": "Pantheon",
-    "implies": [
-        "PHP",
-        "Nginx",
-        "MariaDB",
-        "Fastly"
-    ],
     "matches": [
+        {
+            "search": "headers[server]",
+            "regexp": "^Pantheon"
+        },
         {
             "search": "headers[x-pantheon-styx-hostname]",
             "regexp": ".*"
@@ -14,11 +11,14 @@
         {
             "search": "headers[x-styx-req-id]",
             "regexp": ".*"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "^Pantheon"
         }
+    ],
+    "name": "Pantheon",
+    "implies": [
+        "PHP",
+        "Nginx",
+        "MariaDB",
+        "Fastly"
     ],
     "website": "https://pantheon.io/"
 }

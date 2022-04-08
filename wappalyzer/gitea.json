@@ -1,6 +1,4 @@
 {
-    "name": "Gitea",
-    "implies": "Go",
     "matches": [
         {
             "search": "meta[keywords]",
@@ -11,9 +9,11 @@
             "regexp": ".*"
         },
         {
-            "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)",
-            "offset": 1
+            "offset": 1,
+            "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)"
         }
     ],
+    "name": "Gitea",
+    "implies": "Go",
     "website": "https://gitea.io"
 }
