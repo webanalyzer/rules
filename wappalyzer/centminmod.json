@@ -1,15 +1,15 @@
 {
-    "name": "Centminmod",
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "centminmod"
-        }
-    ],
     "implies": [
         "CentOS",
         "Nginx",
         "PHP"
     ],
-    "website": "https://centminmod.com"
+    "website": "https://centminmod.com",
+    "matches": [
+        {
+            "regexp": "centminmod",
+            "search": "headers[x-powered-by]"
+        }
+    ],
+    "name": "Centminmod"
 }
