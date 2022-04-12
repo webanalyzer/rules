@@ -2,16 +2,12 @@
     "website": "https://vtex.com/",
     "matches": [
         {
-            "regexp": "^VTEX IO$",
-            "search": "headers[server]"
-        },
-        {
             "regexp": "vtex",
             "search": "headers[powered]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[VtexStoreVersion]"
+            "regexp": "^VTEX IO$",
+            "search": "headers[server]"
         },
         {
             "regexp": ".*",
@@ -20,6 +16,10 @@
         {
             "regexp": ".*",
             "search": "cookies[vtex_session]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[VtexStoreVersion]"
         },
         {
             "regexp": ".*",

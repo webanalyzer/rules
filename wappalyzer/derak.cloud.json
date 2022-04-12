@@ -2,20 +2,20 @@
     "website": "https://derak.cloud",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[derak-umbrage]"
-        },
-        {
             "regexp": "^DERAK\\.CLOUD$",
             "search": "headers[server]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[__derak_auth]"
+            "search": "headers[derak-umbrage]"
         },
         {
             "regexp": ".*",
             "search": "cookies[__derak_user]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[__derak_auth]"
         }
     ],
     "name": "DERAK.CLOUD"
