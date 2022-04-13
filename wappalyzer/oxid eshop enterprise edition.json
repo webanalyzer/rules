@@ -1,12 +1,12 @@
 {
-    "excludes": "OXID eShop",
+    "name": "OXID eShop Enterprise Edition",
     "website": "https://www.oxid-esales.com",
+    "implies": "PHP",
     "matches": [
         {
-            "regexp": "<!--[^-]*OXID eShop Enterprise Edition, Version (\\d+)",
-            "offset": 1
+            "offset": 1,
+            "regexp": "<!--[^-]*OXID eShop Enterprise Edition, Version (\\d+)"
         }
     ],
-    "implies": "PHP",
-    "name": "OXID eShop Enterprise Edition"
+    "excludes": "OXID eShop"
 }

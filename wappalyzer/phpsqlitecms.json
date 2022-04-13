@@ -1,15 +1,15 @@
 {
+    "name": "phpSQLiteCMS",
     "website": "http://phpsqlitecms.net",
-    "matches": [
-        {
-            "regexp": "^phpSQLiteCMS(?: (.+))?$",
-            "search": "meta[generator]",
-            "offset": 1
-        }
-    ],
     "implies": [
         "PHP",
         "SQLite"
     ],
-    "name": "phpSQLiteCMS"
+    "matches": [
+        {
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "^phpSQLiteCMS(?: (.+))?$"
+        }
+    ]
 }

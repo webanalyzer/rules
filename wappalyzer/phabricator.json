@@ -1,14 +1,14 @@
 {
+    "name": "Phabricator",
     "website": "http://phacility.com",
+    "implies": "PHP",
     "matches": [
         {
             "regexp": "<[^>]+(?:class|id)=\"phabricator-"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[phsid]"
+            "search": "cookies[phsid]",
+            "regexp": ".*"
         }
-    ],
-    "implies": "PHP",
-    "name": "Phabricator"
+    ]
 }
