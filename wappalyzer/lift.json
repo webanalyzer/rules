@@ -1,12 +1,12 @@
 {
-    "name": "Lift",
-    "website": "http://liftweb.net",
-    "implies": "Scala",
     "matches": [
         {
-            "search": "headers[x-lift-version]",
+            "regexp": "(.+)",
             "offset": 1,
-            "regexp": "(.+)"
+            "search": "headers[x-lift-version]"
         }
-    ]
+    ],
+    "website": "http://liftweb.net",
+    "name": "Lift",
+    "implies": "Scala"
 }
