@@ -1,18 +1,18 @@
 {
+    "name": "Microsoft Excel",
     "matches": [
         {
-            "search": "meta[ProgId]",
-            "regexp": "^Excel\\."
+            "regexp": "Microsoft Excel( [\\d.]+)?",
+            "offset": 1,
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Microsoft Excel( [\\d.]+)?"
+            "regexp": "^Excel\\.",
+            "search": "meta[ProgId]"
         },
         {
             "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:excel\"|<!--\\s*(?:START|END) OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD\\s*-->|<div [^>]*x:publishsource=\"?Excel\"?)"
         }
     ],
-    "website": "https://office.microsoft.com/excel",
-    "name": "Microsoft Excel"
+    "website": "https://office.microsoft.com/excel"
 }
