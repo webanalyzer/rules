@@ -1,18 +1,18 @@
 {
-    "name": "Pardot",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-pardot-rsp]"
+            "search": "headers[x-pardot-lb]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-pardot-lb]"
+            "search": "headers[x-pardot-route]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-pardot-route]"
+            "search": "headers[x-pardot-rsp]",
+            "regexp": ".*"
         }
     ],
+    "name": "Pardot",
     "website": "https://www.pardot.com"
 }
