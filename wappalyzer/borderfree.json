@@ -1,26 +1,26 @@
 {
+    "website": "https://www.borderfree.com",
+    "name": "Borderfree",
     "matches": [
         {
-            "search": "cookies[bfx.logLevel]",
+            "certainty": 25,
             "regexp": "^\\w+$",
-            "certainty": 25
+            "search": "cookies[bfx.country:]"
         },
         {
-            "search": "cookies[bfx.country:]",
-            "regexp": "^\\w+$",
-            "certainty": 25
-        },
-        {
-            "search": "cookies[bfx.apiKey:]",
+            "certainty": 25,
             "regexp": "^[\\w\\d-]+$",
-            "certainty": 25
+            "search": "cookies[bfx.apiKey:]"
         },
         {
-            "search": "cookies[bfx.language]",
+            "certainty": 25,
             "regexp": "^\\w+$",
-            "certainty": 25
+            "search": "cookies[bfx.language]"
+        },
+        {
+            "certainty": 25,
+            "regexp": "^\\w+$",
+            "search": "cookies[bfx.logLevel]"
         }
-    ],
-    "name": "Borderfree",
-    "website": "https://www.borderfree.com"
+    ]
 }
