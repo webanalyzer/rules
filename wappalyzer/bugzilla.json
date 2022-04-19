@@ -1,13 +1,8 @@
 {
-    "website": "http://www.bugzilla.org",
     "implies": "Perl",
     "name": "Bugzilla",
+    "website": "http://www.bugzilla.org",
     "matches": [
-        {
-            "regexp": "Bugzilla ?([\\d.]+)?",
-            "search": "meta[generator]",
-            "offset": 1
-        },
         {
             "regexp": "href=\"enter_bug\\.cgi\">"
         },
@@ -25,6 +20,11 @@
         {
             "regexp": ".*",
             "search": "cookies[Bugzilla_login_request_cookie]"
+        },
+        {
+            "offset": 1,
+            "regexp": "Bugzilla ?([\\d.]+)?",
+            "search": "meta[generator]"
         }
     ]
 }

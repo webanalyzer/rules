@@ -1,16 +1,16 @@
 {
-    "website": "http://hub.opensolaris.org/bin/view/Project+opengrok/WebHome",
     "implies": "Java",
     "name": "OpenGrok",
+    "website": "http://hub.opensolaris.org/bin/view/Project+opengrok/WebHome",
     "matches": [
-        {
-            "regexp": "OpenGrok(?: v?([\\d.]+))?",
-            "search": "meta[generator]",
-            "offset": 1
-        },
         {
             "regexp": ".*",
             "search": "cookies[OpenGrok]"
+        },
+        {
+            "offset": 1,
+            "regexp": "OpenGrok(?: v?([\\d.]+))?",
+            "search": "meta[generator]"
         }
     ]
 }

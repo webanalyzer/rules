@@ -1,14 +1,14 @@
 {
-    "website": "http://www.w3-edge.com/wordpress-plugins/w3-total-cache",
     "name": "W3 Total Cache",
+    "website": "http://www.w3-edge.com/wordpress-plugins/w3-total-cache",
     "matches": [
         {
-            "regexp": "W3 Total Cache(?:/([\\d.]+))?",
-            "search": "headers[x-powered-by]",
-            "offset": 1
+            "regexp": "<!--[^>]+W3 Total Cache"
         },
         {
-            "regexp": "<!--[^>]+W3 Total Cache"
+            "offset": 1,
+            "regexp": "W3 Total Cache(?:/([\\d.]+))?",
+            "search": "headers[x-powered-by]"
         }
     ]
 }
