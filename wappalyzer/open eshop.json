@@ -1,16 +1,16 @@
 {
-    "implies": "PHP",
-    "name": "Open eShop",
     "website": "http://open-eshop.com/",
+    "name": "Open eShop",
+    "implies": "PHP",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "Open eShop ?([0-9.]+)?",
-            "search": "meta[copyright]"
+            "search": "meta[author]",
+            "regexp": "open-eshop\\.com"
         },
         {
-            "regexp": "open-eshop\\.com",
-            "search": "meta[author]"
+            "search": "meta[copyright]",
+            "offset": 1,
+            "regexp": "Open eShop ?([0-9.]+)?"
         }
     ]
 }
