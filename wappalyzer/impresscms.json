@@ -1,19 +1,19 @@
 {
-    "website": "http://www.impresscms.org",
     "name": "ImpressCMS",
-    "implies": "PHP",
     "matches": [
         {
             "search": "meta[generator]",
             "regexp": "ImpressCMS"
         },
         {
-            "search": "cookies[ImpressCMS]",
+            "search": "cookies[ICMSSession]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[ICMSSession]",
+            "search": "cookies[ImpressCMS]",
             "regexp": ".*"
         }
-    ]
+    ],
+    "implies": "PHP",
+    "website": "http://www.impresscms.org"
 }

@@ -1,11 +1,9 @@
 {
-    "website": "https://www.rainloop.net/",
     "name": "RainLoop",
-    "implies": "PHP",
     "matches": [
         {
-            "search": "meta[rlAppVersion]",
             "offset": 1,
+            "search": "meta[rlAppVersion]",
             "regexp": "^([0-9.]+)$"
         },
         {
@@ -16,5 +14,7 @@
             "search": "headers[server]",
             "regexp": "^RainLoop"
         }
-    ]
+    ],
+    "implies": "PHP",
+    "website": "https://www.rainloop.net/"
 }

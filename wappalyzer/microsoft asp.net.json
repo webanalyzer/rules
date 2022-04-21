@@ -1,7 +1,5 @@
 {
-    "website": "https://www.asp.net",
     "name": "Microsoft ASP.NET",
-    "implies": "IIS",
     "matches": [
         {
             "regexp": "<input[^>]+name=\"__VIEWSTATE"
@@ -11,8 +9,8 @@
             "regexp": "^ASP\\.NET"
         },
         {
-            "search": "headers[x-aspnet-version]",
             "offset": 1,
+            "search": "headers[x-aspnet-version]",
             "regexp": "(.+)"
         },
         {
@@ -23,5 +21,7 @@
             "search": "cookies[ASPSESSION]",
             "regexp": ".*"
         }
-    ]
+    ],
+    "implies": "IIS",
+    "website": "https://www.asp.net"
 }
