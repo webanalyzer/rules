@@ -1,12 +1,12 @@
 {
-    "name": "IIS",
     "matches": [
         {
-            "offset": 1,
             "search": "headers[server]",
-            "regexp": "^(?:Microsoft-)?IIS(?:/([\\d.]+))?"
+            "regexp": "^(?:Microsoft-)?IIS(?:/([\\d.]+))?",
+            "offset": 1
         }
     ],
-    "implies": "Windows Server",
-    "website": "http://www.iis.net"
+    "name": "IIS",
+    "website": "http://www.iis.net",
+    "implies": "Windows Server"
 }

@@ -1,14 +1,5 @@
 {
-    "name": "Shopify",
     "matches": [
-        {
-            "search": "cookies[_shopify_s]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[_shopify_y]",
-            "regexp": ".*"
-        },
         {
             "search": "meta[shopify-digital-wallet]",
             "regexp": ".*"
@@ -26,7 +17,16 @@
             "certainty": 50,
             "search": "headers[x-shopify-stage]",
             "regexp": ".*"
+        },
+        {
+            "search": "cookies[_shopify_y]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[_shopify_s]",
+            "regexp": ".*"
         }
     ],
+    "name": "Shopify",
     "website": "http://shopify.com"
 }

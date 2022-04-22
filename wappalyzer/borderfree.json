@@ -1,10 +1,9 @@
 {
-    "name": "Borderfree",
     "matches": [
         {
             "certainty": 25,
-            "search": "cookies[bfx.logLevel]",
-            "regexp": "^\\w+$"
+            "search": "cookies[bfx.apiKey:]",
+            "regexp": "^[\\w\\d-]+$"
         },
         {
             "certainty": 25,
@@ -13,14 +12,15 @@
         },
         {
             "certainty": 25,
-            "search": "cookies[bfx.apiKey:]",
-            "regexp": "^[\\w\\d-]+$"
+            "search": "cookies[bfx.language]",
+            "regexp": "^\\w+$"
         },
         {
             "certainty": 25,
-            "search": "cookies[bfx.language]",
+            "search": "cookies[bfx.logLevel]",
             "regexp": "^\\w+$"
         }
     ],
+    "name": "Borderfree",
     "website": "https://www.borderfree.com"
 }
