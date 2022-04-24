@@ -1,10 +1,10 @@
 {
     "website": "http://www.publiccms.com",
-    "name": "Public CMS",
+    "implies": "Java",
     "matches": [
         {
-            "regexp": "^(.+)$",
             "offset": 1,
+            "regexp": "^(.+)$",
             "search": "headers[x-powered-publiccms]"
         },
         {
@@ -12,5 +12,5 @@
             "search": "cookies[PUBLICCMS_USER]"
         }
     ],
-    "implies": "Java"
+    "name": "Public CMS"
 }

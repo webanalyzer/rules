@@ -1,6 +1,5 @@
 {
     "website": "https://zipkin.io/",
-    "name": "Zipkin",
     "matches": [
         {
             "regexp": ".*",
@@ -8,11 +7,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-b3-sampled]"
+            "search": "headers[x-b3-flags]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-b3-flags]"
+            "search": "headers[x-b3-sampled]"
         },
         {
             "regexp": ".*",
@@ -22,5 +21,6 @@
             "regexp": ".*",
             "search": "headers[x-b3-parentspanid]"
         }
-    ]
+    ],
+    "name": "Zipkin"
 }

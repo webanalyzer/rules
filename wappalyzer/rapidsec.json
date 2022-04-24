@@ -1,6 +1,5 @@
 {
     "website": "https://rapidsec.com",
-    "name": "RapidSec",
     "matches": [
         {
             "regexp": "\\.rapidsec\\.net",
@@ -8,11 +7,12 @@
         },
         {
             "regexp": "\\.rapidsec\\.net",
-            "search": "headers[report-to]"
+            "search": "headers[content-security-policy-report-only]"
         },
         {
             "regexp": "\\.rapidsec\\.net",
-            "search": "headers[content-security-policy-report-only]"
+            "search": "headers[report-to]"
         }
-    ]
+    ],
+    "name": "RapidSec"
 }

@@ -1,6 +1,5 @@
 {
     "website": "https://www.klarna.com/international/",
-    "name": "Klarna Checkout",
     "matches": [
         {
             "regexp": "\\.klarna(?:cdn|services)\\.(?:net|com)",
@@ -8,11 +7,12 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[ku1-sid]"
+            "search": "cookies[ku1-vid]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[ku1-vid]"
+            "search": "cookies[ku1-sid]"
         }
-    ]
+    ],
+    "name": "Klarna Checkout"
 }

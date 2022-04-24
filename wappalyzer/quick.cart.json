@@ -1,14 +1,14 @@
 {
     "website": "http://opensolution.org",
-    "name": "Quick.Cart",
     "matches": [
         {
-            "regexp": "Quick\\.Cart(?: v([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "regexp": "<a href=\"[^>]+opensolution\\.org/\">(?:Shopping cart by|Sklep internetowy)"
         },
         {
-            "regexp": "<a href=\"[^>]+opensolution\\.org/\">(?:Shopping cart by|Sklep internetowy)"
+            "offset": 1,
+            "regexp": "Quick\\.Cart(?: v([\\d.]+))?",
+            "search": "meta[generator]"
         }
-    ]
+    ],
+    "name": "Quick.Cart"
 }
