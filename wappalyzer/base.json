@@ -1,14 +1,14 @@
 {
     "matches": [
         {
-            "search": "meta[base-theme-name]",
             "certainty": 50,
-            "regexp": ".*"
+            "regexp": "\\d+",
+            "search": "meta[base-theme-version]"
         },
         {
-            "search": "meta[base-theme-version]",
             "certainty": 50,
-            "regexp": "\\d+"
+            "regexp": ".*",
+            "search": "meta[base-theme-name]"
         }
     ],
     "website": "https://thebase.in",
