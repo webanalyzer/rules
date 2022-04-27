@@ -1,4 +1,5 @@
 {
+    "name": "Shopify",
     "matches": [
         {
             "regexp": ".*",
@@ -10,23 +11,22 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[_shopify_y]"
+            "certainty": 50,
+            "search": "headers[x-shopify-stage]"
+        },
+        {
+            "regexp": ".*",
+            "certainty": 50,
+            "search": "headers[x-shopid]"
         },
         {
             "regexp": ".*",
             "search": "cookies[_shopify_s]"
         },
         {
-            "certainty": 50,
             "regexp": ".*",
-            "search": "headers[x-shopid]"
-        },
-        {
-            "certainty": 50,
-            "regexp": ".*",
-            "search": "headers[x-shopify-stage]"
+            "search": "cookies[_shopify_y]"
         }
     ],
-    "website": "http://shopify.com",
-    "name": "Shopify"
+    "website": "http://shopify.com"
 }
