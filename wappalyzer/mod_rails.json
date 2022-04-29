@@ -1,12 +1,13 @@
 {
+    "website": "http://phusionpassenger.com",
     "matches": [
         {
-            "search": "headers[server]",
+            "search": "headers[x-powered-by]",
             "regexp": "mod_rails(?:/([\\d.]+))?",
             "offset": 1
         },
         {
-            "search": "headers[x-powered-by]",
+            "search": "headers[server]",
             "regexp": "mod_rails(?:/([\\d.]+))?",
             "offset": 1
         }
@@ -15,6 +16,5 @@
     "implies": [
         "Ruby on Rails",
         "Apache"
-    ],
-    "website": "http://phusionpassenger.com"
+    ]
 }

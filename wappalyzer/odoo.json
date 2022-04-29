@@ -1,12 +1,13 @@
 {
+    "website": "http://odoo.com",
     "matches": [
-        {
-            "certainty": 25,
-            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)"
-        },
         {
             "search": "meta[generator]",
             "regexp": "Odoo"
+        },
+        {
+            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)",
+            "certainty": 25
         }
     ],
     "name": "Odoo",
@@ -15,6 +16,5 @@
         "PostgreSQL",
         "Node.js",
         "Less"
-    ],
-    "website": "http://odoo.com"
+    ]
 }

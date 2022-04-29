@@ -1,4 +1,5 @@
 {
+    "website": "https://drupal.org",
     "matches": [
         {
             "search": "headers[expires]",
@@ -14,15 +15,14 @@
             "regexp": ".*"
         },
         {
-            "regexp": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/"
-        },
-        {
             "search": "meta[generator]",
             "regexp": "^Drupal(?:\\s([\\d.]+))?",
             "offset": 1
+        },
+        {
+            "regexp": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/"
         }
     ],
     "name": "Drupal",
-    "implies": "PHP",
-    "website": "https://drupal.org"
+    "implies": "PHP"
 }
