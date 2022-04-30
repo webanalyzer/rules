@@ -1,16 +1,16 @@
 {
-    "website": "https://jenkins.io/",
+    "name": "Jenkins",
     "matches": [
         {
             "regexp": "<span class=\"jenkins_ver\"><a href=\"https://jenkins\\.io/\">Jenkins ver\\. ([\\d.]+)",
             "offset": 1
         },
         {
-            "search": "headers[x-jenkins]",
             "regexp": "([\\d.]+)",
+            "search": "headers[x-jenkins]",
             "offset": 1
         }
     ],
-    "name": "Jenkins",
-    "implies": "Java"
+    "implies": "Java",
+    "website": "https://jenkins.io/"
 }

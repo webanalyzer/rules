@@ -1,13 +1,13 @@
 {
-    "website": "https://www.melistechnology.com/",
+    "name": "Melis Platform",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "^Melis Platform\\."
+            "regexp": "^Melis CMS\\.",
+            "search": "meta[powered-by]"
         },
         {
-            "search": "meta[powered-by]",
-            "regexp": "^Melis CMS\\."
+            "regexp": "^Melis Platform\\.",
+            "search": "meta[generator]"
         },
         {
             "regexp": "<!-- Rendered with Melis CMS V2"
@@ -16,7 +16,6 @@
             "regexp": "<!-- Rendered with Melis Platform"
         }
     ],
-    "name": "Melis Platform",
     "implies": [
         "Apache",
         "PHP",
@@ -24,5 +23,6 @@
         "Symfony",
         "Laravel",
         "Zend"
-    ]
+    ],
+    "website": "https://www.melistechnology.com/"
 }
