@@ -1,11 +1,11 @@
 {
     "matches": [
         {
-            "regexp": "/ystore/",
-            "search": "headers[x-xrds-location]"
+            "regexp": "<link[^>]+store\\.yahoo\\.net"
         },
         {
-            "regexp": "<link[^>]+store\\.yahoo\\.net"
+            "search": "headers[x-xrds-location]",
+            "regexp": "/ystore/"
         }
     ],
     "website": "http://smallbusiness.yahoo.com/ecommerce",

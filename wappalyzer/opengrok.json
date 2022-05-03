@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "regexp": "OpenGrok(?: v?([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "cookies[OpenGrok]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[OpenGrok]"
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "OpenGrok(?: v?([\\d.]+))?"
         }
     ],
     "website": "http://hub.opensolaris.org/bin/view/Project+opengrok/WebHome",

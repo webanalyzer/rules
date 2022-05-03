@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "regexp": "Ghost(?:\\s([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "headers[x-ghost-cache-status]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-ghost-cache-status]"
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "Ghost(?:\\s([\\d.]+))?"
         }
     ],
     "website": "http://ghost.org",
