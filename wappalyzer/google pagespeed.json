@@ -1,16 +1,16 @@
 {
     "website": "http://developers.google.com/speed/pagespeed/mod",
-    "name": "Google PageSpeed",
     "matches": [
         {
             "regexp": "([\\d.]+)",
-            "search": "headers[x-mod-pagespeed]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-mod-pagespeed]"
         },
         {
             "regexp": "(.+)",
-            "search": "headers[x-page-speed]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-page-speed]"
         }
-    ]
+    ],
+    "name": "Google PageSpeed"
 }
