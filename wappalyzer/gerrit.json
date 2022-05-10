@@ -1,9 +1,13 @@
 {
+    "implies": [
+        "Java",
+        "git"
+    ],
     "website": "http://www.gerritcodereview.com",
     "matches": [
         {
-            "regexp": "^Gerrit Code Review$",
-            "search": "meta[title]"
+            "search": "meta[title]",
+            "regexp": "^Gerrit Code Review$"
         },
         {
             "regexp": ">Gerrit Code Review</a>\\s*\"\\s*\\(([0-9.]+)\\)",
@@ -12,10 +16,6 @@
         {
             "regexp": "<(?:div|style) id=\"gerrit_"
         }
-    ],
-    "implies": [
-        "Java",
-        "git"
     ],
     "name": "Gerrit"
 }
