@@ -6,14 +6,6 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-fastly-origin]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-fastly-request-id]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[x-via-fastly:]",
             "regexp": ".*"
         },
@@ -24,6 +16,14 @@
         {
             "search": "headers[x-served-by]",
             "regexp": "^cache-"
+        },
+        {
+            "search": "headers[x-fastly-request-id]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-fastly-origin]",
+            "regexp": ".*"
         }
     ],
     "name": "Fastly"

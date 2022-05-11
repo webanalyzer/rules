@@ -1,5 +1,4 @@
 {
-    "implies": "Web Stories",
     "website": "https://wp.stories.google",
     "matches": [
         {
@@ -7,10 +6,11 @@
             "regexp": "^Web Stories for WordPress$"
         },
         {
+            "offset": 1,
             "search": "meta[amp-story-generator-version]",
-            "regexp": "^(.+)$",
-            "offset": 1
+            "regexp": "^(.+)$"
         }
     ],
+    "implies": "Web Stories",
     "name": "Web Stories for WordPress"
 }

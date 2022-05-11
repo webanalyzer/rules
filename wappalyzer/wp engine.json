@@ -1,5 +1,4 @@
 {
-    "implies": "WordPress",
     "website": "https://wpengine.com",
     "matches": [
         {
@@ -7,17 +6,18 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "WP Engine"
-        },
-        {
             "search": "headers[wpe-backend]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "WP Engine"
         },
         {
             "search": "headers[x-pass-why]",
             "regexp": ".*"
         }
     ],
+    "implies": "WordPress",
     "name": "WP Engine"
 }
