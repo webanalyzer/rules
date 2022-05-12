@@ -1,6 +1,9 @@
 {
-    "website": "http://koken.me",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[koken_referrer]"
+        },
         {
             "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
         },
@@ -9,17 +12,14 @@
         },
         {
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Koken ([\\d.]+)"
-        },
-        {
-            "search": "cookies[koken_referrer]",
-            "regexp": ".*"
+            "regexp": "Koken ([\\d.]+)",
+            "search": "meta[generator]"
         }
     ],
     "implies": [
         "PHP",
         "MySQL"
     ],
-    "name": "Koken"
+    "name": "Koken",
+    "website": "http://koken.me"
 }

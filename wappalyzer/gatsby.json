@@ -1,5 +1,4 @@
 {
-    "website": "https://www.gatsbyjs.org/",
     "matches": [
         {
             "regexp": "<div id=\"___gatsby\">"
@@ -9,13 +8,14 @@
         },
         {
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "^Gatsby(?: ([0-9.]+))?$"
+            "regexp": "^Gatsby(?: ([0-9.]+))?$",
+            "search": "meta[generator]"
         }
     ],
     "implies": [
         "React",
         "webpack"
     ],
-    "name": "Gatsby"
+    "name": "Gatsby",
+    "website": "https://www.gatsbyjs.org/"
 }

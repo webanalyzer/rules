@@ -1,15 +1,15 @@
 {
-    "website": "http://cmsmadesimple.org",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "CMS Made Simple"
+            "regexp": ".*",
+            "search": "cookies[CMSSESSID]"
         },
         {
-            "search": "cookies[CMSSESSID]",
-            "regexp": ".*"
+            "regexp": "CMS Made Simple",
+            "search": "meta[generator]"
         }
     ],
     "implies": "PHP",
-    "name": "CMS Made Simple"
+    "name": "CMS Made Simple",
+    "website": "http://cmsmadesimple.org"
 }
