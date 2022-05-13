@@ -1,19 +1,19 @@
 {
+    "name": "eZ Publish",
+    "website": "https://github.com/ezsystems/ezpublish-legacy",
+    "implies": "PHP",
     "matches": [
         {
             "regexp": "^eZ Publish",
             "search": "headers[x-powered-by]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[eZSESSID]"
-        },
-        {
             "regexp": "eZ Publish",
             "search": "meta[generator]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[eZSESSID]"
         }
-    ],
-    "implies": "PHP",
-    "name": "eZ Publish",
-    "website": "https://github.com/ezsystems/ezpublish-legacy"
+    ]
 }

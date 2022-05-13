@@ -1,14 +1,14 @@
 {
+    "name": "Quick.CMS",
+    "website": "http://opensolution.org",
     "matches": [
-        {
-            "regexp": "<a href=\"[^>]+opensolution\\.org/\">CMS by"
-        },
         {
             "offset": 1,
             "regexp": "Quick\\.CMS(?: v([\\d.]+))?",
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "<a href=\"[^>]+opensolution\\.org/\">CMS by"
         }
-    ],
-    "name": "Quick.CMS",
-    "website": "http://opensolution.org"
+    ]
 }
