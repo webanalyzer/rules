@@ -1,12 +1,12 @@
 {
-    "name": "Jenkins",
     "website": "https://jenkins.io/",
     "implies": "Java",
+    "name": "Jenkins",
     "matches": [
         {
+            "search": "headers[x-jenkins]",
             "offset": 1,
-            "regexp": "([\\d.]+)",
-            "search": "headers[x-jenkins]"
+            "regexp": "([\\d.]+)"
         },
         {
             "offset": 1,
