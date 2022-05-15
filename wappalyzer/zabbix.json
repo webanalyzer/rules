@@ -4,12 +4,12 @@
     "name": "Zabbix",
     "matches": [
         {
-            "search": "meta[Author]",
-            "regexp": "ZABBIX SIA",
-            "certainty": 70
+            "regexp": "<body[^>]+zbxCallPostScripts"
         },
         {
-            "regexp": "<body[^>]+zbxCallPostScripts"
+            "certainty": 70,
+            "regexp": "ZABBIX SIA",
+            "search": "meta[Author]"
         }
     ]
 }

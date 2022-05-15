@@ -4,22 +4,22 @@
     "name": "Ruby on Rails",
     "matches": [
         {
-            "search": "cookies[_session_id]",
+            "certainty": 75,
             "regexp": ".*",
-            "certainty": 75
+            "search": "cookies[_session_id]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "mod_(?:rails|rack)"
+            "regexp": "mod_(?:rails|rack)",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "mod_(?:rails|rack)"
+            "regexp": "mod_(?:rails|rack)",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "meta[csrf-param]",
+            "certainty": 50,
             "regexp": "^authenticity_token$",
-            "certainty": 50
+            "search": "meta[csrf-param]"
         }
     ]
 }

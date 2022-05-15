@@ -4,13 +4,13 @@
     "name": "OpenGrok",
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "OpenGrok(?: v?([\\d.]+))?"
+            "regexp": ".*",
+            "search": "cookies[OpenGrok]"
         },
         {
-            "search": "cookies[OpenGrok]",
-            "regexp": ".*"
+            "regexp": "OpenGrok(?: v?([\\d.]+))?",
+            "search": "meta[generator]",
+            "offset": 1
         }
     ]
 }

@@ -4,13 +4,13 @@
     "name": "Dynamicweb",
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Dynamicweb ([\\d.]+)"
+            "regexp": ".*",
+            "search": "cookies[Dynamicweb]"
         },
         {
-            "search": "cookies[Dynamicweb]",
-            "regexp": ".*"
+            "regexp": "Dynamicweb ([\\d.]+)",
+            "search": "meta[generator]",
+            "offset": 1
         }
     ]
 }

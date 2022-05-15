@@ -7,15 +7,15 @@
     "name": "Gatsby",
     "matches": [
         {
+            "regexp": "^Gatsby(?: ([0-9.]+))?$",
+            "search": "meta[generator]",
+            "offset": 1
+        },
+        {
             "regexp": "<div id=\"___gatsby\">"
         },
         {
             "regexp": "<style id=\"gatsby-inlined-css\">"
-        },
-        {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^Gatsby(?: ([0-9.]+))?$"
         }
     ]
 }

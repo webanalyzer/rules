@@ -7,20 +7,20 @@
     "name": "PHPFusion",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "PHPFusion (.+)$"
-        },
-        {
-            "search": "headers[x-phpfusion]",
-            "offset": 1,
-            "regexp": "(.+)$"
-        },
-        {
             "regexp": "Powered by <a href=\"[^>]+phpfusion"
         },
         {
             "regexp": "Powered by <a href=\"[^>]+php-fusion"
+        },
+        {
+            "regexp": "(.+)$",
+            "search": "headers[x-phpfusion]",
+            "offset": 1
+        },
+        {
+            "regexp": "PHPFusion (.+)$",
+            "search": "headers[x-powered-by]",
+            "offset": 1
         }
     ]
 }

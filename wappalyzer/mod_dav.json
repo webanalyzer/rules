@@ -4,9 +4,9 @@
     "name": "mod_dav",
     "matches": [
         {
+            "regexp": "\\b(?:mod_)?DAV\\b(?:/([\\d.]+))?",
             "search": "headers[server]",
-            "offset": 1,
-            "regexp": "\\b(?:mod_)?DAV\\b(?:/([\\d.]+))?"
+            "offset": 1
         }
     ]
 }

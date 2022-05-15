@@ -4,19 +4,19 @@
     "name": "Moodle",
     "matches": [
         {
-            "search": "cookies[MoodleSession]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[MOODLEID_]"
         },
         {
-            "search": "cookies[MOODLEID_]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[MoodleSession]"
         },
         {
             "regexp": "<img[^>]+moodlelogo"
         },
         {
-            "search": "meta[keywords]",
-            "regexp": "^moodle"
+            "regexp": "^moodle",
+            "search": "meta[keywords]"
         }
     ]
 }

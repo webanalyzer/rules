@@ -4,12 +4,12 @@
     "name": "Hexo",
     "matches": [
         {
-            "regexp": "Powered by <a href=\"https?://hexo\\.io/?\"[^>]*>Hexo</"
+            "regexp": "Hexo(?: v?([\\d.]+))?",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Hexo(?: v?([\\d.]+))?"
+            "regexp": "Powered by <a href=\"https?://hexo\\.io/?\"[^>]*>Hexo</"
         }
     ]
 }

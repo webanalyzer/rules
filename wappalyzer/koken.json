@@ -7,9 +7,8 @@
     "name": "Koken",
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Koken ([\\d.]+)"
+            "regexp": ".*",
+            "search": "cookies[koken_referrer]"
         },
         {
             "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
@@ -18,8 +17,9 @@
             "regexp": "<!--\\s+KOKEN DEBUGGING"
         },
         {
-            "search": "cookies[koken_referrer]",
-            "regexp": ".*"
+            "regexp": "Koken ([\\d.]+)",
+            "search": "meta[generator]",
+            "offset": 1
         }
     ]
 }

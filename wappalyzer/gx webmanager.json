@@ -3,12 +3,12 @@
     "name": "GX WebManager",
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "GX WebManager(?: ([\\d.]+))?"
+            "regexp": "<!--\\s+Powered by GX"
         },
         {
-            "regexp": "<!--\\s+Powered by GX"
+            "regexp": "GX WebManager(?: ([\\d.]+))?",
+            "search": "meta[generator]",
+            "offset": 1
         }
     ]
 }

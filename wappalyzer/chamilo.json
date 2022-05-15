@@ -4,14 +4,14 @@
     "name": "Chamilo",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "Chamilo ([\\d.]+)"
+            "regexp": "Chamilo ([\\d.]+)",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Chamilo ([\\d.]+)"
+            "regexp": "Chamilo ([\\d.]+)",
+            "search": "headers[x-powered-by]",
+            "offset": 1
         }
     ]
 }

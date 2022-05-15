@@ -4,12 +4,12 @@
     "name": "otrs",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "OTRS ([\\d.]+)"
+            "regexp": "<!--\\s+OTRS: Copyright"
         },
         {
-            "regexp": "<!--\\s+OTRS: Copyright"
+            "regexp": "OTRS ([\\d.]+)",
+            "search": "headers[x-powered-by]",
+            "offset": 1
         }
     ]
 }
