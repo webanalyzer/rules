@@ -1,5 +1,4 @@
 {
-    "website": "https://platform.sh",
     "name": "Platform.sh",
     "matches": [
         {
@@ -8,15 +7,16 @@
         },
         {
             "regexp": ".*",
+            "search": "headers[x-platform-router]"
+        },
+        {
+            "regexp": ".*",
             "search": "headers[x-platform-processor]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-platform-server]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-platform-router]"
         }
-    ]
+    ],
+    "website": "https://platform.sh"
 }

@@ -1,5 +1,4 @@
 {
-    "website": "https://www.pardot.com",
     "name": "Pardot",
     "matches": [
         {
@@ -8,11 +7,12 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-pardot-lb]"
+            "search": "headers[x-pardot-route]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-pardot-route]"
+            "search": "headers[x-pardot-lb]"
         }
-    ]
+    ],
+    "website": "https://www.pardot.com"
 }

@@ -1,15 +1,15 @@
 {
-    "website": "https://www.stackpath.com",
     "name": "StackPath",
     "matches": [
         {
             "regexp": "^StackCDN(?: ([\\d.]+))?",
-            "search": "headers[x-provided-by]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-provided-by]"
         },
         {
             "regexp": "hosting\\.stackcp\\.net$",
             "search": "headers[x-backend-server]"
         }
-    ]
+    ],
+    "website": "https://www.stackpath.com"
 }

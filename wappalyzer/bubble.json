@@ -1,6 +1,4 @@
 {
-    "website": "http://bubble.io",
-    "implies": "Node.js",
     "name": "Bubble",
     "matches": [
         {
@@ -9,11 +7,13 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-bubble-perf]"
+            "search": "headers[x-bubble-capacity-used]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-bubble-capacity-used]"
+            "search": "headers[x-bubble-perf]"
         }
-    ]
+    ],
+    "implies": "Node.js",
+    "website": "http://bubble.io"
 }

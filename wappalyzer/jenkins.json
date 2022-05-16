@@ -1,6 +1,4 @@
 {
-    "website": "https://jenkins.io/",
-    "implies": "Java",
     "name": "Jenkins",
     "matches": [
         {
@@ -9,8 +7,10 @@
         },
         {
             "regexp": "([\\d.]+)",
-            "search": "headers[x-jenkins]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-jenkins]"
         }
-    ]
+    ],
+    "implies": "Java",
+    "website": "https://jenkins.io/"
 }

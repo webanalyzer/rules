@@ -1,5 +1,4 @@
 {
-    "website": "https://office.microsoft.com/powerpoint",
     "name": "Microsoft PowerPoint",
     "matches": [
         {
@@ -8,12 +7,13 @@
         },
         {
             "regexp": "Microsoft PowerPoint ( [\\d.]+)?",
-            "search": "meta[generator]",
-            "offset": 1
+            "offset": 1,
+            "search": "meta[generator]"
         },
         {
             "regexp": "^PowerPoint\\.",
             "search": "meta[ProgId]"
         }
-    ]
+    ],
+    "website": "https://office.microsoft.com/powerpoint"
 }

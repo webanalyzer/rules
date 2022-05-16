@@ -1,8 +1,10 @@
 {
-    "website": "http://expressionengine.com",
-    "implies": "PHP",
     "name": "ExpressionEngine",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[exp_tracker]"
+        },
         {
             "regexp": ".*",
             "search": "cookies[exp_csrf_token]"
@@ -10,10 +12,8 @@
         {
             "regexp": ".*",
             "search": "cookies[exp_last_activity]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[exp_tracker]"
         }
-    ]
+    ],
+    "implies": "PHP",
+    "website": "http://expressionengine.com"
 }
