@@ -3,11 +3,7 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[cf-ray]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[cf-cache-status]"
+            "search": "cookies[__cfduid]"
         },
         {
             "regexp": "^cloudflare$",
@@ -15,7 +11,11 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[__cfduid]"
+            "search": "headers[cf-cache-status]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[cf-ray]"
         }
     ],
     "website": "http://www.cloudflare.com"
