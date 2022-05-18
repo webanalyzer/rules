@@ -1,14 +1,14 @@
 {
     "name": "gitlist",
+    "website": "http://gitlist.org",
+    "matches": [
+        {
+            "offset": 1,
+            "regexp": "<p>Powered by <a[^>]+>GitList ([\\d.]+)"
+        }
+    ],
     "implies": [
         "PHP",
         "git"
-    ],
-    "matches": [
-        {
-            "regexp": "<p>Powered by <a[^>]+>GitList ([\\d.]+)",
-            "offset": 1
-        }
-    ],
-    "website": "http://gitlist.org"
+    ]
 }

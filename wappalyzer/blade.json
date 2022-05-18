@@ -1,12 +1,12 @@
 {
     "name": "Blade",
-    "implies": "Java",
+    "website": "https://lets-blade.com",
     "matches": [
         {
-            "regexp": "blade-([\\w.]+)?",
             "search": "headers[x-powered-by]",
-            "offset": 1
+            "offset": 1,
+            "regexp": "blade-([\\w.]+)?"
         }
     ],
-    "website": "https://lets-blade.com"
+    "implies": "Java"
 }

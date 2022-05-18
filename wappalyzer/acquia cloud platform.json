@@ -1,15 +1,15 @@
 {
     "name": "Acquia Cloud Platform",
+    "website": "https://www.acquia.com/",
+    "matches": [
+        {
+            "search": "headers[x-ah-environment]",
+            "regexp": "^\\w+$"
+        }
+    ],
     "implies": [
         "Drupal",
         "Apache",
         "Percona"
-    ],
-    "matches": [
-        {
-            "regexp": "^\\w+$",
-            "search": "headers[x-ah-environment]"
-        }
-    ],
-    "website": "https://www.acquia.com/"
+    ]
 }

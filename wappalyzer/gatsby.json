@@ -1,21 +1,21 @@
 {
     "name": "Gatsby",
-    "implies": [
-        "React",
-        "webpack"
-    ],
+    "website": "https://www.gatsbyjs.org/",
     "matches": [
+        {
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "^Gatsby(?: ([0-9.]+))?$"
+        },
         {
             "regexp": "<div id=\"___gatsby\">"
         },
         {
             "regexp": "<style id=\"gatsby-inlined-css\">"
-        },
-        {
-            "regexp": "^Gatsby(?: ([0-9.]+))?$",
-            "search": "meta[generator]",
-            "offset": 1
         }
     ],
-    "website": "https://www.gatsbyjs.org/"
+    "implies": [
+        "React",
+        "webpack"
+    ]
 }
