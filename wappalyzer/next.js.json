@@ -1,5 +1,4 @@
 {
-    "website": "https://nextjs.org",
     "implies": [
         "React",
         "webpack",
@@ -7,10 +6,11 @@
     ],
     "matches": [
         {
-            "search": "headers[x-powered-by]",
+            "offset": 1,
             "regexp": "^Next\\.js ?([0-9.]+)?",
-            "offset": 1
+            "search": "headers[x-powered-by]"
         }
     ],
-    "name": "Next.js"
+    "name": "Next.js",
+    "website": "https://nextjs.org"
 }
