@@ -1,5 +1,18 @@
 {
+    "name": "Fastly",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "headers[x-fastly-origin]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-via-fastly:]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-fastly-request-id]"
+        },
         {
             "regexp": "Fastly-SSL",
             "search": "headers[vary]"
@@ -11,20 +24,7 @@
         {
             "regexp": "^cache-",
             "search": "headers[x-served-by]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-fastly-request-id]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-fastly-origin]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-via-fastly:]"
         }
     ],
-    "name": "Fastly",
     "website": "https://www.fastly.com"
 }

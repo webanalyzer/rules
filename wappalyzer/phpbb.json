@@ -1,6 +1,11 @@
 {
+    "name": "phpBB",
     "implies": "PHP",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[phpbb]"
+        },
         {
             "regexp": "Powered by <a[^>]+phpBB"
         },
@@ -19,12 +24,7 @@
         {
             "regexp": "phpBB Group",
             "search": "meta[copyright]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[phpbb]"
         }
     ],
-    "name": "phpBB",
     "website": "https://phpbb.com"
 }

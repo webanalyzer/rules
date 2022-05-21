@@ -1,10 +1,11 @@
 {
+    "name": "MediaWiki",
     "implies": "PHP",
     "matches": [
         {
-            "offset": 1,
             "regexp": "^MediaWiki ?(.+)$",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": "<body[^>]+class=\"mediawiki\""
@@ -16,6 +17,5 @@
             "regexp": "<a[^>]+/Special:WhatLinksHere/"
         }
     ],
-    "name": "MediaWiki",
     "website": "https://www.mediawiki.org"
 }

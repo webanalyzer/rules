@@ -1,4 +1,5 @@
 {
+    "name": "Atlassian Jira",
     "implies": "Java",
     "matches": [
         {
@@ -6,12 +7,11 @@
             "search": "meta[application-name]"
         },
         {
-            "offset": 1,
             "regexp": "([\\d.]+)",
-            "certainty": 0,
-            "search": "meta[data-version]"
+            "search": "meta[data-version]",
+            "offset": 1,
+            "certainty": 0
         }
     ],
-    "name": "Atlassian Jira",
     "website": "http://www.atlassian.com/software/jira/overview/"
 }
