@@ -4,12 +4,12 @@
         "Perl",
         "Apache"
     ],
+    "website": "http://perl.apache.org",
     "matches": [
         {
-            "regexp": "mod_perl(?:/([\\d\\.]+))?",
+            "offset": 1,
             "search": "headers[server]",
-            "offset": 1
+            "regexp": "mod_perl(?:/([\\d\\.]+))?"
         }
-    ],
-    "website": "http://perl.apache.org"
+    ]
 }

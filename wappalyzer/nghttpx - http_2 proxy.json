@@ -1,11 +1,11 @@
 {
     "name": "nghttpx - HTTP/2 proxy",
+    "website": "https://nghttp2.org",
     "matches": [
         {
-            "regexp": "nghttpx nghttp2/?([\\d.]+)?",
+            "offset": 1,
             "search": "headers[server]",
-            "offset": 1
+            "regexp": "nghttpx nghttp2/?([\\d.]+)?"
         }
-    ],
-    "website": "https://nghttp2.org"
+    ]
 }
