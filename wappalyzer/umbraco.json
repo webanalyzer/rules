@@ -1,20 +1,20 @@
 {
-    "website": "http://umbraco.com",
-    "implies": "Microsoft ASP.NET",
+    "name": "Umbraco",
     "matches": [
         {
-            "regexp": "umbraco",
-            "search": "meta[generator]"
-        },
-        {
-            "offset": 1,
+            "search": "headers[x-umbraco-version]",
             "regexp": "^(.+)$",
-            "search": "headers[x-umbraco-version]"
+            "offset": 1
         },
         {
-            "regexp": "/Umbraco/Api/",
-            "search": "script"
+            "search": "meta[generator]",
+            "regexp": "umbraco"
+        },
+        {
+            "search": "script",
+            "regexp": "/Umbraco/Api/"
         }
     ],
-    "name": "Umbraco"
+    "implies": "Microsoft ASP.NET",
+    "website": "http://umbraco.com"
 }

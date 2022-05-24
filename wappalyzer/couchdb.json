@@ -1,11 +1,11 @@
 {
-    "website": "http://couchdb.apache.org",
+    "name": "CouchDB",
     "matches": [
         {
-            "offset": 1,
+            "search": "headers[server]",
             "regexp": "CouchDB/([\\d.]+)",
-            "search": "headers[server]"
+            "offset": 1
         }
     ],
-    "name": "CouchDB"
+    "website": "http://couchdb.apache.org"
 }
