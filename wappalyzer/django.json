@@ -1,15 +1,15 @@
 {
-    "name": "Django",
     "matches": [
         {
             "search": "cookies[django_language]",
             "regexp": ".*"
         },
         {
-            "regexp": "(?:powered by <a[^>]+>Django ?([\\d.]+)?<\\/a>|<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>)",
-            "offset": 1
+            "offset": 1,
+            "regexp": "(?:powered by <a[^>]+>Django ?([\\d.]+)?<\\/a>|<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>)"
         }
     ],
-    "implies": "Python",
-    "website": "https://djangoproject.com"
+    "website": "https://djangoproject.com",
+    "name": "Django",
+    "implies": "Python"
 }
