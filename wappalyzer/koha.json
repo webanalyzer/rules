@@ -7,12 +7,12 @@
             "regexp": "<a href=\"/cgi-bin/koha/"
         },
         {
-            "search": "meta[generator]",
+            "regexp": "^Koha ([\\d.]+)$",
             "offset": 1,
-            "regexp": "^Koha ([\\d.]+)$"
+            "search": "meta[generator]"
         }
     ],
-    "website": "https://koha-community.org/",
     "name": "Koha",
+    "website": "https://koha-community.org/",
     "implies": "Perl"
 }

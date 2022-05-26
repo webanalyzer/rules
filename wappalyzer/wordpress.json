@@ -7,25 +7,25 @@
             "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         },
         {
-            "search": "meta[generator]",
+            "regexp": ".*",
+            "search": "meta[shareaholic:wp_version]"
+        },
+        {
+            "regexp": "^WordPress(?: ([\\d.]+))?",
             "offset": 1,
-            "regexp": "^WordPress(?: ([\\d.]+))?"
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[shareaholic:wp_version]",
-            "regexp": ".*"
+            "regexp": "/xmlrpc\\.php$",
+            "search": "headers[x-pingback]"
         },
         {
-            "search": "headers[link]",
-            "regexp": "rel=\"https://api\\.w\\.org/\""
-        },
-        {
-            "search": "headers[x-pingback]",
-            "regexp": "/xmlrpc\\.php$"
+            "regexp": "rel=\"https://api\\.w\\.org/\"",
+            "search": "headers[link]"
         }
     ],
-    "website": "https://wordpress.org",
     "name": "WordPress",
+    "website": "https://wordpress.org",
     "implies": [
         "PHP",
         "MySQL"

@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "search": "headers[server]",
+            "regexp": "mod_ssl(?:/([\\d.]+))?",
             "offset": 1,
-            "regexp": "mod_ssl(?:/([\\d.]+))?"
+            "search": "headers[server]"
         }
     ],
-    "website": "http://modssl.org",
     "name": "mod_ssl",
+    "website": "http://modssl.org",
     "implies": "Apache"
 }

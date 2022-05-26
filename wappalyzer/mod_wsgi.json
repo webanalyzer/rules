@@ -1,18 +1,18 @@
 {
     "matches": [
         {
-            "search": "headers[server]",
+            "regexp": "mod_wsgi(?:/([\\d.]+))?",
             "offset": 1,
-            "regexp": "mod_wsgi(?:/([\\d.]+))?"
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
+            "regexp": "mod_wsgi(?:/([\\d.]+))?",
             "offset": 1,
-            "regexp": "mod_wsgi(?:/([\\d.]+))?"
+            "search": "headers[server]"
         }
     ],
-    "website": "https://code.google.com/p/modwsgi",
     "name": "mod_wsgi",
+    "website": "https://code.google.com/p/modwsgi",
     "implies": [
         "Python",
         "Apache"
