@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "regexp": "\\bCraft CMS\\b",
-            "search": "headers[x-powered-by]"
+            "search": "cookies[CraftSessionId]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[CraftSessionId]"
+            "search": "headers[x-powered-by]",
+            "regexp": "\\bCraft CMS\\b"
         }
     ],
     "name": "Craft CMS",

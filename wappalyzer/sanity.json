@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-sanity-shard]"
+            "search": "headers[content-security-policy]",
+            "regexp": "cdn\\.sanity\\.io"
         },
         {
-            "regexp": "cdn\\.sanity\\.io",
-            "search": "headers[content-security-policy]"
+            "search": "headers[x-sanity-shard]",
+            "regexp": ".*"
         }
     ],
     "name": "Sanity",

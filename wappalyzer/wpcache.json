@@ -1,20 +1,20 @@
 {
     "matches": [
         {
-            "regexp": "<!--[^>]+wpCache"
+            "search": "meta[generator]",
+            "regexp": "wpCache"
         },
         {
+            "search": "meta[keywords]",
+            "regexp": "wpCache"
+        },
+        {
+            "search": "headers[x-powered-by]",
             "regexp": "wpCache(?:/([\\d.]+))?",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
+            "offset": 1
         },
         {
-            "regexp": "wpCache",
-            "search": "meta[keywords]"
-        },
-        {
-            "regexp": "wpCache",
-            "search": "meta[generator]"
+            "regexp": "<!--[^>]+wpCache"
         }
     ],
     "name": "wpCache",

@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "regexp": "^(.+)$",
-            "offset": 1,
-            "search": "headers[x-powered-publiccms]"
+            "search": "cookies[PUBLICCMS_USER]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[PUBLICCMS_USER]"
+            "search": "headers[x-powered-publiccms]",
+            "regexp": "^(.+)$",
+            "offset": 1
         }
     ],
     "name": "Public CMS",

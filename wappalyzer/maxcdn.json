@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "regexp": "^NetDNA",
-            "search": "headers[server]"
+            "search": "headers[x-cdn-forward]",
+            "regexp": "^maxcdn$"
         },
         {
-            "regexp": "^maxcdn$",
-            "search": "headers[x-cdn-forward]"
+            "search": "headers[server]",
+            "regexp": "^NetDNA"
         }
     ],
     "name": "MaxCDN",

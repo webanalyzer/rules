@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "regexp": "(?:Powered by|System)\\s+(?:CERN )?<a (?:class=\"footer\" )?href=\"http://(?:cdsware\\.cern\\.ch(?:/invenio)?|invenio-software\\.org|cern\\.ch/invenio)(?:/)?\">(?:CDS )?Invenio</a>\\s*v?([\\d\\.]+)?",
-            "offset": 1
+            "search": "cookies[INVENIOSESSION]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[INVENIOSESSION]"
+            "regexp": "(?:Powered by|System)\\s+(?:CERN )?<a (?:class=\"footer\" )?href=\"http://(?:cdsware\\.cern\\.ch(?:/invenio)?|invenio-software\\.org|cern\\.ch/invenio)(?:/)?\">(?:CDS )?Invenio</a>\\s*v?([\\d\\.]+)?",
+            "offset": 1
         }
     ],
     "name": "Invenio",

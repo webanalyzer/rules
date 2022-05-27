@@ -1,16 +1,16 @@
 {
     "matches": [
         {
-            "regexp": "^eZ Publish",
-            "search": "headers[x-powered-by]"
+            "search": "cookies[eZSESSID]",
+            "regexp": ".*"
         },
         {
-            "regexp": "eZ Publish",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "eZ Publish"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[eZSESSID]"
+            "search": "headers[x-powered-by]",
+            "regexp": "^eZ Publish"
         }
     ],
     "name": "eZ Publish",

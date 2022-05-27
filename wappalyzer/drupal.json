@@ -1,25 +1,25 @@
 {
     "matches": [
         {
+            "search": "meta[generator]",
+            "regexp": "^Drupal(?:\\s([\\d.]+))?",
+            "offset": 1
+        },
+        {
+            "search": "headers[expires]",
+            "regexp": "19 Nov 1978"
+        },
+        {
+            "search": "headers[x-generator]",
+            "regexp": "^Drupal(?:\\s([\\d.]+))?",
+            "offset": 1
+        },
+        {
+            "search": "headers[x-drupal-cache]",
+            "regexp": ".*"
+        },
+        {
             "regexp": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/"
-        },
-        {
-            "regexp": "^Drupal(?:\\s([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-drupal-cache]"
-        },
-        {
-            "regexp": "^Drupal(?:\\s([\\d.]+))?",
-            "offset": 1,
-            "search": "headers[x-generator]"
-        },
-        {
-            "regexp": "19 Nov 1978",
-            "search": "headers[expires]"
         }
     ],
     "name": "Drupal",

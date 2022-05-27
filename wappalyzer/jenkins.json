@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "regexp": "<span class=\"jenkins_ver\"><a href=\"https://jenkins\\.io/\">Jenkins ver\\. ([\\d.]+)",
+            "search": "headers[x-jenkins]",
+            "regexp": "([\\d.]+)",
             "offset": 1
         },
         {
-            "regexp": "([\\d.]+)",
-            "offset": 1,
-            "search": "headers[x-jenkins]"
+            "regexp": "<span class=\"jenkins_ver\"><a href=\"https://jenkins\\.io/\">Jenkins ver\\. ([\\d.]+)",
+            "offset": 1
         }
     ],
     "name": "Jenkins",

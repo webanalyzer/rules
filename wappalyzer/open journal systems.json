@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "regexp": "Open Journal Systems(?: ([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "cookies[OJSSID]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[OJSSID]"
+            "search": "meta[generator]",
+            "regexp": "Open Journal Systems(?: ([\\d.]+))?",
+            "offset": 1
         }
     ],
     "name": "Open Journal Systems",
