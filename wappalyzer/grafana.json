@@ -1,4 +1,5 @@
 {
+    "website": "https://grafana.com",
     "name": "Grafana",
     "implies": [
         "Go",
@@ -6,11 +7,10 @@
     ],
     "matches": [
         {
-            "search": "script",
+            "regexp": ".+latestVersion\":\"[\\d\\.\\w\\-]+\"\\,\"version\":\"([\\d\\.]+)",
             "offset": 1,
             "certainty": 75,
-            "regexp": ".+latestVersion\":\"[\\d\\.\\w\\-]+\"\\,\"version\":\"([\\d\\.]+)"
+            "search": "script"
         }
-    ],
-    "website": "https://grafana.com"
+    ]
 }
