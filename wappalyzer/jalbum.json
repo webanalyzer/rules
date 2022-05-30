@@ -1,12 +1,12 @@
 {
     "website": "http://jalbum.net/en",
-    "name": "JAlbum",
-    "implies": "Java",
     "matches": [
         {
-            "regexp": "JAlbum( [\\d.]+)?",
+            "search": "meta[generator]",
             "offset": 1,
-            "search": "meta[generator]"
+            "regexp": "JAlbum( [\\d.]+)?"
         }
-    ]
+    ],
+    "implies": "Java",
+    "name": "JAlbum"
 }
