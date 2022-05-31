@@ -1,8 +1,7 @@
 {
-    "website": "http://www.jivesoftware.com",
     "matches": [
         {
-            "search": "headers[x-jive-flow-id]",
+            "search": "headers[x-jive-chrome-wrapped]",
             "regexp": ".*"
         },
         {
@@ -10,17 +9,18 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-jive-chrome-wrapped]",
+            "search": "headers[x-jive-user-id]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-jive-flow-id]",
             "regexp": ".*"
         },
         {
             "search": "headers[x-jsl]",
             "regexp": ".*"
-        },
-        {
-            "search": "headers[x-jive-user-id]",
-            "regexp": ".*"
         }
     ],
+    "website": "http://www.jivesoftware.com",
     "name": "Jive"
 }
