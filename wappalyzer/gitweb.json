@@ -1,5 +1,4 @@
 {
-    "website": "http://git-scm.com",
     "name": "gitweb",
     "matches": [
         {
@@ -7,11 +6,12 @@
             "offset": 1
         },
         {
-            "search": "meta[generator]",
             "regexp": "gitweb(?:/([\\d.]+\\d))?",
+            "search": "meta[generator]",
             "offset": 1
         }
     ],
+    "website": "http://git-scm.com",
     "implies": [
         "Perl",
         "git"
