@@ -1,5 +1,10 @@
 {
+    "website": "https://www.oscommerce.com",
     "name": "osCommerce",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
     "matches": [
         {
             "regexp": "<br />Powered by <a href=\"https?://www\\.oscommerce\\.com"
@@ -14,10 +19,5 @@
             "regexp": ".*",
             "search": "cookies[osCsid]"
         }
-    ],
-    "website": "https://www.oscommerce.com",
-    "implies": [
-        "PHP",
-        "MySQL"
     ]
 }

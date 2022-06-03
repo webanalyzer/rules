@@ -1,5 +1,10 @@
 {
+    "website": "https://wordpress.org",
     "name": "WordPress",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
     "matches": [
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
@@ -20,14 +25,9 @@
             "search": "meta[shareaholic:wp_version]"
         },
         {
+            "offset": 1,
             "regexp": "^WordPress(?: ([\\d.]+))?",
-            "search": "meta[generator]",
-            "offset": 1
+            "search": "meta[generator]"
         }
-    ],
-    "website": "https://wordpress.org",
-    "implies": [
-        "PHP",
-        "MySQL"
     ]
 }
