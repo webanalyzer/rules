@@ -4,16 +4,16 @@
     "matches": [
         {
             "regexp": "toc.html",
-            "search": "meta[docfx:tocrel]"
-        },
-        {
-            "regexp": "toc.html",
             "search": "meta[docfx:navrel]"
         },
         {
-            "offset": 1,
+            "regexp": "toc.html",
+            "search": "meta[docfx:tocrel]"
+        },
+        {
             "regexp": "docfx\\s([\\d\\.]+)",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         }
     ]
 }

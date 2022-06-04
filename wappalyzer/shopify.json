@@ -4,13 +4,7 @@
     "matches": [
         {
             "regexp": ".*",
-            "certainty": 50,
-            "search": "headers[x-shopify-stage]"
-        },
-        {
-            "regexp": ".*",
-            "certainty": 50,
-            "search": "headers[x-shopid]"
+            "search": "cookies[_shopify_y]"
         },
         {
             "regexp": ".*",
@@ -18,15 +12,21 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[_shopify_y]"
+            "search": "meta[shopify-digital-wallet]"
         },
         {
             "regexp": ".*",
             "search": "meta[shopify-checkout-api-token]"
         },
         {
+            "certainty": 50,
             "regexp": ".*",
-            "search": "meta[shopify-digital-wallet]"
+            "search": "headers[x-shopify-stage]"
+        },
+        {
+            "certainty": 50,
+            "regexp": ".*",
+            "search": "headers[x-shopid]"
         }
     ]
 }

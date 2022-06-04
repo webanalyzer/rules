@@ -4,14 +4,14 @@
     "implies": "Java",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "([\\d.]+)",
-            "certainty": 0,
-            "search": "meta[data-version]"
-        },
-        {
             "regexp": "JIRA",
             "search": "meta[application-name]"
+        },
+        {
+            "certainty": 0,
+            "regexp": "([\\d.]+)",
+            "search": "meta[data-version]",
+            "offset": 1
         }
     ]
 }

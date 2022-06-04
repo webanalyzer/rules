@@ -4,13 +4,13 @@
     "implies": "PHP",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "Banshee PHP framework v([\\d\\.]+)",
-            "search": "headers[x-powered-by]"
-        },
-        {
             "regexp": "Banshee PHP",
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "Banshee PHP framework v([\\d\\.]+)",
+            "search": "headers[x-powered-by]",
+            "offset": 1
         }
     ]
 }

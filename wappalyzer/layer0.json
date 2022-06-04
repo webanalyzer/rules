@@ -4,15 +4,20 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "cookies[layer0_bucket]"
-        },
-        {
-            "regexp": ".*",
             "search": "cookies[layer0_eid]"
         },
         {
             "regexp": ".*",
+            "search": "cookies[layer0_bucket]"
+        },
+        {
+            "regexp": ".*",
             "search": "cookies[layer0_destination]"
+        },
+        {
+            "regexp": "^\\d+ ([\\d.]+) ",
+            "search": "headers[x-0-version]",
+            "offset": 1
         },
         {
             "regexp": ".*",
@@ -21,11 +26,6 @@
         {
             "regexp": ".*",
             "search": "headers[x-0-t]"
-        },
-        {
-            "offset": 1,
-            "regexp": "^\\d+ ([\\d.]+) ",
-            "search": "headers[x-0-version]"
         }
     ]
 }

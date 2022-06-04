@@ -4,14 +4,14 @@
     "implies": "PHP",
     "matches": [
         {
-            "offset": 1,
             "regexp": "Chamilo ([\\d.]+)",
-            "search": "headers[x-powered-by]"
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
-            "offset": 1,
             "regexp": "Chamilo ([\\d.]+)",
-            "search": "meta[generator]"
+            "search": "headers[x-powered-by]",
+            "offset": 1
         }
     ]
 }

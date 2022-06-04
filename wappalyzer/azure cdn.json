@@ -4,12 +4,12 @@
     "implies": "Azure",
     "matches": [
         {
-            "regexp": "^(?:ECAcc|ECS|ECD)",
-            "search": "headers[server]"
-        },
-        {
             "regexp": ".*",
             "search": "headers[x-ec-debug]"
+        },
+        {
+            "regexp": "^(?:ECAcc|ECS|ECD)",
+            "search": "headers[server]"
         }
     ]
 }

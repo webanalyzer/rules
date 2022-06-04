@@ -3,25 +3,25 @@
     "name": "Microsoft SharePoint",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[sharepointhealthscore]"
-        },
-        {
-            "offset": 1,
-            "regexp": "^(.+)$",
-            "search": "headers[microsoftsharepointteamservices]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-sharepointhealthscore]"
+            "regexp": "Microsoft SharePoint",
+            "search": "meta[generator]"
         },
         {
             "regexp": ".*",
             "search": "headers[sprequestguid]"
         },
         {
-            "regexp": "Microsoft SharePoint",
-            "search": "meta[generator]"
+            "regexp": ".*",
+            "search": "headers[x-sharepointhealthscore]"
+        },
+        {
+            "regexp": "^(.+)$",
+            "search": "headers[microsoftsharepointteamservices]",
+            "offset": 1
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[sharepointhealthscore]"
         }
     ]
 }

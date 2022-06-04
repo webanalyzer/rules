@@ -8,10 +8,6 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[bbsessionhash]"
-        },
-        {
-            "regexp": ".*",
             "search": "cookies[bblastvisit]"
         },
         {
@@ -19,9 +15,13 @@
             "search": "cookies[bblastactivity]"
         },
         {
-            "offset": 1,
+            "regexp": ".*",
+            "search": "cookies[bbsessionhash]"
+        },
+        {
             "regexp": "vBulletin ?([\\d.]+)?",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         }
     ]
 }

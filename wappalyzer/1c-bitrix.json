@@ -5,7 +5,7 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "cookies[BITRIX_SM_LAST_IP]"
+            "search": "cookies[BITRIX_SM_GUEST_ID]"
         },
         {
             "regexp": ".*",
@@ -13,15 +13,15 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[BITRIX_SM_GUEST_ID]"
-        },
-        {
-            "regexp": "BITRIX_",
-            "search": "headers[set-cookie]"
+            "search": "cookies[BITRIX_SM_LAST_IP]"
         },
         {
             "regexp": "Bitrix Site Manager",
             "search": "headers[x-powered-cms]"
+        },
+        {
+            "regexp": "BITRIX_",
+            "search": "headers[set-cookie]"
         }
     ]
 }

@@ -7,27 +7,27 @@
     ],
     "matches": [
         {
-            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
+            "regexp": ".*",
+            "search": "meta[shareaholic:wp_version]"
         },
         {
-            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
-        },
-        {
-            "regexp": "/xmlrpc\\.php$",
-            "search": "headers[x-pingback]"
+            "regexp": "^WordPress(?: ([\\d.]+))?",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": "rel=\"https://api\\.w\\.org/\"",
             "search": "headers[link]"
         },
         {
-            "regexp": ".*",
-            "search": "meta[shareaholic:wp_version]"
+            "regexp": "/xmlrpc\\.php$",
+            "search": "headers[x-pingback]"
         },
         {
-            "offset": 1,
-            "regexp": "^WordPress(?: ([\\d.]+))?",
-            "search": "meta[generator]"
+            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
+        },
+        {
+            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         }
     ]
 }

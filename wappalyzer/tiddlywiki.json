@@ -6,13 +6,9 @@
             "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
         },
         {
-            "offset": 1,
             "regexp": "^(.+)$",
-            "search": "meta[tiddlywiki-version]"
-        },
-        {
-            "regexp": "^TiddlyWiki created by Jeremy Ruston",
-            "search": "meta[copyright]"
+            "search": "meta[tiddlywiki-version]",
+            "offset": 1
         },
         {
             "regexp": "^TiddlyWiki$",
@@ -21,6 +17,10 @@
         {
             "regexp": "^TiddlyWiki$",
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "^TiddlyWiki created by Jeremy Ruston",
+            "search": "meta[copyright]"
         }
     ]
 }

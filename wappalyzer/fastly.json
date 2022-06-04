@@ -11,20 +11,20 @@
             "search": "headers[x-via-fastly:]"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-fastly-request-id]"
-        },
-        {
             "regexp": "Fastly-SSL",
             "search": "headers[vary]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-fastly-origin]"
+            "search": "headers[x-fastly-request-id]"
         },
         {
             "regexp": "^cache-",
             "search": "headers[x-served-by]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-fastly-origin]"
         }
     ]
 }

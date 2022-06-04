@@ -4,13 +4,13 @@
     "implies": "Node.js",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-ghost-cache-status]"
+            "regexp": "Ghost(?:\\s([\\d.]+))?",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "Ghost(?:\\s([\\d.]+))?",
-            "search": "meta[generator]"
+            "regexp": ".*",
+            "search": "headers[x-ghost-cache-status]"
         }
     ]
 }

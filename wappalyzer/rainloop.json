@@ -4,17 +4,17 @@
     "implies": "PHP",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "<link[^>]href=\"rainloop/v/([0-9.]+)/static/apple-touch-icon\\.png/>"
+            "regexp": "<link[^>]href=\"rainloop/v/([0-9.]+)/static/apple-touch-icon\\.png/>",
+            "offset": 1
+        },
+        {
+            "regexp": "^([0-9.]+)$",
+            "search": "meta[rlAppVersion]",
+            "offset": 1
         },
         {
             "regexp": "^RainLoop",
             "search": "headers[server]"
-        },
-        {
-            "offset": 1,
-            "regexp": "^([0-9.]+)$",
-            "search": "meta[rlAppVersion]"
         }
     ]
 }
