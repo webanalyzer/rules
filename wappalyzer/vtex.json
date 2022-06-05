@@ -3,8 +3,12 @@
     "name": "VTEX",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[VtexStoreVersion]"
+            "regexp": "^VTEX IO$",
+            "search": "headers[server]"
+        },
+        {
+            "regexp": "vtex",
+            "search": "headers[powered]"
         },
         {
             "regexp": ".*",
@@ -19,12 +23,8 @@
             "search": "cookies[VtexFingerPrint]"
         },
         {
-            "regexp": "^VTEX IO$",
-            "search": "headers[server]"
-        },
-        {
-            "regexp": "vtex",
-            "search": "headers[powered]"
+            "regexp": ".*",
+            "search": "cookies[VtexStoreVersion]"
         }
     ]
 }

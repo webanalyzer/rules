@@ -3,10 +3,6 @@
     "name": "Methode",
     "matches": [
         {
-            "regexp": "[\\d.]+",
-            "search": "meta[eomportal-loid]"
-        },
-        {
             "regexp": "\\d+",
             "search": "meta[eomportal-id]"
         },
@@ -15,12 +11,16 @@
             "search": "meta[eomportal-uuid]"
         },
         {
+            "regexp": ".*",
+            "search": "meta[eomportal-lastUpdate]"
+        },
+        {
             "regexp": "\\d+",
             "search": "meta[eomportal-instanceid]"
         },
         {
-            "regexp": ".*",
-            "search": "meta[eomportal-lastUpdate]"
+            "regexp": "[\\d.]+",
+            "search": "meta[eomportal-loid]"
         },
         {
             "regexp": "<!-- Methode uuid: \"[a-f\\d]+\" ?-->"
