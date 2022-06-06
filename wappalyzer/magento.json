@@ -1,19 +1,19 @@
 {
+    "matches": [
+        {
+            "search": "cookies[X-Magento-Vary]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[frontend]",
+            "regexp": ".*",
+            "certainty": 50
+        }
+    ],
+    "name": "Magento",
+    "website": "https://magento.com",
     "implies": [
         "PHP",
         "MySQL"
-    ],
-    "website": "https://magento.com",
-    "name": "Magento",
-    "matches": [
-        {
-            "regexp": ".*",
-            "search": "cookies[X-Magento-Vary]"
-        },
-        {
-            "regexp": ".*",
-            "certainty": 50,
-            "search": "cookies[frontend]"
-        }
     ]
 }
