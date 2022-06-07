@@ -1,14 +1,6 @@
 {
     "matches": [
         {
-            "search": "headers[x-served-by]",
-            "regexp": "^cache-"
-        },
-        {
-            "search": "headers[vary]",
-            "regexp": "Fastly-SSL"
-        },
-        {
             "search": "headers[x-via-fastly:]",
             "regexp": ".*"
         },
@@ -19,6 +11,14 @@
         {
             "search": "headers[x-fastly-origin]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[x-served-by]",
+            "regexp": "^cache-"
+        },
+        {
+            "search": "headers[vary]",
+            "regexp": "Fastly-SSL"
         },
         {
             "search": "headers[x-fastly-request-id]",
