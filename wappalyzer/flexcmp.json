@@ -1,5 +1,15 @@
 {
+    "website": "http://www.flexcmp.com/cms/home",
     "matches": [
+        {
+            "search": "headers[x-flex-lang]",
+            "regexp": ".*"
+        },
+        {
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)"
+        },
         {
             "search": "meta[generator]",
             "regexp": "^FlexCMP"
@@ -7,17 +17,7 @@
         {
             "offset": 1,
             "regexp": "<!--[^>]+FlexCMP[^>v]+v\\. ([\\d.]+)"
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)"
-        },
-        {
-            "search": "headers[x-flex-lang]",
-            "regexp": ".*"
         }
     ],
-    "name": "FlexCMP",
-    "website": "http://www.flexcmp.com/cms/home"
+    "name": "FlexCMP"
 }
