@@ -1,14 +1,14 @@
 {
+    "website": "https://ensi.tech",
+    "name": "Ensi",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-ensi-platform]"
+            "search": "meta[generator]",
+            "regexp": "Ensi Platform"
         },
         {
-            "regexp": "Ensi Platform",
-            "search": "meta[generator]"
+            "search": "headers[x-ensi-platform]",
+            "regexp": ".*"
         }
-    ],
-    "name": "Ensi",
-    "website": "https://ensi.tech"
+    ]
 }
