@@ -2,12 +2,8 @@
     "name": "Gogs",
     "matches": [
         {
-            "regexp": "go, git, self-hosted, gogs",
-            "search": "meta[keywords]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[i_like_gogits]"
+            "search": "meta[keywords]",
+            "regexp": "go, git, self-hosted, gogs"
         },
         {
             "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 \\d{4} Gogs Version: ([\\d.]+) Page:",
@@ -15,11 +11,15 @@
         },
         {
             "regexp": "<button class=\"ui basic clone button\" id=\"repo-clone-ssh\" data-link=\"gogs@"
+        },
+        {
+            "search": "cookies[i_like_gogits]",
+            "regexp": ".*"
         }
     ],
+    "website": "http://gogs.io",
     "implies": [
         "Go",
         "Macaron"
-    ],
-    "website": "http://gogs.io"
+    ]
 }

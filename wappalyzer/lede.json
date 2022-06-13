@@ -2,16 +2,16 @@
     "name": "Lede",
     "matches": [
         {
-            "regexp": "https?\\:\\/\\/lede-admin",
-            "search": "meta[og:image]"
+            "regexp": "<a [^>]*href=\"[^\"]+joinlede.com"
         },
         {
-            "regexp": "<a [^>]*href=\"[^\"]+joinlede.com"
+            "search": "meta[og:image]",
+            "regexp": "https?\\:\\/\\/lede-admin"
         }
     ],
+    "website": "https://joinlede.com/",
     "implies": [
         "WordPress",
         "WordPress VIP"
-    ],
-    "website": "https://joinlede.com/"
+    ]
 }

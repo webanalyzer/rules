@@ -2,14 +2,14 @@
     "name": "Amazon ALB",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[AWSALB]"
+            "search": "cookies[AWSALBCORS]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[AWSALBCORS]"
+            "search": "cookies[AWSALB]",
+            "regexp": ".*"
         }
     ],
-    "implies": "Amazon Web Services",
-    "website": "https://aws.amazon.com/elasticloadbalancing/"
+    "website": "https://aws.amazon.com/elasticloadbalancing/",
+    "implies": "Amazon Web Services"
 }

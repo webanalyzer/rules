@@ -2,13 +2,13 @@
     "name": "Inveon",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[INV.Customer]",
-            "certainty": 50
+            "search": "cookies[inveonSessionId]",
+            "regexp": ".*"
         },
         {
+            "search": "cookies[INV.Customer]",
             "regexp": ".*",
-            "search": "cookies[inveonSessionId]"
+            "certainty": 50
         }
     ],
     "website": "https://www.inveon.com"

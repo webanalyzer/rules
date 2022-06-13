@@ -2,12 +2,12 @@
     "name": "Starhost",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-starhost]"
+            "search": "headers[cache-control]",
+            "regexp": "Starhost"
         },
         {
-            "regexp": "Starhost",
-            "search": "headers[cache-control]"
+            "search": "headers[x-starhost]",
+            "regexp": ".*"
         }
     ],
     "website": "https://starhost.verbosec.com"

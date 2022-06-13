@@ -2,24 +2,24 @@
     "name": "Ruby on Rails",
     "matches": [
         {
-            "regexp": "^authenticity_token$",
+            "search": "headers[x-powered-by]",
+            "regexp": "mod_(?:rails|rack)"
+        },
+        {
+            "search": "headers[server]",
+            "regexp": "mod_(?:rails|rack)"
+        },
+        {
             "search": "meta[csrf-param]",
+            "regexp": "^authenticity_token$",
             "certainty": 50
         },
         {
-            "regexp": "mod_(?:rails|rack)",
-            "search": "headers[x-powered-by]"
-        },
-        {
-            "regexp": "mod_(?:rails|rack)",
-            "search": "headers[server]"
-        },
-        {
-            "regexp": ".*",
             "search": "cookies[_session_id]",
+            "regexp": ".*",
             "certainty": 75
         }
     ],
-    "implies": "Ruby",
-    "website": "https://rubyonrails.org"
+    "website": "https://rubyonrails.org",
+    "implies": "Ruby"
 }
