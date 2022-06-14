@@ -2,12 +2,12 @@
     "name": "GX WebManager",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "GX WebManager(?: ([\\d.]+))?",
-            "offset": 1
+            "regexp": "<!--\\s+Powered by GX"
         },
         {
-            "regexp": "<!--\\s+Powered by GX"
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "GX WebManager(?: ([\\d.]+))?"
         }
     ],
     "website": "http://www.gxsoftware.com/en/products/web-content-management.htm"

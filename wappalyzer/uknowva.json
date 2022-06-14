@@ -2,19 +2,19 @@
     "name": "uKnowva",
     "matches": [
         {
-            "search": "headers[x-content-encoded-by]",
-            "regexp": "uKnowva ([\\d.]+)",
-            "offset": 1
-        },
-        {
             "regexp": "<a[^>]+>Powered by uKnowva</a>"
         },
         {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "uKnowva (?: ([\\d.]+))?",
-            "offset": 1
+            "regexp": "uKnowva (?: ([\\d.]+))?"
+        },
+        {
+            "offset": 1,
+            "search": "headers[x-content-encoded-by]",
+            "regexp": "uKnowva ([\\d.]+)"
         }
     ],
-    "website": "https://uknowva.com",
-    "implies": "PHP"
+    "implies": "PHP",
+    "website": "https://uknowva.com"
 }

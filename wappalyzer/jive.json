@@ -2,7 +2,11 @@
     "name": "Jive",
     "matches": [
         {
-            "search": "headers[x-jive-flow-id]",
+            "search": "headers[x-jive-request-id]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-jsl]",
             "regexp": ".*"
         },
         {
@@ -10,11 +14,7 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-jive-request-id]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-jsl]",
+            "search": "headers[x-jive-flow-id]",
             "regexp": ".*"
         },
         {
