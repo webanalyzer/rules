@@ -2,17 +2,17 @@
     "name": "DNN",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "DotNetNuke"
-        },
-        {
             "regexp": "<!-- by DotNetNuke Corporation"
         },
         {
             "regexp": "<!-- DNN Platform"
         },
         {
-            "search": "headers[dnnoutputcache]",
+            "search": "meta[generator]",
+            "regexp": "DotNetNuke"
+        },
+        {
+            "search": "cookies[DotNetNukeAnonymous]",
             "regexp": ".*"
         },
         {
@@ -24,7 +24,7 @@
             "regexp": "dnn_IsMobile="
         },
         {
-            "search": "cookies[DotNetNukeAnonymous]",
+            "search": "headers[dnnoutputcache]",
             "regexp": ".*"
         }
     ],

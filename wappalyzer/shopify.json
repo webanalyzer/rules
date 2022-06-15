@@ -2,14 +2,6 @@
     "name": "Shopify",
     "matches": [
         {
-            "search": "meta[shopify-checkout-api-token]",
-            "regexp": ".*"
-        },
-        {
-            "search": "meta[shopify-digital-wallet]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[x-shopify-stage]",
             "regexp": ".*",
             "certainty": 50
@@ -25,6 +17,14 @@
         },
         {
             "search": "cookies[_shopify_y]",
+            "regexp": ".*"
+        },
+        {
+            "search": "meta[shopify-digital-wallet]",
+            "regexp": ".*"
+        },
+        {
+            "search": "meta[shopify-checkout-api-token]",
             "regexp": ".*"
         }
     ],

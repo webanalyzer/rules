@@ -6,7 +6,11 @@
             "regexp": "Wix\\.com Website Builder"
         },
         {
-            "search": "headers[x-wix-renderer-server]",
+            "search": "cookies[Domain]",
+            "regexp": "\\.wix\\.com"
+        },
+        {
+            "search": "headers[x-wix-request-id]",
             "regexp": ".*"
         },
         {
@@ -14,12 +18,8 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-wix-request-id]",
+            "search": "headers[x-wix-renderer-server]",
             "regexp": ".*"
-        },
-        {
-            "search": "cookies[Domain]",
-            "regexp": "\\.wix\\.com"
         }
     ],
     "implies": "React",

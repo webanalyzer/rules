@@ -2,12 +2,12 @@
     "name": "Odoo",
     "matches": [
         {
-            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)",
-            "certainty": 25
-        },
-        {
             "search": "meta[generator]",
             "regexp": "Odoo"
+        },
+        {
+            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)",
+            "certainty": 25
         }
     ],
     "implies": [

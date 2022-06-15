@@ -5,17 +5,17 @@
             "regexp": "<!-- cPanel"
         },
         {
-            "search": "cookies[cprelogin]",
-            "regexp": ".*"
+            "search": "headers[server]",
+            "regexp": "cpsrvd/([\\d.]+)",
+            "offset": 1
         },
         {
             "search": "cookies[cpsession]",
             "regexp": ".*"
         },
         {
-            "offset": 1,
-            "search": "headers[server]",
-            "regexp": "cpsrvd/([\\d.]+)"
+            "search": "cookies[cprelogin]",
+            "regexp": ".*"
         }
     ],
     "website": "http://www.cpanel.net"

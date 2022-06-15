@@ -10,13 +10,13 @@
             "regexp": "^FlexCMP"
         },
         {
-            "search": "headers[x-flex-lang]",
-            "regexp": ".*"
+            "search": "headers[x-powered-by]",
+            "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "search": "headers[x-powered-by]",
-            "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)"
+            "search": "headers[x-flex-lang]",
+            "regexp": ".*"
         }
     ],
     "website": "http://www.flexcmp.com/cms/home"

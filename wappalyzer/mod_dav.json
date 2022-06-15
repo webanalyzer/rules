@@ -2,9 +2,9 @@
     "name": "mod_dav",
     "matches": [
         {
-            "offset": 1,
             "search": "headers[server]",
-            "regexp": "\\b(?:mod_)?DAV\\b(?:/([\\d.]+))?"
+            "regexp": "\\b(?:mod_)?DAV\\b(?:/([\\d.]+))?",
+            "offset": 1
         }
     ],
     "implies": "Apache",

@@ -2,9 +2,9 @@
     "name": "Artifactory Web Server",
     "matches": [
         {
-            "offset": 1,
             "search": "headers[server]",
-            "regexp": "Artifactory(?:/([\\d.]+))?"
+            "regexp": "Artifactory(?:/([\\d.]+))?",
+            "offset": 1
         }
     ],
     "implies": "Artifactory",

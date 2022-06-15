@@ -2,12 +2,12 @@
     "name": "DirectAdmin",
     "matches": [
         {
-            "regexp": "<a[^>]+>DirectAdmin</a> Web Control Panel"
+            "search": "headers[server]",
+            "regexp": "DirectAdmin Daemon v([\\d.]+)",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "search": "headers[server]",
-            "regexp": "DirectAdmin Daemon v([\\d.]+)"
+            "regexp": "<a[^>]+>DirectAdmin</a> Web Control Panel"
         }
     ],
     "implies": [

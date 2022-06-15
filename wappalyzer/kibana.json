@@ -2,16 +2,16 @@
     "name": "Kibana",
     "matches": [
         {
-            "regexp": "<title>Kibana</title>"
-        },
-        {
             "search": "headers[kbn-name]",
             "regexp": "kibana"
         },
         {
-            "offset": 1,
             "search": "headers[kbn-version]",
-            "regexp": "^([\\d.]+)$"
+            "regexp": "^([\\d.]+)$",
+            "offset": 1
+        },
+        {
+            "regexp": "<title>Kibana</title>"
         }
     ],
     "implies": [
