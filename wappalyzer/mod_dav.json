@@ -1,12 +1,12 @@
 {
+    "implies": "Apache",
+    "website": "http://webdav.org/mod_dav",
     "name": "mod_dav",
     "matches": [
         {
-            "search": "headers[server]",
+            "offset": 1,
             "regexp": "\\b(?:mod_)?DAV\\b(?:/([\\d.]+))?",
-            "offset": 1
+            "search": "headers[server]"
         }
-    ],
-    "implies": "Apache",
-    "website": "http://webdav.org/mod_dav"
+    ]
 }
