@@ -1,16 +1,16 @@
 {
-    "implies": "Microsoft ASP.NET",
-    "website": "http://help.outlook.com",
     "name": "Outlook Web App",
     "matches": [
         {
             "offset": 1,
-            "regexp": "([\\d\\.]+)?",
-            "search": "headers[x-owa-version]"
+            "search": "headers[x-owa-version]",
+            "regexp": "([\\d\\.]+)?"
         },
         {
             "offset": 1,
             "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources"
         }
-    ]
+    ],
+    "implies": "Microsoft ASP.NET",
+    "website": "http://help.outlook.com"
 }
