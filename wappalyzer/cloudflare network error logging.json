@@ -2,14 +2,14 @@
     "name": "Cloudflare Network Error Logging",
     "matches": [
         {
-            "search": "headers[nel]",
             "certainty": 50,
-            "regexp": "cf-nel"
+            "regexp": "a\\.nel\\.cloudflare\\.com",
+            "search": "headers[report-to]"
         },
         {
-            "search": "headers[report-to]",
             "certainty": 50,
-            "regexp": "a\\.nel\\.cloudflare\\.com"
+            "regexp": "cf-nel",
+            "search": "headers[nel]"
         }
     ],
     "website": "https://developers.cloudflare.com/logs/reference/log-fields/zone/nel_reports"

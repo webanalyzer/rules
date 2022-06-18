@@ -2,14 +2,14 @@
     "name": "HighStore",
     "matches": [
         {
-            "offset": 1,
-            "search": "meta[hs:version]",
             "certainty": 50,
-            "regexp": "^([\\d\\.]+)$"
+            "regexp": "^([\\d\\.]+)$",
+            "offset": 1,
+            "search": "meta[hs:version]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "^HighStore\\.IR$"
+            "regexp": "^HighStore\\.IR$",
+            "search": "meta[generator]"
         }
     ],
     "implies": "Microsoft ASP.NET",

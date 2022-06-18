@@ -2,12 +2,12 @@
     "name": "PyroCMS",
     "matches": [
         {
-            "search": "headers[x-streams-distribution]",
-            "regexp": "PyroCMS"
+            "regexp": ".*",
+            "search": "cookies[pyrocms]"
         },
         {
-            "search": "cookies[pyrocms]",
-            "regexp": ".*"
+            "regexp": "PyroCMS",
+            "search": "headers[x-streams-distribution]"
         }
     ],
     "implies": "Laravel",

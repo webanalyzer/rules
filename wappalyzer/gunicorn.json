@@ -2,9 +2,9 @@
     "name": "gunicorn",
     "matches": [
         {
+            "regexp": "gunicorn(?:/([\\d.]+))?",
             "offset": 1,
-            "search": "headers[server]",
-            "regexp": "gunicorn(?:/([\\d.]+))?"
+            "search": "headers[server]"
         }
     ],
     "implies": "Python",

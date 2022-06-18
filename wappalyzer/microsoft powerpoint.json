@@ -2,17 +2,17 @@
     "name": "Microsoft PowerPoint",
     "matches": [
         {
+            "regexp": "Microsoft PowerPoint ( [\\d.]+)?",
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Microsoft PowerPoint ( [\\d.]+)?"
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[ProgId]",
-            "regexp": "^PowerPoint\\."
+            "regexp": "^PowerPoint\\.",
+            "search": "meta[ProgId]"
         },
         {
-            "offset": 1,
-            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:powerpoint\"|<link rel=\"?Presentation-XML\"? href=\"?[^\"]+\\.xml\"?>|<o:PresentationFormat>[^<]+</o:PresentationFormat>[^!]+<o:Slides>\\d+</o:Slides>(?:[^!]+<o:Version>([\\d.]+)</o:Version>)?)"
+            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:powerpoint\"|<link rel=\"?Presentation-XML\"? href=\"?[^\"]+\\.xml\"?>|<o:PresentationFormat>[^<]+</o:PresentationFormat>[^!]+<o:Slides>\\d+</o:Slides>(?:[^!]+<o:Version>([\\d.]+)</o:Version>)?)",
+            "offset": 1
         }
     ],
     "website": "https://office.microsoft.com/powerpoint"

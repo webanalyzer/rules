@@ -2,12 +2,12 @@
     "name": "Craft CMS",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "\\bCraft CMS\\b"
+            "regexp": ".*",
+            "search": "cookies[CraftSessionId]"
         },
         {
-            "search": "cookies[CraftSessionId]",
-            "regexp": ".*"
+            "regexp": "\\bCraft CMS\\b",
+            "search": "headers[x-powered-by]"
         }
     ],
     "implies": "Yii",

@@ -2,14 +2,14 @@
     "name": "Serendipity",
     "matches": [
         {
+            "regexp": "Serendipity v\\.([\\d.]+)",
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Serendipity(?: v\\.([\\d.]+))?"
+            "search": "meta[Powered-By]"
         },
         {
+            "regexp": "Serendipity(?: v\\.([\\d.]+))?",
             "offset": 1,
-            "search": "meta[Powered-By]",
-            "regexp": "Serendipity v\\.([\\d.]+)"
+            "search": "meta[generator]"
         }
     ],
     "implies": "PHP",

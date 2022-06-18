@@ -2,27 +2,27 @@
     "name": "Bugzilla",
     "matches": [
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Bugzilla ?([\\d.]+)?"
-        },
-        {
             "regexp": "href=\"enter_bug\\.cgi\">"
         },
         {
             "regexp": "<main id=\"bugzilla-body\""
         },
         {
-            "offset": 1,
-            "regexp": "<a href=\"https?://www\\.bugzilla\\.org/docs/([0-9.]+)/[^>]+>Help<"
+            "regexp": "<a href=\"https?://www\\.bugzilla\\.org/docs/([0-9.]+)/[^>]+>Help<",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "<span id=\"information\" class=\"header_addl_info\">version ([\\d.]+)<"
+            "regexp": "<span id=\"information\" class=\"header_addl_info\">version ([\\d.]+)<",
+            "offset": 1
         },
         {
-            "search": "cookies[Bugzilla_login_request_cookie]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[Bugzilla_login_request_cookie]"
+        },
+        {
+            "regexp": "Bugzilla ?([\\d.]+)?",
+            "offset": 1,
+            "search": "meta[generator]"
         }
     ],
     "implies": "Perl",

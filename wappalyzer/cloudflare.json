@@ -2,20 +2,20 @@
     "name": "Cloudflare",
     "matches": [
         {
-            "search": "headers[cf-ray]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[__cfduid]"
         },
         {
-            "search": "headers[cf-cache-status]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[cf-cache-status]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^cloudflare$"
+            "regexp": ".*",
+            "search": "headers[cf-ray]"
         },
         {
-            "search": "cookies[__cfduid]",
-            "regexp": ".*"
+            "regexp": "^cloudflare$",
+            "search": "headers[server]"
         }
     ],
     "website": "http://www.cloudflare.com"
