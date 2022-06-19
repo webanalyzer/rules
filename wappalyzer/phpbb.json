@@ -1,5 +1,4 @@
 {
-    "name": "phpBB",
     "matches": [
         {
             "regexp": "Powered by <a[^>]+phpBB"
@@ -17,14 +16,15 @@
             "regexp": "<table class=\"[^\"]*forumline"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[phpbb]"
+            "search": "meta[copyright]",
+            "regexp": "phpBB Group"
         },
         {
-            "regexp": "phpBB Group",
-            "search": "meta[copyright]"
+            "search": "cookies[phpbb]",
+            "regexp": ".*"
         }
     ],
-    "implies": "PHP",
-    "website": "https://phpbb.com"
+    "website": "https://phpbb.com",
+    "name": "phpBB",
+    "implies": "PHP"
 }
