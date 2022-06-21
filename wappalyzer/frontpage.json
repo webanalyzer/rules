@@ -2,13 +2,13 @@
     "name": "FrontPage",
     "matches": [
         {
-            "search": "meta[ProgId]",
-            "regexp": "^FrontPage\\."
+            "regexp": "Microsoft FrontPage(?:\\s((?:Express )?[\\d.]+))?",
+            "offset": 1,
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "Microsoft FrontPage(?:\\s((?:Express )?[\\d.]+))?",
-            "offset": 1
+            "regexp": "^FrontPage\\.",
+            "search": "meta[ProgId]"
         }
     ],
     "website": "http://office.microsoft.com/frontpage"
