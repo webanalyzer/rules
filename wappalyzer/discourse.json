@@ -1,12 +1,12 @@
 {
+    "website": "https://discourse.org",
     "name": "Discourse",
+    "implies": "Ruby on Rails",
     "matches": [
         {
+            "search": "meta[generator]",
             "regexp": "Discourse(?: ?/?([\\d.]+\\d))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "offset": 1
         }
-    ],
-    "implies": "Ruby on Rails",
-    "website": "https://discourse.org"
+    ]
 }
