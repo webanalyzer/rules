@@ -1,21 +1,21 @@
 {
-    "website": "http://www.spip.net",
-    "name": "SPIP",
-    "implies": "PHP",
     "matches": [
+        {
+            "search": "headers[composed-by]",
+            "offset": 1,
+            "regexp": "SPIP ([\\d.]+) @"
+        },
         {
             "search": "headers[x-spip-cache]",
             "regexp": ".*"
         },
         {
-            "search": "headers[composed-by]",
-            "regexp": "SPIP ([\\d.]+) @",
-            "offset": 1
-        },
-        {
             "search": "meta[generator]",
-            "regexp": "(?:^|\\s)SPIP(?:\\s([\\d.]+(?:\\s\\[\\d+\\])?))?",
-            "offset": 1
+            "offset": 1,
+            "regexp": "(?:^|\\s)SPIP(?:\\s([\\d.]+(?:\\s\\[\\d+\\])?))?"
         }
-    ]
+    ],
+    "name": "SPIP",
+    "website": "http://www.spip.net",
+    "implies": "PHP"
 }

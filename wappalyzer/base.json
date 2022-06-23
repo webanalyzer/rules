@@ -1,16 +1,16 @@
 {
-    "website": "https://thebase.in",
-    "name": "Base",
     "matches": [
         {
-            "search": "meta[base-theme-name]",
-            "regexp": ".*",
-            "certainty": 50
+            "search": "meta[base-theme-version]",
+            "certainty": 50,
+            "regexp": "\\d+"
         },
         {
-            "search": "meta[base-theme-version]",
-            "regexp": "\\d+",
-            "certainty": 50
+            "search": "meta[base-theme-name]",
+            "certainty": 50,
+            "regexp": ".*"
         }
-    ]
+    ],
+    "name": "Base",
+    "website": "https://thebase.in"
 }
