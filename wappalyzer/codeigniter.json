@@ -1,24 +1,24 @@
 {
     "matches": [
         {
-            "search": "cookies[exp_last_activity]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[ci_csrf_token]",
-            "offset": 1,
-            "regexp": "^(.+)$"
+            "regexp": "<input[^>]+name=\"ci_csrf_token\""
         },
         {
             "search": "cookies[ci_session]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[exp_tracker]",
+            "offset": 1,
+            "search": "cookies[ci_csrf_token]",
+            "regexp": "^(.+)$"
+        },
+        {
+            "search": "cookies[exp_last_activity]",
             "regexp": ".*"
         },
         {
-            "regexp": "<input[^>]+name=\"ci_csrf_token\""
+            "search": "cookies[exp_tracker]",
+            "regexp": ".*"
         }
     ],
     "name": "CodeIgniter",

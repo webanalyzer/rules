@@ -1,7 +1,20 @@
 {
     "matches": [
         {
-            "search": "cookies[layer0_eid]",
+            "search": "headers[x-0-status]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-0-t]",
+            "regexp": ".*"
+        },
+        {
+            "offset": 1,
+            "search": "headers[x-0-version]",
+            "regexp": "^\\d+ ([\\d.]+) "
+        },
+        {
+            "search": "cookies[layer0_destination]",
             "regexp": ".*"
         },
         {
@@ -9,20 +22,7 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[layer0_destination]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-0-status]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-0-version]",
-            "offset": 1,
-            "regexp": "^\\d+ ([\\d.]+) "
-        },
-        {
-            "search": "headers[x-0-t]",
+            "search": "cookies[layer0_eid]",
             "regexp": ".*"
         }
     ],

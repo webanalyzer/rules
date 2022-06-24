@@ -1,14 +1,6 @@
 {
     "matches": [
         {
-            "search": "headers[x-fw-serve]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-fw-static]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[x-fw-type]",
             "regexp": ".*"
         },
@@ -17,9 +9,17 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-fw-server]",
+            "search": "headers[x-fw-static]",
+            "regexp": ".*"
+        },
+        {
             "offset": 1,
+            "search": "headers[x-fw-server]",
             "regexp": "^Flywheel(?:/([\\d.]+))?"
+        },
+        {
+            "search": "headers[x-fw-serve]",
+            "regexp": ".*"
         }
     ],
     "name": "Flywheel",

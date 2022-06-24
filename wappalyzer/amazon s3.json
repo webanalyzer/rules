@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "search": "headers[content-security-policy]",
-            "regexp": "s3\\.[^ ]*amazonaws\\.com"
-        },
-        {
             "search": "headers[server]",
             "regexp": "^AmazonS3$"
+        },
+        {
+            "search": "headers[content-security-policy]",
+            "regexp": "s3\\.[^ ]*amazonaws\\.com"
         }
     ],
     "name": "Amazon S3",

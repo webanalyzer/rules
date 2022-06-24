@@ -2,12 +2,12 @@
     "matches": [
         {
             "offset": 1,
-            "regexp": "<!-- git web interface version ([\\d.]+)?"
+            "search": "meta[generator]",
+            "regexp": "gitweb(?:/([\\d.]+\\d))?"
         },
         {
-            "search": "meta[generator]",
             "offset": 1,
-            "regexp": "gitweb(?:/([\\d.]+\\d))?"
+            "regexp": "<!-- git web interface version ([\\d.]+)?"
         }
     ],
     "name": "gitweb",

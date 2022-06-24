@@ -4,12 +4,8 @@
             "regexp": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/"
         },
         {
-            "search": "headers[expires]",
-            "regexp": "19 Nov 1978"
-        },
-        {
-            "search": "headers[x-generator]",
             "offset": 1,
+            "search": "headers[x-generator]",
             "regexp": "^Drupal(?:\\s([\\d.]+))?"
         },
         {
@@ -17,8 +13,12 @@
             "regexp": ".*"
         },
         {
-            "search": "meta[generator]",
+            "search": "headers[expires]",
+            "regexp": "19 Nov 1978"
+        },
+        {
             "offset": 1,
+            "search": "meta[generator]",
             "regexp": "^Drupal(?:\\s([\\d.]+))?"
         }
     ],

@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "cookies[kohanasession]",
-            "regexp": ".*"
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "Kohana Framework ([\\d.]+)"
         },
         {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "Kohana Framework ([\\d.]+)"
+            "search": "cookies[kohanasession]",
+            "regexp": ".*"
         }
     ],
     "name": "Kohana",

@@ -1,11 +1,7 @@
 {
     "matches": [
         {
-            "search": "headers[fastly-debug-digest]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-fastly-origin]",
+            "search": "headers[x-via-fastly:]",
             "regexp": ".*"
         },
         {
@@ -17,11 +13,15 @@
             "regexp": "^cache-"
         },
         {
-            "search": "headers[x-via-fastly:]",
+            "search": "headers[x-fastly-request-id]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-fastly-request-id]",
+            "search": "headers[x-fastly-origin]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[fastly-debug-digest]",
             "regexp": ".*"
         }
     ],
