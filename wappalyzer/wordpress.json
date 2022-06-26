@@ -1,10 +1,12 @@
 {
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
-    "name": "WordPress",
+    "website": "https://wordpress.org",
     "matches": [
+        {
+            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
+        },
+        {
+            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
+        },
         {
             "regexp": "/xmlrpc\\.php$",
             "search": "headers[x-pingback]"
@@ -21,13 +23,11 @@
             "regexp": "^WordPress(?: ([\\d.]+))?",
             "search": "meta[generator]",
             "offset": 1
-        },
-        {
-            "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
-        },
-        {
-            "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         }
     ],
-    "website": "https://wordpress.org"
+    "name": "WordPress",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ]
 }
