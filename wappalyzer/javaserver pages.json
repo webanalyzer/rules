@@ -1,12 +1,12 @@
 {
-    "website": "http://www.oracle.com/technetwork/java/javaee/jsp/index.html",
     "matches": [
         {
-            "regexp": "JSP(?:/([\\d.]+))?",
             "search": "headers[x-powered-by]",
-            "offset": 1
+            "offset": 1,
+            "regexp": "JSP(?:/([\\d.]+))?"
         }
     ],
+    "implies": "Java",
     "name": "JavaServer Pages",
-    "implies": "Java"
+    "website": "http://www.oracle.com/technetwork/java/javaee/jsp/index.html"
 }

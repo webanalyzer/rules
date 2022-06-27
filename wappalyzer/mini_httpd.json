@@ -1,11 +1,11 @@
 {
-    "website": "http://acme.com/software/mini_httpd",
     "matches": [
         {
-            "regexp": "mini_httpd(?:/([\\d.]+))?",
             "search": "headers[server]",
-            "offset": 1
+            "offset": 1,
+            "regexp": "mini_httpd(?:/([\\d.]+))?"
         }
     ],
-    "name": "mini_httpd"
+    "name": "mini_httpd",
+    "website": "http://acme.com/software/mini_httpd"
 }

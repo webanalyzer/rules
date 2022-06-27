@@ -1,12 +1,12 @@
 {
-    "website": "http://impresspages.org",
     "matches": [
         {
-            "regexp": "ImpressPages(?: CMS)?( [\\d.]*)?",
             "search": "meta[generator]",
-            "offset": 1
+            "offset": 1,
+            "regexp": "ImpressPages(?: CMS)?( [\\d.]*)?"
         }
     ],
+    "implies": "PHP",
     "name": "ImpressPages",
-    "implies": "PHP"
+    "website": "http://impresspages.org"
 }

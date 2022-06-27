@@ -1,19 +1,19 @@
 {
-    "website": "https://gitea.io",
     "matches": [
         {
-            "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)",
-            "offset": 1
+            "search": "meta[keywords]",
+            "regexp": "^go,git,self-hosted,gitea$"
         },
         {
-            "regexp": "^go,git,self-hosted,gitea$",
-            "search": "meta[keywords]"
+            "offset": 1,
+            "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[i_like_gitea]"
+            "search": "cookies[i_like_gitea]",
+            "regexp": ".*"
         }
     ],
+    "implies": "Go",
     "name": "Gitea",
-    "implies": "Go"
+    "website": "https://gitea.io"
 }
