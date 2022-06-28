@@ -1,4 +1,7 @@
 {
+    "name": "Wix",
+    "implies": "React",
+    "website": "https://www.wix.com",
     "matches": [
         {
             "search": "meta[generator]",
@@ -9,19 +12,16 @@
             "regexp": "\\.wix\\.com"
         },
         {
+            "search": "headers[x-wix-renderer-server]",
+            "regexp": ".*"
+        },
+        {
             "search": "headers[x-wix-server-artifact-id]",
             "regexp": ".*"
         },
         {
             "search": "headers[x-wix-request-id]",
             "regexp": ".*"
-        },
-        {
-            "search": "headers[x-wix-renderer-server]",
-            "regexp": ".*"
         }
-    ],
-    "implies": "React",
-    "name": "Wix",
-    "website": "https://www.wix.com"
+    ]
 }

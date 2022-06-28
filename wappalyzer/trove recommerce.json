@@ -1,11 +1,9 @@
 {
+    "name": "Trove Recommerce",
+    "website": "https://trove.co",
     "matches": [
         {
-            "search": "headers[x-trove-country-code]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-trove-app-name]",
+            "search": "headers[x-trove-order-uuid]",
             "regexp": ".*"
         },
         {
@@ -13,10 +11,12 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-trove-order-uuid]",
+            "search": "headers[x-trove-app-name]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-trove-country-code]",
             "regexp": ".*"
         }
-    ],
-    "name": "Trove Recommerce",
-    "website": "https://trove.co"
+    ]
 }

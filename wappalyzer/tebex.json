@@ -1,25 +1,25 @@
 {
-    "matches": [
-        {
-            "search": "headers[tb-cache-country]",
-            "regexp": ".*",
-            "certainty": 33
-        },
-        {
-            "search": "headers[tb-node]",
-            "regexp": ".*",
-            "certainty": 33
-        },
-        {
-            "search": "headers[tb-cache-group]",
-            "regexp": ".*",
-            "certainty": 34
-        }
-    ],
+    "name": "Tebex",
     "implies": [
         "MySQL",
         "Sass"
     ],
-    "name": "Tebex",
-    "website": "https://www.tebex.io"
+    "website": "https://www.tebex.io",
+    "matches": [
+        {
+            "certainty": 33,
+            "search": "headers[tb-node]",
+            "regexp": ".*"
+        },
+        {
+            "certainty": 33,
+            "search": "headers[tb-cache-country]",
+            "regexp": ".*"
+        },
+        {
+            "certainty": 34,
+            "search": "headers[tb-cache-group]",
+            "regexp": ".*"
+        }
+    ]
 }
