@@ -5,20 +5,20 @@
             "regexp": ".*"
         },
         {
-            "offset": 1,
-            "search": "headers[x-0-version]",
-            "regexp": "^\\d+ ([\\d.]+) "
-        },
-        {
             "search": "headers[x-0-status]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[layer0_eid]",
-            "regexp": ".*"
+            "search": "headers[x-0-version]",
+            "regexp": "^\\d+ ([\\d.]+) ",
+            "offset": 1
         },
         {
             "search": "cookies[layer0_bucket]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[layer0_eid]",
             "regexp": ".*"
         },
         {

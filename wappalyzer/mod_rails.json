@@ -1,19 +1,19 @@
 {
-    "matches": [
-        {
-            "offset": 1,
-            "search": "headers[x-powered-by]",
-            "regexp": "mod_rails(?:/([\\d.]+))?"
-        },
-        {
-            "offset": 1,
-            "search": "headers[server]",
-            "regexp": "mod_rails(?:/([\\d.]+))?"
-        }
-    ],
     "implies": [
         "Ruby on Rails",
         "Apache"
+    ],
+    "matches": [
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "mod_rails(?:/([\\d.]+))?",
+            "offset": 1
+        },
+        {
+            "search": "headers[server]",
+            "regexp": "mod_rails(?:/([\\d.]+))?",
+            "offset": 1
+        }
     ],
     "website": "http://phusionpassenger.com",
     "name": "mod_rails"

@@ -1,4 +1,5 @@
 {
+    "implies": "Ruby",
     "matches": [
         {
             "search": "headers[x-powered-by]",
@@ -10,16 +11,15 @@
         },
         {
             "search": "cookies[_session_id]",
-            "certainty": 75,
-            "regexp": ".*"
+            "regexp": ".*",
+            "certainty": 75
         },
         {
             "search": "meta[csrf-param]",
-            "certainty": 50,
-            "regexp": "^authenticity_token$"
+            "regexp": "^authenticity_token$",
+            "certainty": 50
         }
     ],
-    "implies": "Ruby",
     "website": "https://rubyonrails.org",
     "name": "Ruby on Rails"
 }
