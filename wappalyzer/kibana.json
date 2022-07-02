@@ -1,14 +1,14 @@
 {
     "website": "http://www.elastic.co/products/kibana",
-    "name": "Kibana",
     "implies": [
         "Node.js",
         "Elasticsearch"
     ],
+    "name": "Kibana",
     "matches": [
         {
-            "offset": 1,
             "search": "headers[kbn-version]",
+            "offset": 1,
             "regexp": "^([\\d.]+)$"
         },
         {

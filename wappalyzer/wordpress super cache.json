@@ -3,11 +3,11 @@
     "name": "WordPress Super Cache",
     "matches": [
         {
-            "search": "headers[wp-super-cache]",
-            "regexp": ".*"
+            "regexp": "<!--[^>]+WP-Super-Cache"
         },
         {
-            "regexp": "<!--[^>]+WP-Super-Cache"
+            "search": "headers[wp-super-cache]",
+            "regexp": ".*"
         }
     ]
 }

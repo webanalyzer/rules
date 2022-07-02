@@ -3,16 +3,16 @@
     "name": "WP Rocket",
     "matches": [
         {
+            "regexp": "<!--[^>]+WP Rocket"
+        },
+        {
             "search": "headers[x-rocket-nginx-bypass]",
             "regexp": ".*"
         },
         {
-            "offset": 1,
             "search": "headers[x-powered-by]",
+            "offset": 1,
             "regexp": "WP Rocket(?:/([\\d.]+))?"
-        },
-        {
-            "regexp": "<!--[^>]+WP Rocket"
         }
     ]
 }

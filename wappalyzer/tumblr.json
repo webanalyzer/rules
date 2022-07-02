@@ -3,11 +3,11 @@
     "name": "Tumblr",
     "matches": [
         {
-            "search": "headers[x-tumblr-user]",
-            "regexp": ".*"
+            "regexp": "<iframe src=\"[^>]+tumblr\\.com"
         },
         {
-            "regexp": "<iframe src=\"[^>]+tumblr\\.com"
+            "search": "headers[x-tumblr-user]",
+            "regexp": ".*"
         }
     ]
 }
