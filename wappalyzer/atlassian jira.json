@@ -1,17 +1,17 @@
 {
-    "website": "http://www.atlassian.com/software/jira/overview/",
-    "implies": "Java",
-    "name": "Atlassian Jira",
     "matches": [
         {
-            "search": "meta[application-name]",
-            "regexp": "JIRA"
+            "certainty": 0,
+            "regexp": "([\\d.]+)",
+            "search": "meta[data-version]",
+            "offset": 1
         },
         {
-            "certainty": 0,
-            "search": "meta[data-version]",
-            "offset": 1,
-            "regexp": "([\\d.]+)"
+            "regexp": "JIRA",
+            "search": "meta[application-name]"
         }
-    ]
+    ],
+    "implies": "Java",
+    "name": "Atlassian Jira",
+    "website": "http://www.atlassian.com/software/jira/overview/"
 }

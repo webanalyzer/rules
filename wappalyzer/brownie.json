@@ -1,5 +1,10 @@
 {
-    "website": "https://www.browniesuite.com",
+    "matches": [
+        {
+            "regexp": "Brownie",
+            "search": "headers[x-powered-by]"
+        }
+    ],
     "implies": [
         "PHP",
         "MySQL",
@@ -8,10 +13,5 @@
         "jQuery"
     ],
     "name": "Brownie",
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "Brownie"
-        }
-    ]
+    "website": "https://www.browniesuite.com"
 }

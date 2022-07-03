@@ -1,17 +1,17 @@
 {
-    "website": "https://www.statuspage.io/",
-    "name": "Atlassian Statuspage",
     "matches": [
         {
+            "regexp": ".*",
+            "search": "headers[x-statuspage-version]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-statuspage-skip-logging]"
+        },
+        {
             "regexp": "<a[^>]*href=\"https?://(?:www\\.)?statuspage\\.io/powered-by[^>]+>"
-        },
-        {
-            "search": "headers[x-statuspage-skip-logging]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-statuspage-version]",
-            "regexp": ".*"
         }
-    ]
+    ],
+    "name": "Atlassian Statuspage",
+    "website": "https://www.statuspage.io/"
 }

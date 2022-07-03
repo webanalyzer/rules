@@ -1,22 +1,22 @@
 {
-    "website": "http://www.elastic.co/products/kibana",
+    "matches": [
+        {
+            "regexp": "^([\\d.]+)$",
+            "search": "headers[kbn-version]",
+            "offset": 1
+        },
+        {
+            "regexp": "kibana",
+            "search": "headers[kbn-name]"
+        },
+        {
+            "regexp": "<title>Kibana</title>"
+        }
+    ],
     "implies": [
         "Node.js",
         "Elasticsearch"
     ],
     "name": "Kibana",
-    "matches": [
-        {
-            "search": "headers[kbn-version]",
-            "offset": 1,
-            "regexp": "^([\\d.]+)$"
-        },
-        {
-            "search": "headers[kbn-name]",
-            "regexp": "kibana"
-        },
-        {
-            "regexp": "<title>Kibana</title>"
-        }
-    ]
+    "website": "http://www.elastic.co/products/kibana"
 }
