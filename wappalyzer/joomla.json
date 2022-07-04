@@ -1,13 +1,14 @@
 {
+    "website": "https://www.joomla.org",
     "matches": [
         {
-            "regexp": "Joomla! ([\\d.]+)",
             "search": "headers[x-content-encoded-by]",
+            "regexp": "Joomla! ([\\d.]+)",
             "offset": 1
         },
         {
-            "regexp": "Joomla!(?: ([\\d.]+))?",
             "search": "meta[generator]",
+            "regexp": "Joomla!(?: ([\\d.]+))?",
             "offset": 1
         },
         {
@@ -16,6 +17,5 @@
         }
     ],
     "implies": "PHP",
-    "name": "Joomla",
-    "website": "https://www.joomla.org"
+    "name": "Joomla"
 }
