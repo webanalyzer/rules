@@ -1,19 +1,19 @@
 {
     "website": "https://exchanger.iexbase.com",
+    "name": "iEXExchanger",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "iEXExchanger"
+            "regexp": ".*",
+            "search": "cookies[iexexchanger_session]"
         },
         {
-            "search": "cookies[iexexchanger_session]",
-            "regexp": ".*"
+            "regexp": "iEXExchanger",
+            "search": "meta[generator]"
         }
     ],
     "implies": [
         "PHP",
         "Apache",
         "Angular"
-    ],
-    "name": "iEXExchanger"
+    ]
 }
