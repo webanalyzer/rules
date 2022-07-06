@@ -1,18 +1,18 @@
 {
     "website": "http://akamai.com",
-    "name": "Akamai",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-edgeconnect-origin-mex-latency]"
+            "search": "headers[x-akamai-transformed]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-edgeconnect-midmile-rtt]"
+            "search": "headers[x-edgeconnect-midmile-rtt]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-akamai-transformed]"
+            "search": "headers[x-edgeconnect-origin-mex-latency]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "name": "Akamai"
 }

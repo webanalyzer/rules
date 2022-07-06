@@ -2,6 +2,10 @@
     "website": "http://www.cloudflare.com",
     "matches": [
         {
+            "search": "cookies[__cfduid]",
+            "regexp": ".*"
+        },
+        {
             "search": "headers[cf-ray]",
             "regexp": ".*"
         },
@@ -11,10 +15,6 @@
         },
         {
             "search": "headers[cf-cache-status]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[__cfduid]",
             "regexp": ".*"
         }
     ],
