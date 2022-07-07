@@ -1,12 +1,12 @@
 {
-    "website": "http://gunicorn.org",
+    "implies": "Python",
+    "name": "gunicorn",
     "matches": [
         {
+            "offset": 1,
             "search": "headers[server]",
-            "regexp": "gunicorn(?:/([\\d.]+))?",
-            "offset": 1
+            "regexp": "gunicorn(?:/([\\d.]+))?"
         }
     ],
-    "implies": "Python",
-    "name": "gunicorn"
+    "website": "http://gunicorn.org"
 }
