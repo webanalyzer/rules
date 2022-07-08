@@ -1,15 +1,15 @@
 {
-    "implies": "PHP",
-    "name": "InstantCMS",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "InstantCMS"
+            "regexp": ".*",
+            "search": "cookies[InstantCMS[logdate]]"
         },
         {
-            "search": "cookies[InstantCMS[logdate]]",
-            "regexp": ".*"
+            "regexp": "InstantCMS",
+            "search": "meta[generator]"
         }
     ],
-    "website": "http://www.instantcms.ru"
+    "website": "http://www.instantcms.ru",
+    "name": "InstantCMS",
+    "implies": "PHP"
 }

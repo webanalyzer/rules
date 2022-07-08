@@ -1,17 +1,8 @@
 {
-    "implies": [
-        "Go",
-        "Macaron"
-    ],
-    "name": "Gogs",
     "matches": [
         {
-            "search": "meta[keywords]",
-            "regexp": "go, git, self-hosted, gogs"
-        },
-        {
-            "search": "cookies[i_like_gogits]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[i_like_gogits]"
         },
         {
             "offset": 1,
@@ -19,7 +10,16 @@
         },
         {
             "regexp": "<button class=\"ui basic clone button\" id=\"repo-clone-ssh\" data-link=\"gogs@"
+        },
+        {
+            "regexp": "go, git, self-hosted, gogs",
+            "search": "meta[keywords]"
         }
     ],
-    "website": "http://gogs.io"
+    "website": "http://gogs.io",
+    "name": "Gogs",
+    "implies": [
+        "Go",
+        "Macaron"
+    ]
 }
