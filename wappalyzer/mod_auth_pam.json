@@ -1,12 +1,12 @@
 {
+    "name": "mod_auth_pam",
+    "implies": "Apache",
+    "website": "http://pam.sourceforge.net/mod_auth_pam",
     "matches": [
         {
-            "regexp": "mod_auth_pam(?:/([\\d\\.]+))?",
             "search": "headers[server]",
-            "offset": 1
+            "offset": 1,
+            "regexp": "mod_auth_pam(?:/([\\d\\.]+))?"
         }
-    ],
-    "website": "http://pam.sourceforge.net/mod_auth_pam",
-    "name": "mod_auth_pam",
-    "implies": "Apache"
+    ]
 }
