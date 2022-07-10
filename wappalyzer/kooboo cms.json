@@ -1,12 +1,12 @@
 {
-    "name": "Kooboo CMS",
-    "implies": "Microsoft ASP.NET",
-    "website": "http://kooboo.com",
     "matches": [
         {
-            "search": "headers[x-kooboocms-version]",
+            "regexp": "^(.+)$",
             "offset": 1,
-            "regexp": "^(.+)$"
+            "search": "headers[x-kooboocms-version]"
         }
-    ]
+    ],
+    "name": "Kooboo CMS",
+    "website": "http://kooboo.com",
+    "implies": "Microsoft ASP.NET"
 }
