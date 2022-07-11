@@ -2,20 +2,20 @@
     "matches": [
         {
             "regexp": "^ckan ?([0-9.]+)$",
-            "offset": 1,
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "<http://ckan\\.org/>; rel=shortlink",
-            "search": "headers[link]"
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": "X-CKAN-API-KEY",
             "search": "headers[access-control-allow-headers]"
+        },
+        {
+            "regexp": "<http://ckan\\.org/>; rel=shortlink",
+            "search": "headers[link]"
         }
     ],
-    "name": "Ckan",
     "website": "http://ckan.org/",
+    "name": "Ckan",
     "implies": [
         "Python",
         "Solr",
