@@ -11,13 +11,7 @@
             "regexp": ".*"
         },
         {
-            "certainty": 50,
-            "search": "headers[x-shopify-stage]",
-            "regexp": ".*"
-        },
-        {
-            "certainty": 50,
-            "search": "headers[x-shopid]",
+            "search": "meta[shopify-digital-wallet]",
             "regexp": ".*"
         },
         {
@@ -25,8 +19,14 @@
             "regexp": ".*"
         },
         {
-            "search": "meta[shopify-digital-wallet]",
-            "regexp": ".*"
+            "search": "headers[x-shopify-stage]",
+            "regexp": ".*",
+            "certainty": 50
+        },
+        {
+            "search": "headers[x-shopid]",
+            "regexp": ".*",
+            "certainty": 50
         }
     ]
 }

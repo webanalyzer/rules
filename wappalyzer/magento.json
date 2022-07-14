@@ -1,5 +1,9 @@
 {
     "name": "Magento",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
     "website": "https://magento.com",
     "matches": [
         {
@@ -7,13 +11,9 @@
             "regexp": ".*"
         },
         {
-            "certainty": 50,
             "search": "cookies[frontend]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "certainty": 50
         }
-    ],
-    "implies": [
-        "PHP",
-        "MySQL"
     ]
 }

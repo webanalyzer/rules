@@ -11,15 +11,7 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[azure-slotname]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[azure-regionname]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-ms-gateway-requestid]",
+            "search": "headers[azure-version]",
             "regexp": ".*"
         },
         {
@@ -27,11 +19,15 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-ms-correlation-request-id]",
+            "search": "headers[server]",
+            "regexp": "^Windows-Azure"
+        },
+        {
+            "search": "headers[azure-slotname]",
             "regexp": ".*"
         },
         {
-            "search": "headers[azure-version]",
+            "search": "headers[x-ms-correlation-request-id]",
             "regexp": ".*"
         },
         {
@@ -39,8 +35,12 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^Windows-Azure"
+            "search": "headers[x-ms-gateway-requestid]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[azure-regionname]",
+            "regexp": ".*"
         }
     ]
 }

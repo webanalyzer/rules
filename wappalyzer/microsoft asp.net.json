@@ -11,17 +11,17 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[set-cookie]",
-            "regexp": "\\.AspNetCore"
-        },
-        {
             "search": "headers[x-powered-by]",
             "regexp": "^ASP\\.NET"
         },
         {
-            "offset": 1,
+            "search": "headers[set-cookie]",
+            "regexp": "\\.AspNetCore"
+        },
+        {
             "search": "headers[x-aspnet-version]",
-            "regexp": "(.+)"
+            "regexp": "(.+)",
+            "offset": 1
         },
         {
             "regexp": "<input[^>]+name=\"__VIEWSTATE"

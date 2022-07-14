@@ -1,5 +1,6 @@
 {
     "name": "Botble CMS",
+    "implies": "Laravel",
     "website": "https://botble.com",
     "matches": [
         {
@@ -7,11 +8,10 @@
             "regexp": ".*"
         },
         {
-            "offset": 1,
-            "certainty": 0,
             "search": "headers[cms-version]",
-            "regexp": "^(.+)$"
+            "regexp": "^(.+)$",
+            "offset": 1,
+            "certainty": 0
         }
-    ],
-    "implies": "Laravel"
+    ]
 }
