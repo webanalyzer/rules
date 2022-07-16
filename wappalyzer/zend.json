@@ -1,15 +1,15 @@
 {
     "website": "http://zend.com",
+    "name": "Zend",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[ZENDSERVERSESSID]"
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "Zend(?:Server)?(?:[\\s/]?([0-9.]+))?"
         },
         {
-            "offset": 1,
-            "regexp": "Zend(?:Server)?(?:[\\s/]?([0-9.]+))?",
-            "search": "headers[x-powered-by]"
+            "search": "cookies[ZENDSERVERSESSID]",
+            "regexp": ".*"
         }
-    ],
-    "name": "Zend"
+    ]
 }
