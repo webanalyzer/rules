@@ -1,8 +1,9 @@
 {
+    "name": "Akamai",
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-edgeconnect-origin-mex-latency]"
+            "search": "headers[x-akamai-transformed]"
         },
         {
             "regexp": ".*",
@@ -10,9 +11,8 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-akamai-transformed]"
+            "search": "headers[x-edgeconnect-origin-mex-latency]"
         }
     ],
-    "website": "http://akamai.com",
-    "name": "Akamai"
+    "website": "http://akamai.com"
 }

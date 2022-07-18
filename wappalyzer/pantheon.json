@@ -5,7 +5,12 @@
         "MariaDB",
         "Fastly"
     ],
+    "name": "Pantheon",
     "matches": [
+        {
+            "regexp": "^Pantheon",
+            "search": "headers[server]"
+        },
         {
             "regexp": ".*",
             "search": "headers[x-pantheon-styx-hostname]"
@@ -13,12 +18,7 @@
         {
             "regexp": ".*",
             "search": "headers[x-styx-req-id]"
-        },
-        {
-            "regexp": "^Pantheon",
-            "search": "headers[server]"
         }
     ],
-    "website": "https://pantheon.io/",
-    "name": "Pantheon"
+    "website": "https://pantheon.io/"
 }
