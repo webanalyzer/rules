@@ -1,18 +1,18 @@
 {
+    "name": "DirectAdmin",
+    "website": "https://www.directadmin.com",
+    "matches": [
+        {
+            "regexp": "DirectAdmin Daemon v([\\d.]+)",
+            "offset": 1,
+            "search": "headers[server]"
+        },
+        {
+            "regexp": "<a[^>]+>DirectAdmin</a> Web Control Panel"
+        }
+    ],
     "implies": [
         "PHP",
         "Apache"
-    ],
-    "name": "DirectAdmin",
-    "matches": [
-        {
-            "regexp": "<a[^>]+>DirectAdmin</a> Web Control Panel"
-        },
-        {
-            "offset": 1,
-            "regexp": "DirectAdmin Daemon v([\\d.]+)",
-            "search": "headers[server]"
-        }
-    ],
-    "website": "https://www.directadmin.com"
+    ]
 }

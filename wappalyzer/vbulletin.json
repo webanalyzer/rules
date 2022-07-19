@@ -1,6 +1,6 @@
 {
-    "implies": "PHP",
     "name": "vBulletin",
+    "website": "https://www.vbulletin.com",
     "matches": [
         {
             "regexp": ".*",
@@ -15,13 +15,13 @@
             "search": "cookies[bbsessionhash]"
         },
         {
-            "offset": 1,
             "regexp": "vBulletin ?([\\d.]+)?",
+            "offset": 1,
             "search": "meta[generator]"
         },
         {
             "regexp": "<div id=\"copyright\">Powered by vBulletin"
         }
     ],
-    "website": "https://www.vbulletin.com"
+    "implies": "PHP"
 }

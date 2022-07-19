@@ -1,6 +1,20 @@
 {
     "name": "Edgio App Platform",
+    "website": "https://edg.io",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "headers[x-0-status]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-0-t]"
+        },
+        {
+            "regexp": "^\\d+ ([\\d.]+) ",
+            "offset": 1,
+            "search": "headers[x-0-version]"
+        },
         {
             "regexp": ".*",
             "search": "cookies[layer0_destination]"
@@ -12,20 +26,6 @@
         {
             "regexp": ".*",
             "search": "cookies[layer0_bucket]"
-        },
-        {
-            "offset": 1,
-            "regexp": "^\\d+ ([\\d.]+) ",
-            "search": "headers[x-0-version]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-0-t]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-0-status]"
         }
-    ],
-    "website": "https://edg.io"
+    ]
 }

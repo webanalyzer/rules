@@ -1,15 +1,15 @@
 {
     "name": "Mobirise",
+    "website": "https://mobirise.com",
     "matches": [
         {
+            "regexp": "^Mobirise v([\\d.]+)",
             "offset": 1,
-            "regexp": "<!-- Site made with Mobirise Website Builder v([\\d.]+)"
+            "search": "meta[generator]"
         },
         {
-            "offset": 1,
-            "regexp": "^Mobirise v([\\d.]+)",
-            "search": "meta[generator]"
+            "regexp": "<!-- Site made with Mobirise Website Builder v([\\d.]+)",
+            "offset": 1
         }
-    ],
-    "website": "https://mobirise.com"
+    ]
 }
