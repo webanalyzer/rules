@@ -1,10 +1,9 @@
 {
-    "name": "GOV.UK Frontend",
     "website": "https://design-system.service.gov.uk/",
     "matches": [
         {
-            "regexp": "<link[^>]* href=[^>]*?govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.css",
-            "offset": 1
+            "offset": 1,
+            "regexp": "<link[^>]* href=[^>]*?govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.css"
         },
         {
             "regexp": "<body[^>]+govuk-template__body",
@@ -14,5 +13,6 @@
             "regexp": "<a[^>]+govuk-link",
             "certainty": 10
         }
-    ]
+    ],
+    "name": "GOV.UK Frontend"
 }

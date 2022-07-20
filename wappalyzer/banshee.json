@@ -1,10 +1,9 @@
 {
-    "name": "Banshee",
     "website": "http://www.banshee-php.org",
     "matches": [
         {
-            "regexp": "Banshee PHP framework v([\\d\\.]+)",
             "offset": 1,
+            "regexp": "Banshee PHP framework v([\\d\\.]+)",
             "search": "headers[x-powered-by]"
         },
         {
@@ -12,5 +11,6 @@
             "search": "meta[generator]"
         }
     ],
+    "name": "Banshee",
     "implies": "PHP"
 }

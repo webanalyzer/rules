@@ -1,14 +1,14 @@
 {
-    "name": "PHP-Nuke",
     "website": "http://phpnuke.org",
     "matches": [
         {
-            "regexp": "PHP-Nuke",
-            "search": "meta[generator]"
+            "regexp": "<[^>]+Powered by PHP-Nuke"
         },
         {
-            "regexp": "<[^>]+Powered by PHP-Nuke"
+            "regexp": "PHP-Nuke",
+            "search": "meta[generator]"
         }
     ],
+    "name": "PHP-Nuke",
     "implies": "PHP"
 }

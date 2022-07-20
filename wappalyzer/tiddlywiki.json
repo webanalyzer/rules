@@ -1,5 +1,4 @@
 {
-    "name": "TiddlyWiki",
     "website": "http://tiddlywiki.com",
     "matches": [
         {
@@ -14,13 +13,14 @@
             "search": "meta[generator]"
         },
         {
-            "regexp": "^TiddlyWiki$",
-            "search": "meta[application-name]"
+            "offset": 1,
+            "regexp": "^(.+)$",
+            "search": "meta[tiddlywiki-version]"
         },
         {
-            "regexp": "^(.+)$",
-            "offset": 1,
-            "search": "meta[tiddlywiki-version]"
+            "regexp": "^TiddlyWiki$",
+            "search": "meta[application-name]"
         }
-    ]
+    ],
+    "name": "TiddlyWiki"
 }

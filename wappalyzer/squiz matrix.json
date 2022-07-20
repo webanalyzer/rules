@@ -1,5 +1,4 @@
 {
-    "name": "Squiz Matrix",
     "website": "http://squiz.net",
     "matches": [
         {
@@ -7,12 +6,13 @@
             "search": "headers[x-powered-by]"
         },
         {
-            "regexp": "Squiz Matrix",
-            "search": "meta[generator]"
+            "regexp": "<!--\\s+Running (?:MySource|Squiz) Matrix"
         },
         {
-            "regexp": "<!--\\s+Running (?:MySource|Squiz) Matrix"
+            "regexp": "Squiz Matrix",
+            "search": "meta[generator]"
         }
     ],
+    "name": "Squiz Matrix",
     "implies": "PHP"
 }

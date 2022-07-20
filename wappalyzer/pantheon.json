@@ -1,20 +1,20 @@
 {
-    "name": "Pantheon",
     "website": "https://pantheon.io/",
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-styx-req-id]"
+            "search": "headers[x-pantheon-styx-hostname]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-pantheon-styx-hostname]"
+            "search": "headers[x-styx-req-id]"
         },
         {
             "regexp": "^Pantheon",
             "search": "headers[server]"
         }
     ],
+    "name": "Pantheon",
     "implies": [
         "PHP",
         "Nginx",
