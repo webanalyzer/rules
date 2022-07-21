@@ -2,14 +2,14 @@
     "website": "https://thebase.in",
     "matches": [
         {
-            "regexp": "\\d+",
             "certainty": 50,
-            "search": "meta[base-theme-version]"
+            "search": "meta[base-theme-name]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
             "certainty": 50,
-            "search": "meta[base-theme-name]"
+            "search": "meta[base-theme-version]",
+            "regexp": "\\d+"
         }
     ],
     "name": "Base"

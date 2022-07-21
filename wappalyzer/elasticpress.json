@@ -1,13 +1,13 @@
 {
     "website": "https://www.elasticpress.io/",
-    "matches": [
-        {
-            "regexp": ".*",
-            "search": "headers[x-elasticpress-query]"
-        }
-    ],
-    "name": "ElasticPress",
     "implies": [
         "Elasticsearch"
-    ]
+    ],
+    "matches": [
+        {
+            "search": "headers[x-elasticpress-query]",
+            "regexp": ".*"
+        }
+    ],
+    "name": "ElasticPress"
 }

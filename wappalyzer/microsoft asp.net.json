@@ -2,28 +2,28 @@
     "website": "https://www.asp.net",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[ASP.NET_SessionId]"
+            "search": "cookies[ASPSESSION]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ASPSESSION]"
+            "search": "cookies[ASP.NET_SessionId]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^ASP\\.NET"
+        },
+        {
+            "search": "headers[x-aspnet-version]",
+            "offset": 1,
+            "regexp": "(.+)"
+        },
+        {
+            "search": "headers[set-cookie]",
+            "regexp": "\\.AspNetCore"
         },
         {
             "regexp": "<input[^>]+name=\"__VIEWSTATE"
-        },
-        {
-            "regexp": "\\.AspNetCore",
-            "search": "headers[set-cookie]"
-        },
-        {
-            "regexp": "^ASP\\.NET",
-            "search": "headers[x-powered-by]"
-        },
-        {
-            "offset": 1,
-            "regexp": "(.+)",
-            "search": "headers[x-aspnet-version]"
         }
     ],
     "name": "Microsoft ASP.NET"
