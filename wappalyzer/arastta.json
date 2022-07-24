@@ -1,4 +1,6 @@
 {
+    "website": "http://arastta.org",
+    "excludes": "OpenCart",
     "name": "Arastta",
     "matches": [
         {
@@ -6,16 +8,14 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[arastta]",
-            "regexp": "^(.+)$",
-            "offset": 1
-        },
-        {
             "search": "headers[x-arastta]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[arastta]",
+            "offset": 1,
+            "regexp": "^(.+)$"
         }
     ],
-    "website": "http://arastta.org",
-    "implies": "PHP",
-    "excludes": "OpenCart"
+    "implies": "PHP"
 }
