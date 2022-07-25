@@ -3,7 +3,11 @@
     "name": "F5 BigIP",
     "matches": [
         {
-            "search": "cookies[F5_ST]",
+            "search": "headers[server]",
+            "regexp": "^big-?ip$"
+        },
+        {
+            "search": "cookies[MRHSession]",
             "regexp": ".*"
         },
         {
@@ -11,15 +15,15 @@
             "regexp": ".*"
         },
         {
+            "search": "cookies[F5_ST]",
+            "regexp": ".*"
+        },
+        {
             "search": "cookies[MRHSequence]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[TIN]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[MRHSession]",
+            "search": "cookies[F5_HT_shrinked]",
             "regexp": ".*"
         },
         {
@@ -31,12 +35,8 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[F5_HT_shrinked]",
+            "search": "cookies[TIN]",
             "regexp": ".*"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "^big-?ip$"
         }
     ]
 }

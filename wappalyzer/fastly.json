@@ -7,7 +7,15 @@
             "regexp": "Fastly-SSL"
         },
         {
-            "search": "headers[x-fastly-origin]",
+            "search": "headers[x-fastly-request-id]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[server]",
+            "regexp": "Fastly"
+        },
+        {
+            "search": "headers[x-fastly-request-id]",
             "regexp": ".*"
         },
         {
@@ -15,23 +23,15 @@
             "regexp": "^cache-"
         },
         {
-            "search": "headers[server]",
-            "regexp": "Fastly"
-        },
-        {
-            "search": "headers[x-via-fastly:]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[fastly-debug-digest]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-fastly-request-id]",
+            "search": "headers[x-fastly-origin]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-fastly-request-id]",
+            "search": "headers[x-via-fastly:]",
             "regexp": ".*"
         }
     ]

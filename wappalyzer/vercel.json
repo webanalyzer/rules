@@ -3,11 +3,7 @@
     "name": "Vercel",
     "matches": [
         {
-            "search": "headers[x-vercel-cache]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-now-trace]",
+            "search": "headers[x-vercel-id]",
             "regexp": ".*"
         },
         {
@@ -15,7 +11,11 @@
             "regexp": "^now|Vercel$"
         },
         {
-            "search": "headers[x-vercel-id]",
+            "search": "headers[x-vercel-cache]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-now-trace]",
             "regexp": ".*"
         }
     ]
