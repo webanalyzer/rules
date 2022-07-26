@@ -1,11 +1,6 @@
 {
-    "website": "https://edg.io",
     "name": "Edgio App Platform",
     "matches": [
-        {
-            "search": "headers[x-0-status]",
-            "regexp": ".*"
-        },
         {
             "search": "headers[x-0-version]",
             "regexp": "^\\d+ ([\\d.]+) ",
@@ -13,6 +8,10 @@
         },
         {
             "search": "headers[x-0-t]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-0-status]",
             "regexp": ".*"
         },
         {
@@ -27,5 +26,6 @@
             "search": "cookies[layer0_bucket]",
             "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://edg.io"
 }

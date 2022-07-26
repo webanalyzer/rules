@@ -1,6 +1,4 @@
 {
-    "implies": "PHP",
-    "website": "http://www.1c-bitrix.ru",
     "name": "1C-Bitrix",
     "matches": [
         {
@@ -12,16 +10,18 @@
             "regexp": "BITRIX_"
         },
         {
-            "search": "cookies[BITRIX_SM_LAST_IP]",
+            "search": "cookies[BITRIX_SM_SALE_UID]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[BITRIX_SM_SALE_UID]",
+            "search": "cookies[BITRIX_SM_LAST_IP]",
             "regexp": ".*"
         },
         {
             "search": "cookies[BITRIX_SM_GUEST_ID]",
             "regexp": ".*"
         }
-    ]
+    ],
+    "website": "http://www.1c-bitrix.ru",
+    "implies": "PHP"
 }
