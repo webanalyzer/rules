@@ -1,14 +1,15 @@
 {
-    "name": "Drupal",
+    "implies": "PHP",
+    "website": "https://drupal.org",
     "matches": [
-        {
-            "search": "headers[expires]",
-            "regexp": "19 Nov 1978"
-        },
         {
             "search": "headers[x-generator]",
             "regexp": "^Drupal(?:\\s([\\d.]+))?",
             "offset": 1
+        },
+        {
+            "search": "headers[expires]",
+            "regexp": "19 Nov 1978"
         },
         {
             "search": "headers[x-drupal-cache]",
@@ -23,6 +24,5 @@
             "offset": 1
         }
     ],
-    "website": "https://drupal.org",
-    "implies": "PHP"
+    "name": "Drupal"
 }

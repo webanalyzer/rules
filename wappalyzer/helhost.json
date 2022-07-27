@@ -1,15 +1,15 @@
 {
-    "name": "Helhost",
+    "implies": [
+        "Nginx",
+        "AlmaLinux",
+        "Apache"
+    ],
+    "website": "https://www.helhost.com",
     "matches": [
         {
             "search": "headers[x-powered-by]",
             "regexp": "Helhost"
         }
     ],
-    "website": "https://www.helhost.com",
-    "implies": [
-        "Nginx",
-        "AlmaLinux",
-        "Apache"
-    ]
+    "name": "Helhost"
 }
