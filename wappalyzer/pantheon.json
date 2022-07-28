@@ -5,20 +5,20 @@
         "MariaDB",
         "Fastly"
     ],
-    "website": "https://pantheon.io/",
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "^Pantheon"
+            "regexp": ".*",
+            "search": "headers[x-pantheon-styx-hostname]"
         },
         {
-            "search": "headers[x-pantheon-styx-hostname]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-styx-req-id]"
         },
         {
-            "search": "headers[x-styx-req-id]",
-            "regexp": ".*"
+            "regexp": "^Pantheon",
+            "search": "headers[server]"
         }
     ],
-    "name": "Pantheon"
+    "name": "Pantheon",
+    "website": "https://pantheon.io/"
 }
