@@ -3,6 +3,8 @@
         "PHP",
         "MySQL"
     ],
+    "name": "WordPress",
+    "website": "https://wordpress.org",
     "matches": [
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
@@ -15,9 +17,9 @@
             "search": "meta[shareaholic:wp_version]"
         },
         {
+            "offset": 1,
             "regexp": "^WordPress(?: ([\\d.]+))?",
-            "search": "meta[generator]",
-            "offset": 1
+            "search": "meta[generator]"
         },
         {
             "regexp": "/xmlrpc\\.php$",
@@ -27,7 +29,5 @@
             "regexp": "rel=\"https://api\\.w\\.org/\"",
             "search": "headers[link]"
         }
-    ],
-    "name": "WordPress",
-    "website": "https://wordpress.org"
+    ]
 }

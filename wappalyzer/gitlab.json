@@ -3,11 +3,9 @@
         "Ruby on Rails",
         "Vue.js"
     ],
+    "name": "GitLab",
+    "website": "https://about.gitlab.com",
     "matches": [
-        {
-            "regexp": "^GitLab$",
-            "search": "meta[og:site_name]"
-        },
         {
             "regexp": "<meta content=\"https?://[^/]+/assets/gitlab_logo-"
         },
@@ -17,8 +15,10 @@
         {
             "regexp": ".*",
             "search": "cookies[_gitlab_session]"
+        },
+        {
+            "regexp": "^GitLab$",
+            "search": "meta[og:site_name]"
         }
-    ],
-    "name": "GitLab",
-    "website": "https://about.gitlab.com"
+    ]
 }
