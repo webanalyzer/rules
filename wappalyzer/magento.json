@@ -3,17 +3,17 @@
         "PHP",
         "MySQL"
     ],
-    "name": "Magento",
     "website": "https://magento.com",
+    "name": "Magento",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[X-Magento-Vary]"
+            "search": "cookies[X-Magento-Vary]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
+            "search": "cookies[frontend]",
             "certainty": 50,
-            "search": "cookies[frontend]"
+            "regexp": ".*"
         }
     ]
 }
