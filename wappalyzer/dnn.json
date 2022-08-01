@@ -1,10 +1,7 @@
 {
     "implies": "Microsoft ASP.NET",
+    "name": "DNN",
     "matches": [
-        {
-            "regexp": "DotNetNuke",
-            "search": "meta[generator]"
-        },
         {
             "regexp": "<!-- by DotNetNuke Corporation"
         },
@@ -26,8 +23,11 @@
         {
             "regexp": ".*",
             "search": "cookies[DotNetNukeAnonymous]"
+        },
+        {
+            "regexp": "DotNetNuke",
+            "search": "meta[generator]"
         }
     ],
-    "name": "DNN",
     "website": "http://dnnsoftware.com"
 }

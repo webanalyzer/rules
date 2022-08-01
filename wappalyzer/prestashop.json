@@ -3,11 +3,8 @@
         "PHP",
         "MySQL"
     ],
+    "name": "PrestaShop",
     "matches": [
-        {
-            "regexp": "PrestaShop",
-            "search": "meta[generator]"
-        },
         {
             "regexp": "Powered by <a\\s+[^>]+>PrestaShop"
         },
@@ -24,8 +21,11 @@
         {
             "regexp": ".*",
             "search": "cookies[PrestaShop]"
+        },
+        {
+            "regexp": "PrestaShop",
+            "search": "meta[generator]"
         }
     ],
-    "name": "PrestaShop",
     "website": "http://www.prestashop.com"
 }

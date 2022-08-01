@@ -1,5 +1,9 @@
 {
+    "name": "Microsoft Word",
     "matches": [
+        {
+            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:word\"|<w:WordDocument>|<div [^>]*class=\"?WordSection1[\" >]|<style[^>]*>[^>]*@page WordSection1)"
+        },
         {
             "regexp": "Microsoft Word( [\\d.]+)?",
             "offset": 1,
@@ -8,11 +12,7 @@
         {
             "regexp": "^Word\\.",
             "search": "meta[ProgId]"
-        },
-        {
-            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:word\"|<w:WordDocument>|<div [^>]*class=\"?WordSection1[\" >]|<style[^>]*>[^>]*@page WordSection1)"
         }
     ],
-    "name": "Microsoft Word",
     "website": "https://office.microsoft.com/word"
 }
