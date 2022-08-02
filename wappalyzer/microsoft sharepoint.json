@@ -1,6 +1,9 @@
 {
-    "name": "Microsoft SharePoint",
     "matches": [
+        {
+            "regexp": "Microsoft SharePoint",
+            "search": "meta[generator]"
+        },
         {
             "regexp": ".*",
             "search": "headers[x-sharepointhealthscore]"
@@ -10,18 +13,15 @@
             "search": "headers[sharepointhealthscore]"
         },
         {
-            "regexp": "^(.+)$",
-            "offset": 1,
-            "search": "headers[microsoftsharepointteamservices]"
-        },
-        {
             "regexp": ".*",
             "search": "headers[sprequestguid]"
         },
         {
-            "regexp": "Microsoft SharePoint",
-            "search": "meta[generator]"
+            "regexp": "^(.+)$",
+            "search": "headers[microsoftsharepointteamservices]",
+            "offset": 1
         }
     ],
-    "website": "https://sharepoint.microsoft.com"
+    "website": "https://sharepoint.microsoft.com",
+    "name": "Microsoft SharePoint"
 }
