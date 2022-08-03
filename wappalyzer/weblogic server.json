@@ -1,12 +1,12 @@
 {
+    "name": "Weblogic Server",
+    "website": "https://www.oracle.com/java/weblogic",
     "matches": [
         {
-            "regexp": "^WebLogic\\sServer\\s([\\d\\.]+)?",
             "search": "headers[server]",
-            "offset": 1
+            "offset": 1,
+            "regexp": "^WebLogic\\sServer\\s([\\d\\.]+)?"
         }
     ],
-    "website": "https://www.oracle.com/java/weblogic",
-    "name": "Weblogic Server",
     "implies": "JavaServer Pages"
 }
