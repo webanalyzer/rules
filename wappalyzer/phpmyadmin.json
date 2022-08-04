@@ -1,16 +1,16 @@
 {
     "name": "phpMyAdmin",
-    "website": "https://www.phpmyadmin.net",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "!\\[CDATA\\[[^<]*PMA_VERSION:\\\"([\\d.]+)"
+            "regexp": "!\\[CDATA\\[[^<]*PMA_VERSION:\\\"([\\d.]+)",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "(?: \\| phpMyAdmin ([\\d.]+)<\\/title>|PMA_sendHeaderLocation\\(|<link [^>]*href=\"[^\"]*phpmyadmin\\.css\\.php)"
+            "regexp": "(?: \\| phpMyAdmin ([\\d.]+)<\\/title>|PMA_sendHeaderLocation\\(|<link [^>]*href=\"[^\"]*phpmyadmin\\.css\\.php)",
+            "offset": 1
         }
     ],
+    "website": "https://www.phpmyadmin.net",
     "implies": [
         "PHP",
         "MySQL"
