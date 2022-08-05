@@ -1,15 +1,11 @@
 {
+    "website": "https://wordpress.org",
     "name": "WordPress",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
     "matches": [
-        {
-            "search": "meta[shareaholic:wp_version]",
-            "regexp": ".*"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "^WordPress(?: ([\\d.]+))?",
-            "offset": 1
-        },
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
         },
@@ -17,17 +13,21 @@
             "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         },
         {
-            "search": "headers[x-pingback]",
-            "regexp": "/xmlrpc\\.php$"
+            "regexp": "rel=\"https://api\\.w\\.org/\"",
+            "search": "headers[link]"
         },
         {
-            "search": "headers[link]",
-            "regexp": "rel=\"https://api\\.w\\.org/\""
+            "regexp": "/xmlrpc\\.php$",
+            "search": "headers[x-pingback]"
+        },
+        {
+            "regexp": "^WordPress(?: ([\\d.]+))?",
+            "offset": 1,
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": ".*",
+            "search": "meta[shareaholic:wp_version]"
         }
-    ],
-    "website": "https://wordpress.org",
-    "implies": [
-        "PHP",
-        "MySQL"
     ]
 }
