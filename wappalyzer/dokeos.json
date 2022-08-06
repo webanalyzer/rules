@@ -1,5 +1,4 @@
 {
-    "website": "https://dokeos.com",
     "name": "Dokeos",
     "implies": [
         "PHP",
@@ -7,13 +6,14 @@
         "jQuery",
         "CKEditor"
     ],
+    "website": "https://dokeos.com",
     "matches": [
-        {
-            "regexp": "(?:Portal <a[^>]+>Dokeos|@import \"[^\"]+dokeos_blue)"
-        },
         {
             "regexp": "Dokeos",
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "(?:Portal <a[^>]+>Dokeos|@import \"[^\"]+dokeos_blue)"
         },
         {
             "regexp": "Dokeos",
