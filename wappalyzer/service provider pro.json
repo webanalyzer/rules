@@ -3,22 +3,22 @@
     "website": "https://spp.co",
     "matches": [
         {
-            "regexp": ".*",
+            "search": "meta[server]",
+            "regexp": "app.spp.co"
+        },
+        {
+            "search": "cookies[spp_session]",
             "certainty": 25,
-            "search": "cookies[spp_session]"
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[spp_orderform]"
-        },
-        {
-            "regexp": ".*",
+            "search": "cookies[spp_csrf]",
             "certainty": 25,
-            "search": "cookies[spp_csrf]"
+            "regexp": ".*"
         },
         {
-            "regexp": "app.spp.co",
-            "search": "meta[server]"
+            "search": "cookies[spp_orderform]",
+            "regexp": ".*"
         }
     ]
 }

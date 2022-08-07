@@ -3,16 +3,16 @@
     "website": "https://www.sheerid.com/",
     "matches": [
         {
-            "regexp": "\"sheerIdEndpoint\":",
-            "search": "script"
+            "search": "script",
+            "regexp": "\"sheerIdEndpoint\":"
         },
         {
-            "regexp": "\\.sheerid\\.com",
-            "search": "headers[content-security-policy]"
+            "search": "headers[content-security-policy-report-only]",
+            "regexp": "\\.sheerid\\.com"
         },
         {
-            "regexp": "\\.sheerid\\.com",
-            "search": "headers[content-security-policy-report-only]"
+            "search": "headers[content-security-policy]",
+            "regexp": "\\.sheerid\\.com"
         }
     ]
 }

@@ -1,15 +1,15 @@
 {
-    "name": "ForoshGostar",
     "implies": "Microsoft ASP.NET",
+    "name": "ForoshGostar",
     "website": "https://www.foroshgostar.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[Aws.customer]"
+            "search": "meta[generator]",
+            "regexp": "^Forosh\\s?Gostar.*|Arsina Webshop.*$"
         },
         {
-            "regexp": "^Forosh\\s?Gostar.*|Arsina Webshop.*$",
-            "search": "meta[generator]"
+            "search": "cookies[Aws.customer]",
+            "regexp": ".*"
         }
     ]
 }
