@@ -1,11 +1,11 @@
 {
     "name": "Apache",
-    "website": "http://apache.org",
     "matches": [
         {
+            "regexp": "(?:Apache(?:$|/([\\d.]+)|[^/-])|(?:^|\\b)HTTPD)",
             "offset": 1,
-            "search": "headers[server]",
-            "regexp": "(?:Apache(?:$|/([\\d.]+)|[^/-])|(?:^|\\b)HTTPD)"
+            "search": "headers[server]"
         }
-    ]
+    ],
+    "website": "http://apache.org"
 }
