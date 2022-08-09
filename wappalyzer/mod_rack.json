@@ -1,5 +1,9 @@
 {
-    "name": "mod_rack",
+    "website": "http://phusionpassenger.com",
+    "implies": [
+        "Ruby on Rails",
+        "Apache"
+    ],
     "matches": [
         {
             "regexp": "mod_rack(?:/([\\d.]+))?",
@@ -12,9 +16,5 @@
             "search": "headers[x-powered-by]"
         }
     ],
-    "implies": [
-        "Ruby on Rails",
-        "Apache"
-    ],
-    "website": "http://phusionpassenger.com"
+    "name": "mod_rack"
 }

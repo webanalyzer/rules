@@ -1,6 +1,11 @@
 {
-    "name": "RainLoop",
+    "website": "https://www.rainloop.net/",
+    "implies": "PHP",
     "matches": [
+        {
+            "offset": 1,
+            "regexp": "<link[^>]href=\"rainloop/v/([0-9.]+)/static/apple-touch-icon\\.png/>"
+        },
         {
             "regexp": "^([0-9.]+)$",
             "offset": 1,
@@ -9,12 +14,7 @@
         {
             "regexp": "^RainLoop",
             "search": "headers[server]"
-        },
-        {
-            "regexp": "<link[^>]href=\"rainloop/v/([0-9.]+)/static/apple-touch-icon\\.png/>",
-            "offset": 1
         }
     ],
-    "implies": "PHP",
-    "website": "https://www.rainloop.net/"
+    "name": "RainLoop"
 }
