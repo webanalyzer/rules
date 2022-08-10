@@ -4,12 +4,12 @@
         "Apache Tomcat",
         "Apache"
     ],
+    "name": "mod_jk",
     "matches": [
         {
-            "regexp": "mod_jk(?:/([\\d\\.]+))?",
             "offset": 1,
-            "search": "headers[server]"
+            "search": "headers[server]",
+            "regexp": "mod_jk(?:/([\\d\\.]+))?"
         }
-    ],
-    "name": "mod_jk"
+    ]
 }

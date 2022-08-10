@@ -1,12 +1,12 @@
 {
     "website": "http://hhvm.com",
     "implies": "PHP",
+    "name": "HHVM",
     "matches": [
         {
-            "regexp": "HHVM/?([\\d.]+)?",
             "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-powered-by]",
+            "regexp": "HHVM/?([\\d.]+)?"
         }
-    ],
-    "name": "HHVM"
+    ]
 }

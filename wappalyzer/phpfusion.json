@@ -4,23 +4,23 @@
         "PHP",
         "MySQL"
     ],
+    "name": "PHPFusion",
     "matches": [
+        {
+            "offset": 1,
+            "search": "headers[x-phpfusion]",
+            "regexp": "(.+)$"
+        },
+        {
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "PHPFusion (.+)$"
+        },
         {
             "regexp": "Powered by <a href=\"[^>]+phpfusion"
         },
         {
             "regexp": "Powered by <a href=\"[^>]+php-fusion"
-        },
-        {
-            "regexp": "PHPFusion (.+)$",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
-        },
-        {
-            "regexp": "(.+)$",
-            "offset": 1,
-            "search": "headers[x-phpfusion]"
         }
-    ],
-    "name": "PHPFusion"
+    ]
 }

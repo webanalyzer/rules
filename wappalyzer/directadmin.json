@@ -4,15 +4,15 @@
         "PHP",
         "Apache"
     ],
+    "name": "DirectAdmin",
     "matches": [
         {
-            "regexp": "<a[^>]+>DirectAdmin</a> Web Control Panel"
+            "offset": 1,
+            "search": "headers[server]",
+            "regexp": "DirectAdmin Daemon v([\\d.]+)"
         },
         {
-            "regexp": "DirectAdmin Daemon v([\\d.]+)",
-            "offset": 1,
-            "search": "headers[server]"
+            "regexp": "<a[^>]+>DirectAdmin</a> Web Control Panel"
         }
-    ],
-    "name": "DirectAdmin"
+    ]
 }

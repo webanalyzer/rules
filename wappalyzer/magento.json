@@ -4,16 +4,16 @@
         "PHP",
         "MySQL"
     ],
+    "name": "Magento",
     "matches": [
         {
+            "search": "cookies[frontend]",
             "regexp": ".*",
-            "search": "cookies[X-Magento-Vary]"
+            "certainty": 50
         },
         {
-            "regexp": ".*",
-            "certainty": 50,
-            "search": "cookies[frontend]"
+            "search": "cookies[X-Magento-Vary]",
+            "regexp": ".*"
         }
-    ],
-    "name": "Magento"
+    ]
 }

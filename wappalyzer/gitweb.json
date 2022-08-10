@@ -4,16 +4,16 @@
         "Perl",
         "git"
     ],
+    "name": "gitweb",
     "matches": [
         {
-            "regexp": "gitweb(?:/([\\d.]+\\d))?",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "gitweb(?:/([\\d.]+\\d))?"
         },
         {
             "offset": 1,
             "regexp": "<!-- git web interface version ([\\d.]+)?"
         }
-    ],
-    "name": "gitweb"
+    ]
 }
