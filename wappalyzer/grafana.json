@@ -1,5 +1,4 @@
 {
-    "website": "https://grafana.com",
     "implies": [
         "Go",
         "Macaron"
@@ -9,8 +8,9 @@
         {
             "offset": 1,
             "search": "script",
-            "regexp": ".+latestVersion\":\"[\\d\\.\\w\\-]+\"\\,\"version\":\"([\\d\\.]+)",
-            "certainty": 75
+            "certainty": 75,
+            "regexp": ".+latestVersion\":\"[\\d\\.\\w\\-]+\"\\,\"version\":\"([\\d\\.]+)"
         }
-    ]
+    ],
+    "website": "https://grafana.com"
 }
