@@ -4,12 +4,12 @@
         "Apache"
     ],
     "name": "mod_jk",
+    "website": "http://tomcat.apache.org/tomcat-3.3-doc/mod_jk-howto.html",
     "matches": [
         {
-            "offset": 1,
+            "regexp": "mod_jk(?:/([\\d\\.]+))?",
             "search": "headers[server]",
-            "regexp": "mod_jk(?:/([\\d\\.]+))?"
+            "offset": 1
         }
-    ],
-    "website": "http://tomcat.apache.org/tomcat-3.3-doc/mod_jk-howto.html"
+    ]
 }

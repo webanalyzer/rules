@@ -4,16 +4,16 @@
         "MySQL"
     ],
     "name": "Magento",
+    "website": "https://magento.com",
     "matches": [
         {
-            "search": "cookies[X-Magento-Vary]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[frontend]",
+            "certainty": 50
         },
         {
-            "search": "cookies[frontend]",
-            "certainty": 50,
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[X-Magento-Vary]"
         }
-    ],
-    "website": "https://magento.com"
+    ]
 }
