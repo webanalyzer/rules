@@ -1,5 +1,10 @@
 {
-    "website": "http://ckan.org/",
+    "implies": [
+        "Python",
+        "Solr",
+        "Java",
+        "PostgreSQL"
+    ],
     "matches": [
         {
             "search": "headers[access-control-allow-headers]",
@@ -11,15 +16,10 @@
         },
         {
             "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^ckan ?([0-9.]+)$"
+            "regexp": "^ckan ?([0-9.]+)$",
+            "offset": 1
         }
     ],
-    "name": "Ckan",
-    "implies": [
-        "Python",
-        "Solr",
-        "Java",
-        "PostgreSQL"
-    ]
+    "website": "http://ckan.org/",
+    "name": "Ckan"
 }

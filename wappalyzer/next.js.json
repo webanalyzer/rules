@@ -1,16 +1,16 @@
 {
-    "website": "https://nextjs.org",
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "^Next\\.js ?([0-9.]+)?"
-        }
-    ],
-    "name": "Next.js",
     "implies": [
         "React",
         "webpack",
         "Node.js"
-    ]
+    ],
+    "matches": [
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^Next\\.js ?([0-9.]+)?",
+            "offset": 1
+        }
+    ],
+    "website": "https://nextjs.org",
+    "name": "Next.js"
 }

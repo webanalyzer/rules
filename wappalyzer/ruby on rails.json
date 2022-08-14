@@ -1,5 +1,5 @@
 {
-    "website": "https://rubyonrails.org",
+    "implies": "Ruby",
     "matches": [
         {
             "search": "cookies[_session_id]",
@@ -7,11 +7,11 @@
             "certainty": 75
         },
         {
-            "search": "headers[x-powered-by]",
+            "search": "headers[server]",
             "regexp": "mod_(?:rails|rack)"
         },
         {
-            "search": "headers[server]",
+            "search": "headers[x-powered-by]",
             "regexp": "mod_(?:rails|rack)"
         },
         {
@@ -20,6 +20,6 @@
             "certainty": 50
         }
     ],
-    "name": "Ruby on Rails",
-    "implies": "Ruby"
+    "website": "https://rubyonrails.org",
+    "name": "Ruby on Rails"
 }
