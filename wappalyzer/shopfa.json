@@ -1,16 +1,16 @@
 {
-    "website": "https://shopfa.com",
-    "name": "Shopfa",
     "matches": [
         {
-            "regexp": "^ShopFA ([\\d.]+)$",
-            "search": "headers[x-powered-by]",
-            "offset": 1
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "^ShopFA ([\\d.]+)$"
         },
         {
-            "regexp": "^ShopFA ([\\d.]+)$",
-            "search": "meta[generator]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "^ShopFA ([\\d.]+)$"
         }
-    ]
+    ],
+    "website": "https://shopfa.com",
+    "name": "Shopfa"
 }

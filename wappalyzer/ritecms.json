@@ -1,15 +1,15 @@
 {
-    "implies": [
-        "PHP",
-        "SQLite"
+    "matches": [
+        {
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "^RiteCMS(?: (.+))?"
+        }
     ],
     "website": "http://ritecms.com",
     "name": "RiteCMS",
-    "matches": [
-        {
-            "regexp": "^RiteCMS(?: (.+))?",
-            "search": "meta[generator]",
-            "offset": 1
-        }
+    "implies": [
+        "PHP",
+        "SQLite"
     ]
 }

@@ -1,11 +1,11 @@
 {
-    "website": "http://ibm.com/software/webservers/httpservers",
-    "name": "IBM HTTP Server",
     "matches": [
         {
-            "regexp": "IBM_HTTP_Server(?:/([\\d.]+))?",
+            "offset": 1,
             "search": "headers[server]",
-            "offset": 1
+            "regexp": "IBM_HTTP_Server(?:/([\\d.]+))?"
         }
-    ]
+    ],
+    "website": "http://ibm.com/software/webservers/httpservers",
+    "name": "IBM HTTP Server"
 }
