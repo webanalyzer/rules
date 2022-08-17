@@ -2,8 +2,8 @@
     "matches": [
         {
             "offset": 1,
-            "search": "headers[x-content-encoded-by]",
-            "regexp": "Joomla! ([\\d.]+)"
+            "regexp": "Joomla! ([\\d.]+)",
+            "search": "headers[x-content-encoded-by]"
         },
         {
             "certainty": 50,
@@ -11,11 +11,11 @@
         },
         {
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Joomla!(?: ([\\d.]+))?"
+            "regexp": "Joomla!(?: ([\\d.]+))?",
+            "search": "meta[generator]"
         }
     ],
+    "implies": "PHP",
     "website": "https://www.joomla.org",
-    "name": "Joomla",
-    "implies": "PHP"
+    "name": "Joomla"
 }

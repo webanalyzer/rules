@@ -4,13 +4,13 @@
             "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:publisher\"|<!--[if pub]><xml>)"
         },
         {
-            "search": "meta[ProgId]",
-            "regexp": "^Publisher\\."
+            "regexp": "^Publisher\\.",
+            "search": "meta[ProgId]"
         },
         {
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Microsoft Publisher( [\\d.]+)?"
+            "regexp": "Microsoft Publisher( [\\d.]+)?",
+            "search": "meta[generator]"
         }
     ],
     "website": "https://office.microsoft.com/publisher",

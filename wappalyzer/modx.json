@@ -1,8 +1,8 @@
 {
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^MODX"
+            "regexp": "^MODX",
+            "search": "headers[x-powered-by]"
         },
         {
             "regexp": "<a[^>]+>Powered by MODX</a>"
@@ -21,11 +21,11 @@
         },
         {
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "MODX[^\\d.]*([\\d.]+)?"
+            "regexp": "MODX[^\\d.]*([\\d.]+)?",
+            "search": "meta[generator]"
         }
     ],
+    "implies": "PHP",
     "website": "http://modx.com",
-    "name": "MODX",
-    "implies": "PHP"
+    "name": "MODX"
 }
