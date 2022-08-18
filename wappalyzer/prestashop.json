@@ -1,9 +1,7 @@
 {
+    "website": "http://www.prestashop.com",
+    "name": "PrestaShop",
     "matches": [
-        {
-            "regexp": "^Prestashop$",
-            "search": "headers[powered-by]"
-        },
         {
             "regexp": ".*",
             "search": "cookies[PrestaShop]"
@@ -20,12 +18,14 @@
         {
             "regexp": "PrestaShop",
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "^Prestashop$",
+            "search": "headers[powered-by]"
         }
     ],
     "implies": [
         "PHP",
         "MySQL"
-    ],
-    "website": "http://www.prestashop.com",
-    "name": "PrestaShop"
+    ]
 }

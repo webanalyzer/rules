@@ -1,8 +1,11 @@
 {
+    "website": "http://modx.com",
+    "name": "MODX",
     "matches": [
         {
-            "regexp": "^MODX",
-            "search": "headers[x-powered-by]"
+            "regexp": "MODX[^\\d.]*([\\d.]+)?",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": "<a[^>]+>Powered by MODX</a>"
@@ -20,12 +23,9 @@
             "regexp": "<input[^>]+id=\"ajaxSearch_input"
         },
         {
-            "offset": 1,
-            "regexp": "MODX[^\\d.]*([\\d.]+)?",
-            "search": "meta[generator]"
+            "regexp": "^MODX",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "implies": "PHP",
-    "website": "http://modx.com",
-    "name": "MODX"
+    "implies": "PHP"
 }
