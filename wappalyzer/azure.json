@@ -1,6 +1,6 @@
 {
-    "website": "https://azure.microsoft.com",
     "name": "Azure",
+    "website": "https://azure.microsoft.com",
     "matches": [
         {
             "regexp": ".*",
@@ -12,7 +12,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[azure-sitename]"
+            "search": "headers[x-ms-client-request-id]"
         },
         {
             "regexp": ".*",
@@ -24,11 +24,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-ms-client-request-id]"
-        },
-        {
-            "regexp": "^Windows-Azure",
-            "search": "headers[server]"
+            "search": "headers[x-ms-correlation-request-id]"
         },
         {
             "regexp": ".*",
@@ -40,7 +36,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-ms-correlation-request-id]"
+            "search": "headers[azure-sitename]"
+        },
+        {
+            "regexp": "^Windows-Azure",
+            "search": "headers[server]"
         }
     ]
 }

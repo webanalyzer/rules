@@ -1,6 +1,12 @@
 {
-    "website": "https://pantheon.io/",
     "name": "Pantheon",
+    "implies": [
+        "PHP",
+        "Nginx",
+        "MariaDB",
+        "Fastly"
+    ],
+    "website": "https://pantheon.io/",
     "matches": [
         {
             "regexp": "^Pantheon",
@@ -14,11 +20,5 @@
             "regexp": ".*",
             "search": "headers[x-pantheon-styx-hostname]"
         }
-    ],
-    "implies": [
-        "PHP",
-        "Nginx",
-        "MariaDB",
-        "Fastly"
     ]
 }

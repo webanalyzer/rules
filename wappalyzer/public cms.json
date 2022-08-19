@@ -1,6 +1,7 @@
 {
-    "website": "http://www.publiccms.com",
     "name": "Public CMS",
+    "implies": "Java",
+    "website": "http://www.publiccms.com",
     "matches": [
         {
             "regexp": ".*",
@@ -8,9 +9,8 @@
         },
         {
             "regexp": "^(.+)$",
-            "search": "headers[x-powered-publiccms]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-powered-publiccms]"
         }
-    ],
-    "implies": "Java"
+    ]
 }

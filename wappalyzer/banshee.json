@@ -1,6 +1,7 @@
 {
-    "website": "http://www.banshee-php.org",
     "name": "Banshee",
+    "implies": "PHP",
+    "website": "http://www.banshee-php.org",
     "matches": [
         {
             "regexp": "Banshee PHP",
@@ -8,9 +9,8 @@
         },
         {
             "regexp": "Banshee PHP framework v([\\d\\.]+)",
-            "search": "headers[x-powered-by]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-powered-by]"
         }
-    ],
-    "implies": "PHP"
+    ]
 }

@@ -1,6 +1,10 @@
 {
-    "website": "https://mybb.com",
     "name": "MyBB",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
+    "website": "https://mybb.com",
     "matches": [
         {
             "regexp": ".*",
@@ -10,9 +14,5 @@
             "regexp": ".*",
             "search": "cookies[mybb[lastvisit]]"
         }
-    ],
-    "implies": [
-        "PHP",
-        "MySQL"
     ]
 }
