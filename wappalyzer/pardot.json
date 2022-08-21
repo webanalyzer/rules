@@ -1,12 +1,11 @@
 {
-    "website": "https://www.pardot.com",
     "matches": [
         {
-            "search": "headers[x-pardot-route]",
+            "search": "headers[x-pardot-lb]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-pardot-lb]",
+            "search": "headers[x-pardot-route]",
             "regexp": ".*"
         },
         {
@@ -14,5 +13,6 @@
             "regexp": ".*"
         }
     ],
+    "website": "https://www.pardot.com",
     "name": "Pardot"
 }

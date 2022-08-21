@@ -1,9 +1,7 @@
 {
-    "website": "https://www.pirobase-imperia.com/de/produkte/produktuebersicht/imperia-cms",
     "matches": [
         {
-            "search": "meta[X-Imperia-Live-Info]",
-            "regexp": ".*"
+            "regexp": "<imp:live-info sysid=\"[0-9a-f-]+\"(?: node_id=\"[0-9/]*\")? *\\/>"
         },
         {
             "search": "meta[GENERATOR]",
@@ -11,9 +9,11 @@
             "offset": 1
         },
         {
-            "regexp": "<imp:live-info sysid=\"[0-9a-f-]+\"(?: node_id=\"[0-9/]*\")? *\\/>"
+            "search": "meta[X-Imperia-Live-Info]",
+            "regexp": ".*"
         }
     ],
-    "name": "imperia CMS",
-    "implies": "Perl"
+    "implies": "Perl",
+    "website": "https://www.pirobase-imperia.com/de/produkte/produktuebersicht/imperia-cms",
+    "name": "imperia CMS"
 }
