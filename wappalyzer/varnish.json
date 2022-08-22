@@ -1,7 +1,8 @@
 {
+    "name": "Varnish",
     "matches": [
         {
-            "search": "headers[x-varnish-cache]",
+            "search": "headers[x-varnish-hostname]",
             "regexp": ".*"
         },
         {
@@ -10,22 +11,21 @@
             "offset": 1
         },
         {
-            "search": "headers[x-varnish-hostname]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[x-varnish-action]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-varnish-age]",
+            "search": "headers[x-varnish-cache]",
             "regexp": ".*"
         },
         {
             "search": "headers[x-varnish]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[x-varnish-age]",
+            "regexp": ".*"
         }
     ],
-    "website": "http://www.varnish-cache.org",
-    "name": "Varnish"
+    "website": "http://www.varnish-cache.org"
 }

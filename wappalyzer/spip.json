@@ -1,4 +1,5 @@
 {
+    "name": "SPIP",
     "matches": [
         {
             "search": "meta[generator]",
@@ -6,16 +7,15 @@
             "offset": 1
         },
         {
-            "search": "headers[x-spip-cache]",
-            "regexp": ".*"
-        },
-        {
             "search": "headers[composed-by]",
             "regexp": "SPIP ([\\d.]+) @",
             "offset": 1
+        },
+        {
+            "search": "headers[x-spip-cache]",
+            "regexp": ".*"
         }
     ],
     "implies": "PHP",
-    "website": "http://www.spip.net",
-    "name": "SPIP"
+    "website": "http://www.spip.net"
 }

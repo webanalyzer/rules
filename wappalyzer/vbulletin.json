@@ -1,8 +1,13 @@
 {
+    "name": "vBulletin",
     "matches": [
         {
-            "search": "cookies[bblastvisit]",
-            "regexp": ".*"
+            "search": "meta[generator]",
+            "regexp": "vBulletin ?([\\d.]+)?",
+            "offset": 1
+        },
+        {
+            "regexp": "<div id=\"copyright\">Powered by vBulletin"
         },
         {
             "search": "cookies[bblastactivity]",
@@ -13,15 +18,10 @@
             "regexp": ".*"
         },
         {
-            "regexp": "<div id=\"copyright\">Powered by vBulletin"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "vBulletin ?([\\d.]+)?",
-            "offset": 1
+            "search": "cookies[bblastvisit]",
+            "regexp": ".*"
         }
     ],
     "implies": "PHP",
-    "website": "https://www.vbulletin.com",
-    "name": "vBulletin"
+    "website": "https://www.vbulletin.com"
 }

@@ -1,12 +1,13 @@
 {
+    "name": "gitweb",
     "matches": [
-        {
-            "regexp": "<!-- git web interface version ([\\d.]+)?",
-            "offset": 1
-        },
         {
             "search": "meta[generator]",
             "regexp": "gitweb(?:/([\\d.]+\\d))?",
+            "offset": 1
+        },
+        {
+            "regexp": "<!-- git web interface version ([\\d.]+)?",
             "offset": 1
         }
     ],
@@ -14,6 +15,5 @@
         "Perl",
         "git"
     ],
-    "website": "http://git-scm.com",
-    "name": "gitweb"
+    "website": "http://git-scm.com"
 }

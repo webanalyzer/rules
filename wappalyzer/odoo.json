@@ -1,12 +1,13 @@
 {
+    "name": "Odoo",
     "matches": [
-        {
-            "certainty": 25,
-            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)"
-        },
         {
             "search": "meta[generator]",
             "regexp": "Odoo"
+        },
+        {
+            "certainty": 25,
+            "regexp": "<link[^>]* href=[^>]+/web/css/(?:web\\.assets_common/|website\\.assets_frontend/)"
         }
     ],
     "implies": [
@@ -15,6 +16,5 @@
         "Node.js",
         "Less"
     ],
-    "website": "http://odoo.com",
-    "name": "Odoo"
+    "website": "http://odoo.com"
 }
