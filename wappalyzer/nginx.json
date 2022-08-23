@@ -1,4 +1,5 @@
 {
+    "website": "http://nginx.org/en",
     "name": "Nginx",
     "matches": [
         {
@@ -6,10 +7,9 @@
             "regexp": ".*"
         },
         {
+            "offset": 1,
             "search": "headers[server]",
-            "regexp": "nginx(?:/([\\d.]+))?",
-            "offset": 1
+            "regexp": "nginx(?:/([\\d.]+))?"
         }
-    ],
-    "website": "http://nginx.org/en"
+    ]
 }

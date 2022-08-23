@@ -1,14 +1,14 @@
 {
+    "website": "https://putyourlightson.com/plugins/blitz",
     "name": "Blitz",
+    "implies": "Craft CMS",
     "matches": [
+        {
+            "regexp": "<!-- Cached by Blitz on"
+        },
         {
             "search": "headers[x-powered-by]",
             "regexp": "^Blitz$"
-        },
-        {
-            "regexp": "<!-- Cached by Blitz on"
         }
-    ],
-    "implies": "Craft CMS",
-    "website": "https://putyourlightson.com/plugins/blitz"
+    ]
 }
