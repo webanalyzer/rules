@@ -1,10 +1,4 @@
 {
-    "website": "https://www.phpmyadmin.net",
-    "name": "phpMyAdmin",
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
     "matches": [
         {
             "offset": 1,
@@ -14,5 +8,11 @@
             "offset": 1,
             "regexp": "(?: \\| phpMyAdmin ([\\d.]+)<\\/title>|PMA_sendHeaderLocation\\(|<link [^>]*href=\"[^\"]*phpmyadmin\\.css\\.php)"
         }
-    ]
+    ],
+    "website": "https://www.phpmyadmin.net",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
+    "name": "phpMyAdmin"
 }
