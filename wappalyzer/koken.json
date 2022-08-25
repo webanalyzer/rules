@@ -1,10 +1,10 @@
 {
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
+    "website": "http://koken.me",
     "matches": [
-        {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Koken ([\\d.]+)"
-        },
         {
             "regexp": "<html lang=\"en\" class=\"k-source-essays k-lens-essays\">"
         },
@@ -14,12 +14,12 @@
         {
             "search": "cookies[koken_referrer]",
             "regexp": ".*"
+        },
+        {
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "Koken ([\\d.]+)"
         }
-    ],
-    "website": "http://koken.me",
-    "implies": [
-        "PHP",
-        "MySQL"
     ],
     "name": "Koken"
 }
