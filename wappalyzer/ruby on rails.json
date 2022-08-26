@@ -1,5 +1,6 @@
 {
     "implies": "Ruby",
+    "name": "Ruby on Rails",
     "website": "https://rubyonrails.org",
     "matches": [
         {
@@ -8,18 +9,17 @@
             "regexp": "^authenticity_token$"
         },
         {
-            "certainty": 75,
-            "search": "cookies[_session_id]",
-            "regexp": ".*"
+            "search": "headers[server]",
+            "regexp": "mod_(?:rails|rack)"
         },
         {
             "search": "headers[x-powered-by]",
             "regexp": "mod_(?:rails|rack)"
         },
         {
-            "search": "headers[server]",
-            "regexp": "mod_(?:rails|rack)"
+            "certainty": 75,
+            "search": "cookies[_session_id]",
+            "regexp": ".*"
         }
-    ],
-    "name": "Ruby on Rails"
+    ]
 }

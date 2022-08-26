@@ -1,10 +1,11 @@
 {
     "implies": "PHP",
+    "name": "SPIP",
     "website": "http://www.spip.net",
     "matches": [
         {
-            "search": "meta[generator]",
             "offset": 1,
+            "search": "meta[generator]",
             "regexp": "(?:^|\\s)SPIP(?:\\s([\\d.]+(?:\\s\\[\\d+\\])?))?"
         },
         {
@@ -12,10 +13,9 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[composed-by]",
             "offset": 1,
+            "search": "headers[composed-by]",
             "regexp": "SPIP ([\\d.]+) @"
         }
-    ],
-    "name": "SPIP"
+    ]
 }

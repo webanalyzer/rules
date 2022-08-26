@@ -1,13 +1,18 @@
 {
     "implies": "PHP",
+    "name": "1C-Bitrix",
     "website": "http://www.1c-bitrix.ru",
     "matches": [
         {
-            "search": "cookies[BITRIX_SM_GUEST_ID]",
-            "regexp": ".*"
+            "search": "headers[x-powered-cms]",
+            "regexp": "Bitrix Site Manager"
         },
         {
-            "search": "cookies[BITRIX_SM_LAST_IP]",
+            "search": "headers[set-cookie]",
+            "regexp": "BITRIX_"
+        },
+        {
+            "search": "cookies[BITRIX_SM_GUEST_ID]",
             "regexp": ".*"
         },
         {
@@ -15,13 +20,8 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[set-cookie]",
-            "regexp": "BITRIX_"
-        },
-        {
-            "search": "headers[x-powered-cms]",
-            "regexp": "Bitrix Site Manager"
+            "search": "cookies[BITRIX_SM_LAST_IP]",
+            "regexp": ".*"
         }
-    ],
-    "name": "1C-Bitrix"
+    ]
 }

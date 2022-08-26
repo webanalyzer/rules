@@ -4,15 +4,15 @@
         "Apache",
         "Exhibit"
     ],
+    "name": "Indexhibit",
     "website": "http://www.indexhibit.org",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Indexhibit"
+            "regexp": "<(?:link|a href) [^>]+ndxz-studio"
         },
         {
-            "regexp": "<(?:link|a href) [^>]+ndxz-studio"
+            "search": "meta[generator]",
+            "regexp": "Indexhibit"
         }
-    ],
-    "name": "Indexhibit"
+    ]
 }
