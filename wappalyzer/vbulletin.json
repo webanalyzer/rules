@@ -1,7 +1,5 @@
 {
     "implies": "PHP",
-    "name": "vBulletin",
-    "website": "https://www.vbulletin.com",
     "matches": [
         {
             "regexp": "<div id=\"copyright\">Powered by vBulletin"
@@ -12,16 +10,18 @@
             "regexp": "vBulletin ?([\\d.]+)?"
         },
         {
-            "search": "cookies[bblastactivity]",
-            "regexp": ".*"
-        },
-        {
             "search": "cookies[bblastvisit]",
             "regexp": ".*"
         },
         {
             "search": "cookies[bbsessionhash]",
             "regexp": ".*"
+        },
+        {
+            "search": "cookies[bblastactivity]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://www.vbulletin.com",
+    "name": "vBulletin"
 }

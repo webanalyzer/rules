@@ -1,14 +1,12 @@
 {
     "implies": "React",
-    "name": "Wix",
-    "website": "https://www.wix.com",
     "matches": [
         {
-            "search": "headers[x-wix-request-id]",
+            "search": "headers[x-wix-server-artifact-id]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-wix-server-artifact-id]",
+            "search": "headers[x-wix-request-id]",
             "regexp": ".*"
         },
         {
@@ -23,5 +21,7 @@
             "search": "cookies[Domain]",
             "regexp": "\\.wix\\.com"
         }
-    ]
+    ],
+    "website": "https://www.wix.com",
+    "name": "Wix"
 }
