@@ -1,17 +1,17 @@
 {
-    "implies": "Laravel",
+    "name": "Botble CMS",
     "matches": [
-        {
-            "offset": 1,
-            "certainty": 0,
-            "search": "headers[cms-version]",
-            "regexp": "^(.+)$"
-        },
         {
             "search": "cookies[botble_session]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[cms-version]",
+            "regexp": "^(.+)$",
+            "certainty": 0,
+            "offset": 1
         }
     ],
     "website": "https://botble.com",
-    "name": "Botble CMS"
+    "implies": "Laravel"
 }

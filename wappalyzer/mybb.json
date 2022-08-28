@@ -1,18 +1,18 @@
 {
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
+    "name": "MyBB",
     "matches": [
         {
-            "search": "cookies[mybb[lastactive]]",
+            "search": "cookies[mybb[lastvisit]]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[mybb[lastvisit]]",
+            "search": "cookies[mybb[lastactive]]",
             "regexp": ".*"
         }
     ],
     "website": "https://mybb.com",
-    "name": "MyBB"
+    "implies": [
+        "PHP",
+        "MySQL"
+    ]
 }
