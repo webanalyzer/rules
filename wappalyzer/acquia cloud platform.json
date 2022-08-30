@@ -1,13 +1,13 @@
 {
-    "website": "https://www.acquia.com/",
     "name": "Acquia Cloud Platform",
+    "matches": [
+        {
+            "search": "headers[x-ah-environment]",
+            "regexp": "^\\w+$"
+        }
+    ],
     "implies": [
         "Amazon Web Services"
     ],
-    "matches": [
-        {
-            "regexp": "^\\w+$",
-            "search": "headers[x-ah-environment]"
-        }
-    ]
+    "website": "https://www.acquia.com/"
 }

@@ -1,12 +1,12 @@
 {
-    "website": "https://easyengine.io",
     "name": "EasyEngine",
-    "implies": "Docker",
     "matches": [
         {
-            "regexp": "^EasyEngine (.*)$",
             "search": "headers[x-powered-by]",
+            "regexp": "^EasyEngine (.*)$",
             "offset": 1
         }
-    ]
+    ],
+    "implies": "Docker",
+    "website": "https://easyengine.io"
 }

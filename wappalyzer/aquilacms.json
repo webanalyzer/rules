@@ -1,6 +1,11 @@
 {
-    "website": "https://www.aquila-cms.com/",
     "name": "AquilaCMS",
+    "matches": [
+        {
+            "search": "meta[powered-by]",
+            "regexp": "AquilaCMS"
+        }
+    ],
     "implies": [
         "Next.js",
         "Node.js",
@@ -8,10 +13,5 @@
         "MongoDB",
         "Amazon Web Services"
     ],
-    "matches": [
-        {
-            "regexp": "AquilaCMS",
-            "search": "meta[powered-by]"
-        }
-    ]
+    "website": "https://www.aquila-cms.com/"
 }
