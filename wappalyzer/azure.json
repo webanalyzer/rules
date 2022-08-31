@@ -1,16 +1,16 @@
 {
-    "name": "Azure",
+    "website": "https://azure.microsoft.com",
     "matches": [
         {
-            "search": "cookies[TiPMix]",
+            "search": "headers[azure-version]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[ARRAffinity]",
+            "search": "headers[x-ms-correlation-request-id]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-ms-client-request-id]",
+            "search": "headers[x-ms-gateway-requestid]",
             "regexp": ".*"
         },
         {
@@ -22,25 +22,25 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^Windows-Azure"
+            "search": "headers[x-ms-client-request-id]",
+            "regexp": ".*"
         },
         {
-            "search": "headers[x-ms-gateway-requestid]",
-            "regexp": ".*"
+            "search": "headers[server]",
+            "regexp": "^Windows-Azure"
         },
         {
             "search": "headers[azure-regionname]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-ms-correlation-request-id]",
+            "search": "cookies[TiPMix]",
             "regexp": ".*"
         },
         {
-            "search": "headers[azure-version]",
+            "search": "cookies[ARRAffinity]",
             "regexp": ".*"
         }
     ],
-    "website": "https://azure.microsoft.com"
+    "name": "Azure"
 }
