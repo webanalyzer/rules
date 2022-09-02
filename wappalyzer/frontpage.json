@@ -1,15 +1,15 @@
 {
-    "name": "FrontPage",
     "matches": [
-        {
-            "regexp": "^FrontPage\\.",
-            "search": "meta[ProgId]"
-        },
         {
             "regexp": "Microsoft FrontPage(?:\\s((?:Express )?[\\d.]+))?",
             "offset": 1,
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "^FrontPage\\.",
+            "search": "meta[ProgId]"
         }
     ],
-    "website": "http://office.microsoft.com/frontpage"
+    "website": "http://office.microsoft.com/frontpage",
+    "name": "FrontPage"
 }

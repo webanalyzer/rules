@@ -1,17 +1,17 @@
 {
-    "name": "Dancer",
+    "implies": "Perl",
     "matches": [
         {
             "regexp": "Perl Dancer ([\\d.]+)",
             "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "headers[server]"
         },
         {
             "regexp": "Perl Dancer ([\\d.]+)",
             "offset": 1,
-            "search": "headers[server]"
+            "search": "headers[x-powered-by]"
         }
     ],
-    "implies": "Perl",
-    "website": "http://perldancer.org"
+    "website": "http://perldancer.org",
+    "name": "Dancer"
 }
