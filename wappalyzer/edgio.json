@@ -1,17 +1,6 @@
 {
+    "name": "Edgio",
     "matches": [
-        {
-            "search": "cookies[layer0_destination]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[layer0_bucket]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[layer0_eid]",
-            "regexp": ".*"
-        },
         {
             "search": "headers[x-0-status]",
             "regexp": ".*"
@@ -22,10 +11,21 @@
         },
         {
             "search": "headers[x-0-version]",
-            "offset": 1,
-            "regexp": "^\\d+ ([\\d.]+) "
+            "regexp": "^\\d+ ([\\d.]+) ",
+            "offset": 1
+        },
+        {
+            "search": "cookies[layer0_eid]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[layer0_destination]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[layer0_bucket]",
+            "regexp": ".*"
         }
     ],
-    "website": "https://edg.io",
-    "name": "Edgio"
+    "website": "https://edg.io"
 }
