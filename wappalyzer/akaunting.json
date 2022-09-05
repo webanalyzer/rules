@@ -1,4 +1,5 @@
 {
+    "website": "https://akaunting.com",
     "name": "Akaunting",
     "matches": [
         {
@@ -8,10 +9,9 @@
             "regexp": "Powered By Akaunting: <a [^>]*href=\"https?://(?:www\\.)?akaunting\\.com[^>]+>"
         },
         {
-            "search": "headers[x-akaunting]",
-            "regexp": "^Free Accounting Software$"
+            "regexp": "^Free Accounting Software$",
+            "search": "headers[x-akaunting]"
         }
     ],
-    "website": "https://akaunting.com",
     "implies": "Laravel"
 }

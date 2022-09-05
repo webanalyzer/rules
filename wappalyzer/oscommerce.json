@@ -1,4 +1,5 @@
 {
+    "website": "https://www.oscommerce.com",
     "name": "osCommerce",
     "matches": [
         {
@@ -11,11 +12,10 @@
             "regexp": "<(?:tr|td|table)class=\"[^\"]*infoBoxHeading"
         },
         {
-            "search": "cookies[osCsid]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[osCsid]"
         }
     ],
-    "website": "https://www.oscommerce.com",
     "implies": [
         "PHP",
         "MySQL"
