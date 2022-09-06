@@ -1,14 +1,14 @@
 {
     "website": "https://github.com/rust-lang/mdBook",
-    "name": "mdBook",
-    "matches": [
-        {
-            "regexp": "localStorage\\.getItem\\('mdbook-(?:sidebar|theme)'\\)",
-            "search": "script"
-        }
-    ],
     "implies": [
         "Rust",
         "Handlebars"
+    ],
+    "name": "mdBook",
+    "matches": [
+        {
+            "search": "script",
+            "regexp": "localStorage\\.getItem\\('mdbook-(?:sidebar|theme)'\\)"
+        }
     ]
 }

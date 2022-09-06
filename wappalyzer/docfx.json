@@ -3,17 +3,17 @@
     "name": "DocFX",
     "matches": [
         {
-            "regexp": "toc.html",
-            "search": "meta[docfx:navrel]"
+            "search": "meta[docfx:navrel]",
+            "regexp": "toc.html"
         },
         {
-            "regexp": "docfx\\s([\\d\\.]+)",
+            "search": "meta[docfx:tocrel]",
+            "regexp": "toc.html"
+        },
+        {
+            "search": "meta[generator]",
             "offset": 1,
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "toc.html",
-            "search": "meta[docfx:tocrel]"
+            "regexp": "docfx\\s([\\d\\.]+)"
         }
     ]
 }

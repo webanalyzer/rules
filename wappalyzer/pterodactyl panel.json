@@ -1,16 +1,16 @@
 {
     "website": "https://pterodactyl.io",
-    "name": "Pterodactyl Panel",
-    "matches": [
-        {
-            "regexp": ".*",
-            "search": "cookies[pterodactyl_session]"
-        }
-    ],
     "implies": [
         "Go",
         "PHP",
         "React",
         "Laravel"
+    ],
+    "name": "Pterodactyl Panel",
+    "matches": [
+        {
+            "search": "cookies[pterodactyl_session]",
+            "regexp": ".*"
+        }
     ]
 }
