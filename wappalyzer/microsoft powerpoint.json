@@ -3,13 +3,13 @@
     "name": "Microsoft PowerPoint",
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Microsoft PowerPoint ( [\\d.]+)?"
+            "regexp": "^PowerPoint\\.",
+            "search": "meta[ProgId]"
         },
         {
-            "search": "meta[ProgId]",
-            "regexp": "^PowerPoint\\."
+            "offset": 1,
+            "regexp": "Microsoft PowerPoint ( [\\d.]+)?",
+            "search": "meta[generator]"
         },
         {
             "offset": 1,

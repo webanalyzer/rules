@@ -3,13 +3,13 @@
     "name": "Microsoft Word",
     "matches": [
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Microsoft Word( [\\d.]+)?"
+            "regexp": "^Word\\.",
+            "search": "meta[ProgId]"
         },
         {
-            "search": "meta[ProgId]",
-            "regexp": "^Word\\."
+            "offset": 1,
+            "regexp": "Microsoft Word( [\\d.]+)?",
+            "search": "meta[generator]"
         },
         {
             "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:word\"|<w:WordDocument>|<div [^>]*class=\"?WordSection1[\" >]|<style[^>]*>[^>]*@page WordSection1)"

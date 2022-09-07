@@ -3,13 +3,13 @@
     "name": "Nginx",
     "matches": [
         {
-            "search": "headers[x-fastcgi-cache]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-fastcgi-cache]"
         },
         {
-            "search": "headers[server]",
             "offset": 1,
-            "regexp": "nginx(?:/([\\d.]+))?"
+            "regexp": "nginx(?:/([\\d.]+))?",
+            "search": "headers[server]"
         }
     ]
 }

@@ -3,14 +3,14 @@
     "name": "Phusion Passenger",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
             "offset": 1,
-            "regexp": "Phusion Passenger(?:\\(R\\))? ?([\\d.]+)?"
+            "regexp": "Phusion Passenger(?:\\(R\\))? ?([\\d.]+)?",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[server]",
             "offset": 1,
-            "regexp": "Phusion Passenger ([\\d.]+)"
+            "regexp": "Phusion Passenger ([\\d.]+)",
+            "search": "headers[server]"
         }
     ]
 }
