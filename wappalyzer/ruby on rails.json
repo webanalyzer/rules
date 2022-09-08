@@ -1,5 +1,4 @@
 {
-    "website": "https://rubyonrails.org",
     "name": "Ruby on Rails",
     "implies": "Ruby",
     "matches": [
@@ -10,16 +9,17 @@
         },
         {
             "regexp": "mod_(?:rails|rack)",
-            "search": "headers[x-powered-by]"
+            "search": "headers[server]"
         },
         {
             "regexp": "mod_(?:rails|rack)",
-            "search": "headers[server]"
+            "search": "headers[x-powered-by]"
         },
         {
             "certainty": 75,
             "regexp": ".*",
             "search": "cookies[_session_id]"
         }
-    ]
+    ],
+    "website": "https://rubyonrails.org"
 }

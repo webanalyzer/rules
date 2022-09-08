@@ -1,5 +1,4 @@
 {
-    "website": "https://gitea.io",
     "name": "Gitea",
     "implies": "Go",
     "matches": [
@@ -8,12 +7,13 @@
             "search": "meta[keywords]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[i_like_gitea]"
+            "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 Gitea Version: ([\\d.]+)"
+            "regexp": ".*",
+            "search": "cookies[i_like_gitea]"
         }
-    ]
+    ],
+    "website": "https://gitea.io"
 }

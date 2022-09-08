@@ -1,14 +1,14 @@
 {
-    "website": "https://paypal.com",
     "name": "PayPal",
     "matches": [
         {
-            "regexp": "in-context-paypal-metadata",
-            "search": "meta[id]"
-        },
-        {
             "regexp": "\\.paypal\\.com",
             "search": "headers[content-security-policy]"
+        },
+        {
+            "regexp": "in-context-paypal-metadata",
+            "search": "meta[id]"
         }
-    ]
+    ],
+    "website": "https://paypal.com"
 }

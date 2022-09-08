@@ -1,5 +1,4 @@
 {
-    "website": "http://gogs.io",
     "name": "Gogs",
     "implies": [
         "Go",
@@ -11,15 +10,16 @@
             "search": "meta[keywords]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[i_like_gogits]"
-        },
-        {
-            "offset": 1,
-            "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 \\d{4} Gogs Version: ([\\d.]+) Page:"
+            "regexp": "<div class=\"ui left\">\\n\\s+\u00a9 \\d{4} Gogs Version: ([\\d.]+) Page:",
+            "offset": 1
         },
         {
             "regexp": "<button class=\"ui basic clone button\" id=\"repo-clone-ssh\" data-link=\"gogs@"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[i_like_gogits]"
         }
-    ]
+    ],
+    "website": "http://gogs.io"
 }

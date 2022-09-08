@@ -1,5 +1,4 @@
 {
-    "website": "https://mybb.com",
     "name": "MyBB",
     "implies": [
         "PHP",
@@ -8,11 +7,12 @@
     "matches": [
         {
             "regexp": ".*",
-            "search": "cookies[mybb[lastactive]]"
+            "search": "cookies[mybb[lastvisit]]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[mybb[lastvisit]]"
+            "search": "cookies[mybb[lastactive]]"
         }
-    ]
+    ],
+    "website": "https://mybb.com"
 }

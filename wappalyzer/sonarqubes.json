@@ -1,5 +1,4 @@
 {
-    "website": "https://www.sonarqube.org/",
     "name": "SonarQubes",
     "implies": "Java",
     "matches": [
@@ -8,11 +7,12 @@
             "search": "meta[application-name]"
         },
         {
-            "offset": 1,
-            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)"
+            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)",
+            "offset": 1
         },
         {
             "regexp": "<title>SonarQube</title>"
         }
-    ]
+    ],
+    "website": "https://www.sonarqube.org/"
 }
