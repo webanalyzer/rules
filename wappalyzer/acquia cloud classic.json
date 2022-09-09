@@ -1,5 +1,6 @@
 {
     "name": "Acquia Cloud Classic",
+    "website": "https://docs.acquia.com/cloud-platform/",
     "implies": [
         "Acquia Cloud Platform",
         "Amazon EC2",
@@ -8,9 +9,8 @@
     ],
     "matches": [
         {
-            "regexp": "prod",
-            "search": "headers[x-ah-environment]"
+            "search": "headers[x-ah-environment]",
+            "regexp": "prod"
         }
-    ],
-    "website": "https://docs.acquia.com/cloud-platform/"
+    ]
 }
