@@ -1,15 +1,15 @@
 {
-    "name": "Yoast SEO",
-    "website": "https://yoast.com/wordpress/plugins/seo/",
-    "implies": "WordPress",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "<!-- This site is optimized with the Yoast (?:WordPress )?SEO plugin v([^\\s]+) -"
+            "regexp": "<!-- This site is optimized with the Yoast (?:WordPress )?SEO plugin v([^\\s]+) -",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "<!-- This site is optimized with the Yoast SEO Premium plugin v(?:[^\\s]+) \\(Yoast SEO v([^\\s]+)\\) -"
+            "regexp": "<!-- This site is optimized with the Yoast SEO Premium plugin v(?:[^\\s]+) \\(Yoast SEO v([^\\s]+)\\) -",
+            "offset": 1
         }
-    ]
+    ],
+    "implies": "WordPress",
+    "name": "Yoast SEO",
+    "website": "https://yoast.com/wordpress/plugins/seo/"
 }
