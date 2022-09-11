@@ -1,24 +1,24 @@
 {
-    "matches": [
-        {
-            "search": "script",
-            "regexp": "data-webpack",
-            "certainty": 50
-        },
-        {
-            "search": "script",
-            "regexp": "Container missing",
-            "certainty": 50
-        },
-        {
-            "search": "script",
-            "regexp": "Initialization of sharing external failed",
-            "certainty": 50
-        }
-    ],
+    "name": "Module Federation",
+    "website": "https://webpack.js.org/concepts/module-federation/",
     "implies": [
         "webpack"
     ],
-    "name": "Module Federation",
-    "website": "https://webpack.js.org/concepts/module-federation/"
+    "matches": [
+        {
+            "certainty": 50,
+            "regexp": "data-webpack",
+            "search": "script"
+        },
+        {
+            "certainty": 50,
+            "regexp": "Container missing",
+            "search": "script"
+        },
+        {
+            "certainty": 50,
+            "regexp": "Initialization of sharing external failed",
+            "search": "script"
+        }
+    ]
 }

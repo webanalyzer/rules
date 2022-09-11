@@ -1,27 +1,27 @@
 {
-    "matches": [
-        {
-            "search": "cookies[frontend]",
-            "regexp": ".*",
-            "certainty": 50
-        },
-        {
-            "search": "cookies[X-Magento-Vary]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[mage-translation-storage]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[mage-translation-file-version]",
-            "regexp": ".*"
-        }
-    ],
+    "name": "Magento",
+    "website": "https://magento.com",
     "implies": [
         "PHP",
         "MySQL"
     ],
-    "name": "Magento",
-    "website": "https://magento.com"
+    "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[mage-translation-storage]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[mage-translation-file-version]"
+        },
+        {
+            "certainty": 50,
+            "regexp": ".*",
+            "search": "cookies[frontend]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[X-Magento-Vary]"
+        }
+    ]
 }
