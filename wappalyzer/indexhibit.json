@@ -1,6 +1,5 @@
 {
     "name": "Indexhibit",
-    "website": "http://www.indexhibit.org",
     "implies": [
         "PHP",
         "Apache",
@@ -8,11 +7,12 @@
     ],
     "matches": [
         {
-            "regexp": "<(?:link|a href) [^>]+ndxz-studio"
+            "search": "meta[generator]",
+            "regexp": "Indexhibit"
         },
         {
-            "regexp": "Indexhibit",
-            "search": "meta[generator]"
+            "regexp": "<(?:link|a href) [^>]+ndxz-studio"
         }
-    ]
+    ],
+    "website": "http://www.indexhibit.org"
 }
