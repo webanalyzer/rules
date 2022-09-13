@@ -1,5 +1,5 @@
 {
-    "name": "Moodle",
+    "website": "http://moodle.org",
     "implies": "PHP",
     "matches": [
         {
@@ -11,12 +11,12 @@
             "regexp": ".*"
         },
         {
-            "search": "meta[keywords]",
-            "regexp": "^moodle"
+            "regexp": "<img[^>]+moodlelogo"
         },
         {
-            "regexp": "<img[^>]+moodlelogo"
+            "search": "meta[keywords]",
+            "regexp": "^moodle"
         }
     ],
-    "website": "http://moodle.org"
+    "name": "Moodle"
 }

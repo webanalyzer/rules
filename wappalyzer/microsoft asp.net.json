@@ -1,5 +1,5 @@
 {
-    "name": "Microsoft ASP.NET",
+    "website": "https://www.asp.net",
     "matches": [
         {
             "search": "cookies[ASPSESSION]",
@@ -13,18 +13,18 @@
             "regexp": "<input[^>]+name=\"__VIEWSTATE"
         },
         {
+            "offset": 1,
             "search": "headers[x-aspnet-version]",
-            "regexp": "(.+)",
-            "offset": 1
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "^ASP\\.NET"
+            "regexp": "(.+)"
         },
         {
             "search": "headers[set-cookie]",
             "regexp": "\\.AspNetCore"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^ASP\\.NET"
         }
     ],
-    "website": "https://www.asp.net"
+    "name": "Microsoft ASP.NET"
 }
