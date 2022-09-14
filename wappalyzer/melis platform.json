@@ -1,5 +1,4 @@
 {
-    "website": "https://www.melistechnology.com/",
     "implies": [
         "Apache",
         "PHP",
@@ -8,14 +7,15 @@
         "Laravel",
         "Zend"
     ],
+    "website": "https://www.melistechnology.com/",
     "matches": [
         {
-            "search": "meta[powered-by]",
-            "regexp": "^Melis CMS\\."
+            "regexp": "^Melis Platform\\.",
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "^Melis Platform\\."
+            "regexp": "^Melis CMS\\.",
+            "search": "meta[powered-by]"
         },
         {
             "regexp": "<!-- Rendered with Melis CMS V2"

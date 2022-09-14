@@ -1,15 +1,15 @@
 {
     "website": "https://httpwg.org/",
-    "excludes": "HTTP/2",
     "matches": [
         {
-            "search": "headers[x-firefox-http3]",
-            "regexp": "h3"
+            "regexp": "h3",
+            "search": "headers[x-firefox-http3]"
         },
         {
-            "search": "headers[alt-svc]",
-            "regexp": "h3"
+            "regexp": "h3",
+            "search": "headers[alt-svc]"
         }
     ],
+    "excludes": "HTTP/2",
     "name": "HTTP/3"
 }
