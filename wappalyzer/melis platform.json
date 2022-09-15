@@ -1,4 +1,5 @@
 {
+    "name": "Melis Platform",
     "implies": [
         "Apache",
         "PHP",
@@ -10,19 +11,18 @@
     "website": "https://www.melistechnology.com/",
     "matches": [
         {
-            "regexp": "^Melis Platform\\.",
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "^Melis CMS\\.",
-            "search": "meta[powered-by]"
-        },
-        {
             "regexp": "<!-- Rendered with Melis CMS V2"
         },
         {
             "regexp": "<!-- Rendered with Melis Platform"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "^Melis Platform\\."
+        },
+        {
+            "search": "meta[powered-by]",
+            "regexp": "^Melis CMS\\."
         }
-    ],
-    "name": "Melis Platform"
+    ]
 }

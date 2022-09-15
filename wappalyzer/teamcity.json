@@ -1,4 +1,5 @@
 {
+    "name": "TeamCity",
     "implies": [
         "Apache Tomcat",
         "Java",
@@ -11,13 +12,12 @@
     "website": "https://www.jetbrains.com/teamcity/",
     "matches": [
         {
-            "regexp": "TeamCity",
-            "search": "meta[application-name]"
+            "regexp": "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)"
+            "search": "meta[application-name]",
+            "regexp": "TeamCity"
         }
-    ],
-    "name": "TeamCity"
+    ]
 }

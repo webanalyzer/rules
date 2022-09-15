@@ -1,4 +1,5 @@
 {
+    "name": "Magento",
     "implies": [
         "PHP",
         "MySQL"
@@ -6,22 +7,21 @@
     "website": "https://magento.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[mage-translation-file-version]"
+            "search": "cookies[mage-translation-storage]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[X-Magento-Vary]"
+            "search": "cookies[mage-translation-file-version]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[mage-translation-storage]"
+            "search": "cookies[X-Magento-Vary]",
+            "regexp": ".*"
         },
         {
+            "search": "cookies[frontend]",
             "regexp": ".*",
-            "certainty": 50,
-            "search": "cookies[frontend]"
+            "certainty": 50
         }
-    ],
-    "name": "Magento"
+    ]
 }

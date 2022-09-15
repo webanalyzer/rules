@@ -1,4 +1,5 @@
 {
+    "name": "Website Creator",
     "implies": [
         "PHP",
         "MySQL",
@@ -7,13 +8,12 @@
     "website": "https://www.hosttech.ch/websitecreator",
     "matches": [
         {
-            "regexp": "Website Creator by hosttech",
-            "search": "meta[generator]"
+            "search": "meta[wsc_rendermode]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "meta[wsc_rendermode]"
+            "search": "meta[generator]",
+            "regexp": "Website Creator by hosttech"
         }
-    ],
-    "name": "Website Creator"
+    ]
 }

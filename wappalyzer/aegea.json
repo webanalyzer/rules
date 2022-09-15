@@ -1,4 +1,5 @@
 {
+    "name": "Aegea",
     "implies": [
         "PHP",
         "jQuery"
@@ -6,10 +7,9 @@
     "website": "http://blogengine.ru",
     "matches": [
         {
+            "search": "headers[x-powered-by]",
             "regexp": "^E2 Aegea v(\\d+)$",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
+            "offset": 1
         }
-    ],
-    "name": "Aegea"
+    ]
 }
