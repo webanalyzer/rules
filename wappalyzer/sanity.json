@@ -1,14 +1,14 @@
 {
-    "name": "Sanity",
-    "website": "https://www.sanity.io",
     "matches": [
         {
-            "search": "headers[x-sanity-shard]",
-            "regexp": ".*"
+            "regexp": "cdn\\.sanity\\.io",
+            "search": "headers[content-security-policy]"
         },
         {
-            "search": "headers[content-security-policy]",
-            "regexp": "cdn\\.sanity\\.io"
+            "regexp": ".*",
+            "search": "headers[x-sanity-shard]"
         }
-    ]
+    ],
+    "name": "Sanity",
+    "website": "https://www.sanity.io"
 }

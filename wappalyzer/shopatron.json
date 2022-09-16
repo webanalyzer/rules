@@ -1,17 +1,17 @@
 {
-    "name": "Shopatron",
-    "website": "http://ecommerce.shopatron.com",
     "matches": [
+        {
+            "regexp": "Shopatron",
+            "search": "meta[keywords]"
+        },
         {
             "regexp": "<body class=\"shopatron"
         },
         {
-            "certainty": 50,
-            "regexp": "<img[^>]+mediacdn\\.shopatron\\.com"
-        },
-        {
-            "search": "meta[keywords]",
-            "regexp": "Shopatron"
+            "regexp": "<img[^>]+mediacdn\\.shopatron\\.com",
+            "certainty": 50
         }
-    ]
+    ],
+    "name": "Shopatron",
+    "website": "http://ecommerce.shopatron.com"
 }

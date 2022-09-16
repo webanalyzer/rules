@@ -1,11 +1,8 @@
 {
-    "name": "Akaunting",
-    "implies": "Laravel",
-    "website": "https://akaunting.com",
     "matches": [
         {
-            "search": "headers[x-akaunting]",
-            "regexp": "^Free Accounting Software$"
+            "regexp": "^Free Accounting Software$",
+            "search": "headers[x-akaunting]"
         },
         {
             "regexp": "<link[^>]+akaunting-green\\.css"
@@ -13,5 +10,8 @@
         {
             "regexp": "Powered By Akaunting: <a [^>]*href=\"https?://(?:www\\.)?akaunting\\.com[^>]+>"
         }
-    ]
+    ],
+    "name": "Akaunting",
+    "website": "https://akaunting.com",
+    "implies": "Laravel"
 }
