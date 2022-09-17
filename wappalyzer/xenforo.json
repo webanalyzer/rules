@@ -1,22 +1,22 @@
 {
+    "website": "http://xenforo.com",
     "matches": [
+        {
+            "search": "cookies[xf_session]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[xf_csrf]",
+            "regexp": ".*"
+        },
         {
             "regexp": "(?:jQuery\\.extend\\(true, XenForo|<a[^>]+>Forum software by XenForo\u2122|<!--XF:branding|<html[^>]+id=\"XenForo\")"
         },
         {
             "regexp": "<html id=\"XF\" "
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[xf_session]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[xf_csrf]"
         }
     ],
     "name": "XenForo",
-    "website": "http://xenforo.com",
     "implies": [
         "PHP",
         "MySQL"
