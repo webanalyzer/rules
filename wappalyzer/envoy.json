@@ -1,14 +1,14 @@
 {
+    "name": "Envoy",
     "website": "https://www.envoyproxy.io/",
     "matches": [
         {
-            "search": "headers[x-envoy-upstream-service-time]",
-            "regexp": ".*"
+            "regexp": "^envoy$",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^envoy$"
+            "regexp": ".*",
+            "search": "headers[x-envoy-upstream-service-time]"
         }
-    ],
-    "name": "Envoy"
+    ]
 }
