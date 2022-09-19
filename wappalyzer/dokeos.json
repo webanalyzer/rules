@@ -6,18 +6,18 @@
         "CKEditor"
     ],
     "name": "Dokeos",
-    "website": "https://dokeos.com",
     "matches": [
         {
-            "regexp": "Dokeos",
-            "search": "headers[x-powered-by]"
+            "search": "meta[generator]",
+            "regexp": "Dokeos"
         },
         {
-            "regexp": "Dokeos",
-            "search": "meta[generator]"
+            "search": "headers[x-powered-by]",
+            "regexp": "Dokeos"
         },
         {
             "regexp": "(?:Portal <a[^>]+>Dokeos|@import \"[^\"]+dokeos_blue)"
         }
-    ]
+    ],
+    "website": "https://dokeos.com"
 }

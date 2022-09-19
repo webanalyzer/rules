@@ -4,18 +4,18 @@
         "MySQL"
     ],
     "name": "IPB",
-    "website": "https://invisioncommunity.com/",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[ipbWWLsession_id]"
+            "search": "cookies[ipbWWLmodpids]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ipbWWLmodpids]"
+            "search": "cookies[ipbWWLsession_id]",
+            "regexp": ".*"
         },
         {
             "regexp": "<link[^>]+ipb_[^>]+\\.css"
         }
-    ]
+    ],
+    "website": "https://invisioncommunity.com/"
 }

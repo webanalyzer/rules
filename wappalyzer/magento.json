@@ -4,24 +4,24 @@
         "MySQL"
     ],
     "name": "Magento",
-    "website": "https://magento.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[mage-translation-file-version]"
+            "search": "cookies[X-Magento-Vary]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
             "search": "cookies[frontend]",
-            "certainty": 50
+            "certainty": 50,
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[mage-translation-storage]"
+            "search": "cookies[mage-translation-file-version]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[X-Magento-Vary]"
+            "search": "cookies[mage-translation-storage]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "website": "https://magento.com"
 }
