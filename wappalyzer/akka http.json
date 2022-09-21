@@ -1,11 +1,11 @@
 {
-    "website": "http://akka.io",
     "name": "Akka HTTP",
     "matches": [
         {
-            "search": "headers[server]",
+            "regexp": "akka-http(?:/([\\d.]+))?",
             "offset": 1,
-            "regexp": "akka-http(?:/([\\d.]+))?"
+            "search": "headers[server]"
         }
-    ]
+    ],
+    "website": "http://akka.io"
 }
