@@ -10,8 +10,20 @@
             "search": "cookies[ARRAffinity]"
         },
         {
+            "regexp": ".*",
+            "search": "headers[azure-version]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-ms-client-request-id]"
+        },
+        {
             "regexp": "^Windows-Azure",
             "search": "headers[server]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[azure-regionname]"
         },
         {
             "regexp": ".*",
@@ -19,7 +31,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-ms-client-request-id]"
+            "search": "headers[azure-slotname]"
         },
         {
             "regexp": ".*",
@@ -27,19 +39,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[azure-version]"
-        },
-        {
-            "regexp": ".*",
             "search": "headers[x-ms-gateway-requestid]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[azure-slotname]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[azure-regionname]"
         }
     ],
     "website": "https://azure.microsoft.com"

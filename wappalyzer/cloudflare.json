@@ -7,15 +7,15 @@
         },
         {
             "regexp": ".*",
+            "search": "headers[cf-ray]"
+        },
+        {
+            "regexp": ".*",
             "search": "headers[cf-cache-status]"
         },
         {
             "regexp": "^cloudflare$",
             "search": "headers[server]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[cf-ray]"
         }
     ],
     "website": "http://www.cloudflare.com"

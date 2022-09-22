@@ -2,16 +2,16 @@
     "name": "Microsoft Publisher",
     "matches": [
         {
-            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:publisher\"|<!--[if pub]><xml>)"
+            "regexp": "^Publisher\\.",
+            "search": "meta[ProgId]"
         },
         {
-            "regexp": "Microsoft Publisher( [\\d.]+)?",
             "offset": 1,
+            "regexp": "Microsoft Publisher( [\\d.]+)?",
             "search": "meta[generator]"
         },
         {
-            "regexp": "^Publisher\\.",
-            "search": "meta[ProgId]"
+            "regexp": "(?:<html [^>]*xmlns:w=\"urn:schemas-microsoft-com:office:publisher\"|<!--[if pub]><xml>)"
         }
     ],
     "website": "https://office.microsoft.com/publisher"

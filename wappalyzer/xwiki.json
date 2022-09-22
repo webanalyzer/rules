@@ -1,15 +1,15 @@
 {
-    "implies": "Java",
-    "excludes": "MediaWiki",
     "name": "XWiki",
+    "excludes": "MediaWiki",
     "matches": [
-        {
-            "regexp": "<html[^>]data-xwiki-[^>]>"
-        },
         {
             "regexp": "xwiki",
             "search": "meta[wiki]"
+        },
+        {
+            "regexp": "<html[^>]data-xwiki-[^>]>"
         }
     ],
-    "website": "http://www.xwiki.org"
+    "website": "http://www.xwiki.org",
+    "implies": "Java"
 }

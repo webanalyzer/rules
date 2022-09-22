@@ -1,10 +1,9 @@
 {
-    "implies": "Java",
     "name": "Apache Tomcat",
     "matches": [
         {
-            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?",
             "offset": 1,
+            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?",
             "search": "headers[x-powered-by]"
         },
         {
@@ -12,5 +11,6 @@
             "search": "headers[server]"
         }
     ],
-    "website": "http://tomcat.apache.org"
+    "website": "http://tomcat.apache.org",
+    "implies": "Java"
 }
