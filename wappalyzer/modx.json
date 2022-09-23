@@ -1,5 +1,5 @@
 {
-    "name": "MODX",
+    "website": "http://modx.com",
     "matches": [
         {
             "regexp": "^MODX",
@@ -21,11 +21,11 @@
             "regexp": "<input[^>]+id=\"ajaxSearch_input"
         },
         {
-            "offset": 1,
             "regexp": "MODX[^\\d.]*([\\d.]+)?",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         }
     ],
-    "website": "http://modx.com",
+    "name": "MODX",
     "implies": "PHP"
 }

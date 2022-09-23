@@ -1,5 +1,5 @@
 {
-    "name": "Wix",
+    "website": "https://www.wix.com",
     "matches": [
         {
             "regexp": ".*",
@@ -7,11 +7,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-wix-renderer-server]"
+            "search": "headers[x-wix-request-id]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-wix-request-id]"
+            "search": "headers[x-wix-renderer-server]"
         },
         {
             "regexp": "\\.wix\\.com",
@@ -22,6 +22,6 @@
             "search": "meta[generator]"
         }
     ],
-    "website": "https://www.wix.com",
+    "name": "Wix",
     "implies": "React"
 }
