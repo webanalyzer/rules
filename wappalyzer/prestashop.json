@@ -1,9 +1,20 @@
 {
-    "website": "http://www.prestashop.com",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
     "matches": [
         {
-            "regexp": "^Prestashop$",
-            "search": "headers[powered-by]"
+            "search": "meta[generator]",
+            "regexp": "PrestaShop"
+        },
+        {
+            "search": "cookies[PrestaShop]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[powered-by]",
+            "regexp": "^Prestashop$"
         },
         {
             "regexp": "Powered by <a\\s+[^>]+>PrestaShop"
@@ -13,19 +24,8 @@
         },
         {
             "regexp": "<!-- /Module Block [a-z ]+ -->"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[PrestaShop]"
-        },
-        {
-            "regexp": "PrestaShop",
-            "search": "meta[generator]"
         }
     ],
-    "name": "PrestaShop",
-    "implies": [
-        "PHP",
-        "MySQL"
-    ]
+    "website": "http://www.prestashop.com",
+    "name": "PrestaShop"
 }

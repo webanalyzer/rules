@@ -1,19 +1,19 @@
 {
-    "website": "https://www.hubspot.com/products/cms",
+    "implies": "HubSpot",
     "matches": [
         {
-            "regexp": "HubSpot",
-            "search": "meta[generator]"
+            "search": "headers[x-hs-hub-id]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-hs-hub-id]"
+            "search": "headers[x-powered-by]",
+            "regexp": "HubSpot"
         },
         {
-            "regexp": "HubSpot",
-            "search": "headers[x-powered-by]"
+            "search": "meta[generator]",
+            "regexp": "HubSpot"
         }
     ],
-    "name": "HubSpot CMS Hub",
-    "implies": "HubSpot"
+    "website": "https://www.hubspot.com/products/cms",
+    "name": "HubSpot CMS Hub"
 }
