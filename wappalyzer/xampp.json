@@ -1,4 +1,6 @@
 {
+    "name": "XAMPP",
+    "website": "http://www.apachefriends.org/en/xampp.html",
     "implies": [
         "Apache",
         "MySQL",
@@ -7,15 +9,13 @@
     ],
     "matches": [
         {
-            "search": "meta[author]",
-            "certainty": 10,
-            "regexp": "Kai Oswald Seidler"
-        },
-        {
             "regexp": "<title>XAMPP(?: Version ([\\d\\.]+))?</title>",
             "offset": 1
+        },
+        {
+            "search": "meta[author]",
+            "regexp": "Kai Oswald Seidler",
+            "certainty": 10
         }
-    ],
-    "website": "http://www.apachefriends.org/en/xampp.html",
-    "name": "XAMPP"
+    ]
 }
