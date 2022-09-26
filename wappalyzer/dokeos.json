@@ -1,6 +1,4 @@
 {
-    "name": "Dokeos",
-    "website": "https://dokeos.com",
     "implies": [
         "PHP",
         "Xajax",
@@ -9,15 +7,17 @@
     ],
     "matches": [
         {
-            "regexp": "(?:Portal <a[^>]+>Dokeos|@import \"[^\"]+dokeos_blue)"
-        },
-        {
             "search": "headers[x-powered-by]",
             "regexp": "Dokeos"
         },
         {
             "search": "meta[generator]",
             "regexp": "Dokeos"
+        },
+        {
+            "regexp": "(?:Portal <a[^>]+>Dokeos|@import \"[^\"]+dokeos_blue)"
         }
-    ]
+    ],
+    "name": "Dokeos",
+    "website": "https://dokeos.com"
 }

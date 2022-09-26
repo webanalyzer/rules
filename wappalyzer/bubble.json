@@ -1,6 +1,4 @@
 {
-    "name": "Bubble",
-    "website": "http://bubble.io",
     "implies": "Node.js",
     "matches": [
         {
@@ -8,12 +6,14 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-bubble-capacity-limit]",
+            "search": "headers[x-bubble-capacity-used]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-bubble-capacity-used]",
+            "search": "headers[x-bubble-capacity-limit]",
             "regexp": ".*"
         }
-    ]
+    ],
+    "name": "Bubble",
+    "website": "http://bubble.io"
 }

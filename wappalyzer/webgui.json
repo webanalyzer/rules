@@ -1,6 +1,4 @@
 {
-    "name": "WebGUI",
-    "website": "http://www.webgui.org",
     "implies": "Perl",
     "matches": [
         {
@@ -8,9 +6,11 @@
             "regexp": ".*"
         },
         {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "^WebGUI ([\\d.]+)",
-            "offset": 1
+            "regexp": "^WebGUI ([\\d.]+)"
         }
-    ]
+    ],
+    "name": "WebGUI",
+    "website": "http://www.webgui.org"
 }

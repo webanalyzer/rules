@@ -1,15 +1,5 @@
 {
-    "name": "cPanel",
-    "website": "http://www.cpanel.net",
     "matches": [
-        {
-            "regexp": "<!-- cPanel"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "cpsrvd/([\\d.]+)",
-            "offset": 1
-        },
         {
             "search": "cookies[cpsession]",
             "regexp": ".*"
@@ -17,6 +7,16 @@
         {
             "search": "cookies[cprelogin]",
             "regexp": ".*"
+        },
+        {
+            "offset": 1,
+            "search": "headers[server]",
+            "regexp": "cpsrvd/([\\d.]+)"
+        },
+        {
+            "regexp": "<!-- cPanel"
         }
-    ]
+    ],
+    "name": "cPanel",
+    "website": "http://www.cpanel.net"
 }

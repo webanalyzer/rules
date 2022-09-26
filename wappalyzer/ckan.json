@@ -1,6 +1,4 @@
 {
-    "name": "Ckan",
-    "website": "http://ckan.org/",
     "implies": [
         "Python",
         "Solr",
@@ -17,9 +15,11 @@
             "regexp": "<http://ckan\\.org/>; rel=shortlink"
         },
         {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "^ckan ?([0-9.]+)$",
-            "offset": 1
+            "regexp": "^ckan ?([0-9.]+)$"
         }
-    ]
+    ],
+    "name": "Ckan",
+    "website": "http://ckan.org/"
 }
