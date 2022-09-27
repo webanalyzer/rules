@@ -1,5 +1,11 @@
 {
-    "matches": [],
     "name": "Astro",
-    "website": "https://astro.build"
+    "website": "https://astro.build",
+    "matches": [
+        {
+            "regexp": "^Astro\\sv([\\d\\.]+)$",
+            "offset": 1,
+            "search": "meta[generator]"
+        }
+    ]
 }

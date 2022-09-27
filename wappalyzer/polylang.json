@@ -1,5 +1,14 @@
 {
-    "matches": [],
     "name": "Polylang",
-    "website": "https://github.com/polylang/polylang"
+    "website": "https://polylang.pro",
+    "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[pll_language]"
+        },
+        {
+            "regexp": "Polylang(?:\\s[a-zA-Z]+)?",
+            "search": "headers[x-redirected-by]"
+        }
+    ]
 }

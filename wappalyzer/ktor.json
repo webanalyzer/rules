@@ -1,0 +1,15 @@
+{
+    "name": "Ktor",
+    "implies": "Kotlin",
+    "website": "https://ktor.io",
+    "matches": [
+        {
+            "regexp": "^Ktor/debug$",
+            "search": "headers[server]"
+        },
+        {
+            "regexp": "^Ktor$",
+            "search": "headers[x-engine]"
+        }
+    ]
+}
