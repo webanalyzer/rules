@@ -13,21 +13,21 @@
             "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         },
         {
-            "regexp": "^WordPress(?: ([\\d.]+))?",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "^WordPress(?: ([\\d.]+))?"
         },
         {
-            "regexp": ".*",
-            "search": "meta[shareaholic:wp_version]"
+            "search": "meta[shareaholic:wp_version]",
+            "regexp": ".*"
         },
         {
-            "regexp": "rel=\"https://api\\.w\\.org/\"",
-            "search": "headers[link]"
+            "search": "headers[x-pingback]",
+            "regexp": "/xmlrpc\\.php$"
         },
         {
-            "regexp": "/xmlrpc\\.php$",
-            "search": "headers[x-pingback]"
+            "search": "headers[link]",
+            "regexp": "rel=\"https://api\\.w\\.org/\""
         }
     ]
 }

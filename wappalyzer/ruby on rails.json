@@ -4,22 +4,22 @@
     "website": "https://rubyonrails.org",
     "matches": [
         {
-            "regexp": "^authenticity_token$",
-            "search": "meta[csrf-param]",
-            "certainty": 50
-        },
-        {
-            "regexp": ".*",
+            "certainty": 75,
             "search": "cookies[_session_id]",
-            "certainty": 75
+            "regexp": ".*"
         },
         {
-            "regexp": "mod_(?:rails|rack)",
-            "search": "headers[server]"
+            "certainty": 50,
+            "search": "meta[csrf-param]",
+            "regexp": "^authenticity_token$"
         },
         {
-            "regexp": "mod_(?:rails|rack)",
-            "search": "headers[x-powered-by]"
+            "search": "headers[server]",
+            "regexp": "mod_(?:rails|rack)"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "mod_(?:rails|rack)"
         }
     ]
 }

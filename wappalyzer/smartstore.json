@@ -10,17 +10,17 @@
             "regexp": "<meta property=\"sm:pagedata\""
         },
         {
-            "regexp": "^Smart[sS]tore(.NET)? (.+)$",
             "offset": 2,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "^Smart[sS]tore(.NET)? (.+)$"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[SMARTSTORE.VISITOR]"
+            "search": "cookies[SMARTSTORE.CUSTOMER]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[SMARTSTORE.CUSTOMER]"
+            "search": "cookies[SMARTSTORE.VISITOR]",
+            "regexp": ".*"
         }
     ]
 }

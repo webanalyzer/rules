@@ -6,21 +6,21 @@
             "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
         },
         {
-            "regexp": "^TiddlyWiki$",
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "^TiddlyWiki$",
-            "search": "meta[application-name]"
-        },
-        {
-            "regexp": "^TiddlyWiki created by Jeremy Ruston",
-            "search": "meta[copyright]"
-        },
-        {
-            "regexp": "^(.+)$",
             "offset": 1,
-            "search": "meta[tiddlywiki-version]"
+            "search": "meta[tiddlywiki-version]",
+            "regexp": "^(.+)$"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "^TiddlyWiki$"
+        },
+        {
+            "search": "meta[application-name]",
+            "regexp": "^TiddlyWiki$"
+        },
+        {
+            "search": "meta[copyright]",
+            "regexp": "^TiddlyWiki created by Jeremy Ruston"
         }
     ]
 }

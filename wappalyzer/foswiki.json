@@ -7,28 +7,28 @@
             "regexp": "<div class=\"foswiki(?:Copyright|Page|Main)\">"
         },
         {
-            "regexp": ".*",
-            "search": "meta[foswiki.SERVERTIME]"
+            "search": "cookies[SFOSWIKISID]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "meta[foswiki.WIKINAME]"
+            "search": "cookies[FOSWIKISTRIKEONE]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[FOSWIKISTRIKEONE]"
+            "search": "meta[foswiki.WIKINAME]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[SFOSWIKISID]"
+            "search": "meta[foswiki.SERVERTIME]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-foswikiuri]"
+            "search": "headers[x-foswikiaction]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-foswikiaction]"
+            "search": "headers[x-foswikiuri]",
+            "regexp": ".*"
         }
     ]
 }

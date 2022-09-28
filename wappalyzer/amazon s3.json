@@ -4,16 +4,16 @@
     "website": "http://aws.amazon.com/s3/",
     "matches": [
         {
-            "regexp": "s3[^ ]*amazonaws\\.com",
-            "search": "headers[content-security-policy]"
+            "search": "headers[server]",
+            "regexp": "^AmazonS3$"
         },
         {
-            "regexp": "^AmazonS3$",
-            "search": "headers[server]"
+            "search": "headers[content-security-policy]",
+            "regexp": "s3[^ ]*amazonaws\\.com"
         },
         {
-            "regexp": "s3[^ ]*\\.amazonaws\\.com",
-            "search": "headers[content-security-policy-report-only]"
+            "search": "headers[content-security-policy-report-only]",
+            "regexp": "s3[^ ]*\\.amazonaws\\.com"
         }
     ]
 }

@@ -4,30 +4,30 @@
     "website": "http://dnnsoftware.com",
     "matches": [
         {
+            "search": "meta[generator]",
+            "regexp": "DotNetNuke"
+        },
+        {
             "regexp": "<!-- by DotNetNuke Corporation"
         },
         {
             "regexp": "<!-- DNN Platform"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[DotNetNukeAnonymous]"
+            "search": "cookies[DotNetNukeAnonymous]",
+            "regexp": ".*"
         },
         {
-            "regexp": "DotNetNuke",
-            "search": "meta[generator]"
+            "search": "headers[x-compressed-by]",
+            "regexp": "DotNetNuke"
         },
         {
-            "regexp": "dnn_IsMobile=",
-            "search": "headers[cookie]"
+            "search": "headers[dnnoutputcache]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[dnnoutputcache]"
-        },
-        {
-            "regexp": "DotNetNuke",
-            "search": "headers[x-compressed-by]"
+            "search": "headers[cookie]",
+            "regexp": "dnn_IsMobile="
         }
     ]
 }

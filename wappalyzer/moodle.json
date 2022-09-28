@@ -7,16 +7,16 @@
             "regexp": "<img[^>]+moodlelogo"
         },
         {
-            "regexp": "^moodle",
-            "search": "meta[keywords]"
+            "search": "cookies[MOODLEID_]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[MOODLEID_]"
+            "search": "cookies[MoodleSession]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[MoodleSession]"
+            "search": "meta[keywords]",
+            "regexp": "^moodle"
         }
     ]
 }

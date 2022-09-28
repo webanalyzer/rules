@@ -6,25 +6,25 @@
             "regexp": "<input[^>]+name=\"__VIEWSTATE"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ASPSESSION]"
+            "search": "cookies[ASPSESSION]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[ASP.NET_SessionId]"
+            "search": "cookies[ASP.NET_SessionId]",
+            "regexp": ".*"
         },
         {
-            "regexp": "(.+)",
             "offset": 1,
-            "search": "headers[x-aspnet-version]"
+            "search": "headers[x-aspnet-version]",
+            "regexp": "(.+)"
         },
         {
-            "regexp": "^ASP\\.NET",
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-powered-by]",
+            "regexp": "^ASP\\.NET"
         },
         {
-            "regexp": "\\.AspNetCore",
-            "search": "headers[set-cookie]"
+            "search": "headers[set-cookie]",
+            "regexp": "\\.AspNetCore"
         }
     ]
 }

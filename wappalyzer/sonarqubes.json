@@ -4,15 +4,15 @@
     "website": "https://www.sonarqube.org/",
     "matches": [
         {
-            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)",
-            "offset": 1
+            "offset": 1,
+            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)"
         },
         {
             "regexp": "<title>SonarQube</title>"
         },
         {
-            "regexp": "^SonarQubes$",
-            "search": "meta[application-name]"
+            "search": "meta[application-name]",
+            "regexp": "^SonarQubes$"
         }
     ]
 }

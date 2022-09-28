@@ -7,14 +7,14 @@
     "website": "https://developers.sikido.vn/docs/cms/",
     "matches": [
         {
-            "regexp": "^Skilldo$",
-            "search": "headers[cms-name]"
+            "search": "headers[cms-name]",
+            "regexp": "^Skilldo$"
         },
         {
-            "regexp": "([\\d\\.]+)",
+            "certainty": 0,
             "offset": 1,
             "search": "headers[cms-version]",
-            "certainty": 0
+            "regexp": "([\\d\\.]+)"
         }
     ]
 }

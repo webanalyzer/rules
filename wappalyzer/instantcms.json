@@ -4,12 +4,12 @@
     "website": "http://www.instantcms.ru",
     "matches": [
         {
-            "regexp": "InstantCMS",
-            "search": "meta[generator]"
+            "search": "cookies[InstantCMS[logdate]]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[InstantCMS[logdate]]"
+            "search": "meta[generator]",
+            "regexp": "InstantCMS"
         }
     ]
 }

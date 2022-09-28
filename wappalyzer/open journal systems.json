@@ -4,13 +4,13 @@
     "website": "http://pkp.sfu.ca/ojs",
     "matches": [
         {
-            "regexp": "Open Journal Systems(?: ([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "cookies[OJSSID]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[OJSSID]"
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "Open Journal Systems(?: ([\\d.]+))?"
         }
     ]
 }

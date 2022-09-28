@@ -4,13 +4,13 @@
     "website": "http://hub.opensolaris.org/bin/view/Project+opengrok/WebHome",
     "matches": [
         {
-            "regexp": "OpenGrok(?: v?([\\d.]+))?",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "OpenGrok(?: v?([\\d.]+))?"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[OpenGrok]"
+            "search": "cookies[OpenGrok]",
+            "regexp": ".*"
         }
     ]
 }

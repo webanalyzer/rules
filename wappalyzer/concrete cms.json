@@ -4,13 +4,13 @@
     "website": "https://www.concretecms.com",
     "matches": [
         {
-            "regexp": "^concrete5(?: - ([\\d.]+)$)?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "cookies[CONCRETE5]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[CONCRETE5]"
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "^concrete5(?: - ([\\d.]+)$)?"
         }
     ]
 }
