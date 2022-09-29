@@ -1,6 +1,5 @@
 {
     "name": "DokuWiki",
-    "implies": "PHP",
     "website": "https://www.dokuwiki.org",
     "matches": [
         {
@@ -8,9 +7,10 @@
             "regexp": ".*"
         },
         {
-            "offset": 1,
             "search": "meta[generator]",
+            "offset": 1,
             "regexp": "^DokuWiki( Release [\\d-]+)?"
         }
-    ]
+    ],
+    "implies": "PHP"
 }

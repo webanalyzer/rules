@@ -1,6 +1,5 @@
 {
     "name": "Bugzilla",
-    "implies": "Perl",
     "website": "http://www.bugzilla.org",
     "matches": [
         {
@@ -22,9 +21,10 @@
             "regexp": ".*"
         },
         {
-            "offset": 1,
             "search": "meta[generator]",
+            "offset": 1,
             "regexp": "Bugzilla ?([\\d.]+)?"
         }
-    ]
+    ],
+    "implies": "Perl"
 }

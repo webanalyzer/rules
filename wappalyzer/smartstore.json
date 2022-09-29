@@ -1,6 +1,5 @@
 {
     "name": "Smartstore",
-    "implies": "Microsoft ASP.NET",
     "website": "https://www.smartstore.com",
     "matches": [
         {
@@ -10,17 +9,18 @@
             "regexp": "<meta property=\"sm:pagedata\""
         },
         {
-            "offset": 2,
-            "search": "meta[generator]",
-            "regexp": "^Smart[sS]tore(.NET)? (.+)$"
-        },
-        {
             "search": "cookies[SMARTSTORE.CUSTOMER]",
             "regexp": ".*"
         },
         {
             "search": "cookies[SMARTSTORE.VISITOR]",
             "regexp": ".*"
+        },
+        {
+            "search": "meta[generator]",
+            "offset": 2,
+            "regexp": "^Smart[sS]tore(.NET)? (.+)$"
         }
-    ]
+    ],
+    "implies": "Microsoft ASP.NET"
 }

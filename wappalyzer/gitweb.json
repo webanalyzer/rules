@@ -1,9 +1,5 @@
 {
     "name": "gitweb",
-    "implies": [
-        "Perl",
-        "git"
-    ],
     "website": "http://git-scm.com",
     "matches": [
         {
@@ -11,9 +7,13 @@
             "regexp": "<!-- git web interface version ([\\d.]+)?"
         },
         {
-            "offset": 1,
             "search": "meta[generator]",
+            "offset": 1,
             "regexp": "gitweb(?:/([\\d.]+\\d))?"
         }
+    ],
+    "implies": [
+        "Perl",
+        "git"
     ]
 }
