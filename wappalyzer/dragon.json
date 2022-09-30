@@ -1,11 +1,11 @@
 {
-    "name": "Dragon",
     "website": "https://dragon-lang.org",
+    "name": "Dragon",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
+            "regexp": "Dragon Native ([\\d.]+)",
             "offset": 1,
-            "regexp": "Dragon Native ([\\d.]+)"
+            "search": "headers[x-powered-by]"
         }
     ],
     "implies": "Apache"

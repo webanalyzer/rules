@@ -1,17 +1,17 @@
 {
-    "name": "IPB",
     "website": "https://invisioncommunity.com/",
+    "name": "IPB",
     "matches": [
         {
+            "regexp": ".*",
+            "search": "cookies[ipbWWLmodpids]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[ipbWWLsession_id]"
+        },
+        {
             "regexp": "<link[^>]+ipb_[^>]+\\.css"
-        },
-        {
-            "search": "cookies[ipbWWLsession_id]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[ipbWWLmodpids]",
-            "regexp": ".*"
         }
     ],
     "implies": [

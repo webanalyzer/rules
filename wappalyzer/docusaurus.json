@@ -1,11 +1,11 @@
 {
-    "name": "Docusaurus",
     "website": "https://docusaurus.io/",
+    "name": "Docusaurus",
     "matches": [
         {
-            "search": "meta[generator]",
+            "regexp": "^Docusaurus(?: v(.+))?$",
             "offset": 1,
-            "regexp": "^Docusaurus(?: v(.+))?$"
+            "search": "meta[generator]"
         }
     ],
     "implies": [

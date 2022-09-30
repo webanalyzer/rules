@@ -1,14 +1,14 @@
 {
-    "name": "CakePHP",
     "website": "http://cakephp.org",
+    "name": "CakePHP",
     "matches": [
         {
-            "search": "meta[application-name]",
-            "regexp": "CakePHP"
+            "regexp": ".*",
+            "search": "cookies[cakephp]"
         },
         {
-            "search": "cookies[cakephp]",
-            "regexp": ".*"
+            "regexp": "CakePHP",
+            "search": "meta[application-name]"
         }
     ],
     "implies": "PHP"

@@ -1,11 +1,11 @@
 {
-    "name": "Asciidoctor",
     "website": "https://github.com/asciidoctor/asciidoctor",
+    "name": "Asciidoctor",
     "matches": [
         {
-            "search": "meta[generator]",
+            "regexp": "^Asciidoctor\\s([\\d\\.]+)$",
             "offset": 1,
-            "regexp": "^Asciidoctor\\s([\\d\\.]+)$"
+            "search": "meta[generator]"
         }
     ],
     "implies": "Ruby"
