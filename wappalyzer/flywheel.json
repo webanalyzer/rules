@@ -1,13 +1,9 @@
 {
+    "implies": "WordPress",
     "matches": [
         {
-            "regexp": "^Flywheel(?:/([\\d.]+))?",
-            "search": "headers[x-fw-server]",
-            "offset": 1
-        },
-        {
             "regexp": ".*",
-            "search": "headers[x-fw-static]"
+            "search": "headers[x-fw-type]"
         },
         {
             "regexp": ".*",
@@ -18,11 +14,15 @@
             "search": "headers[x-fw-hash]"
         },
         {
+            "regexp": "^Flywheel(?:/([\\d.]+))?",
+            "offset": 1,
+            "search": "headers[x-fw-server]"
+        },
+        {
             "regexp": ".*",
-            "search": "headers[x-fw-type]"
+            "search": "headers[x-fw-static]"
         }
     ],
-    "website": "https://getflywheel.com",
-    "implies": "WordPress",
-    "name": "Flywheel"
+    "name": "Flywheel",
+    "website": "https://getflywheel.com"
 }
