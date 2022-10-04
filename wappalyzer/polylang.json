@@ -1,14 +1,14 @@
 {
+    "website": "https://polylang.pro",
     "matches": [
         {
-            "regexp": "Polylang(?:\\s[a-zA-Z]+)?",
-            "search": "headers[x-redirected-by]"
+            "search": "cookies[pll_language]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[pll_language]"
+            "search": "headers[x-redirected-by]",
+            "regexp": "Polylang(?:\\s[a-zA-Z]+)?"
         }
     ],
-    "name": "Polylang",
-    "website": "https://polylang.pro"
+    "name": "Polylang"
 }

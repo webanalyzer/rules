@@ -1,15 +1,15 @@
 {
-    "implies": "Laravel",
+    "website": "http://pyrocms.com",
     "matches": [
         {
-            "regexp": "PyroCMS",
-            "search": "headers[x-streams-distribution]"
+            "search": "cookies[pyrocms]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[pyrocms]"
+            "search": "headers[x-streams-distribution]",
+            "regexp": "PyroCMS"
         }
     ],
     "name": "PyroCMS",
-    "website": "http://pyrocms.com"
+    "implies": "Laravel"
 }
