@@ -1,13 +1,13 @@
 {
-    "website": "https://neos.io",
-    "matches": [
-        {
-            "search": "headers[x-flow-powered]",
-            "offset": 1,
-            "regexp": "Neos/?(.+)?$"
-        }
-    ],
     "name": "Neos CMS",
     "implies": "Neos Flow",
-    "excludes": "TYPO3 CMS"
+    "excludes": "TYPO3 CMS",
+    "matches": [
+        {
+            "offset": 1,
+            "regexp": "Neos/?(.+)?$",
+            "search": "headers[x-flow-powered]"
+        }
+    ],
+    "website": "https://neos.io"
 }

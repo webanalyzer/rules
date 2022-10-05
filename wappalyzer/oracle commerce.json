@@ -1,11 +1,11 @@
 {
-    "website": "http://www.oracle.com/applications/customer-experience/commerce/products/commerce-platform/index.html",
+    "name": "Oracle Commerce",
     "matches": [
         {
-            "search": "headers[x-atg-version]",
             "offset": 1,
-            "regexp": "(?:ATGPlatform/([\\d.]+))?"
+            "regexp": "(?:ATGPlatform/([\\d.]+))?",
+            "search": "headers[x-atg-version]"
         }
     ],
-    "name": "Oracle Commerce"
+    "website": "http://www.oracle.com/applications/customer-experience/commerce/products/commerce-platform/index.html"
 }

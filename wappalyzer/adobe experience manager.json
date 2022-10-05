@@ -1,9 +1,10 @@
 {
-    "website": "https://www.adobe.com/marketing/experience-manager.html",
+    "name": "Adobe Experience Manager",
+    "implies": "Java",
     "matches": [
         {
-            "search": "script",
-            "regexp": "aem-(?:GridColumn|apps/)"
+            "regexp": "aem-(?:GridColumn|apps/)",
+            "search": "script"
         },
         {
             "regexp": "<div class=\"[^\"]*parbase"
@@ -15,6 +16,5 @@
             "regexp": "<div class=\"[^\"]*aem-Grid"
         }
     ],
-    "name": "Adobe Experience Manager",
-    "implies": "Java"
+    "website": "https://www.adobe.com/marketing/experience-manager.html"
 }

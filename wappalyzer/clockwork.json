@@ -1,12 +1,12 @@
 {
-    "website": "https://github.com/underground-works/clockwork-app",
+    "name": "Clockwork",
+    "implies": "PHP",
     "matches": [
         {
-            "search": "headers[x-clockwork-version]",
             "offset": 1,
-            "regexp": "^([\\d\\.]+)$"
+            "regexp": "^([\\d\\.]+)$",
+            "search": "headers[x-clockwork-version]"
         }
     ],
-    "name": "Clockwork",
-    "implies": "PHP"
+    "website": "https://github.com/underground-works/clockwork-app"
 }

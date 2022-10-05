@@ -1,14 +1,14 @@
 {
-    "website": "https://sitepad.com",
-    "matches": [
-        {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^SitePad(?:\\s([\\d\\.]+))?$"
-        }
-    ],
     "name": "SitePad",
     "implies": [
         "PHP"
-    ]
+    ],
+    "matches": [
+        {
+            "offset": 1,
+            "regexp": "^SitePad(?:\\s([\\d\\.]+))?$",
+            "search": "meta[generator]"
+        }
+    ],
+    "website": "https://sitepad.com"
 }
