@@ -4,19 +4,19 @@
         "Node.js",
         "Elasticsearch"
     ],
+    "website": "http://www.elastic.co/products/kibana",
     "matches": [
         {
-            "regexp": "kibana",
-            "search": "headers[kbn-name]"
+            "regexp": "<title>Kibana</title>"
+        },
+        {
+            "search": "headers[kbn-name]",
+            "regexp": "kibana"
         },
         {
             "offset": 1,
-            "regexp": "^([\\d.]+)$",
-            "search": "headers[kbn-version]"
-        },
-        {
-            "regexp": "<title>Kibana</title>"
+            "search": "headers[kbn-version]",
+            "regexp": "^([\\d.]+)$"
         }
-    ],
-    "website": "http://www.elastic.co/products/kibana"
+    ]
 }

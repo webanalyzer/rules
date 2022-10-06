@@ -1,15 +1,15 @@
 {
     "name": "Atlassian Confluence",
     "implies": "Java",
+    "website": "http://www.atlassian.com/software/confluence/overview/team-collaboration-software",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "meta[confluence-request-time]"
+            "search": "meta[confluence-request-time]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-confluence-request-time]"
+            "search": "headers[x-confluence-request-time]",
+            "regexp": ".*"
         }
-    ],
-    "website": "http://www.atlassian.com/software/confluence/overview/team-collaboration-software"
+    ]
 }

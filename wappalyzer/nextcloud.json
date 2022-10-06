@@ -1,15 +1,15 @@
 {
     "name": "Nextcloud",
     "implies": "PHP",
+    "website": "https://nextcloud.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[ __Host-nc_sameSiteCookielax]"
+            "search": "cookies[ __Host-nc_sameSiteCookielax]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[__Host-nc_sameSiteCookiestrict]"
+            "search": "cookies[__Host-nc_sameSiteCookiestrict]",
+            "regexp": ".*"
         }
-    ],
-    "website": "https://nextcloud.com"
+    ]
 }
