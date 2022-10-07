@@ -1,13 +1,13 @@
 {
-    "name": "React",
-    "website": "https://reactjs.org",
     "matches": [
         {
-            "search": "meta[description]",
-            "regexp": "^Web site created using create-react-app$"
+            "regexp": "<[^>]+data-react"
         },
         {
-            "regexp": "<[^>]+data-react"
+            "regexp": "^Web site created using create-react-app$",
+            "search": "meta[description]"
         }
-    ]
+    ],
+    "name": "React",
+    "website": "https://reactjs.org"
 }

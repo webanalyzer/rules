@@ -1,17 +1,17 @@
 {
-    "name": "HighStore",
-    "implies": "Microsoft ASP.NET",
-    "website": "https://digitalserver.ir",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "^HighStore\\.IR$"
+            "certainty": 50,
+            "regexp": "^([\\d\\.]+)$",
+            "search": "meta[hs:version]",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "search": "meta[hs:version]",
-            "certainty": 50,
-            "regexp": "^([\\d\\.]+)$"
+            "regexp": "^HighStore\\.IR$",
+            "search": "meta[generator]"
         }
-    ]
+    ],
+    "name": "HighStore",
+    "implies": "Microsoft ASP.NET",
+    "website": "https://digitalserver.ir"
 }
