@@ -1,21 +1,21 @@
 {
+    "name": "Arastta",
     "matches": [
         {
-            "regexp": "^(.+)$",
+            "search": "headers[x-arastta]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-arastta]",
+            "regexp": ".*"
+        },
+        {
             "search": "headers[arastta]",
-            "offset": 1
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-arastta]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-arastta]"
+            "offset": 1,
+            "regexp": "^(.+)$"
         }
     ],
+    "website": "http://arastta.org",
     "excludes": "OpenCart",
-    "name": "Arastta",
-    "implies": "PHP",
-    "website": "http://arastta.org"
+    "implies": "PHP"
 }
