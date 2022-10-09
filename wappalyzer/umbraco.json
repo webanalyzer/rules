@@ -2,17 +2,17 @@
     "name": "Umbraco",
     "matches": [
         {
+            "regexp": "^(.+)$",
             "search": "headers[x-umbraco-version]",
-            "offset": 1,
-            "regexp": "^(.+)$"
+            "offset": 1
         },
         {
-            "search": "meta[generator]",
-            "regexp": "umbraco"
+            "regexp": "/Umbraco/Api/",
+            "search": "script"
         },
         {
-            "search": "script",
-            "regexp": "/Umbraco/Api/"
+            "regexp": "umbraco",
+            "search": "meta[generator]"
         }
     ],
     "website": "http://umbraco.com",

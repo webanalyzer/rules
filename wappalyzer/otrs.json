@@ -2,9 +2,9 @@
     "name": "otrs",
     "matches": [
         {
+            "regexp": "OTRS ([\\d.]+)",
             "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "OTRS ([\\d.]+)"
+            "offset": 1
         },
         {
             "regexp": "<!--\\s+OTRS: Copyright"

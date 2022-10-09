@@ -2,9 +2,9 @@
     "name": "Application Request Routing",
     "matches": [
         {
+            "regexp": "^ARR/([\\d\\.]+)$",
             "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "^ARR/([\\d\\.]+)$"
+            "offset": 1
         }
     ],
     "website": "https://www.iis.net/downloads/microsoft/application-request-routing",

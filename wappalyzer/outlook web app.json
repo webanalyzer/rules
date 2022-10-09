@@ -2,9 +2,9 @@
     "name": "Outlook Web App",
     "matches": [
         {
+            "regexp": "([\\d\\.]+)?",
             "search": "headers[x-owa-version]",
-            "offset": 1,
-            "regexp": "([\\d\\.]+)?"
+            "offset": 1
         },
         {
             "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources",

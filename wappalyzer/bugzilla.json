@@ -2,13 +2,13 @@
     "name": "Bugzilla",
     "matches": [
         {
-            "search": "cookies[Bugzilla_login_request_cookie]",
-            "regexp": ".*"
+            "regexp": "Bugzilla ?([\\d.]+)?",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
-            "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "Bugzilla ?([\\d.]+)?"
+            "regexp": ".*",
+            "search": "cookies[Bugzilla_login_request_cookie]"
         },
         {
             "regexp": "href=\"enter_bug\\.cgi\">"

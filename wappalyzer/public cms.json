@@ -2,13 +2,13 @@
     "name": "Public CMS",
     "matches": [
         {
+            "regexp": "^(.+)$",
             "search": "headers[x-powered-publiccms]",
-            "offset": 1,
-            "regexp": "^(.+)$"
+            "offset": 1
         },
         {
-            "search": "cookies[PUBLICCMS_USER]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[PUBLICCMS_USER]"
         }
     ],
     "website": "http://www.publiccms.com",

@@ -2,21 +2,21 @@
     "name": "WordPress",
     "matches": [
         {
-            "search": "headers[link]",
-            "regexp": "rel=\"https://api\\.w\\.org/\""
+            "regexp": "/xmlrpc\\.php$",
+            "search": "headers[x-pingback]"
         },
         {
-            "search": "headers[x-pingback]",
-            "regexp": "/xmlrpc\\.php$"
+            "regexp": "rel=\"https://api\\.w\\.org/\"",
+            "search": "headers[link]"
         },
         {
-            "search": "meta[shareaholic:wp_version]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "meta[shareaholic:wp_version]"
         },
         {
+            "regexp": "^WordPress(?: ([\\d.]+))?",
             "search": "meta[generator]",
-            "offset": 1,
-            "regexp": "^WordPress(?: ([\\d.]+))?"
+            "offset": 1
         },
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"

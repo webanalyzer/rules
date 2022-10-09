@@ -2,18 +2,18 @@
     "name": "PHP",
     "matches": [
         {
-            "search": "headers[server]",
-            "offset": 1,
-            "regexp": "php/?([\\d.]+)?"
-        },
-        {
+            "regexp": "^php/?([\\d.]+)?",
             "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "^php/?([\\d.]+)?"
+            "offset": 1
         },
         {
-            "search": "cookies[PHPSESSID]",
-            "regexp": ".*"
+            "regexp": "php/?([\\d.]+)?",
+            "search": "headers[server]",
+            "offset": 1
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[PHPSESSID]"
         }
     ],
     "website": "http://php.net"
