@@ -1,9 +1,7 @@
 {
-    "name": "CodeIgniter",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[exp_tracker]"
+            "regexp": "<input[^>]+name=\"ci_csrf_token\""
         },
         {
             "regexp": ".*",
@@ -11,17 +9,19 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[exp_last_activity]"
+            "search": "cookies[exp_tracker]"
         },
         {
             "regexp": "^(.+)$",
-            "search": "cookies[ci_csrf_token]",
-            "offset": 1
+            "offset": 1,
+            "search": "cookies[ci_csrf_token]"
         },
         {
-            "regexp": "<input[^>]+name=\"ci_csrf_token\""
+            "regexp": ".*",
+            "search": "cookies[exp_last_activity]"
         }
     ],
+    "name": "CodeIgniter",
     "website": "http://codeigniter.com",
     "implies": "PHP"
 }

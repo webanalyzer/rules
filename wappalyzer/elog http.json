@@ -1,12 +1,12 @@
 {
-    "name": "ELOG HTTP",
     "matches": [
         {
             "regexp": "ELOG HTTP ?([\\d.-]+)?",
-            "search": "headers[server]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[server]"
         }
     ],
+    "name": "ELOG HTTP",
     "website": "http://midas.psi.ch/elog",
     "implies": "ELOG"
 }

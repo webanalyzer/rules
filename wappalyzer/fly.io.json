@@ -1,9 +1,8 @@
 {
-    "name": "Fly.io",
     "matches": [
         {
-            "regexp": "^Fly/[\\w]+\\s\\(.*\\)$",
-            "search": "headers[server]"
+            "regexp": ".*",
+            "search": "cookies[_fly]"
         },
         {
             "regexp": "^.*\\sfly\\.io$",
@@ -14,9 +13,10 @@
             "search": "headers[fly-request-id]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_fly]"
+            "regexp": "^Fly/[\\w]+\\s\\(.*\\)$",
+            "search": "headers[server]"
         }
     ],
+    "name": "Fly.io",
     "website": "https://fly.io"
 }
