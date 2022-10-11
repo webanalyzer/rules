@@ -1,11 +1,11 @@
 {
-    "matches": [
-        {
-            "regexp": ".*",
-            "search": "headers[x-cloud-trace-context]"
-        }
-    ],
     "name": "Google Cloud Trace",
     "website": "https://cloud.google.com/trace",
-    "implies": "Google Cloud"
+    "implies": "Google Cloud",
+    "matches": [
+        {
+            "search": "headers[x-cloud-trace-context]",
+            "regexp": ".*"
+        }
+    ]
 }

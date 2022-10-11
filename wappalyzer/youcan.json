@@ -1,10 +1,4 @@
 {
-    "matches": [
-        {
-            "regexp": "Youcan\\.Private\\.DC/",
-            "search": "headers[x-powered-by]"
-        }
-    ],
     "name": "YouCan",
     "website": "https://youcan.shop",
     "implies": [
@@ -12,5 +6,11 @@
         "MySQL",
         "Redis",
         "Laravel"
+    ],
+    "matches": [
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "Youcan\\.Private\\.DC/"
+        }
     ]
 }

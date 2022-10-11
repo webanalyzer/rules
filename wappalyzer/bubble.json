@@ -1,19 +1,19 @@
 {
-    "matches": [
-        {
-            "regexp": ".*",
-            "search": "headers[x-bubble-capacity-used]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-bubble-capacity-limit]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-bubble-perf]"
-        }
-    ],
     "name": "Bubble",
     "website": "http://bubble.io",
-    "implies": "Node.js"
+    "implies": "Node.js",
+    "matches": [
+        {
+            "search": "headers[x-bubble-capacity-limit]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-bubble-capacity-used]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-bubble-perf]",
+            "regexp": ".*"
+        }
+    ]
 }

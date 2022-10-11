@@ -1,12 +1,12 @@
 {
-    "matches": [
-        {
-            "regexp": "^Resin(?:/(\\S*))?",
-            "offset": 1,
-            "search": "headers[server]"
-        }
-    ],
     "name": "Resin",
     "website": "http://caucho.com",
-    "implies": "Java"
+    "implies": "Java",
+    "matches": [
+        {
+            "offset": 1,
+            "search": "headers[server]",
+            "regexp": "^Resin(?:/(\\S*))?"
+        }
+    ]
 }

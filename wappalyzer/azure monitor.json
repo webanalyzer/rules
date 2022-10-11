@@ -1,11 +1,11 @@
 {
-    "matches": [
-        {
-            "regexp": "js\\.monitor\\.azure\\.com",
-            "search": "headers[content-security-policy]"
-        }
-    ],
     "name": "Azure Monitor",
     "website": "https://azure.microsoft.com/en-us/services/monitor",
-    "implies": "Azure"
+    "implies": "Azure",
+    "matches": [
+        {
+            "search": "headers[content-security-policy]",
+            "regexp": "js\\.monitor\\.azure\\.com"
+        }
+    ]
 }

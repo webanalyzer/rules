@@ -1,12 +1,12 @@
 {
-    "matches": [
-        {
-            "regexp": "X-Cart(?: (\\d+))?",
-            "offset": 1,
-            "search": "meta[generator]"
-        }
-    ],
     "name": "X-Cart",
     "website": "https://kb.x-cart.com",
-    "implies": "PHP"
+    "implies": "PHP",
+    "matches": [
+        {
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "X-Cart(?: (\\d+))?"
+        }
+    ]
 }
