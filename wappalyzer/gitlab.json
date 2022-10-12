@@ -1,18 +1,17 @@
 {
-    "name": "GitLab",
-    "website": "https://about.gitlab.com",
     "implies": [
         "Ruby on Rails",
         "Vue.js"
     ],
+    "name": "GitLab",
     "matches": [
-        {
-            "search": "meta[og:site_name]",
-            "regexp": "^GitLab$"
-        },
         {
             "search": "cookies[_gitlab_session]",
             "regexp": ".*"
+        },
+        {
+            "search": "meta[og:site_name]",
+            "regexp": "^GitLab$"
         },
         {
             "regexp": "<meta content=\"https?://[^/]+/assets/gitlab_logo-"
@@ -20,5 +19,6 @@
         {
             "regexp": "<header class=\"navbar navbar-fixed-top navbar-gitlab with-horizontal-nav\">"
         }
-    ]
+    ],
+    "website": "https://about.gitlab.com"
 }
