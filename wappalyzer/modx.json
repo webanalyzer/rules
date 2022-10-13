@@ -1,15 +1,15 @@
 {
+    "website": "https://modx.com/content-management-framework",
     "implies": "PHP",
-    "name": "MODX",
     "matches": [
         {
-            "search": "meta[generator]",
             "regexp": "MODX[^\\d.]*([\\d.]+)?",
+            "search": "meta[generator]",
             "offset": 1
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^MODX"
+            "regexp": "^MODX",
+            "search": "headers[x-powered-by]"
         },
         {
             "regexp": "<a[^>]+>Powered by MODX</a>"
@@ -18,17 +18,17 @@
             "regexp": "<!-- Modx process time debug info -->"
         },
         {
-            "certainty": 20,
-            "regexp": "<(?:link|script)[^>]+assets/snippets/"
+            "regexp": "<(?:link|script)[^>]+assets/snippets/",
+            "certainty": 20
         },
         {
-            "certainty": 20,
-            "regexp": "<form[^>]+id=\"ajaxSearch_form"
+            "regexp": "<form[^>]+id=\"ajaxSearch_form",
+            "certainty": 20
         },
         {
-            "certainty": 20,
-            "regexp": "<input[^>]+id=\"ajaxSearch_input"
+            "regexp": "<input[^>]+id=\"ajaxSearch_input",
+            "certainty": 20
         }
     ],
-    "website": "https://modx.com/content-management-framework"
+    "name": "MODX"
 }
