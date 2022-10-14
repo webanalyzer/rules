@@ -1,6 +1,10 @@
 {
-    "website": "http://shopify.com",
+    "name": "Shopify",
     "matches": [
+        {
+            "regexp": "shopifyTag",
+            "search": "script"
+        },
         {
             "regexp": ".*",
             "search": "cookies[_shopify_s]"
@@ -25,11 +29,7 @@
         {
             "regexp": ".*",
             "search": "headers[x-shopify-stage]"
-        },
-        {
-            "regexp": "shopifyTag",
-            "search": "script"
         }
     ],
-    "name": "Shopify"
+    "website": "http://shopify.com"
 }

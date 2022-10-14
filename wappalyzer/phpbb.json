@@ -1,15 +1,6 @@
 {
-    "website": "https://phpbb.com",
-    "implies": "PHP",
+    "name": "phpBB",
     "matches": [
-        {
-            "regexp": "phpBB Group",
-            "search": "meta[copyright]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[phpbb]"
-        },
         {
             "regexp": "Powered by <a[^>]+phpBB"
         },
@@ -24,7 +15,16 @@
         },
         {
             "regexp": "<table class=\"[^\"]*forumline"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[phpbb]"
+        },
+        {
+            "regexp": "phpBB Group",
+            "search": "meta[copyright]"
         }
     ],
-    "name": "phpBB"
+    "implies": "PHP",
+    "website": "https://phpbb.com"
 }

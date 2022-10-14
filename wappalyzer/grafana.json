@@ -1,9 +1,5 @@
 {
-    "website": "https://grafana.com",
-    "implies": [
-        "Go",
-        "Macaron"
-    ],
+    "name": "Grafana",
     "matches": [
         {
             "regexp": ".+latestVersion\":\"[\\d\\.\\w\\-]+\"\\,\"version\":\"([\\d\\.]+)",
@@ -12,5 +8,9 @@
             "offset": 1
         }
     ],
-    "name": "Grafana"
+    "implies": [
+        "Go",
+        "Macaron"
+    ],
+    "website": "https://grafana.com"
 }
