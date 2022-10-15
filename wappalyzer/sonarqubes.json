@@ -2,17 +2,17 @@
     "name": "SonarQubes",
     "matches": [
         {
-            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)",
-            "offset": 1
+            "search": "meta[application-name]",
+            "regexp": "^SonarQubes$"
+        },
+        {
+            "offset": 1,
+            "regexp": "<link href=\"/css/sonar\\.css\\?v=([\\d.]+)"
         },
         {
             "regexp": "<title>SonarQube</title>"
-        },
-        {
-            "regexp": "^SonarQubes$",
-            "search": "meta[application-name]"
         }
     ],
-    "implies": "Java",
-    "website": "https://www.sonarqube.org/"
+    "website": "https://www.sonarqube.org/",
+    "implies": "Java"
 }

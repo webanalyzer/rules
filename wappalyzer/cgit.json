@@ -2,14 +2,14 @@
     "name": "cgit",
     "matches": [
         {
-            "regexp": "^cgit v([\\d.a-z-]+)$",
+            "offset": 1,
             "search": "meta[generator]",
-            "offset": 1
+            "regexp": "^cgit v([\\d.a-z-]+)$"
         }
     ],
+    "website": "http://git.zx2c4.com/cgit",
     "implies": [
         "git",
         "C"
-    ],
-    "website": "http://git.zx2c4.com/cgit"
+    ]
 }

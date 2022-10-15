@@ -2,13 +2,13 @@
     "name": "WebNode",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[_gat_wnd_header]"
+            "search": "cookies[_gat_wnd_header]",
+            "regexp": ".*"
         },
         {
-            "regexp": "^Webnode(?:\\s([\\d.]+))?$",
+            "offset": 1,
             "search": "meta[generator]",
-            "offset": 1
+            "regexp": "^Webnode(?:\\s([\\d.]+))?$"
         }
     ],
     "website": "https://www.webnode.com"

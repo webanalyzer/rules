@@ -2,25 +2,25 @@
     "name": "PHPFusion",
     "matches": [
         {
+            "offset": 1,
+            "search": "headers[x-phpfusion]",
+            "regexp": "(.+)$"
+        },
+        {
+            "offset": 1,
+            "search": "headers[x-powered-by]",
+            "regexp": "PHPFusion (.+)$"
+        },
+        {
             "regexp": "Powered by <a href=\"[^>]+phpfusion"
         },
         {
             "regexp": "Powered by <a href=\"[^>]+php-fusion"
-        },
-        {
-            "regexp": "(.+)$",
-            "search": "headers[x-phpfusion]",
-            "offset": 1
-        },
-        {
-            "regexp": "PHPFusion (.+)$",
-            "search": "headers[x-powered-by]",
-            "offset": 1
         }
     ],
+    "website": "https://phpfusion.com",
     "implies": [
         "PHP",
         "MySQL"
-    ],
-    "website": "https://phpfusion.com"
+    ]
 }

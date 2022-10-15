@@ -2,13 +2,13 @@
     "name": "GoDaddy Website Builder",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[dps_site_id]"
+            "search": "cookies[dps_site_id]",
+            "regexp": ".*"
         },
         {
-            "regexp": "Go Daddy Website Builder (.+)",
+            "offset": 1,
             "search": "meta[generator]",
-            "offset": 1
+            "regexp": "Go Daddy Website Builder (.+)"
         }
     ],
     "website": "https://www.godaddy.com/websites/website-builder"

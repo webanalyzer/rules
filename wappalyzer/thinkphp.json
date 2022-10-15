@@ -2,14 +2,14 @@
     "name": "ThinkPHP",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[thinkphp_show_page_trace]"
+            "search": "headers[x-powered-by]",
+            "regexp": "ThinkPHP"
         },
         {
-            "regexp": "ThinkPHP",
-            "search": "headers[x-powered-by]"
+            "search": "cookies[thinkphp_show_page_trace]",
+            "regexp": ".*"
         }
     ],
-    "implies": "PHP",
-    "website": "http://www.thinkphp.cn"
+    "website": "http://www.thinkphp.cn",
+    "implies": "PHP"
 }
