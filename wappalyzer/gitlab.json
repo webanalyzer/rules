@@ -1,10 +1,6 @@
 {
-    "name": "GitLab",
+    "website": "https://about.gitlab.com",
     "matches": [
-        {
-            "search": "cookies[_gitlab_session]",
-            "regexp": ".*"
-        },
         {
             "search": "meta[og:site_name]",
             "regexp": "^GitLab$"
@@ -14,11 +10,15 @@
         },
         {
             "regexp": "<header class=\"navbar navbar-fixed-top navbar-gitlab with-horizontal-nav\">"
+        },
+        {
+            "search": "cookies[_gitlab_session]",
+            "regexp": ".*"
         }
     ],
-    "website": "https://about.gitlab.com",
     "implies": [
         "Ruby on Rails",
         "Vue.js"
-    ]
+    ],
+    "name": "GitLab"
 }

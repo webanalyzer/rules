@@ -1,6 +1,9 @@
 {
-    "name": "Stripe",
+    "website": "http://stripe.com",
     "matches": [
+        {
+            "regexp": "<input[^>]+data-stripe"
+        },
         {
             "search": "cookies[__stripe_sid]",
             "regexp": ".*"
@@ -8,10 +11,7 @@
         {
             "search": "cookies[__stripe_mid]",
             "regexp": ".*"
-        },
-        {
-            "regexp": "<input[^>]+data-stripe"
         }
     ],
-    "website": "http://stripe.com"
+    "name": "Stripe"
 }

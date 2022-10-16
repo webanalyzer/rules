@@ -1,8 +1,12 @@
 {
-    "name": "Optimizely CMS",
+    "website": "https://www.optimizely.com/",
     "matches": [
         {
-            "search": "cookies[EPiSessionId]",
+            "search": "meta[generator]",
+            "regexp": "EPiServer"
+        },
+        {
+            "search": "cookies[EPiServer]",
             "regexp": ".*"
         },
         {
@@ -10,14 +14,10 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[EPiServer]",
+            "search": "cookies[EPiSessionId]",
             "regexp": ".*"
-        },
-        {
-            "search": "meta[generator]",
-            "regexp": "EPiServer"
         }
     ],
-    "website": "https://www.optimizely.com/",
-    "implies": "Microsoft ASP.NET"
+    "implies": "Microsoft ASP.NET",
+    "name": "Optimizely CMS"
 }
