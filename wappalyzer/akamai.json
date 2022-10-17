@@ -1,12 +1,12 @@
 {
-    "website": "http://akamai.com",
+    "name": "Akamai",
     "matches": [
         {
-            "search": "headers[x-edgeconnect-midmile-rtt]",
+            "search": "headers[x-akamai-transformed]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-akamai-transformed]",
+            "search": "headers[x-edgeconnect-midmile-rtt]",
             "regexp": ".*"
         },
         {
@@ -14,5 +14,5 @@
             "regexp": ".*"
         }
     ],
-    "name": "Akamai"
+    "website": "http://akamai.com"
 }

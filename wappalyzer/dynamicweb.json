@@ -1,16 +1,16 @@
 {
-    "website": "http://www.dynamicweb.dk",
+    "name": "Dynamicweb",
     "matches": [
-        {
-            "search": "meta[generator]",
-            "regexp": "Dynamicweb ([\\d.]+)",
-            "offset": 1
-        },
         {
             "search": "cookies[Dynamicweb]",
             "regexp": ".*"
+        },
+        {
+            "offset": 1,
+            "search": "meta[generator]",
+            "regexp": "Dynamicweb ([\\d.]+)"
         }
     ],
     "implies": "Microsoft ASP.NET",
-    "name": "Dynamicweb"
+    "website": "http://www.dynamicweb.dk"
 }

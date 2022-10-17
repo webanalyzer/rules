@@ -1,9 +1,6 @@
 {
-    "website": "http://www.xeora.org",
+    "name": "Xeora",
     "matches": [
-        {
-            "regexp": "<input type=\"hidden\" name=\"_sys_bind_\\d+\" id=\"_sys_bind_\\d+\" />"
-        },
         {
             "search": "headers[server]",
             "regexp": "XeoraEngine"
@@ -11,8 +8,11 @@
         {
             "search": "headers[x-powered-by]",
             "regexp": "XeoraCube"
+        },
+        {
+            "regexp": "<input type=\"hidden\" name=\"_sys_bind_\\d+\" id=\"_sys_bind_\\d+\" />"
         }
     ],
     "implies": "Microsoft ASP.NET",
-    "name": "Xeora"
+    "website": "http://www.xeora.org"
 }
