@@ -2,12 +2,12 @@
     "name": "Substack",
     "matches": [
         {
-            "search": "headers[x-cluster]",
-            "regexp": "substack"
+            "regexp": "Substack",
+            "search": "headers[x-served-by]"
         },
         {
-            "search": "headers[x-served-by]",
-            "regexp": "Substack"
+            "regexp": "substack",
+            "search": "headers[x-cluster]"
         }
     ],
     "website": "http://substack.com/"

@@ -1,15 +1,15 @@
 {
+    "implies": "PHP",
     "name": "ThinkPHP",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "ThinkPHP"
+            "regexp": ".*",
+            "search": "cookies[thinkphp_show_page_trace]"
         },
         {
-            "search": "cookies[thinkphp_show_page_trace]",
-            "regexp": ".*"
+            "regexp": "ThinkPHP",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "implies": "PHP",
     "website": "http://www.thinkphp.cn"
 }

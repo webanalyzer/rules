@@ -1,9 +1,10 @@
 {
+    "implies": "PHP",
     "name": "TYPO3 CMS",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?"
+            "regexp": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?",
+            "search": "meta[generator]"
         },
         {
             "regexp": "<link[^>]+ href=\"/?typo3(?:conf|temp)/"
@@ -15,6 +16,5 @@
             "regexp": "<!--\n\tThis website is powered by TYPO3"
         }
     ],
-    "implies": "PHP",
     "website": "https://typo3.org/"
 }
