@@ -1,11 +1,6 @@
 {
     "implies": "Microsoft ASP.NET",
-    "name": "Optimizely CMS",
     "matches": [
-        {
-            "regexp": "EPiServer",
-            "search": "meta[generator]"
-        },
         {
             "regexp": ".*",
             "search": "cookies[EPiSessionId]"
@@ -17,7 +12,12 @@
         {
             "regexp": ".*",
             "search": "cookies[EPiTrace]"
+        },
+        {
+            "regexp": "EPiServer",
+            "search": "meta[generator]"
         }
     ],
+    "name": "Optimizely CMS",
     "website": "https://www.optimizely.com/"
 }

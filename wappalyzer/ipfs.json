@@ -1,6 +1,9 @@
 {
-    "name": "IPFS",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "headers[x-ipfs-gateway-host]"
+        },
         {
             "regexp": ".*",
             "search": "headers[x-cf-ipfs-cache-status]"
@@ -11,15 +14,11 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-ipfs-roots]"
-        },
-        {
-            "regexp": ".*",
             "search": "headers[x-ipfs-datasize]"
         },
         {
             "regexp": ".*",
-            "search": "headers[x-ipfs-lb-pop]"
+            "search": "headers[x-ipfs-path]"
         },
         {
             "regexp": ".*",
@@ -27,16 +26,17 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-ipfs-gateway-host]"
+            "search": "headers[x-ipfs-lb-pop]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-ipfs-roots]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-ipfs-root]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-ipfs-path]"
         }
     ],
+    "name": "IPFS",
     "website": "https://ipfs.io/"
 }

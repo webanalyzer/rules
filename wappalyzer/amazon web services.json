@@ -1,17 +1,8 @@
 {
-    "name": "Amazon Web Services",
     "matches": [
         {
             "regexp": ".*",
-            "search": "headers[x-amz-id-2]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-amz-request-id]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-amz-version-id]"
+            "search": "headers[x-amz-req-time-micros]"
         },
         {
             "regexp": ".*",
@@ -23,7 +14,7 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-amz-req-time-micros]"
+            "search": "headers[x-amz-err-code]"
         },
         {
             "regexp": ".*",
@@ -31,8 +22,17 @@
         },
         {
             "regexp": ".*",
-            "search": "headers[x-amz-err-code]"
+            "search": "headers[x-amz-request-id]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-amz-version-id]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-amz-id-2]"
         }
     ],
+    "name": "Amazon Web Services",
     "website": "https://aws.amazon.com/"
 }
