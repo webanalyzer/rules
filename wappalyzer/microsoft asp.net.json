@@ -1,9 +1,11 @@
 {
+    "name": "Microsoft ASP.NET",
+    "website": "https://www.asp.net",
     "matches": [
         {
             "regexp": "(.+)",
-            "search": "headers[x-aspnet-version]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-aspnet-version]"
         },
         {
             "regexp": "^ASP\\.NET",
@@ -14,17 +16,15 @@
             "search": "headers[set-cookie]"
         },
         {
-            "regexp": "<input[^>]+name=\"__VIEWSTATE"
-        },
-        {
             "regexp": ".*",
             "search": "cookies[ASP.NET_SessionId]"
         },
         {
             "regexp": ".*",
             "search": "cookies[ASPSESSION]"
+        },
+        {
+            "regexp": "<input[^>]+name=\"__VIEWSTATE"
         }
-    ],
-    "name": "Microsoft ASP.NET",
-    "website": "https://www.asp.net"
+    ]
 }

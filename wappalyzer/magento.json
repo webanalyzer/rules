@@ -3,6 +3,8 @@
         "PHP",
         "MySQL"
     ],
+    "name": "Magento",
+    "website": "https://magento.com",
     "matches": [
         {
             "regexp": ".*",
@@ -10,11 +12,16 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[mage-cache-storage-section-invalidation]"
+            "certainty": 50,
+            "search": "cookies[frontend]"
         },
         {
             "regexp": ".*",
-            "search": "cookies[mage-translation-storage]"
+            "search": "cookies[X-Magento-Vary]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[mage-cache-storage-section-invalidation]"
         },
         {
             "regexp": ".*",
@@ -22,14 +29,7 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[X-Magento-Vary]"
-        },
-        {
-            "certainty": 50,
-            "regexp": ".*",
-            "search": "cookies[frontend]"
+            "search": "cookies[mage-translation-storage]"
         }
-    ],
-    "name": "Magento",
-    "website": "https://magento.com"
+    ]
 }

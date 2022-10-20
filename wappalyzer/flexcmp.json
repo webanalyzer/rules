@@ -1,4 +1,6 @@
 {
+    "name": "FlexCMP",
+    "website": "http://www.flexcmp.com/cms/home",
     "matches": [
         {
             "regexp": ".*",
@@ -6,18 +8,16 @@
         },
         {
             "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)",
-            "search": "headers[x-powered-by]",
-            "offset": 1
-        },
-        {
-            "regexp": "<!--[^>]+FlexCMP[^>v]+v\\. ([\\d.]+)",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-powered-by]"
         },
         {
             "regexp": "^FlexCMP",
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "<!--[^>]+FlexCMP[^>v]+v\\. ([\\d.]+)",
+            "offset": 1
         }
-    ],
-    "name": "FlexCMP",
-    "website": "http://www.flexcmp.com/cms/home"
+    ]
 }
