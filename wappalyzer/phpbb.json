@@ -5,10 +5,6 @@
             "regexp": "phpBB Group"
         },
         {
-            "search": "cookies[phpbb]",
-            "regexp": ".*"
-        },
-        {
             "regexp": "Powered by <a[^>]+phpBB"
         },
         {
@@ -22,9 +18,13 @@
         },
         {
             "regexp": "<table class=\"[^\"]*forumline"
+        },
+        {
+            "search": "cookies[phpbb]",
+            "regexp": ".*"
         }
     ],
-    "website": "https://phpbb.com",
+    "implies": "PHP",
     "name": "phpBB",
-    "implies": "PHP"
+    "website": "https://phpbb.com"
 }

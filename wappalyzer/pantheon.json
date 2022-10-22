@@ -5,20 +5,20 @@
             "regexp": "^Pantheon"
         },
         {
-            "search": "headers[x-styx-req-id]",
+            "search": "headers[x-pantheon-styx-hostname]",
             "regexp": ".*"
         },
         {
-            "search": "headers[x-pantheon-styx-hostname]",
+            "search": "headers[x-styx-req-id]",
             "regexp": ".*"
         }
     ],
-    "website": "https://pantheon.io/",
-    "name": "Pantheon",
     "implies": [
         "PHP",
         "Nginx",
         "MariaDB",
         "Fastly"
-    ]
+    ],
+    "name": "Pantheon",
+    "website": "https://pantheon.io/"
 }

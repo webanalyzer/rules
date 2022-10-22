@@ -5,18 +5,18 @@
             "regexp": "^moodle"
         },
         {
-            "search": "cookies[MoodleSession]",
-            "regexp": ".*"
+            "regexp": "<img[^>]+moodlelogo"
         },
         {
             "search": "cookies[MOODLEID_]",
             "regexp": ".*"
         },
         {
-            "regexp": "<img[^>]+moodlelogo"
+            "search": "cookies[MoodleSession]",
+            "regexp": ".*"
         }
     ],
-    "website": "http://moodle.org",
+    "implies": "PHP",
     "name": "Moodle",
-    "implies": "PHP"
+    "website": "http://moodle.org"
 }

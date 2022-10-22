@@ -5,12 +5,12 @@
             "regexp": "^Apache-Coyote"
         },
         {
-            "offset": 1,
             "search": "headers[x-powered-by]",
-            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?"
+            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?",
+            "offset": 1
         }
     ],
-    "website": "http://tomcat.apache.org",
+    "implies": "Java",
     "name": "Apache Tomcat",
-    "implies": "Java"
+    "website": "http://tomcat.apache.org"
 }
