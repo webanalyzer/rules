@@ -1,11 +1,11 @@
 {
     "matches": [
         {
-            "regexp": "<!-- START headerTags\\.cfm"
+            "regexp": "CFTOKEN=",
+            "search": "headers[cookie]"
         },
         {
-            "search": "headers[cookie]",
-            "regexp": "CFTOKEN="
+            "regexp": "<!-- START headerTags\\.cfm"
         }
     ],
     "implies": "CFML",

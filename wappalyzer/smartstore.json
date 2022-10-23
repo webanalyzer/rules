@@ -1,17 +1,17 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
+            "offset": 2,
             "regexp": "^Smart[sS]tore(.NET)? (.+)$",
-            "offset": 2
+            "search": "meta[generator]"
         },
         {
-            "search": "cookies[SMARTSTORE.VISITOR]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[SMARTSTORE.CUSTOMER]"
         },
         {
-            "search": "cookies[SMARTSTORE.CUSTOMER]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[SMARTSTORE.VISITOR]"
         },
         {
             "regexp": "<!--Powered by Smart[sS]tore"

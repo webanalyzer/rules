@@ -1,20 +1,20 @@
 {
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "^Fly/[\\w]+\\s\\(.*\\)$"
+            "regexp": ".*",
+            "search": "headers[fly-request-id]"
         },
         {
-            "search": "headers[fly-request-id]",
-            "regexp": ".*"
+            "regexp": "^Fly/[\\w]+\\s\\(.*\\)$",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[via]",
-            "regexp": "^.*\\sfly\\.io$"
+            "regexp": "^.*\\sfly\\.io$",
+            "search": "headers[via]"
         },
         {
-            "search": "cookies[_fly]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[_fly]"
         }
     ],
     "name": "Fly.io",

@@ -1,14 +1,14 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "^HighStore\\.IR$"
+            "regexp": "^HighStore\\.IR$",
+            "search": "meta[generator]"
         },
         {
-            "certainty": 50,
-            "search": "meta[hs:version]",
+            "offset": 1,
             "regexp": "^([\\d\\.]+)$",
-            "offset": 1
+            "certainty": 50,
+            "search": "meta[hs:version]"
         }
     ],
     "implies": "Microsoft ASP.NET",
