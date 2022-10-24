@@ -1,14 +1,14 @@
 {
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[TWIKISID]"
+            "regexp": "<img [^>]*(?:title|alt)=\"This site is powered by the TWiki collaboration platform"
         },
         {
-            "regexp": "<img [^>]*(?:title|alt)=\"This site is powered by the TWiki collaboration platform"
+            "search": "cookies[TWIKISID]",
+            "regexp": ".*"
         }
     ],
-    "implies": "Perl",
     "name": "TWiki",
-    "website": "http://twiki.org"
+    "website": "http://twiki.org",
+    "implies": "Perl"
 }

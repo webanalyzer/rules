@@ -1,15 +1,15 @@
 {
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[usces_cookie]"
-        },
-        {
             "regexp": "<link[^>]+?href=\"[^\"]+usces_default(?:\\.min)?\\.css"
         },
         {
             "offset": 1,
             "regexp": "<!-- Welcart version : v([\\d.]+)"
+        },
+        {
+            "search": "cookies[usces_cookie]",
+            "regexp": ".*"
         }
     ],
     "name": "Welcart",

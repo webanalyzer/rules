@@ -1,29 +1,29 @@
 {
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[x-varnish]"
+            "search": "headers[x-varnish-action]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-varnish-cache]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-varnish-age]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-varnish-hostname]"
+            "search": "headers[x-varnish-hostname]",
+            "regexp": ".*"
         },
         {
             "offset": 1,
-            "regexp": "varnish(?: \\(Varnish/([\\d.]+)\\))?",
-            "search": "headers[via]"
+            "search": "headers[via]",
+            "regexp": "varnish(?: \\(Varnish/([\\d.]+)\\))?"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-varnish-action]"
+            "search": "headers[x-varnish-age]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-varnish]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-varnish-cache]",
+            "regexp": ".*"
         }
     ],
     "name": "Varnish",

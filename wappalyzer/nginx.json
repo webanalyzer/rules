@@ -2,12 +2,12 @@
     "matches": [
         {
             "offset": 1,
-            "regexp": "nginx(?:/([\\d.]+))?",
-            "search": "headers[server]"
+            "search": "headers[server]",
+            "regexp": "nginx(?:/([\\d.]+))?"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-fastcgi-cache]"
+            "search": "headers[x-fastcgi-cache]",
+            "regexp": ".*"
         }
     ],
     "name": "Nginx",
