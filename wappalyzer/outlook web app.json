@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "offset": 1,
-            "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources"
+            "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources",
+            "offset": 1
         },
         {
+            "regexp": "([\\d\\.]+)?",
             "offset": 1,
-            "search": "headers[x-owa-version]",
-            "regexp": "([\\d\\.]+)?"
+            "search": "headers[x-owa-version]"
         }
     ],
     "name": "Outlook Web App",

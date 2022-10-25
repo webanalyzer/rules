@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))"
+            "regexp": ".*",
+            "search": "cookies[CMSPreferredCulture]"
         },
         {
-            "search": "cookies[CMSPreferredCulture]",
-            "regexp": ".*"
+            "regexp": "Kentico CMS ([\\d.R]+ \\(build [\\d.]+\\))",
+            "offset": 1,
+            "search": "meta[generator]"
         }
     ],
     "name": "Kentico CMS",

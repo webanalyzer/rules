@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "^Apache-Coyote"
+            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?",
+            "offset": 1,
+            "search": "headers[x-powered-by]"
         },
         {
-            "offset": 1,
-            "search": "headers[x-powered-by]",
-            "regexp": "\\bTomcat\\b(?:-([\\d.]+))?"
+            "regexp": "^Apache-Coyote",
+            "search": "headers[server]"
         }
     ],
     "name": "Apache Tomcat",

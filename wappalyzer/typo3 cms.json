@@ -1,10 +1,6 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?"
-        },
-        {
             "regexp": "<link[^>]+ href=\"/?typo3(?:conf|temp)/"
         },
         {
@@ -12,6 +8,10 @@
         },
         {
             "regexp": "<!--\n\tThis website is powered by TYPO3"
+        },
+        {
+            "regexp": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?",
+            "search": "meta[generator]"
         }
     ],
     "name": "TYPO3 CMS",

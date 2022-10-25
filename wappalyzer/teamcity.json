@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "search": "meta[application-name]",
-            "regexp": "TeamCity"
+            "regexp": "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)"
+            "regexp": "TeamCity",
+            "search": "meta[application-name]"
         }
     ],
     "name": "TeamCity",

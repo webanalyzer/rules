@@ -1,16 +1,16 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Orchard"
+            "regexp": "^Orchard$",
+            "search": "headers[x-generator]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "OrchardCore"
+            "regexp": "OrchardCore",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-generator]",
-            "regexp": "^Orchard$"
+            "regexp": "Orchard",
+            "search": "meta[generator]"
         }
     ],
     "name": "Orchard Core",
