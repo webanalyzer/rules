@@ -1,22 +1,18 @@
 {
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[DotNetNukeAnonymous]"
-        },
-        {
-            "regexp": "DotNetNuke",
-            "search": "meta[generator]"
-        },
-        {
             "regexp": "<!-- by DotNetNuke Corporation"
         },
         {
             "regexp": "<!-- DNN Platform"
         },
         {
-            "regexp": "dnn_IsMobile=",
-            "search": "headers[cookie]"
+            "regexp": "DotNetNuke",
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[DotNetNukeAnonymous]"
         },
         {
             "regexp": "DotNetNuke",
@@ -25,9 +21,13 @@
         {
             "regexp": ".*",
             "search": "headers[dnnoutputcache]"
+        },
+        {
+            "regexp": "dnn_IsMobile=",
+            "search": "headers[cookie]"
         }
     ],
-    "name": "DNN",
+    "implies": "Microsoft ASP.NET",
     "website": "https://www.dnnsoftware.com/",
-    "implies": "Microsoft ASP.NET"
+    "name": "DNN"
 }

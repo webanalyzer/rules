@@ -5,16 +5,16 @@
         },
         {
             "regexp": "uKnowva ([\\d.]+)",
-            "offset": 1,
-            "search": "headers[x-content-encoded-by]"
+            "search": "headers[x-content-encoded-by]",
+            "offset": 1
         },
         {
             "regexp": "uKnowva (?: ([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         }
     ],
-    "name": "uKnowva",
+    "implies": "PHP",
     "website": "https://uknowva.com",
-    "implies": "PHP"
+    "name": "uKnowva"
 }

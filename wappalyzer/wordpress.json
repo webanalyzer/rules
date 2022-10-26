@@ -6,8 +6,8 @@
         },
         {
             "regexp": "^WordPress(?: ([\\d.]+))?",
-            "offset": 1,
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
@@ -24,10 +24,10 @@
             "search": "headers[x-pingback]"
         }
     ],
-    "name": "WordPress",
-    "website": "https://wordpress.org",
     "implies": [
         "PHP",
         "MySQL"
-    ]
+    ],
+    "website": "https://wordpress.org",
+    "name": "WordPress"
 }

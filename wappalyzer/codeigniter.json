@@ -1,9 +1,12 @@
 {
     "matches": [
         {
+            "regexp": "<input[^>]+name=\"ci_csrf_token\""
+        },
+        {
             "regexp": "^(.+)$",
-            "offset": 1,
-            "search": "cookies[ci_csrf_token]"
+            "search": "cookies[ci_csrf_token]",
+            "offset": 1
         },
         {
             "regexp": ".*",
@@ -11,17 +14,14 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[exp_tracker]"
-        },
-        {
-            "regexp": ".*",
             "search": "cookies[ci_session]"
         },
         {
-            "regexp": "<input[^>]+name=\"ci_csrf_token\""
+            "regexp": ".*",
+            "search": "cookies[exp_tracker]"
         }
     ],
-    "name": "CodeIgniter",
+    "implies": "PHP",
     "website": "http://codeigniter.com",
-    "implies": "PHP"
+    "name": "CodeIgniter"
 }

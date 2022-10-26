@@ -1,19 +1,19 @@
 {
     "matches": [
         {
-            "regexp": "^Orchard$",
-            "search": "headers[x-generator]"
-        },
-        {
             "regexp": "OrchardCore",
             "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": "^Orchard$",
+            "search": "headers[x-generator]"
         },
         {
             "regexp": "Orchard",
             "search": "meta[generator]"
         }
     ],
-    "name": "Orchard Core",
+    "implies": "Microsoft ASP.NET",
     "website": "https://orchardcore.net",
-    "implies": "Microsoft ASP.NET"
+    "name": "Orchard Core"
 }

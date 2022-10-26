@@ -1,6 +1,16 @@
 {
     "matches": [
         {
+            "regexp": "gtag\\([^)]+'(UA-)",
+            "search": "script",
+            "offset": 1
+        },
+        {
+            "regexp": "gtag\\([^)]+'(G-)",
+            "search": "script",
+            "offset": 1
+        },
+        {
             "regexp": ".*",
             "search": "cookies[_gat]"
         },
@@ -11,11 +21,8 @@
         {
             "regexp": ".*",
             "search": "cookies[_ga]"
-        },
-        {
-            "regexp": "<amp-analytics [^>]*type=[\"']googleanalytics[\"']"
         }
     ],
-    "name": "Google Analytics",
-    "website": "http://google.com/analytics"
+    "website": "http://google.com/analytics",
+    "name": "Google Analytics"
 }

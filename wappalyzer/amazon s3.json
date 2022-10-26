@@ -1,19 +1,19 @@
 {
     "matches": [
         {
-            "regexp": "s3[^ ]*\\.amazonaws\\.com",
-            "search": "headers[content-security-policy-report-only]"
-        },
-        {
             "regexp": "^AmazonS3$",
             "search": "headers[server]"
+        },
+        {
+            "regexp": "s3[^ ]*\\.amazonaws\\.com",
+            "search": "headers[content-security-policy-report-only]"
         },
         {
             "regexp": "s3[^ ]*amazonaws\\.com",
             "search": "headers[content-security-policy]"
         }
     ],
-    "name": "Amazon S3",
+    "implies": "Amazon Web Services",
     "website": "http://aws.amazon.com/s3/",
-    "implies": "Amazon Web Services"
+    "name": "Amazon S3"
 }
