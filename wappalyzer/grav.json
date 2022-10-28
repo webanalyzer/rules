@@ -1,12 +1,12 @@
 {
-    "matches": [
-        {
-            "offset": 1,
-            "regexp": "GravCMS(?:\\s([\\d.]+))?",
-            "search": "meta[generator]"
-        }
-    ],
+    "website": "http://getgrav.org",
     "name": "Grav",
     "implies": "PHP",
-    "website": "http://getgrav.org"
+    "matches": [
+        {
+            "search": "meta[generator]",
+            "offset": 1,
+            "regexp": "GravCMS(?:\\s([\\d.]+))?"
+        }
+    ]
 }

@@ -1,19 +1,19 @@
 {
-    "matches": [
-        {
-            "regexp": ".*",
-            "search": "cookies[exp_last_activity]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[exp_csrf_token]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[exp_tracker]"
-        }
-    ],
+    "website": "https://expressionengine.com/",
     "name": "ExpressionEngine",
     "implies": "PHP",
-    "website": "https://expressionengine.com/"
+    "matches": [
+        {
+            "search": "cookies[exp_last_activity]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[exp_tracker]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[exp_csrf_token]",
+            "regexp": ".*"
+        }
+    ]
 }
