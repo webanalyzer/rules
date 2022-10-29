@@ -1,14 +1,14 @@
 {
     "website": "https://www.acquia.com/products/drupal-cloud/cloud-platform",
     "name": "Acquia Cloud Platform",
-    "implies": [
-        "Amazon Web Services"
-    ],
     "matches": [
         {
             "search": "headers[x-ah-environment]",
-            "offset": 1,
-            "regexp": "^(next)?.*$"
+            "regexp": "^(next)?.*$",
+            "offset": 1
         }
+    ],
+    "implies": [
+        "Amazon Web Services"
     ]
 }

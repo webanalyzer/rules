@@ -1,15 +1,15 @@
 {
     "website": "https://craftcms.com/",
     "name": "Craft CMS",
-    "implies": "Yii",
     "matches": [
-        {
-            "search": "cookies[CraftSessionId]",
-            "regexp": ".*"
-        },
         {
             "search": "headers[x-powered-by]",
             "regexp": "\\bCraft CMS\\b"
+        },
+        {
+            "search": "cookies[CraftSessionId]",
+            "regexp": ".*"
         }
-    ]
+    ],
+    "implies": "Yii"
 }

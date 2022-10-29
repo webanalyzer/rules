@@ -3,8 +3,17 @@
     "name": "Edgio",
     "matches": [
         {
-            "search": "cookies[layer0_destination]",
+            "search": "headers[x-0-t]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[x-0-status]",
+            "regexp": ".*"
+        },
+        {
+            "search": "headers[x-0-version]",
+            "regexp": "^\\d+ ([\\d.]+) ",
+            "offset": 1
         },
         {
             "search": "cookies[layer0_bucket]",
@@ -15,16 +24,7 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-0-version]",
-            "offset": 1,
-            "regexp": "^\\d+ ([\\d.]+) "
-        },
-        {
-            "search": "headers[x-0-status]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-0-t]",
+            "search": "cookies[layer0_destination]",
             "regexp": ".*"
         }
     ]

@@ -3,16 +3,16 @@
     "name": "WEBDEV",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "<!-- [a-zA-Z0-9_]+ [\\d/]+ [\\d:]+ WebDev \\d\\d ([\\d.]+) -->"
+            "search": "headers[webdevsrc]",
+            "regexp": ".*"
         },
         {
             "search": "meta[generator]",
             "regexp": "^WEBDEV$"
         },
         {
-            "search": "headers[webdevsrc]",
-            "regexp": ".*"
+            "regexp": "<!-- [a-zA-Z0-9_]+ [\\d/]+ [\\d:]+ WebDev \\d\\d ([\\d.]+) -->",
+            "offset": 1
         }
     ]
 }

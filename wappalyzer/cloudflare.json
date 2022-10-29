@@ -3,8 +3,8 @@
     "name": "Cloudflare",
     "matches": [
         {
-            "search": "cookies[__cfduid]",
-            "regexp": ".*"
+            "search": "headers[server]",
+            "regexp": "^cloudflare$"
         },
         {
             "search": "headers[cf-ray]",
@@ -15,8 +15,8 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[server]",
-            "regexp": "^cloudflare$"
+            "search": "cookies[__cfduid]",
+            "regexp": ".*"
         }
     ]
 }

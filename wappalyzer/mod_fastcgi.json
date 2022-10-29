@@ -1,12 +1,12 @@
 {
     "website": "http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html",
     "name": "mod_fastcgi",
-    "implies": "Apache",
     "matches": [
         {
             "search": "headers[server]",
-            "offset": 1,
-            "regexp": "mod_fastcgi(?:/([\\d.]+))?"
+            "regexp": "mod_fastcgi(?:/([\\d.]+))?",
+            "offset": 1
         }
-    ]
+    ],
+    "implies": "Apache"
 }

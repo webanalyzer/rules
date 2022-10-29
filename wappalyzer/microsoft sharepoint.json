@@ -3,15 +3,11 @@
     "name": "Microsoft SharePoint",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Microsoft SharePoint"
-        },
-        {
-            "search": "headers[x-sharepointhealthscore]",
+            "search": "headers[sprequestguid]",
             "regexp": ".*"
         },
         {
-            "search": "headers[sprequestguid]",
+            "search": "headers[x-sharepointhealthscore]",
             "regexp": ".*"
         },
         {
@@ -20,8 +16,12 @@
         },
         {
             "search": "headers[microsoftsharepointteamservices]",
-            "offset": 1,
-            "regexp": "^(.+)$"
+            "regexp": "^(.+)$",
+            "offset": 1
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "Microsoft SharePoint"
         }
     ]
 }

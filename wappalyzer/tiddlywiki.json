@@ -3,12 +3,9 @@
     "name": "TiddlyWiki",
     "matches": [
         {
-            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
-        },
-        {
             "search": "meta[tiddlywiki-version]",
-            "offset": 1,
-            "regexp": "^(.+)$"
+            "regexp": "^(.+)$",
+            "offset": 1
         },
         {
             "search": "meta[copyright]",
@@ -21,6 +18,9 @@
         {
             "search": "meta[application-name]",
             "regexp": "^TiddlyWiki$"
+        },
+        {
+            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
         }
     ]
 }

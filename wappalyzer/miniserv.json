@@ -1,12 +1,12 @@
 {
     "website": "https://github.com/webmin/webmin/blob/master/miniserv.pl",
     "name": "MiniServ",
-    "implies": "Webmin",
     "matches": [
         {
             "search": "headers[server]",
-            "offset": 1,
-            "regexp": "MiniServ/([\\d\\.]+)"
+            "regexp": "MiniServ/([\\d\\.]+)",
+            "offset": 1
         }
-    ]
+    ],
+    "implies": "Webmin"
 }
