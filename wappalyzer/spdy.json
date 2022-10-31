@@ -1,11 +1,11 @@
 {
     "name": "SPDY",
+    "website": "http://chromium.org/spdy",
+    "excludes": "HTTP/2",
     "matches": [
         {
-            "regexp": "\\d\\.\\d",
-            "search": "headers[x-firefox-spdy]"
+            "search": "headers[x-firefox-spdy]",
+            "regexp": "\\d\\.\\d"
         }
-    ],
-    "excludes": "HTTP/2",
-    "website": "http://chromium.org/spdy"
+    ]
 }

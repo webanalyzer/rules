@@ -1,10 +1,7 @@
 {
     "name": "MODX",
+    "website": "https://modx.com/content-management-framework",
     "matches": [
-        {
-            "regexp": "^MODX",
-            "search": "headers[x-powered-by]"
-        },
         {
             "regexp": "<a[^>]+>Powered by MODX</a>"
         },
@@ -25,10 +22,13 @@
         },
         {
             "offset": 1,
-            "regexp": "MODX[^\\d.]*([\\d.]+)?",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "regexp": "MODX[^\\d.]*([\\d.]+)?"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^MODX"
         }
     ],
-    "implies": "PHP",
-    "website": "https://modx.com/content-management-framework"
+    "implies": "PHP"
 }
