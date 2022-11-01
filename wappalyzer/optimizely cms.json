@@ -1,6 +1,4 @@
 {
-    "name": "Optimizely CMS",
-    "website": "https://www.optimizely.com/",
     "matches": [
         {
             "search": "meta[generator]",
@@ -11,13 +9,15 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[EPiServer]",
+            "search": "cookies[EPiSessionId]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[EPiSessionId]",
+            "search": "cookies[EPiServer]",
             "regexp": ".*"
         }
     ],
-    "implies": "Microsoft ASP.NET"
+    "website": "https://www.optimizely.com/",
+    "implies": "Microsoft ASP.NET",
+    "name": "Optimizely CMS"
 }

@@ -1,6 +1,4 @@
 {
-    "name": "Umbraco",
-    "website": "https://umbraco.com/",
     "matches": [
         {
             "search": "script",
@@ -11,10 +9,12 @@
             "regexp": "umbraco"
         },
         {
-            "offset": 1,
             "search": "headers[x-umbraco-version]",
+            "offset": 1,
             "regexp": "^(.+)$"
         }
     ],
-    "implies": "Microsoft ASP.NET"
+    "website": "https://umbraco.com/",
+    "implies": "Microsoft ASP.NET",
+    "name": "Umbraco"
 }

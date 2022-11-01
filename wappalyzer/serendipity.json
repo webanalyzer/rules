@@ -1,17 +1,17 @@
 {
-    "name": "Serendipity",
-    "website": "http://s9y.org",
     "matches": [
         {
+            "search": "meta[generator]",
             "offset": 1,
-            "search": "meta[Powered-By]",
-            "regexp": "Serendipity v\\.([\\d.]+)"
+            "regexp": "Serendipity(?: v\\.([\\d.]+))?"
         },
         {
+            "search": "meta[Powered-By]",
             "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Serendipity(?: v\\.([\\d.]+))?"
+            "regexp": "Serendipity v\\.([\\d.]+)"
         }
     ],
-    "implies": "PHP"
+    "website": "http://s9y.org",
+    "implies": "PHP",
+    "name": "Serendipity"
 }

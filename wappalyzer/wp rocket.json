@@ -1,6 +1,4 @@
 {
-    "name": "WP Rocket",
-    "website": "https://wp-rocket.me",
     "matches": [
         {
             "regexp": "<!--[^>]+WP Rocket"
@@ -10,9 +8,11 @@
             "regexp": ".*"
         },
         {
-            "offset": 1,
             "search": "headers[x-powered-by]",
+            "offset": 1,
             "regexp": "WP Rocket(?:/([\\d.]+))?"
         }
-    ]
+    ],
+    "website": "https://wp-rocket.me",
+    "name": "WP Rocket"
 }

@@ -1,6 +1,4 @@
 {
-    "name": "MODX",
-    "website": "https://modx.com/content-management-framework",
     "matches": [
         {
             "regexp": "<a[^>]+>Powered by MODX</a>"
@@ -21,8 +19,8 @@
             "regexp": "<input[^>]+id=\"ajaxSearch_input"
         },
         {
-            "offset": 1,
             "search": "meta[generator]",
+            "offset": 1,
             "regexp": "MODX[^\\d.]*([\\d.]+)?"
         },
         {
@@ -30,5 +28,7 @@
             "regexp": "^MODX"
         }
     ],
-    "implies": "PHP"
+    "website": "https://modx.com/content-management-framework",
+    "implies": "PHP",
+    "name": "MODX"
 }
