@@ -1,28 +1,28 @@
 {
     "matches": [
         {
-            "search": "cookies[_ga]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[__utma]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[_gat]",
-            "regexp": ".*"
-        },
-        {
+            "regexp": "gtag\\([^)]+'(UA-)",
             "search": "script",
-            "offset": 1,
-            "regexp": "gtag\\([^)]+'(UA-)"
+            "offset": 1
         },
         {
+            "regexp": "gtag\\([^)]+'(G-)",
             "search": "script",
-            "offset": 1,
-            "regexp": "gtag\\([^)]+'(G-)"
+            "offset": 1
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_ga]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[__utma]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_gat]"
         }
     ],
-    "website": "http://google.com/analytics",
-    "name": "Google Analytics"
+    "name": "Google Analytics",
+    "website": "http://google.com/analytics"
 }
