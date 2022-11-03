@@ -2,18 +2,18 @@
     "matches": [
         {
             "regexp": "^h2o(?:/)?([\\d\\.]+)?",
-            "search": "headers[server]",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[server]"
         },
         {
             "regexp": ".*",
             "search": "cookies[h2o_casper]"
         }
     ],
+    "website": "https://github.com/h2o/h2o",
     "name": "H2O",
     "implies": [
         "C",
         "HTTP/2"
-    ],
-    "website": "https://github.com/h2o/h2o"
+    ]
 }
