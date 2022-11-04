@@ -4,13 +4,13 @@
             "regexp": "<!--[^>]+WP Rocket"
         },
         {
+            "regexp": ".*",
+            "search": "headers[x-rocket-nginx-bypass]"
+        },
+        {
             "regexp": "WP Rocket(?:/([\\d.]+))?",
             "offset": 1,
             "search": "headers[x-powered-by]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-rocket-nginx-bypass]"
         }
     ],
     "website": "https://wp-rocket.me",

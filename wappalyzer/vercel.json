@@ -5,16 +5,16 @@
             "search": "headers[x-vercel-id]"
         },
         {
+            "regexp": "^now|Vercel$",
+            "search": "headers[server]"
+        },
+        {
             "regexp": ".*",
             "search": "headers[x-now-trace]"
         },
         {
             "regexp": ".*",
             "search": "headers[x-vercel-cache]"
-        },
-        {
-            "regexp": "^now|Vercel$",
-            "search": "headers[server]"
         }
     ],
     "website": "https://vercel.com",

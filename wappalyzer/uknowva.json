@@ -6,15 +6,15 @@
             "search": "headers[x-content-encoded-by]"
         },
         {
-            "regexp": "<a[^>]+>Powered by uKnowva</a>"
-        },
-        {
             "regexp": "uKnowva (?: ([\\d.]+))?",
             "offset": 1,
             "search": "meta[generator]"
+        },
+        {
+            "regexp": "<a[^>]+>Powered by uKnowva</a>"
         }
     ],
     "website": "https://uknowva.com",
-    "name": "uKnowva",
-    "implies": "PHP"
+    "implies": "PHP",
+    "name": "uKnowva"
 }

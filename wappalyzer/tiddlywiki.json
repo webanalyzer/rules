@@ -1,7 +1,12 @@
 {
     "matches": [
         {
-            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
+            "regexp": "^TiddlyWiki$",
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": "^TiddlyWiki$",
+            "search": "meta[application-name]"
         },
         {
             "regexp": "^(.+)$",
@@ -13,12 +18,7 @@
             "search": "meta[copyright]"
         },
         {
-            "regexp": "^TiddlyWiki$",
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "^TiddlyWiki$",
-            "search": "meta[application-name]"
+            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
         }
     ],
     "website": "http://tiddlywiki.com",
