@@ -1,11 +1,11 @@
 {
+    "website": "https://konghq.com",
+    "name": "Kong",
     "matches": [
         {
-            "regexp": "^kong/([\\d\\.]+)(?:.+)?$",
+            "search": "headers[via]",
             "offset": 1,
-            "search": "headers[via]"
+            "regexp": "^kong/([\\d\\.]+)(?:.+)?$"
         }
-    ],
-    "website": "https://konghq.com",
-    "name": "Kong"
+    ]
 }

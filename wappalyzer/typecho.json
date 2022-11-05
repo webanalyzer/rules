@@ -1,12 +1,12 @@
 {
+    "website": "http://typecho.org/",
+    "name": "Typecho",
     "matches": [
         {
-            "regexp": "Typecho( [\\d.]+)?",
+            "search": "meta[generator]",
             "offset": 1,
-            "search": "meta[generator]"
+            "regexp": "Typecho( [\\d.]+)?"
         }
     ],
-    "website": "http://typecho.org/",
-    "implies": "PHP",
-    "name": "Typecho"
+    "implies": "PHP"
 }

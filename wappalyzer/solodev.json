@@ -1,14 +1,14 @@
 {
+    "website": "http://www.solodev.com",
+    "name": "Solodev",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "headers[solodev_session]"
+            "regexp": "<div class=[\"']dynamicDiv[\"'] id=[\"']dd\\.\\d\\.\\d(?:\\.\\d)?[\"']>"
         },
         {
-            "regexp": "<div class=[\"']dynamicDiv[\"'] id=[\"']dd\\.\\d\\.\\d(?:\\.\\d)?[\"']>"
+            "search": "headers[solodev_session]",
+            "regexp": ".*"
         }
     ],
-    "website": "http://www.solodev.com",
-    "implies": "PHP",
-    "name": "Solodev"
+    "implies": "PHP"
 }
