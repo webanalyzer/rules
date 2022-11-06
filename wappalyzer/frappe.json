@@ -1,14 +1,14 @@
 {
     "website": "https://frappeframework.com",
     "name": "Frappe",
-    "matches": [
-        {
-            "search": "meta[generator]",
-            "regexp": "^frappe$"
-        }
-    ],
     "implies": [
         "Python",
         "MariaDB"
+    ],
+    "matches": [
+        {
+            "regexp": "^frappe$",
+            "search": "meta[generator]"
+        }
     ]
 }

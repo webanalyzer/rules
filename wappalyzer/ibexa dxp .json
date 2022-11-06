@@ -1,15 +1,15 @@
 {
     "website": "https://www.ibexa.co",
     "name": "Ibexa DXP ",
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "offset": 1,
-            "regexp": "^Ibexa\\sExperience\\sv([\\d\\.]+)$"
-        }
-    ],
     "implies": [
         "PHP",
         "Symfony"
+    ],
+    "matches": [
+        {
+            "regexp": "^Ibexa\\sExperience\\sv([\\d\\.]+)$",
+            "offset": 1,
+            "search": "headers[x-powered-by]"
+        }
     ]
 }

@@ -1,15 +1,15 @@
 {
     "website": "https://www.bookstackapp.com",
     "name": "BookStack",
-    "matches": [
-        {
-            "search": "cookies[bookstack_session]",
-            "regexp": ".*"
-        }
-    ],
     "implies": [
         "PHP",
         "MySQL",
         "Laravel"
+    ],
+    "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[bookstack_session]"
+        }
     ]
 }

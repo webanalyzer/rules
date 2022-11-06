@@ -1,12 +1,12 @@
 {
     "website": "https://luanaframework.github.io",
     "name": "Luana",
+    "implies": "PWA",
     "matches": [
         {
-            "search": "meta[generator]",
+            "regexp": "^Luana\\sFramework\\s([\\d\\.]+)$",
             "offset": 1,
-            "regexp": "^Luana\\sFramework\\s([\\d\\.]+)$"
+            "search": "meta[generator]"
         }
-    ],
-    "implies": "PWA"
+    ]
 }

@@ -1,14 +1,14 @@
 {
     "website": "https://statamic.com",
     "name": "Statamic",
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "^Statamic$"
-        }
-    ],
     "implies": [
         "PHP",
         "Laravel"
+    ],
+    "matches": [
+        {
+            "regexp": "^Statamic$",
+            "search": "headers[x-powered-by]"
+        }
     ]
 }

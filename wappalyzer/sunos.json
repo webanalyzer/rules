@@ -3,14 +3,14 @@
     "name": "SunOS",
     "matches": [
         {
-            "search": "headers[server]",
+            "regexp": "SunOS( [\\d\\.]+)?",
             "offset": 1,
-            "regexp": "SunOS( [\\d\\.]+)?"
+            "search": "headers[servlet-engine]"
         },
         {
-            "search": "headers[servlet-engine]",
+            "regexp": "SunOS( [\\d\\.]+)?",
             "offset": 1,
-            "regexp": "SunOS( [\\d\\.]+)?"
+            "search": "headers[server]"
         }
     ]
 }

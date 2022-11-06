@@ -3,9 +3,9 @@
     "name": "Kong",
     "matches": [
         {
-            "search": "headers[via]",
+            "regexp": "^kong/([\\d\\.]+)(?:.+)?$",
             "offset": 1,
-            "regexp": "^kong/([\\d\\.]+)(?:.+)?$"
+            "search": "headers[via]"
         }
     ]
 }

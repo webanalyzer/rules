@@ -3,9 +3,9 @@
     "name": "Oracle HTTP Server",
     "matches": [
         {
-            "search": "headers[server]",
+            "regexp": "Oracle-HTTP-Server(?:/([\\d.]+))?",
             "offset": 1,
-            "regexp": "Oracle-HTTP-Server(?:/([\\d.]+))?"
+            "search": "headers[server]"
         }
     ]
 }
