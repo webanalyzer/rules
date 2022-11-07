@@ -1,15 +1,15 @@
 {
     "website": "https://ktor.io",
     "name": "Ktor",
-    "implies": "Kotlin",
     "matches": [
         {
-            "regexp": "^Ktor/debug$",
-            "search": "headers[server]"
+            "search": "headers[server]",
+            "regexp": "^Ktor/debug$"
         },
         {
-            "regexp": "^Ktor$",
-            "search": "headers[x-engine]"
+            "search": "headers[x-engine]",
+            "regexp": "^Ktor$"
         }
-    ]
+    ],
+    "implies": "Kotlin"
 }

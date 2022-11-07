@@ -1,11 +1,15 @@
 {
     "website": "http://www.bugzilla.org",
     "name": "Bugzilla",
-    "implies": "Perl",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[Bugzilla_login_request_cookie]"
+            "search": "cookies[Bugzilla_login_request_cookie]",
+            "regexp": ".*"
+        },
+        {
+            "search": "meta[generator]",
+            "regexp": "Bugzilla ?([\\d.]+)?",
+            "offset": 1
         },
         {
             "regexp": "href=\"enter_bug\\.cgi\">"
@@ -14,17 +18,13 @@
             "regexp": "<main id=\"bugzilla-body\""
         },
         {
-            "regexp": "<a href=\"https?://www\\.bugzilla\\.org/docs/([0-9.]+)/[^>]+>Help<",
-            "offset": 1
-        },
-        {
-            "regexp": "<span id=\"information\" class=\"header_addl_info\">version ([\\d.]+)<",
-            "offset": 1
-        },
-        {
-            "regexp": "Bugzilla ?([\\d.]+)?",
             "offset": 1,
-            "search": "meta[generator]"
+            "regexp": "<a href=\"https?://www\\.bugzilla\\.org/docs/([0-9.]+)/[^>]+>Help<"
+        },
+        {
+            "offset": 1,
+            "regexp": "<span id=\"information\" class=\"header_addl_info\">version ([\\d.]+)<"
         }
-    ]
+    ],
+    "implies": "Perl"
 }

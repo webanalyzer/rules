@@ -3,15 +3,15 @@
     "name": "Synology DiskStation",
     "matches": [
         {
-            "regexp": "^DiskStation provides a full-featured network attached storage",
-            "search": "meta[description]"
-        },
-        {
-            "regexp": "Synology DiskStation",
-            "search": "meta[application-name]"
-        },
-        {
             "regexp": "<noscript><div class='syno-no-script'"
+        },
+        {
+            "search": "meta[application-name]",
+            "regexp": "Synology DiskStation"
+        },
+        {
+            "search": "meta[description]",
+            "regexp": "^DiskStation provides a full-featured network attached storage"
         }
     ]
 }
