@@ -1,6 +1,4 @@
 {
-    "website": "https://ckan.org/",
-    "name": "Ckan",
     "matches": [
         {
             "search": "headers[link]",
@@ -11,9 +9,9 @@
             "regexp": "X-CKAN-API-KEY"
         },
         {
+            "offset": 1,
             "search": "meta[generator]",
-            "regexp": "^ckan ?([0-9.]+)$",
-            "offset": 1
+            "regexp": "^ckan ?([0-9.]+)$"
         }
     ],
     "implies": [
@@ -21,5 +19,7 @@
         "Solr",
         "Java",
         "PostgreSQL"
-    ]
+    ],
+    "website": "https://ckan.org/",
+    "name": "Ckan"
 }
