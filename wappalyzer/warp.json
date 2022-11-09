@@ -1,12 +1,12 @@
 {
-    "matches": [
-        {
-            "offset": 1,
-            "search": "headers[server]",
-            "regexp": "^Warp/(\\d+(?:\\.\\d+)+)?$"
-        }
-    ],
     "implies": "Haskell",
     "website": "http://www.stackage.org/package/warp",
-    "name": "Warp"
+    "name": "Warp",
+    "matches": [
+        {
+            "regexp": "^Warp/(\\d+(?:\\.\\d+)+)?$",
+            "offset": 1,
+            "search": "headers[server]"
+        }
+    ]
 }

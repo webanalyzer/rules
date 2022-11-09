@@ -1,18 +1,4 @@
 {
-    "matches": [
-        {
-            "search": "headers[x-styx-req-id]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "^Pantheon"
-        },
-        {
-            "search": "headers[x-pantheon-styx-hostname]",
-            "regexp": ".*"
-        }
-    ],
     "implies": [
         "PHP",
         "Nginx",
@@ -20,5 +6,19 @@
         "Fastly"
     ],
     "website": "https://pantheon.io/",
-    "name": "Pantheon"
+    "name": "Pantheon",
+    "matches": [
+        {
+            "regexp": ".*",
+            "search": "headers[x-pantheon-styx-hostname]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-styx-req-id]"
+        },
+        {
+            "regexp": "^Pantheon",
+            "search": "headers[server]"
+        }
+    ]
 }

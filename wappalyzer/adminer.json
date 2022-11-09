@@ -1,15 +1,15 @@
 {
-    "matches": [
-        {
-            "offset": 1,
-            "regexp": "Adminer</a> <span class=\"version\">([\\d.]+)</span>"
-        },
-        {
-            "offset": 1,
-            "regexp": "onclick=\"bodyClick\\(event\\);\" onload=\"verifyVersion\\('([\\d.]+)'\\);\">"
-        }
-    ],
     "implies": "PHP",
     "website": "http://www.adminer.org",
-    "name": "Adminer"
+    "name": "Adminer",
+    "matches": [
+        {
+            "regexp": "Adminer</a> <span class=\"version\">([\\d.]+)</span>",
+            "offset": 1
+        },
+        {
+            "regexp": "onclick=\"bodyClick\\(event\\);\" onload=\"verifyVersion\\('([\\d.]+)'\\);\">",
+            "offset": 1
+        }
+    ]
 }
