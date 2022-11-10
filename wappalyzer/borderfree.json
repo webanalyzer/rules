@@ -1,22 +1,22 @@
 {
-    "website": "https://www.borderfree.com",
     "name": "Borderfree",
+    "website": "https://www.borderfree.com",
     "matches": [
         {
-            "regexp": "^\\w+$",
-            "search": "cookies[bfx.logLevel]"
+            "search": "cookies[bfx.apiKey:]",
+            "regexp": "^[\\w\\d-]+$"
         },
         {
-            "regexp": "^\\w+$",
-            "search": "cookies[bfx.country:]"
+            "search": "cookies[bfx.language]",
+            "regexp": "^\\w+$"
         },
         {
-            "regexp": "^[\\w\\d-]+$",
-            "search": "cookies[bfx.apiKey:]"
+            "search": "cookies[bfx.country:]",
+            "regexp": "^\\w+$"
         },
         {
-            "regexp": "^\\w+$",
-            "search": "cookies[bfx.language]"
+            "search": "cookies[bfx.logLevel]",
+            "regexp": "^\\w+$"
         }
     ]
 }

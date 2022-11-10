@@ -3,18 +3,18 @@
         "PHP",
         "MySQL"
     ],
-    "website": "https://developers.sikido.vn/docs/cms/",
     "name": "Skilldo",
+    "website": "https://developers.sikido.vn/docs/cms/",
     "matches": [
         {
-            "regexp": "^Skilldo$",
-            "search": "headers[cms-name]"
+            "search": "headers[cms-version]",
+            "certainty": 0,
+            "regexp": "([\\d\\.]+)",
+            "offset": 1
         },
         {
-            "regexp": "([\\d\\.]+)",
-            "certainty": 0,
-            "offset": 1,
-            "search": "headers[cms-version]"
+            "search": "headers[cms-name]",
+            "regexp": "^Skilldo$"
         }
     ]
 }
