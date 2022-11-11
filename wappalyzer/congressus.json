@@ -1,18 +1,18 @@
 {
-    "name": "Congressus",
-    "website": "https://congressus.nl",
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "^Congressus\\s-\\s.+$"
+            "regexp": ".*",
+            "search": "cookies[congressus_session]"
         },
         {
-            "search": "cookies[_gat_congressus_analytics]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[_gat_congressus_analytics]"
         },
         {
-            "search": "cookies[congressus_session]",
-            "regexp": ".*"
+            "regexp": "^Congressus\\s-\\s.+$",
+            "search": "meta[generator]"
         }
-    ]
+    ],
+    "website": "https://congressus.nl",
+    "name": "Congressus"
 }

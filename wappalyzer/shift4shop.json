@@ -1,14 +1,14 @@
 {
-    "name": "Shift4Shop",
-    "website": "https://www.shift4shop.com",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "3DCART"
+            "regexp": ".*",
+            "search": "cookies[3dvisit]"
         },
         {
-            "search": "cookies[3dvisit]",
-            "regexp": ".*"
+            "regexp": "3DCART",
+            "search": "headers[x-powered-by]"
         }
-    ]
+    ],
+    "website": "https://www.shift4shop.com",
+    "name": "Shift4Shop"
 }
