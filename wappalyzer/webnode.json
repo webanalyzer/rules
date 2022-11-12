@@ -1,15 +1,15 @@
 {
+    "name": "WebNode",
+    "website": "https://www.webnode.com",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[_gat_wnd_header]"
+            "search": "cookies[_gat_wnd_header]",
+            "regexp": ".*"
         },
         {
-            "offset": 1,
+            "search": "meta[generator]",
             "regexp": "^Webnode(?:\\s([\\d.]+))?$",
-            "search": "meta[generator]"
+            "offset": 1
         }
-    ],
-    "website": "https://www.webnode.com",
-    "name": "WebNode"
+    ]
 }
