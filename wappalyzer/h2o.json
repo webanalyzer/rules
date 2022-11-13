@@ -1,5 +1,4 @@
 {
-    "name": "H2O",
     "website": "https://github.com/h2o/h2o",
     "matches": [
         {
@@ -8,10 +7,11 @@
         },
         {
             "search": "headers[server]",
-            "regexp": "^h2o(?:/)?([\\d\\.]+)?",
-            "offset": 1
+            "offset": 1,
+            "regexp": "^h2o(?:/)?([\\d\\.]+)?"
         }
     ],
+    "name": "H2O",
     "implies": [
         "C",
         "HTTP/2"

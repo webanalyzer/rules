@@ -1,14 +1,20 @@
 {
-    "name": "Microsoft ASP.NET",
     "website": "https://www.asp.net",
     "matches": [
+        {
+            "search": "cookies[ASP.NET_SessionId]",
+            "regexp": ".*"
+        },
         {
             "search": "cookies[ASPSESSION]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[ASP.NET_SessionId]",
-            "regexp": ".*"
+            "regexp": "<input[^>]+name=\"__VIEWSTATE"
+        },
+        {
+            "search": "headers[x-powered-by]",
+            "regexp": "^ASP\\.NET"
         },
         {
             "search": "headers[set-cookie]",
@@ -16,15 +22,9 @@
         },
         {
             "search": "headers[x-aspnet-version]",
-            "regexp": "(.+)",
-            "offset": 1
-        },
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "^ASP\\.NET"
-        },
-        {
-            "regexp": "<input[^>]+name=\"__VIEWSTATE"
+            "offset": 1,
+            "regexp": "(.+)"
         }
-    ]
+    ],
+    "name": "Microsoft ASP.NET"
 }
