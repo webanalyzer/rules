@@ -1,14 +1,7 @@
 {
     "website": "http://shopify.com",
+    "name": "Shopify",
     "matches": [
-        {
-            "search": "cookies[_shopify_y]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[_shopify_s]",
-            "regexp": ".*"
-        },
         {
             "search": "script",
             "regexp": "shopifyTag"
@@ -22,14 +15,21 @@
             "regexp": ".*"
         },
         {
-            "search": "headers[x-shopid]",
-            "regexp": ".*",
-            "certainty": 50
+            "search": "cookies[_shopify_s]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[_shopify_y]",
+            "regexp": ".*"
         },
         {
             "search": "headers[x-shopify-stage]",
             "regexp": ".*"
+        },
+        {
+            "search": "headers[x-shopid]",
+            "regexp": ".*",
+            "certainty": 50
         }
-    ],
-    "name": "Shopify"
+    ]
 }

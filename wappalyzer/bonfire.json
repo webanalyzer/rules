@@ -1,15 +1,15 @@
 {
     "website": "http://cibonfire.com",
+    "name": "Bonfire",
     "matches": [
-        {
-            "offset": 1,
-            "regexp": "Powered by <a[^>]+href=\"https?://(?:www\\.)?cibonfire\\.com[^>]*>Bonfire v([^<]+)"
-        },
         {
             "search": "cookies[bf_session]",
             "regexp": ".*"
+        },
+        {
+            "offset": 1,
+            "regexp": "Powered by <a[^>]+href=\"https?://(?:www\\.)?cibonfire\\.com[^>]*>Bonfire v([^<]+)"
         }
     ],
-    "name": "Bonfire",
     "implies": "CodeIgniter"
 }

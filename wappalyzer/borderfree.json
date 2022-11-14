@@ -1,8 +1,13 @@
 {
     "website": "https://www.borderfree.com",
+    "name": "Borderfree",
     "matches": [
         {
             "search": "cookies[bfx.logLevel]",
+            "regexp": "^\\w+$"
+        },
+        {
+            "search": "cookies[bfx.country:]",
             "regexp": "^\\w+$"
         },
         {
@@ -12,11 +17,6 @@
         {
             "search": "cookies[bfx.apiKey:]",
             "regexp": "^[\\w\\d-]+$"
-        },
-        {
-            "search": "cookies[bfx.country:]",
-            "regexp": "^\\w+$"
         }
-    ],
-    "name": "Borderfree"
+    ]
 }

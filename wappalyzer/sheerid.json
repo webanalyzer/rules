@@ -1,10 +1,7 @@
 {
     "website": "https://www.sheerid.com/",
+    "name": "SheerID",
     "matches": [
-        {
-            "search": "script",
-            "regexp": "\"sheerIdEndpoint\":"
-        },
         {
             "search": "headers[content-security-policy-report-only]",
             "regexp": "\\.sheerid\\.com"
@@ -12,7 +9,10 @@
         {
             "search": "headers[content-security-policy]",
             "regexp": "\\.sheerid\\.com"
+        },
+        {
+            "search": "script",
+            "regexp": "\"sheerIdEndpoint\":"
         }
-    ],
-    "name": "SheerID"
+    ]
 }

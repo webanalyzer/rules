@@ -1,9 +1,7 @@
 {
     "website": "https://www.rebelmouse.com/",
+    "name": "RebelMouse",
     "matches": [
-        {
-            "regexp": "<!-- Powered by RebelMouse\\."
-        },
         {
             "search": "headers[x-rebelmouse-cache-control]",
             "regexp": ".*"
@@ -11,7 +9,9 @@
         {
             "search": "headers[x-rebelmouse-surrogate-control]",
             "regexp": ".*"
+        },
+        {
+            "regexp": "<!-- Powered by RebelMouse\\."
         }
-    ],
-    "name": "RebelMouse"
+    ]
 }
