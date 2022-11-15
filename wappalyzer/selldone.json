@@ -1,26 +1,26 @@
 {
-    "website": "https://selldone.com",
-    "name": "Selldone",
-    "matches": [
-        {
-            "search": "meta[selldone-cdn-id]",
-            "regexp": ".*"
-        },
-        {
-            "search": "meta[selldone-iframe]",
-            "regexp": ".*"
-        },
-        {
-            "search": "meta[selldone-cdn-images]",
-            "regexp": ".*"
-        },
-        {
-            "search": "meta[selldone-capi]",
-            "regexp": ".*"
-        }
-    ],
     "implies": [
         "PHP",
         "Vue.js"
-    ]
+    ],
+    "matches": [
+        {
+            "regexp": ".*",
+            "search": "meta[selldone-iframe]"
+        },
+        {
+            "regexp": ".*",
+            "search": "meta[selldone-capi]"
+        },
+        {
+            "regexp": ".*",
+            "search": "meta[selldone-cdn-images]"
+        },
+        {
+            "regexp": ".*",
+            "search": "meta[selldone-cdn-id]"
+        }
+    ],
+    "website": "https://selldone.com",
+    "name": "Selldone"
 }

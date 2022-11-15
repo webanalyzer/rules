@@ -1,16 +1,16 @@
 {
-    "website": "https://youcan.shop",
-    "name": "YouCan",
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "Youcan\\.Private\\.DC/"
-        }
-    ],
     "implies": [
         "PHP",
         "MySQL",
         "Redis",
         "Laravel"
-    ]
+    ],
+    "matches": [
+        {
+            "regexp": "Youcan\\.Private\\.DC/",
+            "search": "headers[x-powered-by]"
+        }
+    ],
+    "website": "https://youcan.shop",
+    "name": "YouCan"
 }

@@ -1,13 +1,13 @@
 {
-    "website": "https://deno.land/",
-    "name": "Deno Deploy",
-    "matches": [
-        {
-            "search": "headers[server]",
-            "regexp": "^deno/*"
-        }
-    ],
     "implies": [
         "Deno"
-    ]
+    ],
+    "matches": [
+        {
+            "regexp": "^deno/*",
+            "search": "headers[server]"
+        }
+    ],
+    "website": "https://deno.land/",
+    "name": "Deno Deploy"
 }
