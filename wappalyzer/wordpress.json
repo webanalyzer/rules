@@ -1,8 +1,10 @@
 {
+    "website": "https://wordpress.org",
     "implies": [
         "PHP",
         "MySQL"
     ],
+    "name": "WordPress",
     "matches": [
         {
             "regexp": "/xmlrpc\\.php$",
@@ -13,8 +15,8 @@
             "search": "headers[link]"
         },
         {
-            "regexp": "^WordPress(?: ([\\d.]+))?",
             "offset": 1,
+            "regexp": "^WordPress(?: ([\\d.]+))?",
             "search": "meta[generator]"
         },
         {
@@ -27,7 +29,5 @@
         {
             "regexp": "<link[^>]+s\\d+\\.wp\\.com"
         }
-    ],
-    "website": "https://wordpress.org",
-    "name": "WordPress"
+    ]
 }

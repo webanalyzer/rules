@@ -1,17 +1,17 @@
 {
+    "website": "https://www.welcart.com",
+    "name": "Welcart",
     "matches": [
-        {
-            "regexp": ".*",
-            "search": "cookies[usces_cookie]"
-        },
         {
             "regexp": "<link[^>]+?href=\"[^\"]+usces_default(?:\\.min)?\\.css"
         },
         {
-            "regexp": "<!-- Welcart version : v([\\d.]+)",
-            "offset": 1
+            "offset": 1,
+            "regexp": "<!-- Welcart version : v([\\d.]+)"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[usces_cookie]"
         }
-    ],
-    "website": "https://www.welcart.com",
-    "name": "Welcart"
+    ]
 }

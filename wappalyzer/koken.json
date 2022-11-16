@@ -1,16 +1,14 @@
 {
+    "website": "http://koken.me",
     "implies": [
         "PHP",
         "MySQL"
     ],
+    "name": "Koken",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[koken_referrer]"
-        },
-        {
-            "regexp": "Koken ([\\d.]+)",
             "offset": 1,
+            "regexp": "Koken ([\\d.]+)",
             "search": "meta[generator]"
         },
         {
@@ -18,8 +16,10 @@
         },
         {
             "regexp": "<!--\\s+KOKEN DEBUGGING"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[koken_referrer]"
         }
-    ],
-    "website": "http://koken.me",
-    "name": "Koken"
+    ]
 }
