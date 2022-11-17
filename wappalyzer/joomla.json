@@ -1,17 +1,17 @@
 {
-    "website": "https://www.joomla.org/",
-    "implies": "PHP",
     "name": "Joomla",
+    "implies": "PHP",
+    "website": "https://www.joomla.org/",
     "matches": [
         {
-            "offset": 1,
-            "regexp": "Joomla! ([\\d.]+)",
-            "search": "headers[x-content-encoded-by]"
+            "regexp": "Joomla!(?: ([\\d.]+))?",
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "regexp": "Joomla!(?: ([\\d.]+))?",
-            "search": "meta[generator]"
+            "regexp": "Joomla! ([\\d.]+)",
+            "search": "headers[x-content-encoded-by]",
+            "offset": 1
         },
         {
             "certainty": 50,

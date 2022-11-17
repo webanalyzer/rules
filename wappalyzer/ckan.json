@@ -1,17 +1,17 @@
 {
-    "website": "https://ckan.org/",
+    "name": "Ckan",
     "implies": [
         "Python",
         "Solr",
         "Java",
         "PostgreSQL"
     ],
-    "name": "Ckan",
+    "website": "https://ckan.org/",
     "matches": [
         {
-            "offset": 1,
             "regexp": "^ckan ?([0-9.]+)$",
-            "search": "meta[generator]"
+            "search": "meta[generator]",
+            "offset": 1
         },
         {
             "regexp": "X-CKAN-API-KEY",

@@ -1,16 +1,16 @@
 {
-    "website": "https://grafana.com",
+    "name": "Grafana",
     "implies": [
         "Go",
         "Macaron"
     ],
-    "name": "Grafana",
+    "website": "https://grafana.com",
     "matches": [
         {
-            "offset": 1,
             "certainty": 75,
             "regexp": ".+latestVersion\":\"[\\d\\.\\w\\-]+\"\\,\"version\":\"([\\d\\.]+)",
-            "search": "script"
+            "search": "script",
+            "offset": 1
         }
     ]
 }

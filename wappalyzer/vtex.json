@@ -1,6 +1,6 @@
 {
-    "website": "https://vtex.com/",
     "name": "VTEX",
+    "website": "https://vtex.com/",
     "matches": [
         {
             "regexp": "vtex",
@@ -12,7 +12,11 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[VtexWorkspace]"
+            "search": "cookies[VtexStoreVersion]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[vtex_session]"
         },
         {
             "regexp": ".*",
@@ -20,11 +24,7 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[VtexStoreVersion]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[vtex_session]"
+            "search": "cookies[VtexWorkspace]"
         }
     ]
 }

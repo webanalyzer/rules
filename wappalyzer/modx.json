@@ -1,16 +1,16 @@
 {
-    "website": "https://modx.com/content-management-framework",
-    "implies": "PHP",
     "name": "MODX",
+    "implies": "PHP",
+    "website": "https://modx.com/content-management-framework",
     "matches": [
+        {
+            "regexp": "MODX[^\\d.]*([\\d.]+)?",
+            "search": "meta[generator]",
+            "offset": 1
+        },
         {
             "regexp": "^MODX",
             "search": "headers[x-powered-by]"
-        },
-        {
-            "offset": 1,
-            "regexp": "MODX[^\\d.]*([\\d.]+)?",
-            "search": "meta[generator]"
         },
         {
             "regexp": "<a[^>]+>Powered by MODX</a>"
