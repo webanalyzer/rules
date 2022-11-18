@@ -1,19 +1,9 @@
 {
     "name": "Edgio",
-    "website": "https://edg.io",
     "matches": [
         {
-            "regexp": "^\\d+ ([\\d.]+) ",
-            "search": "headers[x-0-version]",
-            "offset": 1
-        },
-        {
             "regexp": ".*",
-            "search": "headers[x-0-t]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-0-status]"
+            "search": "cookies[layer0_eid]"
         },
         {
             "regexp": ".*",
@@ -25,7 +15,17 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[layer0_eid]"
+            "search": "headers[x-0-t]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[x-0-status]"
+        },
+        {
+            "offset": 1,
+            "regexp": "^\\d+ ([\\d.]+) ",
+            "search": "headers[x-0-version]"
         }
-    ]
+    ],
+    "website": "https://edg.io"
 }

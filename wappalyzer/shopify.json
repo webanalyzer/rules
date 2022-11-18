@@ -1,7 +1,14 @@
 {
     "name": "Shopify",
-    "website": "http://shopify.com",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "cookies[_shopify_y]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_shopify_s]"
+        },
         {
             "regexp": ".*",
             "search": "meta[shopify-checkout-api-token]"
@@ -11,8 +18,8 @@
             "search": "meta[shopify-digital-wallet]"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-shopify-stage]"
+            "regexp": "shopifyTag",
+            "search": "script"
         },
         {
             "certainty": 50,
@@ -20,16 +27,9 @@
             "search": "headers[x-shopid]"
         },
         {
-            "regexp": "shopifyTag",
-            "search": "script"
-        },
-        {
             "regexp": ".*",
-            "search": "cookies[_shopify_s]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[_shopify_y]"
+            "search": "headers[x-shopify-stage]"
         }
-    ]
+    ],
+    "website": "http://shopify.com"
 }
