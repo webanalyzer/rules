@@ -1,35 +1,35 @@
 {
+    "name": "Magento",
+    "website": "https://magento.com",
+    "matches": [
+        {
+            "search": "cookies[frontend]",
+            "regexp": ".*",
+            "certainty": 50
+        },
+        {
+            "search": "cookies[mage-translation-file-version]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[X-Magento-Vary]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[mage-cache-storage-section-invalidation]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[mage-cache-storage]",
+            "regexp": ".*"
+        },
+        {
+            "search": "cookies[mage-translation-storage]",
+            "regexp": ".*"
+        }
+    ],
     "implies": [
         "PHP",
         "MySQL"
-    ],
-    "name": "Magento",
-    "matches": [
-        {
-            "regexp": ".*",
-            "search": "cookies[mage-translation-file-version]"
-        },
-        {
-            "certainty": 50,
-            "regexp": ".*",
-            "search": "cookies[frontend]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[mage-translation-storage]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[mage-cache-storage]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[mage-cache-storage-section-invalidation]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[X-Magento-Vary]"
-        }
-    ],
-    "website": "https://magento.com"
+    ]
 }

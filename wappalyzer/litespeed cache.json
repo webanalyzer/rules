@@ -1,14 +1,14 @@
 {
     "name": "Litespeed Cache",
+    "website": "https://wordpress.org/plugins/litespeed-cache/",
     "matches": [
         {
-            "regexp": "LiteSpeed",
-            "search": "headers[x-turbo-charged-by]"
+            "search": "headers[x-litespeed-cache]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "headers[x-litespeed-cache]"
+            "search": "headers[x-turbo-charged-by]",
+            "regexp": "LiteSpeed"
         }
-    ],
-    "website": "https://wordpress.org/plugins/litespeed-cache/"
+    ]
 }
