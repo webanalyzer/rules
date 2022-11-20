@@ -1,16 +1,16 @@
 {
-    "name": "imperia CMS",
     "website": "https://www.pirobase-imperia.com/de/solutions/imperia-cms",
     "matches": [
+        {
+            "search": "meta[x-imperia-live-info]",
+            "regexp": ".*"
+        },
         {
             "search": "meta[generator]",
             "regexp": "^IMPERIA\\s([\\d\\.\\_]+)",
             "offset": 1
-        },
-        {
-            "search": "meta[x-imperia-live-info]",
-            "regexp": ".*"
         }
     ],
-    "implies": "Perl"
+    "implies": "Perl",
+    "name": "imperia CMS"
 }

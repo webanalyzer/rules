@@ -1,5 +1,4 @@
 {
-    "name": "Google Analytics",
     "website": "http://google.com/analytics",
     "matches": [
         {
@@ -13,11 +12,11 @@
             "offset": 1
         },
         {
-            "search": "cookies[_ga]",
+            "search": "cookies[_ga_*]",
             "regexp": ".*"
         },
         {
-            "search": "cookies[__utma]",
+            "search": "cookies[_ga]",
             "regexp": ".*"
         },
         {
@@ -25,8 +24,9 @@
             "regexp": ".*"
         },
         {
-            "search": "cookies[_ga_*]",
+            "search": "cookies[__utma]",
             "regexp": ".*"
         }
-    ]
+    ],
+    "name": "Google Analytics"
 }

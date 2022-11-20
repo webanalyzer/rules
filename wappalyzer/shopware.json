@@ -1,14 +1,13 @@
 {
-    "name": "Shopware",
     "website": "https://www.shopware.com",
     "matches": [
         {
-            "search": "headers[sw-invalidation-states]",
-            "regexp": ".*"
+            "search": "meta[application-name]",
+            "regexp": "Shopware"
         },
         {
-            "search": "headers[sw-version-id]",
-            "regexp": ".*"
+            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+",
+            "offset": 1
         },
         {
             "search": "headers[sw-context-token]",
@@ -19,12 +18,12 @@
             "regexp": "^[a-fA-F0-9]{32}$"
         },
         {
-            "search": "meta[application-name]",
-            "regexp": "Shopware"
+            "search": "headers[sw-invalidation-states]",
+            "regexp": ".*"
         },
         {
-            "regexp": "<title>Shopware ([\\d\\.]+) [^<]+",
-            "offset": 1
+            "search": "headers[sw-version-id]",
+            "regexp": ".*"
         }
     ],
     "implies": [
@@ -32,5 +31,6 @@
         "MySQL",
         "jQuery",
         "Symfony"
-    ]
+    ],
+    "name": "Shopware"
 }
