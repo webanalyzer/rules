@@ -1,15 +1,15 @@
 {
     "website": "https://pub.dev/packages/shelf",
+    "implies": "Dart",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "Dart with package:shelf"
+            "regexp": "dart:io with Shelf",
+            "search": "headers[server]"
         },
         {
-            "search": "headers[server]",
-            "regexp": "dart:io with Shelf"
+            "regexp": "Dart with package:shelf",
+            "search": "headers[x-powered-by]"
         }
     ],
-    "implies": "Dart",
     "name": "Shelf"
 }

@@ -2,18 +2,18 @@
     "website": "http://php.net",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "^php/?([\\d.]+)?",
-            "offset": 1
+            "regexp": ".*",
+            "search": "cookies[PHPSESSID]"
         },
         {
-            "search": "headers[server]",
             "regexp": "php/?([\\d.]+)?",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[server]"
         },
         {
-            "search": "cookies[PHPSESSID]",
-            "regexp": ".*"
+            "regexp": "^php/?([\\d.]+)?",
+            "offset": 1,
+            "search": "headers[x-powered-by]"
         }
     ],
     "name": "PHP"
