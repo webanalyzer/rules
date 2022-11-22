@@ -1,20 +1,5 @@
 {
-    "website": "http://google.com/analytics",
     "matches": [
-        {
-            "regexp": "gtag\\([^)]+'(UA-)",
-            "offset": 1,
-            "search": "script"
-        },
-        {
-            "regexp": "gtag\\([^)]+'(G-)",
-            "offset": 1,
-            "search": "script"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[_ga]"
-        },
         {
             "regexp": ".*",
             "search": "cookies[_gat]"
@@ -26,7 +11,22 @@
         {
             "regexp": ".*",
             "search": "cookies[_ga_*]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[_ga]"
+        },
+        {
+            "regexp": "gtag\\([^)]+'(UA-)",
+            "offset": 1,
+            "search": "script"
+        },
+        {
+            "regexp": "gtag\\([^)]+'(G-)",
+            "offset": 1,
+            "search": "script"
         }
     ],
-    "name": "Google Analytics"
+    "name": "Google Analytics",
+    "website": "http://google.com/analytics"
 }

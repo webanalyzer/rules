@@ -1,9 +1,12 @@
 {
-    "website": "http://www.cloudflare.com",
     "matches": [
         {
             "regexp": ".*",
             "search": "cookies[__cfduid]"
+        },
+        {
+            "regexp": ".*",
+            "search": "headers[cf-cache-status]"
         },
         {
             "regexp": "^cloudflare$",
@@ -12,11 +15,8 @@
         {
             "regexp": ".*",
             "search": "headers[cf-ray]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[cf-cache-status]"
         }
     ],
-    "name": "Cloudflare"
+    "name": "Cloudflare",
+    "website": "http://www.cloudflare.com"
 }

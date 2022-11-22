@@ -1,5 +1,4 @@
 {
-    "website": "https://www.asp.net",
     "matches": [
         {
             "regexp": ".*",
@@ -13,10 +12,6 @@
             "regexp": "<input[^>]+name=\"__VIEWSTATE"
         },
         {
-            "regexp": "\\.AspNetCore",
-            "search": "headers[set-cookie]"
-        },
-        {
             "regexp": "(.+)",
             "offset": 1,
             "search": "headers[x-aspnet-version]"
@@ -24,7 +19,12 @@
         {
             "regexp": "^ASP\\.NET",
             "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": "\\.AspNetCore",
+            "search": "headers[set-cookie]"
         }
     ],
-    "name": "Microsoft ASP.NET"
+    "name": "Microsoft ASP.NET",
+    "website": "https://www.asp.net"
 }

@@ -1,16 +1,14 @@
 {
-    "website": "https://rubyonrails.org",
-    "implies": "Ruby",
     "matches": [
         {
-            "regexp": "^authenticity_token$",
-            "search": "meta[csrf-param]",
-            "certainty": 50
+            "certainty": 75,
+            "regexp": ".*",
+            "search": "cookies[_session_id]"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_session_id]",
-            "certainty": 75
+            "certainty": 50,
+            "regexp": "^authenticity_token$",
+            "search": "meta[csrf-param]"
         },
         {
             "regexp": "mod_(?:rails|rack)",
@@ -21,5 +19,7 @@
             "search": "headers[x-powered-by]"
         }
     ],
-    "name": "Ruby on Rails"
+    "name": "Ruby on Rails",
+    "website": "https://rubyonrails.org",
+    "implies": "Ruby"
 }

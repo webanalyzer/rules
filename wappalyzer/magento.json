@@ -1,26 +1,13 @@
 {
-    "website": "https://magento.com",
-    "implies": [
-        "PHP",
-        "MySQL"
-    ],
     "matches": [
         {
             "regexp": ".*",
-            "search": "cookies[mage-cache-storage-section-invalidation]"
+            "search": "cookies[mage-cache-storage]"
         },
         {
+            "certainty": 50,
             "regexp": ".*",
-            "search": "cookies[mage-translation-file-version]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[mage-translation-storage]"
-        },
-        {
-            "regexp": ".*",
-            "search": "cookies[frontend]",
-            "certainty": 50
+            "search": "cookies[frontend]"
         },
         {
             "regexp": ".*",
@@ -28,8 +15,21 @@
         },
         {
             "regexp": ".*",
-            "search": "cookies[mage-cache-storage]"
+            "search": "cookies[mage-translation-storage]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[mage-cache-storage-section-invalidation]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[mage-translation-file-version]"
         }
     ],
-    "name": "Magento"
+    "name": "Magento",
+    "website": "https://magento.com",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ]
 }
