@@ -1,20 +1,20 @@
 {
+    "name": "Danneo CMS",
     "matches": [
         {
-            "regexp": "Danneo CMS ([\\d.]+)",
             "offset": 1,
-            "search": "meta[generator]"
+            "search": "headers[x-powered-by]",
+            "regexp": "CMS Danneo ([\\d.]+)"
         },
         {
-            "regexp": "CMS Danneo ([\\d.]+)",
             "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "meta[generator]",
+            "regexp": "Danneo CMS ([\\d.]+)"
         }
     ],
-    "name": "Danneo CMS",
-    "website": "http://danneo.com",
     "implies": [
         "Apache",
         "PHP"
-    ]
+    ],
+    "website": "http://danneo.com"
 }
