@@ -1,6 +1,11 @@
 {
+    "website": "https://www.klarna.com/international/",
     "name": "Klarna Checkout",
     "matches": [
+        {
+            "search": "headers[content-security-policy]",
+            "regexp": "\\.klarna(?:cdn|services)\\.(?:net|com)"
+        },
         {
             "search": "cookies[ku1-sid]",
             "regexp": ".*"
@@ -8,11 +13,6 @@
         {
             "search": "cookies[ku1-vid]",
             "regexp": ".*"
-        },
-        {
-            "search": "headers[content-security-policy]",
-            "regexp": "\\.klarna(?:cdn|services)\\.(?:net|com)"
         }
-    ],
-    "website": "https://www.klarna.com/international/"
+    ]
 }

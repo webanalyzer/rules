@@ -1,16 +1,16 @@
 {
+    "website": "http://ghost.org",
     "name": "Ghost",
     "matches": [
         {
-            "search": "headers[x-ghost-cache-status]",
-            "regexp": ".*"
+            "search": "meta[generator]",
+            "regexp": "Ghost(?:\\s([\\d.]+))?",
+            "offset": 1
         },
         {
-            "offset": 1,
-            "search": "meta[generator]",
-            "regexp": "Ghost(?:\\s([\\d.]+))?"
+            "search": "headers[x-ghost-cache-status]",
+            "regexp": ".*"
         }
     ],
-    "implies": "Node.js",
-    "website": "http://ghost.org"
+    "implies": "Node.js"
 }

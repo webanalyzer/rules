@@ -1,20 +1,20 @@
 {
+    "website": "https://developers.sikido.vn/docs/cms/",
     "name": "Skilldo",
     "matches": [
         {
-            "search": "headers[cms-name]",
-            "regexp": "^Skilldo$"
-        },
-        {
-            "offset": 1,
             "search": "headers[cms-version]",
             "certainty": 0,
-            "regexp": "([\\d\\.]+)"
+            "regexp": "([\\d\\.]+)",
+            "offset": 1
+        },
+        {
+            "search": "headers[cms-name]",
+            "regexp": "^Skilldo$"
         }
     ],
     "implies": [
         "PHP",
         "MySQL"
-    ],
-    "website": "https://developers.sikido.vn/docs/cms/"
+    ]
 }

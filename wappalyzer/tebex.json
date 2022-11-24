@@ -1,10 +1,10 @@
 {
+    "website": "https://www.tebex.io",
     "name": "Tebex",
     "matches": [
         {
-            "search": "headers[tb-cache-country]",
-            "certainty": 50,
-            "regexp": "^\\w+$"
+            "search": "script",
+            "regexp": "\\.tebexLogin"
         },
         {
             "search": "headers[tb-cache-group]",
@@ -12,14 +12,14 @@
             "regexp": "^webstore$"
         },
         {
-            "search": "script",
-            "regexp": "\\.tebexLogin"
+            "search": "headers[tb-cache-country]",
+            "certainty": 50,
+            "regexp": "^\\w+$"
         }
     ],
     "implies": [
         "MySQL",
         "Sass",
         "PHP"
-    ],
-    "website": "https://www.tebex.io"
+    ]
 }
