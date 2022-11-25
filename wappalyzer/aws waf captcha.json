@@ -1,11 +1,11 @@
 {
-    "website": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-captcha.html",
+    "implies": "Amazon Web Services",
     "name": "AWS WAF Captcha",
+    "website": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-captcha.html",
     "matches": [
         {
-            "search": "headers[x-amzn-waf-action]",
-            "regexp": "^captcha$"
+            "regexp": "^captcha$",
+            "search": "headers[x-amzn-waf-action]"
         }
-    ],
-    "implies": "Amazon Web Services"
+    ]
 }

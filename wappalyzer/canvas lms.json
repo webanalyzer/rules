@@ -1,14 +1,14 @@
 {
-    "website": "https://www.instructure.com/canvas",
-    "name": "Canvas LMS",
-    "matches": [
-        {
-            "search": "headers[x-canvas-meta]",
-            "regexp": "login/canvas"
-        }
-    ],
     "implies": [
         "Ruby on Rails",
         "React"
+    ],
+    "name": "Canvas LMS",
+    "website": "https://www.instructure.com/canvas",
+    "matches": [
+        {
+            "regexp": "login/canvas",
+            "search": "headers[x-canvas-meta]"
+        }
     ]
 }

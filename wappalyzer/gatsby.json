@@ -1,15 +1,15 @@
 {
-    "website": "https://www.gatsbyjs.org/",
-    "name": "Gatsby",
-    "matches": [
-        {
-            "search": "meta[generator]",
-            "regexp": "^Gatsby(?: ([0-9.]+))?$",
-            "offset": 1
-        }
-    ],
     "implies": [
         "React",
         "Webpack"
+    ],
+    "name": "Gatsby",
+    "website": "https://www.gatsbyjs.org/",
+    "matches": [
+        {
+            "regexp": "^Gatsby(?: ([0-9.]+))?$",
+            "offset": 1,
+            "search": "meta[generator]"
+        }
     ]
 }

@@ -1,19 +1,19 @@
 {
-    "website": "https://ikas.com",
-    "name": "Ikas",
-    "matches": [
-        {
-            "search": "headers[x-powered-by]",
-            "regexp": "^ikas$"
-        },
-        {
-            "search": "headers[server]",
-            "regexp": "^ikas$"
-        }
-    ],
     "implies": [
         "Next.js",
         "GraphQL",
         "MongoDB"
+    ],
+    "name": "Ikas",
+    "website": "https://ikas.com",
+    "matches": [
+        {
+            "regexp": "^ikas$",
+            "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": "^ikas$",
+            "search": "headers[server]"
+        }
     ]
 }
