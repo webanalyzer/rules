@@ -1,14 +1,14 @@
 {
     "name": "Sourcepoint",
-    "website": "https://sourcepoint.com",
     "matches": [
         {
-            "regexp": "SOURCEPOINT_MMS_DOMAIN",
-            "search": "script"
+            "search": "cookies[_sp_enable_dfp_personalized_ads]",
+            "regexp": ".*"
         },
         {
-            "regexp": ".*",
-            "search": "cookies[_sp_enable_dfp_personalized_ads]"
+            "search": "script",
+            "regexp": "SOURCEPOINT_MMS_DOMAIN"
         }
-    ]
+    ],
+    "website": "https://sourcepoint.com"
 }
