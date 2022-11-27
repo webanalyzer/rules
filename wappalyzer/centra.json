@@ -1,15 +1,15 @@
 {
-    "name": "Centra",
+    "excludes": "Magento",
     "matches": [
         {
-            "search": "script",
-            "regexp": "centraCheckoutScript"
+            "regexp": "\\.centra(?:cdn)?\\.(?:com|net)",
+            "search": "headers[content-security-policy]"
         },
         {
-            "search": "headers[content-security-policy]",
-            "regexp": "\\.centra(?:cdn)?\\.(?:com|net)"
+            "regexp": "centraCheckoutScript",
+            "search": "script"
         }
     ],
     "website": "https://centra.com",
-    "excludes": "Magento"
+    "name": "Centra"
 }

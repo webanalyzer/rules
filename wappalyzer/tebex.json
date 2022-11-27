@@ -1,19 +1,18 @@
 {
-    "name": "Tebex",
     "matches": [
         {
-            "search": "script",
-            "regexp": "\\.tebexLogin"
-        },
-        {
-            "search": "headers[tb-cache-group]",
-            "regexp": "^webstore$",
-            "certainty": 50
-        },
-        {
-            "search": "headers[tb-cache-country]",
+            "certainty": 50,
             "regexp": "^\\w+$",
-            "certainty": 50
+            "search": "headers[tb-cache-country]"
+        },
+        {
+            "certainty": 50,
+            "regexp": "^webstore$",
+            "search": "headers[tb-cache-group]"
+        },
+        {
+            "regexp": "\\.tebexLogin",
+            "search": "script"
         }
     ],
     "website": "https://www.tebex.io",
@@ -21,5 +20,6 @@
         "MySQL",
         "Sass",
         "PHP"
-    ]
+    ],
+    "name": "Tebex"
 }

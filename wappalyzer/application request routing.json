@@ -1,12 +1,12 @@
 {
-    "name": "Application Request Routing",
     "matches": [
         {
-            "search": "headers[x-powered-by]",
+            "offset": 1,
             "regexp": "^ARR/([\\d\\.]+)$",
-            "offset": 1
+            "search": "headers[x-powered-by]"
         }
     ],
     "website": "https://www.iis.net/downloads/microsoft/application-request-routing",
-    "implies": "IIS"
+    "implies": "IIS",
+    "name": "Application Request Routing"
 }
