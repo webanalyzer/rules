@@ -5,17 +5,17 @@
             "regexp": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)"
         },
         {
-            "offset": 1,
+            "search": "meta[generator]",
             "regexp": "Joomla!(?: ([\\d.]+))?",
-            "search": "meta[generator]"
+            "offset": 1
         },
         {
-            "offset": 1,
+            "search": "headers[x-content-encoded-by]",
             "regexp": "Joomla! ([\\d.]+)",
-            "search": "headers[x-content-encoded-by]"
+            "offset": 1
         }
     ],
-    "website": "https://www.joomla.org/",
     "implies": "PHP",
+    "website": "https://www.joomla.org/",
     "name": "Joomla"
 }

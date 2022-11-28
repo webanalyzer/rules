@@ -19,16 +19,16 @@
             "regexp": "<input[^>]+id=\"ajaxSearch_input"
         },
         {
-            "offset": 1,
+            "search": "meta[generator]",
             "regexp": "MODX[^\\d.]*([\\d.]+)?",
-            "search": "meta[generator]"
+            "offset": 1
         },
         {
-            "regexp": "^MODX",
-            "search": "headers[x-powered-by]"
+            "search": "headers[x-powered-by]",
+            "regexp": "^MODX"
         }
     ],
-    "website": "https://modx.com/content-management-framework",
     "implies": "PHP",
+    "website": "https://modx.com/content-management-framework",
     "name": "MODX"
 }
