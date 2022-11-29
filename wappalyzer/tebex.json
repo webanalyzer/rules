@@ -1,18 +1,18 @@
 {
     "matches": [
         {
-            "search": "script",
-            "regexp": "\\.tebexLogin"
+            "regexp": "^webstore$",
+            "certainty": 50,
+            "search": "headers[tb-cache-group]"
         },
         {
-            "search": "headers[tb-cache-country]",
+            "regexp": "^\\w+$",
             "certainty": 50,
-            "regexp": "^\\w+$"
+            "search": "headers[tb-cache-country]"
         },
         {
-            "search": "headers[tb-cache-group]",
-            "certainty": 50,
-            "regexp": "^webstore$"
+            "regexp": "\\.tebexLogin",
+            "search": "script"
         }
     ],
     "implies": [

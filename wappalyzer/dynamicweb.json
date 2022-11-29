@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Dynamicweb ([\\d.]+)",
-            "offset": 1
+            "regexp": ".*",
+            "search": "cookies[Dynamicweb]"
         },
         {
-            "search": "cookies[Dynamicweb]",
-            "regexp": ".*"
+            "regexp": "Dynamicweb ([\\d.]+)",
+            "offset": 1,
+            "search": "meta[generator]"
         }
     ],
     "implies": "Microsoft ASP.NET",

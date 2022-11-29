@@ -1,29 +1,29 @@
 {
     "matches": [
         {
-            "search": "headers[x-0-version]",
+            "regexp": ".*",
+            "search": "cookies[layer0_destination]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[layer0_bucket]"
+        },
+        {
+            "regexp": ".*",
+            "search": "cookies[layer0_eid]"
+        },
+        {
             "regexp": "^\\d+ ([\\d.]+) ",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-0-version]"
         },
         {
-            "search": "headers[x-0-status]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-0-t]"
         },
         {
-            "search": "headers[x-0-t]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[layer0_eid]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[layer0_destination]",
-            "regexp": ".*"
-        },
-        {
-            "search": "cookies[layer0_bucket]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "headers[x-0-status]"
         }
     ],
     "website": "https://edg.io",

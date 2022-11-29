@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources",
-            "offset": 1
+            "regexp": "([\\d\\.]+)?",
+            "offset": 1,
+            "search": "headers[x-owa-version]"
         },
         {
-            "search": "headers[x-owa-version]",
-            "regexp": "([\\d\\.]+)?",
+            "regexp": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources",
             "offset": 1
         }
     ],

@@ -1,16 +1,16 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "Orchard"
+            "regexp": "^Orchard$",
+            "search": "headers[x-generator]"
         },
         {
-            "search": "headers[x-generator]",
-            "regexp": "^Orchard$"
+            "regexp": "OrchardCore",
+            "search": "headers[x-powered-by]"
         },
         {
-            "search": "headers[x-powered-by]",
-            "regexp": "OrchardCore"
+            "regexp": "Orchard",
+            "search": "meta[generator]"
         }
     ],
     "implies": "Microsoft ASP.NET",

@@ -1,20 +1,20 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "EPiServer"
+            "regexp": ".*",
+            "search": "cookies[EPiTrace]"
         },
         {
-            "search": "cookies[EPiServer]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[EPiSessionId]"
         },
         {
-            "search": "cookies[EPiSessionId]",
-            "regexp": ".*"
+            "regexp": ".*",
+            "search": "cookies[EPiServer]"
         },
         {
-            "search": "cookies[EPiTrace]",
-            "regexp": ".*"
+            "regexp": "EPiServer",
+            "search": "meta[generator]"
         }
     ],
     "implies": "Microsoft ASP.NET",

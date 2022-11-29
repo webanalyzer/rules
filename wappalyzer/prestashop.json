@@ -1,6 +1,14 @@
 {
     "matches": [
         {
+            "regexp": ".*",
+            "search": "cookies[PrestaShop]"
+        },
+        {
+            "regexp": "PrestaShop",
+            "search": "meta[generator]"
+        },
+        {
             "regexp": "Powered by <a\\s+[^>]+>PrestaShop"
         },
         {
@@ -10,16 +18,8 @@
             "regexp": "<!-- /Module Block [a-z ]+ -->"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "PrestaShop"
-        },
-        {
-            "search": "cookies[PrestaShop]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[powered-by]",
-            "regexp": "^Prestashop$"
+            "regexp": "^Prestashop$",
+            "search": "headers[powered-by]"
         }
     ],
     "implies": [

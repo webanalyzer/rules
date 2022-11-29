@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "search": "script",
-            "regexp": "centraCheckoutScript"
+            "regexp": "\\.centra(?:cdn)?\\.(?:com|net)",
+            "search": "headers[content-security-policy]"
         },
         {
-            "search": "headers[content-security-policy]",
-            "regexp": "\\.centra(?:cdn)?\\.(?:com|net)"
+            "regexp": "centraCheckoutScript",
+            "search": "script"
         }
     ],
     "excludes": "Magento",

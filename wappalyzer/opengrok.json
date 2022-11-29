@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "OpenGrok(?: v?([\\d.]+))?",
-            "offset": 1
+            "regexp": ".*",
+            "search": "cookies[OpenGrok]"
         },
         {
-            "search": "cookies[OpenGrok]",
-            "regexp": ".*"
+            "regexp": "OpenGrok(?: v?([\\d.]+))?",
+            "offset": 1,
+            "search": "meta[generator]"
         }
     ],
     "implies": "Java",

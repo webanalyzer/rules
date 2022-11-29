@@ -1,17 +1,17 @@
 {
     "matches": [
         {
-            "search": "meta[generator]",
-            "regexp": "^FlexCMP"
+            "regexp": ".*",
+            "search": "headers[x-flex-lang]"
         },
         {
-            "search": "headers[x-flex-lang]",
-            "regexp": ".*"
-        },
-        {
-            "search": "headers[x-powered-by]",
             "regexp": "FlexCMP.+\\[v\\. ([\\d.]+)",
-            "offset": 1
+            "offset": 1,
+            "search": "headers[x-powered-by]"
+        },
+        {
+            "regexp": "^FlexCMP",
+            "search": "meta[generator]"
         },
         {
             "regexp": "<!--[^>]+FlexCMP[^>v]+v\\. ([\\d.]+)",

@@ -1,12 +1,12 @@
 {
     "matches": [
         {
-            "regexp": "(?:powered by <a[^>]+>Django ?([\\d.]+)?<\\/a>|<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>)",
-            "offset": 1
+            "regexp": ".*",
+            "search": "cookies[django_language]"
         },
         {
-            "search": "cookies[django_language]",
-            "regexp": ".*"
+            "regexp": "(?:powered by <a[^>]+>Django ?([\\d.]+)?<\\/a>|<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>)",
+            "offset": 1
         }
     ],
     "implies": "Python",

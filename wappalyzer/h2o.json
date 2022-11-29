@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "headers[server]",
-            "regexp": "^h2o(?:/)?([\\d\\.]+)?",
-            "offset": 1
+            "regexp": ".*",
+            "search": "cookies[h2o_casper]"
         },
         {
-            "search": "cookies[h2o_casper]",
-            "regexp": ".*"
+            "regexp": "^h2o(?:/)?([\\d\\.]+)?",
+            "offset": 1,
+            "search": "headers[server]"
         }
     ],
     "implies": [

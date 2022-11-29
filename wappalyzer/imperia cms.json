@@ -1,13 +1,13 @@
 {
     "matches": [
         {
-            "search": "meta[x-imperia-live-info]",
-            "regexp": ".*"
+            "regexp": "^IMPERIA\\s([\\d\\.\\_]+)",
+            "offset": 1,
+            "search": "meta[generator]"
         },
         {
-            "search": "meta[generator]",
-            "regexp": "^IMPERIA\\s([\\d\\.\\_]+)",
-            "offset": 1
+            "regexp": ".*",
+            "search": "meta[x-imperia-live-info]"
         }
     ],
     "implies": "Perl",
