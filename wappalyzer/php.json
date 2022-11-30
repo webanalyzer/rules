@@ -1,8 +1,11 @@
 {
+    "name": "PHP",
+    "website": "http://php.net",
     "matches": [
         {
-            "regexp": ".*",
-            "search": "cookies[PHPSESSID]"
+            "regexp": "^php/?([\\d.]+)?",
+            "offset": 1,
+            "search": "headers[x-powered-by]"
         },
         {
             "regexp": "php/?([\\d.]+)?",
@@ -10,11 +13,8 @@
             "search": "headers[server]"
         },
         {
-            "regexp": "^php/?([\\d.]+)?",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
+            "regexp": ".*",
+            "search": "cookies[PHPSESSID]"
         }
-    ],
-    "website": "http://php.net",
-    "name": "PHP"
+    ]
 }

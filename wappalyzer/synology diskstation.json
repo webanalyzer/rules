@@ -1,5 +1,10 @@
 {
+    "name": "Synology DiskStation",
+    "website": "http://synology.com",
     "matches": [
+        {
+            "regexp": "<noscript><div class='syno-no-script'"
+        },
         {
             "regexp": "^DiskStation provides a full-featured network attached storage",
             "search": "meta[description]"
@@ -7,11 +12,6 @@
         {
             "regexp": "Synology DiskStation",
             "search": "meta[application-name]"
-        },
-        {
-            "regexp": "<noscript><div class='syno-no-script'"
         }
-    ],
-    "website": "http://synology.com",
-    "name": "Synology DiskStation"
+    ]
 }

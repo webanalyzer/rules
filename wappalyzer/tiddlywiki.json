@@ -1,12 +1,9 @@
 {
+    "name": "TiddlyWiki",
+    "website": "http://tiddlywiki.com",
     "matches": [
         {
-            "regexp": "^TiddlyWiki$",
-            "search": "meta[generator]"
-        },
-        {
-            "regexp": "^TiddlyWiki created by Jeremy Ruston",
-            "search": "meta[copyright]"
+            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
         },
         {
             "regexp": "^TiddlyWiki$",
@@ -18,9 +15,12 @@
             "search": "meta[tiddlywiki-version]"
         },
         {
-            "regexp": "<[^>]*type=[^>]text\\/vnd\\.tiddlywiki"
+            "regexp": "^TiddlyWiki$",
+            "search": "meta[generator]"
+        },
+        {
+            "regexp": "^TiddlyWiki created by Jeremy Ruston",
+            "search": "meta[copyright]"
         }
-    ],
-    "website": "http://tiddlywiki.com",
-    "name": "TiddlyWiki"
+    ]
 }

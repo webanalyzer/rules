@@ -1,5 +1,11 @@
 {
+    "name": "CacheFly",
+    "website": "http://www.cachefly.com",
     "matches": [
+        {
+            "regexp": ".*",
+            "search": "headers[x-cf2]"
+        },
         {
             "regexp": ".*",
             "search": "headers[x-cf1]"
@@ -7,12 +13,6 @@
         {
             "regexp": "^CFS ",
             "search": "headers[server]"
-        },
-        {
-            "regexp": ".*",
-            "search": "headers[x-cf2]"
         }
-    ],
-    "website": "http://www.cachefly.com",
-    "name": "CacheFly"
+    ]
 }
