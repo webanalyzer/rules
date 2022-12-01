@@ -1,6 +1,11 @@
 {
-    "name": "iEXExchanger",
     "website": "https://exchanger.iexbase.com",
+    "implies": [
+        "PHP",
+        "Apache HTTP Server",
+        "Angular"
+    ],
+    "name": "iEXExchanger",
     "matches": [
         {
             "regexp": "iEXExchanger",
@@ -10,10 +15,5 @@
             "regexp": ".*",
             "search": "cookies[iexexchanger_session]"
         }
-    ],
-    "implies": [
-        "PHP",
-        "Apache HTTP Server",
-        "Angular"
     ]
 }

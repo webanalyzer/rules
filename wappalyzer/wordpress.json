@@ -1,6 +1,10 @@
 {
-    "name": "WordPress",
     "website": "https://wordpress.org",
+    "implies": [
+        "PHP",
+        "MySQL"
+    ],
+    "name": "WordPress",
     "matches": [
         {
             "regexp": "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/"
@@ -25,9 +29,5 @@
             "regexp": "/xmlrpc\\.php$",
             "search": "headers[x-pingback]"
         }
-    ],
-    "implies": [
-        "PHP",
-        "MySQL"
     ]
 }

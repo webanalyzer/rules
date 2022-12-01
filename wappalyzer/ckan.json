@@ -1,6 +1,12 @@
 {
-    "name": "Ckan",
     "website": "https://ckan.org/",
+    "implies": [
+        "Python",
+        "Solr",
+        "Java",
+        "PostgreSQL"
+    ],
+    "name": "Ckan",
     "matches": [
         {
             "regexp": "^ckan ?([0-9.]+)$",
@@ -15,11 +21,5 @@
             "regexp": "<http://ckan\\.org/>; rel=shortlink",
             "search": "headers[link]"
         }
-    ],
-    "implies": [
-        "Python",
-        "Solr",
-        "Java",
-        "PostgreSQL"
     ]
 }

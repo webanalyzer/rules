@@ -1,14 +1,14 @@
 {
-    "name": "Storyblok",
     "website": "https://www.storyblok.com",
+    "name": "Storyblok",
     "matches": [
         {
             "regexp": "app\\.storyblok\\.com",
-            "search": "headers[content-security-policy]"
+            "search": "headers[x-frame-options]"
         },
         {
             "regexp": "app\\.storyblok\\.com",
-            "search": "headers[x-frame-options]"
+            "search": "headers[content-security-policy]"
         }
     ]
 }
