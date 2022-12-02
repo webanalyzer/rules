@@ -1,5 +1,4 @@
 {
-    "website": "https://www.tebex.io",
     "implies": [
         "MySQL",
         "Sass",
@@ -12,14 +11,15 @@
             "search": "script"
         },
         {
-            "regexp": "^webstore$",
             "certainty": 50,
+            "regexp": "^webstore$",
             "search": "headers[tb-cache-group]"
         },
         {
-            "regexp": "^\\w+$",
             "certainty": 50,
+            "regexp": "^\\w+$",
             "search": "headers[tb-cache-country]"
         }
-    ]
+    ],
+    "website": "https://www.tebex.io"
 }

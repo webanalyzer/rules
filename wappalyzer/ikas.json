@@ -1,5 +1,4 @@
 {
-    "website": "https://ikas.com",
     "implies": [
         "Next.js",
         "GraphQL",
@@ -9,11 +8,12 @@
     "matches": [
         {
             "regexp": "^ikas$",
-            "search": "headers[server]"
+            "search": "headers[x-powered-by]"
         },
         {
             "regexp": "^ikas$",
-            "search": "headers[x-powered-by]"
+            "search": "headers[server]"
         }
-    ]
+    ],
+    "website": "https://ikas.com"
 }

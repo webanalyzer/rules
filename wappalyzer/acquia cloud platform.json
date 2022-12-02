@@ -1,5 +1,4 @@
 {
-    "website": "https://www.acquia.com/products/drupal-cloud/cloud-platform",
     "implies": [
         "Amazon Web Services"
     ],
@@ -7,8 +6,9 @@
     "matches": [
         {
             "regexp": "^(next)?.*$",
-            "offset": 1,
-            "search": "headers[x-ah-environment]"
+            "search": "headers[x-ah-environment]",
+            "offset": 1
         }
-    ]
+    ],
+    "website": "https://www.acquia.com/products/drupal-cloud/cloud-platform"
 }

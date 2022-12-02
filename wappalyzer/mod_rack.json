@@ -1,5 +1,4 @@
 {
-    "website": "http://phusionpassenger.com",
     "implies": [
         "Ruby on Rails",
         "Apache HTTP Server"
@@ -8,13 +7,14 @@
     "matches": [
         {
             "regexp": "mod_rack(?:/([\\d.]+))?",
-            "offset": 1,
-            "search": "headers[x-powered-by]"
+            "search": "headers[server]",
+            "offset": 1
         },
         {
             "regexp": "mod_rack(?:/([\\d.]+))?",
-            "offset": 1,
-            "search": "headers[server]"
+            "search": "headers[x-powered-by]",
+            "offset": 1
         }
-    ]
+    ],
+    "website": "http://phusionpassenger.com"
 }
